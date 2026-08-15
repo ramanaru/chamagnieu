@@ -1,0 +1,45 @@
+{
+  "version": "V18-GITHUB-1",
+  "name": "Maison neuve de Chamagnieu — logement 6",
+  "updated": "2026-08-15",
+  "language": "fr",
+  "public_repository": "https://github.com/ramanaru/chamagnieu",
+  "public_page": "https://ramanaru.github.io/chamagnieu/",
+  "description": "Maison V18 avec toiture complète, sols extérieurs restaurés, textures, arbres, haies et visite commençant à l’extérieur.",
+  "visible_features": [
+    "trois volumes de toiture avec géométrie fermée",
+    "tuiles terre cuite texturées",
+    "pelouse, enrobé et gravier différenciés",
+    "quatre arbres et dix-huit éléments de haie",
+    "table extérieure parasite supprimée",
+    "visite interactive commençant à l’extérieur"
+  ],
+  "media": {
+    "images": [
+      {
+        "title": "Façade, toiture et sol extérieur",
+        "url": "https://raw.githubusercontent.com/ramanaru/chamagnieu/main/images/v18-facade-roof-ground.webp",
+        "repository_path": "images/v18-facade-roof-ground.webp",
+        "sha256": "D3B0DD8DD14DFE12D567457B0402D2541CBA91A1A3E6BA6C6B0A879C88BAD5BE"
+      },
+      {
+        "title": "Jardin, textures et façade arrière",
+        "url": "https://raw.githubusercontent.com/ramanaru/chamagnieu/main/images/v18-jardin-textures.webp",
+        "repository_path": "images/v18-jardin-textures.webp",
+        "sha256": "B8A3B2DA90D102904E7EC375A9FA8E14E5BC18CC2F7F5A6057D94E374DE7FCAD"
+      }
+    ],
+    "model": {
+      "title": "Modèle 3D V18 GLB",
+      "url": "https://raw.githubusercontent.com/ramanaru/chamagnieu/main/shared/Chamagnieu_V18_ROOF_GROUND_REALISM.glb",
+      "repository_path": "shared/Chamagnieu_V18_ROOF_GROUND_REALISM.glb",
+      "bytes": 27987896,
+      "sha256": "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28"
+    }
+  },
+  "interactive": {
+    "presentation": "https://ramanaru.github.io/chamagnieu/presentation/",
+    "visit_from_outside": "https://ramanaru.github.io/chamagnieu/visite/",
+    "instant_gallery": "https://ramanaru.github.io/chamagnieu/rapide/"
+  }
+}

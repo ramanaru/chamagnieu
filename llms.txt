@@ -1,0 +1,9 @@
+# Maison de Chamagnieu V18
+
+Lien principal pour GPT: https://github.com/ramanaru/chamagnieu
+Page visuelle: https://ramanaru.github.io/chamagnieu/
+Données structurées: https://raw.githubusercontent.com/ramanaru/chamagnieu/main/house.json
+Image façade: https://raw.githubusercontent.com/ramanaru/chamagnieu/main/images/v18-facade-roof-ground.webp
+Image jardin: https://raw.githubusercontent.com/ramanaru/chamagnieu/main/images/v18-jardin-textures.webp
+
+Cette version montre une maison à trois volumes de toiture en tuiles, des sols extérieurs différenciés, quatre arbres, dix-huit haies et une visite commençant dehors.
