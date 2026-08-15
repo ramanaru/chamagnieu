@@ -39,7 +39,7 @@ Les montages `reference-vs-live-*` ne prétendent pas être des captures du mêm
 | Fichier ou page | Provenance à lire |
 |---|---|
 | `before-facade.png`, `before-jardin.png`, `before-interieur.png` | ancienne capture `LIVE WEB VIEWER` |
-| `after-facade.png`, `after-jardin.png`, `after-interieur.png` | capture locale `LIVE WEB VIEWER`, release `V18-LIVE-SYNC-3` |
+| `after-facade.png`, `after-jardin.png`, `after-interieur.png` | capture locale réelle `LIVE WEB VIEWER`, release `V18-LIVE-SYNC-2`; la release 3 ne change aucun réglage visuel |
 | `compare-before-after-*.png` | live Web avant à gauche, live Web après à droite |
 | `reference-vs-live-*.png` | référence Blender à gauche, vrai viewer Web à droite |
 | `/` et `/rapide/` | images statiques, badges `SOURCE = BLENDER` |
@@ -59,13 +59,15 @@ Les images WebP de la galerie sont des rendus pré-calculés. Elles ne sont pas 
 ## Verdict honnête
 
 ```text
-VERSION_AND_MODEL_SYNC=PASS_LOCAL
-PRESENTATION_AND_VISITE_PIPELINE_SYNC=PASS_LOCAL
+VERSION_AND_MODEL_SYNC=PASS_PUBLIC_HTTP
+PRESENTATION_AND_VISITE_PIPELINE_SYNC=PASS_PUBLIC_HTTP
 SOURCE_PROVENANCE_LABELS=PASS
-TEXTURE_DELIVERY=PASS_LOCAL
+TEXTURE_DELIVERY=PASS_PUBLIC_HTTP
 LIVE_VISUAL_IMPROVEMENT=YES
 LIVE_MATCHES_BLENDER_D5=NO
-PUBLIC_RUNTIME_VERIFIED=NO
+PUBLIC_RUNTIME_VERIFIED=YES_HTTP
+LIVE_SCREENSHOT_RELEASE=V18-LIVE-SYNC-2
+FINAL_PUBLIC_RELEASE=V18-LIVE-SYNC-3
 FINAL_STATUS=PARTIAL
 ```
 

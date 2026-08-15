@@ -7,18 +7,22 @@
 La synchronisation technique est maintenant démontrée localement : `/presentation/` et `/visite/` chargent la même configuration, le même GLB V18, la même version de cache et le même module de réglage visuel. Le rendu Web final gagne en contraste, ombres, filtrage oblique et réponse des matériaux physiques. Il ne devient toutefois pas un rendu Blender/D5 équivalent.
 
 ```text
-RUNTIME_SYNC_STATUS=PASS_LOCAL
-LIVE_GLTF_LOAD_STATUS=PASS_LOCAL
+RUNTIME_SYNC_STATUS=PASS_PUBLIC_HTTP
+LIVE_GLTF_LOAD_STATUS=PASS_PUBLIC_HTTP
 SOURCE_LABEL_STATUS=PASS
 LIVE_LIGHTING_IMPROVEMENT=YES
 LIVE_MATCHES_BLENDER_D5=NO
-PUBLIC_DEPLOYMENT_VERIFIED=NO
+PUBLIC_DEPLOYMENT_VERIFIED=YES_HTTP
+PUBLIC_BROWSER_VISUAL_RELEASE=V18-LIVE-SYNC-2
+FINAL_PUBLIC_RELEASE=V18-LIVE-SYNC-3
 OVERALL_REALISM_STATUS=PARTIAL
 ```
 
-## Preuve navigateur finale
+## Preuves navigateur et publication finale
 
-Preuve principale : `../validation/live-browser-validation.json`, complétée par un contrôle Chrome/Playwright/CDP du 15 août 2026 sur `http://127.0.0.1:8896/`.
+La preuve visuelle/console principale est `../validation/live-browser-validation.json`, issue du vrai viewer Web `V18-LIVE-SYNC-2` sur `http://127.0.0.1:8896/`. Le dernier changement `V18-LIVE-SYNC-3` propage uniquement le toggle mobilier aux enfants de deux fauteuils multi-primitives et renouvelle la clé de cache; il ne modifie ni modèle, ni matériaux, ni caméra, ni éclairage, ni pixels des trois captures.
+
+La release publique finale `V18-LIVE-SYNC-3` a été vérifiée séparément par lecture HTTP de ses cinq pages, huit ressources runtime et du GLB complet, puis par hash et parsing glTF. Cette distinction évite d'attribuer une preuve navigateur release 2 à la release 3.
 
 | Route | HTTP | Version/release | Modèle | État | Provenance affichée |
 |---|---:|---|---|---|---|
@@ -28,7 +32,9 @@ Preuve principale : `../validation/live-browser-validation.json`, complétée pa
 | `/rapide/` | 200 | `V18` / `V18-LIVE-SYNC-3` | galerie statique | 9 images décodées | 9 × `SOURCE = BLENDER` |
 | `/gpt/` | 200 | `V18` / `V18-LIVE-SYNC-3` | page statique dédiée | URL conservée | pas de faux libellé live |
 
-Résultat réseau local : 5 navigations HTTP 200, aucune réponse observée hors 200, aucune image cassée, aucune erreur console d’origine page, aucun service worker et aucune clé Cache Storage. Les seuls messages supplémentaires provenaient de l’extension Chrome `mv-walker`, pas de la maison.
+Résultat navigateur release 2 : 5 navigations HTTP 200, aucune réponse observée hors 200, aucune image cassée, aucune erreur console d’origine page, aucun service worker et aucune clé Cache Storage. Les seuls messages supplémentaires provenaient de l’extension Chrome `mv-walker`, pas de la maison.
+
+Résultat public final release 3 : `V18_RUNTIME_VALIDATION=PASS pages=5 http_200=14 ... model_bytes=27987896 ... embedded_images=37 external_images=0 furniture_nodes=167 furniture_runtime_meshes=169`.
 
 ## Chaîne runtime réellement utilisée
 
@@ -87,7 +93,7 @@ shadows=PCFSoft-2048
 6. **Végétation Web légère.** Les quatre arbres et dix-huit haies utilisent des silhouettes low-poly et deux JPEG 256² base-color-only, sans alpha, normale ou roughness.
 7. **Mobilier mixte.** Douze nœuds détaillés/sourcés Poly Haven représentent 60,3 % des triangles, mais 495 nœuds partagent une topologie répétée de 188 triangles, ce qui conserve un aspect procédural/bloc sur plusieurs meubles.
 8. **Qualité mobile volontairement réduite.** Ombres coupées et pixel ratio plafonné à 1,1 ; les textures restent présentes, mais la profondeur baisse.
-9. **Validation publique restante.** La preuve finale ci-dessus est locale sur le worktree `V18-LIVE-SYNC-3`. Elle ne démontre pas encore que le déploiement GitHub Pages/public sert exactement ces octets.
+9. **Preuve navigateur segmentée.** Les captures et la console proviennent de la release 2; l'identité publique finale release 3 est prouvée par HTTP, hash du GLB, parsing glTF et syntaxe des modules. Le correctif release 3 ne change pas le rendu visuel.
 
 ## Lecture des trois vues
 

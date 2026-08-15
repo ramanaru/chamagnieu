@@ -9,7 +9,7 @@ Configuration centrale : `shared/project-config.json`
 
 | Champ | Valeur vérifiée |
 |---|---|
-| `PUBLIC_REPO_VERSION` | `V18-LIVE-SYNC-3` — dépôt `ramanaru/chamagnieu`, publication finale contrôlée après push |
+| `PUBLIC_REPO_VERSION` | `V18-LIVE-SYNC-3` — commit publié `fbe3696b6db32710c0036890cbef70d34b6ef1bd` |
 | `LIVE_VIEWER_VERSION` | `V18` sur `/presentation/` et `/visite/`; les cinq pages lisent la même configuration |
 | `LIVE_GLB` | `shared/Chamagnieu_V18_REALISM_FINAL.glb?release=v18-live-sync-3` |
 | `LIVE_TEXTURES` | 56 objets glTF; 55 référencés; 37 images JPEG, toutes embarquées dans le BIN; 0 chemin externe |
@@ -18,7 +18,7 @@ Configuration centrale : `shared/project-config.json`
 | `LIVE_FURNITURE` | 167 nœuds glTF nommés, développés en 169 meshes runtime et tous contrôlés par le bouton; 12 assets détaillés à provenance Poly Haven, reste majoritairement procédural |
 | `LIVE_LIGHTING` | IBL procédurale PMREM, tone mapping ACES Filmic, exposition 0,92, Hemisphere 0,72, Ambient 0,06, Directional 2,4, fill 0,22, ombres desktop 2048 |
 | `CACHE_STATUS` | `PASS` — modèle au nom versionné, query `release=v18-live-sync-3`, configuration fetchée avec `cache: no-store`, aucun service worker ni Cache Storage |
-| `CONSOLE_STATUS` | `PASS` — aucune erreur/alerte durant le parcours final des cinq pages |
+| `CONSOLE_STATUS` | `PASS` sur le parcours navigateur live release 2; le correctif release 3 limité au toggle mobilier passe syntaxe et classification structurelle |
 | `NETWORK_STATUS` | `PASS` — modèle, scripts, JSON, images de pages et 37 blobs d’images GLB chargés; aucun `loadingFailed`, 404 ou CORS |
 | `PRESENTATION_MATCH` | `PARTIAL` — même géométrie V18 et mêmes textures intégrées, mais éclairage Web, végétation low-poly et géométrie procédurale diffèrent des rendus Blender |
 | `FINAL_STATUS` | `PARTIAL` — la synchronisation technique est corrigée; la fidélité photoréaliste aux images de galerie n’est pas totale |
@@ -42,7 +42,7 @@ Les deux fichiers sont byte-identiques. Le nouveau nom rend la version réelleme
 | `/rapide/` | `V18 / V18-LIVE-SYNC-3` | galerie | aucun GLB | neuf badges `SOURCE = BLENDER` | PASS |
 | `/gpt/` | `V18 / V18-LIVE-SYNC-3` | page statique lisible | lien vers le GLB live | politique de source explicitée | PASS |
 
-Preuve machine : `validation/live-browser-validation.json`.
+Preuves machine : `validation/live-browser-validation.json` pour le parcours visuel/console release 2 et `validation/verify_v18_runtime.py` pour les cinq routes et les octets publics release 3. Le passage release 3 ne modifie aucun réglage visuel; il propage le toggle aux enfants de deux nodes multi-primitives et change la clé de cache.
 
 ## Textures et HTTP
 
@@ -86,10 +86,12 @@ Le GLB contient 167 nœuds classés mobilier. `V11_LIVING_ARMCHAIR` et `V12_LIVI
 
 ## Sources des captures
 
-- `validation/live-v18-facade.png` — `SOURCE = LIVE WEB VIEWER`
-- `validation/live-v18-garden.png` — `SOURCE = LIVE WEB VIEWER`
-- `validation/live-v18-interior.png` — `SOURCE = LIVE WEB VIEWER`
+- `validation/live-v18-facade.png` — `SOURCE = LIVE WEB VIEWER`, capture release 2
+- `validation/live-v18-garden.png` — `SOURCE = LIVE WEB VIEWER`, capture release 2
+- `validation/live-v18-interior.png` — `SOURCE = LIVE WEB VIEWER`, capture release 2
 - `audit/presentation-vs-live/reference-vs-live-*.png` — panneaux explicitement séparés `SOURCE = BLENDER` et `SOURCE = LIVE WEB VIEWER`
+
+La release publique 3 sert le même GLB, le même pipeline de matériaux et le même éclairage que ces captures; son unique changement visuel potentiel est la disparition correcte des enfants de fauteuils lorsque l'utilisateur clique « Masquer les meubles ».
 
 ## Verdict littéral
 

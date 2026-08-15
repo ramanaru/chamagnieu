@@ -203,3 +203,13 @@ REALISM_VERDICT=PARTIAL
 REALISM_REASON=Runtime/version/source synchronization is verified locally, but the live scene still does not reproduce Blender/D5 fidelity: procedural IBL instead of photographic HDRI, 15/35 factor-only materials, no AO/emissive textures, low-poly vegetation and simplified geometry remain.
 PUBLIC_DEPLOYMENT_VERIFIED=NO
 MODIFIED_FINAL_STATUS=PARTIAL
+=== FINAL PUBLIC COMPLEMENT — V18-LIVE-SYNC-3 ===
+FINAL_PUBLIC_COMMIT=fbe3696b6db32710c0036890cbef70d34b6ef1bd
+FINAL_PUBLIC_URL=https://ramanaru.github.io/chamagnieu/
+FINAL_PUBLIC_BROWSER_CONSOLE_CAPTURE=NOT_RELABELED
+VISUAL_AND_CONSOLE_EVIDENCE_RELEASE=V18-LIVE-SYNC-2
+FINAL_RELEASE_CHANGE=cache_key_and_furniture_descendant_classification_only
+FINAL_MODULE_SYNTAX=PASS files=5 failed=0
+FINAL_FURNITURE_STATIC_CLASSIFICATION=PASS named_nodes=167 runtime_meshes=169 multi_primitive_nodes=2 inherited_child_classification=true
+FINAL_PUBLIC_HTTP_RUNTIME=PASS pages=5 http_200=14 model_sha256=79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28
+FINAL_CONSOLE_EVIDENCE_STATUS=PASS_ON_LIVE_RELEASE_2_WITH_RELEASE_3_STATIC_COMPLEMENT
