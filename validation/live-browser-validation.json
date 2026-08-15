@@ -1,0 +1,99 @@
+[
+  {
+    "path": "/",
+    "state": {
+      "badImages": [],
+      "projectRelease": "V18-LIVE-SYNC-2",
+      "projectVersion": "V18",
+      "sourceLabels": [
+        "SOURCE = BLENDER",
+        "SOURCE = BLENDER"
+      ],
+      "title": "Maison de Chamagnieu V18 — source Web vérifiée",
+      "viewerModel": null,
+      "viewerReady": null,
+      "viewerRelease": null,
+      "viewerVersion": null
+    },
+    "logs": [],
+    "url": "http://127.0.0.1:8896/"
+  },
+  {
+    "path": "/presentation/",
+    "state": {
+      "badImages": [],
+      "projectRelease": "V18-LIVE-SYNC-2",
+      "projectVersion": "V18",
+      "sourceLabels": [
+        "SOURCE = LIVE WEB VIEWER"
+      ],
+      "title": "Chamagnieu V18 — Toiture, sols et textures corrigés",
+      "viewerModel": "Chamagnieu_V18_REALISM_FINAL.glb",
+      "viewerReady": "true",
+      "viewerRelease": "V18-LIVE-SYNC-2",
+      "viewerVersion": "V18"
+    },
+    "logs": [],
+    "url": "http://127.0.0.1:8896/presentation/"
+  },
+  {
+    "path": "/visite/",
+    "state": {
+      "badImages": [],
+      "projectRelease": "V18-LIVE-SYNC-2",
+      "projectVersion": "V18",
+      "sourceLabels": [
+        "SOURCE = LIVE WEB VIEWER"
+      ],
+      "title": "Chamagnieu V18 — Visite extérieure et intérieure",
+      "viewerModel": "Chamagnieu_V18_REALISM_FINAL.glb",
+      "viewerReady": "true",
+      "viewerRelease": "V18-LIVE-SYNC-2",
+      "viewerVersion": "V18"
+    },
+    "logs": [],
+    "url": "http://127.0.0.1:8896/visite/"
+  },
+  {
+    "path": "/rapide/",
+    "state": {
+      "badImages": [],
+      "projectRelease": "V18-LIVE-SYNC-2",
+      "projectVersion": "V18",
+      "sourceLabels": [
+        "SOURCE = BLENDER",
+        "SOURCE = BLENDER",
+        "SOURCE = BLENDER",
+        "SOURCE = BLENDER",
+        "SOURCE = BLENDER",
+        "SOURCE = BLENDER",
+        "SOURCE = BLENDER",
+        "SOURCE = BLENDER",
+        "SOURCE = BLENDER"
+      ],
+      "title": "Chamagnieu V18 — Galerie Blender sourcée",
+      "viewerModel": null,
+      "viewerReady": null,
+      "viewerRelease": null,
+      "viewerVersion": null
+    },
+    "logs": [],
+    "url": "http://127.0.0.1:8896/rapide/"
+  },
+  {
+    "path": "/gpt/",
+    "state": {
+      "badImages": [],
+      "projectRelease": "V18-LIVE-SYNC-2",
+      "projectVersion": "V18",
+      "sourceLabels": [],
+      "title": "Maison de Chamagnieu V18 — accès GPT",
+      "viewerModel": null,
+      "viewerReady": null,
+      "viewerRelease": null,
+      "viewerVersion": null
+    },
+    "logs": [],
+    "url": "http://127.0.0.1:8896/gpt/"
+  }
+]

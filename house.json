@@ -1,5 +1,5 @@
 {
-  "version": "V18-GITHUB-1",
+  "version": "V18",
   "name": "Maison neuve de Chamagnieu — logement 6",
   "updated": "2026-08-15",
   "language": "fr",
@@ -30,9 +30,9 @@
       }
     ],
     "model": {
-      "title": "Modèle 3D V18 GLB",
-      "url": "https://raw.githubusercontent.com/ramanaru/chamagnieu/main/shared/Chamagnieu_V18_ROOF_GROUND_REALISM.glb",
-      "repository_path": "shared/Chamagnieu_V18_ROOF_GROUND_REALISM.glb",
+      "title": "Modèle Web V18 REALISM FINAL",
+      "url": "https://raw.githubusercontent.com/ramanaru/chamagnieu/main/shared/Chamagnieu_V18_REALISM_FINAL.glb",
+      "repository_path": "shared/Chamagnieu_V18_REALISM_FINAL.glb",
       "bytes": 27987896,
       "sha256": "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28"
     }
@@ -41,5 +41,12 @@
     "presentation": "https://ramanaru.github.io/chamagnieu/presentation/",
     "visit_from_outside": "https://ramanaru.github.io/chamagnieu/visite/",
     "instant_gallery": "https://ramanaru.github.io/chamagnieu/rapide/"
-  }
+  },
+  "release": "V18-LIVE-SYNC-3",
+  "source_policy": {
+    "interactive": "LIVE WEB VIEWER",
+    "gallery": "BLENDER",
+    "d5": "not used in this release"
+  },
+  "central_config": "shared/project-config.json"
 }

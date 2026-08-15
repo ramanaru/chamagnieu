@@ -1,0 +1,205 @@
+CHAMAGNIEU V18 LIVE SYNC — AUDIT BROWSER BASELINE
+AUDIT_TIMESTAMP=2026-08-15T18:52:28.457Z
+AUDIT_URL_BASE=http://127.0.0.1:8901/
+AUDIT_BROWSER=Codex In-app Browser (Chromium) via Playwright + CDP read-only
+SERVER_ROOT=C:\Users\jonat\Documents\Codex\2026-08-14\files-mentioned-by-the-user-c\outputs\Chamagnieu_3D_V18_LIVE_SYNC
+
+SUMMARY
+PAGES_AUDITED=/, /presentation/, /visite/, /rapide/, /gpt/
+PAGE_COUNT=5
+BROWSER_CONSOLE_LOG_COUNT=0
+BROWSER_FAILURE_COUNT=0
+SERVICE_WORKER_REGISTRATIONS=0
+CACHE_STORAGE_KEYS=
+CACHE_STORAGE_KEYS_COUNT=0
+
+PRIMARY_FINDING=PRESENTATION_AND_VISITE_DO_NOT_USE_THE_SAME_RUNTIME_PIPELINE
+PRESENTATION_MODEL_URL=http://127.0.0.1:8901/shared/Chamagnieu_V18_ROOF_GROUND_REALISM.glb?v=18a
+VISITE_MODEL_URL=http://127.0.0.1:8901/shared/Chamagnieu_V18_REALISM_FINAL.glb?release=v18-live-sync-1
+PRESENTATION_LOADS_PROJECT_CONFIG=false
+PRESENTATION_LOADS_LIVE_REALISM=false
+VISITE_LOADS_PROJECT_CONFIG=true
+VISITE_LOADS_LIVE_REALISM=true
+GLB_PRESENTATION_BYTES=27987896
+GLB_PRESENTATION_SHA256=79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28
+GLB_VISITE_BYTES=27987896
+GLB_VISITE_SHA256=79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28
+GLB_BINARY_CONTENT_IDENTICAL=true
+DIAGNOSIS=The binary GLB is identical under two filenames, but /presentation/ uses its own legacy lighting/material runtime while /visite/ loads project-config.js, project-config.json and live-realism.js. Therefore the visual mismatch is caused by divergent runtime configuration, not by a different GLB payload.
+SECONDARY_FINDING=/rapide/ DOM title is still 'Chamagnieu V16 — Galerie instantanée' while its H1 says V18.
+GPT_BEHAVIOR=/gpt/ meta-refreshes to /; observed final URL http://127.0.0.1:8901/
+VISUAL_BASELINE=Facade, garden and interior screenshots show the current /presentation/ output: washed/pale ground and interior surfaces, coarse rounded tree/hedge silhouettes, and flatter lighting/material response than the reference renders.
+
+PAGE=root
+REQUESTED_URL=http://127.0.0.1:8901/
+OBSERVED_URL=http://127.0.0.1:8901/
+TITLE=Maison de Chamagnieu V18
+VIEWER_READY=false
+VIEWER_VERSION=null
+VIEWER_FAILED=false
+VIEWER_ERROR=
+LAST_PRESET=
+STATUS=
+SERVICE_WORKERS=[]
+CACHE_KEYS=[]
+SW_CONTROLLER=
+CANVAS=[]
+IMAGES=[{"complete":true,"naturalHeight":720,"naturalWidth":960,"src":"http://127.0.0.1:8901/images/v18-facade-roof-ground.webp"},{"complete":true,"naturalHeight":720,"naturalWidth":960,"src":"http://127.0.0.1:8901/images/v18-jardin-textures.webp"}]
+LOADED 200 navigation http://127.0.0.1:8901/ bytes=5089 duration_ms=141
+LOADED 200 img http://127.0.0.1:8901/images/v18-facade-roof-ground.webp bytes=73898 transfer=300 duration_ms=38
+LOADED 200 img http://127.0.0.1:8901/images/v18-jardin-textures.webp bytes=60108 transfer=300 duration_ms=37
+CONSOLE=(none)
+
+PAGE=presentation
+REQUESTED_URL=http://127.0.0.1:8901/presentation/
+OBSERVED_URL=http://127.0.0.1:8901/presentation/
+TITLE=Chamagnieu V18 — Toiture, sols et textures corrigés
+VIEWER_READY=true
+VIEWER_VERSION=V18
+VIEWER_FAILED=false
+VIEWER_ERROR=
+LAST_PRESET=
+STATUS=Façade et toiture en tuiles PBR restaurées
+SERVICE_WORKERS=[]
+CACHE_KEYS=[]
+SW_CONTROLLER=
+CANVAS=[{"clientHeight":720,"clientWidth":1280,"height":1152,"width":2048}]
+IMAGES=[]
+LOADED 200 navigation http://127.0.0.1:8901/presentation/ bytes=1523 duration_ms=442
+LOADED 200 link http://127.0.0.1:8901/shared/viewer.css?v=18a bytes=4157 transfer=4457 duration_ms=29
+LOADED 200 script http://127.0.0.1:8901/presentation/presentation.js?v=18a bytes=4746 transfer=5046 duration_ms=34
+LOADED 200 css http://127.0.0.1:8901/shared/preview.webp bytes=13724 transfer=14024 duration_ms=16
+LOADED 200 script http://127.0.0.1:8901/shared/vendor/three.module.js bytes=621665 transfer=621965 duration_ms=78
+LOADED 200 script http://127.0.0.1:8901/shared/vendor/addons/controls/OrbitControls.js bytes=40563 transfer=40863 duration_ms=31
+LOADED 200 script http://127.0.0.1:8901/shared/vendor/addons/loaders/GLTFLoader.js bytes=119535 transfer=119835 duration_ms=42
+LOADED 200 script http://127.0.0.1:8901/shared/vendor/addons/utils/BufferGeometryUtils.js bytes=36973 transfer=37273 duration_ms=20
+LOADED 200 script http://127.0.0.1:8901/shared/vendor/three.core.js bytes=1460002 transfer=1460302 duration_ms=138
+LOADED 200 fetch http://127.0.0.1:8901/shared/Chamagnieu_V18_ROOF_GROUND_REALISM.glb?v=18a bytes=27987896 transfer=27988196 duration_ms=233
+CONSOLE=(none)
+
+PAGE=visite
+REQUESTED_URL=http://127.0.0.1:8901/visite/
+OBSERVED_URL=http://127.0.0.1:8901/visite/
+TITLE=Chamagnieu V18 — Visite extérieure et intérieure
+VIEWER_READY=true
+VIEWER_VERSION=V18
+VIEWER_FAILED=false
+VIEWER_ERROR=
+LAST_PRESET=outside
+STATUS=Départ extérieur — avancez vers la porte pour entrer · SOURCE = LIVE WEB VIEWER
+SERVICE_WORKERS=[]
+CACHE_KEYS=[]
+SW_CONTROLLER=
+CANVAS=[{"clientHeight":720,"clientWidth":1280,"height":1152,"width":2048}]
+IMAGES=[]
+LOADED 200 navigation http://127.0.0.1:8901/visite/ bytes=1826 duration_ms=318
+LOADED 200 link http://127.0.0.1:8901/shared/viewer.css?v=18a bytes=0 transfer=300 duration_ms=29
+LOADED 200 script http://127.0.0.1:8901/visite/visite.js?v=18a bytes=7971 transfer=8271 duration_ms=47
+LOADED 200 css http://127.0.0.1:8901/shared/preview.webp bytes=13724 transfer=0 duration_ms=0
+LOADED 200 script http://127.0.0.1:8901/shared/vendor/three.module.js bytes=0 transfer=300 duration_ms=34
+LOADED 200 script http://127.0.0.1:8901/shared/vendor/addons/controls/PointerLockControls.js bytes=6345 transfer=6645 duration_ms=31
+LOADED 200 script http://127.0.0.1:8901/shared/vendor/addons/loaders/GLTFLoader.js bytes=0 transfer=300 duration_ms=36
+LOADED 200 script http://127.0.0.1:8901/shared/project-config.js bytes=1329 transfer=1629 duration_ms=48
+LOADED 200 script http://127.0.0.1:8901/shared/live-realism.js bytes=3932 transfer=4232 duration_ms=45
+LOADED 200 script http://127.0.0.1:8901/shared/vendor/three.core.js bytes=0 transfer=300 duration_ms=28
+LOADED 200 script http://127.0.0.1:8901/shared/vendor/addons/utils/BufferGeometryUtils.js bytes=0 transfer=300 duration_ms=33
+LOADED 200 fetch http://127.0.0.1:8901/shared/project-config.json bytes=963 transfer=1263 duration_ms=15
+LOADED 200 fetch http://127.0.0.1:8901/shared/Chamagnieu_V18_REALISM_FINAL.glb?release=v18-live-sync-1 bytes=27987896 transfer=27988196 duration_ms=355
+CONSOLE=(none)
+
+PAGE=rapide
+REQUESTED_URL=http://127.0.0.1:8901/rapide/
+OBSERVED_URL=http://127.0.0.1:8901/rapide/
+TITLE=Chamagnieu V16 — Galerie instantanée
+VIEWER_READY=false
+VIEWER_VERSION=null
+VIEWER_FAILED=false
+VIEWER_ERROR=
+LAST_PRESET=
+STATUS=
+SERVICE_WORKERS=[]
+CACHE_KEYS=[]
+SW_CONTROLLER=
+CANVAS=[]
+IMAGES=[{"complete":true,"naturalHeight":720,"naturalWidth":960,"src":"http://127.0.0.1:8901/shared/gallery/v18-facade-roof-ground.webp?v=18a"},{"complete":true,"naturalHeight":720,"naturalWidth":960,"src":"http://127.0.0.1:8901/shared/gallery/v18-jardin-textures.webp?v=18a"},{"complete":true,"naturalHeight":720,"naturalWidth":960,"src":"http://127.0.0.1:8901/shared/gallery/cuisine.webp?v=18a"},{"complete":true,"naturalHeight":720,"naturalWidth":960,"src":"http://127.0.0.1:8901/shared/gallery/salle-a-manger.webp?v=18a"},{"complete":true,"naturalHeight":720,"naturalWidth":960,"src":"http://127.0.0.1:8901/shared/gallery/salon.webp?v=18a"},{"complete":true,"naturalHeight":720,"naturalWidth":960,"src":"http://127.0.0.1:8901/shared/gallery/chambre.webp?v=18a"},{"complete":true,"naturalHeight":720,"naturalWidth":960,"src":"http://127.0.0.1:8901/shared/gallery/chambre-2.webp?v=18a"},{"complete":true,"naturalHeight":720,"naturalWidth":960,"src":"http://127.0.0.1:8901/shared/gallery/sdb.webp?v=18a"},{"complete":true,"naturalHeight":720,"naturalWidth":960,"src":"http://127.0.0.1:8901/shared/gallery/facade.webp?v=18a"}]
+LOADED 200 navigation http://127.0.0.1:8901/rapide/ bytes=4111 duration_ms=190
+LOADED 200 img http://127.0.0.1:8901/shared/gallery/v18-facade-roof-ground.webp?v=18a bytes=73898 transfer=74198 duration_ms=71
+LOADED 200 img http://127.0.0.1:8901/shared/gallery/v18-jardin-textures.webp?v=18a bytes=60108 transfer=60408 duration_ms=78
+LOADED 200 img http://127.0.0.1:8901/shared/gallery/cuisine.webp?v=18a bytes=20192 transfer=20492 duration_ms=81
+LOADED 200 img http://127.0.0.1:8901/shared/gallery/salon.webp?v=18a bytes=14544 transfer=14844 duration_ms=77
+LOADED 200 img http://127.0.0.1:8901/shared/gallery/salle-a-manger.webp?v=18a bytes=21136 transfer=21436 duration_ms=82
+LOADED 200 img http://127.0.0.1:8901/shared/gallery/chambre.webp?v=18a bytes=14842 transfer=15142 duration_ms=108
+LOADED 200 img http://127.0.0.1:8901/shared/gallery/sdb.webp?v=18a bytes=8012 transfer=8312 duration_ms=114
+LOADED 200 img http://127.0.0.1:8901/shared/gallery/chambre-2.webp?v=18a bytes=15590 transfer=15890 duration_ms=114
+LOADED 200 img http://127.0.0.1:8901/shared/gallery/facade.webp?v=18a bytes=52772 transfer=53072 duration_ms=133
+CONSOLE=(none)
+
+PAGE=gpt
+REQUESTED_URL=http://127.0.0.1:8901/gpt/
+OBSERVED_URL=http://127.0.0.1:8901/
+TITLE=Maison de Chamagnieu V18
+VIEWER_READY=false
+VIEWER_VERSION=null
+VIEWER_FAILED=false
+VIEWER_ERROR=
+LAST_PRESET=
+STATUS=
+SERVICE_WORKERS=[]
+CACHE_KEYS=[]
+SW_CONTROLLER=
+CANVAS=[]
+IMAGES=[{"complete":true,"naturalHeight":720,"naturalWidth":960,"src":"http://127.0.0.1:8901/images/v18-facade-roof-ground.webp"},{"complete":true,"naturalHeight":720,"naturalWidth":960,"src":"http://127.0.0.1:8901/images/v18-jardin-textures.webp"}]
+LOADED 200 navigation http://127.0.0.1:8901/ bytes=5089 duration_ms=141
+LOADED 200 img http://127.0.0.1:8901/images/v18-facade-roof-ground.webp bytes=73898 transfer=300 duration_ms=38
+LOADED 200 img http://127.0.0.1:8901/images/v18-jardin-textures.webp bytes=60108 transfer=300 duration_ms=37
+CONSOLE=(none)
+
+BASELINE_SCREENSHOTS
+FACADE=C:/Users/jonat/Documents/Codex/2026-08-14/files-mentioned-by-the-user-c/outputs/Chamagnieu_3D_V18_LIVE_SYNC/audit/presentation-vs-live/before-facade.png
+JARDIN=C:/Users/jonat/Documents/Codex/2026-08-14/files-mentioned-by-the-user-c/outputs/Chamagnieu_3D_V18_LIVE_SYNC/audit/presentation-vs-live/before-jardin.png
+INTERIEUR=C:/Users/jonat/Documents/Codex/2026-08-14/files-mentioned-by-the-user-c/outputs/Chamagnieu_3D_V18_LIVE_SYNC/audit/presentation-vs-live/before-interieur.png
+FACADE_STATUS=Façade et toiture en tuiles PBR restaurées
+JARDIN_STATUS=Jardin V18 · arbres, haies, pelouse et terrasse restaurés
+INTERIEUR_STATUS=Séjour et mobilier PBR à échelle réelle
+=== MODIFIED FINAL — V18-LIVE-SYNC-2 ===
+MODIFIED_FINAL_TIMESTAMP=2026-08-15T19:13:53Z
+TEST_SURFACE=Chrome Chromium + Browser Playwright + CDP Runtime.evaluate (read-only)
+TEST_BASE_URL=http://127.0.0.1:8896/
+EVIDENCE_EXISTING=validation/live-browser-validation.json
+EVIDENCE_FRESH=browser test of /, /presentation/, /visite/, /rapide/, /gpt/
+ROUTES_TESTED=5
+ROUTE_HTTP_STATUS=/=200;/presentation/=200;/visite/=200;/rapide/=200;/gpt/=200
+NON_200_NAVIGATION_OR_RESOURCE_RESPONSES=0
+BROKEN_IMAGES=0
+PAGE_ORIGIN_CONSOLE_ERRORS=0
+EXTENSION_LOGS_IGNORED=9 ([mv-walker-cs] from chrome-extension://kgimjoefggdlaiaoegockphnfdnhomok/contentBridge.js)
+SERVICE_WORKER_REGISTRATIONS=0
+CACHE_STORAGE_KEYS=0
+PROJECT_VERSION=V18
+PROJECT_RELEASE=V18-LIVE-SYNC-2
+PRESENTATION_VIEWER_READY=true
+VISITE_VIEWER_READY=true
+PRESENTATION_MODEL=Chamagnieu_V18_REALISM_FINAL.glb
+VISITE_MODEL=Chamagnieu_V18_REALISM_FINAL.glb
+VIEWER_MODEL_SYNC=PASS
+PRESENTATION_SOURCE_LABEL=SOURCE = LIVE WEB VIEWER
+VISITE_SOURCE_LABEL=SOURCE = LIVE WEB VIEWER
+ROOT_STATIC_IMAGE_SOURCE_LABELS=2 x SOURCE = BLENDER
+RAPIDE_STATIC_IMAGE_SOURCE_LABELS=9 x SOURCE = BLENDER
+RAPIDE_TITLE=Chamagnieu V18 — Galerie Blender sourcée
+GPT_TITLE=Maison de Chamagnieu V18 — accès GPT
+GPT_OBSERVED_URL=http://127.0.0.1:8896/gpt/
+PRESENTATION_GLTF_URL=http://127.0.0.1:8896/shared/Chamagnieu_V18_REALISM_FINAL.glb?release=v18-live-sync-2
+VISITE_GLTF_URL=http://127.0.0.1:8896/shared/Chamagnieu_V18_REALISM_FINAL.glb?release=v18-live-sync-2
+GLB_HTTP_STATUS=200
+GLB_DECODED_BYTES=27987896
+GLB_SHA256_EXPECTED=79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28
+PRESENTATION_RUNTIME=project-config.js + project-config.json + live-realism.js
+VISITE_RUNTIME=project-config.js + project-config.json + live-realism.js
+MATERIAL_AUDIT_PRESENTATION=meshes:795;uniqueMaterials:35;uniqueTextures:71;texturedMaterialBindings:501;anisotropy:8;environment:procedural PMREM IBL;shadows:PCFSoft-2048
+MATERIAL_AUDIT_VISITE=meshes:795;uniqueMaterials:35;uniqueTextures:71;texturedMaterialBindings:501;anisotropy:8;environment:procedural PMREM IBL;shadows:PCFSoft-2048
+LITERAL_BROWSER_RESULT=MODIFIED_FINAL_BROWSER_RESULT=PASS_LOCAL routes=5 http_200=5 non_200=0 broken_images=0 page_console_errors=0 viewer_ready=2/2 model_sync=true release=V18-LIVE-SYNC-2 sw=0 cache_keys=0
+REALISM_VERDICT=PARTIAL
+REALISM_REASON=Runtime/version/source synchronization is verified locally, but the live scene still does not reproduce Blender/D5 fidelity: procedural IBL instead of photographic HDRI, 15/35 factor-only materials, no AO/emissive textures, low-poly vegetation and simplified geometry remain.
+PUBLIC_DEPLOYMENT_VERIFIED=NO
+MODIFIED_FINAL_STATUS=PARTIAL

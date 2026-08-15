@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "version": "V18",
+  "release": "V18-LIVE-SYNC-3",
+  "cacheKey": "v18-live-sync-3",
+  "model": "./Chamagnieu_V18_REALISM_FINAL.glb",
+  "modelSha256": "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28",
+  "modelBytes": 27987896,
+  "houseData": "../house.json",
+  "viewerSource": "LIVE WEB VIEWER",
+  "gallerySource": "BLENDER",
+  "materials": {
+    "embedded": true,
+    "externalTextureCount": 0,
+    "runtimeTuning": "shared/live-realism.js"
+  },
+  "assets": {
+    "trees": 4,
+    "hedges": 18,
+    "outdoorDiningNodes": 0
+  },
+  "lighting": {
+    "environment": "procedural PMREM IBL",
+    "toneMapping": "ACESFilmic",
+    "exposure": 0.92,
+    "hemisphereIntensity": 0.72,
+    "ambientIntensity": 0.06,
+    "directionalIntensity": 2.4,
+    "shadows": "desktop",
+    "fillIntensity": 0.22,
+    "environmentIntensity": 0.55
+  },
+  "presentationImages": [
+    "./gallery/v18-facade-roof-ground.webp",
+    "./gallery/v18-jardin-textures.webp"
+  ]
+}

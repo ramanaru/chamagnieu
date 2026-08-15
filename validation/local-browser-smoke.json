@@ -1,0 +1,82 @@
+[
+  {
+    "path": "/",
+    "http": 200,
+    "state": {
+      "configReady": true,
+      "configFailed": false,
+      "version": "V18",
+      "release": "V18-LIVE-SYNC-1"
+    },
+    "console": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "title": "Maison de Chamagnieu V18 — source Web vérifiée"
+  },
+  {
+    "path": "/rapide/",
+    "http": 200,
+    "state": {
+      "configReady": true,
+      "configFailed": false,
+      "version": "V18",
+      "release": "V18-LIVE-SYNC-1"
+    },
+    "console": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "title": "Chamagnieu V18 — Galerie Blender sourcée"
+  },
+  {
+    "path": "/gpt/",
+    "http": 200,
+    "state": {
+      "configReady": true,
+      "configFailed": false,
+      "version": "V18",
+      "release": "V18-LIVE-SYNC-1"
+    },
+    "console": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "title": "Maison de Chamagnieu V18 — accès GPT"
+  },
+  {
+    "path": "/presentation/",
+    "http": 200,
+    "state": {
+      "ready": false,
+      "failed": false,
+      "error": null,
+      "version": null,
+      "release": null,
+      "model": null,
+      "source": null,
+      "materials": null,
+      "config": null
+    },
+    "console": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "title": "Chamagnieu V18 — Toiture, sols et textures corrigés"
+  },
+  {
+    "path": "/visite/",
+    "http": 200,
+    "state": {
+      "ready": false,
+      "failed": false,
+      "error": null,
+      "version": null,
+      "release": null,
+      "model": null,
+      "source": null,
+      "materials": null,
+      "config": null
+    },
+    "console": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "title": "Chamagnieu V18 — Visite extérieure et intérieure"
+  }
+]
