@@ -73,16 +73,13 @@ Le détail des 37 images, de leur taille, de leur hash court et des matériaux c
 
 ## Mobilier et contrôle de visibilité
 
-Le correctif de bouton inclut désormais les préfixes historiques `V11_` et `V12_`. Le test live donne :
+Le correctif de bouton inclut désormais les préfixes historiques `V11_` et `V12_`. La preuve structurelle finale donne :
 
 ```text
-furnitureState count=169 ready=true visible=true
-furnitureHidden button=Afficher les meubles count=169 visible=false
-furnitureRestored button=Masquer les meubles count=169 visible=true
-result=PASS
+FURNITURE_CLASSIFIER_STATIC_RESULT=PASS named_nodes=167 runtime_meshes=169 multi_primitive_nodes=[V11_LIVING_ARMCHAIR:2,V12_LIVING_ARMCHAIR_2:2] inherited_child_classification=true
 ```
 
-Le GLB contient 167 nœuds classés mobilier. `V11_LIVING_ARMCHAIR` et `V12_LIVING_ARMCHAIR_2` ont chacun deux primitives, que `GLTFLoader` développe en quatre meshes enfants. Le flag mobilier est maintenant propagé aux enfants : les 169 meshes runtime sont masqués puis restaurés.
+Le GLB contient 167 nœuds classés mobilier. `V11_LIVING_ARMCHAIR` et `V12_LIVING_ARMCHAIR_2` ont chacun deux primitives, que `GLTFLoader` développe en quatre meshes enfants. Le flag mobilier release 3 est propagé aux enfants, soit 169 meshes sélectionnés. La séquence réelle `true > false > true` a été capturée en release 2 sur 165 meshes directs; ce rapport ne la relabellise pas en preuve navigateur release 3.
 
 ## Sources des captures
 

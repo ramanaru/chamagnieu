@@ -16,7 +16,7 @@
 - Matériaux couleur/facteur seuls : **294 primitives** et **49 876 triangles**.
 - Tous les **35 matériaux** sont `doubleSided=true`; cela réduit les trous par winding, mais peut rendre visibles des faces internes et ne remplace pas une épaisseur géométrique correcte.
 
-## Toggle mobilier live — preuve V18-LIVE-SYNC-3
+## Toggle mobilier — preuve structurelle release 3 et preuve navigateur release 2
 
 - Le classifieur final couvre les préfixes mobilier **V11 et V12** et propage `isFurnitureTree` du parent vers tous ses descendants. Le JSON glTF contient **167 nœuds nommés candidats mobilier**, totalisant **219 319 triangles**.
 - Structure statique exacte : **165 nœuds mono-primitifs** deviennent chacun un `Mesh`; `V11_LIVING_ARMCHAIR` et `V12_LIVING_ARMCHAIR_2` ont chacun **2 primitives** et deviennent chacun un `Group` avec 2 enfants `Mesh`. Le runtime contient donc **165 + 2 + 2 = 169 meshes mobilier**.
@@ -26,15 +26,15 @@
 FURNITURE_CLASSIFIER_STATIC_RESULT=PASS named_nodes=167 runtime_meshes=169 multi_primitive_nodes=[V11_LIVING_ARMCHAIR:2,V12_LIVING_ARMCHAIR_2:2] inherited_child_classification=true
 ```
 
-- Tests Chromium réels sur `/presentation/` **et** `/visite/` : chaque page expose `viewerFurnitureMeshes=169`; état initial `true`, premier clic `false`, second clic `true`; release `V18-LIVE-SYNC-3`; zéro erreur console.
+- Le dernier test Chromium effectivement capturé porte sur `V18-LIVE-SYNC-2` : `/presentation/` et `/visite/` exposaient chacun 165 meshes directs, suivaient `true > false > true` et ne produisaient aucune erreur console. Ce test a précisément révélé les deux groupes multi-primitives non propagés.
+- La release 3 corrige ce cas dans le code, passe la syntaxe des deux modules, et son parsing structurel compte 169 meshes couverts. Aucune preuve navigateur release 3 n'est attribuée à ce rapport.
 
 ```text
-TOGGLE_PATH_RESULT=PASS path=/presentation/ runtime_meshes=169 state_sequence=true>false>true release=V18-LIVE-SYNC-3 console_errors=0
-TOGGLE_PATH_RESULT=PASS path=/visite/ runtime_meshes=169 state_sequence=true>false>true release=V18-LIVE-SYNC-3 console_errors=0
-FURNITURE_TOGGLE_BROWSER_RESULT=PASS paths=2 named_nodes=167 runtime_meshes_each=169 hidden_then_restored=true release=V18-LIVE-SYNC-3 console_errors=0
+FURNITURE_TOGGLE_BROWSER_RESULT=PASS paths=2 runtime_meshes_each=165 state_sequence=true>false>true release=V18-LIVE-SYNC-2 console_errors=0
+FURNITURE_RELEASE3_STATIC_RESULT=PASS named_nodes=167 runtime_meshes=169 multi_primitive_nodes=2 inherited_child_classification=true module_syntax=true
 ```
 
-- Portée exacte : les **167 nœuds glTF nommés** produisent **169 meshes runtime**, tous classifiés dans l’arbre mobilier et effectivement cachés puis restaurés. Le toggle est complet pour ce sous-ensemble de mobilier.
+- Portée exacte release 3 : les **167 nœuds glTF nommés** produisent **169 meshes runtime**, que l’algorithme classe tous dans l’arbre mobilier. La séquence de clic réelle est prouvée sur les 165 meshes directs de release 2; la couverture des quatre enfants supplémentaires est prouvée structurellement par propagation parent→enfants.
 
 ## Tableau exhaustif des 35 matériaux
 
@@ -119,7 +119,7 @@ FURNITURE_TOGGLE_BROWSER_RESULT=PASS paths=2 named_nodes=167 runtime_meshes_each
 
 `REALISM_STATUS=PARTIAL`
 
-- **Présent et fonctionnel :** GLB unique synchronisé, 37 images embarquées, 20 matériaux texturés, anisotropie 8 sur le GPU de test, IBL PMREM, ombres desktop, 12 assets détaillés sourcés, 4 arbres et 18 haies, toggle complet vérifié sur 169 meshes runtime issus de 167 nœuds glTF nommés.
+- **Présent et fonctionnel :** GLB unique synchronisé, 37 images embarquées, 20 matériaux texturés, anisotropie 8 sur le GPU de test, IBL PMREM, ombres desktop, 12 assets détaillés sourcés, 4 arbres et 18 haies; séquence du toggle prouvée en release 2 et couverture des 169 meshes démontrée structurellement en release 3.
 - **Encore partiel :** 15 matériaux couleur-seulement, 155 nœuds de mobilier procéduraux, 495 nœuds partageant la signature 188 triangles, trois pans principaux de toiture à 6 triangles chacun, feuillages 256² opaques base-color-only, environnement Canvas plutôt que HDRI. `environmentIntensity=0.55` est déclaré dans la configuration mais n’est pas appliqué à `scene.environmentIntensity` par `setupLiveLighting()`; l’intensité effective est pilotée ici par `material.envMapIntensity` (0,90/0,55).
 - Les rendus Blender de galerie restent des références 2D distinctes; le viewer Web amélioré ne constitue pas une reproduction pixel-identique de Blender/D5.
 
