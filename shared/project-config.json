@@ -74,7 +74,7 @@
     "sizeDeltaVsSync4Bytes": -2482028
   },
   "assetPilot": {
-    "phase": "LIVE_VALIDATED_LOCAL",
+    "phase": "PUBLIC_VALIDATED",
     "architectureChanged": false,
     "visualisationOnly": true,
     "contractual": false,
@@ -127,7 +127,38 @@
       "shadowMode": "static-once-after-assets",
       "vegetationHarnessSubmitFps": 456.27,
       "iabRefreshObservedFps": 29.79,
-      "iabRefreshSchedulerNote": "hidden integrated browser is approximately 30 Hz; real Chromium/WebGL2 submit gate exceeds 30 FPS"
+      "iabRefreshSchedulerNote": "hidden integrated browser is approximately 30 Hz; real Chromium/WebGL2 submit gate exceeds 30 FPS",
+      "publicForegroundFps": null,
+      "publicFunctionalGate": "PASS",
+      "publicPerformanceGate": "INDETERMINATE_BACKGROUND_THROTTLING"
+    },
+    "publicPostflight": {
+      "runtimeCommit": "38baad2247be468be3a0c430bcb6b9a515d0bb76",
+      "validatedAtUtc": "2026-08-16T16:28:42.443Z",
+      "pagesRunId": 31958196698,
+      "pagesConclusion": "success",
+      "urls": {
+        "root": "https://ramanaru.github.io/chamagnieu/",
+        "presentation": "https://ramanaru.github.io/chamagnieu/presentation/?release=v18-asset-pilot-1",
+        "visite": "https://ramanaru.github.io/chamagnieu/visite/?release=v18-asset-pilot-1",
+        "manifest": "https://ramanaru.github.io/chamagnieu/assets_external/ASSET_MANIFEST.json",
+        "comparisons": "https://ramanaru.github.io/chamagnieu/validation/asset_pilot_screenshots/comparisons/"
+      },
+      "staticValidation": "PASS 321/321 local contract + 234/234 public postflight",
+      "runtimeAssetHashes": "PASS",
+      "presentationReady": true,
+      "visiteReady": true,
+      "presentationAssetPilot": "accepted",
+      "visiteAssetPilot": "accepted",
+      "categoriesVisible": "8/8",
+      "views": "7/7",
+      "presentationNetwork": "PASS 139/139 responses; 0 failed; 0 non-2xx",
+      "visiteNetwork": "PASS 139/139 responses; 0 failed; 0 non-2xx",
+      "consoleWarningsErrors": 0,
+      "brokenImages": 0,
+      "publicFunctionalGate": "PASS",
+      "publicForegroundFps": null,
+      "publicPerformanceGate": "INDETERMINATE_BACKGROUND_THROTTLING"
     }
   }
 }

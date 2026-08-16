@@ -4,8 +4,8 @@
   "snapshot": {
     "project": "Chamagnieu housing unit 6 — V18 asset realism pilot",
     "release": "V18-ASSET-PILOT-1",
-    "validationPhase": "LIVE_VALIDATED_LOCAL",
-    "publicPostflightIncluded": false,
+    "validationPhase": "PUBLIC_VALIDATED",
+    "publicPostflightIncluded": true,
     "baseModel": {
       "path": "shared/Chamagnieu_V18_WEB_REALISM_UPGRADED.glb",
       "bytes": 22687292,
@@ -19,6 +19,19 @@
     "sourceLabels": {
       "renderPreview": "SOURCE = BLENDER/CYCLES",
       "interactiveProof": "SOURCE = LIVE WEB VIEWER"
+    },
+    "publicPostflight": {
+      "runtimeCommit": "38baad2247be468be3a0c430bcb6b9a515d0bb76",
+      "validatedAtUtc": "2026-08-16T16:28:42.443Z",
+      "pagesRunId": 31958196698,
+      "pagesConclusion": "success",
+      "urls": {
+        "root": "https://ramanaru.github.io/chamagnieu/",
+        "presentation": "https://ramanaru.github.io/chamagnieu/presentation/?release=v18-asset-pilot-1",
+        "visite": "https://ramanaru.github.io/chamagnieu/visite/?release=v18-asset-pilot-1",
+        "manifest": "https://ramanaru.github.io/chamagnieu/assets_external/ASSET_MANIFEST.json",
+        "comparisons": "https://ramanaru.github.io/chamagnieu/validation/asset_pilot_screenshots/comparisons/"
+      }
     }
   },
   "licensePolicy": {
@@ -1662,6 +1675,27 @@
       "integratedAppBrowserRafObservedFps": 29.79,
       "integratedAppBrowserGate": "BELOW_STRICT_TARGET_BY_0.21_FPS",
       "schedulerObservation": "The integrated hidden browser refreshed at approximately 30 Hz; this is not represented as a full-viewer >=30 FPS pass."
+    },
+    "publicPostflight": {
+      "staticChecksPass": 321,
+      "staticChecksTotal": 321,
+      "publicChecksPass": 234,
+      "publicChecksTotal": 234,
+      "presentationReady": true,
+      "visiteReady": true,
+      "categoriesVisible": 8,
+      "categoriesTotal": 8,
+      "viewsPass": 7,
+      "viewsTotal": 7,
+      "presentationResponses": 139,
+      "visiteResponses": 139,
+      "failedResponses": 0,
+      "non2xxResponses": 0,
+      "consoleWarningsErrors": 0,
+      "brokenImages": 0,
+      "foregroundFps": null,
+      "functionalGate": "PASS",
+      "performanceGate": "INDETERMINATE_BACKGROUND_THROTTLING"
     }
   },
   "evidenceInputs": [
@@ -1707,7 +1741,7 @@
     }
   ],
   "knownLimits": [
-    "Public deployment/postflight is outside this LOCAL validation snapshot.",
+    "Public functional postflight passed on GitHub Pages for runtime commit 38baad2247be468be3a0c430bcb6b9a515d0bb76; foreground >=30 FPS remains unmeasured because the controlled background tab was throttled.",
     "The full integrated in-app browser rAF observation was 29.79 FPS, not a strict >=30 FPS proof; the 456.27 FPS value measures main-thread submit in the real Chromium/WebGL2 vegetation harness.",
     "Grass005 official metadata does not publish a non-zero physical tile size, so its 8x8 repeat is an empirical visual choice.",
     "The retained Island Tree 02 scores only 6/10 for suburban style match, but passed the 8/10 realism target and beat the winter candidate after A/B.",

@@ -1,0 +1,49 @@
+{
+  "schema": "CHAMAGNIEU_ASSET_PILOT_PUBLIC_POSTFLIGHT_V1",
+  "release": "V18-ASSET-PILOT-1",
+  "runtimeCommit": "38baad2247be468be3a0c430bcb6b9a515d0bb76",
+  "validatedAtUtc": "2026-08-16T16:28:42.443Z",
+  "pagesRun": {
+    "id": 31958196698,
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "urls": {
+    "root": "https://ramanaru.github.io/chamagnieu/",
+    "presentation": "https://ramanaru.github.io/chamagnieu/presentation/?release=v18-asset-pilot-1",
+    "visite": "https://ramanaru.github.io/chamagnieu/visite/?release=v18-asset-pilot-1",
+    "manifest": "https://ramanaru.github.io/chamagnieu/assets_external/ASSET_MANIFEST.json",
+    "comparisons": "https://ramanaru.github.io/chamagnieu/validation/asset_pilot_screenshots/comparisons/"
+  },
+  "static": {
+    "result": "PASS",
+    "localContract": "321/321",
+    "publicPostflight": "234/234",
+    "manifestFields": "120/120"
+  },
+  "browser": {
+    "result": "PASS_FUNCTIONAL",
+    "webgl2": true,
+    "categories": "8/8",
+    "views": "7/7",
+    "furnitureToggle": "true>false>true on presentation and visite",
+    "entryFlow": "presentation>outside>Commencer dehors>keyboard-drag-fallback>Cuisine",
+    "presentationNetwork": "139/139 HTTP responses, 0 failed/non-2xx",
+    "visiteNetwork": "139/139 HTTP responses, 0 failed/non-2xx",
+    "consoleWarningsErrors": 0,
+    "brokenImages": 0,
+    "screenshots": 9
+  },
+  "performance": {
+    "targetFps": 30,
+    "vegetationHarnessFps": 456.27,
+    "iabLocalObservedFps": 29.79,
+    "publicBackgroundObservedFps": 0.909449,
+    "publicForegroundFps": null,
+    "functionalGate": "PASS",
+    "performanceGate": "INDETERMINATE_BACKGROUND_THROTTLING",
+    "note": "Background rAF throttling is preserved as evidence and is not a foreground GPU verdict."
+  },
+  "architectureChanged": false,
+  "mainModelSha256": "9A5FD736CF5BFC4B8AF90A3B1A701C1532B83D2E6BDF0FA2C459B085B9A12B1E"
+}

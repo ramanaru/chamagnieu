@@ -1,0 +1,473 @@
+{
+  "schema": "CHAMAGNIEU_PUBLIC_ASSET_PILOT_BROWSER_AUDIT_V1",
+  "testedAt": "2026-08-16T16:28:42.443Z",
+  "result": "PASS_FUNCTIONAL",
+  "publication": {
+    "commit": "38baad2247be468be3a0c430bcb6b9a515d0bb76",
+    "remoteMain": "38baad2247be468be3a0c430bcb6b9a515d0bb76",
+    "pagesRun": {
+      "id": 31958196698,
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-08-16T16:17:56.0000000Z",
+      "updatedAt": "2026-08-16T16:19:20.0000000Z",
+      "url": "https://github.com/ramanaru/chamagnieu/actions/runs/31958196698"
+    },
+    "headers": {
+      "projectConfig": {
+        "status": 200,
+        "lastModified": "Sun, 16 Aug 2026 16:19:16 GMT",
+        "etag": "W/\"6a81e304-1441\"",
+        "bytes": 5185,
+        "sha256Utf8": "202C84299A56DD906B52FE290D6BD0804AF4B694FAA80D38E9EB5C8F2F8F1E15",
+        "release": "V18-ASSET-PILOT-1"
+      },
+      "presentation": {
+        "status": 200,
+        "lastModified": "Sun, 16 Aug 2026 16:19:16 GMT",
+        "etag": "W/\"6a81e304-805\"",
+        "bytes": 2053,
+        "sha256Utf8": "FF250EEE6DB1B5B273F3A618264D05704DCBC10499877AF1C3F93109D353521C"
+      },
+      "visite": {
+        "status": 200,
+        "lastModified": "Sun, 16 Aug 2026 16:19:17 GMT",
+        "etag": "W/\"6a81e305-873\"",
+        "bytes": 2163,
+        "sha256Utf8": "21E79111873727145DFB51C6EE9387A495AB2EA65FE6D64EC6D448989B42B388"
+      }
+    }
+  },
+  "identity": {
+    "viewerReady": "true",
+    "version": "V18",
+    "release": "V18-ASSET-PILOT-1",
+    "source": "LIVE WEB VIEWER",
+    "model": "Chamagnieu_V18_WEB_REALISM_UPGRADED.glb",
+    "webgl": {
+      "isWebGL2": true,
+      "renderer": "WebKit WebGL",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    }
+  },
+  "categories": {
+    "passed": 8,
+    "total": 8,
+    "details": {
+      "sofa": {
+        "pass": true,
+        "instances": 1
+      },
+      "table": {
+        "pass": true,
+        "instances": 1
+      },
+      "chair": {
+        "pass": true,
+        "instances": 6
+      },
+      "bed": {
+        "pass": true,
+        "instances": 3
+      },
+      "tree": {
+        "pass": true,
+        "instances": 4
+      },
+      "hedge": {
+        "pass": true,
+        "instances": 18,
+        "gpuBatches": 2
+      },
+      "facade_pbr": {
+        "pass": true,
+        "appliedMaterials": 2
+      },
+      "grass_pbr": {
+        "pass": true,
+        "appliedMaterials": 1
+      }
+    }
+  },
+  "views": {
+    "passed": 7,
+    "total": 7,
+    "details": [
+      {
+        "label": "Façade texturée",
+        "file": "01-public-facade.png",
+        "active": "active",
+        "sourceVisible": true,
+        "bytes": 959068,
+        "width": 1536,
+        "height": 735,
+        "format": "PNG",
+        "sha256": "D011588C762342E7E39C6D20E4EB2D955BE533B673EE4B1D7711EB466AD25BA7"
+      },
+      {
+        "label": "Haies",
+        "file": "02-public-hedges.png",
+        "active": "active",
+        "sourceVisible": true,
+        "bytes": 961914,
+        "width": 1536,
+        "height": 735,
+        "format": "PNG",
+        "sha256": "9188A6D35507F542F21C0F31DB162C3077BCDDA12A7196423ECE10659A2A406F"
+      },
+      {
+        "label": "Séjour / canapé",
+        "file": "03-public-sofa.png",
+        "active": "active",
+        "sourceVisible": true,
+        "bytes": 1122332,
+        "width": 1536,
+        "height": 735,
+        "format": "PNG",
+        "sha256": "28AC633376F3328AD7E0571506196B39C2E9CDF8E244B060A2D069CF87E06B8D"
+      },
+      {
+        "label": "Table / chaises",
+        "file": "04-public-table-chairs.png",
+        "active": "active",
+        "sourceVisible": true,
+        "bytes": 693343,
+        "width": 1536,
+        "height": 735,
+        "format": "PNG",
+        "sha256": "294DD0CC6C72113F7CA4D742027432BBAAB0420EB1F1D0D3B84BC3ACE7F1139F"
+      },
+      {
+        "label": "Lit / chambre",
+        "file": "05-public-bed.png",
+        "active": "active",
+        "sourceVisible": true,
+        "bytes": 681210,
+        "width": 1536,
+        "height": 735,
+        "format": "PNG",
+        "sha256": "5BE4B9A0C3FDD02B54B604EA91B7D20C156DE97643876614779CABABC2704DF0"
+      },
+      {
+        "label": "Sol extérieur",
+        "file": "06-public-ground.png",
+        "active": "active",
+        "sourceVisible": true,
+        "bytes": 550248,
+        "width": 1536,
+        "height": 735,
+        "format": "PNG",
+        "sha256": "3CCF5C58538875CEFE7294C98464E4527D41180D78D77BA3D5E8ECEE4DAE3EAB"
+      },
+      {
+        "label": "Jardin / arbres",
+        "file": "07-public-garden.png",
+        "active": "active",
+        "sourceVisible": true,
+        "bytes": 1247375,
+        "width": 1536,
+        "height": 735,
+        "format": "PNG",
+        "sha256": "E63ADFF014B9444D317E1D02A6D121A3E91846DE5D61FF096E039AE9A6E4A0AE"
+      }
+    ]
+  },
+  "furnitureToggle": {
+    "presentation": [
+      "true",
+      "false",
+      "true"
+    ],
+    "visite": [
+      "true",
+      "false",
+      "true"
+    ],
+    "pass": true
+  },
+  "entryFlow": {
+    "pass": true,
+    "start": {
+      "brokenImages": [],
+      "dataset": {
+        "liveLighting": "V18-WEB-REALISM-LIGHTING-R2",
+        "projectConfig": "../shared/project-config.json",
+        "projectRelease": "V18-ASSET-PILOT-1",
+        "projectVersion": "V18",
+        "viewerAssetPilot": "accepted",
+        "viewerAssetPilotFamilies": "4",
+        "viewerAssetPilotFurnitureErrors": "0",
+        "viewerAssetPilotInstances": "11",
+        "viewerAssetPilotMaterialErrors": "0",
+        "viewerAssetPilotMaterialMatches": "3",
+        "viewerFurnitureMeshes": "169",
+        "viewerFurnitureVisible": "true",
+        "viewerMaterialPilot": "applied",
+        "viewerMaterials": "41",
+        "viewerMeshes": "795",
+        "viewerModel": "Chamagnieu_V18_WEB_REALISM_UPGRADED.glb",
+        "viewerReady": "true",
+        "viewerRelease": "V18-ASSET-PILOT-1",
+        "viewerShadowMode": "static-once-after-assets",
+        "viewerSource": "LIVE WEB VIEWER",
+        "viewerTextures": "119",
+        "viewerVegetation": "enhanced",
+        "viewerVegetationDrawCalls": "14",
+        "viewerVegetationGpuInstancing": "true",
+        "viewerVegetationHedgeClones": "18",
+        "viewerVegetationHedgeGpuBatches": "2",
+        "viewerVegetationLoadMs": "2310",
+        "viewerVegetationTriangles": "565892",
+        "viewerVersion": "V18"
+      },
+      "position": [
+        1.941,
+        1.65,
+        -15.173
+      ],
+      "target": [
+        -1.436,
+        1.4,
+        -0.663
+      ],
+      "url": "https://ramanaru.github.io/chamagnieu/visite/?release=v18-asset-pilot-1",
+      "webgl": {
+        "isWebGL2": true,
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+      }
+    },
+    "control": {
+      "mode": "keyboard-drag-fallback",
+      "pointer": null,
+      "position": [
+        1.941,
+        1.65,
+        -15.173
+      ],
+      "reason": "WrongDocumentError",
+      "target": [
+        -1.436,
+        1.4,
+        -0.663
+      ]
+    },
+    "interior": {
+      "from": {
+        "mode": "keyboard-drag-fallback",
+        "pointer": null,
+        "position": [
+          1.941,
+          1.65,
+          -15.173
+        ],
+        "reason": "WrongDocumentError",
+        "target": [
+          -1.436,
+          1.4,
+          -0.663
+        ]
+      },
+      "to": {
+        "position": [
+          -5.829,
+          1.65,
+          3.525
+        ],
+        "target": [
+          -3.487,
+          1.2,
+          2.836
+        ]
+      },
+      "delta": [
+        -7.77,
+        0,
+        18.698
+      ],
+      "distanceM": 20.248162978403744,
+      "route": "presentation link > outside > Commencer dehors > keyboard-drag-fallback > Cuisine",
+      "screenshot": {
+        "file": "validation/public_asset_pilot/screenshots/09-public-visite-kitchen.png",
+        "bytes": 628942,
+        "sourceVisible": true,
+        "sha256": "B58469CC7168A8D4028A2BFA796C5481AD7BF787ACDF8A3F288CED269F73AAE2",
+        "width": 1536,
+        "height": 735,
+        "source": "LIVE WEB VIEWER",
+        "format": "PNG"
+      }
+    },
+    "outsideScreenshot": {
+      "file": "validation/public_asset_pilot/screenshots/08-public-visite-outside.png",
+      "bytes": 951904,
+      "width": 1536,
+      "height": 735,
+      "sha256": "C86D2347A3BCB5FF17324B5D2DF3B71408FB3C46E399DFE5938A00D3C88F1407",
+      "source": "LIVE WEB VIEWER",
+      "format": "PNG"
+    }
+  },
+  "network": {
+    "method": "Chrome CDP cold-cache reload, then cache restored",
+    "presentation": {
+      "responses": 139,
+      "failed": 0,
+      "non2xx": 0,
+      "exceptions": 0,
+      "consoleWarningsOrErrors": 0,
+      "truncated": false,
+      "keyHeaders": [
+        {
+          "url": "https://ramanaru.github.io/chamagnieu/presentation/?publicaudit=38baad2247be468be3a0c430bcb6b9a515d0bb76",
+          "status": 200,
+          "lastModified": "Sun, 16 Aug 2026 16:19:16 GMT",
+          "etag": "W/\"6a81e304-805\"",
+          "contentLength": null
+        },
+        {
+          "url": "https://ramanaru.github.io/chamagnieu/shared/project-config.json",
+          "status": 200,
+          "lastModified": "Sun, 16 Aug 2026 16:19:17 GMT",
+          "etag": "W/\"6a81e305-1441\"",
+          "contentLength": null
+        }
+      ]
+    },
+    "visite": {
+      "responses": 139,
+      "failed": 0,
+      "non2xx": 0,
+      "exceptions": 0,
+      "consoleWarningsOrErrors": 0,
+      "truncated": false,
+      "keyHeaders": [
+        {
+          "url": "https://ramanaru.github.io/chamagnieu/visite/?release=v18-asset-pilot-1",
+          "status": 200,
+          "lastModified": "Sun, 16 Aug 2026 16:19:17 GMT",
+          "etag": "W/\"6a81e305-873\""
+        },
+        {
+          "url": "https://ramanaru.github.io/chamagnieu/shared/project-config.json",
+          "status": 200,
+          "lastModified": "Sun, 16 Aug 2026 16:19:16 GMT",
+          "etag": "W/\"6a81e304-1441\""
+        }
+      ]
+    }
+  },
+  "console": {
+    "warningsOrErrors": 0
+  },
+  "brokenImages": {
+    "presentation": 0,
+    "visite": 0
+  },
+  "performance": {
+    "observedRaf": {
+      "durationMs": 3298.700000011915,
+      "fps": 0.90944917694521,
+      "frames": 4,
+      "maxFrameMs": 1016.8999999999942,
+      "medianFrameMs": 1016.3999999999942,
+      "minFrameMs": 1000,
+      "p95FrameMs": 1016.3999999999942
+    },
+    "targetFps": 30,
+    "scope": "Chrome extension background tab was throttled to about 1 rAF/s; not a foreground GPU verdict.",
+    "foregroundGate": "INDETERMINATE_BACKGROUND_THROTTLING"
+  },
+  "screenshots": [
+    {
+      "file": "validation/public_asset_pilot/screenshots/01-public-facade.png",
+      "bytes": 959068,
+      "width": 1536,
+      "height": 735,
+      "sha256": "D011588C762342E7E39C6D20E4EB2D955BE533B673EE4B1D7711EB466AD25BA7",
+      "source": "LIVE WEB VIEWER",
+      "format": "PNG"
+    },
+    {
+      "file": "validation/public_asset_pilot/screenshots/02-public-hedges.png",
+      "bytes": 961914,
+      "width": 1536,
+      "height": 735,
+      "sha256": "9188A6D35507F542F21C0F31DB162C3077BCDDA12A7196423ECE10659A2A406F",
+      "source": "LIVE WEB VIEWER",
+      "format": "PNG"
+    },
+    {
+      "file": "validation/public_asset_pilot/screenshots/03-public-sofa.png",
+      "bytes": 1122332,
+      "width": 1536,
+      "height": 735,
+      "sha256": "28AC633376F3328AD7E0571506196B39C2E9CDF8E244B060A2D069CF87E06B8D",
+      "source": "LIVE WEB VIEWER",
+      "format": "PNG"
+    },
+    {
+      "file": "validation/public_asset_pilot/screenshots/04-public-table-chairs.png",
+      "bytes": 693343,
+      "width": 1536,
+      "height": 735,
+      "sha256": "294DD0CC6C72113F7CA4D742027432BBAAB0420EB1F1D0D3B84BC3ACE7F1139F",
+      "source": "LIVE WEB VIEWER",
+      "format": "PNG"
+    },
+    {
+      "file": "validation/public_asset_pilot/screenshots/05-public-bed.png",
+      "bytes": 681210,
+      "width": 1536,
+      "height": 735,
+      "sha256": "5BE4B9A0C3FDD02B54B604EA91B7D20C156DE97643876614779CABABC2704DF0",
+      "source": "LIVE WEB VIEWER",
+      "format": "PNG"
+    },
+    {
+      "file": "validation/public_asset_pilot/screenshots/06-public-ground.png",
+      "bytes": 550248,
+      "width": 1536,
+      "height": 735,
+      "sha256": "3CCF5C58538875CEFE7294C98464E4527D41180D78D77BA3D5E8ECEE4DAE3EAB",
+      "source": "LIVE WEB VIEWER",
+      "format": "PNG"
+    },
+    {
+      "file": "validation/public_asset_pilot/screenshots/07-public-garden.png",
+      "bytes": 1247375,
+      "width": 1536,
+      "height": 735,
+      "sha256": "E63ADFF014B9444D317E1D02A6D121A3E91846DE5D61FF096E039AE9A6E4A0AE",
+      "source": "LIVE WEB VIEWER",
+      "format": "PNG"
+    },
+    {
+      "file": "validation/public_asset_pilot/screenshots/08-public-visite-outside.png",
+      "bytes": 951904,
+      "width": 1536,
+      "height": 735,
+      "sha256": "C86D2347A3BCB5FF17324B5D2DF3B71408FB3C46E399DFE5938A00D3C88F1407",
+      "source": "LIVE WEB VIEWER",
+      "format": "PNG"
+    },
+    {
+      "file": "validation/public_asset_pilot/screenshots/09-public-visite-kitchen.png",
+      "bytes": 628942,
+      "width": 1536,
+      "height": 735,
+      "sha256": "B58469CC7168A8D4028A2BFA796C5481AD7BF787ACDF8A3F288CED269F73AAE2",
+      "source": "LIVE WEB VIEWER",
+      "format": "PNG"
+    }
+  ],
+  "screenshotValidation": {
+    "tool": "Pillow",
+    "count": 9,
+    "validPng": 9,
+    "dimensions": {
+      "width": 1536,
+      "height": 735
+    },
+    "result": "PASS_9_OF_9"
+  }
+}

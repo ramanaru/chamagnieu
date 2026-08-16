@@ -162,7 +162,7 @@
     "environment_intensity": 0.765
   },
   "asset_pilot": {
-    "phase": "LIVE_VALIDATED_LOCAL",
+    "phase": "PUBLIC_VALIDATED",
     "architecture_changed": false,
     "visualisation_only": true,
     "contractual": false,
@@ -203,6 +203,29 @@
       "vegetation_submit_harness_fps": 456.27,
       "iab_refresh_observed_fps": 29.79,
       "iab_note": "le navigateur intégré est cadencé à environ 30 Hz; le harnais Chromium/WebGL2 de soumission dépasse le seuil"
+    },
+    "public_postflight": {
+      "runtime_commit": "38baad2247be468be3a0c430bcb6b9a515d0bb76",
+      "validated_at_utc": "2026-08-16T16:28:42.443Z",
+      "pages_run_id": 31958196698,
+      "pages_conclusion": "success",
+      "public_urls": {
+        "root": "https://ramanaru.github.io/chamagnieu/",
+        "presentation": "https://ramanaru.github.io/chamagnieu/presentation/?release=v18-asset-pilot-1",
+        "visite": "https://ramanaru.github.io/chamagnieu/visite/?release=v18-asset-pilot-1",
+        "manifest": "https://ramanaru.github.io/chamagnieu/assets_external/ASSET_MANIFEST.json",
+        "comparisons": "https://ramanaru.github.io/chamagnieu/validation/asset_pilot_screenshots/comparisons/"
+      },
+      "static_validation": "PASS 321/321 + public 234/234",
+      "categories_visible": "8/8",
+      "views": "7/7",
+      "presentation_network": "PASS 139/139",
+      "visite_network": "PASS 139/139",
+      "console_warnings_errors": 0,
+      "broken_images": 0,
+      "public_functional_gate": "PASS",
+      "public_foreground_fps": null,
+      "public_performance_gate": "INDETERMINATE_BACKGROUND_THROTTLING"
     }
   }
 }

@@ -1,20 +1,20 @@
 # Rapport d’intégration — réalisme des assets Chamagnieu V18
 
-**Verdict courant :** `PASS_LOCAL_WITH_PERFORMANCE_CAVEAT`
+**Verdict courant :** `PASS_PUBLIC_FUNCTIONAL_WITH_PERFORMANCE_CAVEAT`
 **Release :** `V18-ASSET-PILOT-1`
-**Viewer testé :** vrai `presentation/` / `visite/` local, pas seulement Blender.
+**Viewer testé :** vrai `presentation/` / `visite/` local puis public GitHub Pages, pas seulement Blender.
 **Architecture :** inchangée (`geometryChanged=false`; payloads d’accessors géométriques identiques).
 **Modèle principal :** `shared/Chamagnieu_V18_WEB_REALISM_UPGRADED.glb` — 22 687 292 octets — SHA-256 `9A5FD736CF5BFC4B8AF90A3B1A701C1532B83D2E6BDF0FA2C459B085B9A12B1E`.
 
 ## Résumé exécutif
 
-- **8/8 catégories pilotes** sont documentées et acceptées dans le viewer local : canapé, table, chaise, lit, arbre, haie, façade PBR, gazon PBR.
+- **8/8 catégories pilotes** sont documentées et acceptées dans le viewer local et public : canapé, table, chaise, lit, arbre, haie, façade PBR, gazon PBR.
 - Les huit éléments visibles atteignent le seuil de réalisme demandé **≥ 8/10**.
 - Le mobilier externe compte **4 familles / 11 instances / 221 660 triangles / 22 appels de dessin**.
 - La végétation améliorée compte **4 arbres + 18 segments de haie**, **565 892 triangles / 14 appels de dessin**. La référence en affichait 1 082 996 / 120.
 - Les matériaux ajoutent **6 cartes WebP runtime / 2 048 284 octets**; le harnais a reçu **HTTP 200 pour 6/6**.
 - Les originals restent intacts dans `original/`; les dérivés Web sont séparés dans `optimized/`.
-- Le déploiement et le postflight publics ne font pas partie de ce snapshot local.
+- Le postflight public fonctionnel est validé sur le commit runtime `38baad2247be468be3a0c430bcb6b9a515d0bb76`; le gate FPS public au premier plan reste indéterminé.
 
 ## Comparaison par catégorie
 
@@ -75,6 +75,29 @@ BROKEN_IMAGES=PASS presentation=0 visite=0
 
 Les neuf captures de cet audit portent le badge `SOURCE = LIVE WEB VIEWER` et sont indexées sous `validation/asset_pilot_screenshots/browser_final/`.
 
+## Postflight public — `SOURCE = LIVE WEB VIEWER`
+
+- **Commit runtime audité :** `38baad2247be468be3a0c430bcb6b9a515d0bb76`
+- **GitHub Pages :** run `31958196698`, `completed/success`
+- **Validation :** `2026-08-16T16:28:42.443Z`
+- **Liens :** [accueil](https://ramanaru.github.io/chamagnieu/), [présentation](https://ramanaru.github.io/chamagnieu/presentation/?release=v18-asset-pilot-1), [visite extérieure](https://ramanaru.github.io/chamagnieu/visite/?release=v18-asset-pilot-1), [manifest](https://ramanaru.github.io/chamagnieu/assets_external/ASSET_MANIFEST.json)
+
+```text
+PUBLIC_ASSET_PILOT_VALIDATION=PASS checks=234 pass=234 fail=0
+PUBLIC_ASSET_PILOT_AUDIT=PASS_FUNCTIONAL
+VIEWER_READY=true VERSION=V18 RELEASE=V18-ASSET-PILOT-1 SOURCE=LIVE_WEB_VIEWER
+WEBGL2=PASS
+CATEGORIES=PASS 8/8 sofa=1 table=1 chair=6 bed=3 tree=4 hedge=18 facade_pbr=2 grass_pbr=1
+VIEWS=PASS 7/7 facade hedges living dining bedroom exterior_ground garden
+FURNITURE_TOGGLE=PASS presentation=true>false>true visite=true>false>true
+ENTRY_FLOW=PASS presentation>outside>Commencer_dehors>keyboard-drag-fallback>Cuisine distance_m=20.248163
+PRESENTATION_NETWORK=PASS responses=139 failed=0 non2xx=0 exceptions=0 warnings_or_errors=0
+VISITE_NETWORK=PASS responses=139 failed=0 non2xx=0 exceptions=0 warnings_or_errors=0
+BROKEN_IMAGES=PASS presentation=0 visite=0
+```
+
+Le contrôle public prouve le chargement, la visibilité, les vues, les interactions, le départ extérieur, l’entrée dans la cuisine et l’absence d’erreur réseau/console. La mesure rAF publique provient d’un onglet d’extension en arrière-plan bridé à environ 1 Hz; elle est conservée mais exclue du verdict FPS au premier plan.
+
 ## Résultats de tests conservés
 
 ### Mobilier
@@ -116,7 +139,7 @@ Résultat : exit 0; WebGL2 réel dans Chromium, 2 lots GPU instanciés pour les 
 | Audit sous-agent dans onglet explicitement bridé en arrière-plan | 11,51 / 11,73 FPS | valeur écartée du gate premier plan; elle documente le throttling, pas la capacité du viewer |
 | Contexte navigateur intégré | ≈ 30 Hz | le scheduler de l’onglet intégré/masqué plafonnait autour de 30 Hz |
 
-Conclusion performance : le harnais technique dépasse très largement 30, mais l’observation rAF du viewer intégré ne constitue pas une preuve stricte de `>=30` puisqu’elle donne 29,79. Le rapport ne transforme pas ce nombre en PASS. Une mesure publique visible sur téléphone et PC reste le prochain gate de publication.
+Conclusion performance : le harnais technique dépasse très largement 30, mais l’observation rAF du viewer intégré ne constitue pas une preuve stricte de `>=30` puisqu’elle donne 29,79. Le postflight public fonctionnel est PASS; son onglet contrôlé en arrière-plan était bridé à environ 1 rAF/s et ne constitue pas une mesure GPU au premier plan. Le gate public de performance reste donc `INDETERMINATE_BACKGROUND_THROTTLING`.
 
 Optimisations déjà actives : pixel ratio plafonné à 1, ombres recalculées une fois après chargement, 18 haies regroupées dans 2 `InstancedMesh`, aucun GLB optionnel sur appareil contraint.
 
@@ -162,12 +185,33 @@ Avant intégration, les vues comparables restent sous `validation/asset_pilot_sc
 
 ## Limites restantes
 
-1. **Public non couvert ici** : le snapshot documente le serveur local; URL publique et postflight à compléter après publication.
+1. **Performance publique au premier plan** : le postflight fonctionnel est couvert; le seuil strict ≥30 FPS n’est pas démontré dans un onglet public visible au premier plan.
 2. **FPS viewer** : 29,79 dans le navigateur intégré; une répétition visible sur vrai téléphone/PC est nécessaire pour un PASS strict ≥30.
 3. **Lit** : texture quality 4/10; proportions acceptées, matériau textile améliorable.
 4. **Arbre** : style match 6/10 pour une parcelle suburbane; le réalisme vaut 8/10, mais une essence plus locale pourrait améliorer la cohérence.
 5. **Gazon** : ambientCG ne publie pas ici de taille physique non nulle; la répétition 8×8 est empirique.
 6. **Hors pilote** : cuisine, salle de bain, toiture, sol intérieur, plantes d’intérieur et HDRI ne sont pas revendiqués comme assets externes intégrés.
+
+## Checklist du rapport demandé
+
+| Champ demandé | Résultat |
+|---|---|
+| SOURCES SEARCHED | Poly Haven, BlenderKit, ambientCG et candidats/rejets documentés |
+| FREE ASSETS FOUND | PASS — candidats gratuits comparés par catégorie |
+| LICENSES VERIFIED | PASS — 8/8 actifs en CC0, registre conservé |
+| ASSETS REJECTED | PASS — premium, droits ambigus, mauvais style ou coût Web rejetés |
+| ASSETS SELECTED | PASS — 8/8 catégories |
+| FURNITURE | PASS — 4 familles, 11 instances |
+| VEGETATION | PASS — 4 arbres, 18 haies, instanciation GPU |
+| TEXTURES | PASS — façade et gazon PBR, 6 cartes WebP |
+| SCALE VALIDATION | PASS — mesures en mètres et dégagements documentés |
+| PLACEMENT VALIDATION | PASS — ancres existantes et collisions contrôlées |
+| BLENDER RESULT | PASS pour QA isolée; source étiquetée séparément |
+| WEB OPTIMIZATION | PASS — GLB/WebP, fallbacks, DPR 1, ombres statiques |
+| LIVE WEB RESULT | PASS_FUNCTIONAL public |
+| PERFORMANCE | PARTIAL — fonctionnel PASS, FPS public foreground indéterminé |
+| KNOWN LIMITATIONS | Documentées ci-dessus |
+| FINAL VERDICT | `PASS_PUBLIC_FUNCTIONAL_WITH_PERFORMANCE_CAVEAT` |
 
 ## Index des preuves
 
@@ -177,3 +221,6 @@ Avant intégration, les vues comparables restent sous `validation/asset_pilot_sc
 - Mobilier : `validation/pilot_furniture_integration.json`, `validation/pilot_furniture_browser.json`
 - Matériaux : `validation/pilot_material_integration_validation.json`
 - Végétation : `validation/pilot_vegetation_integration.json`, `validation/vegetation-runtime-validation.json`
+- Postflight statique public : `validation/asset-pilot-public-static-validation.txt`
+- Audit navigateur public : `validation/public_asset_pilot/audit.json`, `validation/public_asset_pilot/audit.txt`, `validation/public_asset_pilot/README.md`
+- Agrégat public : `validation/asset-pilot-public-postflight.json`

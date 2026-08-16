@@ -1,6 +1,6 @@
 # Registre des licences — pilote d’assets réalistes Chamagnieu V18
 
-**État du registre :** `LIVE_VALIDATED_LOCAL`
+**État du registre :** `PUBLIC_VALIDATED`
 **Release documentée :** `V18-ASSET-PILOT-1`
 **Périmètre :** huit catégories obligatoires — canapé, table, chaise, lit, arbre, haie, façade PBR et gazon PBR.
 **Usage :** visualisation Web du logement; aucune modification de l’architecture contractuelle.

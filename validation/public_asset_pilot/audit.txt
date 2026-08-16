@@ -1,0 +1,17 @@
+PUBLIC_ASSET_PILOT_AUDIT=PASS_FUNCTIONAL
+PUBLIC_COMMIT=38baad2247be468be3a0c430bcb6b9a515d0bb76 REMOTE_MAIN=38baad2247be468be3a0c430bcb6b9a515d0bb76
+PAGES_RUN=31958196698 STATUS=completed CONCLUSION=success UPDATED_AT=2026-08-16T16:19:20.0000000Z
+LAST_MODIFIED project_config=Sun,_16_Aug_2026_16:19:16_GMT presentation=Sun,_16_Aug_2026_16:19:16_GMT visite=Sun,_16_Aug_2026_16:19:17_GMT
+VIEWER_READY=true VERSION=V18 RELEASE=V18-ASSET-PILOT-1 SOURCE=LIVE_WEB_VIEWER MODEL=Chamagnieu_V18_WEB_REALISM_UPGRADED.glb
+WEBGL2=PASS VERSION=WebGL 2.0 (OpenGL ES 3.0 Chromium)
+CATEGORIES=PASS 8/8 sofa=1 table=1 chair=6 bed=3 tree=4 hedge=18 facade_pbr=2 grass_pbr=1
+VIEWS=PASS 7/7 facade hedges living dining bedroom exterior_ground garden
+FURNITURE_TOGGLE=PASS presentation=true>false>true visite=true>false>true
+ENTRY_FLOW=PASS presentation>outside>Commencer_dehors>keyboard-drag-fallback>Cuisine distance_m=20.248163
+PRESENTATION_NETWORK=PASS responses=139 failed=0 non2xx=0 exceptions=0 warnings_or_errors=0
+VISITE_NETWORK=PASS responses=139 failed=0 non2xx=0 exceptions=0 warnings_or_errors=0
+BROKEN_IMAGES=PASS presentation=0 visite=0
+PERFORMANCE_OBSERVED_RAF fps=0.909449 frames=4 duration_ms=3298.700
+PERFORMANCE_SCOPE=CHROME_EXTENSION_BACKGROUND_THROTTLED FOREGROUND_GATE=INDETERMINATE TARGET_FPS=30
+SCREENSHOTS=PASS count=9 source=LIVE_WEB_VIEWER path=validation/public_asset_pilot/screenshots
+SCREENSHOT_FORMAT=PASS format=PNG valid=9/9 dimensions=1536x735 validator=Pillow
