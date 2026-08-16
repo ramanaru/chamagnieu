@@ -1,0 +1,4 @@
+[43508:38736:0816/172713.476:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+7504 bytes written to file C:\Users\jonat\Documents\Codex\2026-08-16\chamagnieu-v18-assets-pilot\validation\browser\furniture-pilot-main-upper-live.png
+[43508:27788:0816/172714.143:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:748] Message 1321962233 rejected by interface blink.mojom.FrameWidgetHost
+[43508:27788:0816/172714.557:ERROR:chrome\browser\web_applications\externally_managed_app_manager.cc:680] https://docs.google.com/spreadsheets/installwebapp?usp=chrome_default from install source 1 failed to install with reason 21

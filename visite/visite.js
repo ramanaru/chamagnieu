@@ -1,9 +1,11 @@
 import * as THREE from '../shared/vendor/three.module.js';
 import { PointerLockControls } from '../shared/vendor/addons/controls/PointerLockControls.js';
 import { GLTFLoader } from '../shared/vendor/addons/loaders/GLTFLoader.js';
-import { loadProjectConfig, applyProjectVersion, resolveProjectAsset } from '../shared/project-config.js?release=v18-web-realism-1';
-import { setupLiveLighting, tuneLiveModel } from '../shared/live-realism.js?release=v18-web-realism-1&pipeline=lighting-r2';
-import { installLiveVegetation } from '../shared/live-vegetation.js?release=v18-web-realism-1';
+import { loadProjectConfig, applyProjectVersion, resolveProjectAsset } from '../shared/project-config.js?release=v18-asset-pilot-1';
+import { setupLiveLighting, tuneLiveModel } from '../shared/live-realism.js?release=v18-asset-pilot-1&pipeline=lighting-r2';
+import { installLiveVegetation } from '../shared/live-vegetation.js?release=v18-asset-pilot-1';
+import { installLiveFurniturePilot } from '../shared/live-furniture-pilot.js?release=v18-asset-pilot-1';
+import { installLiveMaterialPilot } from '../shared/live-materials-pilot.js?release=v18-asset-pilot-1';
 
 const config = await loadProjectConfig();
 applyProjectVersion(config);
@@ -13,7 +15,9 @@ scene.fog = new THREE.Fog(0xb8c5bb, 58, 125);
 const camera = new THREE.PerspectiveCamera(67, innerWidth / innerHeight, .018, 230);
 const mobile = matchMedia('(pointer:coarse)').matches;
 const renderer = new THREE.WebGLRenderer({ antialias: !mobile, powerPreference: 'high-performance' });
-renderer.setPixelRatio(Math.min(devicePixelRatio, mobile ? 1.1 : 1.6));
+// Match the presentation quality/performance profile: one rendered pixel per
+// CSS pixel keeps the full walk-through smooth on desktop and mobile.
+renderer.setPixelRatio(Math.min(devicePixelRatio, 1.0));
 renderer.setSize(innerWidth, innerHeight);
 document.body.prepend(renderer.domElement);
 setupLiveLighting(THREE, scene, renderer, config, mobile);
@@ -123,8 +127,20 @@ new GLTFLoader().load(modelUrl.href, async gltf => {
   classifyFurniture(house);
   window.__liveMaterialAudit = tuneLiveModel(renderer, house, mobile, config);
   scene.add(house);
-  loading.textContent = `Installation de la végétation Web réaliste · ${config.version}…`;
-  window.__liveVegetationAudit = await installLiveVegetation({ scene, house, renderer, mobile, cacheKey: config.cacheKey });
+  loading.textContent = `Installation des assets CC0 à échelle réelle · ${config.version}…`;
+  const [materialPilot, furniturePilot, vegetation] = await Promise.all([
+    installLiveMaterialPilot({ THREE, house, renderer, mobile, cacheKey: config.cacheKey }),
+    installLiveFurniturePilot({ scene, house, renderer, cacheKey: config.cacheKey }),
+    installLiveVegetation({ scene, house, renderer, mobile, cacheKey: config.cacheKey })
+  ]);
+  window.__assetPilotMaterialAudit = materialPilot;
+  window.__assetPilotFurnitureAudit = furniturePilot;
+  window.__liveVegetationAudit = vegetation;
+  renderer.shadowMap.autoUpdate = false;
+  renderer.shadowMap.needsUpdate = true;
+  document.documentElement.dataset.viewerShadowMode = 'static-once-after-assets';
+  furnitureMeshCount = 0;
+  classifyFurniture(house);
   loading.classList.add('hide');
   preset('outside');
   window.__viewerReady = true;
@@ -135,6 +151,12 @@ document.documentElement.dataset.viewerTextures = String(window.__liveMaterialAu
 document.documentElement.dataset.viewerFurnitureMeshes = String(furnitureMeshCount);
 document.documentElement.dataset.viewerFurnitureVisible = 'true';
 document.documentElement.dataset.viewerVegetation = window.__liveVegetationAudit.status;
+document.documentElement.dataset.viewerAssetPilot = furniturePilot.status === 'accepted' && materialPilot.status === 'applied' ? 'accepted' : 'partial-fallback';
+document.documentElement.dataset.viewerAssetPilotFamilies = String(furniturePilot.acceptedFamilies || 0);
+document.documentElement.dataset.viewerAssetPilotInstances = String(furniturePilot.instanceCount || 0);
+document.documentElement.dataset.viewerAssetPilotFurnitureErrors = String(furniturePilot.errors?.length || 0);
+document.documentElement.dataset.viewerAssetPilotMaterialErrors = String(materialPilot.errors?.length || 0);
+document.documentElement.dataset.viewerAssetPilotMaterialMatches = String(materialPilot.matchedMaterials || 0);
 }, progress => {
   if (progress.total) {
     const percent = Math.round(100 * progress.loaded / progress.total);

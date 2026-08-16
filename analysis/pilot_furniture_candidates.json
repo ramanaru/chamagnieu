@@ -1,0 +1,2786 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-08-16T15:05:58Z",
+  "scope": "Chamagnieu V18 furniture pilot research only; no asset binary downloaded or integrated.",
+  "score_scale": {
+    "criteria": [
+      "realism",
+      "style_match",
+      "geometry_quality",
+      "texture_quality",
+      "performance",
+      "license_confidence"
+    ],
+    "per_criterion_max": 10,
+    "total_max": 60
+  },
+  "license_policy": {
+    "accepted": "Only assets reported free, downloadable, and CC0 by the official source API, with an anonymous metadata/direct-file HTTP probe.",
+    "blendkit_cc0": "Accepted for open Web embedding under the official CC0 documentation and 2026 terms.",
+    "blendkit_royalty_free": "Rejected for this viewer because official 2026 terms prohibit embedding an open-format 3D model under Royalty Free.",
+    "third_party_product_rights": "Uploader CC0 does not clear separate product-design or trademark rights; branded/fan-made replicas are MANUAL_IP_REVIEW_REQUIRED.",
+    "attribution": "CC0 attribution is not required, but author/source/license records are retained.",
+    "visualisation_only": true,
+    "contractual": false
+  },
+  "official_source_checks": [
+    {
+      "request": "GET https://www.blendkit.com/docs/licenses/",
+      "http_status": 200,
+      "final_url": "https://www.blendkit.com/docs/licenses/",
+      "content_type": "text/html; charset=utf-8",
+      "result_literal": "HTTP 200; final_url=https://www.blendkit.com/docs/licenses/"
+    },
+    {
+      "request": "GET https://www.blendkit.com/docs/licenses/licensing-faq/",
+      "http_status": 200,
+      "final_url": "https://www.blendkit.com/docs/licenses/licensing-faq/",
+      "content_type": "text/html; charset=utf-8",
+      "result_literal": "HTTP 200; final_url=https://www.blendkit.com/docs/licenses/licensing-faq/"
+    },
+    {
+      "request": "GET https://www.blendkit.com/terms-and-conditions-2026/",
+      "http_status": 200,
+      "final_url": "https://www.blendkit.com/terms-and-conditions-2026/",
+      "content_type": "text/html; charset=utf-8",
+      "result_literal": "HTTP 200; final_url=https://www.blendkit.com/terms-and-conditions-2026/"
+    },
+    {
+      "request": "GET https://polyhaven.com/license",
+      "http_status": 200,
+      "final_url": "https://polyhaven.com/license",
+      "content_type": "text/html; charset=utf-8",
+      "result_literal": "HTTP 200; final_url=https://polyhaven.com/license"
+    }
+  ],
+  "categories": {
+    "sofa_3_seat": [
+      {
+        "category": "sofa_3_seat",
+        "source": "Blendkit",
+        "asset_base_id": "4faac4b8-cc88-4ff2-b7fd-a7edf46d3518",
+        "name": "Leather Sofa",
+        "description": "3 Seat Leather Sofa, Midpoly, PBR, works in both Eevee and Cycles",
+        "author": "Muhammed Ismayil",
+        "source_page_url": "https://www.blendkit.com/asset-gallery-detail/4faac4b8-cc88-4ff2-b7fd-a7edf46d3518/",
+        "official_api_url": "https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A4faac4b8-cc88-4ff2-b7fd-a7edf46d3518",
+        "source_page_probe": {
+          "request": "GET https://www.blendkit.com/asset-gallery-detail/4faac4b8-cc88-4ff2-b7fd-a7edf46d3518/",
+          "http_status": 200,
+          "final_url": "https://www.blendkit.com/asset-gallery-detail/4faac4b8-cc88-4ff2-b7fd-a7edf46d3518/",
+          "content_type": "text/html; charset=utf-8",
+          "result_literal": "HTTP 200; final_url=https://www.blendkit.com/asset-gallery-detail/4faac4b8-cc88-4ff2-b7fd-a7edf46d3518/"
+        },
+        "official_api_probe": {
+          "request": "GET https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A4faac4b8-cc88-4ff2-b7fd-a7edf46d3518",
+          "http_status": 200,
+          "result_literal": "HTTP 200; count=1; assetBaseId=4faac4b8-cc88-4ff2-b7fd-a7edf46d3518"
+        },
+        "license": "CC0 (API value: cc_zero)",
+        "license_code": "cc_zero",
+        "license_url": "https://www.blendkit.com/docs/licenses/",
+        "terms_url": "https://www.blendkit.com/terms-and-conditions-2026/",
+        "free": true,
+        "can_download": true,
+        "access": "free",
+        "base_price": null,
+        "is_for_sale": false,
+        "web_embedded_redistribution": "Allowed for this CC0 asset; retain the asset/author record. This conclusion does not extend to Blendkit Royalty Free assets.",
+        "attribution": "Not legally required by CC0; author credit retained voluntarily in project metadata.",
+        "visualisation_only": true,
+        "contractual": false,
+        "dimensions_m": {
+          "x": 2.8725,
+          "y": 1.0117,
+          "z": 1.0053
+        },
+        "geometry": {
+          "face_count_source": 30328,
+          "face_count_render": 30328,
+          "mesh_poly_type": "quad_dominant",
+          "object_count": 1
+        },
+        "textures": {
+          "max_resolution_px": 4096,
+          "min_resolution_px": 4096,
+          "texture_count": 4,
+          "pure_pbr": true,
+          "materials": [
+            "[Sofa 05]"
+          ],
+          "shaders": [
+            "[principled]"
+          ]
+        },
+        "formats": [
+          "blend",
+          "gltf",
+          "gltf_godot",
+          "resolution_0_5K",
+          "resolution_1K",
+          "resolution_2K",
+          "resolution_4K"
+        ],
+        "files": [
+          {
+            "file_type": "blend",
+            "file_id": 765588,
+            "size_bytes": 50550662,
+            "filename": "assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/blend_8ba80150-6f96-4c91-9425-dc58be5117b5.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/765588/"
+          },
+          {
+            "file_type": "gltf",
+            "file_id": 766602,
+            "size_bytes": 731828,
+            "filename": "assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/gltf_86ce4a6a-e57b-4efe-ae8e-89b92b8df466.glb",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/766602/"
+          },
+          {
+            "file_type": "gltf_godot",
+            "file_id": 766601,
+            "size_bytes": 2450816,
+            "filename": "assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/gltf_godot_efea0146-5a68-43b8-9dac-1ff6736f4f77.glb",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/766601/"
+          },
+          {
+            "file_type": "resolution_0_5K",
+            "file_id": 766565,
+            "size_bytes": 1348671,
+            "filename": "assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/resolution_0_5K_82098325-b8fd-4921-9ccd-0da588f0ab6f.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/766565/"
+          },
+          {
+            "file_type": "resolution_1K",
+            "file_id": 766564,
+            "size_bytes": 1566949,
+            "filename": "assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/resolution_1K_79f6f665-a70f-4dcc-bc13-c81c355d134f.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/766564/"
+          },
+          {
+            "file_type": "resolution_2K",
+            "file_id": 766563,
+            "size_bytes": 2406187,
+            "filename": "assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/resolution_2K_21718b1b-d11a-4cdc-8323-72f6f1e31bb1.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/766563/"
+          },
+          {
+            "file_type": "resolution_4K",
+            "file_id": 766562,
+            "size_bytes": 6154648,
+            "filename": "assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/resolution_4K_09e8bf0c-4aa2-4d6b-9899-2b98beb4fe6f.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/766562/"
+          }
+        ],
+        "preferred_source_file": {
+          "file_type": "gltf",
+          "file_id": 766602,
+          "size_bytes": 731828,
+          "filename": "assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/gltf_86ce4a6a-e57b-4efe-ae8e-89b92b8df466.glb",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/766602/"
+        },
+        "requires_conversion_to_glb": false,
+        "anonymous_download_metadata_probe": {
+          "request_template": "https://www.blenderkit.com/api/v1/downloads/766602/?scene_uuid=<random-uuid>",
+          "http_status": 200,
+          "response_file_type": "gltf",
+          "response_file_path_host": "assets.blenderkit.com",
+          "asset_payload_fetched": false,
+          "result_literal": "HTTP 200; fileType=gltf; filePath_host=assets.blenderkit.com; asset_payload_bytes_fetched=0"
+        },
+        "verification_status": "validated",
+        "scores": {
+          "realism": 8,
+          "style_match": 8,
+          "geometry_quality": 8,
+          "texture_quality": 8,
+          "performance": 8,
+          "license_confidence": 10,
+          "total": 50,
+          "maximum": 60
+        },
+        "status": "PILOT_SELECTED",
+        "assessment": "Explicitly described by the author as a 3-seat leather sofa; direct compact glTF is available. At 2.87 m wide it must be scale-checked against the living room plan."
+      },
+      {
+        "category": "sofa_3_seat",
+        "source": "Blendkit",
+        "asset_base_id": "8c310d7f-74d1-422f-a2fb-4c11b773cf7b",
+        "name": "Sofa 3",
+        "description": "Sofa suitable for interiors",
+        "author": "Yasin Gohary",
+        "source_page_url": "https://www.blendkit.com/asset-gallery-detail/8c310d7f-74d1-422f-a2fb-4c11b773cf7b/",
+        "official_api_url": "https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A8c310d7f-74d1-422f-a2fb-4c11b773cf7b",
+        "source_page_probe": {
+          "request": "GET https://www.blendkit.com/asset-gallery-detail/8c310d7f-74d1-422f-a2fb-4c11b773cf7b/",
+          "http_status": 200,
+          "final_url": "https://www.blendkit.com/asset-gallery-detail/8c310d7f-74d1-422f-a2fb-4c11b773cf7b/",
+          "content_type": "text/html; charset=utf-8",
+          "result_literal": "HTTP 200; final_url=https://www.blendkit.com/asset-gallery-detail/8c310d7f-74d1-422f-a2fb-4c11b773cf7b/"
+        },
+        "official_api_probe": {
+          "request": "GET https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A8c310d7f-74d1-422f-a2fb-4c11b773cf7b",
+          "http_status": 200,
+          "result_literal": "HTTP 200; count=1; assetBaseId=8c310d7f-74d1-422f-a2fb-4c11b773cf7b"
+        },
+        "license": "CC0 (API value: cc_zero)",
+        "license_code": "cc_zero",
+        "license_url": "https://www.blendkit.com/docs/licenses/",
+        "terms_url": "https://www.blendkit.com/terms-and-conditions-2026/",
+        "free": true,
+        "can_download": true,
+        "access": "free",
+        "base_price": null,
+        "is_for_sale": false,
+        "web_embedded_redistribution": "Allowed for this CC0 asset; retain the asset/author record. This conclusion does not extend to Blendkit Royalty Free assets.",
+        "attribution": "Not legally required by CC0; author credit retained voluntarily in project metadata.",
+        "visualisation_only": true,
+        "contractual": false,
+        "dimensions_m": {
+          "x": 2.4175,
+          "y": 1.1653,
+          "z": 0.7991
+        },
+        "geometry": {
+          "face_count_source": 24861,
+          "face_count_render": 435936,
+          "mesh_poly_type": "quad_dominant",
+          "object_count": 10
+        },
+        "textures": {
+          "max_resolution_px": 2048,
+          "min_resolution_px": 2048,
+          "texture_count": 1,
+          "pure_pbr": false,
+          "materials": [
+            "Material.002",
+            "Material.003"
+          ],
+          "shaders": [
+            "principled"
+          ]
+        },
+        "formats": [
+          "blend",
+          "resolution_0_5K",
+          "resolution_1K",
+          "resolution_2K"
+        ],
+        "files": [
+          {
+            "file_type": "blend",
+            "file_id": 335515,
+            "size_bytes": 1827991,
+            "filename": "assets/25d1df592d684e03bd7dbd8d9bbbc2f3/files/blend_a5632376-af30-4370-8e28-d208d5f633b9.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/335515/"
+          },
+          {
+            "file_type": "resolution_0_5K",
+            "file_id": 335595,
+            "size_bytes": 1678652,
+            "filename": "assets/25d1df592d684e03bd7dbd8d9bbbc2f3/files/resolution_0_5K_03b6a342-1aea-4bbf-acf4-e45028416ad3.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/335595/"
+          },
+          {
+            "file_type": "resolution_1K",
+            "file_id": 335594,
+            "size_bytes": 1764695,
+            "filename": "assets/25d1df592d684e03bd7dbd8d9bbbc2f3/files/resolution_1K_6fb2c037-80a4-4109-9e8f-40d323efb4fb.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/335594/"
+          },
+          {
+            "file_type": "resolution_2K",
+            "file_id": 335593,
+            "size_bytes": 2254317,
+            "filename": "assets/25d1df592d684e03bd7dbd8d9bbbc2f3/files/resolution_2K_c06661ef-02a2-477c-bb38-3092ee1c97c3.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/335593/"
+          }
+        ],
+        "preferred_source_file": {
+          "file_type": "resolution_1K",
+          "file_id": 335594,
+          "size_bytes": 1764695,
+          "filename": "assets/25d1df592d684e03bd7dbd8d9bbbc2f3/files/resolution_1K_6fb2c037-80a4-4109-9e8f-40d323efb4fb.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/335594/"
+        },
+        "requires_conversion_to_glb": true,
+        "anonymous_download_metadata_probe": {
+          "request_template": "https://www.blenderkit.com/api/v1/downloads/335594/?scene_uuid=<random-uuid>",
+          "http_status": 200,
+          "response_file_type": "resolution_1K",
+          "response_file_path_host": "assets.blenderkit.com",
+          "asset_payload_fetched": false,
+          "result_literal": "HTTP 200; fileType=resolution_1K; filePath_host=assets.blenderkit.com; asset_payload_bytes_fetched=0"
+        },
+        "verification_status": "validated",
+        "scores": {
+          "realism": 8,
+          "style_match": 8,
+          "geometry_quality": 8,
+          "texture_quality": 7,
+          "performance": 8,
+          "license_confidence": 10,
+          "total": 49,
+          "maximum": 60
+        },
+        "status": "SHORTLIST_VISUAL_SEAT_COUNT_CHECK",
+        "assessment": "2.42 m contemporary sofa with moderate geometry and a light 1K source. The API name “Sofa 3” does not explicitly state three seats, so visual seat-count QA is still required."
+      },
+      {
+        "category": "sofa_3_seat",
+        "source": "Blendkit",
+        "asset_base_id": "15198828-3421-4d08-bc61-45a32570f3be",
+        "name": "3 seater sofa",
+        "description": "Three seater sofa with metal base and 5 cushions",
+        "author": "Rinkesh Purohit",
+        "source_page_url": "https://www.blendkit.com/asset-gallery-detail/15198828-3421-4d08-bc61-45a32570f3be/",
+        "official_api_url": "https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A15198828-3421-4d08-bc61-45a32570f3be",
+        "source_page_probe": {
+          "request": "GET https://www.blendkit.com/asset-gallery-detail/15198828-3421-4d08-bc61-45a32570f3be/",
+          "http_status": 200,
+          "final_url": "https://www.blendkit.com/asset-gallery-detail/15198828-3421-4d08-bc61-45a32570f3be/",
+          "content_type": "text/html; charset=utf-8",
+          "result_literal": "HTTP 200; final_url=https://www.blendkit.com/asset-gallery-detail/15198828-3421-4d08-bc61-45a32570f3be/"
+        },
+        "official_api_probe": {
+          "request": "GET https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A15198828-3421-4d08-bc61-45a32570f3be",
+          "http_status": 200,
+          "result_literal": "HTTP 200; count=1; assetBaseId=15198828-3421-4d08-bc61-45a32570f3be"
+        },
+        "license": "CC0 (API value: cc_zero)",
+        "license_code": "cc_zero",
+        "license_url": "https://www.blendkit.com/docs/licenses/",
+        "terms_url": "https://www.blendkit.com/terms-and-conditions-2026/",
+        "free": true,
+        "can_download": true,
+        "access": "free",
+        "base_price": null,
+        "is_for_sale": false,
+        "web_embedded_redistribution": "Allowed for this CC0 asset; retain the asset/author record. This conclusion does not extend to Blendkit Royalty Free assets.",
+        "attribution": "Not legally required by CC0; author credit retained voluntarily in project metadata.",
+        "visualisation_only": true,
+        "contractual": false,
+        "dimensions_m": {
+          "x": 2.6215,
+          "y": 1.0195,
+          "z": 0.9149
+        },
+        "geometry": {
+          "face_count_source": 125438,
+          "face_count_render": 798078,
+          "mesh_poly_type": "quad_dominant",
+          "object_count": 17
+        },
+        "textures": {
+          "max_resolution_px": 4096,
+          "min_resolution_px": 2048,
+          "texture_count": 12,
+          "pure_pbr": false,
+          "materials": [
+            "Fabric",
+            "Fabric Upholstery 001a",
+            "Fabric.002",
+            "Metal.002"
+          ],
+          "shaders": [
+            "principled"
+          ]
+        },
+        "formats": [
+          "blend",
+          "resolution_0_5K",
+          "resolution_1K",
+          "resolution_2K",
+          "resolution_4K"
+        ],
+        "files": [
+          {
+            "file_type": "blend",
+            "file_id": 158147,
+            "size_bytes": 211066595,
+            "filename": "assets/0cc960b076f34eb5afb39749737a9293/files/blend_c3ad0f06-e4e8-4991-a078-0dc7133668a7.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/158147/"
+          },
+          {
+            "file_type": "resolution_0_5K",
+            "file_id": 159224,
+            "size_bytes": 6777955,
+            "filename": "assets/0cc960b076f34eb5afb39749737a9293/files/resolution_0_5K_1479db0e-b7a6-4ff5-b4b4-214d833f42aa.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/159224/"
+          },
+          {
+            "file_type": "resolution_1K",
+            "file_id": 159223,
+            "size_bytes": 9710541,
+            "filename": "assets/0cc960b076f34eb5afb39749737a9293/files/resolution_1K_e9ad3666-a860-4502-a35a-05c247c1e934.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/159223/"
+          },
+          {
+            "file_type": "resolution_2K",
+            "file_id": 159222,
+            "size_bytes": 22912038,
+            "filename": "assets/0cc960b076f34eb5afb39749737a9293/files/resolution_2K_a082a1ad-b2be-4da3-95fa-df7d91043283.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/159222/"
+          },
+          {
+            "file_type": "resolution_4K",
+            "file_id": 159221,
+            "size_bytes": 65081396,
+            "filename": "assets/0cc960b076f34eb5afb39749737a9293/files/resolution_4K_f0948a65-c2d4-46b8-96c1-0b2e42136f3e.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/159221/"
+          }
+        ],
+        "preferred_source_file": {
+          "file_type": "resolution_1K",
+          "file_id": 159223,
+          "size_bytes": 9710541,
+          "filename": "assets/0cc960b076f34eb5afb39749737a9293/files/resolution_1K_e9ad3666-a860-4502-a35a-05c247c1e934.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/159223/"
+        },
+        "requires_conversion_to_glb": true,
+        "anonymous_download_metadata_probe": {
+          "request_template": "https://www.blenderkit.com/api/v1/downloads/159223/?scene_uuid=<random-uuid>",
+          "http_status": 200,
+          "response_file_type": "resolution_1K",
+          "response_file_path_host": "assets.blenderkit.com",
+          "asset_payload_fetched": false,
+          "result_literal": "HTTP 200; fileType=resolution_1K; filePath_host=assets.blenderkit.com; asset_payload_bytes_fetched=0"
+        },
+        "verification_status": "validated",
+        "scores": {
+          "realism": 9,
+          "style_match": 9,
+          "geometry_quality": 9,
+          "texture_quality": 9,
+          "performance": 2,
+          "license_confidence": 10,
+          "total": 48,
+          "maximum": 60
+        },
+        "status": "REJECT_PERFORMANCE_FOR_LIVE_WEB",
+        "assessment": "Exact three-seater and visually detailed, but 125k source faces, 798k render faces and very large source packages make it unsuitable for the phone-first viewer without a separate retopology/LOD pass."
+      }
+    ],
+    "contemporary_table": [
+      {
+        "category": "contemporary_table",
+        "source": "Blendkit",
+        "asset_base_id": "bdff957c-a9e9-4827-b6c9-602b264a4fbf",
+        "name": "Wooden table with metalic legs",
+        "description": "Realistic wooden table\r\nSuitable for office scene, dinning and modern interior design",
+        "author": "Nicușor Vatră",
+        "source_page_url": "https://www.blendkit.com/asset-gallery-detail/bdff957c-a9e9-4827-b6c9-602b264a4fbf/",
+        "official_api_url": "https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3Abdff957c-a9e9-4827-b6c9-602b264a4fbf",
+        "source_page_probe": {
+          "request": "GET https://www.blendkit.com/asset-gallery-detail/bdff957c-a9e9-4827-b6c9-602b264a4fbf/",
+          "http_status": 200,
+          "final_url": "https://www.blendkit.com/asset-gallery-detail/bdff957c-a9e9-4827-b6c9-602b264a4fbf/",
+          "content_type": "text/html; charset=utf-8",
+          "result_literal": "HTTP 200; final_url=https://www.blendkit.com/asset-gallery-detail/bdff957c-a9e9-4827-b6c9-602b264a4fbf/"
+        },
+        "official_api_probe": {
+          "request": "GET https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3Abdff957c-a9e9-4827-b6c9-602b264a4fbf",
+          "http_status": 200,
+          "result_literal": "HTTP 200; count=1; assetBaseId=bdff957c-a9e9-4827-b6c9-602b264a4fbf"
+        },
+        "license": "CC0 (API value: cc_zero)",
+        "license_code": "cc_zero",
+        "license_url": "https://www.blendkit.com/docs/licenses/",
+        "terms_url": "https://www.blendkit.com/terms-and-conditions-2026/",
+        "free": true,
+        "can_download": true,
+        "access": "free",
+        "base_price": null,
+        "is_for_sale": false,
+        "web_embedded_redistribution": "Allowed for this CC0 asset; retain the asset/author record. This conclusion does not extend to Blendkit Royalty Free assets.",
+        "attribution": "Not legally required by CC0; author credit retained voluntarily in project metadata.",
+        "visualisation_only": true,
+        "contractual": false,
+        "dimensions_m": {
+          "x": 2.0,
+          "y": 0.9,
+          "z": 0.75
+        },
+        "geometry": {
+          "face_count_source": 42,
+          "face_count_render": 58,
+          "mesh_poly_type": "quad",
+          "object_count": 4
+        },
+        "textures": {
+          "max_resolution_px": 4096,
+          "min_resolution_px": 2048,
+          "texture_count": 12,
+          "pure_pbr": true,
+          "materials": [
+            "Blue paint new",
+            "Oak 002",
+            "Oak 003",
+            "Oak 006",
+            "Oak 005"
+          ],
+          "shaders": [
+            "principled"
+          ]
+        },
+        "formats": [
+          "blend",
+          "resolution_0_5K",
+          "resolution_1K",
+          "resolution_2K"
+        ],
+        "files": [
+          {
+            "file_type": "blend",
+            "file_id": 220301,
+            "size_bytes": 18735914,
+            "filename": "assets/6452ab57d1cc4b068f900b922b5551ef/files/blend_bc8bfb7e-51a2-4e58-9049-adb3689f1be9.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/220301/"
+          },
+          {
+            "file_type": "resolution_0_5K",
+            "file_id": 220505,
+            "size_bytes": 472704,
+            "filename": "assets/6452ab57d1cc4b068f900b922b5551ef/files/resolution_0_5K_a6ea02ee-5035-4ef3-be8b-42e7b00b4365.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/220505/"
+          },
+          {
+            "file_type": "resolution_1K",
+            "file_id": 220504,
+            "size_bytes": 1599907,
+            "filename": "assets/6452ab57d1cc4b068f900b922b5551ef/files/resolution_1K_75f14401-4261-47c0-844a-38e09bf4da40.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/220504/"
+          },
+          {
+            "file_type": "resolution_2K",
+            "file_id": 220503,
+            "size_bytes": 6887275,
+            "filename": "assets/6452ab57d1cc4b068f900b922b5551ef/files/resolution_2K_fddc449b-87f5-4dd2-82bc-ebce01261b77.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/220503/"
+          }
+        ],
+        "preferred_source_file": {
+          "file_type": "resolution_1K",
+          "file_id": 220504,
+          "size_bytes": 1599907,
+          "filename": "assets/6452ab57d1cc4b068f900b922b5551ef/files/resolution_1K_75f14401-4261-47c0-844a-38e09bf4da40.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/220504/"
+        },
+        "requires_conversion_to_glb": true,
+        "anonymous_download_metadata_probe": {
+          "request_template": "https://www.blenderkit.com/api/v1/downloads/220504/?scene_uuid=<random-uuid>",
+          "http_status": 200,
+          "response_file_type": "resolution_1K",
+          "response_file_path_host": "assets.blenderkit.com",
+          "asset_payload_fetched": false,
+          "result_literal": "HTTP 200; fileType=resolution_1K; filePath_host=assets.blenderkit.com; asset_payload_bytes_fetched=0"
+        },
+        "verification_status": "validated",
+        "scores": {
+          "realism": 8,
+          "style_match": 9,
+          "geometry_quality": 6,
+          "texture_quality": 9,
+          "performance": 9,
+          "license_confidence": 10,
+          "total": 51,
+          "maximum": 60
+        },
+        "status": "PILOT_SELECTED",
+        "assessment": "Generic contemporary wood top/metal leg dining table, correct 2.00 × 0.90 × 0.75 m scale and rich PBR texture metadata; geometry is extremely simple but appropriate for this rectilinear object."
+      },
+      {
+        "category": "contemporary_table",
+        "source": "Blendkit",
+        "asset_base_id": "d90a729f-7e97-41e5-a9c3-650381f3d06a",
+        "name": "Dining Table 01",
+        "description": "Dining Table 4K texture -  new and aged",
+        "author": "The Doctor By Design ",
+        "source_page_url": "https://www.blendkit.com/asset-gallery-detail/d90a729f-7e97-41e5-a9c3-650381f3d06a/",
+        "official_api_url": "https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3Ad90a729f-7e97-41e5-a9c3-650381f3d06a",
+        "source_page_probe": {
+          "request": "GET https://www.blendkit.com/asset-gallery-detail/d90a729f-7e97-41e5-a9c3-650381f3d06a/",
+          "http_status": 200,
+          "final_url": "https://www.blendkit.com/asset-gallery-detail/d90a729f-7e97-41e5-a9c3-650381f3d06a/",
+          "content_type": "text/html; charset=utf-8",
+          "result_literal": "HTTP 200; final_url=https://www.blendkit.com/asset-gallery-detail/d90a729f-7e97-41e5-a9c3-650381f3d06a/"
+        },
+        "official_api_probe": {
+          "request": "GET https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3Ad90a729f-7e97-41e5-a9c3-650381f3d06a",
+          "http_status": 200,
+          "result_literal": "HTTP 200; count=1; assetBaseId=d90a729f-7e97-41e5-a9c3-650381f3d06a"
+        },
+        "license": "CC0 (API value: cc_zero)",
+        "license_code": "cc_zero",
+        "license_url": "https://www.blendkit.com/docs/licenses/",
+        "terms_url": "https://www.blendkit.com/terms-and-conditions-2026/",
+        "free": true,
+        "can_download": true,
+        "access": "free",
+        "base_price": null,
+        "is_for_sale": false,
+        "web_embedded_redistribution": "Allowed for this CC0 asset; retain the asset/author record. This conclusion does not extend to Blendkit Royalty Free assets.",
+        "attribution": "Not legally required by CC0; author credit retained voluntarily in project metadata.",
+        "visualisation_only": true,
+        "contractual": false,
+        "dimensions_m": {
+          "x": 1.789,
+          "y": 0.9743,
+          "z": 0.7499
+        },
+        "geometry": {
+          "face_count_source": 6536,
+          "face_count_render": 104576,
+          "mesh_poly_type": "quad_dominant",
+          "object_count": 1
+        },
+        "textures": {
+          "max_resolution_px": 4096,
+          "min_resolution_px": 4096,
+          "texture_count": 8,
+          "pure_pbr": true,
+          "materials": [
+            "Table"
+          ],
+          "shaders": [
+            "principled"
+          ]
+        },
+        "formats": [
+          "blend",
+          "resolution_0_5K",
+          "resolution_1K",
+          "resolution_2K",
+          "resolution_4K"
+        ],
+        "files": [
+          {
+            "file_type": "blend",
+            "file_id": 21372,
+            "size_bytes": 45474176,
+            "filename": "assets/3e249bdd9a504df68d401c9272bf7e1b/files/blend_a67ca399-9811-4a0e-aa24-3d7ffed77405.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/21372/"
+          },
+          {
+            "file_type": "resolution_0_5K",
+            "file_id": 34272,
+            "size_bytes": 997169,
+            "filename": "assets/3e249bdd9a504df68d401c9272bf7e1b/files/resolution_0_5K_b13d7e9c-0acd-4944-b92d-76f4e00807ae.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/34272/"
+          },
+          {
+            "file_type": "resolution_1K",
+            "file_id": 34270,
+            "size_bytes": 2302449,
+            "filename": "assets/3e249bdd9a504df68d401c9272bf7e1b/files/resolution_1K_81fe23db-a2e0-47da-909a-7e036f990ddd.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/34270/"
+          },
+          {
+            "file_type": "resolution_2K",
+            "file_id": 34267,
+            "size_bytes": 7513639,
+            "filename": "assets/3e249bdd9a504df68d401c9272bf7e1b/files/resolution_2K_0f569365-38fd-40a8-8042-01acb1473e3b.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/34267/"
+          },
+          {
+            "file_type": "resolution_4K",
+            "file_id": 34263,
+            "size_bytes": 32619430,
+            "filename": "assets/3e249bdd9a504df68d401c9272bf7e1b/files/resolution_4K_b8f4ff20-9137-458d-acfb-535f8d3d6faa.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/34263/"
+          }
+        ],
+        "preferred_source_file": {
+          "file_type": "resolution_1K",
+          "file_id": 34270,
+          "size_bytes": 2302449,
+          "filename": "assets/3e249bdd9a504df68d401c9272bf7e1b/files/resolution_1K_81fe23db-a2e0-47da-909a-7e036f990ddd.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/34270/"
+        },
+        "requires_conversion_to_glb": true,
+        "anonymous_download_metadata_probe": {
+          "request_template": "https://www.blenderkit.com/api/v1/downloads/34270/?scene_uuid=<random-uuid>",
+          "http_status": 200,
+          "response_file_type": "resolution_1K",
+          "response_file_path_host": "assets.blenderkit.com",
+          "asset_payload_fetched": false,
+          "result_literal": "HTTP 200; fileType=resolution_1K; filePath_host=assets.blenderkit.com; asset_payload_bytes_fetched=0"
+        },
+        "verification_status": "validated",
+        "scores": {
+          "realism": 8,
+          "style_match": 8,
+          "geometry_quality": 8,
+          "texture_quality": 9,
+          "performance": 7,
+          "license_confidence": 10,
+          "total": 50,
+          "maximum": 60
+        },
+        "status": "PILOT_SHORTLIST",
+        "assessment": "Generic 1.79 m dining table with 4K texture metadata and usable dimensions; 1K source remains modest, but conversion from Blend to GLB is required."
+      },
+      {
+        "category": "contemporary_table",
+        "source": "Blendkit",
+        "asset_base_id": "08dee582-4ac7-47fc-a1e1-192e677da403",
+        "name": "Scandinavian Dining Table",
+        "description": "A wooden made dining table based on Scandinavian composition and furniture design, it goes well in a balanced and harmonized scandinavian ambient. My suggestions are a nice basket-like pendulum light and matte plant vases. It comes with a matte finishing but you can make it a little bit shinier.",
+        "author": "Calebe Moreira",
+        "source_page_url": "https://www.blendkit.com/asset-gallery-detail/08dee582-4ac7-47fc-a1e1-192e677da403/",
+        "official_api_url": "https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A08dee582-4ac7-47fc-a1e1-192e677da403",
+        "source_page_probe": {
+          "request": "GET https://www.blendkit.com/asset-gallery-detail/08dee582-4ac7-47fc-a1e1-192e677da403/",
+          "http_status": 200,
+          "final_url": "https://www.blendkit.com/asset-gallery-detail/08dee582-4ac7-47fc-a1e1-192e677da403/",
+          "content_type": "text/html; charset=utf-8",
+          "result_literal": "HTTP 200; final_url=https://www.blendkit.com/asset-gallery-detail/08dee582-4ac7-47fc-a1e1-192e677da403/"
+        },
+        "official_api_probe": {
+          "request": "GET https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A08dee582-4ac7-47fc-a1e1-192e677da403",
+          "http_status": 200,
+          "result_literal": "HTTP 200; count=1; assetBaseId=08dee582-4ac7-47fc-a1e1-192e677da403"
+        },
+        "license": "CC0 (API value: cc_zero)",
+        "license_code": "cc_zero",
+        "license_url": "https://www.blendkit.com/docs/licenses/",
+        "terms_url": "https://www.blendkit.com/terms-and-conditions-2026/",
+        "free": true,
+        "can_download": true,
+        "access": "free",
+        "base_price": null,
+        "is_for_sale": false,
+        "web_embedded_redistribution": "Allowed for this CC0 asset; retain the asset/author record. This conclusion does not extend to Blendkit Royalty Free assets.",
+        "attribution": "Not legally required by CC0; author credit retained voluntarily in project metadata.",
+        "visualisation_only": true,
+        "contractual": false,
+        "dimensions_m": {
+          "x": 1.5,
+          "y": 1.0,
+          "z": 0.6902
+        },
+        "geometry": {
+          "face_count_source": 42,
+          "face_count_render": 42,
+          "mesh_poly_type": "quad_dominant",
+          "object_count": 3
+        },
+        "textures": {
+          "max_resolution_px": 4096,
+          "min_resolution_px": 4096,
+          "texture_count": 4,
+          "pure_pbr": true,
+          "materials": [
+            "Beech Wood Flooring Planks",
+            "Beech Wood Flooring Planks.001"
+          ],
+          "shaders": [
+            "principled"
+          ]
+        },
+        "formats": [
+          "blend",
+          "resolution_0_5K",
+          "resolution_1K",
+          "resolution_2K",
+          "resolution_4K"
+        ],
+        "files": [
+          {
+            "file_type": "blend",
+            "file_id": 47225,
+            "size_bytes": 64962563,
+            "filename": "assets/441ccc45c67d43838bd5b04f8e6bc462/files/blend_7b87bf4b-85f5-47aa-bbcf-c634d5156d42.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/47225/"
+          },
+          {
+            "file_type": "resolution_0_5K",
+            "file_id": 53513,
+            "size_bytes": 185385,
+            "filename": "assets/441ccc45c67d43838bd5b04f8e6bc462/files/resolution_0_5K_607fdb97-21fb-4d27-b157-1541d033accb.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/53513/"
+          },
+          {
+            "file_type": "resolution_1K",
+            "file_id": 53512,
+            "size_bytes": 528231,
+            "filename": "assets/441ccc45c67d43838bd5b04f8e6bc462/files/resolution_1K_70118938-4b36-47ae-a004-53d867013299.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/53512/"
+          },
+          {
+            "file_type": "resolution_2K",
+            "file_id": 53511,
+            "size_bytes": 2430981,
+            "filename": "assets/441ccc45c67d43838bd5b04f8e6bc462/files/resolution_2K_7a0ac057-cb59-44ac-9c8e-98c671dc183d.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/53511/"
+          },
+          {
+            "file_type": "resolution_4K",
+            "file_id": 53510,
+            "size_bytes": 12821668,
+            "filename": "assets/441ccc45c67d43838bd5b04f8e6bc462/files/resolution_4K_f1bb9239-f284-4378-aebd-f52196e09ae3.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/53510/"
+          }
+        ],
+        "preferred_source_file": {
+          "file_type": "resolution_1K",
+          "file_id": 53512,
+          "size_bytes": 528231,
+          "filename": "assets/441ccc45c67d43838bd5b04f8e6bc462/files/resolution_1K_70118938-4b36-47ae-a004-53d867013299.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/53512/"
+        },
+        "requires_conversion_to_glb": true,
+        "anonymous_download_metadata_probe": {
+          "request_template": "https://www.blenderkit.com/api/v1/downloads/53512/?scene_uuid=<random-uuid>",
+          "http_status": 200,
+          "response_file_type": "resolution_1K",
+          "response_file_path_host": "assets.blenderkit.com",
+          "asset_payload_fetched": false,
+          "result_literal": "HTTP 200; fileType=resolution_1K; filePath_host=assets.blenderkit.com; asset_payload_bytes_fetched=0"
+        },
+        "verification_status": "validated",
+        "scores": {
+          "realism": 7,
+          "style_match": 9,
+          "geometry_quality": 6,
+          "texture_quality": 8,
+          "performance": 9,
+          "license_confidence": 10,
+          "total": 49,
+          "maximum": 60
+        },
+        "status": "CONDITIONAL_RESCALE_HEIGHT",
+        "assessment": "Clear Scandinavian style and light package, but the reported 0.6902 m height is below normal dining height; scale to 0.74–0.76 m and recheck top thickness."
+      },
+      {
+        "category": "contemporary_table",
+        "source": "Blendkit",
+        "asset_base_id": "b7b0eac0-f441-4077-bdcc-5c5f6739a7fe",
+        "name": "Dining Table Medium",
+        "description": "Medium sized (150 x 90 x 75 cm) dining table with a wooden texture.",
+        "author": "/Unwrapped ",
+        "source_page_url": "https://www.blendkit.com/asset-gallery-detail/b7b0eac0-f441-4077-bdcc-5c5f6739a7fe/",
+        "official_api_url": "https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3Ab7b0eac0-f441-4077-bdcc-5c5f6739a7fe",
+        "source_page_probe": {
+          "request": "GET https://www.blendkit.com/asset-gallery-detail/b7b0eac0-f441-4077-bdcc-5c5f6739a7fe/",
+          "http_status": 200,
+          "final_url": "https://www.blendkit.com/asset-gallery-detail/b7b0eac0-f441-4077-bdcc-5c5f6739a7fe/",
+          "content_type": "text/html; charset=utf-8",
+          "result_literal": "HTTP 200; final_url=https://www.blendkit.com/asset-gallery-detail/b7b0eac0-f441-4077-bdcc-5c5f6739a7fe/"
+        },
+        "official_api_probe": {
+          "request": "GET https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3Ab7b0eac0-f441-4077-bdcc-5c5f6739a7fe",
+          "http_status": 200,
+          "result_literal": "HTTP 200; count=1; assetBaseId=b7b0eac0-f441-4077-bdcc-5c5f6739a7fe"
+        },
+        "license": "CC0 (API value: cc_zero)",
+        "license_code": "cc_zero",
+        "license_url": "https://www.blendkit.com/docs/licenses/",
+        "terms_url": "https://www.blendkit.com/terms-and-conditions-2026/",
+        "free": true,
+        "can_download": true,
+        "access": "free",
+        "base_price": null,
+        "is_for_sale": false,
+        "web_embedded_redistribution": "Allowed for this CC0 asset; retain the asset/author record. This conclusion does not extend to Blendkit Royalty Free assets.",
+        "attribution": "Not legally required by CC0; author credit retained voluntarily in project metadata.",
+        "visualisation_only": true,
+        "contractual": false,
+        "dimensions_m": {
+          "x": 0.9,
+          "y": 1.5,
+          "z": 0.75
+        },
+        "geometry": {
+          "face_count_source": 130,
+          "face_count_render": 130,
+          "mesh_poly_type": "quad",
+          "object_count": 2
+        },
+        "textures": {
+          "max_resolution_px": 2048,
+          "min_resolution_px": 2048,
+          "texture_count": 4,
+          "pure_pbr": null,
+          "materials": [
+            "【AmbCG】Wood048"
+          ],
+          "shaders": [
+            "principled"
+          ]
+        },
+        "formats": [
+          "blend",
+          "resolution_0_5K",
+          "resolution_1K",
+          "resolution_2K"
+        ],
+        "files": [
+          {
+            "file_type": "blend",
+            "file_id": 181800,
+            "size_bytes": 35458438,
+            "filename": "assets/28863a299887475ea2da44a09709ebd2/files/blend_9ccbb2e9-771d-4a85-aa41-d962fb792447.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/181800/"
+          },
+          {
+            "file_type": "resolution_0_5K",
+            "file_id": 184125,
+            "size_bytes": 343606,
+            "filename": "assets/28863a299887475ea2da44a09709ebd2/files/resolution_0_5K_713885f7-f536-4e9a-b038-58c36ae5a250.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/184125/"
+          },
+          {
+            "file_type": "resolution_1K",
+            "file_id": 184124,
+            "size_bytes": 1186507,
+            "filename": "assets/28863a299887475ea2da44a09709ebd2/files/resolution_1K_3cff9a6c-2570-46a1-aa2f-ab0f23ee986c.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/184124/"
+          },
+          {
+            "file_type": "resolution_2K",
+            "file_id": 184123,
+            "size_bytes": 4416376,
+            "filename": "assets/28863a299887475ea2da44a09709ebd2/files/resolution_2K_8d764bf5-a082-42e7-81eb-903f0095a470.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/184123/"
+          }
+        ],
+        "preferred_source_file": {
+          "file_type": "resolution_1K",
+          "file_id": 184124,
+          "size_bytes": 1186507,
+          "filename": "assets/28863a299887475ea2da44a09709ebd2/files/resolution_1K_3cff9a6c-2570-46a1-aa2f-ab0f23ee986c.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/184124/"
+        },
+        "requires_conversion_to_glb": true,
+        "anonymous_download_metadata_probe": {
+          "request_template": "https://www.blenderkit.com/api/v1/downloads/184124/?scene_uuid=<random-uuid>",
+          "http_status": 200,
+          "response_file_type": "resolution_1K",
+          "response_file_path_host": "assets.blenderkit.com",
+          "asset_payload_fetched": false,
+          "result_literal": "HTTP 200; fileType=resolution_1K; filePath_host=assets.blenderkit.com; asset_payload_bytes_fetched=0"
+        },
+        "verification_status": "validated",
+        "scores": {
+          "realism": 7,
+          "style_match": 8,
+          "geometry_quality": 6,
+          "texture_quality": 7,
+          "performance": 10,
+          "license_confidence": 10,
+          "total": 48,
+          "maximum": 60
+        },
+        "status": "PILOT_SHORTLIST",
+        "assessment": "Correct real-world dimensions (1.50 × 0.90 × 0.75 m) and very low geometry; best as a performance fallback after close-up material QA."
+      }
+    ],
+    "matching_chair": [
+      {
+        "category": "matching_chair",
+        "source": "Poly Haven",
+        "asset_id": "dining_chair_02",
+        "name": "Dining Chair 02",
+        "description": "Free 8K model: modern dining chair with tufted brown leather, high cushioned back and seat, dark wooden legs - fancy, comfy and ideal for elegant interior scenes.",
+        "author": "James Ray Cock",
+        "source_page_url": "https://polyhaven.com/a/dining_chair_02",
+        "official_metadata_api_url": "https://api.polyhaven.com/assets?t=models",
+        "official_files_api_url": "https://api.polyhaven.com/files/dining_chair_02",
+        "source_page_probe": {
+          "request": "GET https://polyhaven.com/a/dining_chair_02",
+          "http_status": 200,
+          "final_url": "https://polyhaven.com/a/dining_chair_02",
+          "content_type": "text/html; charset=utf-8",
+          "result_literal": "HTTP 200; final_url=https://polyhaven.com/a/dining_chair_02"
+        },
+        "official_metadata_api_probe": {
+          "request": "GET https://api.polyhaven.com/assets?t=models",
+          "http_status": 200,
+          "result_literal": "HTTP 200; asset_id=dining_chair_02; name=Dining Chair 02"
+        },
+        "official_files_api_probe": {
+          "request": "GET https://api.polyhaven.com/files/dining_chair_02",
+          "http_status": 200,
+          "result_literal": "HTTP 200; formats=blend,gltf,usd,fbx"
+        },
+        "license": "CC0 / Public Domain dedication",
+        "license_code": "cc_zero",
+        "license_url": "https://polyhaven.com/license",
+        "free": true,
+        "can_download": true,
+        "access": "public_direct_http",
+        "base_price": 0,
+        "is_for_sale": false,
+        "web_embedded_redistribution": "Explicitly allowed by Poly Haven’s CC0 license page, including redistribution inside a product.",
+        "attribution": "Not required; author retained voluntarily in project metadata.",
+        "visualisation_only": true,
+        "contractual": false,
+        "dimensions_m": {
+          "x": 0.4335707724094391,
+          "y": 0.5764201134443283,
+          "z": 0.9733776897192001
+        },
+        "geometry": {
+          "polycount": 22013,
+          "polycount_field_source": "Poly Haven assets API"
+        },
+        "textures": {
+          "max_resolution_px": 8192,
+          "texture_channels": [
+            "Diffuse",
+            "nor_dx",
+            "nor_gl",
+            "Metal",
+            "arm",
+            "AO",
+            "Rough"
+          ],
+          "attributes": {
+            "condition": [
+              "clean"
+            ],
+            "material": [
+              "leather",
+              "wood"
+            ]
+          }
+        },
+        "formats": [
+          "blend",
+          "gltf",
+          "usd",
+          "fbx"
+        ],
+        "preferred_source_file": {
+          "format": "gltf",
+          "resolution": "1k",
+          "root_url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/dining_chair_02/dining_chair_02_1k.gltf",
+          "root_size_bytes": 2723,
+          "bundle_size_bytes": 921075,
+          "md5": "5aff75016e0943e84161de89dcc3ceb8",
+          "included_files": 4
+        },
+        "requires_conversion_to_glb": true,
+        "anonymous_download_probe": {
+          "request": "HEAD https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/dining_chair_02/dining_chair_02_1k.gltf",
+          "http_status": 200,
+          "final_url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/dining_chair_02/dining_chair_02_1k.gltf",
+          "asset_payload_fetched": false,
+          "result_literal": "HTTP 200; Content-Length=2723; asset_payload_bytes_fetched=0"
+        },
+        "scores": {
+          "realism": 9,
+          "style_match": 8,
+          "geometry_quality": 9,
+          "texture_quality": 10,
+          "performance": 8,
+          "license_confidence": 10,
+          "total": 54,
+          "maximum": 60
+        },
+        "status": "PILOT_SELECTED",
+        "assessment": "Modern tufted leather dining chair with direct 1K glTF bundle, strong PBR maps and reliable real-world scale; dark wood/leather is coherent with the selected wood/metal table.",
+        "tags": [
+          "modern",
+          "chair",
+          "seat",
+          "dining",
+          "fancy",
+          "leather"
+        ]
+      },
+      {
+        "category": "matching_chair",
+        "source": "Blendkit",
+        "asset_base_id": "53195601-f0c2-4c34-871a-34aa32472e7e",
+        "name": "Wooden Dining Chair",
+        "description": "SImple wooden dining chair, mapped and ready to go.",
+        "author": "Brian Pickens",
+        "source_page_url": "https://www.blendkit.com/asset-gallery-detail/53195601-f0c2-4c34-871a-34aa32472e7e/",
+        "official_api_url": "https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A53195601-f0c2-4c34-871a-34aa32472e7e",
+        "source_page_probe": {
+          "request": "GET https://www.blendkit.com/asset-gallery-detail/53195601-f0c2-4c34-871a-34aa32472e7e/",
+          "http_status": 200,
+          "final_url": "https://www.blendkit.com/asset-gallery-detail/53195601-f0c2-4c34-871a-34aa32472e7e/",
+          "content_type": "text/html; charset=utf-8",
+          "result_literal": "HTTP 200; final_url=https://www.blendkit.com/asset-gallery-detail/53195601-f0c2-4c34-871a-34aa32472e7e/"
+        },
+        "official_api_probe": {
+          "request": "GET https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A53195601-f0c2-4c34-871a-34aa32472e7e",
+          "http_status": 200,
+          "result_literal": "HTTP 200; count=1; assetBaseId=53195601-f0c2-4c34-871a-34aa32472e7e"
+        },
+        "license": "CC0 (API value: cc_zero)",
+        "license_code": "cc_zero",
+        "license_url": "https://www.blendkit.com/docs/licenses/",
+        "terms_url": "https://www.blendkit.com/terms-and-conditions-2026/",
+        "free": true,
+        "can_download": true,
+        "access": "free",
+        "base_price": null,
+        "is_for_sale": false,
+        "web_embedded_redistribution": "Allowed for this CC0 asset; retain the asset/author record. This conclusion does not extend to Blendkit Royalty Free assets.",
+        "attribution": "Not legally required by CC0; author credit retained voluntarily in project metadata.",
+        "visualisation_only": true,
+        "contractual": false,
+        "dimensions_m": {
+          "x": 0.521,
+          "y": 0.49,
+          "z": 0.9553
+        },
+        "geometry": {
+          "face_count_source": 3388,
+          "face_count_render": 3388,
+          "mesh_poly_type": "quad_dominant",
+          "object_count": 1
+        },
+        "textures": {
+          "max_resolution_px": 4096,
+          "min_resolution_px": 4096,
+          "texture_count": null,
+          "pure_pbr": true,
+          "materials": [
+            "spruce wood rough clean"
+          ],
+          "shaders": [
+            "principled"
+          ]
+        },
+        "formats": [
+          "blend",
+          "resolution_0_5K",
+          "resolution_1K",
+          "resolution_2K"
+        ],
+        "files": [
+          {
+            "file_type": "blend",
+            "file_id": 6329,
+            "size_bytes": 21289504,
+            "filename": "assets/806b363f8a31465480064f3dc11d4e18/files/blend_325e4eb7-8121-4911-a2c8-ede8f41adbc5.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/6329/"
+          },
+          {
+            "file_type": "resolution_0_5K",
+            "file_id": 30424,
+            "size_bytes": 476184,
+            "filename": "assets/806b363f8a31465480064f3dc11d4e18/files/resolution_0_5K_663a5e7a-2594-4077-9a8c-73c31b5b0579.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/30424/"
+          },
+          {
+            "file_type": "resolution_1K",
+            "file_id": 30423,
+            "size_bytes": 1138331,
+            "filename": "assets/806b363f8a31465480064f3dc11d4e18/files/resolution_1K_cdacf221-9256-4043-8ee1-9f0d763d3989.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/30423/"
+          },
+          {
+            "file_type": "resolution_2K",
+            "file_id": 30422,
+            "size_bytes": 4433379,
+            "filename": "assets/806b363f8a31465480064f3dc11d4e18/files/resolution_2K_b84da086-c765-41b2-b212-52ee3721a9a7.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/30422/"
+          }
+        ],
+        "preferred_source_file": {
+          "file_type": "resolution_1K",
+          "file_id": 30423,
+          "size_bytes": 1138331,
+          "filename": "assets/806b363f8a31465480064f3dc11d4e18/files/resolution_1K_cdacf221-9256-4043-8ee1-9f0d763d3989.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/30423/"
+        },
+        "requires_conversion_to_glb": true,
+        "anonymous_download_metadata_probe": {
+          "request_template": "https://www.blenderkit.com/api/v1/downloads/30423/?scene_uuid=<random-uuid>",
+          "http_status": 200,
+          "response_file_type": "resolution_1K",
+          "response_file_path_host": "assets.blenderkit.com",
+          "asset_payload_fetched": false,
+          "result_literal": "HTTP 200; fileType=resolution_1K; filePath_host=assets.blenderkit.com; asset_payload_bytes_fetched=0"
+        },
+        "verification_status": "validated",
+        "scores": {
+          "realism": 8,
+          "style_match": 9,
+          "geometry_quality": 8,
+          "texture_quality": 7,
+          "performance": 9,
+          "license_confidence": 10,
+          "total": 51,
+          "maximum": 60
+        },
+        "status": "PILOT_SHORTLIST",
+        "assessment": "Generic mapped wooden dining chair with correct scale and modest geometry; visually matches wood dining tables, but the API omits texture count so material channels need inspection."
+      },
+      {
+        "category": "matching_chair",
+        "source": "Blendkit",
+        "asset_base_id": "0e9aa213-afd4-4b45-ba88-d3b76bcef9ce",
+        "name": "Plastic chair",
+        "description": "This sleek and futuristic chair is a perfect blend of modern aesthetics and ergonomic functionality. Crafted from high-quality plastic, its fluid, sculptural form provides both style and comfort. The chair features a seamless, continuous frame with smooth curves that conform to the body's natural posture, ensuring excellent support. Its lightweight yet durable construction makes it suitable for contemporary interiors, creative workspaces, or stylish lounge areas. The glossy black finish adds a touch of sophistication, making it a striking statement piece for any modern setting.",
+        "author": "abd3d ",
+        "source_page_url": "https://www.blendkit.com/asset-gallery-detail/0e9aa213-afd4-4b45-ba88-d3b76bcef9ce/",
+        "official_api_url": "https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A0e9aa213-afd4-4b45-ba88-d3b76bcef9ce",
+        "source_page_probe": {
+          "request": "GET https://www.blendkit.com/asset-gallery-detail/0e9aa213-afd4-4b45-ba88-d3b76bcef9ce/",
+          "http_status": 200,
+          "final_url": "https://www.blendkit.com/asset-gallery-detail/0e9aa213-afd4-4b45-ba88-d3b76bcef9ce/",
+          "content_type": "text/html; charset=utf-8",
+          "result_literal": "HTTP 200; final_url=https://www.blendkit.com/asset-gallery-detail/0e9aa213-afd4-4b45-ba88-d3b76bcef9ce/"
+        },
+        "official_api_probe": {
+          "request": "GET https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A0e9aa213-afd4-4b45-ba88-d3b76bcef9ce",
+          "http_status": 200,
+          "result_literal": "HTTP 200; count=1; assetBaseId=0e9aa213-afd4-4b45-ba88-d3b76bcef9ce"
+        },
+        "license": "CC0 (API value: cc_zero)",
+        "license_code": "cc_zero",
+        "license_url": "https://www.blendkit.com/docs/licenses/",
+        "terms_url": "https://www.blendkit.com/terms-and-conditions-2026/",
+        "free": true,
+        "can_download": true,
+        "access": "free",
+        "base_price": null,
+        "is_for_sale": false,
+        "web_embedded_redistribution": "Allowed for this CC0 asset; retain the asset/author record. This conclusion does not extend to Blendkit Royalty Free assets.",
+        "attribution": "Not legally required by CC0; author credit retained voluntarily in project metadata.",
+        "visualisation_only": true,
+        "contractual": false,
+        "dimensions_m": {
+          "x": 0.5403,
+          "y": 0.6011,
+          "z": 0.7337
+        },
+        "geometry": {
+          "face_count_source": 1208,
+          "face_count_render": 19328,
+          "mesh_poly_type": "quad",
+          "object_count": 2
+        },
+        "textures": {
+          "max_resolution_px": 2048,
+          "min_resolution_px": 2048,
+          "texture_count": 3,
+          "pure_pbr": true,
+          "materials": [
+            "[Material]"
+          ],
+          "shaders": [
+            "[principled]"
+          ]
+        },
+        "formats": [
+          "blend",
+          "gltf",
+          "gltf_godot",
+          "resolution_0_5K",
+          "resolution_1K",
+          "resolution_2K"
+        ],
+        "files": [
+          {
+            "file_type": "blend",
+            "file_id": 612898,
+            "size_bytes": 4750817,
+            "filename": "assets/4318a4f5a3e242d39661e8c3a8c33ab3/files/blend_6bb4e93b-5725-4296-a127-6389b12441ce.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/612898/"
+          },
+          {
+            "file_type": "gltf",
+            "file_id": 614574,
+            "size_bytes": 260704,
+            "filename": "assets/4318a4f5a3e242d39661e8c3a8c33ab3/files/gltf_38740710-1e77-4f04-85ec-97df02bb28bd.glb",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/614574/"
+          },
+          {
+            "file_type": "gltf_godot",
+            "file_id": 614578,
+            "size_bytes": 434000,
+            "filename": "assets/4318a4f5a3e242d39661e8c3a8c33ab3/files/gltf_godot_4798785d-3260-4b94-8098-1c2224f5f6a0.glb",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/614578/"
+          },
+          {
+            "file_type": "resolution_0_5K",
+            "file_id": 614579,
+            "size_bytes": 282992,
+            "filename": "assets/4318a4f5a3e242d39661e8c3a8c33ab3/files/resolution_0_5K_28e066cf-dcf1-4b27-89d7-64e31b169060.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/614579/"
+          },
+          {
+            "file_type": "resolution_1K",
+            "file_id": 614577,
+            "size_bytes": 533700,
+            "filename": "assets/4318a4f5a3e242d39661e8c3a8c33ab3/files/resolution_1K_d589da2d-290d-498a-94ad-654aaf60a443.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/614577/"
+          },
+          {
+            "file_type": "resolution_2K",
+            "file_id": 614576,
+            "size_bytes": 1408055,
+            "filename": "assets/4318a4f5a3e242d39661e8c3a8c33ab3/files/resolution_2K_393a968e-5e7a-4a90-94d5-0aca05dba157.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/614576/"
+          }
+        ],
+        "preferred_source_file": {
+          "file_type": "gltf",
+          "file_id": 614574,
+          "size_bytes": 260704,
+          "filename": "assets/4318a4f5a3e242d39661e8c3a8c33ab3/files/gltf_38740710-1e77-4f04-85ec-97df02bb28bd.glb",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/614574/"
+        },
+        "requires_conversion_to_glb": false,
+        "anonymous_download_metadata_probe": {
+          "request_template": "https://www.blenderkit.com/api/v1/downloads/614574/?scene_uuid=<random-uuid>",
+          "http_status": 200,
+          "response_file_type": "gltf",
+          "response_file_path_host": "assets.blenderkit.com",
+          "asset_payload_fetched": false,
+          "result_literal": "HTTP 200; fileType=gltf; filePath_host=assets.blenderkit.com; asset_payload_bytes_fetched=0"
+        },
+        "verification_status": "validated",
+        "scores": {
+          "realism": 7,
+          "style_match": 7,
+          "geometry_quality": 7,
+          "texture_quality": 7,
+          "performance": 10,
+          "license_confidence": 10,
+          "total": 48,
+          "maximum": 60
+        },
+        "status": "PERFORMANCE_FALLBACK",
+        "assessment": "Compact direct glTF and only 1.2k faces; modern silhouette, but plastic styling is less coherent with the selected wood/metal table."
+      },
+      {
+        "category": "matching_chair",
+        "source": "Blendkit",
+        "asset_base_id": "30ad483f-9438-4758-9fab-d0ff1caab348",
+        "name": "Wooden Chair",
+        "description": "A beautifully crafted wooden chair with a natural cane backrest and cushioned seat, designed with smooth curves and golden leg tips for an elegant touch. The setting combines a soft geometric wall pattern, warm wooden flooring, and natural daylight filtering through curtains, creating a calm and minimal interior atmosphere. A tall potted plant adds a refreshing organic element, balancing modern design with nature-inspired aesthetics.\r\nfor more images pls visit : https://www.instagram.com/p/DNciE8SIo1v/",
+        "author": "abd3d ",
+        "source_page_url": "https://www.blendkit.com/asset-gallery-detail/30ad483f-9438-4758-9fab-d0ff1caab348/",
+        "official_api_url": "https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A30ad483f-9438-4758-9fab-d0ff1caab348",
+        "source_page_probe": {
+          "request": "GET https://www.blendkit.com/asset-gallery-detail/30ad483f-9438-4758-9fab-d0ff1caab348/",
+          "http_status": 200,
+          "final_url": "https://www.blendkit.com/asset-gallery-detail/30ad483f-9438-4758-9fab-d0ff1caab348/",
+          "content_type": "text/html; charset=utf-8",
+          "result_literal": "HTTP 200; final_url=https://www.blendkit.com/asset-gallery-detail/30ad483f-9438-4758-9fab-d0ff1caab348/"
+        },
+        "official_api_probe": {
+          "request": "GET https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A30ad483f-9438-4758-9fab-d0ff1caab348",
+          "http_status": 200,
+          "result_literal": "HTTP 200; count=1; assetBaseId=30ad483f-9438-4758-9fab-d0ff1caab348"
+        },
+        "license": "CC0 (API value: cc_zero)",
+        "license_code": "cc_zero",
+        "license_url": "https://www.blendkit.com/docs/licenses/",
+        "terms_url": "https://www.blendkit.com/terms-and-conditions-2026/",
+        "free": true,
+        "can_download": true,
+        "access": "free",
+        "base_price": null,
+        "is_for_sale": false,
+        "web_embedded_redistribution": "Allowed for this CC0 asset; retain the asset/author record. This conclusion does not extend to Blendkit Royalty Free assets.",
+        "attribution": "Not legally required by CC0; author credit retained voluntarily in project metadata.",
+        "visualisation_only": true,
+        "contractual": false,
+        "dimensions_m": {
+          "x": 0.6039,
+          "y": 0.6616,
+          "z": 0.8158
+        },
+        "geometry": {
+          "face_count_source": 77843,
+          "face_count_render": 323598,
+          "mesh_poly_type": "quad_dominant",
+          "object_count": 10
+        },
+        "textures": {
+          "max_resolution_px": null,
+          "min_resolution_px": null,
+          "texture_count": 0,
+          "pure_pbr": null,
+          "materials": [
+            "[wood_table_worn Geometric Natural Jacquard Brass  - Brushed Wood Smooth Bamboo]"
+          ],
+          "shaders": [
+            "[]"
+          ]
+        },
+        "formats": [
+          "blend",
+          "gltf",
+          "gltf_godot",
+          "resolution_0_5K",
+          "resolution_1K"
+        ],
+        "files": [
+          {
+            "file_type": "blend",
+            "file_id": 792011,
+            "size_bytes": 17509578,
+            "filename": "assets/c8857203ba764d349ee7906293144d4e/files/blend_b9323225-70bd-418a-8d75-b1d0aa37b777.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/792011/"
+          },
+          {
+            "file_type": "gltf",
+            "file_id": 799128,
+            "size_bytes": 14911524,
+            "filename": "assets/c8857203ba764d349ee7906293144d4e/files/gltf_1915ab54-832f-4d93-9954-5f1e29162f4f.glb",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/799128/"
+          },
+          {
+            "file_type": "gltf_godot",
+            "file_id": 799127,
+            "size_bytes": 34777440,
+            "filename": "assets/c8857203ba764d349ee7906293144d4e/files/gltf_godot_19ad8c21-53bc-47b8-9723-07be334e68d3.glb",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/799127/"
+          },
+          {
+            "file_type": "resolution_0_5K",
+            "file_id": 799126,
+            "size_bytes": 6823068,
+            "filename": "assets/c8857203ba764d349ee7906293144d4e/files/resolution_0_5K_68890491-951d-4b86-8150-d11b8aaab34b.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/799126/"
+          },
+          {
+            "file_type": "resolution_1K",
+            "file_id": 799125,
+            "size_bytes": 9549798,
+            "filename": "assets/c8857203ba764d349ee7906293144d4e/files/resolution_1K_67224971-6ef1-474a-91bb-2b4a7687d01c.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/799125/"
+          }
+        ],
+        "preferred_source_file": {
+          "file_type": "gltf",
+          "file_id": 799128,
+          "size_bytes": 14911524,
+          "filename": "assets/c8857203ba764d349ee7906293144d4e/files/gltf_1915ab54-832f-4d93-9954-5f1e29162f4f.glb",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/799128/"
+        },
+        "requires_conversion_to_glb": false,
+        "anonymous_download_metadata_probe": {
+          "request_template": "https://www.blenderkit.com/api/v1/downloads/799128/?scene_uuid=<random-uuid>",
+          "http_status": 200,
+          "response_file_type": "gltf",
+          "response_file_path_host": "assets.blenderkit.com",
+          "asset_payload_fetched": false,
+          "result_literal": "HTTP 200; fileType=gltf; filePath_host=assets.blenderkit.com; asset_payload_bytes_fetched=0"
+        },
+        "verification_status": "validated",
+        "scores": {
+          "realism": 8,
+          "style_match": 9,
+          "geometry_quality": 8,
+          "texture_quality": 5,
+          "performance": 3,
+          "license_confidence": 10,
+          "total": 43,
+          "maximum": 60
+        },
+        "status": "REJECT_PERFORMANCE_FOR_LIVE_WEB",
+        "assessment": "Contemporary wood/cane look, but 77.8k faces and a 14.9 MB generated glTF are excessive for repeated dining-chair instances; source API also reports no texture set."
+      }
+    ],
+    "realistic_bed": [
+      {
+        "category": "realistic_bed",
+        "source": "Blendkit",
+        "asset_base_id": "3a845132-df64-4f02-8da6-44229fe774e4",
+        "name": "Master bed",
+        "description": "Transform your interior scenes with this highly detailed master bed model, perfect for any modern bedroom setting. This model is designed with both aesthetics and functionality in mind, making it an ideal addition to your Blender projects.",
+        "author": "Rohma Ansari",
+        "source_page_url": "https://www.blendkit.com/asset-gallery-detail/3a845132-df64-4f02-8da6-44229fe774e4/",
+        "official_api_url": "https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A3a845132-df64-4f02-8da6-44229fe774e4",
+        "source_page_probe": {
+          "request": "GET https://www.blendkit.com/asset-gallery-detail/3a845132-df64-4f02-8da6-44229fe774e4/",
+          "http_status": 200,
+          "final_url": "https://www.blendkit.com/asset-gallery-detail/3a845132-df64-4f02-8da6-44229fe774e4/",
+          "content_type": "text/html; charset=utf-8",
+          "result_literal": "HTTP 200; final_url=https://www.blendkit.com/asset-gallery-detail/3a845132-df64-4f02-8da6-44229fe774e4/"
+        },
+        "official_api_probe": {
+          "request": "GET https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A3a845132-df64-4f02-8da6-44229fe774e4",
+          "http_status": 200,
+          "result_literal": "HTTP 200; count=1; assetBaseId=3a845132-df64-4f02-8da6-44229fe774e4"
+        },
+        "license": "CC0 (API value: cc_zero)",
+        "license_code": "cc_zero",
+        "license_url": "https://www.blendkit.com/docs/licenses/",
+        "terms_url": "https://www.blendkit.com/terms-and-conditions-2026/",
+        "free": true,
+        "can_download": true,
+        "access": "free",
+        "base_price": null,
+        "is_for_sale": false,
+        "web_embedded_redistribution": "Allowed for this CC0 asset; retain the asset/author record. This conclusion does not extend to Blendkit Royalty Free assets.",
+        "attribution": "Not legally required by CC0; author credit retained voluntarily in project metadata.",
+        "visualisation_only": true,
+        "contractual": false,
+        "dimensions_m": {
+          "x": 1.7622,
+          "y": 2.2266,
+          "z": 1.0604
+        },
+        "geometry": {
+          "face_count_source": 4195,
+          "face_count_render": 4195,
+          "mesh_poly_type": "quad_dominant",
+          "object_count": 1
+        },
+        "textures": {
+          "max_resolution_px": null,
+          "min_resolution_px": null,
+          "texture_count": 0,
+          "pure_pbr": false,
+          "materials": [
+            "[Material wood fabric]"
+          ],
+          "shaders": [
+            "[]"
+          ]
+        },
+        "formats": [
+          "blend",
+          "gltf",
+          "gltf_godot",
+          "resolution_0_5K"
+        ],
+        "files": [
+          {
+            "file_type": "blend",
+            "file_id": 527451,
+            "size_bytes": 484055,
+            "filename": "assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/blend_c88f3d86-b573-43ce-b1ae-90cb294c37a7.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/527451/"
+          },
+          {
+            "file_type": "gltf",
+            "file_id": 531158,
+            "size_bytes": 133244,
+            "filename": "assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/gltf_d224781f-cab9-480c-96d0-f86a7aafec61.glb",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/531158/"
+          },
+          {
+            "file_type": "gltf_godot",
+            "file_id": 531159,
+            "size_bytes": 346188,
+            "filename": "assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/gltf_godot_da32b11e-b87c-4add-8dc9-140adbfdb54c.glb",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/531159/"
+          },
+          {
+            "file_type": "resolution_0_5K",
+            "file_id": 531184,
+            "size_bytes": 318988,
+            "filename": "assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/resolution_0_5K_c54656a9-2cf5-45a0-9b26-0cf526df307d.blend",
+            "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/531184/"
+          }
+        ],
+        "preferred_source_file": {
+          "file_type": "gltf",
+          "file_id": 531158,
+          "size_bytes": 133244,
+          "filename": "assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/gltf_d224781f-cab9-480c-96d0-f86a7aafec61.glb",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/531158/"
+        },
+        "requires_conversion_to_glb": false,
+        "anonymous_download_metadata_probe": {
+          "request_template": "https://www.blenderkit.com/api/v1/downloads/531158/?scene_uuid=<random-uuid>",
+          "http_status": 200,
+          "response_file_type": "gltf",
+          "response_file_path_host": "assets.blenderkit.com",
+          "asset_payload_fetched": false,
+          "result_literal": "HTTP 200; fileType=gltf; filePath_host=assets.blenderkit.com; asset_payload_bytes_fetched=0"
+        },
+        "verification_status": "validated",
+        "scores": {
+          "realism": 8,
+          "style_match": 9,
+          "geometry_quality": 7,
+          "texture_quality": 4,
+          "performance": 10,
+          "license_confidence": 10,
+          "total": 48,
+          "maximum": 60
+        },
+        "status": "PILOT_SELECTED_CONDITIONAL_MATERIAL_QA",
+        "assessment": "Only free CC0 candidate found that clearly fits a modern double-bedroom brief; correct 1.76 × 2.23 m footprint and tiny direct glTF. No texture maps are reported, so it needs close-up material QA and, if necessary, a separately licensed PBR fabric/wood material."
+      },
+      {
+        "category": "realistic_bed",
+        "source": "Poly Haven",
+        "asset_id": "vintage_day_bed",
+        "name": "Vintage Day Bed",
+        "description": "Free 8K model of a vintage day bed with worn carved wood, sagging cushion, laced pillow, and a draped floral quilt, rich in aged textures and detail.",
+        "author": "Aron Łyczek",
+        "source_page_url": "https://polyhaven.com/a/vintage_day_bed",
+        "official_metadata_api_url": "https://api.polyhaven.com/assets?t=models",
+        "official_files_api_url": "https://api.polyhaven.com/files/vintage_day_bed",
+        "source_page_probe": {
+          "request": "GET https://polyhaven.com/a/vintage_day_bed",
+          "http_status": 200,
+          "final_url": "https://polyhaven.com/a/vintage_day_bed",
+          "content_type": "text/html; charset=utf-8",
+          "result_literal": "HTTP 200; final_url=https://polyhaven.com/a/vintage_day_bed"
+        },
+        "official_metadata_api_probe": {
+          "request": "GET https://api.polyhaven.com/assets?t=models",
+          "http_status": 200,
+          "result_literal": "HTTP 200; asset_id=vintage_day_bed; name=Vintage Day Bed"
+        },
+        "official_files_api_probe": {
+          "request": "GET https://api.polyhaven.com/files/vintage_day_bed",
+          "http_status": 200,
+          "result_literal": "HTTP 200; formats=blend,gltf,usd,fbx"
+        },
+        "license": "CC0 / Public Domain dedication",
+        "license_code": "cc_zero",
+        "license_url": "https://polyhaven.com/license",
+        "free": true,
+        "can_download": true,
+        "access": "public_direct_http",
+        "base_price": 0,
+        "is_for_sale": false,
+        "web_embedded_redistribution": "Explicitly allowed by Poly Haven’s CC0 license page, including redistribution inside a product.",
+        "attribution": "Not required; author retained voluntarily in project metadata.",
+        "visualisation_only": true,
+        "contractual": false,
+        "dimensions_m": {
+          "x": 1.9725552201271057,
+          "y": 0.85477614402771,
+          "z": 1.1273465404283343
+        },
+        "geometry": {
+          "polycount": 2715,
+          "polycount_field_source": "Poly Haven assets API"
+        },
+        "textures": {
+          "max_resolution_px": 8192,
+          "texture_channels": [
+            "arm",
+            "Diffuse",
+            "Metal",
+            "nor_dx",
+            "nor_gl",
+            "Rough"
+          ],
+          "attributes": {
+            "material": [
+              "wood",
+              "fabric"
+            ],
+            "condition": [
+              "worn"
+            ]
+          }
+        },
+        "formats": [
+          "blend",
+          "gltf",
+          "usd",
+          "fbx"
+        ],
+        "preferred_source_file": {
+          "format": "gltf",
+          "resolution": "1k",
+          "root_url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/vintage_day_bed/vintage_day_bed_1k.gltf",
+          "root_size_bytes": 2791,
+          "bundle_size_bytes": 2425779,
+          "md5": "1e252681b0bfdbe4aff997f52ea95101",
+          "included_files": 4
+        },
+        "requires_conversion_to_glb": true,
+        "anonymous_download_probe": {
+          "request": "HEAD https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/vintage_day_bed/vintage_day_bed_1k.gltf",
+          "http_status": 200,
+          "final_url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/vintage_day_bed/vintage_day_bed_1k.gltf",
+          "asset_payload_fetched": false,
+          "result_literal": "HTTP 200; Content-Length=2791; asset_payload_bytes_fetched=0"
+        },
+        "scores": {
+          "realism": 9,
+          "style_match": 2,
+          "geometry_quality": 8,
+          "texture_quality": 10,
+          "performance": 8,
+          "license_confidence": 10,
+          "total": 47,
+          "maximum": 60
+        },
+        "status": "REJECT_STYLE_AND_SIZE",
+        "assessment": "Excellent scan-like detail and light mesh, but it is a narrow vintage day bed rather than a contemporary double bed.",
+        "tags": [
+          "old",
+          "vintage",
+          "antique",
+          "wooden",
+          "couch",
+          "bench",
+          "sofa-bed",
+          "matress",
+          "chaise"
+        ]
+      },
+      {
+        "category": "realistic_bed",
+        "source": "Poly Haven",
+        "asset_id": "GothicBed_01",
+        "name": "Gothic Bed 01",
+        "description": "Free 4K model of a vintage Gothic wooden four-poster bed with ornate carved headboard/footboard, rich dark finish and decorative medieval-inspired detailing.",
+        "author": "Kirill Sannikov",
+        "source_page_url": "https://polyhaven.com/a/GothicBed_01",
+        "official_metadata_api_url": "https://api.polyhaven.com/assets?t=models",
+        "official_files_api_url": "https://api.polyhaven.com/files/GothicBed_01",
+        "source_page_probe": {
+          "request": "GET https://polyhaven.com/a/GothicBed_01",
+          "http_status": 200,
+          "final_url": "https://polyhaven.com/a/GothicBed_01",
+          "content_type": "text/html; charset=utf-8",
+          "result_literal": "HTTP 200; final_url=https://polyhaven.com/a/GothicBed_01"
+        },
+        "official_metadata_api_probe": {
+          "request": "GET https://api.polyhaven.com/assets?t=models",
+          "http_status": 200,
+          "result_literal": "HTTP 200; asset_id=GothicBed_01; name=Gothic Bed 01"
+        },
+        "official_files_api_probe": {
+          "request": "GET https://api.polyhaven.com/files/GothicBed_01",
+          "http_status": 200,
+          "result_literal": "HTTP 200; formats=blend,gltf,usd,fbx"
+        },
+        "license": "CC0 / Public Domain dedication",
+        "license_code": "cc_zero",
+        "license_url": "https://polyhaven.com/license",
+        "free": true,
+        "can_download": true,
+        "access": "public_direct_http",
+        "base_price": 0,
+        "is_for_sale": false,
+        "web_embedded_redistribution": "Explicitly allowed by Poly Haven’s CC0 license page, including redistribution inside a product.",
+        "attribution": "Not required; author retained voluntarily in project metadata.",
+        "visualisation_only": true,
+        "contractual": false,
+        "dimensions_m": {
+          "x": 1.493751883506775,
+          "y": 2.0399999022483826,
+          "z": 1.5338402975614966
+        },
+        "geometry": {
+          "polycount": 18741,
+          "polycount_field_source": "Poly Haven assets API"
+        },
+        "textures": {
+          "max_resolution_px": 4096,
+          "texture_channels": [
+            "Diffuse",
+            "nor_dx",
+            "nor_gl",
+            "Metal",
+            "arm",
+            "Rough"
+          ],
+          "attributes": {
+            "condition": [
+              "worn"
+            ],
+            "material": [
+              "wood"
+            ]
+          }
+        },
+        "formats": [
+          "blend",
+          "gltf",
+          "usd",
+          "fbx"
+        ],
+        "preferred_source_file": {
+          "format": "gltf",
+          "resolution": "1k",
+          "root_url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/GothicBed_01/GothicBed_01_1k.gltf",
+          "root_size_bytes": 2683,
+          "bundle_size_bytes": 1155213,
+          "md5": "0635fcafb5d406ed9b10655a91f1eabb",
+          "included_files": 4
+        },
+        "requires_conversion_to_glb": true,
+        "anonymous_download_probe": {
+          "request": "HEAD https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/GothicBed_01/GothicBed_01_1k.gltf",
+          "http_status": 200,
+          "final_url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/GothicBed_01/GothicBed_01_1k.gltf",
+          "asset_payload_fetched": false,
+          "result_literal": "HTTP 200; Content-Length=2683; asset_payload_bytes_fetched=0"
+        },
+        "scores": {
+          "realism": 9,
+          "style_match": 2,
+          "geometry_quality": 9,
+          "texture_quality": 9,
+          "performance": 7,
+          "license_confidence": 10,
+          "total": 46,
+          "maximum": 60
+        },
+        "status": "REJECT_STYLE_MISMATCH",
+        "assessment": "Complete, realistic and technically clean bed, but ornate Gothic design is incompatible with the contemporary Chamagnieu interior.",
+        "tags": [
+          "vintage",
+          "gothic",
+          "furniture",
+          "bed",
+          "wood",
+          "decorative"
+        ]
+      },
+      {
+        "category": "realistic_bed",
+        "source": "Poly Haven",
+        "asset_id": "old_bed_frame",
+        "name": "Old Bed Frame",
+        "description": "Free 8K old metal bed frame with tubular rails, wire mesh base, chipped white paint and rust stains. Sturdy single-size vintage look with worn details.",
+        "author": "Luca B",
+        "source_page_url": "https://polyhaven.com/a/old_bed_frame",
+        "official_metadata_api_url": "https://api.polyhaven.com/assets?t=models",
+        "official_files_api_url": "https://api.polyhaven.com/files/old_bed_frame",
+        "source_page_probe": {
+          "request": "GET https://polyhaven.com/a/old_bed_frame",
+          "http_status": 200,
+          "final_url": "https://polyhaven.com/a/old_bed_frame",
+          "content_type": "text/html; charset=utf-8",
+          "result_literal": "HTTP 200; final_url=https://polyhaven.com/a/old_bed_frame"
+        },
+        "official_metadata_api_probe": {
+          "request": "GET https://api.polyhaven.com/assets?t=models",
+          "http_status": 200,
+          "result_literal": "HTTP 200; asset_id=old_bed_frame; name=Old Bed Frame"
+        },
+        "official_files_api_probe": {
+          "request": "GET https://api.polyhaven.com/files/old_bed_frame",
+          "http_status": 200,
+          "result_literal": "HTTP 200; formats=blend,gltf,usd,fbx"
+        },
+        "license": "CC0 / Public Domain dedication",
+        "license_code": "cc_zero",
+        "license_url": "https://polyhaven.com/license",
+        "free": true,
+        "can_download": true,
+        "access": "public_direct_http",
+        "base_price": 0,
+        "is_for_sale": false,
+        "web_embedded_redistribution": "Explicitly allowed by Poly Haven’s CC0 license page, including redistribution inside a product.",
+        "attribution": "Not required; author retained voluntarily in project metadata.",
+        "visualisation_only": true,
+        "contractual": false,
+        "dimensions_m": {
+          "x": 0.9046578407287598,
+          "y": 2.0017260313034058,
+          "z": 1.2014837953575999
+        },
+        "geometry": {
+          "polycount": 49990,
+          "polycount_field_source": "Poly Haven assets API"
+        },
+        "textures": {
+          "max_resolution_px": 8192,
+          "texture_channels": [
+            "AO",
+            "arm",
+            "Diffuse",
+            "Metal",
+            "nor_dx",
+            "nor_gl",
+            "Rough"
+          ],
+          "attributes": {
+            "material": [
+              "steel",
+              "metal"
+            ],
+            "condition": [
+              "rusted"
+            ]
+          }
+        },
+        "formats": [
+          "blend",
+          "gltf",
+          "usd",
+          "fbx"
+        ],
+        "preferred_source_file": {
+          "format": "gltf",
+          "resolution": "1k",
+          "root_url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/old_bed_frame/old_bed_frame_1k.gltf",
+          "root_size_bytes": 3326,
+          "bundle_size_bytes": 4041628,
+          "md5": "c89bd90f816adc4a0ef7af72d868be51",
+          "included_files": 4
+        },
+        "requires_conversion_to_glb": true,
+        "anonymous_download_probe": {
+          "request": "HEAD https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/old_bed_frame/old_bed_frame_1k.gltf",
+          "http_status": 200,
+          "final_url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/old_bed_frame/old_bed_frame_1k.gltf",
+          "asset_payload_fetched": false,
+          "result_literal": "HTTP 200; Content-Length=3326; asset_payload_bytes_fetched=0"
+        },
+        "scores": {
+          "realism": 8,
+          "style_match": 1,
+          "geometry_quality": 8,
+          "texture_quality": 9,
+          "performance": 5,
+          "license_confidence": 10,
+          "total": 41,
+          "maximum": 60
+        },
+        "status": "REJECT_INCOMPLETE_AND_STYLE",
+        "assessment": "Realistic CC0 metal frame, but single-size, rusted, and supplied without a complete modern mattress/bedding assembly.",
+        "tags": [
+          "rusty",
+          "metal",
+          "bedroom",
+          "vintage",
+          "antique",
+          "hospital",
+          "traditional"
+        ]
+      }
+    ]
+  },
+  "rejected_candidates": [
+    {
+      "category": "sofa_3_seat",
+      "source": "Blendkit",
+      "asset_base_id": "d2de37df-d634-4781-800d-d947855e6107",
+      "name": "Soave sofa",
+      "description": "Fan made 3D model of the Soave sofa designed by Sebastian Herkner for Moooi. All design rights belong to the original designer and manufacturer.",
+      "author": "dleon3D León",
+      "source_page_url": "https://www.blendkit.com/asset-gallery-detail/d2de37df-d634-4781-800d-d947855e6107/",
+      "official_api_url": "https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3Ad2de37df-d634-4781-800d-d947855e6107",
+      "source_page_probe": {
+        "request": "GET https://www.blendkit.com/asset-gallery-detail/d2de37df-d634-4781-800d-d947855e6107/",
+        "http_status": 200,
+        "final_url": "https://www.blendkit.com/asset-gallery-detail/d2de37df-d634-4781-800d-d947855e6107/",
+        "content_type": "text/html; charset=utf-8",
+        "result_literal": "HTTP 200; final_url=https://www.blendkit.com/asset-gallery-detail/d2de37df-d634-4781-800d-d947855e6107/"
+      },
+      "official_api_probe": {
+        "request": "GET https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3Ad2de37df-d634-4781-800d-d947855e6107",
+        "http_status": 200,
+        "result_literal": "HTTP 200; count=1; assetBaseId=d2de37df-d634-4781-800d-d947855e6107"
+      },
+      "license": "CC0 (API value: cc_zero)",
+      "license_code": "cc_zero",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "terms_url": "https://www.blendkit.com/terms-and-conditions-2026/",
+      "free": true,
+      "can_download": true,
+      "access": "free",
+      "base_price": null,
+      "is_for_sale": false,
+      "web_embedded_redistribution": "Allowed for this CC0 asset; retain the asset/author record. This conclusion does not extend to Blendkit Royalty Free assets.",
+      "attribution": "Not legally required by CC0; author credit retained voluntarily in project metadata.",
+      "visualisation_only": true,
+      "contractual": false,
+      "dimensions_m": {
+        "x": 2.3185,
+        "y": 0.7755,
+        "z": 0.7883
+      },
+      "geometry": {
+        "face_count_source": 16582,
+        "face_count_render": 222832,
+        "mesh_poly_type": "quad_dominant",
+        "object_count": 4
+      },
+      "textures": {
+        "max_resolution_px": 2048,
+        "min_resolution_px": 2048,
+        "texture_count": 1,
+        "pure_pbr": null,
+        "materials": [
+          "[Black White Terrazzo MTL_velvet MTL_black metal]"
+        ],
+        "shaders": [
+          "[principled metallic]"
+        ]
+      },
+      "formats": [
+        "blend",
+        "gltf",
+        "gltf_godot",
+        "resolution_0_5K",
+        "resolution_1K",
+        "resolution_2K"
+      ],
+      "files": [
+        {
+          "file_type": "blend",
+          "file_id": 938331,
+          "size_bytes": 997307,
+          "filename": "assets/22d57c5041c04ae4894ab517300d7ec0/files/blend_b120680d-d729-4427-ab55-7e6b539e2cf3.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/938331/"
+        },
+        {
+          "file_type": "gltf",
+          "file_id": 940817,
+          "size_bytes": 552132,
+          "filename": "assets/22d57c5041c04ae4894ab517300d7ec0/files/gltf_de1cb837-42d5-4b5f-a8a0-99e410279d8c.glb",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/940817/"
+        },
+        {
+          "file_type": "gltf_godot",
+          "file_id": 940816,
+          "size_bytes": 2690436,
+          "filename": "assets/22d57c5041c04ae4894ab517300d7ec0/files/gltf_godot_6e1aca0e-1719-446a-b0ad-6bb7582a8787.glb",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/940816/"
+        },
+        {
+          "file_type": "resolution_0_5K",
+          "file_id": 940815,
+          "size_bytes": 852881,
+          "filename": "assets/22d57c5041c04ae4894ab517300d7ec0/files/resolution_0_5K_a32cfaf4-4130-4a6d-a12c-632dec6a129c.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/940815/"
+        },
+        {
+          "file_type": "resolution_1K",
+          "file_id": 940814,
+          "size_bytes": 877984,
+          "filename": "assets/22d57c5041c04ae4894ab517300d7ec0/files/resolution_1K_fd185e1c-f912-42fb-84ea-2e7495fc6974.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/940814/"
+        },
+        {
+          "file_type": "resolution_2K",
+          "file_id": 940813,
+          "size_bytes": 908178,
+          "filename": "assets/22d57c5041c04ae4894ab517300d7ec0/files/resolution_2K_e1246ef0-e78c-46a9-ba79-af46f244fb71.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/940813/"
+        }
+      ],
+      "preferred_source_file": {
+        "file_type": "gltf",
+        "file_id": 940817,
+        "size_bytes": 552132,
+        "filename": "assets/22d57c5041c04ae4894ab517300d7ec0/files/gltf_de1cb837-42d5-4b5f-a8a0-99e410279d8c.glb",
+        "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/940817/"
+      },
+      "requires_conversion_to_glb": false,
+      "anonymous_download_metadata_probe": null,
+      "verification_status": "validated",
+      "scores": {
+        "realism": 9,
+        "style_match": 9,
+        "geometry_quality": 8,
+        "texture_quality": 7,
+        "performance": 9,
+        "license_confidence": 3,
+        "total": 45,
+        "maximum": 60
+      },
+      "status": "MANUAL_IP_REVIEW_REQUIRED",
+      "assessment": "Uploader marks the file CC0 but describes it as a fan-made Moooi/Sebastian Herkner product and expressly notes third-party design rights. CC0 cannot waive rights the uploader does not own.",
+      "rejection_reason": "Uploader marks the file CC0 but describes it as a fan-made Moooi/Sebastian Herkner product and expressly notes third-party design rights. CC0 cannot waive rights the uploader does not own."
+    },
+    {
+      "category": "contemporary_table",
+      "source": "Blendkit",
+      "asset_base_id": "e64560f8-33db-4802-85a0-59ecababb44b",
+      "name": "Cross FIxed Table",
+      "description": "Description from manufacturer:\r\n\r\n\"The Cross Fixed Table imbues all the features of the iconic, multi-award winning Cross Extending Table without the extension for those who do not require it. The contemporary dining table is a fine example of Matthew Hiltons innovative approach to wood furniture design and signature minimal aesthetic. The simple lines of the base create a distinctive contemporary base allowing the table to offer plenty of leg room.\"\r\n\r\nLightweight for your renders (no subdiv). Box projection UVs. Probably have much more details than it would ever need. Materials from the blenderkit comunity <3",
+      "author": "Caio Lima",
+      "source_page_url": "https://www.blendkit.com/asset-gallery-detail/e64560f8-33db-4802-85a0-59ecababb44b/",
+      "official_api_url": "https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3Ae64560f8-33db-4802-85a0-59ecababb44b",
+      "source_page_probe": {
+        "request": "GET https://www.blendkit.com/asset-gallery-detail/e64560f8-33db-4802-85a0-59ecababb44b/",
+        "http_status": 200,
+        "final_url": "https://www.blendkit.com/asset-gallery-detail/e64560f8-33db-4802-85a0-59ecababb44b/",
+        "content_type": "text/html; charset=utf-8",
+        "result_literal": "HTTP 200; final_url=https://www.blendkit.com/asset-gallery-detail/e64560f8-33db-4802-85a0-59ecababb44b/"
+      },
+      "official_api_probe": {
+        "request": "GET https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3Ae64560f8-33db-4802-85a0-59ecababb44b",
+        "http_status": 200,
+        "result_literal": "HTTP 200; count=1; assetBaseId=e64560f8-33db-4802-85a0-59ecababb44b"
+      },
+      "license": "CC0 (API value: cc_zero)",
+      "license_code": "cc_zero",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "terms_url": "https://www.blendkit.com/terms-and-conditions-2026/",
+      "free": true,
+      "can_download": true,
+      "access": "free",
+      "base_price": null,
+      "is_for_sale": false,
+      "web_embedded_redistribution": "Allowed for this CC0 asset; retain the asset/author record. This conclusion does not extend to Blendkit Royalty Free assets.",
+      "attribution": "Not legally required by CC0; author credit retained voluntarily in project metadata.",
+      "visualisation_only": true,
+      "contractual": false,
+      "dimensions_m": {
+        "x": 2.026,
+        "y": 1.0,
+        "z": 0.751
+      },
+      "geometry": {
+        "face_count_source": 546,
+        "face_count_render": 1336,
+        "mesh_poly_type": "quad_dominant",
+        "object_count": 8
+      },
+      "textures": {
+        "max_resolution_px": 2048,
+        "min_resolution_px": 2048,
+        "texture_count": 12,
+        "pure_pbr": null,
+        "materials": [
+          "Wood Base 01",
+          "steel dark used",
+          "Metal"
+        ],
+        "shaders": [
+          "principled"
+        ]
+      },
+      "formats": [
+        "blend",
+        "resolution_0_5K",
+        "resolution_1K",
+        "resolution_2K"
+      ],
+      "files": [
+        {
+          "file_type": "blend",
+          "file_id": 185441,
+          "size_bytes": 6085380,
+          "filename": "assets/70bf95c343ef482fb6bbcc428e3e0e74/files/blend_75c38a8f-91fb-4bb2-93bc-e800bc509d25.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/185441/"
+        },
+        {
+          "file_type": "resolution_0_5K",
+          "file_id": 186175,
+          "size_bytes": 453341,
+          "filename": "assets/70bf95c343ef482fb6bbcc428e3e0e74/files/resolution_0_5K_6795d99c-df9b-4772-a5e0-9bceaf294b93.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/186175/"
+        },
+        {
+          "file_type": "resolution_1K",
+          "file_id": 186174,
+          "size_bytes": 1580283,
+          "filename": "assets/70bf95c343ef482fb6bbcc428e3e0e74/files/resolution_1K_eb81f1d7-7d6b-4b45-94c4-d21dca08f807.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/186174/"
+        },
+        {
+          "file_type": "resolution_2K",
+          "file_id": 186173,
+          "size_bytes": 6056677,
+          "filename": "assets/70bf95c343ef482fb6bbcc428e3e0e74/files/resolution_2K_c52fc878-85dc-43b8-bc6e-8fd0b9aef409.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/186173/"
+        }
+      ],
+      "preferred_source_file": {
+        "file_type": "resolution_1K",
+        "file_id": 186174,
+        "size_bytes": 1580283,
+        "filename": "assets/70bf95c343ef482fb6bbcc428e3e0e74/files/resolution_1K_eb81f1d7-7d6b-4b45-94c4-d21dca08f807.blend",
+        "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/186174/"
+      },
+      "requires_conversion_to_glb": true,
+      "anonymous_download_metadata_probe": null,
+      "verification_status": "validated",
+      "scores": {
+        "realism": 8,
+        "style_match": 10,
+        "geometry_quality": 8,
+        "texture_quality": 8,
+        "performance": 9,
+        "license_confidence": 3,
+        "total": 46,
+        "maximum": 60
+      },
+      "status": "MANUAL_IP_REVIEW_REQUIRED",
+      "assessment": "The description identifies a named manufacturer product and reproduces manufacturer wording. The uploader CC0 flag does not independently clear third-party product-design/trademark rights.",
+      "rejection_reason": "The description identifies a named manufacturer product and reproduces manufacturer wording. The uploader CC0 flag does not independently clear third-party product-design/trademark rights."
+    },
+    {
+      "category": "matching_chair",
+      "source": "Blendkit",
+      "asset_base_id": "dfdffe2b-4c26-4c33-9f13-784fe54c5570",
+      "name": "Carl-hansen-son CHAIR 29",
+      "description": "This 3D model represents a modern Scandinavian dining chair with a natural oak wood frame and a black leather seat. Its clean geometry, angled legs, and ergonomic backrest make it perfect for minimalist interiors, dining areas, or contemporary spaces.",
+      "author": "polimesh ",
+      "source_page_url": "https://www.blendkit.com/asset-gallery-detail/dfdffe2b-4c26-4c33-9f13-784fe54c5570/",
+      "official_api_url": "https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3Adfdffe2b-4c26-4c33-9f13-784fe54c5570",
+      "source_page_probe": {
+        "request": "GET https://www.blendkit.com/asset-gallery-detail/dfdffe2b-4c26-4c33-9f13-784fe54c5570/",
+        "http_status": 200,
+        "final_url": "https://www.blendkit.com/asset-gallery-detail/dfdffe2b-4c26-4c33-9f13-784fe54c5570/",
+        "content_type": "text/html; charset=utf-8",
+        "result_literal": "HTTP 200; final_url=https://www.blendkit.com/asset-gallery-detail/dfdffe2b-4c26-4c33-9f13-784fe54c5570/"
+      },
+      "official_api_probe": {
+        "request": "GET https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3Adfdffe2b-4c26-4c33-9f13-784fe54c5570",
+        "http_status": 200,
+        "result_literal": "HTTP 200; count=1; assetBaseId=dfdffe2b-4c26-4c33-9f13-784fe54c5570"
+      },
+      "license": "CC0 (API value: cc_zero)",
+      "license_code": "cc_zero",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "terms_url": "https://www.blendkit.com/terms-and-conditions-2026/",
+      "free": true,
+      "can_download": true,
+      "access": "free",
+      "base_price": null,
+      "is_for_sale": false,
+      "web_embedded_redistribution": "Allowed for this CC0 asset; retain the asset/author record. This conclusion does not extend to Blendkit Royalty Free assets.",
+      "attribution": "Not legally required by CC0; author credit retained voluntarily in project metadata.",
+      "visualisation_only": true,
+      "contractual": false,
+      "dimensions_m": {
+        "x": 0.5197,
+        "y": 0.4736,
+        "z": 0.8072
+      },
+      "geometry": {
+        "face_count_source": 3358,
+        "face_count_render": 13432,
+        "mesh_poly_type": "quad_dominant",
+        "object_count": 7
+      },
+      "textures": {
+        "max_resolution_px": 2048,
+        "min_resolution_px": 2048,
+        "texture_count": 5,
+        "pure_pbr": null,
+        "materials": [
+          "[Wood Black leather Chrome]"
+        ],
+        "shaders": [
+          "[principled]"
+        ]
+      },
+      "formats": [
+        "blend",
+        "gltf",
+        "gltf_godot",
+        "resolution_0_5K",
+        "resolution_1K",
+        "resolution_2K"
+      ],
+      "files": [
+        {
+          "file_type": "blend",
+          "file_id": 743350,
+          "size_bytes": 22452211,
+          "filename": "assets/d4302197f2794df882a15849fea19483/files/blend_7062dc96-beab-4b9e-b311-bdd5741b8fff.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/743350/"
+        },
+        {
+          "file_type": "gltf",
+          "file_id": 745827,
+          "size_bytes": 1201948,
+          "filename": "assets/d4302197f2794df882a15849fea19483/files/gltf_59d3190f-e8ed-412f-af94-7fb8c8c573e0.glb",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/745827/"
+        },
+        {
+          "file_type": "gltf_godot",
+          "file_id": 745826,
+          "size_bytes": 1371240,
+          "filename": "assets/d4302197f2794df882a15849fea19483/files/gltf_godot_72b7013b-bf67-4c22-a333-b7e3fe4ca05a.glb",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/745826/"
+        },
+        {
+          "file_type": "resolution_0_5K",
+          "file_id": 745804,
+          "size_bytes": 591660,
+          "filename": "assets/d4302197f2794df882a15849fea19483/files/resolution_0_5K_777c63eb-1f34-4bfb-9bad-a3063adde543.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/745804/"
+        },
+        {
+          "file_type": "resolution_1K",
+          "file_id": 745803,
+          "size_bytes": 1610849,
+          "filename": "assets/d4302197f2794df882a15849fea19483/files/resolution_1K_0b05fb73-bf05-4d0d-b34e-310656f9ab3a.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/745803/"
+        },
+        {
+          "file_type": "resolution_2K",
+          "file_id": 745802,
+          "size_bytes": 5279064,
+          "filename": "assets/d4302197f2794df882a15849fea19483/files/resolution_2K_91937ac5-d69a-4a57-bcde-c513bdbed767.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/745802/"
+        }
+      ],
+      "preferred_source_file": {
+        "file_type": "gltf",
+        "file_id": 745827,
+        "size_bytes": 1201948,
+        "filename": "assets/d4302197f2794df882a15849fea19483/files/gltf_59d3190f-e8ed-412f-af94-7fb8c8c573e0.glb",
+        "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/745827/"
+      },
+      "requires_conversion_to_glb": false,
+      "anonymous_download_metadata_probe": null,
+      "verification_status": "validated",
+      "scores": {
+        "realism": 9,
+        "style_match": 10,
+        "geometry_quality": 9,
+        "texture_quality": 8,
+        "performance": 9,
+        "license_confidence": 3,
+        "total": 48,
+        "maximum": 60
+      },
+      "status": "MANUAL_IP_REVIEW_REQUIRED",
+      "assessment": "Asset is labeled as a Carl Hansen & Søn CHAIR 29 product. Despite the uploader CC0 flag, separate manufacturer/design rights are not cleared by the official metadata.",
+      "rejection_reason": "Asset is labeled as a Carl Hansen & Søn CHAIR 29 product. Despite the uploader CC0 flag, separate manufacturer/design rights are not cleared by the official metadata."
+    },
+    {
+      "category": "realistic_bed",
+      "source": "Blendkit",
+      "asset_base_id": "5ac710d1-6c79-4a4d-91c7-a583384c51ef",
+      "name": "Minimalist Modern Bed",
+      "description": "A clean and modern minimalist bed designed for interior visualizations. The model features a wide textured headboard, soft mattress, two patterned pillows, and a naturally draped blanket. A floating nightstand with simple ceramic decorations completes the design.",
+      "author": "Arman Khachatryan",
+      "source_page_url": "https://www.blendkit.com/asset-gallery-detail/5ac710d1-6c79-4a4d-91c7-a583384c51ef/",
+      "official_api_url": "https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A5ac710d1-6c79-4a4d-91c7-a583384c51ef",
+      "source_page_probe": {
+        "request": "GET https://www.blendkit.com/asset-gallery-detail/5ac710d1-6c79-4a4d-91c7-a583384c51ef/",
+        "http_status": 200,
+        "final_url": "https://www.blendkit.com/asset-gallery-detail/5ac710d1-6c79-4a4d-91c7-a583384c51ef/",
+        "content_type": "text/html; charset=utf-8",
+        "result_literal": "HTTP 200; final_url=https://www.blendkit.com/asset-gallery-detail/5ac710d1-6c79-4a4d-91c7-a583384c51ef/"
+      },
+      "official_api_probe": {
+        "request": "GET https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A5ac710d1-6c79-4a4d-91c7-a583384c51ef",
+        "http_status": 200,
+        "result_literal": "HTTP 200; count=1; assetBaseId=5ac710d1-6c79-4a4d-91c7-a583384c51ef"
+      },
+      "license": "CC0 (API value: cc_zero)",
+      "license_code": "royalty_free",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "terms_url": "https://www.blendkit.com/terms-and-conditions-2026/",
+      "free": true,
+      "can_download": true,
+      "access": "free",
+      "base_price": null,
+      "is_for_sale": false,
+      "web_embedded_redistribution": "Allowed for this CC0 asset; retain the asset/author record. This conclusion does not extend to Blendkit Royalty Free assets.",
+      "attribution": "Not legally required by CC0; author credit retained voluntarily in project metadata.",
+      "visualisation_only": true,
+      "contractual": false,
+      "dimensions_m": {
+        "x": 3.3344,
+        "y": 2.1123,
+        "z": 0.904
+      },
+      "geometry": {
+        "face_count_source": 30706,
+        "face_count_render": 557260,
+        "mesh_poly_type": "quad_dominant",
+        "object_count": 16
+      },
+      "textures": {
+        "max_resolution_px": null,
+        "min_resolution_px": null,
+        "texture_count": 0,
+        "pure_pbr": null,
+        "materials": [
+          "[Graphical Grey Jacquard.001 Plain Orange Texture Old clay rusty texture Terracatta (Unglazed Ceramic) Hot Pressed Water Colour Paper. Paper Plastic with scratches Concrete Wall Plain White Sheer]"
+        ],
+        "shaders": [
+          "[]"
+        ]
+      },
+      "formats": [
+        "blend",
+        "gltf",
+        "gltf_godot",
+        "resolution_0_5K",
+        "resolution_1K",
+        "resolution_2K"
+      ],
+      "files": [
+        {
+          "file_type": "blend",
+          "file_id": 898773,
+          "size_bytes": 51122642,
+          "filename": "assets/82c257139c0a4a5d8ffa877c93e7a3b4/files/blend_d76e36b3-d953-4424-8241-6ea8058f73e2.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/898773/"
+        },
+        {
+          "file_type": "gltf",
+          "file_id": 901585,
+          "size_bytes": 70972296,
+          "filename": "assets/82c257139c0a4a5d8ffa877c93e7a3b4/files/gltf_57ac5138-3159-4a6e-9c9e-a5ba3866fece.glb",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/901585/"
+        },
+        {
+          "file_type": "gltf_godot",
+          "file_id": 901589,
+          "size_bytes": 72815416,
+          "filename": "assets/82c257139c0a4a5d8ffa877c93e7a3b4/files/gltf_godot_1cdf62cb-3622-408d-9eb6-1b4e04bb11f0.glb",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/901589/"
+        },
+        {
+          "file_type": "resolution_0_5K",
+          "file_id": 901588,
+          "size_bytes": 3946019,
+          "filename": "assets/82c257139c0a4a5d8ffa877c93e7a3b4/files/resolution_0_5K_21e74882-85b0-420e-862d-b43938163344.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/901588/"
+        },
+        {
+          "file_type": "resolution_1K",
+          "file_id": 901587,
+          "size_bytes": 11222461,
+          "filename": "assets/82c257139c0a4a5d8ffa877c93e7a3b4/files/resolution_1K_c2dfc123-b5fb-48b8-b073-86142fa61c52.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/901587/"
+        },
+        {
+          "file_type": "resolution_2K",
+          "file_id": 901586,
+          "size_bytes": 38200855,
+          "filename": "assets/82c257139c0a4a5d8ffa877c93e7a3b4/files/resolution_2K_410f2433-0b5f-4e4e-bd9c-f94ed8790b23.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/901586/"
+        }
+      ],
+      "preferred_source_file": {
+        "file_type": "gltf",
+        "file_id": 901585,
+        "size_bytes": 70972296,
+        "filename": "assets/82c257139c0a4a5d8ffa877c93e7a3b4/files/gltf_57ac5138-3159-4a6e-9c9e-a5ba3866fece.glb",
+        "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/901585/"
+      },
+      "requires_conversion_to_glb": false,
+      "anonymous_download_metadata_probe": null,
+      "verification_status": "validated",
+      "scores": {
+        "realism": 9,
+        "style_match": 9,
+        "geometry_quality": 9,
+        "texture_quality": 7,
+        "performance": 2,
+        "license_confidence": 2,
+        "total": 38,
+        "maximum": 60
+      },
+      "status": "REJECT_LICENSE_OPEN_WEB_GLB",
+      "assessment": "Free download, but licensed Royalty Free. Blendkit’s 2026 terms prohibit embedding an open-format 3D model under this license; the live viewer serves open GLB assets.",
+      "rejection_reason": "Free download, but licensed Royalty Free. Blendkit’s 2026 terms prohibit embedding an open-format 3D model under this license; the live viewer serves open GLB assets."
+    },
+    {
+      "category": "realistic_bed",
+      "source": "Blendkit",
+      "asset_base_id": "7e7e8c77-e434-4470-8e73-a202289bc43b",
+      "name": "Bed",
+      "description": "A contemporary upholstered bed frame featuring soft green fabric, vertical channel stitching, and a minimalist modern design presented in a studio setting.",
+      "author": "Satoru Gojo",
+      "source_page_url": "https://www.blendkit.com/asset-gallery-detail/7e7e8c77-e434-4470-8e73-a202289bc43b/",
+      "official_api_url": "https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A7e7e8c77-e434-4470-8e73-a202289bc43b",
+      "source_page_probe": {
+        "request": "GET https://www.blendkit.com/asset-gallery-detail/7e7e8c77-e434-4470-8e73-a202289bc43b/",
+        "http_status": 200,
+        "final_url": "https://www.blendkit.com/asset-gallery-detail/7e7e8c77-e434-4470-8e73-a202289bc43b/",
+        "content_type": "text/html; charset=utf-8",
+        "result_literal": "HTTP 200; final_url=https://www.blendkit.com/asset-gallery-detail/7e7e8c77-e434-4470-8e73-a202289bc43b/"
+      },
+      "official_api_probe": {
+        "request": "GET https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A7e7e8c77-e434-4470-8e73-a202289bc43b",
+        "http_status": 200,
+        "result_literal": "HTTP 200; count=1; assetBaseId=7e7e8c77-e434-4470-8e73-a202289bc43b"
+      },
+      "license": "CC0 (API value: cc_zero)",
+      "license_code": "royalty_free",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "terms_url": "https://www.blendkit.com/terms-and-conditions-2026/",
+      "free": true,
+      "can_download": true,
+      "access": "free",
+      "base_price": null,
+      "is_for_sale": false,
+      "web_embedded_redistribution": "Allowed for this CC0 asset; retain the asset/author record. This conclusion does not extend to Blendkit Royalty Free assets.",
+      "attribution": "Not legally required by CC0; author credit retained voluntarily in project metadata.",
+      "visualisation_only": true,
+      "contractual": false,
+      "dimensions_m": {
+        "x": 1.9997,
+        "y": 2.2648,
+        "z": 0.9497
+      },
+      "geometry": {
+        "face_count_source": 37100,
+        "face_count_render": 37100,
+        "mesh_poly_type": "quad_dominant",
+        "object_count": 2
+      },
+      "textures": {
+        "max_resolution_px": null,
+        "min_resolution_px": null,
+        "texture_count": 0,
+        "pure_pbr": true,
+        "materials": [
+          "[Bed]"
+        ],
+        "shaders": [
+          "[]"
+        ]
+      },
+      "formats": [
+        "blend",
+        "gltf",
+        "gltf_godot",
+        "resolution_0_5K",
+        "resolution_1K",
+        "resolution_2K",
+        "resolution_4K"
+      ],
+      "files": [
+        {
+          "file_type": "blend",
+          "file_id": 1154378,
+          "size_bytes": 33885367,
+          "filename": "assets/51602564be3d4e958712d86aec783002/files/blend_683f7a05-b740-49fe-930d-93812cd001b4.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/1154378/"
+        },
+        {
+          "file_type": "gltf",
+          "file_id": 1154383,
+          "size_bytes": 2609132,
+          "filename": "assets/51602564be3d4e958712d86aec783002/files/gltf_7d94bcbd-8267-4cb7-b60d-3ff3f32e8639.glb",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/1154383/"
+        },
+        {
+          "file_type": "gltf_godot",
+          "file_id": 1154384,
+          "size_bytes": 4584880,
+          "filename": "assets/51602564be3d4e958712d86aec783002/files/gltf_godot_aef9cede-53b3-45ed-9378-52085f58631b.glb",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/1154384/"
+        },
+        {
+          "file_type": "resolution_0_5K",
+          "file_id": 1154382,
+          "size_bytes": 1833589,
+          "filename": "assets/51602564be3d4e958712d86aec783002/files/resolution_0_5K_461702c5-0668-4d64-801c-97efe9fa0748.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/1154382/"
+        },
+        {
+          "file_type": "resolution_1K",
+          "file_id": 1154381,
+          "size_bytes": 2148088,
+          "filename": "assets/51602564be3d4e958712d86aec783002/files/resolution_1K_b44897f8-bbc8-4133-9ab1-965dfc6ef7cd.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/1154381/"
+        },
+        {
+          "file_type": "resolution_2K",
+          "file_id": 1154380,
+          "size_bytes": 3603264,
+          "filename": "assets/51602564be3d4e958712d86aec783002/files/resolution_2K_c0dff1b5-44e0-40ca-83e9-920bfe49a269.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/1154380/"
+        },
+        {
+          "file_type": "resolution_4K",
+          "file_id": 1154379,
+          "size_bytes": 10245448,
+          "filename": "assets/51602564be3d4e958712d86aec783002/files/resolution_4K_694a8f4c-64b4-4f0d-b10d-812354ed4fcb.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/1154379/"
+        }
+      ],
+      "preferred_source_file": {
+        "file_type": "gltf",
+        "file_id": 1154383,
+        "size_bytes": 2609132,
+        "filename": "assets/51602564be3d4e958712d86aec783002/files/gltf_7d94bcbd-8267-4cb7-b60d-3ff3f32e8639.glb",
+        "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/1154383/"
+      },
+      "requires_conversion_to_glb": false,
+      "anonymous_download_metadata_probe": null,
+      "verification_status": "validated",
+      "scores": {
+        "realism": 8,
+        "style_match": 9,
+        "geometry_quality": 8,
+        "texture_quality": 7,
+        "performance": 7,
+        "license_confidence": 2,
+        "total": 41,
+        "maximum": 60
+      },
+      "status": "REJECT_LICENSE_OPEN_WEB_GLB",
+      "assessment": "Free download, but Royalty Free rather than CC0; open-format GLB embedding conflicts with the official 2026 terms.",
+      "rejection_reason": "Free download, but Royalty Free rather than CC0; open-format GLB embedding conflicts with the official 2026 terms."
+    },
+    {
+      "category": "realistic_bed",
+      "source": "Blendkit",
+      "asset_base_id": "5a27f876-2384-4256-909d-a5c59bb01ae6",
+      "name": "Modern foldable sofa bed",
+      "description": "Modern foldable sofa bed with white fabric upholstery, soft tufted cushions, and sleek chrome legs. Perfect for compact spaces, contemporary interiors, or multifunctional living rooms. High-quality model for rendering and visualization.",
+      "author": "Hire me !",
+      "source_page_url": "https://www.blendkit.com/asset-gallery-detail/5a27f876-2384-4256-909d-a5c59bb01ae6/",
+      "official_api_url": "https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A5a27f876-2384-4256-909d-a5c59bb01ae6",
+      "source_page_probe": {
+        "request": "GET https://www.blendkit.com/asset-gallery-detail/5a27f876-2384-4256-909d-a5c59bb01ae6/",
+        "http_status": 200,
+        "final_url": "https://www.blendkit.com/asset-gallery-detail/5a27f876-2384-4256-909d-a5c59bb01ae6/",
+        "content_type": "text/html; charset=utf-8",
+        "result_literal": "HTTP 200; final_url=https://www.blendkit.com/asset-gallery-detail/5a27f876-2384-4256-909d-a5c59bb01ae6/"
+      },
+      "official_api_probe": {
+        "request": "GET https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A5a27f876-2384-4256-909d-a5c59bb01ae6",
+        "http_status": 200,
+        "result_literal": "HTTP 200; count=1; assetBaseId=5a27f876-2384-4256-909d-a5c59bb01ae6"
+      },
+      "license": "CC0 (API value: cc_zero)",
+      "license_code": "royalty_free",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "terms_url": "https://www.blendkit.com/terms-and-conditions-2026/",
+      "free": false,
+      "can_download": false,
+      "access": "full",
+      "base_price": null,
+      "is_for_sale": false,
+      "web_embedded_redistribution": "Allowed for this CC0 asset; retain the asset/author record. This conclusion does not extend to Blendkit Royalty Free assets.",
+      "attribution": "Not legally required by CC0; author credit retained voluntarily in project metadata.",
+      "visualisation_only": true,
+      "contractual": false,
+      "dimensions_m": {
+        "x": 1.8585,
+        "y": 0.9073,
+        "z": 0.8666
+      },
+      "geometry": {
+        "face_count_source": 5898,
+        "face_count_render": 882048,
+        "mesh_poly_type": "quad_dominant",
+        "object_count": 5
+      },
+      "textures": {
+        "max_resolution_px": 4096,
+        "min_resolution_px": 4096,
+        "texture_count": 6,
+        "pure_pbr": true,
+        "materials": [
+          "[Material Material.001 Material.003 Material.002]"
+        ],
+        "shaders": [
+          "[principled]"
+        ]
+      },
+      "formats": [
+        "blend",
+        "gltf",
+        "gltf_godot",
+        "resolution_0_5K",
+        "resolution_1K",
+        "resolution_2K",
+        "resolution_4K"
+      ],
+      "files": [
+        {
+          "file_type": "blend",
+          "file_id": 842786,
+          "size_bytes": 179002470,
+          "filename": "assets/3c19038677a249a283899f18095554e4/files/blend_5a909c16-83ff-4629-8424-99827b0e3f69.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/842786/"
+        },
+        {
+          "file_type": "gltf",
+          "file_id": 845312,
+          "size_bytes": 10829512,
+          "filename": "assets/3c19038677a249a283899f18095554e4/files/gltf_75fb7fdf-2f8f-432b-9d78-ca06099aee99.glb",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/845312/"
+        },
+        {
+          "file_type": "gltf_godot",
+          "file_id": 845313,
+          "size_bytes": 11588640,
+          "filename": "assets/3c19038677a249a283899f18095554e4/files/gltf_godot_c36e612a-29ba-4087-91eb-039381b91eca.glb",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/845313/"
+        },
+        {
+          "file_type": "resolution_0_5K",
+          "file_id": 845311,
+          "size_bytes": 12712144,
+          "filename": "assets/3c19038677a249a283899f18095554e4/files/resolution_0_5K_3fce63ab-4040-45a7-aaa6-e68b25f416e7.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/845311/"
+        },
+        {
+          "file_type": "resolution_1K",
+          "file_id": 845310,
+          "size_bytes": 13550003,
+          "filename": "assets/3c19038677a249a283899f18095554e4/files/resolution_1K_eb32e5c3-7456-4c70-aded-ad34436d5b19.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/845310/"
+        },
+        {
+          "file_type": "resolution_2K",
+          "file_id": 845309,
+          "size_bytes": 18053271,
+          "filename": "assets/3c19038677a249a283899f18095554e4/files/resolution_2K_577e053a-3152-4d8c-92ce-f4347c90020f.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/845309/"
+        },
+        {
+          "file_type": "resolution_4K",
+          "file_id": 845308,
+          "size_bytes": 40775176,
+          "filename": "assets/3c19038677a249a283899f18095554e4/files/resolution_4K_dd436b3b-ed29-4eb4-9668-bf6179bbc575.blend",
+          "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/845308/"
+        }
+      ],
+      "preferred_source_file": {
+        "file_type": "gltf",
+        "file_id": 845312,
+        "size_bytes": 10829512,
+        "filename": "assets/3c19038677a249a283899f18095554e4/files/gltf_75fb7fdf-2f8f-432b-9d78-ca06099aee99.glb",
+        "download_metadata_url": "https://www.blenderkit.com/api/v1/downloads/845312/"
+      },
+      "requires_conversion_to_glb": false,
+      "anonymous_download_metadata_probe": null,
+      "verification_status": "validated",
+      "scores": {
+        "realism": 7,
+        "style_match": 7,
+        "geometry_quality": 7,
+        "texture_quality": 6,
+        "performance": 7,
+        "license_confidence": 8,
+        "total": 42,
+        "maximum": 60
+      },
+      "status": "REJECT_PAID",
+      "assessment": "Official API reports isFree=false, canDownload=false and access=full. No purchase or account/payment bypass is permitted.",
+      "rejection_reason": "Official API reports isFree=false, canDownload=false and access=full. No purchase or account/payment bypass is permitted."
+    }
+  ],
+  "pilot_recommendations": {
+    "sofa_3_seat": {
+      "id": "4faac4b8-cc88-4ff2-b7fd-a7edf46d3518",
+      "name": "Leather Sofa",
+      "decision": "PILOT_SELECTED",
+      "why": "Explicit 3-seat model, CC0, free, direct 0.73 MB glTF, manageable 30k source faces."
+    },
+    "contemporary_table": {
+      "id": "bdff957c-a9e9-4827-b6c9-602b264a4fbf",
+      "name": "Wooden table with metalic legs",
+      "decision": "PILOT_SELECTED",
+      "why": "Correct dining dimensions, modern neutral style, rich PBR metadata and light 1K source."
+    },
+    "matching_chair": {
+      "id": "dining_chair_02",
+      "name": "Dining Chair 02",
+      "decision": "PILOT_SELECTED",
+      "why": "Poly Haven direct CC0 glTF, 22k polygons, complete 1K PBR bundle and coherent wood/leather style."
+    },
+    "realistic_bed": {
+      "id": "3a845132-df64-4f02-8da6-44229fe774e4",
+      "name": "Master bed",
+      "decision": "PILOT_SELECTED_CONDITIONAL_MATERIAL_QA",
+      "why": "Only contemporary CC0 double-bed candidate in the verified free set; compact direct glTF, but no texture maps reported."
+    }
+  },
+  "research_limits": [
+    "No 3D binary payload was fetched in this research phase.",
+    "Scores are metadata- and thumbnail-informed screening scores; geometry, UVs, materials and visual fit still require import/visual QA before final integration.",
+    "Sketchfab and Fab were not needed for the minimum candidate count and no candidate from them was counted without a validated accountless download path."
+  ]
+}

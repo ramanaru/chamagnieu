@@ -1,0 +1,1731 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAtUtc": "2026-08-16T15:54:52.965133+00:00",
+  "snapshot": {
+    "project": "Chamagnieu housing unit 6 — V18 asset realism pilot",
+    "release": "V18-ASSET-PILOT-1",
+    "validationPhase": "LIVE_VALIDATED_LOCAL",
+    "publicPostflightIncluded": false,
+    "baseModel": {
+      "path": "shared/Chamagnieu_V18_WEB_REALISM_UPGRADED.glb",
+      "bytes": 22687292,
+      "sha256": "9A5FD736CF5BFC4B8AF90A3B1A701C1532B83D2E6BDF0FA2C459B085B9A12B1E",
+      "geometryChanged": false,
+      "geometryAccessorPayloadsIdentical": true
+    },
+    "architectureChanged": false,
+    "visualisationOnly": true,
+    "contractual": false,
+    "sourceLabels": {
+      "renderPreview": "SOURCE = BLENDER/CYCLES",
+      "interactiveProof": "SOURCE = LIVE WEB VIEWER"
+    }
+  },
+  "licensePolicy": {
+    "accepted": [
+      "CC0-1.0 / public-domain dedication",
+      "CC0-1.0 Universal"
+    ],
+    "providersUsed": [
+      "Poly Haven",
+      "BlenderKit CC0 assets only",
+      "ambientCG"
+    ],
+    "notAccepted": [
+      "premium/full-plan assets",
+      "ambiguous Royalty Free raw-model redistribution",
+      "uploader-declared CC0 where third-party design rights are explicitly noted"
+    ],
+    "attribution": "Not required by the selected CC0 grants; author/provider credits are retained voluntarily and permanently."
+  },
+  "scoreDefinition": {
+    "criteria": [
+      "realism",
+      "styleMatch",
+      "geometryQuality",
+      "textureQuality",
+      "performance",
+      "licenseConfidence"
+    ],
+    "rangePerCriterion": "0..10",
+    "maximum": 60,
+    "majorVisibleRealismTarget": 8
+  },
+  "requiredPilotCategories": [
+    "sofa",
+    "table",
+    "chair",
+    "bed",
+    "tree",
+    "hedge",
+    "facade_pbr",
+    "grass_pbr"
+  ],
+  "coverage": {
+    "required": 8,
+    "documented": 8,
+    "acceptedLocalLive": 8,
+    "allMajorVisibleRealismAtLeast8": true
+  },
+  "assets": [
+    {
+      "category": "sofa",
+      "status": "ACCEPTED_LIVE_LOCAL",
+      "selected": {
+        "id": "4faac4b8-cc88-4ff2-b7fd-a7edf46d3518",
+        "name": "Leather Sofa",
+        "provider": "BlenderKit",
+        "authors": [
+          "Muhammed Ismayil"
+        ],
+        "sourcePageUrl": "https://www.blendkit.com/asset-gallery-detail/4faac4b8-cc88-4ff2-b7fd-a7edf46d3518/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://www.blendkit.com/docs/licenses/",
+        "score": {
+          "realism": 8,
+          "styleMatch": 8,
+          "geometryQuality": 8,
+          "textureQuality": 8,
+          "performance": 8,
+          "licenseConfidence": 10,
+          "total": 50,
+          "maximum": 60
+        }
+      },
+      "decision": "Three-seat leather silhouette and soft cushions read more realistically than the procedural fallback after metric rescale.",
+      "files": {
+        "original": [
+          {
+            "path": "assets_external/furniture/living/sofa/original/library_metadata.json",
+            "bytes": 23236,
+            "sha256": "0058C2AC4AB4718EE92FC7C68CA2A2D94B864EBA0F0A52C9032ED2E5A5733F28"
+          },
+          {
+            "path": "assets_external/furniture/living/sofa/original/sofa_4faac4b8-cc88-4ff2-b7fd-a7edf46d3518_library.glb",
+            "bytes": 731828,
+            "sha256": "ACFAB778384BB6D6D5EB4AFE809A6A010017BFBA184EA35CCFF965E91150B7A2"
+          }
+        ],
+        "optimized": [
+          {
+            "path": "assets_external/furniture/living/sofa/optimized/sofa_web.glb",
+            "bytes": 2577832,
+            "sha256": "A1321C8B14FFC4170CECA330B581441ADE66B64CA87FF89D772E385367D21B3D"
+          }
+        ]
+      },
+      "geometry": {
+        "sourceDimensionsMThreeXYZ": [
+          2.87251,
+          1.00537,
+          1.01168
+        ],
+        "meshes": 1,
+        "primitives": 1,
+        "trianglesPerSource": 60384,
+        "materials": 1,
+        "embeddedImages": 2,
+        "textureBindings": 5,
+        "externalUris": 0
+      },
+      "placement": {
+        "anchor": "HOUSE_REFERENCE_ORIGIN",
+        "instances": 1,
+        "items": [
+          {
+            "name": "PILOT_LIVING_SOFA_3_SEAT",
+            "positionMThreeXYZ": [
+              2.5,
+              0.02,
+              -9.78
+            ],
+            "yawRadians": 0,
+            "scaleXYZ": [
+              0.85,
+              0.85,
+              0.85
+            ],
+            "placedDimensionsMThreeXYZ": [
+              2.4416,
+              0.8546,
+              0.8599
+            ]
+          }
+        ]
+      },
+      "whereUsed": [
+        "presentation/",
+        "visite/",
+        "RDC living room; replaces V11_LIVING_SOFA only after successful asset load"
+      ],
+      "fallback": "Per-family original GLB sofa remains visible if the pilot GLB fails.",
+      "visualEvidence": [
+        {
+          "path": "validation/asset_pilot_screenshots/blender/furniture-selected-sofa.png",
+          "bytes": 343426,
+          "sha256": "B2F3B6C59BC44ADDD445B9A1299C36DC412A775610D525B7BAE6961108765E12",
+          "sourceLabel": "SOURCE = BLENDER/CYCLES"
+        },
+        {
+          "path": "validation/asset_pilot_screenshots/after_live/03-living-sofa-live.png",
+          "bytes": 117347,
+          "sha256": "44AE94AD3D2160C7E6C07DA776C4DAFD206A0FE8C72E5238DD4545224C552CA2",
+          "sourceLabel": "SOURCE = LIVE WEB VIEWER"
+        }
+      ],
+      "candidateTrace": [
+        {
+          "name": "Leather Sofa",
+          "provider": "BlenderKit",
+          "scoreTotal": 50,
+          "decision": "SELECTED_AND_ACCEPTED"
+        },
+        {
+          "name": "Sofa 3",
+          "provider": "BlenderKit",
+          "author": "Yasin Gohary",
+          "sourcePageUrl": "https://www.blendkit.com/asset-gallery-detail/8c310d7f-74d1-422f-a2fb-4c11b773cf7b/",
+          "scoreTotal": 49,
+          "decision": "NOT_SELECTED; seat-count visual QA remained ambiguous"
+        },
+        {
+          "name": "3 seater sofa",
+          "provider": "BlenderKit",
+          "author": "Rinkesh Purohit",
+          "sourcePageUrl": "https://www.blendkit.com/asset-gallery-detail/15198828-3421-4d08-bc61-45a32570f3be/",
+          "scoreTotal": 48,
+          "decision": "REJECTED; repeated live instances would be too heavy"
+        },
+        {
+          "name": "Soave sofa",
+          "provider": "BlenderKit",
+          "sourcePageUrl": "https://www.blendkit.com/asset-gallery-detail/d2de37df-d634-4781-800d-d947855e6107/",
+          "scoreTotal": 45,
+          "decision": "REJECTED; uploader notes third-party product/design rights despite CC0 field"
+        }
+      ],
+      "pilot_role": "sofa",
+      "integration_status": "LIVE_ACCEPTED",
+      "name": "Leather Sofa",
+      "source": "BlenderKit",
+      "url": "https://www.blendkit.com/asset-gallery-detail/4faac4b8-cc88-4ff2-b7fd-a7edf46d3518/",
+      "author": "Muhammed Ismayil",
+      "license": "CC0-1.0",
+      "download_date": "2026-08-16",
+      "original_file": "assets_external/furniture/living/sofa/original/sofa_4faac4b8-cc88-4ff2-b7fd-a7edf46d3518_library.glb",
+      "optimized_file": "assets_external/furniture/living/sofa/optimized/sofa_web.glb",
+      "polygons_before": 60384,
+      "polygons_after": 60384,
+      "textures": {
+        "original_or_embedded_images_after": 2,
+        "texture_bindings_after": 5,
+        "runtime_delivery": "embedded in optimized GLB",
+        "external_uris": 0,
+        "preserved": true
+      },
+      "original_size": 731828,
+      "optimized_size": 2577832,
+      "where_used": [
+        "presentation/",
+        "visite/",
+        "RDC living room; replaces V11_LIVING_SOFA only after successful asset load"
+      ],
+      "polygon_count_basis": "triangles measured by Blender after source import and before normalized GLB export; export performs no decimation, so before=after."
+    },
+    {
+      "category": "table",
+      "status": "ACCEPTED_LIVE_LOCAL",
+      "selected": {
+        "id": "bdff957c-a9e9-4827-b6c9-602b264a4fbf",
+        "name": "Wooden table with metalic legs",
+        "provider": "BlenderKit",
+        "authors": [
+          "Nicușor Vatră"
+        ],
+        "sourcePageUrl": "https://www.blendkit.com/asset-gallery-detail/bdff957c-a9e9-4827-b6c9-602b264a4fbf/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://www.blendkit.com/docs/licenses/",
+        "score": {
+          "realism": 8,
+          "styleMatch": 9,
+          "geometryQuality": 6,
+          "textureQuality": 9,
+          "performance": 9,
+          "licenseConfidence": 10,
+          "total": 51,
+          "maximum": 60
+        }
+      },
+      "decision": "Wood PBR top and thin metal legs fit the contemporary dining area; width reduced to 1.80 m for circulation.",
+      "files": {
+        "original": [
+          {
+            "path": "assets_external/furniture/dining/table/original/library_metadata.json",
+            "bytes": 21837,
+            "sha256": "2F866CC21EC16F34FCF75A1B098647369E81CE25379084EEDFFB3ED62E1C0E7F"
+          },
+          {
+            "path": "assets_external/furniture/dining/table/original/table_bdff957c-a9e9-4827-b6c9-602b264a4fbf_1k_download.blend.zst",
+            "bytes": 1599907,
+            "sha256": "4D1F439387C0D5B04CDBBA919B7C9C21F2E7ED1BA3C6B9074938D61D8417DEEC"
+          },
+          {
+            "path": "assets_external/furniture/dining/table/original/table_bdff957c-a9e9-4827-b6c9-602b264a4fbf_1k_source.blend",
+            "bytes": 2294096,
+            "sha256": "CB6B19157399A87DBDAA9E9C8F92A05B5DA8E9D3A652FD85D8D8BA39B06A2F8C"
+          }
+        ],
+        "optimized": [
+          {
+            "path": "assets_external/furniture/dining/table/optimized/table_web.glb",
+            "bytes": 3544464,
+            "sha256": "A8BCD84ADADC29F9DC26EEFA068FA393823E2599493BCADB62797986D89F67B0"
+          }
+        ]
+      },
+      "geometry": {
+        "sourceDimensionsMThreeXYZ": [
+          2.0,
+          0.75,
+          0.9
+        ],
+        "meshes": 3,
+        "primitives": 6,
+        "trianglesPerSource": 3500,
+        "materials": 5,
+        "embeddedImages": 12,
+        "textureBindings": 12,
+        "externalUris": 0
+      },
+      "placement": {
+        "anchor": "HOUSE_REFERENCE_ORIGIN",
+        "instances": 1,
+        "items": [
+          {
+            "name": "PILOT_DINING_TABLE",
+            "positionMThreeXYZ": [
+              2.5,
+              0.02,
+              -7.18
+            ],
+            "yawRadians": 0,
+            "scaleXYZ": [
+              0.9,
+              1.0,
+              1.0
+            ],
+            "placedDimensionsMThreeXYZ": [
+              1.8,
+              0.75,
+              0.9
+            ]
+          }
+        ]
+      },
+      "whereUsed": [
+        "presentation/",
+        "visite/",
+        "RDC dining area; replaces five procedural table nodes after successful load"
+      ],
+      "fallback": "Per-family procedural/original table stays active on load failure.",
+      "visualEvidence": [
+        {
+          "path": "validation/asset_pilot_screenshots/blender/furniture-selected-table.png",
+          "bytes": 364386,
+          "sha256": "4AB958C843747618EAAFEB45B51AF2276F9A76CF5135BB55B63BCF8A5E3F5B8B",
+          "sourceLabel": "SOURCE = BLENDER/CYCLES"
+        },
+        {
+          "path": "validation/asset_pilot_screenshots/after_live/04-dining-live.png",
+          "bytes": 116185,
+          "sha256": "771C8DA258BA56C47965FA22F898B9B9FEEC1CA4CAABC2C8D793B9D571B7EF34",
+          "sourceLabel": "SOURCE = LIVE WEB VIEWER"
+        }
+      ],
+      "candidateTrace": [
+        {
+          "name": "Wooden table with metalic legs",
+          "provider": "BlenderKit",
+          "scoreTotal": 51,
+          "decision": "SELECTED_AND_ACCEPTED"
+        },
+        {
+          "name": "Dining Table 01",
+          "provider": "BlenderKit",
+          "author": "The Doctor By Design",
+          "sourcePageUrl": "https://www.blendkit.com/asset-gallery-detail/d90a729f-7e97-41e5-a9c3-650381f3d06a/",
+          "scoreTotal": 50,
+          "decision": "NOT_SELECTED; required conversion and did not beat primary"
+        },
+        {
+          "name": "Scandinavian Dining Table",
+          "provider": "BlenderKit",
+          "author": "Calebe Moreira",
+          "sourcePageUrl": "https://www.blendkit.com/asset-gallery-detail/08dee582-4ac7-47fc-a1e1-192e677da403/",
+          "scoreTotal": 49,
+          "decision": "NOT_SELECTED; published 0.6902 m height required corrective scaling"
+        },
+        {
+          "name": "Cross Fixed Table",
+          "provider": "BlenderKit",
+          "sourcePageUrl": "https://www.blendkit.com/asset-gallery-detail/e64560f8-33db-4802-85a0-59ecababb44b/",
+          "decision": "REJECTED; manufacturer/product design-rights ambiguity"
+        }
+      ],
+      "pilot_role": "table",
+      "integration_status": "LIVE_ACCEPTED",
+      "name": "Wooden table with metalic legs",
+      "source": "BlenderKit",
+      "url": "https://www.blendkit.com/asset-gallery-detail/bdff957c-a9e9-4827-b6c9-602b264a4fbf/",
+      "author": "Nicușor Vatră",
+      "license": "CC0-1.0",
+      "download_date": "2026-08-16",
+      "original_file": "assets_external/furniture/dining/table/original/table_bdff957c-a9e9-4827-b6c9-602b264a4fbf_1k_source.blend",
+      "optimized_file": "assets_external/furniture/dining/table/optimized/table_web.glb",
+      "polygons_before": 3500,
+      "polygons_after": 3500,
+      "textures": {
+        "embedded_images_after": 12,
+        "texture_bindings_after": 12,
+        "runtime_delivery": "embedded in optimized GLB",
+        "external_uris": 0,
+        "preserved": true
+      },
+      "original_size": 2294096,
+      "optimized_size": 3544464,
+      "where_used": [
+        "presentation/",
+        "visite/",
+        "RDC dining area; replaces five procedural table nodes after successful load"
+      ],
+      "polygon_count_basis": "triangles measured by Blender after source import and before normalized GLB export; export performs no decimation, so before=after."
+    },
+    {
+      "category": "chair",
+      "status": "ACCEPTED_LIVE_LOCAL",
+      "selected": {
+        "id": "dining_chair_02",
+        "name": "Dining Chair 02",
+        "provider": "Poly Haven",
+        "authors": [
+          "James Ray Cock"
+        ],
+        "sourcePageUrl": "https://polyhaven.com/a/dining_chair_02",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://polyhaven.com/license",
+        "score": {
+          "realism": 9,
+          "styleMatch": 8,
+          "geometryQuality": 9,
+          "textureQuality": 10,
+          "performance": 8,
+          "licenseConfidence": 10,
+          "total": 54,
+          "maximum": 60
+        }
+      },
+      "decision": "Tufted leather and wood are readable at dining distance; six chairs are oriented toward the table without visible intersection.",
+      "files": {
+        "original": [
+          {
+            "path": "assets_external/furniture/dining/chair/original/dining_chair_02.bin",
+            "bytes": 544592,
+            "sha256": "C7F1EF858F73815176D2AB304472A69CCF6097E971E5258EB924A75F841D4AF5"
+          },
+          {
+            "path": "assets_external/furniture/dining/chair/original/dining_chair_02_1k.gltf",
+            "bytes": 2723,
+            "sha256": "88352A44A17319846F61FE03CE75C79FB1849AA508B6A262366C149C1BBD06B8"
+          },
+          {
+            "path": "assets_external/furniture/dining/chair/original/library_metadata.json",
+            "bytes": 4278,
+            "sha256": "75EEE6E24E1BF4707BD2E5A0EF6E685D5617C359CEB016E9C7EAB628796C1529"
+          },
+          {
+            "path": "assets_external/furniture/dining/chair/original/textures/dining_chair_02_arm_1k.jpg",
+            "bytes": 162630,
+            "sha256": "0A81C0C886BAA1E65D94FB6FB90AB4751BEE319888ECF1C428AE62042D8A5B15"
+          },
+          {
+            "path": "assets_external/furniture/dining/chair/original/textures/dining_chair_02_diff_1k.jpg",
+            "bytes": 91518,
+            "sha256": "343990F764790DA1149485A422DEE2BC6797945A6AF06A37D02D7A7DE041ACF5"
+          },
+          {
+            "path": "assets_external/furniture/dining/chair/original/textures/dining_chair_02_nor_gl_1k.jpg",
+            "bytes": 119612,
+            "sha256": "348703512CA1215F8389E9108419C2D1A46537663DB25F423C3EF900D20CFE61"
+          }
+        ],
+        "optimized": [
+          {
+            "path": "assets_external/furniture/dining/chair/optimized/chair_web.glb",
+            "bytes": 920384,
+            "sha256": "6E5CC754877D49AF17EA2431693E29B07DEEA0A6B14163B1F23EF933E1FAAC71"
+          }
+        ]
+      },
+      "geometry": {
+        "sourceDimensionsMThreeXYZ": [
+          0.43357,
+          0.97338,
+          0.57642
+        ],
+        "meshes": 1,
+        "primitives": 1,
+        "trianglesPerSource": 22013,
+        "materials": 1,
+        "embeddedImages": 3,
+        "textureBindings": 3,
+        "externalUris": 0
+      },
+      "placement": {
+        "anchor": "HOUSE_REFERENCE_ORIGIN",
+        "instances": 6,
+        "items": [
+          {
+            "name": "PILOT_DINING_CHAIR_01",
+            "positionMThreeXYZ": [
+              2.02,
+              0.02,
+              -6.46
+            ],
+            "yawRadians": 3.141593,
+            "scaleXYZ": [
+              0.94,
+              0.94,
+              0.94
+            ],
+            "placedDimensionsMThreeXYZ": [
+              0.40756,
+              0.91498,
+              0.54183
+            ]
+          },
+          {
+            "name": "PILOT_DINING_CHAIR_02",
+            "positionMThreeXYZ": [
+              2.98,
+              0.02,
+              -6.46
+            ],
+            "yawRadians": 3.141593,
+            "scaleXYZ": [
+              0.94,
+              0.94,
+              0.94
+            ],
+            "placedDimensionsMThreeXYZ": [
+              0.40756,
+              0.91498,
+              0.54183
+            ]
+          },
+          {
+            "name": "PILOT_DINING_CHAIR_03",
+            "positionMThreeXYZ": [
+              2.02,
+              0.02,
+              -7.9
+            ],
+            "yawRadians": 0,
+            "scaleXYZ": [
+              0.94,
+              0.94,
+              0.94
+            ],
+            "placedDimensionsMThreeXYZ": [
+              0.40756,
+              0.91498,
+              0.54183
+            ]
+          },
+          {
+            "name": "PILOT_DINING_CHAIR_04",
+            "positionMThreeXYZ": [
+              2.98,
+              0.02,
+              -7.9
+            ],
+            "yawRadians": 0,
+            "scaleXYZ": [
+              0.94,
+              0.94,
+              0.94
+            ],
+            "placedDimensionsMThreeXYZ": [
+              0.40756,
+              0.91498,
+              0.54183
+            ]
+          },
+          {
+            "name": "PILOT_DINING_CHAIR_05",
+            "positionMThreeXYZ": [
+              1.25,
+              0.02,
+              -7.18
+            ],
+            "yawRadians": 1.570796,
+            "scaleXYZ": [
+              0.94,
+              0.94,
+              0.94
+            ],
+            "placedDimensionsMThreeXYZ": [
+              0.40756,
+              0.91498,
+              0.54183
+            ]
+          },
+          {
+            "name": "PILOT_DINING_CHAIR_06",
+            "positionMThreeXYZ": [
+              3.75,
+              0.02,
+              -7.18
+            ],
+            "yawRadians": -1.570796,
+            "scaleXYZ": [
+              0.94,
+              0.94,
+              0.94
+            ],
+            "placedDimensionsMThreeXYZ": [
+              0.40756,
+              0.91498,
+              0.54183
+            ]
+          }
+        ]
+      },
+      "whereUsed": [
+        "presentation/",
+        "visite/",
+        "RDC dining area; replaces six V11_DINING_CHAIR_* nodes after successful load"
+      ],
+      "fallback": "Six original dining chairs remain active if the selected GLB fails.",
+      "visualEvidence": [
+        {
+          "path": "validation/asset_pilot_screenshots/blender/furniture-selected-chair.png",
+          "bytes": 405856,
+          "sha256": "7E5225E863D124878A8D74354F9B4BB4A436BE81E00E2EFC76EA935838B2E7E8",
+          "sourceLabel": "SOURCE = BLENDER/CYCLES"
+        },
+        {
+          "path": "validation/asset_pilot_screenshots/after_live/04-dining-live.png",
+          "bytes": 116185,
+          "sha256": "771C8DA258BA56C47965FA22F898B9B9FEEC1CA4CAABC2C8D793B9D571B7EF34",
+          "sourceLabel": "SOURCE = LIVE WEB VIEWER"
+        }
+      ],
+      "candidateTrace": [
+        {
+          "name": "Dining Chair 02",
+          "provider": "Poly Haven",
+          "scoreTotal": 54,
+          "decision": "SELECTED_AND_ACCEPTED"
+        },
+        {
+          "name": "Wooden Dining Chair",
+          "provider": "BlenderKit",
+          "author": "Brian Pickens",
+          "sourcePageUrl": "https://www.blendkit.com/asset-gallery-detail/53195601-f0c2-4c34-871a-34aa32472e7e/",
+          "scoreTotal": 51,
+          "decision": "NOT_SELECTED; material-map count required further inspection"
+        },
+        {
+          "name": "Plastic chair",
+          "provider": "BlenderKit",
+          "sourcePageUrl": "https://www.blendkit.com/asset-gallery-detail/0e9aa213-afd4-4b45-ba88-d3b76bcef9ce/",
+          "scoreTotal": 48,
+          "decision": "PERFORMANCE_FALLBACK; weaker style match"
+        },
+        {
+          "name": "Wooden Chair",
+          "provider": "BlenderKit",
+          "sourcePageUrl": "https://www.blendkit.com/asset-gallery-detail/30ad483f-9438-4758-9fab-d0ff1caab348/",
+          "scoreTotal": 43,
+          "decision": "REJECTED; 77.8k source faces and repeated-instance cost"
+        }
+      ],
+      "pilot_role": "chair",
+      "integration_status": "LIVE_ACCEPTED",
+      "name": "Dining Chair 02",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/dining_chair_02",
+      "author": "James Ray Cock",
+      "license": "CC0-1.0",
+      "download_date": "2026-08-16",
+      "original_file": "assets_external/furniture/dining/chair/original/dining_chair_02_1k.gltf",
+      "optimized_file": "assets_external/furniture/dining/chair/optimized/chair_web.glb",
+      "polygons_before": 22013,
+      "polygons_after": 22013,
+      "textures": {
+        "original_maps": 3,
+        "embedded_images_after": 3,
+        "texture_bindings_after": 3,
+        "runtime_delivery": "embedded in optimized GLB",
+        "external_uris": 0,
+        "preserved": true
+      },
+      "original_size": 2723,
+      "optimized_size": 920384,
+      "where_used": [
+        "presentation/",
+        "visite/",
+        "RDC dining area; replaces six V11_DINING_CHAIR_* nodes after successful load"
+      ],
+      "polygon_count_basis": "triangles measured by Blender after source import and before normalized GLB export; export performs no decimation, so before=after.",
+      "provenance_note": "The copied bundle metadata acquisition field says generic author “All”; the official research/API record used for this manifest names James Ray Cock."
+    },
+    {
+      "category": "bed",
+      "status": "ACCEPTED_LIVE_LOCAL",
+      "selected": {
+        "id": "3a845132-df64-4f02-8da6-44229fe774e4",
+        "name": "Master bed",
+        "provider": "BlenderKit",
+        "authors": [
+          "Rohma Ansari"
+        ],
+        "sourcePageUrl": "https://www.blendkit.com/asset-gallery-detail/3a845132-df64-4f02-8da6-44229fe774e4/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://www.blendkit.com/docs/licenses/",
+        "score": {
+          "realism": 8,
+          "styleMatch": 9,
+          "geometryQuality": 7,
+          "textureQuality": 4,
+          "performance": 10,
+          "licenseConfidence": 10,
+          "total": 48,
+          "maximum": 60
+        }
+      },
+      "decision": "Modern double-bed proportions and very low geometry; accepted after local close-up QA despite limited texture richness.",
+      "files": {
+        "original": [
+          {
+            "path": "assets_external/furniture/bedroom/bed/original/bed_d493c69a-5c64-40bf-a7a6-a4e745bfbea8_library.glb",
+            "bytes": 133244,
+            "sha256": "3BEFAF428A7AAE55C6C2C2277DAD340599E3C7D95A63462A2EE9E2770975395E"
+          },
+          {
+            "path": "assets_external/furniture/bedroom/bed/original/library_metadata.json",
+            "bytes": 13738,
+            "sha256": "D42B54E59CEFCE010BC87E737D6C21E73076369FBDBF981D3C345A85D84FEB2C"
+          }
+        ],
+        "optimized": [
+          {
+            "path": "assets_external/furniture/bedroom/bed/optimized/bed_web.glb",
+            "bytes": 350248,
+            "sha256": "AC6B3C975A1EE98F1288A5567D4C5F89C8A9973AF7D4CF3EAB88AC79AF205637"
+          }
+        ]
+      },
+      "geometry": {
+        "sourceDimensionsMThreeXYZ": [
+          1.76223,
+          1.06038,
+          2.22659
+        ],
+        "meshes": 1,
+        "primitives": 3,
+        "trianglesPerSource": 8566,
+        "materials": 3,
+        "embeddedImages": 2,
+        "textureBindings": 2,
+        "externalUris": 0
+      },
+      "placement": {
+        "anchor": "HOUSE_REFERENCE_ORIGIN",
+        "instances": 3,
+        "items": [
+          {
+            "name": "PILOT_BEDROOM1_BED",
+            "positionMThreeXYZ": [
+              4.95,
+              2.69,
+              -11.65
+            ],
+            "yawRadians": 0,
+            "scaleXYZ": [
+              0.908,
+              0.9,
+              0.898
+            ],
+            "placedDimensionsMThreeXYZ": [
+              1.6001,
+              0.9543,
+              2.0
+            ]
+          },
+          {
+            "name": "PILOT_BEDROOM2_BED",
+            "positionMThreeXYZ": [
+              1.7,
+              2.69,
+              -8.15
+            ],
+            "yawRadians": 0,
+            "scaleXYZ": [
+              0.7945,
+              0.9,
+              0.898
+            ],
+            "placedDimensionsMThreeXYZ": [
+              1.4,
+              0.9543,
+              2.0
+            ]
+          },
+          {
+            "name": "PILOT_BEDROOM3_BED",
+            "positionMThreeXYZ": [
+              1.7,
+              2.69,
+              -5.25
+            ],
+            "yawRadians": 0,
+            "scaleXYZ": [
+              0.7945,
+              0.9,
+              0.898
+            ],
+            "placedDimensionsMThreeXYZ": [
+              1.4,
+              0.9543,
+              2.0
+            ]
+          }
+        ]
+      },
+      "whereUsed": [
+        "presentation/",
+        "visite/",
+        "Upper-floor bedrooms; replaces 30 procedural bed component nodes after successful load"
+      ],
+      "fallback": "All original bed components remain active per family if the selected GLB fails.",
+      "visualEvidence": [
+        {
+          "path": "validation/asset_pilot_screenshots/blender/furniture-selected-bed.png",
+          "bytes": 407653,
+          "sha256": "7ACA3C54FA1ADF334F5E46C0927A10C80D19FFC94B3DBE1BD1D9E4344118EA73",
+          "sourceLabel": "SOURCE = BLENDER/CYCLES"
+        },
+        {
+          "path": "validation/asset_pilot_screenshots/after_live/05-bed-live.png",
+          "bytes": 95304,
+          "sha256": "9910293827A92AC07942C3813F3DCB62B7DEA8442CEEE219E40E762121E8CFF7",
+          "sourceLabel": "SOURCE = LIVE WEB VIEWER"
+        }
+      ],
+      "candidateTrace": [
+        {
+          "name": "Master bed",
+          "provider": "BlenderKit",
+          "scoreTotal": 48,
+          "decision": "SELECTED_AND_ACCEPTED_WITH_TEXTURE_LIMIT_NOTED"
+        },
+        {
+          "name": "Vintage Day Bed",
+          "provider": "Poly Haven",
+          "author": "Aron Łyczek",
+          "sourcePageUrl": "https://polyhaven.com/a/vintage_day_bed",
+          "scoreTotal": 47,
+          "decision": "REJECTED; vintage single/day-bed style"
+        },
+        {
+          "name": "Gothic Bed 01",
+          "provider": "Poly Haven",
+          "author": "Kirill Sannikov",
+          "sourcePageUrl": "https://polyhaven.com/a/GothicBed_01",
+          "scoreTotal": 46,
+          "decision": "REJECTED; Gothic style mismatch"
+        },
+        {
+          "name": "Old Bed Frame",
+          "provider": "Poly Haven",
+          "author": "Luca B",
+          "sourcePageUrl": "https://polyhaven.com/a/old_bed_frame",
+          "scoreTotal": 41,
+          "decision": "REJECTED; incomplete/rusted single frame"
+        }
+      ],
+      "pilot_role": "bed",
+      "integration_status": "LIVE_ACCEPTED",
+      "name": "Master bed",
+      "source": "BlenderKit",
+      "url": "https://www.blendkit.com/asset-gallery-detail/3a845132-df64-4f02-8da6-44229fe774e4/",
+      "author": "Rohma Ansari",
+      "license": "CC0-1.0",
+      "download_date": "2026-08-16",
+      "original_file": "assets_external/furniture/bedroom/bed/original/bed_d493c69a-5c64-40bf-a7a6-a4e745bfbea8_library.glb",
+      "optimized_file": "assets_external/furniture/bedroom/bed/optimized/bed_web.glb",
+      "polygons_before": 8566,
+      "polygons_after": 8566,
+      "textures": {
+        "embedded_images_after": 2,
+        "texture_bindings_after": 2,
+        "runtime_delivery": "embedded in optimized GLB",
+        "external_uris": 0,
+        "preserved": true
+      },
+      "original_size": 133244,
+      "optimized_size": 350248,
+      "where_used": [
+        "presentation/",
+        "visite/",
+        "Upper-floor bedrooms; replaces 30 procedural bed component nodes after successful load"
+      ],
+      "polygon_count_basis": "triangles measured by Blender after source import and before normalized GLB export; export performs no decimation, so before=after."
+    },
+    {
+      "category": "tree",
+      "status": "ACCEPTED_LIVE_LOCAL_RETAINED_AFTER_AB",
+      "selected": {
+        "id": "island_tree_02",
+        "name": "Island Tree 02",
+        "provider": "Poly Haven",
+        "authors": [
+          "Rob Tuytel — scanning and processing",
+          "Rico Cilliers — cleanup and processing"
+        ],
+        "sourcePageUrl": "https://polyhaven.com/a/island_tree_02",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://polyhaven.com/license",
+        "score": {
+          "realism": 8,
+          "styleMatch": 6,
+          "geometryQuality": 7,
+          "textureQuality": 8,
+          "performance": 9,
+          "licenseConfidence": 10,
+          "total": 48,
+          "maximum": 60
+        }
+      },
+      "decision": "Retained after A/B because summer foliage and photogrammetric bark fit the supplied green garden better than the downloaded winter candidate.",
+      "files": {
+        "original": [
+          {
+            "path": "assets_external/vegetation/trees/island_tree_02/original/island_tree_02.bin",
+            "bytes": 40686576,
+            "sha256": "427D69CCC1EA12D1FB9C6AF89691563B4A097F39A6F34C15BE6E45EF5E5FD4CE"
+          },
+          {
+            "path": "assets_external/vegetation/trees/island_tree_02/original/island_tree_02_1k.gltf",
+            "bytes": 8545,
+            "sha256": "D8C5D9EAD41CDBEF91A648F40FF60470FAA19EB3A7010E59E44CB1A01250F75D"
+          },
+          {
+            "path": "assets_external/vegetation/trees/island_tree_02/original/textures/island_tree_02_arm_1k.jpg",
+            "bytes": 688305,
+            "sha256": "ADA61DD4FAD023E699B6314B8B76590017B301719BF74FFC9E20B95893ED62B6"
+          },
+          {
+            "path": "assets_external/vegetation/trees/island_tree_02/original/textures/island_tree_02_branches_arm_1k.jpg",
+            "bytes": 484806,
+            "sha256": "9E3F82263247CE4F619692CEA4C4F6FE9936FF465A86623481849062642C7D05"
+          },
+          {
+            "path": "assets_external/vegetation/trees/island_tree_02/original/textures/island_tree_02_branches_diff_1k.jpg",
+            "bytes": 528304,
+            "sha256": "BEE5EC22196E9E31AD0C95A5A9B4636571CC0124D5BB27A92F1E307D289CC60D"
+          },
+          {
+            "path": "assets_external/vegetation/trees/island_tree_02/original/textures/island_tree_02_branches_nor_gl_1k.jpg",
+            "bytes": 819101,
+            "sha256": "2D67393BA76A0F49CF965FA0C99D8C16268E71E87B1203D35539BFDB971A514E"
+          },
+          {
+            "path": "assets_external/vegetation/trees/island_tree_02/original/textures/island_tree_02_diff_1k.jpg",
+            "bytes": 738738,
+            "sha256": "8FC20397AB5D514C119D7A025868414D78E436138D3867A4B7BA12334A72EC3A"
+          },
+          {
+            "path": "assets_external/vegetation/trees/island_tree_02/original/textures/island_tree_02_leaves_arm_1k.jpg",
+            "bytes": 489476,
+            "sha256": "90DA3A072DBCB052715B1313B9DBC69A4AA8A09A31A4B3868411A2BB51D72037"
+          },
+          {
+            "path": "assets_external/vegetation/trees/island_tree_02/original/textures/island_tree_02_leaves_diff_1k.jpg",
+            "bytes": 191886,
+            "sha256": "F56D762A1507754752ABF164CC12ACBC1E87CE87FA609AC44B98A1B0037C89D8"
+          },
+          {
+            "path": "assets_external/vegetation/trees/island_tree_02/original/textures/island_tree_02_leaves_nor_gl_1k.jpg",
+            "bytes": 379443,
+            "sha256": "07BA461C0C95DA4E49A42981766BDB6191D4C3C4D815796C082266DCC3CECDB8"
+          },
+          {
+            "path": "assets_external/vegetation/trees/island_tree_02/original/textures/island_tree_02_nor_gl_1k.jpg",
+            "bytes": 1157226,
+            "sha256": "1580D5A42D02F4EDE51BFB03972AB0AEF3D8ACAFBD3692276879171007BB70EC"
+          }
+        ],
+        "optimized": [
+          {
+            "path": "assets_external/vegetation/trees/island_tree_02/optimized/island_tree_02_web.glb",
+            "bytes": 4268472,
+            "sha256": "845CD738030743A4592FDC10DB77A38E522E15C8901E6710C377C3D5C303CF76"
+          }
+        ],
+        "runtimeAlias": [
+          {
+            "path": "shared/assets/vegetation/island_tree_02_web.glb",
+            "bytes": 4268472,
+            "sha256": "845CD738030743A4592FDC10DB77A38E522E15C8901E6710C377C3D5C303CF76"
+          }
+        ]
+      },
+      "geometry": {
+        "sourceDimensionsMThreeXYZ": [
+          4.20032,
+          3.40825,
+          4.06767
+        ],
+        "meshes": 3,
+        "primitives": 3,
+        "trianglesPerSource": 47000,
+        "materials": 3,
+        "embeddedImages": 9,
+        "textureBindings": 9,
+        "externalUris": 0
+      },
+      "placement": {
+        "anchor": "existing V17_TREE_LIGHT_* family boxes",
+        "instances": 4,
+        "rule": "Each replacement uses the original trunk X/Z and box-min Y; uniform scale = original family height / 3.40825 m; deterministic family yaw."
+      },
+      "whereUsed": [
+        "presentation/",
+        "visite/",
+        "Exterior garden; four V17_TREE_LIGHT_* families replaced only after successful load"
+      ],
+      "fallback": "Original low-poly tree families stay visible on failure; the accepted optimized tree also remains the runtime source.",
+      "visualEvidence": [
+        {
+          "path": "validation/asset_pilot_screenshots/after_live/07-garden-live.png",
+          "bytes": 143138,
+          "sha256": "4770234AAF750F6CF2C7219CB08C4E817912C69EE52CC40870E6BAE517B13ED5",
+          "sourceLabel": "SOURCE = LIVE WEB VIEWER"
+        },
+        {
+          "path": "validation/asset_pilot_screenshots/blender/tree-optimized-preview.png",
+          "bytes": 421794,
+          "sha256": "E23A4690A3A5F3F88151354B45F0BFBFEFD8BE7B4E5C674068C45BF6A36071A7",
+          "sourceLabel": "SOURCE = BLENDER/CYCLES — REJECTED Decorative Urban Tree candidate, not the retained live tree"
+        }
+      ],
+      "candidateTrace": [
+        {
+          "name": "Island Tree 02",
+          "provider": "Poly Haven",
+          "scoreTotal": 48,
+          "decision": "FINAL_RETAINED_AND_ACCEPTED"
+        },
+        {
+          "name": "Decorative Urban Tree",
+          "provider": "BlenderKit",
+          "author": "Davide Tirindelli",
+          "sourcePageUrl": "https://www.blenderkit.com/asset-gallery-detail/c8af7417-b4d3-4cff-8a7a-b0afdb5a577f/",
+          "researchScoreTotal": 51,
+          "postImportScoreTotal": 29,
+          "decision": "REJECTED_AFTER_BLENDER_VISUAL_GATE; leafless winter silhouette, 123949 triangles, 7032388 bytes"
+        },
+        {
+          "name": "Tree Small 02",
+          "provider": "Poly Haven",
+          "author": "Rico Cilliers",
+          "sourcePageUrl": "https://polyhaven.com/a/tree_small_02",
+          "scoreTotal": 47,
+          "decision": "REJECTED_FOR_PILOT; 4.65M source triangles and 100.97MB 1K package"
+        },
+        {
+          "name": "Tree LOD 2",
+          "provider": "BlenderKit",
+          "sourcePageUrl": "https://www.blenderkit.com/asset-gallery-detail/cb00a6e8-b746-4ced-8ecd-ed8133ced095/",
+          "decision": "REJECTED; Royalty Free extraction conditions not suitable for public raw GLB"
+        }
+      ],
+      "pilot_role": "tree",
+      "integration_status": "LIVE_ACCEPTED",
+      "name": "Island Tree 02",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/island_tree_02",
+      "author": "Rob Tuytel — scanning and processing; Rico Cilliers — cleanup and processing",
+      "license": "CC0-1.0",
+      "download_date": "2026-08-14",
+      "original_file": "assets_external/vegetation/trees/island_tree_02/original/island_tree_02_1k.gltf",
+      "optimized_file": "assets_external/vegetation/trees/island_tree_02/optimized/island_tree_02_web.glb",
+      "polygons_before": 1072213,
+      "polygons_after": 47000,
+      "textures": {
+        "original_maps": 9,
+        "embedded_images_after": 9,
+        "texture_bindings_after": 9,
+        "runtime_delivery": "embedded in optimized GLB",
+        "external_uris": 0,
+        "preserved": true
+      },
+      "original_size": 8545,
+      "optimized_size": 4268472,
+      "where_used": [
+        "presentation/",
+        "visite/",
+        "Exterior garden; four V17_TREE_LIGHT_* families replaced only after successful load"
+      ],
+      "polygon_count_basis": "triangles from original Poly Haven glTF index accessors versus accepted optimized GLB."
+    },
+    {
+      "category": "hedge",
+      "status": "ACCEPTED_LIVE_LOCAL",
+      "selected": {
+        "id": "2810ce15-1076-44e6-9b95-90487f8d5dc5",
+        "name": "Shrub",
+        "provider": "BlenderKit",
+        "authors": [
+          "Blendkit Community"
+        ],
+        "sourcePageUrl": "https://www.blenderkit.com/asset-gallery-detail/2810ce15-1076-44e6-9b95-90487f8d5dc5/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://www.blendkit.com/docs/licenses/",
+        "score": {
+          "realism": 8,
+          "styleMatch": 8,
+          "geometryQuality": 8,
+          "textureQuality": 8,
+          "performance": 9,
+          "licenseConfidence": 10,
+          "total": 51,
+          "maximum": 60
+        }
+      },
+      "decision": "Lush 1.25 m shrub replaces stretched groundcover; material-aware LOD plus GPU instancing reduces repetition and draw cost.",
+      "files": {
+        "original": [
+          {
+            "path": "assets_external/vegetation/hedges/blenderkit_shrub/original/hedge_2810ce15-1076-44e6-9b95-90487f8d5dc5_1k_download.blend.gz",
+            "bytes": 1327924,
+            "sha256": "E6DAFED45E728DB2276F481FA7A501FB9B17C2665BF80683750270F758348535"
+          },
+          {
+            "path": "assets_external/vegetation/hedges/blenderkit_shrub/original/hedge_2810ce15-1076-44e6-9b95-90487f8d5dc5_1k_source.blend",
+            "bytes": 4564424,
+            "sha256": "32C7F1FF80FB0369EF7DC99849CF891B1E0BDCDAA1AED4B26F61050C77B8B519"
+          },
+          {
+            "path": "assets_external/vegetation/hedges/blenderkit_shrub/original/library_metadata.json",
+            "bytes": 15038,
+            "sha256": "8A309E6B570FFDBB26754FC6AD6DB86AA1B18FF6B1F22F055C31105E99845A34"
+          }
+        ],
+        "optimized": [
+          {
+            "path": "assets_external/vegetation/hedges/blenderkit_shrub/optimized/hedge_web.glb",
+            "bytes": 1292892,
+            "sha256": "552369C1C70CE040EC8971DA0F235D24ECB9CB915B9320B1ABCB4EA0C423B7C2"
+          }
+        ]
+      },
+      "geometry": {
+        "sourceDimensionsMBlenderXYZ": [
+          1.2546,
+          1.2522,
+          0.7617
+        ],
+        "sourceDimensionsMThreeXYZ": [
+          1.25462,
+          0.76171,
+          1.25224
+        ],
+        "meshes": 2,
+        "primitives": 2,
+        "trianglesPerSource": 20994,
+        "materials": 2,
+        "embeddedImages": 3,
+        "textureBindings": 3,
+        "externalUris": 0,
+        "branchTrianglesBefore": 8576,
+        "branchTrianglesAfter": 3944,
+        "leafTrianglesBefore": 23680,
+        "leafTrianglesAfter": 17050
+      },
+      "placement": {
+        "anchor": "18 existing V17_HEDGE_LIGHT_* architectural segment boxes",
+        "instances": 18,
+        "logicalSegments": 18,
+        "gpuInstancedMeshBatches": 2,
+        "rule": "Center and base height are inherited per segment; long/short/height scales fit each existing box with deterministic 0.6–2.4% variation and <=0.024 rad yaw variation."
+      },
+      "whereUsed": [
+        "presentation/",
+        "visite/",
+        "Exterior boundaries; 18 logical hedge segments through two GPU InstancedMesh batches"
+      ],
+      "fallback": "Poly Haven Shrub 03 CC0 remains the forced-failure/constrained-device fallback.",
+      "visualEvidence": [
+        {
+          "path": "validation/asset_pilot_screenshots/blender/hedge-optimized-preview.png",
+          "bytes": 608499,
+          "sha256": "3F8D26F6DE9BB4F31C12E9AB2B5521BB3D79B094C9D949DE0BA729FD9F95317B",
+          "sourceLabel": "SOURCE = BLENDER/CYCLES"
+        },
+        {
+          "path": "validation/asset_pilot_screenshots/after_live/02-hedges-live.png",
+          "bytes": 202436,
+          "sha256": "837E29A7DBF2CC15E18CA3582D0471EBFF83A08631CE7A908E2D523DC8F2B9C8",
+          "sourceLabel": "SOURCE = LIVE WEB VIEWER"
+        }
+      ],
+      "candidateTrace": [
+        {
+          "name": "Shrub",
+          "provider": "BlenderKit",
+          "scoreTotal": 51,
+          "decision": "SELECTED_AND_ACCEPTED"
+        },
+        {
+          "name": "Shrub 02",
+          "provider": "Poly Haven",
+          "author": "Rico Cilliers",
+          "sourcePageUrl": "https://polyhaven.com/a/shrub_02",
+          "scoreTotal": 49,
+          "decision": "NOT_SELECTED; long sapling/groundcover module, weaker hedge silhouette"
+        },
+        {
+          "name": "Shrub 03",
+          "provider": "Poly Haven",
+          "author": "Rico Cilliers",
+          "sourcePageUrl": "https://polyhaven.com/a/shrub_03",
+          "scoreTotal": 39,
+          "decision": "RETAINED_FALLBACK; 108-clone stretched groundcover was repetitive"
+        },
+        {
+          "name": "Wild Alpine Shrub Evergreen",
+          "provider": "BlenderKit",
+          "sourcePageUrl": "https://www.blenderkit.com/asset-gallery-detail/004ed0ef-25e1-438e-8471-c149ca2c95d1/",
+          "decision": "REJECTED; Royalty Free raw-model redistribution ambiguity"
+        }
+      ],
+      "pilot_role": "hedge",
+      "integration_status": "LIVE_ACCEPTED",
+      "name": "Shrub",
+      "source": "BlenderKit",
+      "url": "https://www.blenderkit.com/asset-gallery-detail/2810ce15-1076-44e6-9b95-90487f8d5dc5/",
+      "author": "Blendkit Community",
+      "license": "CC0-1.0",
+      "download_date": "2026-08-16",
+      "original_file": "assets_external/vegetation/hedges/blenderkit_shrub/original/hedge_2810ce15-1076-44e6-9b95-90487f8d5dc5_1k_source.blend",
+      "optimized_file": "assets_external/vegetation/hedges/blenderkit_shrub/optimized/hedge_web.glb",
+      "polygons_before": 32256,
+      "polygons_after": 20994,
+      "textures": {
+        "embedded_images_after": 3,
+        "texture_bindings_after": 3,
+        "runtime_delivery": "embedded WebP in optimized GLB",
+        "external_uris": 0,
+        "uv_and_alpha_preserved": true
+      },
+      "original_size": 4564424,
+      "optimized_size": 1292892,
+      "where_used": [
+        "presentation/",
+        "visite/",
+        "Exterior boundaries; 18 logical hedge segments through two GPU InstancedMesh batches"
+      ],
+      "polygon_count_basis": "branch + leaf triangles before versus after material-aware LOD (8576+23680 -> 3944+17050)."
+    },
+    {
+      "category": "facade_pbr",
+      "status": "ACCEPTED_LIVE_LOCAL",
+      "selected": {
+        "id": "white_stucco",
+        "name": "White Stucco",
+        "provider": "Poly Haven",
+        "authors": [
+          "Amal Kumar"
+        ],
+        "sourcePageUrl": "https://polyhaven.com/a/white_stucco",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://polyhaven.com/license",
+        "score": {
+          "realism": 9,
+          "styleMatch": 10,
+          "geometryQuality": 9,
+          "textureQuality": 10,
+          "performance": 8,
+          "licenseConfidence": 10,
+          "total": 56,
+          "maximum": 60
+        }
+      },
+      "decision": "Highest-ranked neutral stucco; local 1K WebP color/normal/ARM set adds scale-readable relief while preserving façade geometry.",
+      "files": {
+        "original": [
+          {
+            "path": "assets_external/materials/facade/white_stucco/original/white_stucco_arm_2k.jpg",
+            "bytes": 1390598,
+            "sha256": "15C6162BD93FC94B1FEC078CABE595E44652B1B4D78D5932F8F143E3911B6BB1"
+          },
+          {
+            "path": "assets_external/materials/facade/white_stucco/original/white_stucco_diff_2k.jpg",
+            "bytes": 2326889,
+            "sha256": "A1CF9063E72D82306C5F3330CFAA56ED75EE365DC6A6EB875CDE125395DBE4EA"
+          },
+          {
+            "path": "assets_external/materials/facade/white_stucco/original/white_stucco_files.json",
+            "bytes": 34881,
+            "sha256": "0C7F63337038E2E441343DA22D91EDD99807E3AA1EF2820EDC0B6884BDB30860"
+          },
+          {
+            "path": "assets_external/materials/facade/white_stucco/original/white_stucco_info.json",
+            "bytes": 1152,
+            "sha256": "6E74A3FFD1C31C75D79CA76FE862A8FECDFAC4EEC899435F6B4EBDFC734D6F83"
+          },
+          {
+            "path": "assets_external/materials/facade/white_stucco/original/white_stucco_nor_gl_2k.jpg",
+            "bytes": 4025312,
+            "sha256": "D11EAE11D09AF20A1BD4E1262B1D35AD4259451A19651307A7FA8F6C0CADFC59"
+          }
+        ],
+        "optimized": [
+          {
+            "path": "assets_external/materials/facade/white_stucco/optimized/white_stucco_ao_1k.webp",
+            "bytes": 89002,
+            "sha256": "3A160C96A7EA608ACE26DE880E991E3F9606594D470002622D0AAAD24463B4B3"
+          },
+          {
+            "path": "assets_external/materials/facade/white_stucco/optimized/white_stucco_arm_1k.webp",
+            "bytes": 34456,
+            "sha256": "BB1251D555396B1C5D5FB8199968D9714CAA1F4FEEB796AD037979405DCB640E"
+          },
+          {
+            "path": "assets_external/materials/facade/white_stucco/optimized/white_stucco_color_1k.webp",
+            "bytes": 63686,
+            "sha256": "5222252B203684A6949670D5D303D764DD3F4E40A2DF4B97D5301DD1BBE5EC42"
+          },
+          {
+            "path": "assets_external/materials/facade/white_stucco/optimized/white_stucco_normal_gl_1k.webp",
+            "bytes": 391816,
+            "sha256": "1B7BED28D294A667574D7B346FC2A2D12F8363C8EDF86F9C1E2EFE6BB01EA44D"
+          }
+        ],
+        "runtimeLoaded": [
+          {
+            "path": "assets_external/materials/facade/white_stucco/optimized/white_stucco_color_1k.webp",
+            "bytes": 63686,
+            "sha256": "5222252B203684A6949670D5D303D764DD3F4E40A2DF4B97D5301DD1BBE5EC42"
+          },
+          {
+            "path": "assets_external/materials/facade/white_stucco/optimized/white_stucco_normal_gl_1k.webp",
+            "bytes": 391816,
+            "sha256": "1B7BED28D294A667574D7B346FC2A2D12F8363C8EDF86F9C1E2EFE6BB01EA44D"
+          },
+          {
+            "path": "assets_external/materials/facade/white_stucco/optimized/white_stucco_arm_1k.webp",
+            "bytes": 34456,
+            "sha256": "BB1251D555396B1C5D5FB8199968D9714CAA1F4FEEB796AD037979405DCB640E"
+          }
+        ]
+      },
+      "geometry": {
+        "architectureGeometryChanged": false,
+        "sourcePhysicalTileM": [
+          1.998,
+          1.998
+        ],
+        "triangles": null
+      },
+      "textures": {
+        "original_maps": 3,
+        "optimized_maps": 4,
+        "runtime_maps": 3,
+        "runtime_bytes": 489958,
+        "runtime_files": [
+          "assets_external/materials/facade/white_stucco/optimized/white_stucco_color_1k.webp",
+          "assets_external/materials/facade/white_stucco/optimized/white_stucco_normal_gl_1k.webp",
+          "assets_external/materials/facade/white_stucco/optimized/white_stucco_arm_1k.webp"
+        ],
+        "standalone_ao_runtime_loaded": false
+      },
+      "placement": {
+        "bindings": [
+          {
+            "material": "V12_PBR_OFFWHITE_STUCCO",
+            "repeat": [
+              3,
+              3
+            ],
+            "offset": [
+              0,
+              -2
+            ],
+            "normalScale": 0.42
+          },
+          {
+            "material": "V10_STUCCO_NEW_BUILD",
+            "repeat": [
+              6,
+              6
+            ],
+            "offset": [
+              0,
+              -5
+            ],
+            "normalScale": 0.32
+          }
+        ]
+      },
+      "whereUsed": [
+        "presentation/",
+        "visite/",
+        "Two existing façade material bindings; geometry and openings unchanged"
+      ],
+      "fallback": "Category applies only after all three runtime maps load; otherwise embedded GLB façade maps remain.",
+      "visualEvidence": [
+        {
+          "path": "validation/asset_pilot_screenshots/after_live/01-facade-live.png",
+          "bytes": 167495,
+          "sha256": "44C3183D1390275C3125A65DBDD57922AC6D119F5E01B5B40D5F2D8ADBB0EF73",
+          "sourceLabel": "SOURCE = LIVE WEB VIEWER"
+        },
+        {
+          "path": "validation/material-pilot-live-harness.png",
+          "bytes": 104692,
+          "sha256": "DBAFE907B17216AD678FCC1C701CB7A65F8C34A22529863E5854C430EE71C57B",
+          "sourceLabel": "SOURCE = LIVE WEB VIEWER — material harness"
+        }
+      ],
+      "candidateTrace": [
+        {
+          "name": "White Stucco",
+          "provider": "Poly Haven",
+          "scoreTotal": 56,
+          "decision": "SELECTED_AND_ACCEPTED"
+        },
+        {
+          "name": "Plaster 001",
+          "provider": "ambientCG",
+          "sourcePageUrl": "https://ambientcg.com/a/Plaster001",
+          "scoreTotal": 51,
+          "decision": "NOT_SELECTED; retained as A/B option"
+        },
+        {
+          "name": "White Stucco Wall 03",
+          "provider": "CGBookcase",
+          "sourcePageUrl": "https://www.cgbookcase.com/textures/white-stucco-wall-03",
+          "scoreTotal": 51,
+          "decision": "NOT_SELECTED; did not exceed primary"
+        },
+        {
+          "name": "White Plaster 02",
+          "provider": "Poly Haven",
+          "sourcePageUrl": "https://polyhaven.com/a/white_plaster_02",
+          "scoreTotal": 50,
+          "decision": "NOT_SELECTED; weaker close-up geometry score"
+        }
+      ],
+      "pilot_role": "facade",
+      "integration_status": "LIVE_ACCEPTED",
+      "name": "White Stucco",
+      "source": "Poly Haven",
+      "url": "https://polyhaven.com/a/white_stucco",
+      "author": "Amal Kumar",
+      "license": "CC0-1.0",
+      "download_date": "2026-08-16",
+      "original_file": "assets_external/materials/facade/white_stucco/original/white_stucco_diff_2k.jpg",
+      "optimized_file": "assets_external/materials/facade/white_stucco/optimized/white_stucco_color_1k.webp",
+      "polygons_before": null,
+      "polygons_after": null,
+      "original_size": 2326889,
+      "optimized_size": 63686,
+      "where_used": [
+        "presentation/",
+        "visite/",
+        "Two existing façade material bindings; geometry and openings unchanged"
+      ],
+      "polygon_count_basis": "not applicable: texture-only replacement, architecture geometry unchanged."
+    },
+    {
+      "category": "grass_pbr",
+      "status": "ACCEPTED_LIVE_LOCAL",
+      "selected": {
+        "id": "Grass005",
+        "name": "Grass 005",
+        "provider": "ambientCG",
+        "authors": [
+          "ambientCG"
+        ],
+        "sourcePageUrl": "https://ambientcg.com/a/Grass005",
+        "license": "CC0-1.0 Universal",
+        "licenseUrl": "https://docs.ambientcg.com/license/",
+        "score": {
+          "realism": 9,
+          "styleMatch": 10,
+          "geometryQuality": 9,
+          "textureQuality": 10,
+          "performance": 7,
+          "licenseConfidence": 10,
+          "total": 55,
+          "maximum": 60
+        }
+      },
+      "decision": "Highest-ranked maintained-lawn surface; 1K WebP color/normal/ARM maps materially improve the external ground without adding geometry.",
+      "files": {
+        "original": [
+          {
+            "path": "assets_external/materials/exterior/grass005/original/Grass005_2K-JPG.zip",
+            "bytes": 39523019,
+            "sha256": "89183D8DCEABC3C23A26978F426E1662143DD2F84F1DC3586A1592D101E5234B"
+          },
+          {
+            "path": "assets_external/materials/exterior/grass005/original/Grass005_metadata.json",
+            "bytes": 2287,
+            "sha256": "442285959DC82D99CAA591110E68428FB349579889FE5860BE3A645FF8D1FF2E"
+          }
+        ],
+        "optimized": [
+          {
+            "path": "assets_external/materials/exterior/grass005/optimized/Grass005_ao_1k.webp",
+            "bytes": 634648,
+            "sha256": "D6D29CFEC2441265407EC349663D09C7214C37F1939F769625C82FAF5074C80D"
+          },
+          {
+            "path": "assets_external/materials/exterior/grass005/optimized/Grass005_arm_1k.webp",
+            "bytes": 651874,
+            "sha256": "DEDCBE2EDCED39A0D51166115CD499E339FA604E5033B2FE1E0A2D182B60D1BE"
+          },
+          {
+            "path": "assets_external/materials/exterior/grass005/optimized/Grass005_color_1k.webp",
+            "bytes": 364742,
+            "sha256": "8FFAB3A46B9D178370B32A3FB076BABA00362BB8940BB56404C7205585123F40"
+          },
+          {
+            "path": "assets_external/materials/exterior/grass005/optimized/Grass005_normal_gl_1k.webp",
+            "bytes": 541710,
+            "sha256": "EF7B7C71D9D4D01F89AE2D7BD85775F6F18B00037B8BA907FA975F6C94C28148"
+          }
+        ],
+        "runtimeLoaded": [
+          {
+            "path": "assets_external/materials/exterior/grass005/optimized/Grass005_color_1k.webp",
+            "bytes": 364742,
+            "sha256": "8FFAB3A46B9D178370B32A3FB076BABA00362BB8940BB56404C7205585123F40"
+          },
+          {
+            "path": "assets_external/materials/exterior/grass005/optimized/Grass005_normal_gl_1k.webp",
+            "bytes": 541710,
+            "sha256": "EF7B7C71D9D4D01F89AE2D7BD85775F6F18B00037B8BA907FA975F6C94C28148"
+          },
+          {
+            "path": "assets_external/materials/exterior/grass005/optimized/Grass005_arm_1k.webp",
+            "bytes": 651874,
+            "sha256": "DEDCBE2EDCED39A0D51166115CD499E339FA604E5033B2FE1E0A2D182B60D1BE"
+          }
+        ]
+      },
+      "geometry": {
+        "architectureGeometryChanged": false,
+        "sourcePhysicalTileM": null,
+        "physicalScaleEvidence": "Official ambientCG v3 metadata reports zero dimensions; runtime scale is visual/empirical, not a claimed measured tile size.",
+        "triangles": null
+      },
+      "textures": {
+        "archive_maps_used": 5,
+        "optimized_maps": 4,
+        "runtime_maps": 3,
+        "runtime_bytes": 1558326,
+        "runtime_files": [
+          "assets_external/materials/exterior/grass005/optimized/Grass005_color_1k.webp",
+          "assets_external/materials/exterior/grass005/optimized/Grass005_normal_gl_1k.webp",
+          "assets_external/materials/exterior/grass005/optimized/Grass005_arm_1k.webp"
+        ],
+        "standalone_ao_runtime_loaded": false
+      },
+      "placement": {
+        "bindings": [
+          {
+            "material": "PBR_B_GRASS",
+            "repeat": [
+              8,
+              8
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "normalScale": 0.72
+          }
+        ]
+      },
+      "whereUsed": [
+        "presentation/",
+        "visite/",
+        "Existing exterior lawn material binding; exterior geometry unchanged"
+      ],
+      "fallback": "Category applies only after all three runtime maps load; otherwise embedded GLB lawn material remains.",
+      "visualEvidence": [
+        {
+          "path": "validation/asset_pilot_screenshots/after_live/06-ground-live.png",
+          "bytes": 202327,
+          "sha256": "420EA72668097C7CBB80448BADB96E0ABAA2C271D5D5C18A26602C24DB48891A",
+          "sourceLabel": "SOURCE = LIVE WEB VIEWER"
+        },
+        {
+          "path": "validation/material-pilot-live-harness.png",
+          "bytes": 104692,
+          "sha256": "DBAFE907B17216AD678FCC1C701CB7A65F8C34A22529863E5854C430EE71C57B",
+          "sourceLabel": "SOURCE = LIVE WEB VIEWER — material harness"
+        }
+      ],
+      "candidateTrace": [
+        {
+          "name": "Grass 005",
+          "provider": "ambientCG",
+          "scoreTotal": 55,
+          "decision": "SELECTED_AND_ACCEPTED"
+        },
+        {
+          "name": "Grass 004",
+          "provider": "ambientCG",
+          "sourcePageUrl": "https://ambientcg.com/a/Grass004",
+          "scoreTotal": 54,
+          "decision": "NOT_SELECTED; close backup but slightly weaker style match"
+        },
+        {
+          "name": "Leafy Grass",
+          "provider": "Poly Haven",
+          "sourcePageUrl": "https://polyhaven.com/a/leafy_grass",
+          "scoreTotal": 47,
+          "decision": "NOT_SELECTED; wild/leafy edges do not match maintained lawn"
+        },
+        {
+          "name": "Grass 01",
+          "provider": "CGBookcase",
+          "sourcePageUrl": "https://www.cgbookcase.com/textures/grass-01",
+          "scoreTotal": 46,
+          "decision": "NOT_SELECTED; weaker realism/style score"
+        }
+      ],
+      "pilot_role": "grass",
+      "integration_status": "LIVE_ACCEPTED",
+      "name": "Grass 005",
+      "source": "ambientCG",
+      "url": "https://ambientcg.com/a/Grass005",
+      "author": "ambientCG",
+      "license": "CC0-1.0 Universal",
+      "download_date": "2026-08-16",
+      "original_file": "assets_external/materials/exterior/grass005/original/Grass005_2K-JPG.zip",
+      "optimized_file": "assets_external/materials/exterior/grass005/optimized/Grass005_color_1k.webp",
+      "polygons_before": null,
+      "polygons_after": null,
+      "original_size": 39523019,
+      "optimized_size": 364742,
+      "where_used": [
+        "presentation/",
+        "visite/",
+        "Existing exterior lawn material binding; exterior geometry unchanged"
+      ],
+      "polygon_count_basis": "not applicable: texture-only replacement, architecture geometry unchanged."
+    }
+  ],
+  "runtimeBudget": {
+    "furniture": {
+      "families": 4,
+      "instances": 11,
+      "displayedTriangles": 221660,
+      "drawCalls": 22
+    },
+    "vegetation": {
+      "treeInstances": 4,
+      "hedgeLogicalSegments": 18,
+      "hedgeGpuBatches": 2,
+      "displayedTriangles": 565892,
+      "drawCalls": 14,
+      "baselineDisplayedTriangles": 1082996,
+      "baselineDrawCalls": 120
+    },
+    "externalRuntimeMaterialMaps": {
+      "count": 6,
+      "bytes": 2048284,
+      "httpStatusDuringHarness": "6/6 HTTP 200"
+    },
+    "performance": {
+      "targetFpsMinimum": 30,
+      "chromiumWebGl2MainThreadSubmitHarnessFps": 456.27,
+      "harnessGate": "PASS",
+      "integratedAppBrowserRafObservedFps": 29.79,
+      "integratedAppBrowserGate": "BELOW_STRICT_TARGET_BY_0.21_FPS",
+      "schedulerObservation": "The integrated hidden browser refreshed at approximately 30 Hz; this is not represented as a full-viewer >=30 FPS pass."
+    }
+  },
+  "evidenceInputs": [
+    {
+      "path": "analysis/pilot_furniture_candidates.json",
+      "bytes": 127201,
+      "sha256": "7359A5114124D5CE897C6486043F52046A75BE9750C483BCDFA42735F6E0A58B"
+    },
+    {
+      "path": "analysis/pilot_material_candidates.json",
+      "bytes": 21289,
+      "sha256": "1BB8A717EB3178BFCD588F866485861395C77E2A50F70B270BAD2C7CC214A2A4"
+    },
+    {
+      "path": "analysis/pilot_vegetation_candidates.json",
+      "bytes": 22751,
+      "sha256": "A5F502C9417DAF3FC75BEDBD0D763B5C2C168463484FA34A5B233698D8A0D14D"
+    },
+    {
+      "path": "validation/pilot_furniture_integration.json",
+      "bytes": 13327,
+      "sha256": "10EC369092662E819F0E02DD0F3EB95F9B3E22D03753E2A97FDF4AC938E3B7CC"
+    },
+    {
+      "path": "validation/pilot_furniture_browser.json",
+      "bytes": 10339,
+      "sha256": "FBAAEFECA828824EF14246ABD161EAD940A3D7D0855D821ACD4FFD0105F76327"
+    },
+    {
+      "path": "validation/pilot_material_integration_validation.json",
+      "bytes": 10519,
+      "sha256": "5396A52DB1D6B648A21432548F05D713FD53192548ACC317800A6289E2BD0476"
+    },
+    {
+      "path": "validation/pilot_vegetation_integration.json",
+      "bytes": 13059,
+      "sha256": "7DD3DFDEC02BC2F052318693DBAC66B7AC968985DA845263CDB49D234C5796E0"
+    },
+    {
+      "path": "validation/vegetation-runtime-validation.json",
+      "bytes": 10752,
+      "sha256": "9E8B979161948E8828E48BE3AB6322441D26B2A32E089DDD28A051B4D35F490E"
+    }
+  ],
+  "knownLimits": [
+    "Public deployment/postflight is outside this LOCAL validation snapshot.",
+    "The full integrated in-app browser rAF observation was 29.79 FPS, not a strict >=30 FPS proof; the 456.27 FPS value measures main-thread submit in the real Chromium/WebGL2 vegetation harness.",
+    "Grass005 official metadata does not publish a non-zero physical tile size, so its 8x8 repeat is an empirical visual choice.",
+    "The retained Island Tree 02 scores only 6/10 for suburban style match, but passed the 8/10 realism target and beat the winter candidate after A/B.",
+    "The bed scores 4/10 for texture richness; local visual QA accepted its overall realism/proportions, but it remains the weakest close-up material in the pilot.",
+    "Kitchen, bathroom, roof, floor, indoor plants and HDRI were not part of the mandatory eight-category pilot and are not claimed as integrated external assets."
+  ],
+  "transactionProbeContract": {
+    "assetsRootType": "list",
+    "integrationStatusRequired": "LIVE_ACCEPTED",
+    "pilotRolesRequired": [
+      "sofa",
+      "table",
+      "chair",
+      "bed",
+      "tree",
+      "hedge",
+      "facade",
+      "grass"
+    ]
+  }
+}

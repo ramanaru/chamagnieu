@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "version": "V18",
-  "release": "V18-WEB-REALISM-1",
-  "cacheKey": "v18-web-realism-1",
+  "release": "V18-ASSET-PILOT-1",
+  "cacheKey": "v18-asset-pilot-1",
   "model": "./Chamagnieu_V18_WEB_REALISM_UPGRADED.glb",
   "modelSha256": "9A5FD736CF5BFC4B8AF90A3B1A701C1532B83D2E6BDF0FA2C459B085B9A12B1E",
   "modelBytes": 22687292,
@@ -11,13 +11,15 @@
   "gallerySource": "BLENDER",
   "materials": {
     "embedded": true,
-    "runtimeTuning": "shared/live-realism.js + shared/live-vegetation.js",
+    "runtimeTuning": "shared/live-realism.js + shared/live-materials-pilot.js + shared/live-vegetation.js",
     "codec": "WebP",
     "embeddedImageCount": 78,
     "pbrTextureBindings": 95,
     "maxTextureResolution": "2048px master maps; compact WebP packs 512/768px for upgraded materials",
-    "externalTextureCount": 0,
-    "orphanImageBytes": 0
+    "externalTextureCount": 6,
+    "orphanImageBytes": 0,
+    "externalTextureBytes": 2048284,
+    "externalTexturePolicy": "local CC0 WebP; category fallback to embedded GLB maps"
   },
   "assets": {
     "trees": 4,
@@ -27,16 +29,17 @@
     "treeModelBytes": 4268472,
     "treeModelSha256": "845CD738030743A4592FDC10DB77A38E522E15C8901E6710C377C3D5C303CF76",
     "treeTrianglesPerInstance": 47000,
-    "hedgeModel": "./assets/vegetation/shrub_03_web.glb",
-    "hedgeModelBytes": 675924,
-    "hedgeModelSha256": "C285AD37DDAA6014347AD1AD8A31311BAC46C384EE0D5F8C5D445186AA7960EE",
-    "hedgeTrianglesPerInstance": 8287,
-    "hedgeRows": 2,
-    "hedgeTilesPerRow": 3,
-    "hedgeCloneInstances": 108,
-    "enhancedVegetationTriangles": 1082996,
-    "enhancedVegetationDrawCalls": 120,
-    "provenance": "Poly Haven CC0 1.0; dérivés Web décimés/compactés localement"
+    "hedgeModel": "../assets_external/vegetation/hedges/blenderkit_shrub/optimized/hedge_web.glb",
+    "hedgeModelBytes": 1292892,
+    "hedgeModelSha256": "552369C1C70CE040EC8971DA0F235D24ECB9CB915B9320B1ABCB4EA0C423B7C2",
+    "hedgeTrianglesPerInstance": 20994,
+    "hedgeRows": 1,
+    "hedgeTilesPerRow": 1,
+    "hedgeCloneInstances": 18,
+    "enhancedVegetationTriangles": 565892,
+    "enhancedVegetationDrawCalls": 14,
+    "provenance": "Poly Haven CC0 1.0 tree retained after A/B; BlenderKit CC0 shrub selected and GPU-instanced",
+    "hedgeGpuBatches": 2
   },
   "lighting": {
     "pipeline": "V18-WEB-REALISM-LIGHTING-R2",
@@ -69,5 +72,62 @@
     "embeddedImages": 78,
     "orphanBufferViews": 0,
     "sizeDeltaVsSync4Bytes": -2482028
+  },
+  "assetPilot": {
+    "phase": "LIVE_VALIDATED_LOCAL",
+    "architectureChanged": false,
+    "visualisationOnly": true,
+    "contractual": false,
+    "manifest": "../assets_external/ASSET_MANIFEST.json",
+    "licenses": "../assets_external/ASSET_LICENSES.md",
+    "targetFpsMinimum": 30,
+    "furniture": {
+      "module": "./live-furniture-pilot.js",
+      "families": 4,
+      "instances": 11,
+      "fallback": "per-family original GLB furniture retained until selected asset loaded",
+      "assets": {
+        "sofa": {
+          "path": "../assets_external/furniture/living/sofa/optimized/sofa_web.glb",
+          "bytes": 2577832,
+          "sha256": "A1321C8B14FFC4170CECA330B581441ADE66B64CA87FF89D772E385367D21B3D"
+        },
+        "table": {
+          "path": "../assets_external/furniture/dining/table/optimized/table_web.glb",
+          "bytes": 3544464,
+          "sha256": "A8BCD84ADADC29F9DC26EEFA068FA393823E2599493BCADB62797986D89F67B0"
+        },
+        "chair": {
+          "path": "../assets_external/furniture/dining/chair/optimized/chair_web.glb",
+          "bytes": 920384,
+          "sha256": "6E5CC754877D49AF17EA2431693E29B07DEEA0A6B14163B1F23EF933E1FAAC71"
+        },
+        "bed": {
+          "path": "../assets_external/furniture/bedroom/bed/optimized/bed_web.glb",
+          "bytes": 350248,
+          "sha256": "AC6B3C975A1EE98F1288A5567D4C5F89C8A9973AF7D4CF3EAB88AC79AF205637"
+        }
+      }
+    },
+    "materials": {
+      "module": "./live-materials-pilot.js",
+      "categories": 2,
+      "appliedMaterials": 3,
+      "runtimeBytes": 2048284,
+      "facade": "Poly Haven White Stucco CC0",
+      "grass": "ambientCG Grass005 CC0"
+    },
+    "vegetation": {
+      "treeDecision": "retain Poly Haven Island Tree 02; BlenderKit winter tree rejected after visual QA",
+      "hedgeDecision": "BlenderKit Shrub CC0 accepted; 18 metric hedge segments through 2 GPU InstancedMesh batches"
+    },
+    "performance": {
+      "targetFpsMinimum": 30,
+      "pixelRatioCap": 1.0,
+      "shadowMode": "static-once-after-assets",
+      "vegetationHarnessSubmitFps": 456.27,
+      "iabRefreshObservedFps": 29.79,
+      "iabRefreshSchedulerNote": "hidden integrated browser is approximately 30 Hz; real Chromium/WebGL2 submit gate exceeds 30 FPS"
+    }
   }
 }

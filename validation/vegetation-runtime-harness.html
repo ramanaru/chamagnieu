@@ -16,5 +16,19 @@ for(let i=0;i<18;i++){const h=new THREE.Mesh(new THREE.BoxGeometry(i<11?.82:1.34
 for(let i=1;i<=4;i++){const x=-5+(i-1)*3.4,z=-2.2; const trunk=new THREE.Mesh(new THREE.CylinderGeometry(.28,.35,3),trunkMat); trunk.position.set(x,1.5,z); trunk.name=`V17_TREE_LIGHT_${String(i).padStart(2,'0')}_TRUNK`; house.add(trunk); for(const [suffix,dx,dy] of [['CANOPY_C',0,4.2],['CANOPY_L',-1,4],['CANOPY_R',1,4],['CANOPY_TOP',0,5.2]]){const c=new THREE.Mesh(new THREE.SphereGeometry(1.25,8,6),leafMat); c.position.set(x+dx,dy,z); c.name=`V17_TREE_LIGHT_${String(i).padStart(2,'0')}_${suffix}`; house.add(c)}}
 const query=new URLSearchParams(location.search); const mobile=query.has('mobile');
 if(query.has('constrained')) Object.defineProperty(navigator,'deviceMemory',{value:2,configurable:true});
-const audit=await installLiveVegetation({scene,house,renderer,mobile,cacheKey:'harness'}); window.__audit=audit; window.__done=true; document.querySelector('#audit').textContent=JSON.stringify(audit,null,2); renderer.render(scene,camera);
+const installOptions={scene,house,renderer,mobile,cacheKey:'harness'};
+if(query.has('forceHedgeFailure')) installOptions.hedgeUrl=new URL('./missing-primary-hedge.glb',location.href);
+const audit=await installLiveVegetation(installOptions);
+window.__audit=audit; window.__renderer=renderer; window.__scene=scene; window.__camera=camera;
+window.__measureVegetationFrames=(count=12)=>{
+  // Headless Chromium throttles requestAnimationFrame for background pages.
+  // Measure deterministic main-thread frame submission. The full viewer's
+  // live validator supplies the separate wall-clock FPS gate on a GPU-backed
+  // browser; SwiftShader's software rasterizer is not a hardware FPS proxy.
+  const start=performance.now();
+  for(let frame=0;frame<count;frame+=1) renderer.render(scene,camera);
+  const elapsedMs=Math.max(1,performance.now()-start);
+  return {kind:'main-thread-submit',frames:count,elapsedMs,fps:count*1000/elapsedMs};
+};
+window.__done=true; document.querySelector('#audit').textContent=JSON.stringify(audit,null,2); renderer.render(scene,camera);
 </script>

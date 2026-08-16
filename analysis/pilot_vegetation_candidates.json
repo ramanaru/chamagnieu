@@ -1,0 +1,626 @@
+{
+  "schema_version": "1.0",
+  "research_date": "2026-08-16",
+  "scope": "Phase pilote Chamagnieu V18 - arbre realiste Web et haie/buisson realiste",
+  "official_sources_only": true,
+  "download_performed": false,
+  "integration_performed": false,
+  "score_scale": {
+    "realism": 10,
+    "style_match": 10,
+    "geometry_quality": 10,
+    "texture_quality": 10,
+    "performance": 10,
+    "license_confidence": 10,
+    "total": 60
+  },
+  "license_rules": {
+    "poly_haven": {
+      "license": "CC0 1.0 / public domain dedication",
+      "license_url": "https://polyhaven.com/license",
+      "commercial_use": true,
+      "personal_use": true,
+      "web_application_use": true,
+      "redistribution": true,
+      "attribution_required": false,
+      "evidence": "Poly Haven states that all its HDRIs, textures and 3D models are CC0; commercial use and redistribution are allowed and attribution is not required."
+    },
+    "blenderkit_cc0": {
+      "license": "Creative Commons Zero / CC0",
+      "license_url": "https://www.blenderkit.com/docs/licenses/",
+      "commercial_use": true,
+      "personal_use": true,
+      "web_application_use": true,
+      "redistribution": true,
+      "attribution_required": false,
+      "evidence": "The official BlenderKit license page describes CC0 as no rights reserved; each shortlisted BlenderKit asset page and API record explicitly reports cc_zero."
+    },
+    "blenderkit_royalty_free_public_glb_policy": {
+      "status": "REJECT_FOR_PUBLIC_GLB_UNLESS_MANUAL_LICENSE_REVIEW",
+      "reason": "The official FAQ allows games only when assets are not easily extractable. A public GLB is directly extractable, so Royalty Free candidates are not shortlisted for this Web viewer."
+    }
+  },
+  "current_assets": {
+    "tree": {
+      "name": "island_tree_02_web.glb",
+      "path": "shared/assets/vegetation/island_tree_02_web.glb",
+      "source_asset": "Island Tree 02",
+      "source_url": "https://polyhaven.com/a/island_tree_02",
+      "source_author": [
+        "Rob Tuytel - scanning, processing",
+        "Rico Cilliers - cleanup, processing"
+      ],
+      "license": "CC0 1.0",
+      "bytes": 4268472,
+      "sha256": "845CD738030743A4592FDC10DB77A38E522E15C8901E6710C377C3D5C303CF76",
+      "triangles": 47000,
+      "meshes": 3,
+      "primitives": 3,
+      "materials": 3,
+      "embedded_textures": 9,
+      "external_uris": 0,
+      "score": {
+        "realism": 8,
+        "style_match": 6,
+        "geometry_quality": 7,
+        "texture_quality": 8,
+        "performance": 9,
+        "license_confidence": 10,
+        "total": 48
+      },
+      "comparison_note": "Technically efficient and genuinely PBR, but the windswept coastal silhouette is less representative of a suburban garden in Chamagnieu. Retain as verified fallback and possible variation."
+    },
+    "hedge": {
+      "name": "shrub_03_web.glb",
+      "path": "shared/assets/vegetation/shrub_03_web.glb",
+      "source_asset": "Shrub 03",
+      "source_url": "https://polyhaven.com/a/shrub_03",
+      "source_author": [
+        "Rico Cilliers"
+      ],
+      "license": "CC0 1.0",
+      "bytes": 675924,
+      "sha256": "C285AD37DDAA6014347AD1AD8A31311BAC46C384EE0D5F8C5D445186AA7960EE",
+      "triangles_per_mesh": 8287,
+      "live_clone_count": 108,
+      "live_displayed_triangles": 894996,
+      "live_draw_calls_estimate": 108,
+      "materials": 1,
+      "embedded_textures": 3,
+      "external_uris": 0,
+      "score": {
+        "realism": 6,
+        "style_match": 4,
+        "geometry_quality": 7,
+        "texture_quality": 7,
+        "performance": 5,
+        "license_confidence": 10,
+        "total": 39
+      },
+      "comparison_note": "The source is low meadow groundcover rather than a hedge. Stretching and repeating 108 clumps creates visible repetition and nearly 0.9 million displayed triangles. Retain only as constrained-device fallback."
+    }
+  },
+  "tree_candidates": [
+    {
+      "rank": 1,
+      "selected_for_pilot": true,
+      "status": "SHORTLIST_PRIMARY",
+      "name": "Decorative Urban Tree",
+      "provider": "BlenderKit",
+      "url": "https://www.blenderkit.com/asset-gallery-detail/c8af7417-b4d3-4cff-8a7a-b0afdb5a577f/",
+      "official_api_asset_base_id": "c8af7417-b4d3-4cff-8a7a-b0afdb5a577f",
+      "official_api_version_id": "8775e08b-6ac7-4af3-86ad-9f3d56d65afd",
+      "author": "Davide Tirindelli",
+      "license": "CC0",
+      "free": true,
+      "attribution_required": false,
+      "redistribution_allowed": true,
+      "commercial_use_allowed": true,
+      "web_use_allowed": true,
+      "download_automation": {
+        "available": true,
+        "evidence": "Official API: isFree=true, canDownload=true and official download endpoints are present; BlenderKit's official add-on supports free no-login downloads.",
+        "download_now": false
+      },
+      "formats": [
+        "BLEND",
+        "GLB",
+        "Godot GLB",
+        "BLEND 0.5K",
+        "BLEND 1K",
+        "BLEND 2K",
+        "BLEND 4K"
+      ],
+      "provider_geometry": {
+        "polygon_or_face_count": 29641,
+        "topology": "tri_dominant",
+        "objects": 4,
+        "dimensions_m": [
+          3.6011,
+          4.5388,
+          6.2374
+        ]
+      },
+      "textures": {
+        "count": 20,
+        "resolution_min": 1080,
+        "resolution_max": 4096,
+        "uv": true,
+        "shader": "Principled + translucent",
+        "provider_pure_pbr_flag": false
+      },
+      "file_options_bytes": {
+        "stock_glb": 146996520,
+        "blend_0_5k": 3443031,
+        "blend_1k": 8062649,
+        "blend_2k": 26498687,
+        "blend_4k": 85797542
+      },
+      "web_quality_assessment": "Best fit: upright 6.24 m urban/garden tree, strong silhouette and close-view detail with only 29,641 provider faces. The stock GLB is too large, but the 1K Blend is compact enough to re-export as a self-contained optimized GLB after removing unused ground/material data.",
+      "optimization_required": [
+        "Import 1K Blend rather than 146.99 MB stock GLB",
+        "Remove unused concrete/marble/ground objects and materials",
+        "Preserve leaf alpha/translucency and normal/roughness information",
+        "Export embedded-texture GLB and validate actual triangle count",
+        "Target <= 5 MB and <= 45k triangles"
+      ],
+      "score": {
+        "realism": 9,
+        "style_match": 9,
+        "geometry_quality": 8,
+        "texture_quality": 8,
+        "performance": 7,
+        "license_confidence": 10,
+        "total": 51
+      }
+    },
+    {
+      "rank": 2,
+      "selected_for_pilot": false,
+      "status": "SHORTLIST_BACKUP_HIGH_DETAIL",
+      "name": "Tree Small 02",
+      "provider": "Poly Haven",
+      "asset_id": "tree_small_02",
+      "url": "https://polyhaven.com/a/tree_small_02",
+      "official_api_info": "https://api.polyhaven.com/info/tree_small_02",
+      "official_api_files": "https://api.polyhaven.com/files/tree_small_02",
+      "author": "Rico Cilliers",
+      "license": "CC0",
+      "free": true,
+      "attribution_required": false,
+      "redistribution_allowed": true,
+      "commercial_use_allowed": true,
+      "web_use_allowed": true,
+      "download_automation": {
+        "available": true,
+        "evidence": "Official files API exposes direct per-file URLs, MD5 values and byte sizes without a paid account.",
+        "download_now": false
+      },
+      "formats": [
+        "BLEND",
+        "glTF",
+        "USD",
+        "FBX"
+      ],
+      "provider_geometry": {
+        "triangles": 4652585,
+        "dimensions_m": [
+          2.921,
+          4.293,
+          4.65
+        ]
+      },
+      "textures": {
+        "source_max_resolution": 8192,
+        "gltf_1k_texture_count": 9,
+        "maps": [
+          "branch diffuse/normal GL/ARM",
+          "leaves diffuse/normal GL/ARM",
+          "base diffuse/normal GL/ARM"
+        ]
+      },
+      "gltf_1k_package_bytes": 100974143,
+      "web_quality_assessment": "Excellent small-garden silhouette and detailed bark/branches/leaves, but the original geometry is 4.65 million triangles. It is the high-detail source behind the BlenderKit urban derivative and is redundant for the pilot unless the derivative fails visual QA.",
+      "optimization_required": [
+        "Create render and Web variants",
+        "Aggressive material-aware decimation to 35k-50k triangles",
+        "Resize essential PBR maps to 1K or selective 2K",
+        "Embed textures in final GLB"
+      ],
+      "score": {
+        "realism": 9,
+        "style_match": 8,
+        "geometry_quality": 9,
+        "texture_quality": 9,
+        "performance": 2,
+        "license_confidence": 10,
+        "total": 47
+      }
+    },
+    {
+      "rank": 3,
+      "selected_for_pilot": false,
+      "status": "SHORTLIST_VARIATION_ONLY",
+      "name": "Jacaranda Tree",
+      "provider": "Poly Haven",
+      "asset_id": "jacaranda_tree",
+      "url": "https://polyhaven.com/a/jacaranda_tree",
+      "official_api_info": "https://api.polyhaven.com/info/jacaranda_tree",
+      "official_api_files": "https://api.polyhaven.com/files/jacaranda_tree",
+      "author": "Rico Cilliers - all; Rob Tuytel - guidance",
+      "license": "CC0",
+      "free": true,
+      "attribution_required": false,
+      "redistribution_allowed": true,
+      "commercial_use_allowed": true,
+      "web_use_allowed": true,
+      "download_automation": {
+        "available": true,
+        "evidence": "Official files API exposes direct per-file URLs, MD5 values and byte sizes without a paid account.",
+        "download_now": false
+      },
+      "formats": [
+        "BLEND",
+        "glTF",
+        "USD",
+        "FBX"
+      ],
+      "provider_geometry": {
+        "triangles": 312356,
+        "dimensions_m": [
+          24.17,
+          18.029,
+          19.829
+        ]
+      },
+      "textures": {
+        "source_max_resolution": 8192,
+        "gltf_1k_texture_count": 9,
+        "maps": [
+          "branches diffuse/normal GL/ARM",
+          "trunk diffuse/normal GL/ARM",
+          "leaves diffuse/normal GL/ARM"
+        ]
+      },
+      "gltf_1k_package_bytes": 214609299,
+      "web_quality_assessment": "Realistic mature broadleaf form and relatively moderate published triangle count, but the 24 m crown is much larger than the current planting and the 1K glTF package is 214.61 MB. Consider only for a distant mature-tree variation after scale and botanical fit review.",
+      "optimization_required": [
+        "Check whether scaling preserves believable branch and leaf proportions",
+        "Reduce geometry and unusually large binary payload",
+        "Build LODs and embedded 1K textures"
+      ],
+      "score": {
+        "realism": 9,
+        "style_match": 6,
+        "geometry_quality": 8,
+        "texture_quality": 9,
+        "performance": 3,
+        "license_confidence": 10,
+        "total": 45
+      }
+    },
+    {
+      "rank": 4,
+      "selected_for_pilot": false,
+      "status": "NOT_SELECTED_COASTAL_DUPLICATION",
+      "name": "Island Tree 01",
+      "provider": "Poly Haven",
+      "asset_id": "island_tree_01",
+      "url": "https://polyhaven.com/a/island_tree_01",
+      "official_api_info": "https://api.polyhaven.com/info/island_tree_01",
+      "official_api_files": "https://api.polyhaven.com/files/island_tree_01",
+      "author": "Rob Tuytel - scanning, processing; Rico Cilliers - cleanup, processing",
+      "license": "CC0",
+      "free": true,
+      "attribution_required": false,
+      "redistribution_allowed": true,
+      "commercial_use_allowed": true,
+      "web_use_allowed": true,
+      "download_automation": {
+        "available": true,
+        "evidence": "Official files API exposes direct per-file URLs, MD5 values and byte sizes without a paid account.",
+        "download_now": false
+      },
+      "formats": [
+        "BLEND",
+        "glTF",
+        "USD",
+        "FBX"
+      ],
+      "provider_geometry": {
+        "triangles": 3729692,
+        "dimensions_m": [
+          12.464,
+          4.819,
+          5.027
+        ]
+      },
+      "textures": {
+        "source_max_resolution": 8192,
+        "gltf_1k_texture_count": 9
+      },
+      "gltf_1k_package_bytes": 66337268,
+      "web_quality_assessment": "Very realistic scan but repeats the same coastal/windswept visual language as the current Island Tree 02 while being much heavier. It does not solve the style mismatch.",
+      "score": {
+        "realism": 9,
+        "style_match": 5,
+        "geometry_quality": 9,
+        "texture_quality": 9,
+        "performance": 3,
+        "license_confidence": 10,
+        "total": 45
+      }
+    }
+  ],
+  "hedge_candidates": [
+    {
+      "rank": 1,
+      "selected_for_pilot": true,
+      "status": "SHORTLIST_PRIMARY",
+      "name": "Shrub",
+      "provider": "BlenderKit",
+      "url": "https://www.blenderkit.com/asset-gallery-detail/2810ce15-1076-44e6-9b95-90487f8d5dc5/",
+      "official_api_asset_base_id": "2810ce15-1076-44e6-9b95-90487f8d5dc5",
+      "official_api_version_id": "32002ed3-1b0b-40d9-835d-a36bc16d5b51",
+      "author": "Blendkit Community",
+      "license": "CC0",
+      "free": true,
+      "attribution_required": false,
+      "redistribution_allowed": true,
+      "commercial_use_allowed": true,
+      "web_use_allowed": true,
+      "download_automation": {
+        "available": true,
+        "evidence": "Official API: isFree=true, canDownload=true and download endpoints are present; free assets can be obtained with the official add-on without login.",
+        "download_now": false
+      },
+      "formats": [
+        "BLEND",
+        "BLEND 0.5K",
+        "BLEND 1K"
+      ],
+      "provider_geometry": {
+        "polygon_or_face_count": 15980,
+        "topology": "quad_dominant",
+        "objects": 1,
+        "dimensions_m": [
+          1.2546,
+          1.2611,
+          0.7658
+        ]
+      },
+      "textures": {
+        "published_exact_count": null,
+        "resolution_min": 2048,
+        "resolution_max": 2048,
+        "uv": true,
+        "shader": "Principled + mix + translucent + transparent",
+        "provider_pure_pbr_flag": false
+      },
+      "file_options_bytes": {
+        "blend": 6702327,
+        "blend_0_5k": 1119294,
+        "blend_1k": 1327924
+      },
+      "web_quality_assessment": "Best hedge pilot source: a believable 1.25 m lush garden shrub with only 15,980 provider faces, leaf transparency and a 1.33 MB 1K Blend. It can form an irregular hedge using rotation/scale variants with substantially fewer logical clumps than the current 108-clone setup.",
+      "optimization_required": [
+        "Export a self-contained GLB from the 1K Blend",
+        "Measure triangles after triangulation",
+        "Bake/convert Blender-only shader nodes to Web-compatible PBR alpha materials",
+        "Use GPU instancing and deterministic variations",
+        "Target <= 1.5 MB and <= 30k triangles per source mesh"
+      ],
+      "score": {
+        "realism": 8,
+        "style_match": 8,
+        "geometry_quality": 8,
+        "texture_quality": 8,
+        "performance": 9,
+        "license_confidence": 10,
+        "total": 51
+      }
+    },
+    {
+      "rank": 2,
+      "selected_for_pilot": false,
+      "status": "SHORTLIST_LONG_MODULE_BACKUP",
+      "name": "Shrub 02",
+      "provider": "Poly Haven",
+      "asset_id": "shrub_02",
+      "url": "https://polyhaven.com/a/shrub_02",
+      "official_api_info": "https://api.polyhaven.com/info/shrub_02",
+      "official_api_files": "https://api.polyhaven.com/files/shrub_02",
+      "author": "Rico Cilliers",
+      "license": "CC0",
+      "free": true,
+      "attribution_required": false,
+      "redistribution_allowed": true,
+      "commercial_use_allowed": true,
+      "web_use_allowed": true,
+      "download_automation": {
+        "available": true,
+        "evidence": "Official files API exposes direct per-file URLs, MD5 values and byte sizes without a paid account.",
+        "download_now": false
+      },
+      "formats": [
+        "BLEND",
+        "glTF",
+        "USD",
+        "FBX"
+      ],
+      "provider_geometry": {
+        "triangles": 52317,
+        "dimensions_m": [
+          5.341,
+          2.061,
+          2.071
+        ]
+      },
+      "textures": {
+        "source_max_resolution": 4096,
+        "gltf_1k_texture_count": 3,
+        "gltf_1k_maps": [
+          "Diffuse",
+          "Normal GL",
+          "ARM"
+        ],
+        "additional_site_maps": [
+          "Alpha",
+          "AO",
+          "Displacement",
+          "Roughness",
+          "Mask"
+        ]
+      },
+      "gltf_1k_package_bytes": 1966425,
+      "web_quality_assessment": "Efficient ready-to-download glTF package and a naturally irregular 5.34 m silhouette. It can cover long hedge segments with fewer instances, but its sapling/groundcover form is less hedge-like and needs careful cropping/scale rather than uniform stretching.",
+      "score": {
+        "realism": 8,
+        "style_match": 7,
+        "geometry_quality": 8,
+        "texture_quality": 9,
+        "performance": 7,
+        "license_confidence": 10,
+        "total": 49
+      }
+    },
+    {
+      "rank": 3,
+      "selected_for_pilot": false,
+      "status": "SHORTLIST_FILLER_VARIATION",
+      "name": "Shrub 04",
+      "provider": "Poly Haven",
+      "asset_id": "shrub_04",
+      "url": "https://polyhaven.com/a/shrub_04",
+      "official_api_info": "https://api.polyhaven.com/info/shrub_04",
+      "official_api_files": "https://api.polyhaven.com/files/shrub_04",
+      "author": "Rico Cilliers",
+      "license": "CC0",
+      "free": true,
+      "attribution_required": false,
+      "redistribution_allowed": true,
+      "commercial_use_allowed": true,
+      "web_use_allowed": true,
+      "download_automation": {
+        "available": true,
+        "evidence": "Official files API exposes direct per-file URLs, MD5 values and byte sizes without a paid account.",
+        "download_now": false
+      },
+      "formats": [
+        "BLEND",
+        "glTF",
+        "USD",
+        "FBX"
+      ],
+      "provider_geometry": {
+        "triangles": 47813,
+        "dimensions_m": [
+          0.747,
+          0.187,
+          0.281
+        ]
+      },
+      "textures": {
+        "source_max_resolution": 4096,
+        "gltf_1k_texture_count": 3,
+        "gltf_1k_maps": [
+          "Diffuse",
+          "Normal GL",
+          "ARM"
+        ],
+        "additional_site_maps": [
+          "Alpha",
+          "AO",
+          "Displacement",
+          "Roughness",
+          "Mask"
+        ]
+      },
+      "gltf_1k_package_bytes": 1907514,
+      "web_quality_assessment": "Glossy natural leaves and useful local variation, but the 0.75 m branch cluster costs 47,813 triangles and would require many repetitions to build a complete hedge. Better as sparse filler mixed with the primary shrub, not as the sole hedge asset.",
+      "score": {
+        "realism": 8,
+        "style_match": 6,
+        "geometry_quality": 8,
+        "texture_quality": 9,
+        "performance": 6,
+        "license_confidence": 10,
+        "total": 47
+      }
+    }
+  ],
+  "screened_not_shortlisted": [
+    {
+      "name": "Tree LOD 2",
+      "provider": "BlenderKit",
+      "url": "https://www.blenderkit.com/asset-gallery-detail/cb00a6e8-b746-4ced-8ecd-ed8133ced095/",
+      "free": true,
+      "license": "Royalty Free",
+      "status": "MANUAL_LICENSE_REVIEW_REQUIRED",
+      "reason": "The public Web GLB would be directly extractable; the official BlenderKit FAQ conditions game use of Royalty Free assets on them not being easily extractable."
+    },
+    {
+      "name": "Wild Alpine Shrub Evergreen",
+      "provider": "BlenderKit",
+      "url": "https://www.blenderkit.com/asset-gallery-detail/004ed0ef-25e1-438e-8471-c149ca2c95d1/",
+      "free": true,
+      "license": "Royalty Free",
+      "status": "MANUAL_LICENSE_REVIEW_REQUIRED",
+      "reason": "Free does not equal CC0; public raw-model redistribution/extraction remains unsuitable without a separate written license review."
+    },
+    {
+      "name": "Realistic Tree",
+      "provider": "BlenderKit",
+      "url": "https://www.blenderkit.com/asset-gallery-detail/8cdb5705-e5ff-41d3-8551-cb64f23442a9/",
+      "status": "SKIP",
+      "reason": "The official page marks it Full Plan; it is not an eligible free automated pilot asset."
+    },
+    {
+      "name": "Shrub 01",
+      "provider": "Poly Haven",
+      "url": "https://polyhaven.com/a/shrub_01",
+      "license": "CC0",
+      "triangles": 282224,
+      "gltf_1k_package_bytes": 6877527,
+      "status": "NOT_SHORTLISTED",
+      "reason": "Its slender flowering groundcover is only about 0.4 m high and is much heavier than the selected hedge candidates."
+    }
+  ],
+  "pilot_selection": {
+    "tree": {
+      "selected": "Decorative Urban Tree",
+      "source": "BlenderKit",
+      "score": 51,
+      "fallback": "Keep island_tree_02_web.glb unchanged until live A/B validation passes",
+      "acceptance_gate": "After download: verify 1K Blend provenance, actual textures, scale 6.24 m, <=45k triangles, <=5 MB embedded GLB, no console/network errors and visibly more appropriate silhouette in the LIVE WEB VIEWER."
+    },
+    "hedge": {
+      "selected": "Shrub",
+      "source": "BlenderKit",
+      "score": 51,
+      "fallback": "Keep shrub_03_web.glb for constrained devices until live A/B validation passes",
+      "acceptance_gate": "After download: export Web-compatible alpha PBR, measure triangles, target <=1.5 MB source GLB, use GPU instancing, reduce visible repetition and prove 30 FPS minimum in the LIVE WEB VIEWER."
+    },
+    "secondary_variation": "Use Poly Haven Shrub 04 only as sparse filler if the primary hedge still repeats visibly; do not use it alone for all 18 segments.",
+    "research_verdict": "READY_FOR_CONTROLLED_DOWNLOAD_AND_IMPORT; NOT_YET_INTEGRATED"
+  },
+  "official_evidence_urls": [
+    "https://polyhaven.com/license",
+    "https://api.polyhaven.com/assets?t=models",
+    "https://api.polyhaven.com/info/tree_small_02",
+    "https://api.polyhaven.com/files/tree_small_02",
+    "https://api.polyhaven.com/info/jacaranda_tree",
+    "https://api.polyhaven.com/files/jacaranda_tree",
+    "https://api.polyhaven.com/info/island_tree_01",
+    "https://api.polyhaven.com/files/island_tree_01",
+    "https://api.polyhaven.com/info/shrub_02",
+    "https://api.polyhaven.com/files/shrub_02",
+    "https://api.polyhaven.com/info/shrub_04",
+    "https://api.polyhaven.com/files/shrub_04",
+    "https://www.blenderkit.com/docs/licenses/",
+    "https://www.blenderkit.com/docs/licenses/licensing-faq/",
+    "https://github.com/BlenderKit/BlenderKit",
+    "https://www.blenderkit.com/asset-gallery-detail/c8af7417-b4d3-4cff-8a7a-b0afdb5a577f/",
+    "https://www.blenderkit.com/asset-gallery-detail/2810ce15-1076-44e6-9b95-90487f8d5dc5/"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "source": "LIVE WEB VIEWER",
+  "beforeRelease": "V18-WEB-REALISM-1",
+  "afterRelease": "V18-ASSET-PILOT-1",
+  "comparisons": [
+    {
+      "file": "01-facade-before-after.png",
+      "title": "Façade et enduit PBR",
+      "before": "validation/asset_pilot_screenshots/before_live/facade.png",
+      "after": "validation/asset_pilot_screenshots/after_live/01-facade-live.png",
+      "source": "LIVE WEB VIEWER",
+      "bytes": 684695,
+      "sha256": "596D71C0A61E6E5A229467E03621EF003C4EC27A9842F69AC9D9C079B8FD715E"
+    },
+    {
+      "file": "02-hedges-before-after.png",
+      "title": "Haies réalistes CC0",
+      "before": "validation/asset_pilot_screenshots/before_live/hedges.png",
+      "after": "validation/asset_pilot_screenshots/after_live/02-hedges-live.png",
+      "source": "LIVE WEB VIEWER",
+      "bytes": 865596,
+      "sha256": "5A7B5076B1C901AE525D8A97F7975A81C60CD121AA5115070960D7B42E91B262"
+    },
+    {
+      "file": "03-living-sofa-before-after.png",
+      "title": "Séjour et canapé trois places",
+      "before": "validation/asset_pilot_screenshots/before_live/living.png",
+      "after": "validation/asset_pilot_screenshots/after_live/03-living-sofa-live.png",
+      "source": "LIVE WEB VIEWER",
+      "bytes": 555463,
+      "sha256": "F96CEB823014B10094B7483C4620BD2E2C693FC8C612C60EAE735AB16A116C8F"
+    },
+    {
+      "file": "04-dining-before-after.png",
+      "title": "Salle à manger — table et six chaises",
+      "before": "validation/asset_pilot_screenshots/before_live/interior-floor-materials.png",
+      "after": "validation/asset_pilot_screenshots/after_live/04-dining-live.png",
+      "source": "LIVE WEB VIEWER",
+      "bytes": 567213,
+      "sha256": "757421318ACDACEAEA34C9079D643C6CD12F91AC3A40435899ACEE622FCC6EFB"
+    },
+    {
+      "file": "05-bed-before-after.png",
+      "title": "Chambre et lit à échelle métrique",
+      "before": "validation/asset_pilot_screenshots/before_live/upstairs-doors.png",
+      "after": "validation/asset_pilot_screenshots/after_live/05-bed-live.png",
+      "source": "LIVE WEB VIEWER",
+      "bytes": 439568,
+      "sha256": "4B41B0DEFD0A4ACDB9928F2104AD217A4EA30130372E67901991AAE30CF40841"
+    },
+    {
+      "file": "06-ground-before-after.png",
+      "title": "Pelouse Grass005 PBR",
+      "before": "validation/asset_pilot_screenshots/before_live/exterior-ground.png",
+      "after": "validation/asset_pilot_screenshots/after_live/06-ground-live.png",
+      "source": "LIVE WEB VIEWER",
+      "bytes": 917739,
+      "sha256": "54E9C2E624352371492A0746B9DCEBC7772ADBD68F226A55D463CC9D94B4AC2C"
+    },
+    {
+      "file": "07-garden-before-after.png",
+      "title": "Jardin et arbres réalistes",
+      "before": "validation/asset_pilot_screenshots/before_live/garden.png",
+      "after": "validation/asset_pilot_screenshots/after_live/07-garden-live.png",
+      "source": "LIVE WEB VIEWER",
+      "bytes": 645295,
+      "sha256": "2F5EB0225D830B21FFBCF0D1D120B5A450235E81FA42A7EAE0A438B9E1D92914"
+    }
+  ]
+}

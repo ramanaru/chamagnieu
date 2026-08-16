@@ -1,0 +1,329 @@
+{
+  "asset": {
+    "pk": 122534,
+    "url": "https://www.blenderkit.com/api/v1/assets/d493c69a-5c64-40bf-a7a6-a4e745bfbea8/",
+    "id": "d493c69a-5c64-40bf-a7a6-a4e745bfbea8",
+    "assetBaseId": "3a845132-df64-4f02-8da6-44229fe774e4",
+    "versionNumber": 1,
+    "author": {
+      "id": 157131,
+      "firstName": "Rohma",
+      "lastName": "Ansari",
+      "gravatarHash": "d490a058f82439adc5638268c61552b7",
+      "avatar128": "/avatar-redirect/c9d31f14-1faf-48d7-ba8d-3bcc96c8ffac/128/",
+      "avatar256": "/avatar-redirect/c9d31f14-1faf-48d7-ba8d-3bcc96c8ffac/256/",
+      "avatar512": "/avatar-redirect/c9d31f14-1faf-48d7-ba8d-3bcc96c8ffac/512/",
+      "aboutMe": "I am a 3D artist. here to share my 3d model library for all.",
+      "aboutMeUrl": "https://www.artstation.com/rohmaansari",
+      "fullName": "Rohma Ansari",
+      "socialNetworks": []
+    },
+    "name": "Master bed",
+    "displayName": "Master bed",
+    "description": "Transform your interior scenes with this highly detailed master bed model, perfect for any modern bedroom setting. This model is designed with both aesthetics and functionality in mind, making it an ideal addition to your Blender projects.",
+    "descriptionHtml": "<p>Transform your interior scenes with this highly detailed master bed model, perfect for any modern bedroom setting. This model is designed with both aesthetics and functionality in mind, making it an ideal addition to your Blender projects.</p>",
+    "assetType": "model",
+    "category": "bed",
+    "isFree": true,
+    "isForSale": false,
+    "basePrice": null,
+    "tags": [
+      "masterbed",
+      "bed",
+      "furniture"
+    ],
+    "license": "cc_zero",
+    "parameters": [
+      {
+        "parameterType": "faceCount",
+        "value": 4195
+      },
+      {
+        "parameterType": "productionLevel",
+        "value": "finished"
+      },
+      {
+        "parameterType": "procedural",
+        "value": true
+      },
+      {
+        "parameterType": "modelStyle",
+        "value": "realistic"
+      },
+      {
+        "parameterType": "purePbr",
+        "value": false
+      },
+      {
+        "parameterType": "shaders",
+        "value": "[]"
+      },
+      {
+        "parameterType": "animated",
+        "value": false
+      },
+      {
+        "parameterType": "uv",
+        "value": true
+      },
+      {
+        "parameterType": "engines",
+        "value": "[cycles]"
+      },
+      {
+        "parameterType": "modifiers",
+        "value": "[]"
+      },
+      {
+        "parameterType": "materials",
+        "value": "[Material wood fabric]"
+      },
+      {
+        "parameterType": "rig",
+        "value": false
+      },
+      {
+        "parameterType": "simulation",
+        "value": false
+      },
+      {
+        "parameterType": "dimensionX",
+        "value": 1.7622
+      },
+      {
+        "parameterType": "dimensionY",
+        "value": 2.2266
+      },
+      {
+        "parameterType": "dimensionZ",
+        "value": 1.0604
+      },
+      {
+        "parameterType": "boundBoxMinX",
+        "value": -0.8811
+      },
+      {
+        "parameterType": "boundBoxMinY",
+        "value": -1.2101
+      },
+      {
+        "parameterType": "boundBoxMinZ",
+        "value": -0.0002
+      },
+      {
+        "parameterType": "boundBoxMaxX",
+        "value": 0.8811
+      },
+      {
+        "parameterType": "boundBoxMaxY",
+        "value": 1.0165
+      },
+      {
+        "parameterType": "boundBoxMaxZ",
+        "value": 1.0602
+      },
+      {
+        "parameterType": "faceCountRender",
+        "value": 4195
+      },
+      {
+        "parameterType": "meshPolyType",
+        "value": "quad_dominant"
+      },
+      {
+        "parameterType": "manifold",
+        "value": false
+      },
+      {
+        "parameterType": "objectCount",
+        "value": 1
+      },
+      {
+        "parameterType": "nodeCount",
+        "value": 0
+      },
+      {
+        "parameterType": "textureCount",
+        "value": 0
+      },
+      {
+        "parameterType": "megapixels",
+        "value": 0
+      },
+      {
+        "parameterType": "gltfGeneratedDate",
+        "value": "2025-01-02"
+      },
+      {
+        "parameterType": "gltfGodotGeneratedDate",
+        "value": "2025-01-02"
+      }
+    ],
+    "sourceAppName": "blender",
+    "sourceAppVersion": "4.3.0",
+    "addonVersion": "3.13.0",
+    "created": "2024-12-29T10:11:09.403489+01:00",
+    "lastUserInteraction": "2024-12-29T10:11:15.760981+01:00",
+    "verificationStatus": "validated",
+    "isPrivate": false,
+    "files": [
+      {
+        "fileType": "blend",
+        "id": 527451,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/527451/",
+        "uuid": null,
+        "created": "2024-12-29T10:11:15.164942+01:00",
+        "isThumbnail": false,
+        "modified": "2025-01-02T14:17:03.069671+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 484055,
+        "isFeatured": false,
+        "filename": "assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/blend_c88f3d86-b573-43ce-b1ae-90cb294c37a7.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "gltf",
+        "id": 531158,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/531158/",
+        "uuid": null,
+        "created": "2025-01-02T13:43:40.234596+01:00",
+        "isThumbnail": false,
+        "modified": "2025-01-02T14:17:03.088718+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 133244,
+        "isFeatured": false,
+        "filename": "assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/gltf_d224781f-cab9-480c-96d0-f86a7aafec61.glb",
+        "flexFactor": null
+      },
+      {
+        "fileType": "gltf_godot",
+        "id": 531159,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/531159/",
+        "uuid": null,
+        "created": "2025-01-02T13:43:42.736380+01:00",
+        "isThumbnail": false,
+        "modified": "2025-01-02T14:17:03.108842+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 346188,
+        "isFeatured": false,
+        "filename": "assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/gltf_godot_da32b11e-b87c-4add-8dc9-140adbfdb54c.glb",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_0_5K",
+        "id": 531184,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/531184/",
+        "uuid": null,
+        "created": "2025-01-02T13:45:40.212066+01:00",
+        "isThumbnail": false,
+        "modified": "2025-01-02T14:17:03.126111+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 318988,
+        "isFeatured": false,
+        "filename": "assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/resolution_0_5K_c54656a9-2cf5-45a0-9b26-0cf526df307d.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "thumbnail",
+        "id": 527450,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/527450/",
+        "uuid": null,
+        "fileThumbnail": "https://public.blenderkit.com/thumbnails/assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/thumbnail_7c3e07c8-9bb5-41f4-9742-f821bc9f1470.jpg.96x96_q85_crop-%2C.jpg",
+        "fileThumbnailLarge": "https://public.blenderkit.com/thumbnails/assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/thumbnail_7c3e07c8-9bb5-41f4-9742-f821bc9f1470.jpg.1024x1024_q85_crop-%2C.jpg",
+        "created": "2024-12-29T10:11:12.949193+01:00",
+        "isThumbnail": true,
+        "modified": "2025-12-23T00:51:18.789750+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 48504,
+        "width": 1024,
+        "height": 1024,
+        "isFeatured": false,
+        "filename": "assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/thumbnail_7c3e07c8-9bb5-41f4-9742-f821bc9f1470.jpg",
+        "thumbnailSmallUrl": "https://public.blenderkit.com/thumbnails/assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/thumbnail_7c3e07c8-9bb5-41f4-9742-f821bc9f1470.jpg.256x256_q85_crop-%2C.jpg",
+        "thumbnailMiddleUrl": "https://public.blenderkit.com/thumbnails/assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/thumbnail_7c3e07c8-9bb5-41f4-9742-f821bc9f1470.jpg.512x512_q85_crop-%2C.jpg",
+        "thumbnailLargeUrl": "https://public.blenderkit.com/thumbnails/assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/thumbnail_7c3e07c8-9bb5-41f4-9742-f821bc9f1470.jpg.1024x1024_q85_crop-%2C.jpg",
+        "thumbnailXlargeUrl": "https://public.blenderkit.com/thumbnails/assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/thumbnail_7c3e07c8-9bb5-41f4-9742-f821bc9f1470.jpg.2048x2048_q85_crop-%2C.jpg",
+        "thumbnailSmallUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/thumbnail_7c3e07c8-9bb5-41f4-9742-f821bc9f1470.jpg.256x256_q85.jpg",
+        "thumbnailMiddleUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/thumbnail_7c3e07c8-9bb5-41f4-9742-f821bc9f1470.jpg.512x512_q85.jpg",
+        "thumbnailLargeUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/thumbnail_7c3e07c8-9bb5-41f4-9742-f821bc9f1470.jpg.1024x1024_q85.jpg",
+        "thumbnailXlargeUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/thumbnail_7c3e07c8-9bb5-41f4-9742-f821bc9f1470.jpg.2048x2048_q85.jpg",
+        "thumbnailSmallUrlWebp": "https://public.blenderkit.com/thumbnails/assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/thumbnail_7c3e07c8-9bb5-41f4-9742-f821bc9f1470.jpg.256x256_q85_crop-%2C.jpg.webp?webp_generated=1766589429",
+        "thumbnailMiddleUrlWebp": "https://public.blenderkit.com/thumbnails/assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/thumbnail_7c3e07c8-9bb5-41f4-9742-f821bc9f1470.jpg.512x512_q85_crop-%2C.jpg.webp?webp_generated=1766589429",
+        "thumbnailLargeUrlWebp": "https://public.blenderkit.com/thumbnails/assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/thumbnail_7c3e07c8-9bb5-41f4-9742-f821bc9f1470.jpg.1024x1024_q85_crop-%2C.jpg.webp?webp_generated=1766589429",
+        "thumbnailXlargeUrlWebp": "https://public.blenderkit.com/thumbnails/assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/thumbnail_7c3e07c8-9bb5-41f4-9742-f821bc9f1470.jpg.2048x2048_q85_crop-%2C.jpg.webp?webp_generated=1766589429",
+        "thumbnailSmallUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/thumbnail_7c3e07c8-9bb5-41f4-9742-f821bc9f1470.jpg.256x256_q85.jpg.webp?webp_generated=1766589429",
+        "thumbnailMiddleUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/thumbnail_7c3e07c8-9bb5-41f4-9742-f821bc9f1470.jpg.512x512_q85.jpg.webp?webp_generated=1766589429",
+        "thumbnailLargeUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/thumbnail_7c3e07c8-9bb5-41f4-9742-f821bc9f1470.jpg.1024x1024_q85.jpg.webp?webp_generated=1766589429",
+        "thumbnailXlargeUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/d493c69a5c6440bfa7a6a4e745bfbea8/files/thumbnail_7c3e07c8-9bb5-41f4-9742-f821bc9f1470.jpg.2048x2048_q85.jpg.webp?webp_generated=1766589429",
+        "flexFactor": null
+      }
+    ],
+    "filesSize": 1330979,
+    "showMarketingLabels": true,
+    "webpGeneratedTimestamp": 1766589429,
+    "score": 160.0,
+    "ratingsMedian": {
+      "bookmarks": 1.0,
+      "workingHours": 4.0,
+      "quality": 4.0,
+      "virtualPrice": null
+    },
+    "ratingsAverage": {
+      "bookmarks": 0.9666666666666667,
+      "workingHours": 4.0,
+      "quality": 4.0,
+      "virtualPrice": null
+    },
+    "ratingsCount": {
+      "bookmarks": 120,
+      "workingHours": 1,
+      "quality": 1,
+      "virtualPrice": 0
+    },
+    "ratingsSum": {
+      "bookmarks": 116.0,
+      "workingHours": 4.0,
+      "quality": 4.0,
+      "virtualPrice": null,
+      "score": 160.0
+    },
+    "pageBlocks": null,
+    "access": "free",
+    "accessLabel": "Free",
+    "videoLink": "",
+    "lastWireThumbnailUpload": null,
+    "lastThumbnailUpload": "2024-12-29T09:11:12.949193Z",
+    "lastGltfGodotUpload": "2025-01-02T12:43:42.736380Z",
+    "lastVideoUpload": null,
+    "lastGltfUpload": "2025-01-02T12:43:40.234596Z",
+    "lastBlendUpload": "2024-12-29T09:11:15.164942Z",
+    "lastResolutionUpload": "2025-01-02T12:45:40.212066Z",
+    "lastPhotoThumbnailUpload": null,
+    "lastAnimatedThumbnailUpload": null,
+    "lastZipFileUpload": null,
+    "lastPrxcUpload": null
+  },
+  "acquisition": {
+    "role": "bed",
+    "asset_id": "d493c69a-5c64-40bf-a7a6-a4e745bfbea8",
+    "name": "Master bed",
+    "author": "Rohma Ansari",
+    "license": "cc_zero",
+    "is_free": true,
+    "verification_status": "validated",
+    "source_url": "https://www.blenderkit.com/asset-gallery-detail/d493c69a-5c64-40bf-a7a6-a4e745bfbea8/",
+    "api_url": "https://www.blenderkit.com/api/v1/assets/d493c69a-5c64-40bf-a7a6-a4e745bfbea8/",
+    "download_api": "https://www.blenderkit.com/api/v1/downloads/531158/?scene_uuid=f2f12068-dd0d-4c90-8c68-95c3ef640dc4",
+    "library_file_type": "gltf",
+    "library_file_uuid": "5ef61f3a-2ea3-4f18-855c-f5cf91d3296d",
+    "local_file": "assets_external/models/bed/original/bed_d493c69a-5c64-40bf-a7a6-a4e745bfbea8_library.glb",
+    "bytes": 133244,
+    "sha256": "3BEFAF428A7AAE55C6C2C2277DAD340599E3C7D95A63462A2EE9E2770975395E",
+    "dict_parameters": {}
+  }
+}

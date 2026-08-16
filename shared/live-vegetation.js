@@ -2,7 +2,8 @@ import * as THREE from './vendor/three.module.js';
 import { GLTFLoader } from './vendor/addons/loaders/GLTFLoader.js';
 
 const DEFAULT_TREE_URL = new URL('./assets/vegetation/island_tree_02_web.glb', import.meta.url);
-const DEFAULT_HEDGE_URL = new URL('./assets/vegetation/shrub_03_web.glb', import.meta.url);
+const DEFAULT_HEDGE_URL = new URL('../assets_external/vegetation/hedges/blenderkit_shrub/optimized/hedge_web.glb', import.meta.url);
+const DEFAULT_HEDGE_FALLBACK_URL = new URL('./assets/vegetation/shrub_03_web.glb', import.meta.url);
 const ENHANCED_GROUP_NAME = 'V18_WEB_REALISM_VEGETATION';
 const TREE_PATTERN = /^V17_TREE_LIGHT_(\d{2})_(?:BRANCH_[LR]|CANOPY_(?:C|L|R|TOP)|TRUNK)$/i;
 const HEDGE_PATTERN = /^V17_HEDGE_LIGHT_\d{2}$/i;
@@ -66,8 +67,8 @@ function tuneTemplate(root, renderer, family) {
         // Keep the small leaf cards visible after the source shrub is scaled to
         // hedge dimensions.  A low deterministic cutout threshold gives the
         // two staggered rows a dense silhouette without alpha blending.
-        material.alphaTest = family === 'hedge' ? 0.08 : Math.max(material.alphaTest || 0, 0.32);
-        material.color.multiply(new THREE.Color(family === 'hedge' ? 0x8dac80 : 0x91aa84));
+        material.alphaTest = family === 'hedge' ? 0.24 : Math.max(material.alphaTest || 0, 0.32);
+        material.color.multiply(new THREE.Color(family === 'hedge' ? 0x7d9a70 : 0x91aa84));
       }
       if (/branch|island_tree_02$/i.test(material.name)) {
         material.color.multiply(new THREE.Color(0xb79f82));
@@ -180,7 +181,7 @@ function installTrees(parent, house, template, sourceSize, families) {
   return { instances, originalsHidden: instances ? allOriginals.length : 0 };
 }
 
-function installHedges(parent, template, sourceSize, hedges) {
+function installLegacyHedges(parent, template, sourceSize, hedges) {
   let instances = 0;
   let cloneInstances = 0;
   const installed = [];
@@ -238,6 +239,90 @@ function installHedges(parent, template, sourceSize, hedges) {
   return { instances, cloneInstances, originalsHidden: instances ? installed.length : 0 };
 }
 
+function relativeMeshRecords(template) {
+  template.updateWorldMatrix(true, true);
+  const inverse = template.matrixWorld.clone().invert();
+  const records = [];
+  template.traverse(object => {
+    if (!object.isMesh) return;
+    records.push({
+      source: object,
+      matrix: inverse.clone().multiply(object.matrixWorld)
+    });
+  });
+  return records;
+}
+
+/**
+ * Install one full, dense CC0 shrub per architectural hedge segment.
+ *
+ * The 18 transformations are rendered through one InstancedMesh per source
+ * mesh/material instead of 108 cloned Object3D trees.  This keeps the real
+ * segment bounds and leaf silhouettes while reducing the hedge path to two GPU
+ * batches for the optimized two-mesh asset.
+ */
+function installInstancedHedges(parent, template, sourceSize, hedges) {
+  const records = relativeMeshRecords(template);
+  const placements = [];
+  for (const [index, hedge] of hedges.entries()) {
+    const box = new THREE.Box3().setFromObject(hedge);
+    const size = box.getSize(new THREE.Vector3());
+    const center = box.getCenter(new THREE.Vector3());
+    const alongX = size.x >= size.z;
+    const longSide = Math.max(size.x, size.z);
+    const shortSide = Math.min(size.x, size.z);
+    const seed = (index + 1) * 97;
+    const lengthVariation = 1 + ((seed % 7) - 3) * 0.006;
+    const heightVariation = 1 + (((seed * 3) % 5) - 2) * 0.012;
+    const yawVariation = (((seed * 5) % 7) - 3) * 0.008;
+    const position = new THREE.Vector3(center.x, box.min.y, center.z);
+    const rotation = new THREE.Quaternion().setFromAxisAngle(
+      new THREE.Vector3(0, 1, 0),
+      (alongX ? 0 : Math.PI / 2) + yawVariation
+    );
+    const scale = new THREE.Vector3(
+      longSide * lengthVariation / Math.max(0.001, sourceSize.x),
+      size.y * 1.04 * heightVariation / Math.max(0.001, sourceSize.y),
+      shortSide * 0.98 / Math.max(0.001, sourceSize.z)
+    );
+    placements.push(new THREE.Matrix4().compose(position, rotation, scale));
+  }
+
+  for (const [meshIndex, record] of records.entries()) {
+    const batch = new THREE.InstancedMesh(
+      record.source.geometry,
+      record.source.material,
+      placements.length
+    );
+    batch.name = `V18_PILOT_REAL_HEDGE_GPU_BATCH_${String(meshIndex + 1).padStart(2, '0')}`;
+    const sourceLabel = `${record.source.name} ${Array.isArray(record.source.material)
+      ? record.source.material.map(material => material?.name || '').join(' ')
+      : record.source.material?.name || ''}`;
+    batch.castShadow = !/leaf|leaves/i.test(sourceLabel);
+    batch.receiveShadow = true;
+    batch.frustumCulled = true;
+    batch.instanceMatrix.setUsage(THREE.StaticDrawUsage);
+    for (let index = 0; index < placements.length; index += 1) {
+      batch.setMatrixAt(index, placements[index].clone().multiply(record.matrix));
+    }
+    batch.instanceMatrix.needsUpdate = true;
+    batch.computeBoundingSphere?.();
+    batch.userData.liveVegetationFamily = 'hedge';
+    batch.userData.logicalSegments = hedges.map(hedge => hedge.name);
+    batch.userData.gpuInstanced = true;
+    batch.userData.shadowPolicy = batch.castShadow ? 'cast-and-receive' : 'receive-only-leaf-lod';
+    parent.add(batch);
+  }
+  if (records.length && hedges.length) hideOriginals(hedges, 'V18_PILOT_REAL_HEDGE_GPU');
+  return {
+    instances: hedges.length,
+    cloneInstances: hedges.length,
+    gpuBatchCount: records.length,
+    gpuInstancing: records.length > 0,
+    originalsHidden: records.length ? hedges.length : 0
+  };
+}
+
 function publicError(error) {
   const message = error?.message || String(error);
   return message.replace(/https?:\/\/[^\s)]+/g, '<asset-url>');
@@ -257,6 +342,7 @@ export async function installLiveVegetation({
   cacheKey = '',
   treeUrl = DEFAULT_TREE_URL,
   hedgeUrl = DEFAULT_HEDGE_URL,
+  hedgeFallbackUrl = DEFAULT_HEDGE_FALLBACK_URL,
   timeoutMs = 15_000
 } = {}) {
   if (!scene || !house) throw new TypeError('installLiveVegetation requires scene and house');
@@ -280,15 +366,36 @@ export async function installLiveVegetation({
     treeInstances: 0,
     hedgeInstances: 0,
     hedgeCloneInstances: 0,
+    hedgeGpuBatches: 0,
+    hedgeGpuInstancing: false,
     originalsHidden: 0,
     displayedTriangles: 0,
     drawCalls: 0,
     loadMs: 0,
     assets: {
-      tree: { requested: false, loaded: false, error: null },
-      hedge: { requested: false, loaded: false, error: null }
+      tree: {
+        requested: false,
+        loaded: false,
+        error: null,
+        decision: 'ACCEPT_RETAIN_CURRENT_POLY_HAVEN',
+        rejectedPilot: 'BlenderKit Decorative Urban Tree',
+        rejectionReason: 'winter leafless silhouette; 123949 triangles; 7032388 bytes'
+      },
+      hedge: {
+        requested: false,
+        loaded: false,
+        error: null,
+        decision: 'ACCEPT_BLENDERKIT_SHRUB_CC0',
+        fallbackAsset: 'Poly Haven shrub_03_web.glb'
+      }
     },
-    fallbackUsed: constrainedDevice
+    fallbackUsed: constrainedDevice,
+    performanceBudget: {
+      baselineDisplayedTriangles: 1_082_996,
+      baselineDrawCalls: 120,
+      baselineHedgeClones: 108,
+      targetFpsMinimum: 30
+    }
   };
   globalThis.__liveVegetationAudit = audit;
   if (globalThis.document?.documentElement) {
@@ -305,10 +412,20 @@ export async function installLiveVegetation({
   scene.add(enhanced);
   const urls = {
     tree: cacheBustedUrl(treeUrl, cacheKey),
-    hedge: cacheBustedUrl(hedgeUrl, cacheKey)
+    hedge: cacheBustedUrl(hedgeUrl, cacheKey),
+    hedgeFallback: cacheBustedUrl(hedgeFallbackUrl, cacheKey)
   };
-  audit.assets.tree = { requested: true, loaded: false, url: urls.tree, error: null };
-  audit.assets.hedge = { requested: true, loaded: false, url: urls.hedge, error: null };
+  audit.assets.tree = { ...audit.assets.tree, requested: true, loaded: false, url: urls.tree, error: null };
+  audit.assets.hedge = {
+    ...audit.assets.hedge,
+    requested: true,
+    loaded: false,
+    url: urls.hedge,
+    fallbackUrl: urls.hedgeFallback,
+    fallbackRequested: false,
+    fallbackLoaded: false,
+    error: null
+  };
 
   const [treeResult, hedgeResult] = await Promise.allSettled([
     loadGlb(urls.tree, timeoutMs),
@@ -324,25 +441,56 @@ export async function installLiveVegetation({
     audit.originalsHidden += installed.originalsHidden;
     audit.displayedTriangles += metrics.triangles * installed.instances;
     audit.drawCalls += metrics.drawCalls * installed.instances;
-    audit.assets.tree = { ...audit.assets.tree, loaded: true, ...metrics };
+    audit.assets.tree = {
+      ...audit.assets.tree,
+      loaded: true,
+      dimensionsM: size.toArray().map(value => Number(value.toFixed(5))),
+      ...metrics
+    };
   } else {
     audit.assets.tree.error = publicError(treeResult.reason);
     audit.fallbackUsed = true;
   }
 
-  if (hedgeResult.status === 'fulfilled') {
-    tuneTemplate(hedgeResult.value, renderer, 'hedge');
-    const metrics = templateMetrics(hedgeResult.value);
-    const { wrapper, size } = normalizedTemplate(hedgeResult.value);
-    const installed = installHedges(enhanced, wrapper, size, originals.hedges);
+  let acceptedHedge = hedgeResult.status === 'fulfilled' ? hedgeResult.value : null;
+  let hedgeSource = 'pilot-primary';
+  if (!acceptedHedge) {
+    audit.assets.hedge.error = publicError(hedgeResult.reason);
+    audit.assets.hedge.fallbackRequested = true;
+    try {
+      acceptedHedge = await loadGlb(urls.hedgeFallback, timeoutMs);
+      hedgeSource = 'retained-fallback';
+      audit.assets.hedge.fallbackLoaded = true;
+      audit.fallbackUsed = true;
+    } catch (error) {
+      audit.assets.hedge.fallbackError = publicError(error);
+    }
+  }
+
+  if (acceptedHedge) {
+    tuneTemplate(acceptedHedge, renderer, 'hedge');
+    const metrics = templateMetrics(acceptedHedge);
+    const { wrapper, size } = normalizedTemplate(acceptedHedge);
+    const installed = hedgeSource === 'pilot-primary'
+      ? installInstancedHedges(enhanced, wrapper, size, originals.hedges)
+      : installLegacyHedges(enhanced, wrapper, size, originals.hedges);
     audit.hedgeInstances = installed.instances;
     audit.hedgeCloneInstances = installed.cloneInstances;
+    audit.hedgeGpuBatches = installed.gpuBatchCount || 0;
+    audit.hedgeGpuInstancing = Boolean(installed.gpuInstancing);
     audit.originalsHidden += installed.originalsHidden;
     audit.displayedTriangles += metrics.triangles * installed.cloneInstances;
-    audit.drawCalls += metrics.drawCalls * installed.cloneInstances;
-    audit.assets.hedge = { ...audit.assets.hedge, loaded: true, ...metrics };
+    audit.drawCalls += hedgeSource === 'pilot-primary'
+      ? metrics.drawCalls
+      : metrics.drawCalls * installed.cloneInstances;
+    audit.assets.hedge = {
+      ...audit.assets.hedge,
+      loaded: true,
+      source: hedgeSource,
+      dimensionsM: size.toArray().map(value => Number(value.toFixed(5))),
+      ...metrics
+    };
   } else {
-    audit.assets.hedge.error = publicError(hedgeResult.reason);
     audit.fallbackUsed = true;
   }
 
@@ -354,6 +502,8 @@ export async function installLiveVegetation({
     document.documentElement.dataset.viewerVegetationTriangles = String(audit.displayedTriangles);
     document.documentElement.dataset.viewerVegetationDrawCalls = String(audit.drawCalls);
     document.documentElement.dataset.viewerVegetationHedgeClones = String(audit.hedgeCloneInstances);
+    document.documentElement.dataset.viewerVegetationHedgeGpuBatches = String(audit.hedgeGpuBatches);
+    document.documentElement.dataset.viewerVegetationGpuInstancing = String(audit.hedgeGpuInstancing);
     document.documentElement.dataset.viewerVegetationLoadMs = String(audit.loadMs);
   }
   return audit;

@@ -1,0 +1,158 @@
+[
+  {
+    "role": "sofa",
+    "source": "assets_external/models/sofa/original/sofa_d4eaa6c1-866a-431e-a30c-4c582f2070ad_library.glb",
+    "source_bytes": 729800,
+    "source_sha256": "CE28A33802F5D70DA6964C86E4E6FE83A88BF365F628B3A7847586F7C515CFF1",
+    "optimized": "assets_external/models/sofa/optimized/sofa_web.glb",
+    "optimized_bytes": 1968128,
+    "optimized_sha256": "178E9C56B8C7B875701DC1E0D18FB60773F780E99AA3E3BC41FCF3D4961BE8B3",
+    "dimensions_m": [
+      2.5552,
+      1.0079,
+      1.099
+    ],
+    "normalized_bounds_m": {
+      "min": [
+        -1.27761,
+        -0.50393,
+        0.0
+      ],
+      "max": [
+        1.27761,
+        0.50393,
+        1.09895
+      ]
+    },
+    "triangles": 34744,
+    "mesh_objects": 1,
+    "materials": [
+      "Sofa 02"
+    ],
+    "preview": "validation/asset_pilot_previews/sofa-optimized-preview.png",
+    "decoder_dependencies_removed": [
+      "KHR_draco_mesh_compression"
+    ],
+    "texture_codec": "source-preserving WebP/JPEG/PNG"
+  },
+  {
+    "role": "table",
+    "source": "assets_external/models/table/original/table_6c105d2e-e4a3-4e6e-a91a-c47d6e0326a1_library.glb",
+    "source_bytes": 309664,
+    "source_sha256": "B412E83EC87D4BBB81A5C1EF69016AA1D4DB30D72BDE920F784AEB13C274416E",
+    "optimized": "assets_external/models/table/optimized/table_web.glb",
+    "optimized_bytes": 503232,
+    "optimized_sha256": "2B3327A332F4BEE81298BEC935A3FB7E04D8F705404F70A2F4869D23795C621E",
+    "dimensions_m": [
+      1.8288,
+      0.762,
+      0.7605
+    ],
+    "normalized_bounds_m": {
+      "min": [
+        -0.9144,
+        -0.38099,
+        0.0
+      ],
+      "max": [
+        0.9144,
+        0.38099,
+        0.76046
+      ]
+    },
+    "triangles": 2864,
+    "mesh_objects": 9,
+    "materials": [
+      "Black&white marble_unique_Base1",
+      "Black&white marble_unique_Base2",
+      "Black&white marble_unique_Cut1",
+      "Black&white marble_unique_Cut2",
+      "Dec1_Baked",
+      "Dec2_Baked",
+      "Dec3_Baked",
+      "Dec4_Baked",
+      "Top_Baked"
+    ],
+    "preview": "validation/asset_pilot_previews/table-optimized-preview.png",
+    "decoder_dependencies_removed": [
+      "KHR_draco_mesh_compression"
+    ],
+    "texture_codec": "source-preserving WebP/JPEG/PNG"
+  },
+  {
+    "role": "chair",
+    "source": "assets_external/models/chair/original/chair_d4302197-f279-4df8-82a1-5849fea19483_library.glb",
+    "source_bytes": 1201948,
+    "source_sha256": "78BA9F6A44008D725C6A262F39505A29A17F9154E30F01EDA02639C0ABC2F4C0",
+    "optimized": "assets_external/models/chair/optimized/chair_web.glb",
+    "optimized_bytes": 1375724,
+    "optimized_sha256": "F474B84C2968DE36FB5D7F1353E4CCD939BD41F0009670EA2DC44B52EAD2388A",
+    "dimensions_m": [
+      0.5214,
+      0.4812,
+      0.8092
+    ],
+    "normalized_bounds_m": {
+      "min": [
+        -0.26072,
+        -0.24058,
+        0.0
+      ],
+      "max": [
+        0.26072,
+        0.24058,
+        0.80919
+      ]
+    },
+    "triangles": 7788,
+    "mesh_objects": 6,
+    "materials": [
+      "Chrome",
+      "Wood",
+      "leather"
+    ],
+    "preview": "validation/asset_pilot_previews/chair-optimized-preview.png",
+    "decoder_dependencies_removed": [
+      "KHR_draco_mesh_compression"
+    ],
+    "texture_codec": "source-preserving WebP/JPEG/PNG"
+  },
+  {
+    "role": "bed",
+    "source": "assets_external/models/bed/original/bed_d493c69a-5c64-40bf-a7a6-a4e745bfbea8_library.glb",
+    "source_bytes": 133244,
+    "source_sha256": "3BEFAF428A7AAE55C6C2C2277DAD340599E3C7D95A63462A2EE9E2770975395E",
+    "optimized": "assets_external/models/bed/optimized/bed_web.glb",
+    "optimized_bytes": 350276,
+    "optimized_sha256": "84CFDE2EEF14E683412AABF644E15EAD3F0E316DF7C7C0CBB0FF564677D8EF1B",
+    "dimensions_m": [
+      1.7622,
+      2.2266,
+      1.0604
+    ],
+    "normalized_bounds_m": {
+      "min": [
+        -0.88112,
+        -1.1133,
+        0.0
+      ],
+      "max": [
+        0.88112,
+        1.1133,
+        1.06038
+      ]
+    },
+    "triangles": 8566,
+    "mesh_objects": 1,
+    "materials": [
+      "Material.001",
+      "fabric",
+      "wood"
+    ],
+    "preview": "validation/asset_pilot_previews/bed-optimized-preview.png",
+    "decoder_dependencies_removed": [
+      "KHR_draco_mesh_compression"
+    ],
+    "texture_codec": "source-preserving WebP/JPEG/PNG"
+  }
+]

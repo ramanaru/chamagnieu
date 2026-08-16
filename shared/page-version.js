@@ -1,4 +1,4 @@
-import { loadProjectConfig, applyProjectVersion } from './project-config.js?release=v18-web-realism-1';
+import { loadProjectConfig, applyProjectVersion } from './project-config.js?release=v18-asset-pilot-1';
 
 try {
   const config = await loadProjectConfig();

@@ -1,0 +1,434 @@
+{
+  "asset": {
+    "pk": 155718,
+    "url": "https://www.blenderkit.com/api/v1/assets/d4eaa6c1-866a-431e-a30c-4c582f2070ad/",
+    "id": "d4eaa6c1-866a-431e-a30c-4c582f2070ad",
+    "assetBaseId": "ecba830a-8df6-4375-b59c-a10a18f947f0",
+    "versionNumber": 1,
+    "author": {
+      "id": 1188666,
+      "firstName": "Muhammed",
+      "lastName": "Ismayil",
+      "gravatarHash": "0db1113b9e0494f4b2c4af64b641d23d",
+      "avatar128": "/avatar-redirect/c6bfd10a-2d9a-493a-b4fd-b0d4b7f9418c/128/",
+      "avatar256": "/avatar-redirect/c6bfd10a-2d9a-493a-b4fd-b0d4b7f9418c/256/",
+      "avatar512": "/avatar-redirect/c6bfd10a-2d9a-493a-b4fd-b0d4b7f9418c/512/",
+      "aboutMe": "3D Artist for 5 years, like to sculpt",
+      "aboutMeUrl": "https://www.artstation.com/agneht/albums/13627985",
+      "fullName": "Muhammed Ismayil",
+      "socialNetworks": [
+        {
+          "socialNetwork": {
+            "name": "Instagram",
+            "icon": "<i class=\"fab fa-instagram\" title=\"Instagram\"></i><span class=\"sr-only\">Instagram</span>",
+            "order": 3
+          },
+          "url": "https://www.instagram.com/ismayil_k__"
+        },
+        {
+          "socialNetwork": {
+            "name": "ArtStation",
+            "icon": "<i class=\"fab fa-artstation\" title=\"ArtStation\"></i><span class=\"sr-only\">ArtStation</span>",
+            "order": 5
+          },
+          "url": "https://www.artstation.com/agneht"
+        },
+        {
+          "socialNetwork": {
+            "name": "YouTube",
+            "icon": "<i class=\"fab fa-youtube\" title=\"YouTube\"></i><span class=\"sr-only\">YouTube</span>",
+            "order": 1
+          },
+          "url": "https://www.youtube.com/@ismayilkismu906"
+        }
+      ]
+    },
+    "name": "Cotton Mini Sofa",
+    "displayName": "Cotton Mini Sofa",
+    "description": "2 Seat Cotton Sofa, Midpoly, PBR, works in both Eevee and Cycles",
+    "descriptionHtml": "<p>2 Seat Cotton Sofa, Midpoly, PBR, works in both Eevee and Cycles</p>",
+    "assetType": "model",
+    "category": "sofa",
+    "isFree": true,
+    "isForSale": false,
+    "basePrice": null,
+    "tags": [
+      "interior",
+      "architecture",
+      "pbr",
+      "sofa",
+      "couch",
+      "leather",
+      "furniture",
+      "room",
+      "fabric",
+      "gameready"
+    ],
+    "license": "cc_zero",
+    "parameters": [
+      {
+        "parameterType": "faceCount",
+        "value": 17432
+      },
+      {
+        "parameterType": "textureResolutionMax",
+        "value": 4096
+      },
+      {
+        "parameterType": "productionLevel",
+        "value": "finished"
+      },
+      {
+        "parameterType": "procedural",
+        "value": false
+      },
+      {
+        "parameterType": "modelStyle",
+        "value": "realistic"
+      },
+      {
+        "parameterType": "condition",
+        "value": "used"
+      },
+      {
+        "parameterType": "validatedManufacturer",
+        "value": false
+      },
+      {
+        "parameterType": "validatedManufacturerDate",
+        "value": "2026-02-25T04:22:55.191030+00:00"
+      },
+      {
+        "parameterType": "validatedManufacturerOutput",
+        "value": "No evidence found for 'Ismayil' as a furniture manufacturer, designer, or collection for sofas. Search results reference fashion designers (e.g., Rufat Ismayil for clothing collections like Sumakh) and unrelated clothing brands, not matching the asset's furniture context. Appears self-promotional or placeholder.\nmanufacturer: Ismayil|designer: Ismayil|designCollection: Ismayil"
+      },
+      {
+        "parameterType": "validatedManufacturerActor",
+        "value": "ai"
+      },
+      {
+        "parameterType": "purePbr",
+        "value": true
+      },
+      {
+        "parameterType": "shaders",
+        "value": "[principled]"
+      },
+      {
+        "parameterType": "pbrType",
+        "value": "metallic"
+      },
+      {
+        "parameterType": "uv",
+        "value": true
+      },
+      {
+        "parameterType": "textureResolutionMin",
+        "value": 4096
+      },
+      {
+        "parameterType": "engines",
+        "value": "[cycles]"
+      },
+      {
+        "parameterType": "modifiers",
+        "value": "[]"
+      },
+      {
+        "parameterType": "materials",
+        "value": "[Sofa 02]"
+      },
+      {
+        "parameterType": "rig",
+        "value": false
+      },
+      {
+        "parameterType": "simulation",
+        "value": false
+      },
+      {
+        "parameterType": "dimensionX",
+        "value": 2.5552
+      },
+      {
+        "parameterType": "dimensionY",
+        "value": 1.0078
+      },
+      {
+        "parameterType": "dimensionZ",
+        "value": 1.0989
+      },
+      {
+        "parameterType": "boundBoxMinX",
+        "value": -1.2808
+      },
+      {
+        "parameterType": "boundBoxMinY",
+        "value": -0.4565
+      },
+      {
+        "parameterType": "boundBoxMinZ",
+        "value": -0.0022
+      },
+      {
+        "parameterType": "boundBoxMaxX",
+        "value": 1.2745
+      },
+      {
+        "parameterType": "boundBoxMaxY",
+        "value": 0.5513
+      },
+      {
+        "parameterType": "boundBoxMaxZ",
+        "value": 1.0967
+      },
+      {
+        "parameterType": "faceCountRender",
+        "value": 17432
+      },
+      {
+        "parameterType": "meshPolyType",
+        "value": "quad_dominant"
+      },
+      {
+        "parameterType": "manifold",
+        "value": true
+      },
+      {
+        "parameterType": "objectCount",
+        "value": 1
+      },
+      {
+        "parameterType": "nodeCount",
+        "value": 51
+      },
+      {
+        "parameterType": "textureCount",
+        "value": 4
+      },
+      {
+        "parameterType": "megapixels",
+        "value": 64
+      },
+      {
+        "parameterType": "gltfGeneratedDate",
+        "value": "2025-07-30"
+      },
+      {
+        "parameterType": "gltfGodotGeneratedDate",
+        "value": "2025-07-30"
+      }
+    ],
+    "sourceAppName": "blender",
+    "sourceAppVersion": "4.4.1",
+    "addonVersion": "3.16.1",
+    "created": "2025-06-22T09:36:26.617572+02:00",
+    "lastUserInteraction": "2025-07-28T15:50:56.756980+02:00",
+    "verificationStatus": "validated",
+    "isPrivate": false,
+    "files": [
+      {
+        "fileType": "blend",
+        "id": 760341,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/760341/",
+        "uuid": null,
+        "created": "2025-07-28T15:50:56.242148+02:00",
+        "isThumbnail": false,
+        "modified": "2025-07-28T15:50:56.242161+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 64914270,
+        "isFeatured": false,
+        "filename": "assets/d4eaa6c1866a431ea30c4c582f2070ad/files/blend_5c2a0827-c903-492c-ab2a-304b42711c84.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "gltf",
+        "id": 764183,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/764183/",
+        "uuid": null,
+        "created": "2025-07-30T21:51:32.436140+02:00",
+        "isThumbnail": false,
+        "modified": "2025-07-30T21:51:32.436155+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 729800,
+        "isFeatured": false,
+        "filename": "assets/d4eaa6c1866a431ea30c4c582f2070ad/files/gltf_d6cf5004-813a-4aeb-abdb-9ea184058e3f.glb",
+        "flexFactor": null
+      },
+      {
+        "fileType": "gltf_godot",
+        "id": 764185,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/764185/",
+        "uuid": null,
+        "created": "2025-07-30T21:51:37.512534+02:00",
+        "isThumbnail": false,
+        "modified": "2025-07-30T21:51:37.512548+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 1873948,
+        "isFeatured": false,
+        "filename": "assets/d4eaa6c1866a431ea30c4c582f2070ad/files/gltf_godot_858fe393-6b98-4a72-89b5-9c9ef4c02f9b.glb",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_0_5K",
+        "id": 764182,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/764182/",
+        "uuid": null,
+        "created": "2025-07-30T21:50:42.815857+02:00",
+        "isThumbnail": false,
+        "modified": "2025-07-30T21:50:42.815898+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 1083986,
+        "isFeatured": false,
+        "filename": "assets/d4eaa6c1866a431ea30c4c582f2070ad/files/resolution_0_5K_2dae575c-1ead-43b5-b329-7fd5fe6234a4.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_1K",
+        "id": 764181,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/764181/",
+        "uuid": null,
+        "created": "2025-07-30T21:50:41.780868+02:00",
+        "isThumbnail": false,
+        "modified": "2025-07-30T21:50:41.780882+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 1333396,
+        "isFeatured": false,
+        "filename": "assets/d4eaa6c1866a431ea30c4c582f2070ad/files/resolution_1K_3befaaae-0f3b-43a5-ae67-b21f53587efb.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_2K",
+        "id": 764180,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/764180/",
+        "uuid": null,
+        "created": "2025-07-30T21:50:40.845242+02:00",
+        "isThumbnail": false,
+        "modified": "2025-07-30T21:50:40.845253+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 2330177,
+        "isFeatured": false,
+        "filename": "assets/d4eaa6c1866a431ea30c4c582f2070ad/files/resolution_2K_8727cab8-8dfd-46b5-9669-bfbd04162da3.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_4K",
+        "id": 764179,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/764179/",
+        "uuid": null,
+        "created": "2025-07-30T21:50:39.760877+02:00",
+        "isThumbnail": false,
+        "modified": "2025-07-30T21:50:39.760892+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 7417396,
+        "isFeatured": false,
+        "filename": "assets/d4eaa6c1866a431ea30c4c582f2070ad/files/resolution_4K_a588a7ae-2109-4bec-8322-532b330361b2.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "thumbnail",
+        "id": 760340,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/760340/",
+        "uuid": null,
+        "fileThumbnail": "https://public.blenderkit.com/thumbnails/assets/d4eaa6c1866a431ea30c4c582f2070ad/files/thumbnail_a8e319a1-1acb-46f9-849f-b08c4b0a0f5e.png.96x96_q85_crop-%2C.jpg",
+        "fileThumbnailLarge": "https://public.blenderkit.com/thumbnails/assets/d4eaa6c1866a431ea30c4c582f2070ad/files/thumbnail_a8e319a1-1acb-46f9-849f-b08c4b0a0f5e.png.1024x1024_q85_crop-%2C.jpg",
+        "created": "2025-07-28T15:50:42.559627+02:00",
+        "isThumbnail": true,
+        "modified": "2025-12-23T04:09:19.117331+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 48389793,
+        "width": 4096,
+        "height": 4096,
+        "isFeatured": false,
+        "filename": "assets/d4eaa6c1866a431ea30c4c582f2070ad/files/thumbnail_a8e319a1-1acb-46f9-849f-b08c4b0a0f5e.png",
+        "thumbnailSmallUrl": "https://public.blenderkit.com/thumbnails/assets/d4eaa6c1866a431ea30c4c582f2070ad/files/thumbnail_a8e319a1-1acb-46f9-849f-b08c4b0a0f5e.png.256x256_q85_crop-%2C.jpg",
+        "thumbnailMiddleUrl": "https://public.blenderkit.com/thumbnails/assets/d4eaa6c1866a431ea30c4c582f2070ad/files/thumbnail_a8e319a1-1acb-46f9-849f-b08c4b0a0f5e.png.512x512_q85_crop-%2C.jpg",
+        "thumbnailLargeUrl": "https://public.blenderkit.com/thumbnails/assets/d4eaa6c1866a431ea30c4c582f2070ad/files/thumbnail_a8e319a1-1acb-46f9-849f-b08c4b0a0f5e.png.1024x1024_q85_crop-%2C.jpg",
+        "thumbnailXlargeUrl": "https://public.blenderkit.com/thumbnails/assets/d4eaa6c1866a431ea30c4c582f2070ad/files/thumbnail_a8e319a1-1acb-46f9-849f-b08c4b0a0f5e.png.2048x2048_q85_crop-%2C.jpg",
+        "thumbnailSmallUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/d4eaa6c1866a431ea30c4c582f2070ad/files/thumbnail_a8e319a1-1acb-46f9-849f-b08c4b0a0f5e.png.256x256_q85.jpg",
+        "thumbnailMiddleUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/d4eaa6c1866a431ea30c4c582f2070ad/files/thumbnail_a8e319a1-1acb-46f9-849f-b08c4b0a0f5e.png.512x512_q85.jpg",
+        "thumbnailLargeUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/d4eaa6c1866a431ea30c4c582f2070ad/files/thumbnail_a8e319a1-1acb-46f9-849f-b08c4b0a0f5e.png.1024x1024_q85.jpg",
+        "thumbnailXlargeUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/d4eaa6c1866a431ea30c4c582f2070ad/files/thumbnail_a8e319a1-1acb-46f9-849f-b08c4b0a0f5e.png.2048x2048_q85.jpg",
+        "thumbnailSmallUrlWebp": "https://public.blenderkit.com/thumbnails/assets/d4eaa6c1866a431ea30c4c582f2070ad/files/thumbnail_a8e319a1-1acb-46f9-849f-b08c4b0a0f5e.png.256x256_q85_crop-%2C.jpg.webp?webp_generated=1766668748",
+        "thumbnailMiddleUrlWebp": "https://public.blenderkit.com/thumbnails/assets/d4eaa6c1866a431ea30c4c582f2070ad/files/thumbnail_a8e319a1-1acb-46f9-849f-b08c4b0a0f5e.png.512x512_q85_crop-%2C.jpg.webp?webp_generated=1766668748",
+        "thumbnailLargeUrlWebp": "https://public.blenderkit.com/thumbnails/assets/d4eaa6c1866a431ea30c4c582f2070ad/files/thumbnail_a8e319a1-1acb-46f9-849f-b08c4b0a0f5e.png.1024x1024_q85_crop-%2C.jpg.webp?webp_generated=1766668748",
+        "thumbnailXlargeUrlWebp": "https://public.blenderkit.com/thumbnails/assets/d4eaa6c1866a431ea30c4c582f2070ad/files/thumbnail_a8e319a1-1acb-46f9-849f-b08c4b0a0f5e.png.2048x2048_q85_crop-%2C.jpg.webp?webp_generated=1766668748",
+        "thumbnailSmallUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/d4eaa6c1866a431ea30c4c582f2070ad/files/thumbnail_a8e319a1-1acb-46f9-849f-b08c4b0a0f5e.png.256x256_q85.jpg.webp?webp_generated=1766668748",
+        "thumbnailMiddleUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/d4eaa6c1866a431ea30c4c582f2070ad/files/thumbnail_a8e319a1-1acb-46f9-849f-b08c4b0a0f5e.png.512x512_q85.jpg.webp?webp_generated=1766668748",
+        "thumbnailLargeUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/d4eaa6c1866a431ea30c4c582f2070ad/files/thumbnail_a8e319a1-1acb-46f9-849f-b08c4b0a0f5e.png.1024x1024_q85.jpg.webp?webp_generated=1766668748",
+        "thumbnailXlargeUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/d4eaa6c1866a431ea30c4c582f2070ad/files/thumbnail_a8e319a1-1acb-46f9-849f-b08c4b0a0f5e.png.2048x2048_q85.jpg.webp?webp_generated=1766668748",
+        "flexFactor": null
+      }
+    ],
+    "filesSize": 128072766,
+    "showMarketingLabels": true,
+    "webpGeneratedTimestamp": 1766668748,
+    "score": 325.0,
+    "ratingsMedian": {
+      "bookmarks": 1.0,
+      "workingHours": 5.0,
+      "quality": 6.5,
+      "virtualPrice": null
+    },
+    "ratingsAverage": {
+      "bookmarks": 0.9879518072289156,
+      "workingHours": 5.0,
+      "quality": 6.5,
+      "virtualPrice": null
+    },
+    "ratingsCount": {
+      "bookmarks": 83,
+      "workingHours": 1,
+      "quality": 2,
+      "virtualPrice": 0
+    },
+    "ratingsSum": {
+      "bookmarks": 82.0,
+      "workingHours": 5.0,
+      "quality": 13.0,
+      "virtualPrice": null,
+      "score": 325.0
+    },
+    "pageBlocks": null,
+    "access": "free",
+    "accessLabel": "Free",
+    "videoLink": "",
+    "lastWireThumbnailUpload": null,
+    "lastThumbnailUpload": "2025-07-28T13:50:42.559627Z",
+    "lastGltfGodotUpload": "2025-07-30T19:51:37.512534Z",
+    "lastVideoUpload": null,
+    "lastGltfUpload": "2025-07-30T19:51:32.436140Z",
+    "lastBlendUpload": "2025-07-28T13:50:56.242148Z",
+    "lastResolutionUpload": "2025-07-30T19:50:42.815857Z",
+    "lastPhotoThumbnailUpload": null,
+    "lastAnimatedThumbnailUpload": null,
+    "lastZipFileUpload": null,
+    "lastPrxcUpload": null
+  },
+  "acquisition": {
+    "role": "sofa",
+    "asset_id": "d4eaa6c1-866a-431e-a30c-4c582f2070ad",
+    "name": "Cotton Mini Sofa",
+    "author": "Muhammed Ismayil",
+    "license": "cc_zero",
+    "is_free": true,
+    "verification_status": "validated",
+    "source_url": "https://www.blenderkit.com/asset-gallery-detail/d4eaa6c1-866a-431e-a30c-4c582f2070ad/",
+    "api_url": "https://www.blenderkit.com/api/v1/assets/d4eaa6c1-866a-431e-a30c-4c582f2070ad/",
+    "download_api": "https://www.blenderkit.com/api/v1/downloads/764183/?scene_uuid=f2f12068-dd0d-4c90-8c68-95c3ef640dc4",
+    "library_file_type": "gltf",
+    "library_file_uuid": "28e89c9e-3ec5-4ad2-8154-faa1f4f8edb7",
+    "local_file": "assets_external/models/sofa/original/sofa_d4eaa6c1-866a-431e-a30c-4c582f2070ad_library.glb",
+    "bytes": 729800,
+    "sha256": "CE28A33802F5D70DA6964C86E4E6FE83A88BF365F628B3A7847586F7C515CFF1",
+    "dict_parameters": {}
+  }
+}

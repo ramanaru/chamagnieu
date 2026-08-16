@@ -6,15 +6,17 @@ Données structurées: https://raw.githubusercontent.com/ramanaru/chamagnieu/mai
 Image façade: https://raw.githubusercontent.com/ramanaru/chamagnieu/main/images/v18-facade-roof-ground.webp
 Image jardin: https://raw.githubusercontent.com/ramanaru/chamagnieu/main/images/v18-jardin-textures.webp
 
-Cette version montre une maison à trois volumes de toiture en tuiles, des sols extérieurs différenciés, quatre arbres optimisés, dix-huit segments de haie densifiés en 108 clumps et une visite commençant dehors.
+Cette version montre une maison à trois volumes de toiture en tuiles et un pilote de huit catégories CC0 réellement chargé dans la visite : canapé, table, chaise, lit, arbre, haie, façade PBR et pelouse PBR. L’architecture issue des plans reste inchangée.
 
-Version live unique: V18-WEB-REALISM-1
+Version live unique: V18-ASSET-PILOT-1
 Configuration centrale: https://raw.githubusercontent.com/ramanaru/chamagnieu/main/shared/project-config.json
 Modèle live: https://raw.githubusercontent.com/ramanaru/chamagnieu/main/shared/Chamagnieu_V18_WEB_REALISM_UPGRADED.glb
 SHA-256 modèle: 9A5FD736CF5BFC4B8AF90A3B1A701C1532B83D2E6BDF0FA2C459B085B9A12B1E
 Rapport d'audit: https://github.com/ramanaru/chamagnieu/blob/main/audit/version-sync-report.md
-Verdict réalisme live: https://github.com/ramanaru/chamagnieu/blob/main/validation/V18_WEB_REALISM_FIX_REPORT.md
-Avant/après live: https://github.com/ramanaru/chamagnieu/tree/main/validation/live_before_after
+Manifeste assets: https://raw.githubusercontent.com/ramanaru/chamagnieu/main/assets_external/ASSET_MANIFEST.json
+Licences: https://github.com/ramanaru/chamagnieu/blob/main/assets_external/ASSET_LICENSES.md
+Verdict réalisme live: https://github.com/ramanaru/chamagnieu/blob/main/validation/ASSET_REALISM_INTEGRATION_REPORT.md
+Avant/après live: https://github.com/ramanaru/chamagnieu/tree/main/validation/asset_pilot_screenshots/comparisons
 
 SOURCE = LIVE WEB VIEWER pour /presentation/ et /visite/.
 SOURCE = BLENDER pour les images de galerie. Les WebP de galerie ne sont pas des textures du GLB.

@@ -1,0 +1,118 @@
+{
+  "asset": {
+    "type": 2,
+    "tags": [
+      "modern",
+      "chair",
+      "seat",
+      "dining",
+      "fancy",
+      "leather"
+    ],
+    "name": "Dining Chair 02",
+    "categories": [
+      "furniture",
+      "seating"
+    ],
+    "authors": {
+      "James Ray Cock": "All"
+    },
+    "date_published": 1623767234,
+    "max_resolution": [
+      8192,
+      8192
+    ],
+    "polycount": 22013,
+    "texel_density": 5968.990589289396,
+    "dimensions": [
+      433.5707724094391,
+      576.4201134443283,
+      973.3776897192001
+    ],
+    "files_hash": "b99b2f907424bbc55b77541f9616fa9da770dcde",
+    "description": "Free 8K model: modern dining chair with tufted brown leather, high cushioned back and seat, dark wooden legs - fancy, comfy and ideal for elegant interior scenes.",
+    "category_id": "11261ec6-df2b-5150-9904-684d2558070d",
+    "category": "Furniture/Seating/Chairs",
+    "attributes": {
+      "condition": [
+        "clean"
+      ],
+      "material": [
+        "leather",
+        "wood"
+      ]
+    },
+    "download_count": 16252,
+    "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/dining_chair_02.png?width=256&height=256"
+  },
+  "file_manifest": {
+    "include": {
+      "dining_chair_02.bin": {
+        "size": 544592,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/dining_chair_02/dining_chair_02.bin",
+        "md5": "b7f8a91c0a5249d02de7885f3b242c4e"
+      },
+      "textures/dining_chair_02_nor_gl_1k.jpg": {
+        "size": 119612,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/dining_chair_02/dining_chair_02_nor_gl_1k.jpg",
+        "md5": "9c0e1003f9c8859a2e5c2c7f92a8f238"
+      },
+      "textures/dining_chair_02_diff_1k.jpg": {
+        "size": 91518,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/dining_chair_02/dining_chair_02_diff_1k.jpg",
+        "md5": "6b7b8e4ac0a3aad9ecdf314a97b0ef75"
+      },
+      "textures/dining_chair_02_arm_1k.jpg": {
+        "size": 162630,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/dining_chair_02/dining_chair_02_arm_1k.jpg",
+        "md5": "2b16c9ddb3ea83d200b02de54a4fdcb8"
+      }
+    },
+    "size": 2723,
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/dining_chair_02/dining_chair_02_1k.gltf",
+    "md5": "5aff75016e0943e84161de89dcc3ceb8"
+  },
+  "acquisition": {
+    "role": "chair",
+    "name": "Dining Chair 02",
+    "asset_id": "dining_chair_02",
+    "author": "All",
+    "source": "Poly Haven",
+    "license": "CC0-1.0",
+    "source_page_url": "https://polyhaven.com/a/dining_chair_02",
+    "official_metadata_api": "https://api.polyhaven.com/assets?t=models",
+    "official_files_api": "https://api.polyhaven.com/files/dining_chair_02",
+    "original_files": [
+      {
+        "path": "assets_external/models/chair/original/selected/dining_chair_02_1k.gltf",
+        "bytes": 2723,
+        "md5": "5aff75016e0943e84161de89dcc3ceb8",
+        "sha256": "88352A44A17319846F61FE03CE75C79FB1849AA508B6A262366C149C1BBD06B8"
+      },
+      {
+        "path": "assets_external/models/chair/original/selected/dining_chair_02.bin",
+        "bytes": 544592,
+        "md5": "b7f8a91c0a5249d02de7885f3b242c4e",
+        "sha256": "C7F1EF858F73815176D2AB304472A69CCF6097E971E5258EB924A75F841D4AF5"
+      },
+      {
+        "path": "assets_external/models/chair/original/selected/textures/dining_chair_02_nor_gl_1k.jpg",
+        "bytes": 119612,
+        "md5": "9c0e1003f9c8859a2e5c2c7f92a8f238",
+        "sha256": "348703512CA1215F8389E9108419C2D1A46537663DB25F423C3EF900D20CFE61"
+      },
+      {
+        "path": "assets_external/models/chair/original/selected/textures/dining_chair_02_diff_1k.jpg",
+        "bytes": 91518,
+        "md5": "6b7b8e4ac0a3aad9ecdf314a97b0ef75",
+        "sha256": "343990F764790DA1149485A422DEE2BC6797945A6AF06A37D02D7A7DE041ACF5"
+      },
+      {
+        "path": "assets_external/models/chair/original/selected/textures/dining_chair_02_arm_1k.jpg",
+        "bytes": 162630,
+        "md5": "2b16c9ddb3ea83d200b02de54a4fdcb8",
+        "sha256": "0A81C0C886BAA1E65D94FB6FB90AB4751BEE319888ECF1C428AE62042D8A5B15"
+      }
+    ]
+  }
+}

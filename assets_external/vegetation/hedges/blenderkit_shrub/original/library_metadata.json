@@ -1,0 +1,364 @@
+{
+  "asset": {
+    "pk": 1683,
+    "url": "https://www.blenderkit.com/api/v1/assets/32002ed3-1b0b-40d9-835d-a36bc16d5b51/",
+    "id": "32002ed3-1b0b-40d9-835d-a36bc16d5b51",
+    "assetBaseId": "2810ce15-1076-44e6-9b95-90487f8d5dc5",
+    "versionNumber": 1,
+    "author": {
+      "id": 2,
+      "firstName": "Blendkit",
+      "lastName": "Community",
+      "gravatarHash": "d8512094807f98c42dac36dc1ec5dbc9",
+      "avatar128": "/avatar-redirect/95cf3d26-35ba-41b0-84f1-55ee67cbeae4/128/",
+      "avatar256": "/avatar-redirect/95cf3d26-35ba-41b0-84f1-55ee67cbeae4/256/",
+      "avatar512": "/avatar-redirect/95cf3d26-35ba-41b0-84f1-55ee67cbeae4/512/",
+      "aboutMe": "On this account we store assets created by Blendkit team.",
+      "aboutMeUrl": "https://www.blenderkit.com/about",
+      "fullName": "Blendkit Community",
+      "socialNetworks": [
+        {
+          "socialNetwork": {
+            "name": "YouTube",
+            "icon": "<i class=\"fab fa-youtube\" title=\"YouTube\"></i><span class=\"sr-only\">YouTube</span>",
+            "order": 1
+          },
+          "url": "https://www.youtube.com/channel/UC5RIl8ngv7D4riGIZRXWV6w"
+        },
+        {
+          "socialNetwork": {
+            "name": "Facebook",
+            "icon": "<i class=\"fab fa-facebook\" title=\"Facebook\"></i><span class=\"sr-only\">Facebook</span>",
+            "order": 2
+          },
+          "url": "https://www.facebook.com/blenderkit"
+        },
+        {
+          "socialNetwork": {
+            "name": "Instagram",
+            "icon": "<i class=\"fab fa-instagram\" title=\"Instagram\"></i><span class=\"sr-only\">Instagram</span>",
+            "order": 3
+          },
+          "url": "https://www.instagram.com/blenderkit"
+        },
+        {
+          "socialNetwork": {
+            "name": "TikTok",
+            "icon": "<i class=\"fab fa-tiktok\" title=\"TikTok\"></i><span class=\"sr-only\">TikTok</span>",
+            "order": 6
+          },
+          "url": "https://www.tiktok.com/@blenderkit"
+        },
+        {
+          "socialNetwork": {
+            "name": "Twitter",
+            "icon": "<i class=\"fab fa-x-twitter\" title=\"Twitter\"></i><span class=\"sr-only\">Twitter</span>",
+            "order": 7
+          },
+          "url": "https://twitter.com/Blender_Kit"
+        }
+      ]
+    },
+    "name": "Shrub",
+    "displayName": "Shrub",
+    "description": "",
+    "descriptionHtml": "",
+    "assetType": "model",
+    "category": "nature-outdoor",
+    "isFree": true,
+    "isForSale": false,
+    "basePrice": null,
+    "tags": [
+      "bush",
+      "shrub",
+      "garden",
+      "lush",
+      "spring",
+      "non-manifold",
+      "uv"
+    ],
+    "license": "cc_zero",
+    "parameters": [
+      {
+        "parameterType": "faceCount",
+        "value": 15980
+      },
+      {
+        "parameterType": "textureResolutionMax",
+        "value": 2048
+      },
+      {
+        "parameterType": "productionLevel",
+        "value": "finished"
+      },
+      {
+        "parameterType": "modelStyle",
+        "value": "realistic"
+      },
+      {
+        "parameterType": "purePbr",
+        "value": false
+      },
+      {
+        "parameterType": "shaders",
+        "value": "principled,mix shader,translucent,transparent"
+      },
+      {
+        "parameterType": "animated",
+        "value": false
+      },
+      {
+        "parameterType": "uv",
+        "value": true
+      },
+      {
+        "parameterType": "textureResolutionMin",
+        "value": 2048
+      },
+      {
+        "parameterType": "engines",
+        "value": "cycles"
+      },
+      {
+        "parameterType": "modifiers",
+        "value": ""
+      },
+      {
+        "parameterType": "materials",
+        "value": "pine procedural,Material.001"
+      },
+      {
+        "parameterType": "rig",
+        "value": false
+      },
+      {
+        "parameterType": "simulation",
+        "value": false
+      },
+      {
+        "parameterType": "dimensionX",
+        "value": 1.2546
+      },
+      {
+        "parameterType": "dimensionY",
+        "value": 1.2611
+      },
+      {
+        "parameterType": "dimensionZ",
+        "value": 0.7658
+      },
+      {
+        "parameterType": "boundBoxMinX",
+        "value": -0.6523
+      },
+      {
+        "parameterType": "boundBoxMinY",
+        "value": -0.7144
+      },
+      {
+        "parameterType": "boundBoxMinZ",
+        "value": 0.0
+      },
+      {
+        "parameterType": "boundBoxMaxX",
+        "value": 0.6023
+      },
+      {
+        "parameterType": "boundBoxMaxY",
+        "value": 0.5467
+      },
+      {
+        "parameterType": "boundBoxMaxZ",
+        "value": 0.7658
+      },
+      {
+        "parameterType": "faceCountRender",
+        "value": 15980
+      },
+      {
+        "parameterType": "meshPolyType",
+        "value": "quad_dominant"
+      },
+      {
+        "parameterType": "manifold",
+        "value": false
+      },
+      {
+        "parameterType": "objectCount",
+        "value": 1
+      },
+      {
+        "parameterType": "imageAltTextGen4v",
+        "value": "Realistic 3D shrub model with lush green leaves, perfect for Blender 3D nature scenes."
+      }
+    ],
+    "sourceAppName": "blender",
+    "sourceAppVersion": "2.80.47",
+    "addonVersion": "1.0.22",
+    "created": "2019-04-09T22:40:39.486297+02:00",
+    "lastUserInteraction": "2021-01-20T14:29:30.561290+01:00",
+    "verificationStatus": "validated",
+    "isPrivate": false,
+    "files": [
+      {
+        "fileType": "blend",
+        "id": 4643,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/4643/",
+        "uuid": null,
+        "created": "2019-04-10T22:21:28.760060+02:00",
+        "isThumbnail": false,
+        "modified": "2025-12-22T16:15:55.709240+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 6702327,
+        "isFeatured": false,
+        "filename": "assets/32002ed31b0b40d9835da36bc16d5b51/files/blend_da973412-2caa-4548-9b3a-3f9bc3745e68.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_0_5K",
+        "id": 30091,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/30091/",
+        "uuid": null,
+        "created": "2020-12-06T03:42:42.010190+01:00",
+        "isThumbnail": false,
+        "modified": "2021-01-20T14:29:30.687353+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 1119294,
+        "isFeatured": false,
+        "filename": "assets/32002ed31b0b40d9835da36bc16d5b51/files/resolution_0_5K_257cd456-ab4c-4153-846b-3e06401d16d7.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_1K",
+        "id": 30090,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/30090/",
+        "uuid": null,
+        "created": "2020-12-06T03:42:39.038715+01:00",
+        "isThumbnail": false,
+        "modified": "2021-01-20T14:29:30.714314+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 1327924,
+        "isFeatured": false,
+        "filename": "assets/32002ed31b0b40d9835da36bc16d5b51/files/resolution_1K_aa4ebf2c-17b0-4267-8872-2c9fd2c43061.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "thumbnail",
+        "id": 57669,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/57669/",
+        "uuid": null,
+        "fileThumbnail": "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.96x96_q85_crop-%2C.jpg",
+        "fileThumbnailLarge": "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.1024x1024_q85_crop-%2C.jpg",
+        "created": "2021-05-01T19:46:53.123156+02:00",
+        "isThumbnail": true,
+        "modified": "2025-12-22T17:26:47.123276+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 117506,
+        "width": 1024,
+        "height": 1024,
+        "isFeatured": false,
+        "filename": "assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg",
+        "thumbnailSmallUrl": "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.256x256_q85_crop-%2C.jpg",
+        "thumbnailMiddleUrl": "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.512x512_q85_crop-%2C.jpg",
+        "thumbnailLargeUrl": "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.1024x1024_q85_crop-%2C.jpg",
+        "thumbnailXlargeUrl": "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.2048x2048_q85_crop-%2C.jpg",
+        "thumbnailSmallUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.256x256_q85.jpg",
+        "thumbnailMiddleUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.512x512_q85.jpg",
+        "thumbnailLargeUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.1024x1024_q85.jpg",
+        "thumbnailXlargeUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.2048x2048_q85.jpg",
+        "thumbnailSmallUrlWebp": "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.256x256_q85_crop-%2C.jpg.webp?webp_generated=1766436715",
+        "thumbnailMiddleUrlWebp": "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.512x512_q85_crop-%2C.jpg.webp?webp_generated=1766436715",
+        "thumbnailLargeUrlWebp": "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.1024x1024_q85_crop-%2C.jpg.webp?webp_generated=1766436715",
+        "thumbnailXlargeUrlWebp": "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.2048x2048_q85_crop-%2C.jpg.webp?webp_generated=1766436715",
+        "thumbnailSmallUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.256x256_q85.jpg.webp?webp_generated=1766436715",
+        "thumbnailMiddleUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.512x512_q85.jpg.webp?webp_generated=1766436715",
+        "thumbnailLargeUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.1024x1024_q85.jpg.webp?webp_generated=1766436715",
+        "thumbnailXlargeUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.2048x2048_q85.jpg.webp?webp_generated=1766436715",
+        "flexFactor": null
+      },
+      {
+        "fileType": "prxc",
+        "id": 1074111,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/1074111/",
+        "uuid": "b3ff9fa3-33bb-4e6d-8cf9-d81cc53f4d3c",
+        "created": "2026-05-07T01:38:32.912875+02:00",
+        "isThumbnail": false,
+        "modified": "2026-05-07T01:38:32.912887+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 7784,
+        "isFeatured": false,
+        "filename": "assets/32002ed31b0b40d9835da36bc16d5b51/files/prxc_a1245f98-c566-4b64-a51b-07a67551618f.prxc",
+        "flexFactor": null
+      }
+    ],
+    "filesSize": 9274835,
+    "showMarketingLabels": true,
+    "webpGeneratedTimestamp": 1766436715,
+    "score": 328.5,
+    "ratingsMedian": {
+      "bookmarks": 1.0,
+      "workingHours": 3.6,
+      "quality": 10.0,
+      "virtualPrice": null
+    },
+    "ratingsAverage": {
+      "bookmarks": 0.9749303621169917,
+      "workingHours": 3.6,
+      "quality": 9.125,
+      "virtualPrice": null
+    },
+    "ratingsCount": {
+      "bookmarks": 359,
+      "workingHours": 1,
+      "quality": 8,
+      "virtualPrice": 0
+    },
+    "ratingsSum": {
+      "bookmarks": 350.0,
+      "workingHours": 3.6,
+      "quality": 73.0,
+      "virtualPrice": null,
+      "score": 328.5
+    },
+    "pageBlocks": null,
+    "access": "free",
+    "accessLabel": "Free",
+    "videoLink": "",
+    "lastZipFileUpload": null,
+    "lastGltfGodotUpload": null,
+    "lastAnimatedThumbnailUpload": null,
+    "lastResolutionUpload": "2020-12-06T02:42:42.010190Z",
+    "lastVideoUpload": null,
+    "lastPrxcUpload": "2026-05-06T23:38:32.912875Z",
+    "lastThumbnailUpload": "2021-05-01T17:46:53.123156Z",
+    "lastPhotoThumbnailUpload": null,
+    "lastGltfUpload": null,
+    "lastWireThumbnailUpload": null,
+    "lastBlendUpload": "2019-04-10T20:21:28.760060Z"
+  },
+  "acquisition": {
+    "role": "hedge",
+    "name": "Shrub",
+    "asset_base_id": "2810ce15-1076-44e6-9b95-90487f8d5dc5",
+    "version_id": "32002ed3-1b0b-40d9-835d-a36bc16d5b51",
+    "author": "Blendkit Community",
+    "license": "cc_zero",
+    "is_free": true,
+    "source_url": "https://www.blenderkit.com/asset-gallery-detail/2810ce15-1076-44e6-9b95-90487f8d5dc5/",
+    "api_url": "https://www.blenderkit.com/api/v1/assets/32002ed3-1b0b-40d9-835d-a36bc16d5b51/",
+    "download_api": "https://www.blenderkit.com/api/v1/downloads/30090/?scene_uuid=4dc0a9ec-7f99-4640-841e-efff26006906",
+    "library_file_type": "resolution_1K",
+    "downloaded_original_file": "assets_external/vegetation/hedge/original/hedge_2810ce15-1076-44e6-9b95-90487f8d5dc5_1k_download.blend.gz",
+    "downloaded_original_bytes": 1327924,
+    "downloaded_original_sha256": "E6DAFED45E728DB2276F481FA7A501FB9B17C2665BF80683750270F758348535",
+    "decompressed_source_file": "assets_external/vegetation/hedge/original/hedge_2810ce15-1076-44e6-9b95-90487f8d5dc5_1k_source.blend",
+    "decompressed_source_bytes": 4564424,
+    "decompressed_source_sha256": "32C7F1FF80FB0369EF7DC99849CF891B1E0BDCDAA1AED4B26F61050C77B8B519",
+    "transport_compression": "gzip"
+  }
+}

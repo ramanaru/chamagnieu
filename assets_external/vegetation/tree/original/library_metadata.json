@@ -1,0 +1,431 @@
+{
+  "asset": {
+    "pk": 143143,
+    "url": "https://www.blenderkit.com/api/v1/assets/8775e08b-6ac7-4af3-86ad-9f3d56d65afd/",
+    "id": "8775e08b-6ac7-4af3-86ad-9f3d56d65afd",
+    "assetBaseId": "c8af7417-b4d3-4cff-8a7a-b0afdb5a577f",
+    "versionNumber": 1,
+    "author": {
+      "id": 2634,
+      "firstName": "Davide",
+      "lastName": "Tirindelli",
+      "gravatarHash": "84418b2d225a740ecfc30e6fa8e5954a",
+      "avatar128": "/avatar-redirect/5339bea9-d139-4b68-88bf-b8824fd3d93f/128/",
+      "avatar256": "/avatar-redirect/5339bea9-d139-4b68-88bf-b8824fd3d93f/256/",
+      "avatar512": "/avatar-redirect/5339bea9-d139-4b68-88bf-b8824fd3d93f/512/",
+      "aboutMe": "Blender modeler from Udine - Italy\r\n\r\nlinks:\r\nhttps://www.artstation.com/artist/davzeppelin\r\nhttps://www.instagram.com/davide_tirindelli/\r\nhttps://www.facebook.com/AtomicAirship/\r\nhttps://www.youtube.com/channel/UCWScb_IvC_Xa9oRQgrwH-lw/videos",
+      "aboutMeUrl": "https://www.artstation.com/artist/davzeppelin",
+      "fullName": "Davide Tirindelli",
+      "socialNetworks": [
+        {
+          "socialNetwork": {
+            "name": "YouTube",
+            "icon": "<i class=\"fab fa-youtube\" title=\"YouTube\"></i><span class=\"sr-only\">YouTube</span>",
+            "order": 1
+          },
+          "url": "https://www.youtube.com/@DavideTirindelli"
+        },
+        {
+          "socialNetwork": {
+            "name": "Facebook",
+            "icon": "<i class=\"fab fa-facebook\" title=\"Facebook\"></i><span class=\"sr-only\">Facebook</span>",
+            "order": 2
+          },
+          "url": "https://www.facebook.com/AtomicAirship"
+        },
+        {
+          "socialNetwork": {
+            "name": "Instagram",
+            "icon": "<i class=\"fab fa-instagram\" title=\"Instagram\"></i><span class=\"sr-only\">Instagram</span>",
+            "order": 3
+          },
+          "url": "https://www.instagram.com/davide_tirindelli"
+        },
+        {
+          "socialNetwork": {
+            "name": "ArtStation",
+            "icon": "<i class=\"fab fa-artstation\" title=\"ArtStation\"></i><span class=\"sr-only\">ArtStation</span>",
+            "order": 5
+          },
+          "url": "https://www.artstation.com/davzeppelin"
+        },
+        {
+          "socialNetwork": {
+            "name": "Twitter",
+            "icon": "<i class=\"fab fa-x-twitter\" title=\"Twitter\"></i><span class=\"sr-only\">Twitter</span>",
+            "order": 7
+          },
+          "url": "https://twitter.com/DavideTirindel1"
+        }
+      ]
+    },
+    "name": "Decorative Urban Tree",
+    "displayName": "Decorative Urban Tree",
+    "description": "Modified version of a cc0 tree from polyhaven, sharing also as cc0 for every artist to use without any restriction",
+    "descriptionHtml": "<p>Modified version of a cc0 tree from polyhaven, sharing also as cc0 for every artist to use without any restriction</p>",
+    "assetType": "model",
+    "category": "cityspace",
+    "isFree": true,
+    "isForSale": false,
+    "basePrice": null,
+    "tags": [
+      "tree",
+      "urban",
+      "plant",
+      "decorative",
+      "decoration"
+    ],
+    "license": "cc_zero",
+    "parameters": [
+      {
+        "parameterType": "faceCount",
+        "value": 29641
+      },
+      {
+        "parameterType": "textureResolutionMax",
+        "value": 4096
+      },
+      {
+        "parameterType": "productionLevel",
+        "value": "finished"
+      },
+      {
+        "parameterType": "procedural",
+        "value": false
+      },
+      {
+        "parameterType": "modelStyle",
+        "value": "realistic"
+      },
+      {
+        "parameterType": "condition",
+        "value": "new"
+      },
+      {
+        "parameterType": "purePbr",
+        "value": false
+      },
+      {
+        "parameterType": "shaders",
+        "value": "[principled add shader translucent]"
+      },
+      {
+        "parameterType": "animated",
+        "value": false
+      },
+      {
+        "parameterType": "uv",
+        "value": true
+      },
+      {
+        "parameterType": "textureResolutionMin",
+        "value": 1080
+      },
+      {
+        "parameterType": "engines",
+        "value": "[cycles]"
+      },
+      {
+        "parameterType": "modifiers",
+        "value": "[bevel weighted normal nodes]"
+      },
+      {
+        "parameterType": "materials",
+        "value": "[concrete marble tree_small_02 tree_small_02_branches tree_small_02_leaves ground]"
+      },
+      {
+        "parameterType": "rig",
+        "value": false
+      },
+      {
+        "parameterType": "simulation",
+        "value": false
+      },
+      {
+        "parameterType": "dimensionX",
+        "value": 3.6011
+      },
+      {
+        "parameterType": "dimensionY",
+        "value": 4.5388
+      },
+      {
+        "parameterType": "dimensionZ",
+        "value": 6.2374
+      },
+      {
+        "parameterType": "boundBoxMinX",
+        "value": -1.6871
+      },
+      {
+        "parameterType": "boundBoxMinY",
+        "value": -3.3432
+      },
+      {
+        "parameterType": "boundBoxMinZ",
+        "value": 0.0
+      },
+      {
+        "parameterType": "boundBoxMaxX",
+        "value": 1.9139
+      },
+      {
+        "parameterType": "boundBoxMaxY",
+        "value": 1.1956
+      },
+      {
+        "parameterType": "boundBoxMaxZ",
+        "value": 6.2374
+      },
+      {
+        "parameterType": "faceCountRender",
+        "value": 29641
+      },
+      {
+        "parameterType": "meshPolyType",
+        "value": "tri_dominant"
+      },
+      {
+        "parameterType": "manifold",
+        "value": false
+      },
+      {
+        "parameterType": "objectCount",
+        "value": 4
+      },
+      {
+        "parameterType": "nodeCount",
+        "value": 113
+      },
+      {
+        "parameterType": "textureCount",
+        "value": 20
+      },
+      {
+        "parameterType": "megapixels",
+        "value": 161
+      },
+      {
+        "parameterType": "gltfGeneratedDate",
+        "value": "2025-04-23"
+      },
+      {
+        "parameterType": "gltfGodotGeneratedDate",
+        "value": "2025-04-23"
+      }
+    ],
+    "sourceAppName": "blender",
+    "sourceAppVersion": "4.0.2",
+    "addonVersion": "3.12.3",
+    "created": "2025-04-20T11:19:47.130462+02:00",
+    "lastUserInteraction": "2025-04-20T11:20:27.453832+02:00",
+    "verificationStatus": "validated",
+    "isPrivate": false,
+    "files": [
+      {
+        "fileType": "blend",
+        "id": 649088,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/649088/",
+        "uuid": null,
+        "created": "2025-04-20T11:20:26.947489+02:00",
+        "isThumbnail": false,
+        "modified": "2025-04-20T11:20:26.947501+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 217657891,
+        "isFeatured": false,
+        "filename": "assets/8775e08b6ac74af386ad9f3d56d65afd/files/blend_d50a47db-dc09-4363-8228-e7061ba056f7.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "gltf",
+        "id": 652226,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/652226/",
+        "uuid": null,
+        "created": "2025-04-23T13:22:59.808933+02:00",
+        "isThumbnail": false,
+        "modified": "2025-04-23T13:22:59.808949+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 146996520,
+        "isFeatured": false,
+        "filename": "assets/8775e08b6ac74af386ad9f3d56d65afd/files/gltf_dd2cd85f-7f93-4f71-a562-765035fc0bfe.glb",
+        "flexFactor": null
+      },
+      {
+        "fileType": "gltf_godot",
+        "id": 652227,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/652227/",
+        "uuid": null,
+        "created": "2025-04-23T13:23:00.310211+02:00",
+        "isThumbnail": false,
+        "modified": "2025-04-23T13:23:00.310226+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 149720288,
+        "isFeatured": false,
+        "filename": "assets/8775e08b6ac74af386ad9f3d56d65afd/files/gltf_godot_ed3657a8-9194-4732-b3a7-98183f82f05b.glb",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_0_5K",
+        "id": 652233,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/652233/",
+        "uuid": null,
+        "created": "2025-04-23T13:24:01.786499+02:00",
+        "isThumbnail": false,
+        "modified": "2025-04-23T13:24:01.786513+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 3443031,
+        "isFeatured": false,
+        "filename": "assets/8775e08b6ac74af386ad9f3d56d65afd/files/resolution_0_5K_a87b8c92-fcdf-4c23-a971-e20c7d7b0fcb.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_1K",
+        "id": 652232,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/652232/",
+        "uuid": null,
+        "created": "2025-04-23T13:24:00.442829+02:00",
+        "isThumbnail": false,
+        "modified": "2025-04-23T13:24:00.442843+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 8062649,
+        "isFeatured": false,
+        "filename": "assets/8775e08b6ac74af386ad9f3d56d65afd/files/resolution_1K_ee866eae-2e64-4883-8c9e-c71c2ff21f18.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_2K",
+        "id": 652231,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/652231/",
+        "uuid": null,
+        "created": "2025-04-23T13:23:58.865986+02:00",
+        "isThumbnail": false,
+        "modified": "2025-04-23T13:23:58.866001+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 26498687,
+        "isFeatured": false,
+        "filename": "assets/8775e08b6ac74af386ad9f3d56d65afd/files/resolution_2K_3d5679e4-56ca-4bdb-8e44-e7e9378bbe03.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_4K",
+        "id": 652230,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/652230/",
+        "uuid": null,
+        "created": "2025-04-23T13:23:57.279068+02:00",
+        "isThumbnail": false,
+        "modified": "2025-04-23T13:23:57.279088+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 85797542,
+        "isFeatured": false,
+        "filename": "assets/8775e08b6ac74af386ad9f3d56d65afd/files/resolution_4K_cbcc8b84-21b2-4e69-b153-14dc83738650.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "thumbnail",
+        "id": 649087,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/649087/",
+        "uuid": null,
+        "fileThumbnail": "https://public.blenderkit.com/thumbnails/assets/8775e08b6ac74af386ad9f3d56d65afd/files/thumbnail_932c72df-a3ed-4aca-98d4-95ad5a8a1c36.jpg.96x96_q85_crop-%2C.jpg",
+        "fileThumbnailLarge": "https://public.blenderkit.com/thumbnails/assets/8775e08b6ac74af386ad9f3d56d65afd/files/thumbnail_932c72df-a3ed-4aca-98d4-95ad5a8a1c36.jpg.1024x1024_q85_crop-%2C.jpg",
+        "created": "2025-04-20T11:19:53.103549+02:00",
+        "isThumbnail": true,
+        "modified": "2025-12-23T02:34:27.050363+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 814438,
+        "width": 2160,
+        "height": 2160,
+        "isFeatured": false,
+        "filename": "assets/8775e08b6ac74af386ad9f3d56d65afd/files/thumbnail_932c72df-a3ed-4aca-98d4-95ad5a8a1c36.jpg",
+        "thumbnailSmallUrl": "https://public.blenderkit.com/thumbnails/assets/8775e08b6ac74af386ad9f3d56d65afd/files/thumbnail_932c72df-a3ed-4aca-98d4-95ad5a8a1c36.jpg.256x256_q85_crop-%2C.jpg",
+        "thumbnailMiddleUrl": "https://public.blenderkit.com/thumbnails/assets/8775e08b6ac74af386ad9f3d56d65afd/files/thumbnail_932c72df-a3ed-4aca-98d4-95ad5a8a1c36.jpg.512x512_q85_crop-%2C.jpg",
+        "thumbnailLargeUrl": "https://public.blenderkit.com/thumbnails/assets/8775e08b6ac74af386ad9f3d56d65afd/files/thumbnail_932c72df-a3ed-4aca-98d4-95ad5a8a1c36.jpg.1024x1024_q85_crop-%2C.jpg",
+        "thumbnailXlargeUrl": "https://public.blenderkit.com/thumbnails/assets/8775e08b6ac74af386ad9f3d56d65afd/files/thumbnail_932c72df-a3ed-4aca-98d4-95ad5a8a1c36.jpg.2048x2048_q85_crop-%2C.jpg",
+        "thumbnailSmallUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/8775e08b6ac74af386ad9f3d56d65afd/files/thumbnail_932c72df-a3ed-4aca-98d4-95ad5a8a1c36.jpg.256x256_q85.jpg",
+        "thumbnailMiddleUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/8775e08b6ac74af386ad9f3d56d65afd/files/thumbnail_932c72df-a3ed-4aca-98d4-95ad5a8a1c36.jpg.512x512_q85.jpg",
+        "thumbnailLargeUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/8775e08b6ac74af386ad9f3d56d65afd/files/thumbnail_932c72df-a3ed-4aca-98d4-95ad5a8a1c36.jpg.1024x1024_q85.jpg",
+        "thumbnailXlargeUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/8775e08b6ac74af386ad9f3d56d65afd/files/thumbnail_932c72df-a3ed-4aca-98d4-95ad5a8a1c36.jpg.2048x2048_q85.jpg",
+        "thumbnailSmallUrlWebp": "https://public.blenderkit.com/thumbnails/assets/8775e08b6ac74af386ad9f3d56d65afd/files/thumbnail_932c72df-a3ed-4aca-98d4-95ad5a8a1c36.jpg.256x256_q85_crop-%2C.jpg.webp?webp_generated=1766630103",
+        "thumbnailMiddleUrlWebp": "https://public.blenderkit.com/thumbnails/assets/8775e08b6ac74af386ad9f3d56d65afd/files/thumbnail_932c72df-a3ed-4aca-98d4-95ad5a8a1c36.jpg.512x512_q85_crop-%2C.jpg.webp?webp_generated=1766630103",
+        "thumbnailLargeUrlWebp": "https://public.blenderkit.com/thumbnails/assets/8775e08b6ac74af386ad9f3d56d65afd/files/thumbnail_932c72df-a3ed-4aca-98d4-95ad5a8a1c36.jpg.1024x1024_q85_crop-%2C.jpg.webp?webp_generated=1766630103",
+        "thumbnailXlargeUrlWebp": "https://public.blenderkit.com/thumbnails/assets/8775e08b6ac74af386ad9f3d56d65afd/files/thumbnail_932c72df-a3ed-4aca-98d4-95ad5a8a1c36.jpg.2048x2048_q85_crop-%2C.jpg.webp?webp_generated=1766630103",
+        "thumbnailSmallUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/8775e08b6ac74af386ad9f3d56d65afd/files/thumbnail_932c72df-a3ed-4aca-98d4-95ad5a8a1c36.jpg.256x256_q85.jpg.webp?webp_generated=1766630103",
+        "thumbnailMiddleUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/8775e08b6ac74af386ad9f3d56d65afd/files/thumbnail_932c72df-a3ed-4aca-98d4-95ad5a8a1c36.jpg.512x512_q85.jpg.webp?webp_generated=1766630103",
+        "thumbnailLargeUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/8775e08b6ac74af386ad9f3d56d65afd/files/thumbnail_932c72df-a3ed-4aca-98d4-95ad5a8a1c36.jpg.1024x1024_q85.jpg.webp?webp_generated=1766630103",
+        "thumbnailXlargeUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/8775e08b6ac74af386ad9f3d56d65afd/files/thumbnail_932c72df-a3ed-4aca-98d4-95ad5a8a1c36.jpg.2048x2048_q85.jpg.webp?webp_generated=1766630103",
+        "flexFactor": null
+      }
+    ],
+    "filesSize": 638991046,
+    "showMarketingLabels": true,
+    "webpGeneratedTimestamp": 1766630103,
+    "score": 1800.0,
+    "ratingsMedian": {
+      "bookmarks": 1.0,
+      "workingHours": 18.0,
+      "quality": 10.0,
+      "virtualPrice": null
+    },
+    "ratingsAverage": {
+      "bookmarks": 0.9877149877149877,
+      "workingHours": 18.0,
+      "quality": 10.0,
+      "virtualPrice": null
+    },
+    "ratingsCount": {
+      "bookmarks": 407,
+      "workingHours": 1,
+      "quality": 2,
+      "virtualPrice": 0
+    },
+    "ratingsSum": {
+      "bookmarks": 402.0,
+      "workingHours": 18.0,
+      "quality": 20.0,
+      "virtualPrice": null,
+      "score": 1800.0
+    },
+    "pageBlocks": null,
+    "access": "free",
+    "accessLabel": "Free",
+    "videoLink": "",
+    "lastPrxcUpload": null,
+    "lastGltfUpload": "2025-04-23T11:22:59.808933Z",
+    "lastThumbnailUpload": "2025-04-20T09:19:53.103549Z",
+    "lastAnimatedThumbnailUpload": null,
+    "lastGltfGodotUpload": "2025-04-23T11:23:00.310211Z",
+    "lastBlendUpload": "2025-04-20T09:20:26.947489Z",
+    "lastWireThumbnailUpload": null,
+    "lastZipFileUpload": null,
+    "lastVideoUpload": null,
+    "lastResolutionUpload": "2025-04-23T11:24:01.786499Z",
+    "lastPhotoThumbnailUpload": null
+  },
+  "acquisition": {
+    "role": "tree",
+    "name": "Decorative Urban Tree",
+    "asset_base_id": "c8af7417-b4d3-4cff-8a7a-b0afdb5a577f",
+    "version_id": "8775e08b-6ac7-4af3-86ad-9f3d56d65afd",
+    "author": "Davide Tirindelli",
+    "license": "cc_zero",
+    "is_free": true,
+    "source_url": "https://www.blenderkit.com/asset-gallery-detail/c8af7417-b4d3-4cff-8a7a-b0afdb5a577f/",
+    "api_url": "https://www.blenderkit.com/api/v1/assets/8775e08b-6ac7-4af3-86ad-9f3d56d65afd/",
+    "download_api": "https://www.blenderkit.com/api/v1/downloads/652232/?scene_uuid=4dc0a9ec-7f99-4640-841e-efff26006906",
+    "library_file_type": "resolution_1K",
+    "downloaded_original_file": "assets_external/vegetation/tree/original/tree_c8af7417-b4d3-4cff-8a7a-b0afdb5a577f_1k_download.blend.zst",
+    "downloaded_original_bytes": 8062649,
+    "downloaded_original_sha256": "9D8790C6CEFB3052981E75227B07B053A85A11EF3C3817FEF6DC4314FFD066F2",
+    "decompressed_source_file": "assets_external/vegetation/tree/original/tree_c8af7417-b4d3-4cff-8a7a-b0afdb5a577f_1k_source.blend",
+    "decompressed_source_bytes": 14312212,
+    "decompressed_source_sha256": "8E6B0BC6288E3A3154272ABC0231453C9B259EE3E7F2D8B9D8A604A121495471",
+    "transport_compression": "zstd-concatenated"
+  }
+}

@@ -1,0 +1,395 @@
+{
+  "asset": {
+    "pk": 209223,
+    "url": "https://www.blenderkit.com/api/v1/assets/6c105d2e-e4a3-4e6e-a91a-c47d6e0326a1/",
+    "id": "6c105d2e-e4a3-4e6e-a91a-c47d6e0326a1",
+    "assetBaseId": "8bc7ee74-03f9-428c-961d-7441b8ecb04e",
+    "versionNumber": 1,
+    "author": {
+      "id": 2905,
+      "firstName": "Akshay",
+      "lastName": "Gawarikar",
+      "gravatarHash": "9f0a8b3efb5f1ad548b3dcfb2ed2cade",
+      "avatar128": "/avatar-redirect/09e2cb76-9ef5-4b68-ad9a-ad619be13b50/128/",
+      "avatar256": "/avatar-redirect/09e2cb76-9ef5-4b68-ad9a-ad619be13b50/256/",
+      "avatar512": "/avatar-redirect/09e2cb76-9ef5-4b68-ad9a-ad619be13b50/512/",
+      "aboutMe": "",
+      "aboutMeUrl": "https://www.behance.net/akshaygawarikar",
+      "fullName": "Akshay Gawarikar",
+      "socialNetworks": []
+    },
+    "name": "Jiechen Table",
+    "displayName": "Jiechen Table",
+    "description": "A simple table inspired from Jiechen Design. Not exact replica and not created from drawings.",
+    "descriptionHtml": "<p>A simple table inspired from Jiechen Design. Not exact replica and not created from drawings.</p>",
+    "assetType": "model",
+    "category": "table",
+    "isFree": true,
+    "isForSale": false,
+    "basePrice": null,
+    "tags": [
+      "simple",
+      "table",
+      "dining",
+      "minimalist",
+      "interior",
+      "model",
+      "setup"
+    ],
+    "license": "cc_zero",
+    "parameters": [
+      {
+        "parameterType": "faceCount",
+        "value": 1452
+      },
+      {
+        "parameterType": "textureResolutionMax",
+        "value": 2048
+      },
+      {
+        "parameterType": "productionLevel",
+        "value": "finished"
+      },
+      {
+        "parameterType": "procedural",
+        "value": false
+      },
+      {
+        "parameterType": "modelStyle",
+        "value": "realistic"
+      },
+      {
+        "parameterType": "condition",
+        "value": "new"
+      },
+      {
+        "parameterType": "validatedManufacturer",
+        "value": false
+      },
+      {
+        "parameterType": "validatedManufacturerDate",
+        "value": "2026-03-05T14:12:26.562750+00:00"
+      },
+      {
+        "parameterType": "validatedManufacturerOutput",
+        "value": "No evidence found for manufacturer “Jiech Luxury Furniture”; search returned unrelated results and the asset is described only as ‘inspired from Jiechen Design’ with no verifiable brand, designer, or collection.\nmanufacturer: Jiech Luxury Furniture|designer: Not Available|designCollection: Not Available|designVariant: Not Available"
+      },
+      {
+        "parameterType": "validatedManufacturerActor",
+        "value": "ai"
+      },
+      {
+        "parameterType": "purePbr",
+        "value": true
+      },
+      {
+        "parameterType": "shaders",
+        "value": "[principled]"
+      },
+      {
+        "parameterType": "animated",
+        "value": false
+      },
+      {
+        "parameterType": "pbrType",
+        "value": "metallic"
+      },
+      {
+        "parameterType": "uv",
+        "value": true
+      },
+      {
+        "parameterType": "textureResolutionMin",
+        "value": 512
+      },
+      {
+        "parameterType": "engines",
+        "value": "[cycles]"
+      },
+      {
+        "parameterType": "modifiers",
+        "value": "[weighted normal]"
+      },
+      {
+        "parameterType": "materials",
+        "value": "[Wood Smooth Walnut Black&white marble]"
+      },
+      {
+        "parameterType": "rig",
+        "value": false
+      },
+      {
+        "parameterType": "simulation",
+        "value": false
+      },
+      {
+        "parameterType": "dimensionX",
+        "value": 1.8288
+      },
+      {
+        "parameterType": "dimensionY",
+        "value": 0.762
+      },
+      {
+        "parameterType": "dimensionZ",
+        "value": 0.7604
+      },
+      {
+        "parameterType": "boundBoxMinX",
+        "value": -0.9144
+      },
+      {
+        "parameterType": "boundBoxMinY",
+        "value": -0.381
+      },
+      {
+        "parameterType": "boundBoxMinZ",
+        "value": 0.0
+      },
+      {
+        "parameterType": "boundBoxMaxX",
+        "value": 0.9144
+      },
+      {
+        "parameterType": "boundBoxMaxY",
+        "value": 0.381
+      },
+      {
+        "parameterType": "boundBoxMaxZ",
+        "value": 0.7604
+      },
+      {
+        "parameterType": "faceCountRender",
+        "value": 1452
+      },
+      {
+        "parameterType": "meshPolyType",
+        "value": "quad_dominant"
+      },
+      {
+        "parameterType": "manifold",
+        "value": false
+      },
+      {
+        "parameterType": "objectCount",
+        "value": 10
+      },
+      {
+        "parameterType": "nodeCount",
+        "value": 40
+      },
+      {
+        "parameterType": "textureCount",
+        "value": 11
+      },
+      {
+        "parameterType": "megapixels",
+        "value": 40
+      },
+      {
+        "parameterType": "gltfGeneratedDate",
+        "value": "2026-03-05"
+      },
+      {
+        "parameterType": "gltfGodotGeneratedDate",
+        "value": "2026-03-05"
+      }
+    ],
+    "sourceAppName": "blender",
+    "sourceAppVersion": "5.0.0",
+    "addonVersion": "3.19.0",
+    "created": "2026-03-01T20:13:55.595285+01:00",
+    "lastUserInteraction": "2026-03-04T17:51:39.621411+01:00",
+    "verificationStatus": "validated",
+    "isPrivate": false,
+    "files": [
+      {
+        "fileType": "blend",
+        "id": 998799,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/998799/",
+        "uuid": null,
+        "created": "2026-03-05T15:05:27.599663+01:00",
+        "isThumbnail": false,
+        "modified": "2026-03-05T15:05:27.599685+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 6343732,
+        "isFeatured": false,
+        "filename": "assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/blend_0e782da3-29f1-403a-87d2-99768d78528c.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "gltf",
+        "id": 998820,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/998820/",
+        "uuid": null,
+        "created": "2026-03-05T15:28:34.790616+01:00",
+        "isThumbnail": false,
+        "modified": "2026-03-05T15:28:34.790632+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 309664,
+        "isFeatured": false,
+        "filename": "assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/gltf_9d82cb74-0807-428b-b586-b98b6d507b50.glb",
+        "flexFactor": null
+      },
+      {
+        "fileType": "gltf_godot",
+        "id": 998819,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/998819/",
+        "uuid": null,
+        "created": "2026-03-05T15:28:17.644233+01:00",
+        "isThumbnail": false,
+        "modified": "2026-03-05T15:28:17.644248+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 504252,
+        "isFeatured": false,
+        "filename": "assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/gltf_godot_bfcacd84-1ea4-456b-9449-3cd5d188a8c3.glb",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_0_5K",
+        "id": 998805,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/998805/",
+        "uuid": null,
+        "created": "2026-03-05T15:13:12.749755+01:00",
+        "isThumbnail": false,
+        "modified": "2026-03-05T15:13:12.749775+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 528090,
+        "isFeatured": false,
+        "filename": "assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/resolution_0_5K_c11096a8-4334-40ab-849f-39a76df05b18.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_1K",
+        "id": 998804,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/998804/",
+        "uuid": null,
+        "created": "2026-03-05T15:13:11.987051+01:00",
+        "isThumbnail": false,
+        "modified": "2026-03-05T15:13:11.987068+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 1673654,
+        "isFeatured": false,
+        "filename": "assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/resolution_1K_518640cc-eb35-4516-bd62-21ea85d27133.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_2K",
+        "id": 998803,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/998803/",
+        "uuid": null,
+        "created": "2026-03-05T15:13:11.361811+01:00",
+        "isThumbnail": false,
+        "modified": "2026-03-05T15:13:11.361830+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 6334528,
+        "isFeatured": false,
+        "filename": "assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/resolution_2K_253bc39c-84b2-48b0-9882-4cedc39a16c6.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "thumbnail",
+        "id": 997521,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/997521/",
+        "uuid": null,
+        "fileThumbnail": "https://public.blenderkit.com/thumbnails/assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/thumbnail_eedff349-1f4b-450d-8039-4b7c6c97228b.jpg.96x96_q85_crop-%2C.jpg",
+        "fileThumbnailLarge": "https://public.blenderkit.com/thumbnails/assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/thumbnail_eedff349-1f4b-450d-8039-4b7c6c97228b.jpg.1024x1024_q85_crop-%2C.jpg",
+        "created": "2026-03-04T17:51:31.341223+01:00",
+        "isThumbnail": true,
+        "modified": "2026-03-04T17:51:31.341238+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 649913,
+        "width": 1500,
+        "height": 1500,
+        "isFeatured": false,
+        "filename": "assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/thumbnail_eedff349-1f4b-450d-8039-4b7c6c97228b.jpg",
+        "thumbnailSmallUrl": "https://public.blenderkit.com/thumbnails/assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/thumbnail_eedff349-1f4b-450d-8039-4b7c6c97228b.jpg.256x256_q85_crop-%2C.jpg",
+        "thumbnailMiddleUrl": "https://public.blenderkit.com/thumbnails/assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/thumbnail_eedff349-1f4b-450d-8039-4b7c6c97228b.jpg.512x512_q85_crop-%2C.jpg",
+        "thumbnailLargeUrl": "https://public.blenderkit.com/thumbnails/assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/thumbnail_eedff349-1f4b-450d-8039-4b7c6c97228b.jpg.1024x1024_q85_crop-%2C.jpg",
+        "thumbnailXlargeUrl": "https://public.blenderkit.com/thumbnails/assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/thumbnail_eedff349-1f4b-450d-8039-4b7c6c97228b.jpg.2048x2048_q85_crop-%2C.jpg",
+        "thumbnailSmallUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/thumbnail_eedff349-1f4b-450d-8039-4b7c6c97228b.jpg.256x256_q85.jpg",
+        "thumbnailMiddleUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/thumbnail_eedff349-1f4b-450d-8039-4b7c6c97228b.jpg.512x512_q85.jpg",
+        "thumbnailLargeUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/thumbnail_eedff349-1f4b-450d-8039-4b7c6c97228b.jpg.1024x1024_q85.jpg",
+        "thumbnailXlargeUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/thumbnail_eedff349-1f4b-450d-8039-4b7c6c97228b.jpg.2048x2048_q85.jpg",
+        "thumbnailSmallUrlWebp": "https://public.blenderkit.com/thumbnails/assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/thumbnail_eedff349-1f4b-450d-8039-4b7c6c97228b.jpg.256x256_q85_crop-%2C.jpg.webp?webp_generated=1772720153",
+        "thumbnailMiddleUrlWebp": "https://public.blenderkit.com/thumbnails/assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/thumbnail_eedff349-1f4b-450d-8039-4b7c6c97228b.jpg.512x512_q85_crop-%2C.jpg.webp?webp_generated=1772720153",
+        "thumbnailLargeUrlWebp": "https://public.blenderkit.com/thumbnails/assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/thumbnail_eedff349-1f4b-450d-8039-4b7c6c97228b.jpg.1024x1024_q85_crop-%2C.jpg.webp?webp_generated=1772720153",
+        "thumbnailXlargeUrlWebp": "https://public.blenderkit.com/thumbnails/assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/thumbnail_eedff349-1f4b-450d-8039-4b7c6c97228b.jpg.2048x2048_q85_crop-%2C.jpg.webp?webp_generated=1772720153",
+        "thumbnailSmallUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/thumbnail_eedff349-1f4b-450d-8039-4b7c6c97228b.jpg.256x256_q85.jpg.webp?webp_generated=1772720153",
+        "thumbnailMiddleUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/thumbnail_eedff349-1f4b-450d-8039-4b7c6c97228b.jpg.512x512_q85.jpg.webp?webp_generated=1772720153",
+        "thumbnailLargeUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/thumbnail_eedff349-1f4b-450d-8039-4b7c6c97228b.jpg.1024x1024_q85.jpg.webp?webp_generated=1772720153",
+        "thumbnailXlargeUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/6c105d2ee4a34e6ea91ac47d6e0326a1/files/thumbnail_eedff349-1f4b-450d-8039-4b7c6c97228b.jpg.2048x2048_q85.jpg.webp?webp_generated=1772720153",
+        "flexFactor": null
+      }
+    ],
+    "filesSize": 16343833,
+    "showMarketingLabels": true,
+    "webpGeneratedTimestamp": 1772720153,
+    "score": 175.0,
+    "ratingsMedian": {
+      "bookmarks": 1.0,
+      "workingHours": 2.5,
+      "quality": 7.0,
+      "virtualPrice": null
+    },
+    "ratingsAverage": {
+      "bookmarks": 1.0,
+      "workingHours": 2.5,
+      "quality": 7.0,
+      "virtualPrice": null
+    },
+    "ratingsCount": {
+      "bookmarks": 13,
+      "workingHours": 1,
+      "quality": 1,
+      "virtualPrice": 0
+    },
+    "ratingsSum": {
+      "bookmarks": 13.0,
+      "workingHours": 2.5,
+      "quality": 7.0,
+      "virtualPrice": null,
+      "score": 175.0
+    },
+    "pageBlocks": null,
+    "access": "free",
+    "accessLabel": "Free",
+    "videoLink": "",
+    "lastPrxcUpload": null,
+    "lastGltfUpload": "2026-03-05T14:28:34.790616Z",
+    "lastThumbnailUpload": "2026-03-04T16:51:31.341223Z",
+    "lastAnimatedThumbnailUpload": null,
+    "lastGltfGodotUpload": "2026-03-05T14:28:17.644233Z",
+    "lastBlendUpload": "2026-03-05T14:05:27.599663Z",
+    "lastWireThumbnailUpload": null,
+    "lastZipFileUpload": null,
+    "lastVideoUpload": null,
+    "lastResolutionUpload": "2026-03-05T14:13:12.749755Z",
+    "lastPhotoThumbnailUpload": null
+  },
+  "acquisition": {
+    "role": "table",
+    "asset_id": "6c105d2e-e4a3-4e6e-a91a-c47d6e0326a1",
+    "name": "Jiechen Table",
+    "author": "Akshay Gawarikar",
+    "license": "cc_zero",
+    "is_free": true,
+    "verification_status": "validated",
+    "source_url": "https://www.blenderkit.com/asset-gallery-detail/6c105d2e-e4a3-4e6e-a91a-c47d6e0326a1/",
+    "api_url": "https://www.blenderkit.com/api/v1/assets/6c105d2e-e4a3-4e6e-a91a-c47d6e0326a1/",
+    "download_api": "https://www.blenderkit.com/api/v1/downloads/998820/?scene_uuid=f2f12068-dd0d-4c90-8c68-95c3ef640dc4",
+    "library_file_type": "gltf",
+    "library_file_uuid": "c6160ed9-f24c-4a47-b226-d7475dee7a67",
+    "local_file": "assets_external/models/table/original/table_6c105d2e-e4a3-4e6e-a91a-c47d6e0326a1_library.glb",
+    "bytes": 309664,
+    "sha256": "B412E83EC87D4BBB81A5C1EF69016AA1D4DB30D72BDE920F784AEB13C274416E",
+    "dict_parameters": {}
+  }
+}

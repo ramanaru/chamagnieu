@@ -1,0 +1,504 @@
+{
+  "schema_version": "1.0",
+  "research_date": "2026-08-16",
+  "scope": "Phase pilote Chamagnieu V18 - enduit de façade propre et pelouse crédible, avec options toiture et sol extérieur",
+  "official_sources_only": true,
+  "download_performed": false,
+  "integration_performed": false,
+  "asset_body_downloaded": false,
+  "score_scale": {
+    "realism": 10,
+    "style_match": 10,
+    "geometry_quality": 10,
+    "texture_quality": 10,
+    "performance": 10,
+    "license_confidence": 10,
+    "total": 60
+  },
+  "score_interpretation": {
+    "geometry_quality_for_materials": "Qualité du relief PBR (normal, height, displacement), échelle physique et aptitude au tiling; il ne s’agit pas d’un maillage 3D.",
+    "status": "Scores de présélection documentaire; validation visuelle dans le LIVE WEB VIEWER encore requise."
+  },
+  "license_rules": {
+    "poly_haven_assets": {
+      "license": "CC0 1.0 / public-domain dedication",
+      "license_url": "https://polyhaven.com/license",
+      "commercial_use": true,
+      "web_application_use": true,
+      "modification": true,
+      "redistribution_in_product": true,
+      "attribution_required_for_assets": false,
+      "evidence": "La licence officielle indique que tous les assets sont CC0 et peuvent être utilisés commercialement, redistribués et inclus dans un produit sans attribution obligatoire."
+    },
+    "poly_haven_live_api": {
+      "terms_url": "https://polyhaven.com/our-api",
+      "commercial_use": true,
+      "api_key_required_for_default_endpoints": false,
+      "attribution_required_when_live_api_is_used_in_product": true,
+      "unique_user_agent_required": true,
+      "implementation_rule": "Utiliser l’API pendant le build et mettre en cache localement. Si le produit déployé appelle l’API live, afficher un crédit Poly Haven clair et envoyer un User-Agent unique."
+    },
+    "ambientcg_assets": {
+      "license": "CC0 1.0 Universal",
+      "license_url": "https://docs.ambientcg.com/license/",
+      "commercial_use": true,
+      "web_application_use": true,
+      "modification": true,
+      "raw_files_may_be_included_in_project": true,
+      "redistribution_in_product": true,
+      "attribution_required": false,
+      "evidence": "La documentation officielle couvre tous les fichiers et previews, autorise copie, modification, distribution et usage commercial, et permet l’inclusion des fichiers bruts dans un jeu/projet."
+    },
+    "ambientcg_api": {
+      "version": "v3",
+      "documentation_url": "https://docs.ambientcg.com/api/v3/",
+      "assets_endpoint": "https://ambientcg.com/api/v3/assets",
+      "implementation_rule": "Utiliser v3, résoudre le download record, suivre la redirection officielle /get, puis mettre le fichier en cache local."
+    },
+    "cgbookcase_assets": {
+      "license": "CC0 1.0 Universal",
+      "catalog_license_url": "https://www.cgbookcase.com/textures?category=All",
+      "commercial_use": true,
+      "web_application_use": true,
+      "modification": true,
+      "redistribution_in_product": true,
+      "attribution_required": false,
+      "download_note": "Les pages officielles exposent les fichiers CDN. Un GET navigateur borné avec Referer réussit, mais HEAD retourne 403; télécharger au build et ne pas hotlinker."
+    }
+  },
+  "current_live_materials": {
+    "facade": {
+      "material_names": [
+        "V12_PBR_OFFWHITE_STUCCO",
+        "V10_STUCCO_NEW_BUILD"
+      ],
+      "source_asset": "Poly Haven White Stucco / white_stucco",
+      "finding": "La bonne source existe déjà. Le gain attendu vient d’abord du wiring AO, normal et ARM, du tiling et de la colorimétrie."
+    },
+    "lawn": {
+      "material_name": "PBR_B_GRASS",
+      "source_asset": "Poly Haven Leafy Grass / leafy_grass",
+      "finding": "La source contient feuilles brunes et brindilles et apparaît trop beige pour une pelouse résidentielle propre."
+    }
+  },
+  "facade_candidates": [
+    {
+      "rank": 1,
+      "selected_for_pilot": true,
+      "decision": "PRIMARY_CONTROL_RETAIN_AND_RETUNE",
+      "name": "White Stucco",
+      "provider": "Poly Haven",
+      "asset_id": "white_stucco",
+      "page_url": "https://polyhaven.com/a/white_stucco",
+      "official_metadata_url": "https://api.polyhaven.com/info/white_stucco",
+      "official_files_url": "https://api.polyhaven.com/files/white_stucco",
+      "author": ["Amal Kumar"],
+      "license": "CC0 1.0",
+      "attribution_required": false,
+      "physical_dimensions_mm": [1998, 1998],
+      "available_resolutions": ["1K", "2K", "4K", "8K"],
+      "maps": ["Diffuse", "AO", "ARM", "Roughness", "Normal OpenGL", "Normal DirectX", "Displacement"],
+      "formats": ["JPG", "PNG", "EXR", "glTF material", "Blend", "MaterialX"],
+      "normal_for_web": "OpenGL / nor_gl",
+      "download_automation": {
+        "method": "Official /files API with unique User-Agent",
+        "recommended_profile": "2K JPG diffuse + normal OpenGL + ARM; ignore sample plane BIN",
+        "descriptor_url": "https://dl.polyhaven.org/file/ph-assets/Textures/gltf/2k/white_stucco/white_stucco_2k.gltf",
+        "descriptor_bytes": 2782,
+        "image_dependency_bytes": 7742799,
+        "full_gltf_dependency_set_bytes": 10116001,
+        "direct_map_urls": {
+          "diffuse": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/white_stucco/white_stucco_diff_2k.jpg",
+          "normal_gl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/white_stucco/white_stucco_nor_gl_2k.jpg",
+          "arm": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/white_stucco/white_stucco_arm_2k.jpg"
+        },
+        "probe_result": "metadata API 200; files API 200; descriptor Range GET 206",
+        "automation_confidence": "high"
+      },
+      "score": {
+        "realism": 9,
+        "style_match": 10,
+        "geometry_quality": 9,
+        "texture_quality": 10,
+        "performance": 8,
+        "license_confidence": 10,
+        "total": 56
+      },
+      "selection_note": "Déjà présent dans les matériaux live. Conserver, corriger tiling et wiring PBR, puis comparer en façade rapprochée."
+    },
+    {
+      "rank": 2,
+      "selected_for_pilot": false,
+      "decision": "ALTERNATE_IF_PRIMARY_REMAINS_TOO_SMOOTH",
+      "name": "Plaster 001",
+      "provider": "ambientCG",
+      "asset_id": "Plaster001",
+      "page_url": "https://ambientcg.com/a/Plaster001",
+      "official_metadata_url": "https://ambientcg.com/api/v3/assets?id=Plaster001&include=title,url,tags,dimensions,maps,downloads",
+      "author": ["ambientCG"],
+      "license": "CC0 1.0 Universal",
+      "attribution_required": false,
+      "available_resolutions": ["1K", "2K", "4K", "8K"],
+      "maps": ["Color", "Displacement", "Normal", "Roughness"],
+      "formats": ["JPG ZIP", "PNG ZIP"],
+      "download_automation": {
+        "method": "Official v3 API then official /get redirect",
+        "recommended_profile": "2K JPG ZIP",
+        "download_url": "https://ambientcg.com/get?file=Plaster001_2K-JPG.zip",
+        "archive_bytes": 26140483,
+        "probe_result": "API 200; download 302 then Range GET 206",
+        "automation_confidence": "high"
+      },
+      "score": {
+        "realism": 8,
+        "style_match": 9,
+        "geometry_quality": 8,
+        "texture_quality": 9,
+        "performance": 7,
+        "license_confidence": 10,
+        "total": 51
+      },
+      "selection_note": "Alternative plus rugueuse, mais archive lourde et aucune AO publiée dans l’enregistrement consulté."
+    },
+    {
+      "rank": 3,
+      "selected_for_pilot": false,
+      "decision": "SECONDARY_ALTERNATE",
+      "name": "White Stucco Wall 03",
+      "provider": "CGBookcase",
+      "asset_id": "WhiteStuccoWall03",
+      "page_url": "https://www.cgbookcase.com/textures/white-stucco-wall-03",
+      "author": ["CGBookcase"],
+      "license": "CC0 1.0 Universal",
+      "attribution_required": false,
+      "available_resolutions": ["1K", "2K", "3K", "4K"],
+      "maps": ["AO", "Base Color", "Height", "Normal DirectX", "Roughness", "packed MR variants"],
+      "normal_for_web": "Invert green channel if OpenGL normal is required",
+      "download_automation": {
+        "method": "Direct file URL from official page; browser-like GET with Referer; cache locally",
+        "recommended_profile": "2K MR ZIP",
+        "download_url": "https://cgbookcase-volume.b-cdn.net/t/WhiteStuccoWall03_MR_2K.zip",
+        "archive_bytes": 25941850,
+        "probe_result": "official page 200; Range GET 206; HEAD 403",
+        "automation_confidence": "medium"
+      },
+      "score": {
+        "realism": 8,
+        "style_match": 9,
+        "geometry_quality": 8,
+        "texture_quality": 9,
+        "performance": 7,
+        "license_confidence": 10,
+        "total": 51
+      },
+      "selection_note": "Maps complètes, mais normal DX à convertir et URL brute moins robuste que les API."
+    },
+    {
+      "rank": 4,
+      "selected_for_pilot": false,
+      "decision": "SMOOTH_FALLBACK",
+      "name": "White Plaster 02",
+      "provider": "Poly Haven",
+      "asset_id": "white_plaster_02",
+      "page_url": "https://polyhaven.com/a/white_plaster_02",
+      "official_metadata_url": "https://api.polyhaven.com/info/white_plaster_02",
+      "official_files_url": "https://api.polyhaven.com/files/white_plaster_02",
+      "author": ["Rob Tuytel"],
+      "license": "CC0 1.0",
+      "attribution_required": false,
+      "physical_dimensions_mm": [1000, 1000],
+      "available_resolutions": ["1K", "2K", "4K", "8K"],
+      "maps": ["Diffuse", "AO", "ARM", "Roughness", "Normal OpenGL", "Normal DirectX", "Displacement", "Bump"],
+      "download_automation": {
+        "method": "Official /files API with unique User-Agent",
+        "recommended_profile": "2K JPG glTF material dependency set",
+        "descriptor_url": "https://dl.polyhaven.org/file/ph-assets/Textures/gltf/2k/white_plaster_02/white_plaster_02_2k.gltf",
+        "descriptor_bytes": 2734,
+        "image_dependency_bytes": 7552573,
+        "full_gltf_dependency_set_bytes": 9925375,
+        "probe_result": "metadata API 200; files API 200; descriptor Range GET 206",
+        "automation_confidence": "high"
+      },
+      "score": {
+        "realism": 8,
+        "style_match": 8,
+        "geometry_quality": 7,
+        "texture_quality": 9,
+        "performance": 8,
+        "license_confidence": 10,
+        "total": 50
+      },
+      "selection_note": "Repli propre et lisse, mais risque de conserver une façade trop plate."
+    }
+  ],
+  "grass_candidates": [
+    {
+      "rank": 1,
+      "selected_for_pilot": true,
+      "decision": "PRIMARY_PILOT_REPLACEMENT",
+      "name": "Grass 005",
+      "provider": "ambientCG",
+      "asset_id": "Grass005",
+      "page_url": "https://ambientcg.com/a/Grass005",
+      "official_metadata_url": "https://ambientcg.com/api/v3/assets?id=Grass005&include=title,url,tags,dimensions,maps,downloads",
+      "author": ["ambientCG"],
+      "license": "CC0 1.0 Universal",
+      "attribution_required": false,
+      "available_resolutions": ["1K", "2K", "4K", "8K"],
+      "maps": ["Color", "Displacement", "Normal", "Roughness", "Ambient Occlusion"],
+      "tags_used_for_selection": ["clean", "grass", "green", "lawn", "short"],
+      "download_automation": {
+        "method": "Official v3 API then official /get redirect",
+        "recommended_profile": "2K JPG ZIP; derive local optimized Web maps",
+        "download_url": "https://ambientcg.com/get?file=Grass005_2K-JPG.zip",
+        "archive_bytes": 39523019,
+        "probe_result": "API 200; download 302 then Range GET 206",
+        "automation_confidence": "high"
+      },
+      "score": {
+        "realism": 9,
+        "style_match": 10,
+        "geometry_quality": 9,
+        "texture_quality": 10,
+        "performance": 7,
+        "license_confidence": 10,
+        "total": 55
+      },
+      "selection_note": "Pilote principal : pelouse courte, propre, verte et PBR complète."
+    },
+    {
+      "rank": 2,
+      "selected_for_pilot": false,
+      "decision": "DARKER_LUSH_ALTERNATE",
+      "name": "Grass 004",
+      "provider": "ambientCG",
+      "asset_id": "Grass004",
+      "page_url": "https://ambientcg.com/a/Grass004",
+      "official_metadata_url": "https://ambientcg.com/api/v3/assets?id=Grass004&include=title,url,tags,dimensions,maps,downloads",
+      "author": ["ambientCG"],
+      "license": "CC0 1.0 Universal",
+      "attribution_required": false,
+      "physical_dimensions_mm": [1400, 1400],
+      "available_resolutions": ["1K", "2K", "4K", "8K"],
+      "maps": ["Color", "Displacement", "Normal", "Roughness", "Ambient Occlusion"],
+      "tags_used_for_selection": ["dense", "garden", "green", "lawn", "lush", "natural", "short", "suburban"],
+      "download_automation": {
+        "method": "Official v3 API then official /get redirect",
+        "recommended_profile": "2K JPG ZIP",
+        "download_url": "https://ambientcg.com/get?file=Grass004_2K-JPG.zip",
+        "archive_bytes": 39900302,
+        "probe_result": "API 200; download 302 then Range GET 206",
+        "automation_confidence": "high"
+      },
+      "score": {
+        "realism": 9,
+        "style_match": 9,
+        "geometry_quality": 9,
+        "texture_quality": 10,
+        "performance": 7,
+        "license_confidence": 10,
+        "total": 54
+      },
+      "selection_note": "Excellent A/B plus sombre, dense et explicitement suburbain."
+    },
+    {
+      "rank": 3,
+      "selected_for_pilot": false,
+      "decision": "REJECT_FOR_MAIN_LAWN_KEEP_FOR_WILD_EDGES",
+      "name": "Leafy Grass",
+      "provider": "Poly Haven",
+      "asset_id": "leafy_grass",
+      "page_url": "https://polyhaven.com/a/leafy_grass",
+      "official_metadata_url": "https://api.polyhaven.com/info/leafy_grass",
+      "official_files_url": "https://api.polyhaven.com/files/leafy_grass",
+      "author": ["Charlotte Baglioni"],
+      "license": "CC0 1.0",
+      "attribution_required": false,
+      "physical_dimensions_mm": [2000, 2000],
+      "available_resolutions": ["1K", "2K", "4K", "8K"],
+      "maps": ["Diffuse", "AO", "ARM", "Roughness", "Normal OpenGL", "Normal DirectX", "Displacement", "Mask"],
+      "download_automation": {
+        "method": "Official /files API with unique User-Agent",
+        "recommended_profile": "2K only if reused on wild edge zones",
+        "descriptor_url": "https://dl.polyhaven.org/file/ph-assets/Textures/gltf/2k/leafy_grass/leafy_grass_2k.gltf",
+        "full_gltf_dependency_set_bytes": 17303259,
+        "probe_result": "metadata API 200; files API 200; descriptor Range GET 206",
+        "automation_confidence": "high"
+      },
+      "score": {
+        "realism": 8,
+        "style_match": 4,
+        "geometry_quality": 9,
+        "texture_quality": 10,
+        "performance": 6,
+        "license_confidence": 10,
+        "total": 47
+      },
+      "selection_note": "Source actuelle. Les feuilles brunes et brindilles expliquent le rendu beige; seulement utile en bordure sauvage."
+    },
+    {
+      "rank": 4,
+      "selected_for_pilot": false,
+      "decision": "REJECT_FOR_MAIN_LAWN",
+      "name": "Grass 01",
+      "provider": "CGBookcase",
+      "asset_id": "Grass01",
+      "page_url": "https://www.cgbookcase.com/textures/grass-01",
+      "author": ["CGBookcase"],
+      "license": "CC0 1.0 Universal",
+      "attribution_required": false,
+      "available_resolutions": ["1K", "2K"],
+      "maps": ["AO", "Base Color", "Height", "Normal DirectX", "Roughness", "packed MR variants"],
+      "normal_for_web": "Invert green channel if OpenGL normal is required",
+      "download_automation": {
+        "method": "Direct file URL from official page; browser-like GET with Referer; cache locally",
+        "recommended_profile": "2K MR ZIP",
+        "download_url": "https://cgbookcase-volume.b-cdn.net/t/Grass01_MR_2K.zip",
+        "archive_bytes": 34906867,
+        "probe_result": "official page 200; Range GET 206; HEAD 403",
+        "automation_confidence": "medium"
+      },
+      "score": {
+        "realism": 7,
+        "style_match": 6,
+        "geometry_quality": 7,
+        "texture_quality": 9,
+        "performance": 7,
+        "license_confidence": 10,
+        "total": 46
+      },
+      "selection_note": "PBR complet mais couleur pâle/sèche et résolution maximale 2K."
+    }
+  ],
+  "optional_candidates": [
+    {
+      "rank": 1,
+      "category": "roof",
+      "decision": "OPTIONAL_NEXT_PASS",
+      "name": "Clay Roof Tiles 03",
+      "provider": "Poly Haven",
+      "asset_id": "clay_roof_tiles_03",
+      "page_url": "https://polyhaven.com/a/clay_roof_tiles_03",
+      "official_files_url": "https://api.polyhaven.com/files/clay_roof_tiles_03",
+      "license": "CC0 1.0",
+      "maps": ["Diffuse", "AO", "ARM", "Roughness", "Normal OpenGL", "Normal DirectX", "Displacement"],
+      "available_resolutions": ["1K", "2K", "4K", "8K"],
+      "physical_dimensions_mm": [2600, 2600],
+      "download_url": "https://dl.polyhaven.org/file/ph-assets/Textures/gltf/2k/clay_roof_tiles_03/clay_roof_tiles_03_2k.gltf",
+      "full_gltf_dependency_set_bytes": 12423671,
+      "probe_result": "metadata API 200; files API 200; descriptor Range GET 206",
+      "score": {
+        "realism": 9,
+        "style_match": 8,
+        "geometry_quality": 9,
+        "texture_quality": 10,
+        "performance": 7,
+        "license_confidence": 10,
+        "total": 53
+      }
+    },
+    {
+      "rank": 2,
+      "category": "driveway",
+      "decision": "OPTIONAL_NEXT_PASS",
+      "name": "Clean Asphalt",
+      "provider": "Poly Haven",
+      "asset_id": "clean_asphalt",
+      "page_url": "https://polyhaven.com/a/clean_asphalt",
+      "official_files_url": "https://api.polyhaven.com/files/clean_asphalt",
+      "license": "CC0 1.0",
+      "maps": ["Diffuse", "AO", "ARM", "Roughness", "Normal OpenGL", "Normal DirectX", "Displacement"],
+      "available_resolutions": ["1K", "2K", "4K", "8K"],
+      "physical_dimensions_mm": [2100, 2100],
+      "download_url": "https://dl.polyhaven.org/file/ph-assets/Textures/gltf/2k/clean_asphalt/clean_asphalt_2k.gltf",
+      "full_gltf_dependency_set_bytes": 13073081,
+      "probe_result": "metadata API 200; files API 200; descriptor Range GET 206",
+      "score": {
+        "realism": 9,
+        "style_match": 9,
+        "geometry_quality": 8,
+        "texture_quality": 10,
+        "performance": 7,
+        "license_confidence": 10,
+        "total": 53
+      }
+    },
+    {
+      "rank": 3,
+      "category": "driveway",
+      "decision": "OPTIONAL_ALTERNATE",
+      "name": "Asphalt 01",
+      "provider": "CGBookcase",
+      "asset_id": "Asphalt01",
+      "page_url": "https://www.cgbookcase.com/textures/asphalt-01",
+      "license": "CC0 1.0 Universal",
+      "maps": ["AO", "Base Color", "Height", "Normal DirectX", "Roughness", "packed MR variants"],
+      "available_resolutions": ["1K", "2K", "3K", "4K"],
+      "download_url": "https://cgbookcase-volume.b-cdn.net/t/Asphalt01_MR_2K.zip",
+      "archive_bytes": 35399047,
+      "probe_result": "official page 200; Range GET 206; HEAD 403",
+      "score": {
+        "realism": 8,
+        "style_match": 8,
+        "geometry_quality": 8,
+        "texture_quality": 9,
+        "performance": 6,
+        "license_confidence": 10,
+        "total": 49
+      }
+    }
+  ],
+  "recommendation": {
+    "facade": {
+      "primary": "Poly Haven White Stucco",
+      "score": 56,
+      "action": "Retain source; retune and verify complete PBR wiring. A/B against ambientCG Plaster001 only if still too smooth."
+    },
+    "lawn": {
+      "primary": "ambientCG Grass005",
+      "score": 55,
+      "action": "Download only in next controlled phase; convert and compress locally; A/B against Grass004; retain Leafy Grass only for wild edges or fallback."
+    },
+    "optional_roof": {
+      "primary": "Poly Haven Clay Roof Tiles 03",
+      "score": 53
+    },
+    "optional_driveway": {
+      "primary": "Poly Haven Clean Asphalt",
+      "score": 53
+    }
+  },
+  "verification": [
+    {
+      "provider": "Poly Haven",
+      "check": "license and API terms",
+      "urls": ["https://polyhaven.com/license", "https://polyhaven.com/our-api"],
+      "result": "HTTP 200; CC0 asset rights confirmed; live API attribution and User-Agent rules recorded separately"
+    },
+    {
+      "provider": "Poly Haven",
+      "check": "candidate metadata, files and descriptor probes",
+      "result": "HTTP 200 for APIs and HTTP 206 for bytes=0-0 descriptor probes"
+    },
+    {
+      "provider": "ambientCG",
+      "check": "license and v3 API",
+      "urls": ["https://docs.ambientcg.com/license/", "https://ambientcg.com/api/v3/assets"],
+      "result": "HTTP 200; maps, downloads, sizes and explicit CC0 rights confirmed"
+    },
+    {
+      "provider": "ambientCG",
+      "check": "official download redirects",
+      "result": "HTTP 302 then HTTP 206 ranged content for Plaster001, Grass004 and Grass005"
+    },
+    {
+      "provider": "CGBookcase",
+      "check": "official pages and direct CDN probes",
+      "result": "pages HTTP 200; browser-like Range GET HTTP 206; HEAD HTTP 403; medium automation confidence"
+    },
+    {
+      "scope": "asset transfer",
+      "result": "No archive, image map or glTF body downloaded; only official metadata/pages and bytes=0-0 probes."
+    }
+  ]
+}

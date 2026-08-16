@@ -1,0 +1,42 @@
+[
+  {
+    "role": "tree",
+    "name": "Decorative Urban Tree",
+    "asset_base_id": "c8af7417-b4d3-4cff-8a7a-b0afdb5a577f",
+    "version_id": "8775e08b-6ac7-4af3-86ad-9f3d56d65afd",
+    "author": "Davide Tirindelli",
+    "license": "cc_zero",
+    "is_free": true,
+    "source_url": "https://www.blenderkit.com/asset-gallery-detail/c8af7417-b4d3-4cff-8a7a-b0afdb5a577f/",
+    "api_url": "https://www.blenderkit.com/api/v1/assets/8775e08b-6ac7-4af3-86ad-9f3d56d65afd/",
+    "download_api": "https://www.blenderkit.com/api/v1/downloads/652232/?scene_uuid=4dc0a9ec-7f99-4640-841e-efff26006906",
+    "library_file_type": "resolution_1K",
+    "downloaded_original_file": "assets_external/vegetation/tree/original/tree_c8af7417-b4d3-4cff-8a7a-b0afdb5a577f_1k_download.blend.zst",
+    "downloaded_original_bytes": 8062649,
+    "downloaded_original_sha256": "9D8790C6CEFB3052981E75227B07B053A85A11EF3C3817FEF6DC4314FFD066F2",
+    "decompressed_source_file": "assets_external/vegetation/tree/original/tree_c8af7417-b4d3-4cff-8a7a-b0afdb5a577f_1k_source.blend",
+    "decompressed_source_bytes": 14312212,
+    "decompressed_source_sha256": "8E6B0BC6288E3A3154272ABC0231453C9B259EE3E7F2D8B9D8A604A121495471",
+    "transport_compression": "zstd-concatenated"
+  },
+  {
+    "role": "hedge",
+    "name": "Shrub",
+    "asset_base_id": "2810ce15-1076-44e6-9b95-90487f8d5dc5",
+    "version_id": "32002ed3-1b0b-40d9-835d-a36bc16d5b51",
+    "author": "Blendkit Community",
+    "license": "cc_zero",
+    "is_free": true,
+    "source_url": "https://www.blenderkit.com/asset-gallery-detail/2810ce15-1076-44e6-9b95-90487f8d5dc5/",
+    "api_url": "https://www.blenderkit.com/api/v1/assets/32002ed3-1b0b-40d9-835d-a36bc16d5b51/",
+    "download_api": "https://www.blenderkit.com/api/v1/downloads/30090/?scene_uuid=4dc0a9ec-7f99-4640-841e-efff26006906",
+    "library_file_type": "resolution_1K",
+    "downloaded_original_file": "assets_external/vegetation/hedge/original/hedge_2810ce15-1076-44e6-9b95-90487f8d5dc5_1k_download.blend.gz",
+    "downloaded_original_bytes": 1327924,
+    "downloaded_original_sha256": "E6DAFED45E728DB2276F481FA7A501FB9B17C2665BF80683750270F758348535",
+    "decompressed_source_file": "assets_external/vegetation/hedge/original/hedge_2810ce15-1076-44e6-9b95-90487f8d5dc5_1k_source.blend",
+    "decompressed_source_bytes": 4564424,
+    "decompressed_source_sha256": "32C7F1FF80FB0369EF7DC99849CF891B1E0BDCDAA1AED4B26F61050C77B8B519",
+    "transport_compression": "gzip"
+  }
+]

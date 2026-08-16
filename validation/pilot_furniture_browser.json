@@ -1,0 +1,365 @@
+{
+  "schemaVersion": "1.0",
+  "result": "PASS",
+  "assertions": {
+    "viewsReady": true,
+    "acceptedFourFamilies": true,
+    "architectureUnchanged": true,
+    "fallbackCounts": true,
+    "zeroConsoleErrors": true,
+    "zeroFailedRequests": true
+  },
+  "instanceBudget": {
+    "instances": {
+      "sofa": 1,
+      "table": 1,
+      "chair": 6,
+      "bed": 3
+    },
+    "triangles": 221660,
+    "drawCalls": 22
+  },
+  "views": [
+    {
+      "view": "fixture",
+      "url": "http://127.0.0.1:8898/validation/furniture-pilot-harness.html?pw=1",
+      "httpStatus": 200,
+      "dataset": {
+        "viewerReady": "true",
+        "furniturePilot": "accepted"
+      },
+      "audit": {
+        "version": "V18_ASSET_FURNITURE_PILOT_1",
+        "status": "accepted",
+        "architectureChanged": false,
+        "anchor": "HOUSE_REFERENCE_ORIGIN",
+        "fallbackPolicy": "replace-per-family-only-after-success",
+        "families": {
+          "bed": {
+            "status": "accepted-live",
+            "url": "http://127.0.0.1:8898/assets_external/furniture/bedroom/bed/optimized/bed_web.glb?release=harness-1",
+            "loadMs": 392.3,
+            "sourceMetrics": {
+              "meshes": 3,
+              "triangles": 8566,
+              "drawCalls": 3,
+              "materials": 3,
+              "textures": 2,
+              "dimensionsM": [
+                1.76223,
+                1.06038,
+                2.22659
+              ]
+            },
+            "hiddenFallbackNodes": [
+              "V11_BEDROOM1_BED_BASE",
+              "V11_BEDROOM1_BED_DUVET",
+              "V11_BEDROOM1_BED_HEAD",
+              "V11_BEDROOM1_BED_LEG_0",
+              "V11_BEDROOM1_BED_LEG_1",
+              "V11_BEDROOM1_BED_LEG_2",
+              "V11_BEDROOM1_BED_LEG_3",
+              "V11_BEDROOM1_BED_MATTRESS",
+              "V11_BEDROOM1_BED_PILLOW_0",
+              "V11_BEDROOM1_BED_PILLOW_1",
+              "V11_BEDROOM2_BED_BASE",
+              "V11_BEDROOM2_BED_DUVET",
+              "V11_BEDROOM2_BED_HEAD",
+              "V11_BEDROOM2_BED_LEG_0",
+              "V11_BEDROOM2_BED_LEG_1",
+              "V11_BEDROOM2_BED_LEG_2",
+              "V11_BEDROOM2_BED_LEG_3",
+              "V11_BEDROOM2_BED_MATTRESS",
+              "V11_BEDROOM2_BED_PILLOW_0",
+              "V11_BEDROOM2_BED_PILLOW_1",
+              "V11_BEDROOM3_BED_BASE",
+              "V11_BEDROOM3_BED_DUVET",
+              "V11_BEDROOM3_BED_HEAD",
+              "V11_BEDROOM3_BED_LEG_0",
+              "V11_BEDROOM3_BED_LEG_1",
+              "V11_BEDROOM3_BED_LEG_2",
+              "V11_BEDROOM3_BED_LEG_3",
+              "V11_BEDROOM3_BED_MATTRESS",
+              "V11_BEDROOM3_BED_PILLOW_0",
+              "V11_BEDROOM3_BED_PILLOW_1"
+            ],
+            "placements": [
+              {
+                "name": "PILOT_BEDROOM1_BED",
+                "position": [
+                  4.95,
+                  2.69,
+                  -11.65
+                ],
+                "yawRadians": 0,
+                "scale": [
+                  0.908,
+                  0.9,
+                  0.898
+                ],
+                "targetDimensionsM": [
+                  1.6001,
+                  0.9543,
+                  2
+                ]
+              },
+              {
+                "name": "PILOT_BEDROOM2_BED",
+                "position": [
+                  1.7,
+                  2.69,
+                  -8.15
+                ],
+                "yawRadians": 0,
+                "scale": [
+                  0.7945,
+                  0.9,
+                  0.898
+                ],
+                "targetDimensionsM": [
+                  1.4,
+                  0.9543,
+                  2
+                ]
+              },
+              {
+                "name": "PILOT_BEDROOM3_BED",
+                "position": [
+                  1.7,
+                  2.69,
+                  -5.25
+                ],
+                "yawRadians": 0,
+                "scale": [
+                  0.7945,
+                  0.9,
+                  0.898
+                ],
+                "targetDimensionsM": [
+                  1.4,
+                  0.9543,
+                  2
+                ]
+              }
+            ],
+            "instances": 3
+          },
+          "chair": {
+            "status": "accepted-live",
+            "url": "http://127.0.0.1:8898/assets_external/furniture/dining/chair/optimized/chair_web.glb?release=harness-1",
+            "loadMs": 405.6,
+            "sourceMetrics": {
+              "meshes": 1,
+              "triangles": 22013,
+              "drawCalls": 1,
+              "materials": 1,
+              "textures": 3,
+              "dimensionsM": [
+                0.43357,
+                0.97338,
+                0.57642
+              ]
+            },
+            "hiddenFallbackNodes": [
+              "V11_DINING_CHAIR_01",
+              "V11_DINING_CHAIR_02",
+              "V11_DINING_CHAIR_03",
+              "V11_DINING_CHAIR_04",
+              "V11_DINING_CHAIR_05",
+              "V11_DINING_CHAIR_06"
+            ],
+            "placements": [
+              {
+                "name": "PILOT_DINING_CHAIR_01",
+                "position": [
+                  2.02,
+                  0.02,
+                  -6.46
+                ],
+                "yawRadians": 3.141593,
+                "scale": [
+                  0.94,
+                  0.94,
+                  0.94
+                ],
+                "targetDimensionsM": null
+              },
+              {
+                "name": "PILOT_DINING_CHAIR_02",
+                "position": [
+                  2.98,
+                  0.02,
+                  -6.46
+                ],
+                "yawRadians": 3.141593,
+                "scale": [
+                  0.94,
+                  0.94,
+                  0.94
+                ],
+                "targetDimensionsM": null
+              },
+              {
+                "name": "PILOT_DINING_CHAIR_03",
+                "position": [
+                  2.02,
+                  0.02,
+                  -7.9
+                ],
+                "yawRadians": 0,
+                "scale": [
+                  0.94,
+                  0.94,
+                  0.94
+                ],
+                "targetDimensionsM": null
+              },
+              {
+                "name": "PILOT_DINING_CHAIR_04",
+                "position": [
+                  2.98,
+                  0.02,
+                  -7.9
+                ],
+                "yawRadians": 0,
+                "scale": [
+                  0.94,
+                  0.94,
+                  0.94
+                ],
+                "targetDimensionsM": null
+              },
+              {
+                "name": "PILOT_DINING_CHAIR_05",
+                "position": [
+                  1.25,
+                  0.02,
+                  -7.18
+                ],
+                "yawRadians": 1.570796,
+                "scale": [
+                  0.94,
+                  0.94,
+                  0.94
+                ],
+                "targetDimensionsM": null
+              },
+              {
+                "name": "PILOT_DINING_CHAIR_06",
+                "position": [
+                  3.75,
+                  0.02,
+                  -7.18
+                ],
+                "yawRadians": -1.570796,
+                "scale": [
+                  0.94,
+                  0.94,
+                  0.94
+                ],
+                "targetDimensionsM": null
+              }
+            ],
+            "instances": 6
+          },
+          "table": {
+            "status": "accepted-live",
+            "url": "http://127.0.0.1:8898/assets_external/furniture/dining/table/optimized/table_web.glb?release=harness-1",
+            "loadMs": 486.1,
+            "sourceMetrics": {
+              "meshes": 6,
+              "triangles": 3500,
+              "drawCalls": 6,
+              "materials": 5,
+              "textures": 16,
+              "dimensionsM": [
+                2,
+                0.75,
+                0.9
+              ]
+            },
+            "hiddenFallbackNodes": [
+              "V12_DINING_TABLE_LEG_1",
+              "V12_DINING_TABLE_LEG_2",
+              "V12_DINING_TABLE_LEG_3",
+              "V12_DINING_TABLE_LEG_4",
+              "V12_DINING_TABLE_TOP"
+            ],
+            "placements": [
+              {
+                "name": "PILOT_DINING_TABLE",
+                "position": [
+                  2.5,
+                  0.02,
+                  -7.18
+                ],
+                "yawRadians": 0,
+                "scale": [
+                  0.9,
+                  1,
+                  1
+                ],
+                "targetDimensionsM": [
+                  1.8,
+                  0.75,
+                  0.9
+                ]
+              }
+            ],
+            "instances": 1
+          },
+          "sofa": {
+            "status": "accepted-live",
+            "url": "http://127.0.0.1:8898/assets_external/furniture/living/sofa/optimized/sofa_web.glb?release=harness-1",
+            "loadMs": 546,
+            "sourceMetrics": {
+              "meshes": 1,
+              "triangles": 60384,
+              "drawCalls": 1,
+              "materials": 1,
+              "textures": 2,
+              "dimensionsM": [
+                2.87251,
+                1.00537,
+                1.01168
+              ]
+            },
+            "hiddenFallbackNodes": [
+              "V11_LIVING_SOFA"
+            ],
+            "placements": [
+              {
+                "name": "PILOT_LIVING_SOFA_3_SEAT",
+                "position": [
+                  2.5,
+                  0.02,
+                  -9.78
+                ],
+                "yawRadians": 0,
+                "scale": [
+                  0.85,
+                  0.85,
+                  0.85
+                ],
+                "targetDimensionsM": [
+                  2.4416,
+                  0.8546,
+                  0.8599
+                ]
+              }
+            ],
+            "instances": 1
+          }
+        },
+        "acceptedFamilies": 4,
+        "rejectedFamilies": 0,
+        "instanceCount": 11,
+        "elapsedMs": 546.6
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "screenshot": "validation/browser/playwright-furniture-main-fixture.png"
+    }
+  ]
+}

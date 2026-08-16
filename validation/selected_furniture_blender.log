@@ -1,0 +1,57 @@
+17:16:57 | INFO: Data are loaded, start creating Blender stuff
+17:16:57 | INFO: Blender create Mesh node Cube.006
+17:16:57 | INFO: Draco Decoder: Decode primitive Cube.006
+17:16:57 | INFO: glTF import finished in 0.27s
+C:\Users\jonat\Documents\Codex\2026-08-16\chamagnieu-v18-assets-pilot\validation\optimize_selected_furniture_assets.py:203: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if material.use_nodes and material.node_tree
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+17:16:58 | INFO: Starting glTF 2.0 export
+17:16:58 | INFO: Extracting primitive: Cube.006
+17:16:58 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+17:16:59 | INFO: Primitives created: 1
+17:16:59 | INFO: Finished glTF 2.0 export in 0.5618093013763428 s
+00:15.109  render           | Saved: 'C:\Users\jonat\Documents\Codex\2026-08-16\chamagnieu-v18-assets-pilot\validation\asset_pilot_previews\furniture-selected-sofa.png'
+
+SELECTED_FURNITURE_OPTIMIZE=PASS role=sofa dimensions_three_m=[2.87251, 1.00537, 1.01168] triangles=60384 bytes=2577832 sha256=A1321C8B14FFC4170CECA330B581441ADE66B64CA87FF89D772E385367D21B3D
+17:17:05 | INFO: Starting glTF 2.0 export
+17:17:05 | INFO: Extracting primitive: Cube
+17:17:06 | INFO: Primitives created: 4
+17:17:06 | INFO: Extracting primitive: Cube.001
+17:17:06 | INFO: Primitives created: 1
+17:17:06 | INFO: Extracting primitive: Cube.001
+17:17:06 | INFO: Primitives created: 1
+17:17:06 | INFO: Finished glTF 2.0 export in 0.5406160354614258 s
+00:19.562  render           | Saved: 'C:\Users\jonat\Documents\Codex\2026-08-16\chamagnieu-v18-assets-pilot\validation\asset_pilot_previews\furniture-selected-table.png'
+
+SELECTED_FURNITURE_OPTIMIZE=PASS role=table dimensions_three_m=[2.0, 0.75, 0.9] triangles=3500 bytes=3544464 sha256=A8BCD84ADADC29F9DC26EEFA068FA393823E2599493BCADB62797986D89F67B0
+17:17:10 | INFO: Data are loaded, start creating Blender stuff
+17:17:10 | INFO: Blender create Mesh node Cube.054
+17:17:10 | INFO: glTF import finished in 0.08s
+17:17:10 | INFO: Starting glTF 2.0 export
+17:17:10 | INFO: Extracting primitive: Cube.054
+17:17:10 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+17:17:10 | INFO: Primitives created: 1
+17:17:10 | INFO: Finished glTF 2.0 export in 0.11385941505432129 s
+00:20.437  render           | Saved: 'C:\Users\jonat\Documents\Codex\2026-08-16\chamagnieu-v18-assets-pilot\validation\asset_pilot_previews\furniture-selected-chair.png'
+
+SELECTED_FURNITURE_OPTIMIZE=PASS role=chair dimensions_three_m=[0.43357, 0.97338, 0.57642] triangles=22013 bytes=920384 sha256=6E5CC754877D49AF17EA2431693E29B07DEEA0A6B14163B1F23EF933E1FAAC71
+17:17:11 | INFO: Data are loaded, start creating Blender stuff
+17:17:11 | INFO: Blender create Mesh node Cube.002
+17:17:11 | INFO: Draco Decoder: Decode primitive Cube.002
+17:17:11 | INFO: Draco Decoder: Decode primitive Cube.002
+17:17:11 | INFO: Draco Decoder: Decode primitive Cube.002
+17:17:11 | INFO: glTF import finished in 0.05s
+17:17:11 | INFO: Starting glTF 2.0 export
+17:17:11 | INFO: Extracting primitive: Cube.002
+17:17:11 | INFO: Primitives created: 3
+17:17:11 | INFO: Finished glTF 2.0 export in 0.07094430923461914 s
+00:21.187  render           | Saved: 'C:\Users\jonat\Documents\Codex\2026-08-16\chamagnieu-v18-assets-pilot\validation\asset_pilot_previews\furniture-selected-bed.png'
+Blender 5.2.0 LTS (hash fbe6228777e7 built 2026-07-14 01:35:40)
+DracoDecoder | Decoded 31686 vertices, 181152 indices
+DracoDecoder | Decoded 129 vertices, 564 indices
+DracoDecoder | Decoded 2677 vertices, 6798 indices
+DracoDecoder | Decoded 3474 vertices, 18336 indices
+
+SELECTED_FURNITURE_OPTIMIZE=PASS role=bed dimensions_three_m=[1.76223, 1.06038, 2.22659] triangles=8566 bytes=350248 sha256=AC6B3C975A1EE98F1288A5567D4C5F89C8A9973AF7D4CF3EAB88AC79AF205637
+SELECTED_FURNITURE_OPTIMIZE_RESULT=PASS assets=4/4 output=C:\Users\jonat\Documents\Codex\2026-08-16\chamagnieu-v18-assets-pilot\assets_external\models\selected_furniture_optimization.json

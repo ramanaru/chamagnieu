@@ -1,0 +1,496 @@
+{
+  "asset": {
+    "pk": 61005,
+    "url": "https://www.blenderkit.com/api/v1/assets/6452ab57-d1cc-4b06-8f90-0b922b5551ef/",
+    "id": "6452ab57-d1cc-4b06-8f90-0b922b5551ef",
+    "assetBaseId": "bdff957c-a9e9-4827-b6c9-602b264a4fbf",
+    "versionNumber": 1,
+    "author": {
+      "id": 183932,
+      "firstName": "Nicușor",
+      "lastName": "Vatră",
+      "gravatarHash": "a316969c11f0dea7dc7a08a8748eb118",
+      "avatar128": "/avatar-redirect/7ef2f0da-a1e0-4594-bcf3-da929bc3fff6/128/",
+      "avatar256": "/avatar-redirect/7ef2f0da-a1e0-4594-bcf3-da929bc3fff6/256/",
+      "avatar512": "/avatar-redirect/7ef2f0da-a1e0-4594-bcf3-da929bc3fff6/512/",
+      "aboutMe": "",
+      "aboutMeUrl": "https://www.behance.net/vatranicusor",
+      "fullName": "Nicușor Vatră",
+      "socialNetworks": [
+        {
+          "socialNetwork": {
+            "name": "YouTube",
+            "icon": "<i class=\"fab fa-youtube\" title=\"YouTube\"></i><span class=\"sr-only\">YouTube</span>",
+            "order": 1
+          },
+          "url": "https://www.youtube.com/@vatradesign1037"
+        },
+        {
+          "socialNetwork": {
+            "name": "Instagram",
+            "icon": "<i class=\"fab fa-instagram\" title=\"Instagram\"></i><span class=\"sr-only\">Instagram</span>",
+            "order": 3
+          },
+          "url": "https://www.instagram.com/vatra.ndesign"
+        }
+      ]
+    },
+    "name": "Wooden table with metalic legs",
+    "displayName": "Wooden table with metallic legs",
+    "description": "Realistic wooden table\r\nSuitable for office scene, dinning and modern interior design",
+    "descriptionHtml": "<p>Realistic wooden table<br>\nSuitable for office scene, dinning and modern interior design</p>",
+    "assetType": "model",
+    "category": "table",
+    "isFree": true,
+    "isForSale": false,
+    "basePrice": null,
+    "tags": [
+      "table",
+      "furniture",
+      "wooden",
+      "office",
+      "dining",
+      "kitchen",
+      "food"
+    ],
+    "license": "cc_zero",
+    "sourceAppName": "blender",
+    "sourceAppVersion": "3.5.0",
+    "addonVersion": "3.8.0",
+    "created": "2023-08-01T13:30:51.380734+02:00",
+    "lastUserInteraction": "2023-08-01T13:31:03.502794+02:00",
+    "verificationStatus": "validated",
+    "isPrivate": false,
+    "files": [
+      {
+        "fileType": "blend",
+        "id": 220301,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/220301/",
+        "uuid": null,
+        "created": "2023-08-01T13:31:02.733949+02:00",
+        "isThumbnail": false,
+        "modified": "2023-08-01T13:31:02.733964+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 18735914,
+        "isFeatured": false,
+        "filename": "assets/6452ab57d1cc4b068f900b922b5551ef/files/blend_bc8bfb7e-51a2-4e58-9049-adb3689f1be9.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_0_5K",
+        "id": 220505,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/220505/",
+        "uuid": null,
+        "created": "2023-08-02T06:35:34.836634+02:00",
+        "isThumbnail": false,
+        "modified": "2023-08-02T06:35:34.836651+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 472704,
+        "isFeatured": false,
+        "filename": "assets/6452ab57d1cc4b068f900b922b5551ef/files/resolution_0_5K_a6ea02ee-5035-4ef3-be8b-42e7b00b4365.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_1K",
+        "id": 220504,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/220504/",
+        "uuid": null,
+        "created": "2023-08-02T06:35:34.111576+02:00",
+        "isThumbnail": false,
+        "modified": "2023-08-02T06:35:34.111590+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 1599907,
+        "isFeatured": false,
+        "filename": "assets/6452ab57d1cc4b068f900b922b5551ef/files/resolution_1K_75f14401-4261-47c0-844a-38e09bf4da40.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_2K",
+        "id": 220503,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/220503/",
+        "uuid": null,
+        "created": "2023-08-02T06:35:33.512687+02:00",
+        "isThumbnail": false,
+        "modified": "2023-08-02T06:35:33.512703+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 6887275,
+        "isFeatured": false,
+        "filename": "assets/6452ab57d1cc4b068f900b922b5551ef/files/resolution_2K_fddc449b-87f5-4dd2-82bc-ebce01261b77.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "thumbnail",
+        "id": 220300,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/220300/",
+        "uuid": null,
+        "fileThumbnail": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.96x96_q85_crop-%2C.jpg",
+        "fileThumbnailLarge": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.1024x1024_q85_crop-%2C.jpg",
+        "created": "2023-08-01T13:30:56.178434+02:00",
+        "isThumbnail": true,
+        "modified": "2025-12-22T20:15:12.348499+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 1211770,
+        "width": 1920,
+        "height": 1920,
+        "isFeatured": false,
+        "filename": "assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg",
+        "thumbnailSmallUrl": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.256x256_q85_crop-%2C.jpg",
+        "thumbnailMiddleUrl": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.512x512_q85_crop-%2C.jpg",
+        "thumbnailLargeUrl": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.1024x1024_q85_crop-%2C.jpg",
+        "thumbnailXlargeUrl": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.2048x2048_q85_crop-%2C.jpg",
+        "thumbnailSmallUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.256x256_q85.jpg",
+        "thumbnailMiddleUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.512x512_q85.jpg",
+        "thumbnailLargeUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.1024x1024_q85.jpg",
+        "thumbnailXlargeUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.2048x2048_q85.jpg",
+        "thumbnailSmallUrlWebp": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.256x256_q85_crop-%2C.jpg.webp?webp_generated=1784722673",
+        "thumbnailMiddleUrlWebp": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.512x512_q85_crop-%2C.jpg.webp?webp_generated=1784722673",
+        "thumbnailLargeUrlWebp": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.1024x1024_q85_crop-%2C.jpg.webp?webp_generated=1784722673",
+        "thumbnailXlargeUrlWebp": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.2048x2048_q85_crop-%2C.jpg.webp?webp_generated=1784722673",
+        "thumbnailSmallUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.256x256_q85.jpg.webp?webp_generated=1784722673",
+        "thumbnailMiddleUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.512x512_q85.jpg.webp?webp_generated=1784722673",
+        "thumbnailLargeUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.1024x1024_q85.jpg.webp?webp_generated=1784722673",
+        "thumbnailXlargeUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.2048x2048_q85.jpg.webp?webp_generated=1784722673",
+        "flexFactor": null
+      }
+    ],
+    "filesSize": 28907570,
+    "showMarketingLabels": true,
+    "webpGeneratedTimestamp": 1784722673,
+    "score": 45.0,
+    "ratingsMedian": {
+      "bookmarks": 1.0,
+      "workingHours": 0.5,
+      "quality": 9.0,
+      "virtualPrice": null
+    },
+    "ratingsAverage": {
+      "bookmarks": 1.0,
+      "workingHours": 0.5,
+      "quality": 9.0,
+      "virtualPrice": null
+    },
+    "ratingsCount": {
+      "bookmarks": 60,
+      "workingHours": 1,
+      "quality": 2,
+      "virtualPrice": 0
+    },
+    "ratingsSum": {
+      "bookmarks": 60.0,
+      "workingHours": 0.5,
+      "quality": 18.0,
+      "virtualPrice": null,
+      "score": 45.0
+    },
+    "pageBlocks": null,
+    "access": "free",
+    "accessLabel": "Free",
+    "videoLink": "",
+    "dictParameters": {
+      "sexualizedContent": false,
+      "joinBlenderkitDiscounts": true,
+      "addons": true,
+      "platforms": [
+        "windows-x64",
+        "macos-arm64",
+        "linux-x64",
+        "macos-x64",
+        "windows-arm64"
+      ],
+      "faceCount": 42,
+      "textureResolutionMax": 4096,
+      "productionLevel": "finished",
+      "procedural": false,
+      "modelStyle": "realistic",
+      "condition": "new",
+      "validatedManufacturer": false,
+      "validatedManufacturerDate": "2026-05-06T05:12:21.068931+00:00",
+      "validatedManufacturerOutput": "No evidence of 'Nicu Vatra' as a legitimate furniture manufacturer or designer producing the specified 'Wooden table with metallic legs' variant 1. The name closely matches the BlenderKit asset author 'Nicușor Vatră', a 3D model creator, indicating a self-promotional or placeholder entry unverifiable as a real brand.\nmanufacturer: Nicu Vatra|designer: Nicu Vatra|designCollection: Tables|designVariant: 1",
+      "validatedManufacturerActor": "ai",
+      "purePbr": true,
+      "shaders": [
+        "principled"
+      ],
+      "uv": true,
+      "textureResolutionMin": 2048,
+      "engines": [
+        "cycles"
+      ],
+      "modifiers": [
+        "mirror",
+        "bevel",
+        "weighted normal"
+      ],
+      "materials": [
+        "Blue paint new",
+        "Oak 002",
+        "Oak 003",
+        "Oak 006",
+        "Oak 005"
+      ],
+      "rig": false,
+      "simulation": false,
+      "dimensionX": 2.0,
+      "dimensionY": 0.9,
+      "dimensionZ": 0.75,
+      "boundBoxMinX": -1.0,
+      "boundBoxMinY": -0.45,
+      "boundBoxMinZ": 0.0,
+      "boundBoxMaxX": 1.0,
+      "boundBoxMaxY": 0.45,
+      "boundBoxMaxZ": 0.75,
+      "faceCountRender": 58,
+      "meshPolyType": "quad",
+      "manifold": false,
+      "objectCount": 4,
+      "nodeCount": 52,
+      "textureCount": 12,
+      "megapixels": 120,
+      "imageAltTextGen4v": "3D model of realistic wooden office table with elegant metallic legs in a modern interior scene, optimized for Blender."
+    },
+    "lastGltfGodotUpload": null,
+    "lastGltfUpload": null,
+    "lastVideoUpload": null,
+    "lastPhotoThumbnailUpload": null,
+    "lastBlendUpload": "2023-08-01T11:31:02.733949+00:00",
+    "lastResolutionUpload": "2023-08-02T04:35:34.836634+00:00",
+    "lastPrxcUpload": null,
+    "lastWireThumbnailUpload": null,
+    "lastAnimatedThumbnailUpload": null,
+    "lastZipFileUpload": null,
+    "lastThumbnailUpload": "2023-08-01T11:30:56.178434+00:00",
+    "canDownload": true,
+    "canDownloadError": true,
+    "parameters": [
+      {
+        "parameterType": "sexualizedContent",
+        "value": false
+      },
+      {
+        "parameterType": "joinBlenderkitDiscounts",
+        "value": true
+      },
+      {
+        "parameterType": "addons",
+        "value": true
+      },
+      {
+        "parameterType": "platforms",
+        "value": [
+          "windows-x64",
+          "macos-arm64",
+          "linux-x64",
+          "macos-x64",
+          "windows-arm64"
+        ]
+      },
+      {
+        "parameterType": "faceCount",
+        "value": 42
+      },
+      {
+        "parameterType": "textureResolutionMax",
+        "value": 4096
+      },
+      {
+        "parameterType": "productionLevel",
+        "value": "finished"
+      },
+      {
+        "parameterType": "procedural",
+        "value": false
+      },
+      {
+        "parameterType": "modelStyle",
+        "value": "realistic"
+      },
+      {
+        "parameterType": "condition",
+        "value": "new"
+      },
+      {
+        "parameterType": "validatedManufacturer",
+        "value": false
+      },
+      {
+        "parameterType": "validatedManufacturerDate",
+        "value": "2026-05-06T05:12:21.068931+00:00"
+      },
+      {
+        "parameterType": "validatedManufacturerOutput",
+        "value": "No evidence of 'Nicu Vatra' as a legitimate furniture manufacturer or designer producing the specified 'Wooden table with metallic legs' variant 1. The name closely matches the BlenderKit asset author 'Nicușor Vatră', a 3D model creator, indicating a self-promotional or placeholder entry unverifiable as a real brand.\nmanufacturer: Nicu Vatra|designer: Nicu Vatra|designCollection: Tables|designVariant: 1"
+      },
+      {
+        "parameterType": "validatedManufacturerActor",
+        "value": "ai"
+      },
+      {
+        "parameterType": "purePbr",
+        "value": true
+      },
+      {
+        "parameterType": "shaders",
+        "value": [
+          "principled"
+        ]
+      },
+      {
+        "parameterType": "uv",
+        "value": true
+      },
+      {
+        "parameterType": "textureResolutionMin",
+        "value": 2048
+      },
+      {
+        "parameterType": "engines",
+        "value": [
+          "cycles"
+        ]
+      },
+      {
+        "parameterType": "modifiers",
+        "value": [
+          "mirror",
+          "bevel",
+          "weighted normal"
+        ]
+      },
+      {
+        "parameterType": "materials",
+        "value": [
+          "Blue paint new",
+          "Oak 002",
+          "Oak 003",
+          "Oak 006",
+          "Oak 005"
+        ]
+      },
+      {
+        "parameterType": "rig",
+        "value": false
+      },
+      {
+        "parameterType": "simulation",
+        "value": false
+      },
+      {
+        "parameterType": "dimensionX",
+        "value": 2.0
+      },
+      {
+        "parameterType": "dimensionY",
+        "value": 0.9
+      },
+      {
+        "parameterType": "dimensionZ",
+        "value": 0.75
+      },
+      {
+        "parameterType": "boundBoxMinX",
+        "value": -1.0
+      },
+      {
+        "parameterType": "boundBoxMinY",
+        "value": -0.45
+      },
+      {
+        "parameterType": "boundBoxMinZ",
+        "value": 0.0
+      },
+      {
+        "parameterType": "boundBoxMaxX",
+        "value": 1.0
+      },
+      {
+        "parameterType": "boundBoxMaxY",
+        "value": 0.45
+      },
+      {
+        "parameterType": "boundBoxMaxZ",
+        "value": 0.75
+      },
+      {
+        "parameterType": "faceCountRender",
+        "value": 58
+      },
+      {
+        "parameterType": "meshPolyType",
+        "value": "quad"
+      },
+      {
+        "parameterType": "manifold",
+        "value": false
+      },
+      {
+        "parameterType": "objectCount",
+        "value": 4
+      },
+      {
+        "parameterType": "nodeCount",
+        "value": 52
+      },
+      {
+        "parameterType": "textureCount",
+        "value": 12
+      },
+      {
+        "parameterType": "megapixels",
+        "value": 120
+      },
+      {
+        "parameterType": "imageAltTextGen4v",
+        "value": "3D model of realistic wooden office table with elegant metallic legs in a modern interior scene, optimized for Blender."
+      }
+    ],
+    "thumbnailSmallUrl": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.256x256_q85_crop-%2C.jpg",
+    "thumbnailMiddleUrl": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.512x512_q85_crop-%2C.jpg",
+    "thumbnailLargeUrl": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.1024x1024_q85_crop-%2C.jpg",
+    "thumbnailXlargeUrl": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.2048x2048_q85_crop-%2C.jpg",
+    "thumbnailSmallUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.256x256_q85.jpg",
+    "thumbnailMiddleUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.512x512_q85.jpg",
+    "thumbnailLargeUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.1024x1024_q85.jpg",
+    "thumbnailXlargeUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.2048x2048_q85.jpg",
+    "thumbnailSmallUrlWebp": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.256x256_q85_crop-%2C.jpg.webp?webp_generated=1784722673",
+    "thumbnailMiddleUrlWebp": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.512x512_q85_crop-%2C.jpg.webp?webp_generated=1784722673",
+    "thumbnailLargeUrlWebp": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.1024x1024_q85_crop-%2C.jpg.webp?webp_generated=1784722673",
+    "thumbnailXlargeUrlWebp": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.2048x2048_q85_crop-%2C.jpg.webp?webp_generated=1784722673",
+    "thumbnailSmallUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.256x256_q85.jpg.webp?webp_generated=1784722673",
+    "thumbnailMiddleUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.512x512_q85.jpg.webp?webp_generated=1784722673",
+    "thumbnailLargeUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.1024x1024_q85.jpg.webp?webp_generated=1784722673",
+    "thumbnailXlargeUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/6452ab57d1cc4b068f900b922b5551ef/files/thumbnail_046e13ef-0c6f-48fa-85b3-0113770b22de.jpg.2048x2048_q85.jpg.webp?webp_generated=1784722673"
+  },
+  "acquisition": {
+    "role": "table",
+    "name": "Wooden table with metalic legs",
+    "asset_base_id": "bdff957c-a9e9-4827-b6c9-602b264a4fbf",
+    "asset_version_id": "6452ab57-d1cc-4b06-8f90-0b922b5551ef",
+    "author": "Nicușor Vatră",
+    "source": "BlenderKit",
+    "license": "CC0-1.0",
+    "source_page_url": "https://www.blenderkit.com/asset-gallery-detail/bdff957c-a9e9-4827-b6c9-602b264a4fbf/",
+    "official_search_api": "https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3Abdff957c-a9e9-4827-b6c9-602b264a4fbf",
+    "download_api": "https://www.blenderkit.com/api/v1/downloads/220504/?scene_uuid=375cf16d-68fc-43f7-a4c4-591ca7159c04",
+    "download_id": 220504,
+    "library_file_type": "resolution_1K",
+    "original_files": [
+      {
+        "path": "assets_external/models/table/original/selected/table_bdff957c-a9e9-4827-b6c9-602b264a4fbf_1k_download.blend.zst",
+        "bytes": 1599907,
+        "sha256": "4D1F439387C0D5B04CDBBA919B7C9C21F2E7ED1BA3C6B9074938D61D8417DEEC",
+        "transport_compression": "zstd-concatenated"
+      },
+      {
+        "path": "assets_external/models/table/original/selected/table_bdff957c-a9e9-4827-b6c9-602b264a4fbf_1k_source.blend",
+        "bytes": 2294096,
+        "sha256": "CB6B19157399A87DBDAA9E9C8F92A05B5DA8E9D3A652FD85D8D8BA39B06A2F8C",
+        "transport_compression": "decompressed-source"
+      }
+    ]
+  }
+}

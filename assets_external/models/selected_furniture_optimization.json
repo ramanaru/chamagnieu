@@ -1,0 +1,211 @@
+[
+  {
+    "role": "sofa",
+    "source": "assets_external/models/sofa/original/selected/sofa_4faac4b8-cc88-4ff2-b7fd-a7edf46d3518_library.glb",
+    "source_bytes": 731828,
+    "source_sha256": "ACFAB778384BB6D6D5EB4AFE809A6A010017BFBA184EA35CCFF965E91150B7A2",
+    "optimized": "assets_external/models/sofa/optimized/selected/sofa_web.glb",
+    "optimized_bytes": 2577832,
+    "optimized_sha256": "A1321C8B14FFC4170CECA330B581441ADE66B64CA87FF89D772E385367D21B3D",
+    "dimensions_m_blender_xyz": [
+      2.87251,
+      1.01168,
+      1.00537
+    ],
+    "dimensions_m_three_xzy": [
+      2.87251,
+      1.00537,
+      1.01168
+    ],
+    "normalized_bounds_blender": {
+      "min": [
+        -1.43626,
+        -0.50584,
+        0.0
+      ],
+      "max": [
+        1.43626,
+        0.50584,
+        1.00537
+      ]
+    },
+    "high_vertex_centroid_blender_before_normalization": [
+      -0.00365,
+      0.24611,
+      0.85001
+    ],
+    "triangles": 60384,
+    "mesh_objects": 1,
+    "materials": [
+      "Sofa 05"
+    ],
+    "embedded_texture_sources": [
+      "Sofa 05_Sheen",
+      "Sofa 05_Sheen.001"
+    ],
+    "preview": "validation/asset_pilot_previews/furniture-selected-sofa.png",
+    "decoder_dependencies": [],
+    "source_textures_preserved": true
+  },
+  {
+    "role": "table",
+    "source": "assets_external/models/table/original/selected/table_bdff957c-a9e9-4827-b6c9-602b264a4fbf_1k_source.blend",
+    "source_bytes": 2294096,
+    "source_sha256": "CB6B19157399A87DBDAA9E9C8F92A05B5DA8E9D3A652FD85D8D8BA39B06A2F8C",
+    "optimized": "assets_external/models/table/optimized/selected/table_web.glb",
+    "optimized_bytes": 3544464,
+    "optimized_sha256": "A8BCD84ADADC29F9DC26EEFA068FA393823E2599493BCADB62797986D89F67B0",
+    "dimensions_m_blender_xyz": [
+      2.0,
+      0.9,
+      0.75
+    ],
+    "dimensions_m_three_xzy": [
+      2.0,
+      0.75,
+      0.9
+    ],
+    "normalized_bounds_blender": {
+      "min": [
+        -1.0,
+        -0.45,
+        0.0
+      ],
+      "max": [
+        1.0,
+        0.45,
+        0.75
+      ]
+    },
+    "high_vertex_centroid_blender_before_normalization": [
+      0.0,
+      0.0,
+      0.69666
+    ],
+    "triangles": 3500,
+    "mesh_objects": 3,
+    "materials": [
+      "Blue paint new",
+      "Oak 002",
+      "Oak 003",
+      "Oak 005",
+      "Oak 006"
+    ],
+    "embedded_texture_sources": [
+      "Oak  006_Normal.jpg",
+      "Oak  006_Roughness.jpg",
+      "Oak 002_BaseColor.jpg.001",
+      "Oak 002_Normal.jpg.001",
+      "Oak 002_Roughness.jpg.001",
+      "Oak 003_BaseColor.jpg",
+      "Oak 003_Normal.jpg",
+      "Oak 003_Roughness.jpg",
+      "Oak 005_BaseColor.jpg",
+      "Oak 005_Normal.jpg",
+      "Oak 005_Roughness.jpg",
+      "Oak 006_BaseColor.jpg"
+    ],
+    "preview": "validation/asset_pilot_previews/furniture-selected-table.png",
+    "decoder_dependencies": [],
+    "source_textures_preserved": true
+  },
+  {
+    "role": "chair",
+    "source": "assets_external/models/chair/original/selected/dining_chair_02_1k.gltf",
+    "source_bytes": 2723,
+    "source_sha256": "88352A44A17319846F61FE03CE75C79FB1849AA508B6A262366C149C1BBD06B8",
+    "optimized": "assets_external/models/chair/optimized/selected/chair_web.glb",
+    "optimized_bytes": 920384,
+    "optimized_sha256": "6E5CC754877D49AF17EA2431693E29B07DEEA0A6B14163B1F23EF933E1FAAC71",
+    "dimensions_m_blender_xyz": [
+      0.43357,
+      0.57642,
+      0.97338
+    ],
+    "dimensions_m_three_xzy": [
+      0.43357,
+      0.97338,
+      0.57642
+    ],
+    "normalized_bounds_blender": {
+      "min": [
+        -0.21679,
+        -0.28821,
+        0.0
+      ],
+      "max": [
+        0.21679,
+        0.28821,
+        0.97338
+      ]
+    },
+    "high_vertex_centroid_blender_before_normalization": [
+      0.00263,
+      0.2431,
+      0.86167
+    ],
+    "triangles": 22013,
+    "mesh_objects": 1,
+    "materials": [
+      "dining_chair_02"
+    ],
+    "embedded_texture_sources": [
+      "dining_chair_02_diff.png",
+      "dining_chair_02_metal-dining_chair_02_rough.png",
+      "dining_chair_02_nor_gl.png"
+    ],
+    "preview": "validation/asset_pilot_previews/furniture-selected-chair.png",
+    "decoder_dependencies": [],
+    "source_textures_preserved": true
+  },
+  {
+    "role": "bed",
+    "source": "assets_external/models/bed/original/selected/bed_d493c69a-5c64-40bf-a7a6-a4e745bfbea8_library.glb",
+    "source_bytes": 133244,
+    "source_sha256": "3BEFAF428A7AAE55C6C2C2277DAD340599E3C7D95A63462A2EE9E2770975395E",
+    "optimized": "assets_external/models/bed/optimized/selected/bed_web.glb",
+    "optimized_bytes": 350248,
+    "optimized_sha256": "AC6B3C975A1EE98F1288A5567D4C5F89C8A9973AF7D4CF3EAB88AC79AF205637",
+    "dimensions_m_blender_xyz": [
+      1.76223,
+      2.22659,
+      1.06038
+    ],
+    "dimensions_m_three_xzy": [
+      1.76223,
+      1.06038,
+      2.22659
+    ],
+    "normalized_bounds_blender": {
+      "min": [
+        -0.88112,
+        -1.1133,
+        0.0
+      ],
+      "max": [
+        0.88112,
+        1.1133,
+        1.06038
+      ]
+    },
+    "high_vertex_centroid_blender_before_normalization": [
+      0.0,
+      0.94403,
+      0.96224
+    ],
+    "triangles": 8566,
+    "mesh_objects": 1,
+    "materials": [
+      "Material",
+      "fabric",
+      "wood"
+    ],
+    "embedded_texture_sources": [
+      "29e94cd4d706a3cb575ce485fae506ac",
+      "8aeb7ebe7db45b0e26fa4ab5784ede07"
+    ],
+    "preview": "validation/asset_pilot_previews/furniture-selected-bed.png",
+    "decoder_dependencies": [],
+    "source_textures_preserved": true
+  }
+]

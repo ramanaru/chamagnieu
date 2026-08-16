@@ -1,0 +1,32 @@
+SOURCE=LOCAL CURRENT
+RELEASE=V18-ASSET-PILOT-1
+
+COMMAND=node --check shared/live-furniture-pilot.js && node --check shared/live-materials-pilot.js && node --check shared/live-vegetation.js && node --check presentation/presentation.js && node --check visite/visite.js
+LITERAL_OUTPUT=NODE_SYNTAX=PASS files=5
+EXIT_STATUS=0
+
+COMMAND=python validation/verify_asset_pilot.py --root . --base-url http://127.0.0.1:8902
+LITERAL_OUTPUT=ASSET_PILOT_STATIC_VALIDATION=PASS checks=321 pass=321 fail=0
+EXIT_STATUS=0
+
+COMMAND=NODE_PATH=C:/Users/jonat/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules C:/Users/jonat/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe validation/run_furniture_pilot_browser.cjs
+LITERAL_OUTPUT=FURNITURE_BROWSER_RESULT=PASS families=4/4 triangles=221660 drawCalls=22 output=C:\Users\jonat\Documents\Codex\2026-08-16\chamagnieu-v18-assets-pilot\validation\pilot_furniture_browser.json
+EXIT_STATUS=0
+
+COMMAND=python validation/run_vegetation_runtime_harness.py
+LITERAL_OUTPUT=VEGETATION_BROWSER_RUNTIME=PASS trees=4 hedge_segments=18 hedge_clones=18 displayed_triangles=565892 draw_calls=14 load_ms=278 fps=281.03 webgl2=True console_errors=0 request_failures=0 http_bad=0 mobile=enhanced mobile_glb_requests=2 constrained=mobile-fallback constrained_glb_requests=0
+EXIT_STATUS=0
+
+BROWSER_AUDIT=PASS_FUNCTIONAL
+VIEWER_READY=true VERSION=V18 RELEASE=V18-ASSET-PILOT-1 SOURCE=LIVE WEB VIEWER MODEL=Chamagnieu_V18_WEB_REALISM_UPGRADED.glb
+WEBGL2=PASS VERSION=WebGL 2.0 (OpenGL ES 3.0 Chromium)
+CATEGORY_VISIBILITY=PASS 8/8 sofa=1 table=1 chair=6 bed=3 tree=4 hedge=18 facade_pbr=2 grass_pbr=1
+VIEWS=PASS 7/7 facade hedges living dining bedroom exterior_ground garden
+FURNITURE_TOGGLE=PASS presentation=true>false>true visite=true>false>true
+ENTRY_FLOW=PASS presentation_link>visite_outside>Commencer_dehors>keyboard-drag-fallback>kitchen_inside preset_distance_m=20.248163
+PRESENTATION_NETWORK=PASS responses=138 failed=0 non2xx=0 exceptions=0 console_errors=0 warnings_or_errors=0
+VISITE_NETWORK=PASS responses=138 failed=0 non2xx=0 exceptions=0 console_errors=0 warnings_or_errors=0
+BROKEN_IMAGES=PASS presentation=0 visite=0
+RAF_PRESENTATION_OBSERVED fps=11.508393 frames=59 duration_ms=5039.800 median_ms=83.300 p95_ms=100.100
+RAF_VISITE_OBSERVED fps=11.727990 frames=60 duration_ms=5030.700 median_ms=83.300 p95_ms=100.100
+RAF_SCOPE=IAB_SUBAGENT_BACKGROUND_THROTTLED FOREGROUND_GATE=INDETERMINATE TARGET_FPS=30

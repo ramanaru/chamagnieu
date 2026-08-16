@@ -1,0 +1,84 @@
+[
+  {
+    "role": "tree",
+    "asset_name": "Decorative Urban Tree",
+    "source": "assets_external/vegetation/tree/original/tree_c8af7417-b4d3-4cff-8a7a-b0afdb5a577f_1k_source.blend",
+    "source_bytes": 14312212,
+    "source_sha256": "8E6B0BC6288E3A3154272ABC0231453C9B259EE3E7F2D8B9D8A604A121495471",
+    "optimized": "assets_external/vegetation/tree/optimized/tree_web.glb",
+    "optimized_bytes": 7032388,
+    "optimized_sha256": "B98EA894B2FE4EC8863186B8204AC8A506750A61289A7494B8A8BA2FB76734D8",
+    "dimensions_m": [
+      4.4389,
+      5.6147,
+      5.5466
+    ],
+    "normalized_bounds_m": {
+      "min": [
+        -2.21946,
+        -2.80735,
+        -0.0
+      ],
+      "max": [
+        2.21946,
+        2.80735,
+        5.5466
+      ]
+    },
+    "triangles": 123949,
+    "mesh_objects": 2,
+    "materials": [
+      "tree_small_02",
+      "tree_small_02_branches",
+      "tree_small_02_leaves"
+    ],
+    "preview": "validation/asset_pilot_previews/tree-optimized-preview.png",
+    "external_uri_count": 0,
+    "decoder_dependencies": [],
+    "optimization": null
+  },
+  {
+    "role": "hedge",
+    "asset_name": "Shrub",
+    "source": "assets_external/vegetation/hedges/blenderkit_shrub/original/hedge_2810ce15-1076-44e6-9b95-90487f8d5dc5_1k_source.blend",
+    "source_bytes": 4564424,
+    "source_sha256": "32C7F1FF80FB0369EF7DC99849CF891B1E0BDCDAA1AED4B26F61050C77B8B519",
+    "optimized": "assets_external/vegetation/hedges/blenderkit_shrub/optimized/hedge_web.glb",
+    "optimized_bytes": 1292892,
+    "optimized_sha256": "552369C1C70CE040EC8971DA0F235D24ECB9CB915B9320B1ABCB4EA0C423B7C2",
+    "dimensions_m": [
+      1.2546,
+      1.2522,
+      0.7617
+    ],
+    "normalized_bounds_m": {
+      "min": [
+        -0.62731,
+        -0.62612,
+        0.0
+      ],
+      "max": [
+        0.62731,
+        0.62612,
+        0.76171
+      ]
+    },
+    "triangles": 20994,
+    "mesh_objects": 2,
+    "materials": [
+      "HEDGE_BRANCH_PBR_CC0",
+      "HEDGE_LEAVES_PBR_CC0"
+    ],
+    "preview": "validation/asset_pilot_previews/hedge-optimized-preview.png",
+    "external_uri_count": 0,
+    "decoder_dependencies": [],
+    "optimization": {
+      "branch_triangles_before": 8576,
+      "branch_triangles_after": 3944,
+      "leaf_triangles_before": 23680,
+      "leaf_triangles_after": 17050,
+      "leaf_card_retention_ratio": 0.720017,
+      "strategy": "material-aware branch decimation; deterministic 72% foliage-card LOD; retained UVs and alpha silhouettes"
+    }
+  }
+]

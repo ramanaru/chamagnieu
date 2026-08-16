@@ -1,9 +1,11 @@
 import * as THREE from '../shared/vendor/three.module.js';
 import { OrbitControls } from '../shared/vendor/addons/controls/OrbitControls.js';
 import { GLTFLoader } from '../shared/vendor/addons/loaders/GLTFLoader.js';
-import { loadProjectConfig, applyProjectVersion, resolveProjectAsset } from '../shared/project-config.js?release=v18-web-realism-1';
-import { setupLiveLighting, tuneLiveModel } from '../shared/live-realism.js?release=v18-web-realism-1&pipeline=lighting-r2';
-import { installLiveVegetation } from '../shared/live-vegetation.js?release=v18-web-realism-1';
+import { loadProjectConfig, applyProjectVersion, resolveProjectAsset } from '../shared/project-config.js?release=v18-asset-pilot-1';
+import { setupLiveLighting, tuneLiveModel } from '../shared/live-realism.js?release=v18-asset-pilot-1&pipeline=lighting-r2';
+import { installLiveVegetation } from '../shared/live-vegetation.js?release=v18-asset-pilot-1';
+import { installLiveFurniturePilot } from '../shared/live-furniture-pilot.js?release=v18-asset-pilot-1';
+import { installLiveMaterialPilot } from '../shared/live-materials-pilot.js?release=v18-asset-pilot-1';
 
 const config = await loadProjectConfig();
 applyProjectVersion(config);
@@ -13,7 +15,10 @@ scene.fog = new THREE.Fog(0xb8c5bb, 56, 125);
 const camera = new THREE.PerspectiveCamera(52, innerWidth / innerHeight, .018, 260);
 const mobile = matchMedia('(pointer:coarse)').matches;
 const renderer = new THREE.WebGLRenderer({ antialias: !mobile, powerPreference: 'high-performance' });
-renderer.setPixelRatio(Math.min(devicePixelRatio, mobile ? 1.1 : 1.6));
+// Render one physical pixel per CSS pixel on high-DPI screens. This keeps the
+// complete asset pilot responsive on phones and integrated browsers without
+// changing geometry, PBR maps or the antialiased output.
+renderer.setPixelRatio(Math.min(devicePixelRatio, 1.0));
 renderer.setSize(innerWidth, innerHeight);
 document.body.prepend(renderer.domElement);
 setupLiveLighting(THREE, scene, renderer, config, mobile);
@@ -29,9 +34,11 @@ const views = {
   front: { p: [1.941, 4.4, -15.173], t: [-1.436, 2.655, -.663], label: 'Façade et toiture — vraie scène Web V18' },
   axon: { p: [22.008, 21.5, -10.53], t: [-.75, 2.1, -4.5], label: 'Vue générale — modèle Web V18 complet' },
   garden: { p: [15.0, 9.6, -24.0], t: [-3.0, 2.45, -7.0], label: 'Jardin — 4 arbres réalistes, pelouse et maison' },
-  hedges: { p: [9.0, 4.2, -18.5], t: [-1.0, 1.0, -11.2], label: 'Haies — 18 segments feuillus en deux rangées optimisées' },
+  hedges: { p: [9.0, 4.2, -18.5], t: [-1.0, 1.0, -11.2], label: 'Haies — 18 segments feuillus CC0 instanciés sur GPU' },
   kitchen: { p: [-5.875, 1.82, 4.353], t: [-3.439, .92, 2.852], label: 'Cuisine — mobilier réellement contenu dans le GLB Web' },
   living: { p: [-7.465, 1.58, 5.190], t: [-5.459, .92, 8.133], label: 'Séjour — matériaux intégrés au GLB Web' },
+  dining: { p: [-7.465, 1.58, 5.190], t: [-4.80, .86, 6.45], label: 'Salle à manger — table et six chaises CC0 à échelle réelle' },
+  bed: { p: [-7.834, 4.30, 7.915], t: [-7.724, 3.60, 9.534], fov: 74, label: 'Chambre — lit CC0 redimensionné et placé sur le plan' },
   floor: { p: [-7.465, 1.65, 5.190], t: [-5.459, .12, 8.133], label: 'Sol intérieur — carrelage, joints, relief et mobilier du séjour' },
   ground: { p: [9.5, 8.2, -10.5], t: [-2.4, .15, -5.4], label: 'Sols extérieurs — pelouse, enrobé et gravier intégrés' },
   upper: { p: [-7.834, 4.30, 7.915], t: [-7.724, 3.60, 9.534], label: 'Étage — chambre, cloisons, portes et mobilier du GLB Web' }
@@ -52,6 +59,8 @@ function classifyFurniture(root) {
 }
 function setView(key) {
   const view = views[key];
+  camera.fov = view.fov || 52;
+  camera.updateProjectionMatrix();
   camera.position.fromArray(view.p);
   controls.target.fromArray(view.t);
   controls.update();
@@ -79,8 +88,24 @@ new GLTFLoader().load(modelUrl.href, async gltf => {
   classifyFurniture(house);
   window.__liveMaterialAudit = tuneLiveModel(renderer, house, mobile, config);
   scene.add(house);
-  loading.textContent = `Installation de la végétation Web réaliste · ${config.version}…`;
-  window.__liveVegetationAudit = await installLiveVegetation({ scene, house, renderer, mobile, cacheKey: config.cacheKey });
+  loading.textContent = `Installation des assets CC0 à échelle réelle · ${config.version}…`;
+  const [materialPilot, furniturePilot, vegetation] = await Promise.all([
+    installLiveMaterialPilot({ THREE, house, renderer, mobile, cacheKey: config.cacheKey }),
+    installLiveFurniturePilot({ scene, house, renderer, cacheKey: config.cacheKey }),
+    installLiveVegetation({ scene, house, renderer, mobile, cacheKey: config.cacheKey })
+  ]);
+  window.__assetPilotMaterialAudit = materialPilot;
+  window.__assetPilotFurnitureAudit = furniturePilot;
+  window.__liveVegetationAudit = vegetation;
+  // Lighting and the architectural scene are static. Render the 2048 px
+  // shadow map once after all pilot assets are installed instead of rebuilding
+  // it on every frame; the visual result stays identical and navigation gains
+  // substantial GPU headroom.
+  renderer.shadowMap.autoUpdate = false;
+  renderer.shadowMap.needsUpdate = true;
+  document.documentElement.dataset.viewerShadowMode = 'static-once-after-assets';
+  furnitureMeshCount = 0;
+  classifyFurniture(house);
   loading.classList.add('hide');
   setView('front');
   window.__viewerReady = true;
@@ -91,6 +116,12 @@ document.documentElement.dataset.viewerTextures = String(window.__liveMaterialAu
 document.documentElement.dataset.viewerFurnitureMeshes = String(furnitureMeshCount);
 document.documentElement.dataset.viewerFurnitureVisible = 'true';
 document.documentElement.dataset.viewerVegetation = window.__liveVegetationAudit.status;
+document.documentElement.dataset.viewerAssetPilot = furniturePilot.status === 'accepted' && materialPilot.status === 'applied' ? 'accepted' : 'partial-fallback';
+document.documentElement.dataset.viewerAssetPilotFamilies = String(furniturePilot.acceptedFamilies || 0);
+document.documentElement.dataset.viewerAssetPilotInstances = String(furniturePilot.instanceCount || 0);
+document.documentElement.dataset.viewerAssetPilotFurnitureErrors = String(furniturePilot.errors?.length || 0);
+document.documentElement.dataset.viewerAssetPilotMaterialErrors = String(materialPilot.errors?.length || 0);
+document.documentElement.dataset.viewerAssetPilotMaterialMatches = String(materialPilot.matchedMaterials || 0);
 }, progress => {
   if (progress.total) {
     const percent = Math.round(100 * progress.loaded / progress.total);

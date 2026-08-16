@@ -1,0 +1,297 @@
+{
+  "schema_version": "1.0",
+  "pilot_id": "V18-ASSET-PILOT-MATERIALS-1",
+  "status": "PASS",
+  "scope": "PBR facade + residential lawn; no architecture or geometry mutation",
+  "architecture_geometry_changed": false,
+  "official_sources_only": true,
+  "licenses": {
+    "facade": {
+      "provider": "Poly Haven",
+      "asset": "White Stucco",
+      "asset_id": "white_stucco",
+      "license": "CC0 1.0",
+      "license_url": "https://polyhaven.com/license",
+      "page_url": "https://polyhaven.com/a/white_stucco"
+    },
+    "grass": {
+      "provider": "ambientCG",
+      "asset": "Grass 005",
+      "asset_id": "Grass005",
+      "license": "CC0 1.0 Universal",
+      "license_url": "https://docs.ambientcg.com/license/",
+      "page_url": "https://ambientcg.com/a/Grass005"
+    }
+  },
+  "source_and_derivative_evidence": {
+    "facade": {
+      "physical_dimensions_m": [
+        1.998,
+        1.998
+      ],
+      "original": {
+        "color": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/white_stucco/white_stucco_diff_2k.jpg",
+          "path": "assets_external/materials/facade/white_stucco/original/white_stucco_diff_2k.jpg",
+          "bytes": 2326889,
+          "sha256": "A1CF9063E72D82306C5F3330CFAA56ED75EE365DC6A6EB875CDE125395DBE4EA",
+          "reused": true
+        },
+        "normal_gl": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/white_stucco/white_stucco_nor_gl_2k.jpg",
+          "path": "assets_external/materials/facade/white_stucco/original/white_stucco_nor_gl_2k.jpg",
+          "bytes": 4025312,
+          "sha256": "D11EAE11D09AF20A1BD4E1262B1D35AD4259451A19651307A7FA8F6C0CADFC59",
+          "reused": true
+        },
+        "arm": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/white_stucco/white_stucco_arm_2k.jpg",
+          "path": "assets_external/materials/facade/white_stucco/original/white_stucco_arm_2k.jpg",
+          "bytes": 1390598,
+          "sha256": "15C6162BD93FC94B1FEC078CABE595E44652B1B4D78D5932F8F143E3911B6BB1",
+          "reused": true
+        }
+      },
+      "optimized": {
+        "color": {
+          "path": "assets_external/materials/facade/white_stucco/optimized/white_stucco_color_1k.webp",
+          "bytes": 63686,
+          "sha256": "5222252B203684A6949670D5D303D764DD3F4E40A2DF4B97D5301DD1BBE5EC42",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "mode": "RGB",
+          "format": "WEBP"
+        },
+        "normal_gl": {
+          "path": "assets_external/materials/facade/white_stucco/optimized/white_stucco_normal_gl_1k.webp",
+          "bytes": 391816,
+          "sha256": "1B7BED28D294A667574D7B346FC2A2D12F8363C8EDF86F9C1E2EFE6BB01EA44D",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "mode": "RGB",
+          "format": "WEBP"
+        },
+        "arm": {
+          "path": "assets_external/materials/facade/white_stucco/optimized/white_stucco_arm_1k.webp",
+          "bytes": 34456,
+          "sha256": "BB1251D555396B1C5D5FB8199968D9714CAA1F4FEEB796AD037979405DCB640E",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "mode": "RGB",
+          "format": "WEBP"
+        },
+        "ao": {
+          "path": "assets_external/materials/facade/white_stucco/optimized/white_stucco_ao_1k.webp",
+          "bytes": 89002,
+          "sha256": "3A160C96A7EA608ACE26DE880E991E3F9606594D470002622D0AAAD24463B4B3",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "mode": "RGB",
+          "format": "WEBP"
+        }
+      }
+    },
+    "grass": {
+      "physical_dimensions": "not published (official v3 API reports zeros)",
+      "archive": {
+        "url": "https://ambientcg.com/get?file=Grass005_2K-JPG.zip",
+        "path": "assets_external/materials/exterior/grass005/original/Grass005_2K-JPG.zip",
+        "bytes": 39523019,
+        "sha256": "89183D8DCEABC3C23A26978F426E1662143DD2F84F1DC3586A1592D101E5234B",
+        "reused": true
+      },
+      "archive_crc": "PASS",
+      "archive_members": {
+        "color": {
+          "bytes": 7710363,
+          "sha256": "2ACDF15D09E790A114743F21BC0332A86E386CB77C54507323D626F67F0F2E10",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "format": "JPEG",
+          "archive_path": "assets_external/materials/exterior/grass005/original/Grass005_2K-JPG.zip",
+          "archive_member": "Grass005_2K-JPG_Color.jpg"
+        },
+        "normal_gl": {
+          "bytes": 9634506,
+          "sha256": "C8406E8B784FBCD22D706FBE0C24175C327BCA7E19AD8D09457FAD8A05089548",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "mode": "RGB",
+          "format": "JPEG",
+          "archive_path": "assets_external/materials/exterior/grass005/original/Grass005_2K-JPG.zip",
+          "archive_member": "Grass005_2K-JPG_NormalGL.jpg"
+        },
+        "roughness": {
+          "bytes": 3473702,
+          "sha256": "20C302C4CF059D6676D83528AE7CBF62CA35944E691DC6377A164CE9C31C8E67",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "mode": "L",
+          "format": "JPEG",
+          "archive_path": "assets_external/materials/exterior/grass005/original/Grass005_2K-JPG.zip",
+          "archive_member": "Grass005_2K-JPG_Roughness.jpg"
+        },
+        "ao": {
+          "bytes": 4167608,
+          "sha256": "CFB633134B164B376C9CBBD06774C6465570E3F156CAA8ECE080104AC00C7D09",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "mode": "L",
+          "format": "JPEG",
+          "archive_path": "assets_external/materials/exterior/grass005/original/Grass005_2K-JPG.zip",
+          "archive_member": "Grass005_2K-JPG_AmbientOcclusion.jpg"
+        },
+        "displacement": {
+          "bytes": 3275876,
+          "sha256": "B58D794D468457CC0E57539FDE2BB55905E85D1AF3FD692AFC0FB064D870937E",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "mode": "L",
+          "format": "JPEG",
+          "archive_path": "assets_external/materials/exterior/grass005/original/Grass005_2K-JPG.zip",
+          "archive_member": "Grass005_2K-JPG_Displacement.jpg"
+        }
+      },
+      "optimized": {
+        "color": {
+          "path": "assets_external/materials/exterior/grass005/optimized/Grass005_color_1k.webp",
+          "bytes": 364742,
+          "sha256": "8FFAB3A46B9D178370B32A3FB076BABA00362BB8940BB56404C7205585123F40",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "mode": "RGB",
+          "format": "WEBP"
+        },
+        "normal_gl": {
+          "path": "assets_external/materials/exterior/grass005/optimized/Grass005_normal_gl_1k.webp",
+          "bytes": 541710,
+          "sha256": "EF7B7C71D9D4D01F89AE2D7BD85775F6F18B00037B8BA907FA975F6C94C28148",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "mode": "RGB",
+          "format": "WEBP"
+        },
+        "arm": {
+          "path": "assets_external/materials/exterior/grass005/optimized/Grass005_arm_1k.webp",
+          "bytes": 651874,
+          "sha256": "DEDCBE2EDCED39A0D51166115CD499E339FA604E5033B2FE1E0A2D182B60D1BE",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "mode": "RGB",
+          "format": "WEBP"
+        },
+        "ao": {
+          "path": "assets_external/materials/exterior/grass005/optimized/Grass005_ao_1k.webp",
+          "bytes": 634648,
+          "sha256": "D6D29CFEC2441265407EC349663D09C7214C37F1939F769625C82FAF5074C80D",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "mode": "RGB",
+          "format": "WEBP"
+        }
+      }
+    }
+  },
+  "runtime": {
+    "module": {
+      "path": "shared/live-materials-pilot.js",
+      "bytes": 7980,
+      "sha256": "2C295D8352B24CA4ECF530A578A2FA02F7D7D443B66075FDCAAF9F20C06EBEE2"
+    },
+    "audit_global": "window.__assetPilotMaterialAudit",
+    "facade_materials": [
+      "V12_PBR_OFFWHITE_STUCCO",
+      "V10_STUCCO_NEW_BUILD"
+    ],
+    "grass_material": "PBR_B_GRASS",
+    "maps": "baseColor=sRGB, normal OpenGL=NoColorSpace, packed ARM=NoColorSpace; flipY=false; RepeatWrapping; mipmaps; anisotropy<=8",
+    "tiling": {
+      "V12_PBR_OFFWHITE_STUCCO": [
+        3,
+        3
+      ],
+      "V10_STUCCO_NEW_BUILD": [
+        6,
+        6
+      ],
+      "PBR_B_GRASS": [
+        8,
+        8
+      ]
+    },
+    "runtime_payload_bytes": {
+      "facade": 489958,
+      "grass": 1558326,
+      "total": 2048284
+    },
+    "fallback": "A category is applied only after all 3 maps load; otherwise its original embedded GLB bindings are retained."
+  },
+  "browser_validation": {
+    "url": "http://127.0.0.1:8896/validation/material-pilot-harness.html?clean=1",
+    "literal_result": "V18-ASSET-PILOT-MATERIALS-1\\nstatus=applied\\nmaterials=3/3\\nfacade=2\\ngrass=1\\nerrors=0",
+    "dataset": {
+      "materialHarnessReady": "true",
+      "viewerMaterialPilot": "applied"
+    },
+    "console_warnings_errors": [],
+    "http": "main GLB and all 6 runtime material maps returned HTTP 200",
+    "screenshot": {
+      "path": "validation/material-pilot-live-harness.png",
+      "bytes": 104692,
+      "sha256": "DBAFE907B17216AD678FCC1C701CB7A65F8C34A22529863E5854C430EE71C57B",
+      "dimensions": [
+        1280,
+        720
+      ]
+    }
+  },
+  "tests": [
+    {
+      "command": "python .\\validation\\build_pilot_material_assets.py",
+      "exit_status": 0,
+      "literal_result": "status=PASS; facade_original_bytes=7742799; facade_optimized_bytes=578960; grass_archive_bytes=39523019; grass_optimized_bytes=2192974"
+    },
+    {
+      "command": "node --check .\\shared\\live-materials-pilot.js",
+      "exit_status": 0,
+      "literal_result": ""
+    },
+    {
+      "command": "python -m py_compile .\\validation\\build_pilot_material_assets.py",
+      "exit_status": 0,
+      "literal_result": ""
+    }
+  ],
+  "build_report": {
+    "path": "validation/pilot_material_asset_build.json",
+    "bytes": 10100,
+    "sha256": "77099EACD5AAC7F42AE56FA668A5F74A9D80471E0969BFCE2F56EDD8729E814A"
+  }
+}

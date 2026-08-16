@@ -12,17 +12,27 @@
     "originalHedges": 18,
     "treeInstances": 4,
     "hedgeInstances": 18,
-    "hedgeCloneInstances": 108,
+    "hedgeCloneInstances": 18,
+    "hedgeGpuBatches": 2,
+    "hedgeGpuInstancing": true,
     "originalsHidden": 38,
-    "displayedTriangles": 1082996,
-    "drawCalls": 120,
-    "loadMs": 686,
+    "displayedTriangles": 565892,
+    "drawCalls": 14,
+    "loadMs": 278,
     "assets": {
       "tree": {
         "requested": true,
         "loaded": true,
-        "url": "http://127.0.0.1:8946/shared/assets/vegetation/island_tree_02_web.glb?release=harness",
         "error": null,
+        "decision": "ACCEPT_RETAIN_CURRENT_POLY_HAVEN",
+        "rejectedPilot": "BlenderKit Decorative Urban Tree",
+        "rejectionReason": "winter leafless silhouette; 123949 triangles; 7032388 bytes",
+        "url": "http://127.0.0.1:8946/shared/assets/vegetation/island_tree_02_web.glb?release=harness",
+        "dimensionsM": [
+          4.20032,
+          3.40825,
+          4.06767
+        ],
         "triangles": 47000,
         "drawCalls": 3,
         "meshes": 3,
@@ -32,21 +42,46 @@
       "hedge": {
         "requested": true,
         "loaded": true,
-        "url": "http://127.0.0.1:8946/shared/assets/vegetation/shrub_03_web.glb?release=harness",
         "error": null,
-        "triangles": 8287,
-        "drawCalls": 1,
-        "meshes": 1,
-        "uniqueGeometries": 1,
-        "uniqueMaterials": 1
+        "decision": "ACCEPT_BLENDERKIT_SHRUB_CC0",
+        "fallbackAsset": "Poly Haven shrub_03_web.glb",
+        "url": "http://127.0.0.1:8946/assets_external/vegetation/hedges/blenderkit_shrub/optimized/hedge_web.glb?release=harness",
+        "fallbackUrl": "http://127.0.0.1:8946/shared/assets/vegetation/shrub_03_web.glb?release=harness",
+        "fallbackRequested": false,
+        "fallbackLoaded": false,
+        "source": "pilot-primary",
+        "dimensionsM": [
+          1.25462,
+          0.76171,
+          1.25224
+        ],
+        "triangles": 20994,
+        "drawCalls": 2,
+        "meshes": 2,
+        "uniqueGeometries": 2,
+        "uniqueMaterials": 2
       }
     },
-    "fallbackUsed": false
+    "fallbackUsed": false,
+    "performanceBudget": {
+      "baselineDisplayedTriangles": 1082996,
+      "baselineDrawCalls": 120,
+      "baselineHedgeClones": 108,
+      "targetFpsMinimum": 30
+    }
+  },
+  "frameMetrics": {
+    "kind": "main-thread-submit",
+    "frames": 12,
+    "elapsedMs": 42.69999998807907,
+    "fps": 281.0304450433289
   },
   "state": {
     "datasetStatus": "enhanced",
-    "datasetTriangles": "1082996",
-    "datasetDrawCalls": "120",
+    "datasetTriangles": "565892",
+    "datasetDrawCalls": "14",
+    "datasetGpuBatches": "2",
+    "datasetGpuInstancing": "true",
     "enhancedGroup": true,
     "webgl2": true
   },
@@ -60,17 +95,27 @@
     "originalHedges": 18,
     "treeInstances": 4,
     "hedgeInstances": 18,
-    "hedgeCloneInstances": 108,
+    "hedgeCloneInstances": 18,
+    "hedgeGpuBatches": 2,
+    "hedgeGpuInstancing": true,
     "originalsHidden": 38,
-    "displayedTriangles": 1082996,
-    "drawCalls": 120,
-    "loadMs": 245,
+    "displayedTriangles": 565892,
+    "drawCalls": 14,
+    "loadMs": 335,
     "assets": {
       "tree": {
         "requested": true,
         "loaded": true,
-        "url": "http://127.0.0.1:8946/shared/assets/vegetation/island_tree_02_web.glb?release=harness",
         "error": null,
+        "decision": "ACCEPT_RETAIN_CURRENT_POLY_HAVEN",
+        "rejectedPilot": "BlenderKit Decorative Urban Tree",
+        "rejectionReason": "winter leafless silhouette; 123949 triangles; 7032388 bytes",
+        "url": "http://127.0.0.1:8946/shared/assets/vegetation/island_tree_02_web.glb?release=harness",
+        "dimensionsM": [
+          4.20032,
+          3.40825,
+          4.06767
+        ],
         "triangles": 47000,
         "drawCalls": 3,
         "meshes": 3,
@@ -80,20 +125,37 @@
       "hedge": {
         "requested": true,
         "loaded": true,
-        "url": "http://127.0.0.1:8946/shared/assets/vegetation/shrub_03_web.glb?release=harness",
         "error": null,
-        "triangles": 8287,
-        "drawCalls": 1,
-        "meshes": 1,
-        "uniqueGeometries": 1,
-        "uniqueMaterials": 1
+        "decision": "ACCEPT_BLENDERKIT_SHRUB_CC0",
+        "fallbackAsset": "Poly Haven shrub_03_web.glb",
+        "url": "http://127.0.0.1:8946/assets_external/vegetation/hedges/blenderkit_shrub/optimized/hedge_web.glb?release=harness",
+        "fallbackUrl": "http://127.0.0.1:8946/shared/assets/vegetation/shrub_03_web.glb?release=harness",
+        "fallbackRequested": false,
+        "fallbackLoaded": false,
+        "source": "pilot-primary",
+        "dimensionsM": [
+          1.25462,
+          0.76171,
+          1.25224
+        ],
+        "triangles": 20994,
+        "drawCalls": 2,
+        "meshes": 2,
+        "uniqueGeometries": 2,
+        "uniqueMaterials": 2
       }
     },
-    "fallbackUsed": false
+    "fallbackUsed": false,
+    "performanceBudget": {
+      "baselineDisplayedTriangles": 1082996,
+      "baselineDrawCalls": 120,
+      "baselineHedgeClones": 108,
+      "targetFpsMinimum": 30
+    }
   },
   "mobileGlbRequests": [
     "http://127.0.0.1:8946/shared/assets/vegetation/island_tree_02_web.glb?release=harness",
-    "http://127.0.0.1:8946/shared/assets/vegetation/shrub_03_web.glb?release=harness"
+    "http://127.0.0.1:8946/assets_external/vegetation/hedges/blenderkit_shrub/optimized/hedge_web.glb?release=harness"
   ],
   "mobileConsoleErrors": [],
   "constrainedAudit": {
@@ -107,26 +169,129 @@
     "treeInstances": 0,
     "hedgeInstances": 0,
     "hedgeCloneInstances": 0,
+    "hedgeGpuBatches": 0,
+    "hedgeGpuInstancing": false,
     "originalsHidden": 0,
     "displayedTriangles": 0,
     "drawCalls": 0,
-    "loadMs": 1,
+    "loadMs": 2,
     "assets": {
       "tree": {
         "requested": false,
         "loaded": false,
-        "error": null
+        "error": null,
+        "decision": "ACCEPT_RETAIN_CURRENT_POLY_HAVEN",
+        "rejectedPilot": "BlenderKit Decorative Urban Tree",
+        "rejectionReason": "winter leafless silhouette; 123949 triangles; 7032388 bytes"
       },
       "hedge": {
         "requested": false,
         "loaded": false,
-        "error": null
+        "error": null,
+        "decision": "ACCEPT_BLENDERKIT_SHRUB_CC0",
+        "fallbackAsset": "Poly Haven shrub_03_web.glb"
       }
     },
-    "fallbackUsed": true
+    "fallbackUsed": true,
+    "performanceBudget": {
+      "baselineDisplayedTriangles": 1082996,
+      "baselineDrawCalls": 120,
+      "baselineHedgeClones": 108,
+      "targetFpsMinimum": 30
+    }
   },
   "constrainedGlbRequests": [],
   "constrainedConsoleErrors": [],
+  "fallbackAudit": {
+    "status": "enhanced",
+    "mode": "enhanced-desktop",
+    "mobile": false,
+    "deviceMemoryGb": 32,
+    "saveData": false,
+    "originalTreeFamilies": 4,
+    "originalHedges": 18,
+    "treeInstances": 4,
+    "hedgeInstances": 18,
+    "hedgeCloneInstances": 108,
+    "hedgeGpuBatches": 0,
+    "hedgeGpuInstancing": false,
+    "originalsHidden": 38,
+    "displayedTriangles": 1082996,
+    "drawCalls": 120,
+    "loadMs": 228,
+    "assets": {
+      "tree": {
+        "requested": true,
+        "loaded": true,
+        "error": null,
+        "decision": "ACCEPT_RETAIN_CURRENT_POLY_HAVEN",
+        "rejectedPilot": "BlenderKit Decorative Urban Tree",
+        "rejectionReason": "winter leafless silhouette; 123949 triangles; 7032388 bytes",
+        "url": "http://127.0.0.1:8946/shared/assets/vegetation/island_tree_02_web.glb?release=harness",
+        "dimensionsM": [
+          4.20032,
+          3.40825,
+          4.06767
+        ],
+        "triangles": 47000,
+        "drawCalls": 3,
+        "meshes": 3,
+        "uniqueGeometries": 3,
+        "uniqueMaterials": 3
+      },
+      "hedge": {
+        "requested": true,
+        "loaded": true,
+        "error": "fetch for \"<asset-url> responded with 404: File not found",
+        "decision": "ACCEPT_BLENDERKIT_SHRUB_CC0",
+        "fallbackAsset": "Poly Haven shrub_03_web.glb",
+        "url": "http://127.0.0.1:8946/validation/missing-primary-hedge.glb?release=harness",
+        "fallbackUrl": "http://127.0.0.1:8946/shared/assets/vegetation/shrub_03_web.glb?release=harness",
+        "fallbackRequested": true,
+        "fallbackLoaded": true,
+        "source": "retained-fallback",
+        "dimensionsM": [
+          1.36692,
+          0.40278,
+          0.1512
+        ],
+        "triangles": 8287,
+        "drawCalls": 1,
+        "meshes": 1,
+        "uniqueGeometries": 1,
+        "uniqueMaterials": 1
+      }
+    },
+    "fallbackUsed": true,
+    "performanceBudget": {
+      "baselineDisplayedTriangles": 1082996,
+      "baselineDrawCalls": 120,
+      "baselineHedgeClones": 108,
+      "targetFpsMinimum": 30
+    }
+  },
+  "fallbackGlbRequests": [
+    "http://127.0.0.1:8946/shared/assets/vegetation/island_tree_02_web.glb?release=harness",
+    "http://127.0.0.1:8946/validation/missing-primary-hedge.glb?release=harness",
+    "http://127.0.0.1:8946/shared/assets/vegetation/shrub_03_web.glb?release=harness"
+  ],
+  "fallbackResponses": [
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:8946/shared/assets/vegetation/island_tree_02_web.glb?release=harness"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:8946/validation/missing-primary-hedge.glb?release=harness"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:8946/shared/assets/vegetation/shrub_03_web.glb?release=harness"
+    }
+  ],
+  "fallbackConsoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
   "consoleErrors": [],
   "requestFailures": [],
   "badResponses": [],
@@ -135,6 +300,8 @@
     "treeInstances": true,
     "hedgeInstances": true,
     "hedgeCloneInstances": true,
+    "hedgeGpuBatches": true,
+    "hedgeGpuInstancing": true,
     "displayedTriangles": true,
     "drawCalls": true,
     "originalsHidden": true,
@@ -142,12 +309,16 @@
     "dataset_status": true,
     "dataset_triangles": true,
     "dataset_draw_calls": true,
+    "dataset_gpu_batches": true,
+    "dataset_gpu_instancing": true,
+    "main_thread_submit_fps_minimum_30": true,
     "webgl2": true,
     "console_errors_zero": true,
     "request_failures_zero": true,
     "http_bad_zero": true,
     "mobile_status": true,
     "mobile_instances": true,
+    "mobile_gpu_instancing": true,
     "mobile_triangles": true,
     "mobile_optional_glb_requests": true,
     "mobile_console_errors_zero": true,
@@ -155,6 +326,11 @@
     "constrained_instances_zero": true,
     "constrained_triangles_zero": true,
     "constrained_optional_glb_requests_zero": true,
-    "constrained_console_errors_zero": true
+    "constrained_console_errors_zero": true,
+    "fallback_runtime_state": true,
+    "fallback_current_asset_loaded": true,
+    "fallback_legacy_budget": true,
+    "fallback_primary_404_observed": true,
+    "fallback_retained_glb_200": true
   }
 }

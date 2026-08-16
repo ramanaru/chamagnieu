@@ -1,0 +1,406 @@
+{
+  "schema": "CHAMAGNIEU_ASSET_PILOT_BROWSER_AUDIT_V1",
+  "testedAt": "2026-08-16T16:04:40.924Z",
+  "result": "PASS_FUNCTIONAL",
+  "performanceGate": "INDETERMINATE_IN_SUBAGENT_BACKGROUND_IAB",
+  "urls": {
+    "presentation": "http://127.0.0.1:8902/presentation/?audit=browser-final-2",
+    "visite": "http://127.0.0.1:8902/visite/?release=v18-asset-pilot-1"
+  },
+  "identity": {
+    "viewerReady": "true",
+    "version": "V18",
+    "release": "V18-ASSET-PILOT-1",
+    "source": "LIVE WEB VIEWER",
+    "model": "Chamagnieu_V18_WEB_REALISM_UPGRADED.glb",
+    "webgl": {
+      "isWebGL2": true,
+      "renderer": "WebKit WebGL",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    }
+  },
+  "datasets": {
+    "presentation": {
+      "liveLighting": "V18-WEB-REALISM-LIGHTING-R2",
+      "projectConfig": "../shared/project-config.json",
+      "projectRelease": "V18-ASSET-PILOT-1",
+      "projectVersion": "V18",
+      "viewerAssetPilot": "accepted",
+      "viewerAssetPilotFamilies": "4",
+      "viewerAssetPilotFurnitureErrors": "0",
+      "viewerAssetPilotInstances": "11",
+      "viewerAssetPilotMaterialErrors": "0",
+      "viewerAssetPilotMaterialMatches": "3",
+      "viewerFurnitureMeshes": "169",
+      "viewerFurnitureVisible": "true",
+      "viewerMaterialPilot": "applied",
+      "viewerMaterials": "41",
+      "viewerMeshes": "795",
+      "viewerModel": "Chamagnieu_V18_WEB_REALISM_UPGRADED.glb",
+      "viewerReady": "true",
+      "viewerRelease": "V18-ASSET-PILOT-1",
+      "viewerShadowMode": "static-once-after-assets",
+      "viewerSource": "LIVE WEB VIEWER",
+      "viewerTextures": "119",
+      "viewerVegetation": "enhanced",
+      "viewerVegetationDrawCalls": "14",
+      "viewerVegetationGpuInstancing": "true",
+      "viewerVegetationHedgeClones": "18",
+      "viewerVegetationHedgeGpuBatches": "2",
+      "viewerVegetationLoadMs": "2744",
+      "viewerVegetationTriangles": "565892",
+      "viewerVersion": "V18"
+    },
+    "visitAtOutside": {
+      "liveLighting": "V18-WEB-REALISM-LIGHTING-R2",
+      "projectConfig": "../shared/project-config.json",
+      "projectRelease": "V18-ASSET-PILOT-1",
+      "projectVersion": "V18",
+      "viewerAssetPilot": "accepted",
+      "viewerAssetPilotFamilies": "4",
+      "viewerAssetPilotFurnitureErrors": "0",
+      "viewerAssetPilotInstances": "11",
+      "viewerAssetPilotMaterialErrors": "0",
+      "viewerAssetPilotMaterialMatches": "3",
+      "viewerFurnitureMeshes": "169",
+      "viewerFurnitureVisible": "true",
+      "viewerMaterialPilot": "applied",
+      "viewerMaterials": "41",
+      "viewerMeshes": "795",
+      "viewerModel": "Chamagnieu_V18_WEB_REALISM_UPGRADED.glb",
+      "viewerReady": "true",
+      "viewerRelease": "V18-ASSET-PILOT-1",
+      "viewerShadowMode": "static-once-after-assets",
+      "viewerSource": "LIVE WEB VIEWER",
+      "viewerTextures": "119",
+      "viewerVegetation": "enhanced",
+      "viewerVegetationDrawCalls": "14",
+      "viewerVegetationGpuInstancing": "true",
+      "viewerVegetationHedgeClones": "18",
+      "viewerVegetationHedgeGpuBatches": "2",
+      "viewerVegetationLoadMs": "4925",
+      "viewerVegetationTriangles": "565892",
+      "viewerVersion": "V18"
+    }
+  },
+  "categories": {
+    "passed": 8,
+    "total": 8,
+    "details": {
+      "sofa": {
+        "pass": true,
+        "instances": 1,
+        "evidence": "03-presentation-living-sofa-live.png"
+      },
+      "table": {
+        "pass": true,
+        "instances": 1,
+        "evidence": "04-presentation-dining-table-chairs-live.png"
+      },
+      "chair": {
+        "pass": true,
+        "instances": 6,
+        "evidence": "04-presentation-dining-table-chairs-live.png"
+      },
+      "bed": {
+        "pass": true,
+        "instances": 3,
+        "evidence": "05-presentation-bedroom-bed-live.png"
+      },
+      "tree": {
+        "pass": true,
+        "instances": 4,
+        "evidence": "07-presentation-garden-trees-live.png"
+      },
+      "hedge": {
+        "pass": true,
+        "instances": 18,
+        "gpuBatches": 2,
+        "evidence": "02-presentation-hedges-live.png"
+      },
+      "facade_pbr": {
+        "pass": true,
+        "appliedMaterials": 2,
+        "evidence": "01-presentation-facade-live.png"
+      },
+      "grass_pbr": {
+        "pass": true,
+        "appliedMaterials": 1,
+        "evidence": "06-presentation-exterior-ground-live.png"
+      }
+    }
+  },
+  "views": {
+    "passed": 7,
+    "total": 7,
+    "details": [
+      {
+        "label": "Façade texturée",
+        "file": "01-presentation-facade-live.png",
+        "active": "active",
+        "visibleSource": true,
+        "bytes": 123818
+      },
+      {
+        "label": "Haies",
+        "file": "02-presentation-hedges-live.png",
+        "active": "active",
+        "visibleSource": true,
+        "bytes": 140356
+      },
+      {
+        "label": "Séjour / canapé",
+        "file": "03-presentation-living-sofa-live.png",
+        "active": "active",
+        "visibleSource": true,
+        "bytes": 93489
+      },
+      {
+        "label": "Table / chaises",
+        "file": "04-presentation-dining-table-chairs-live.png",
+        "active": "active",
+        "visibleSource": true,
+        "bytes": 96074
+      },
+      {
+        "label": "Lit / chambre",
+        "file": "05-presentation-bedroom-bed-live.png",
+        "active": "active",
+        "visibleSource": true,
+        "bytes": 77588
+      },
+      {
+        "label": "Sol extérieur",
+        "file": "06-presentation-exterior-ground-live.png",
+        "active": "active",
+        "visibleSource": true,
+        "bytes": 142085
+      },
+      {
+        "label": "Jardin / arbres",
+        "file": "07-presentation-garden-trees-live.png",
+        "active": "active",
+        "visibleSource": true,
+        "bytes": 109016
+      }
+    ]
+  },
+  "furnitureToggle": {
+    "presentation": [
+      "true",
+      "false",
+      "true"
+    ],
+    "visite": [
+      "true",
+      "false",
+      "true"
+    ],
+    "pass": true
+  },
+  "entryFlow": {
+    "pass": true,
+    "fromPresentationLink": "Commencer dehors et entrer",
+    "outsidePose": {
+      "position": [
+        1.941,
+        1.65,
+        -15.173
+      ],
+      "target": [
+        -1.436,
+        1.4,
+        -0.663
+      ]
+    },
+    "startButton": "Commencer dehors",
+    "controlFallback": {
+      "controlMode": "keyboard-drag-fallback",
+      "fallbackReason": "WrongDocumentError",
+      "position": [
+        1.941,
+        1.65,
+        -15.173
+      ],
+      "status": "Mode souris-glisser actif · utilisez ZQSD/WASD pour entrer · SOURCE = LIVE WEB VIEWER",
+      "target": [
+        -1.436,
+        1.4,
+        -0.663
+      ]
+    },
+    "discreteKeypressProbe": {
+      "input": "W x12, A x4, D x4",
+      "observablePoseDelta": 0,
+      "note": "La position globale est actualisee par les prereglages; le maintien de touche n est pas expose par API IAB."
+    },
+    "interiorPresetMovement": {
+      "input": "button Cuisine",
+      "before": {
+        "position": [
+          1.941,
+          1.65,
+          -15.173
+        ],
+        "target": [
+          -1.436,
+          1.4,
+          -0.663
+        ]
+      },
+      "after": {
+        "position": [
+          -5.829,
+          1.65,
+          3.525
+        ],
+        "target": [
+          -3.487,
+          1.2,
+          2.836
+        ]
+      },
+      "delta": [
+        -7.77,
+        0,
+        18.698
+      ],
+      "distanceM": 20.248162978403744,
+      "screenshot": {
+        "file": "09-visite-inside-kitchen-live.png",
+        "bytes": 82341,
+        "sourceBadgeVisible": true
+      }
+    },
+    "outsideScreenshot": "08-visite-start-outside-live.png",
+    "insideScreenshot": "09-visite-inside-kitchen-live.png"
+  },
+  "network": {
+    "method": "CDP Network, cache disabled for deterministic all-200 reload, then restored",
+    "presentation": {
+      "responses": 138,
+      "failed": 0,
+      "non2xx": 0,
+      "exceptions": 0,
+      "consoleErrors": 0,
+      "logWarningsOrErrors": 0,
+      "truncated": false
+    },
+    "visite": {
+      "responses": 138,
+      "failed": 0,
+      "non2xx": 0,
+      "exceptions": 0,
+      "consoleErrors": 0,
+      "logWarningsOrErrors": 0,
+      "truncated": false
+    }
+  },
+  "console": {
+    "presentationWarningsOrErrors": 0,
+    "visiteWarningsOrErrors": 0
+  },
+  "brokenImages": {
+    "presentation": 0,
+    "visite": 0
+  },
+  "raf": {
+    "scope": "IAB subagent background tab; Chromium throttling observed. Raw scheduler cadence, not foreground GPU capacity.",
+    "presentation": {
+      "durationMs": 5039.800000035757,
+      "fps": 11.508393190124309,
+      "frames": 59,
+      "maxFrameMs": 116.70000000001164,
+      "medianFrameMs": 83.30000000001746,
+      "minFrameMs": 66.5,
+      "p95FrameMs": 100.10000000000582,
+      "samples": 58
+    },
+    "visite": {
+      "durationMs": 5030.699999999997,
+      "fps": 11.72799014053711,
+      "frames": 60,
+      "maxFrameMs": 133.29999999999563,
+      "medianFrameMs": 83.30000000000291,
+      "minFrameMs": 50,
+      "p95FrameMs": 100.10000000000582,
+      "samples": 59
+    },
+    "targetFps": 30,
+    "foregroundGate": "INDETERMINATE"
+  },
+  "screenshots": [
+    {
+      "file": "validation/asset_pilot_screenshots/browser_final/01-presentation-facade-live.png",
+      "bytes": 123818,
+      "sha256": "56869D5894B879365CE6B49276B43228B364750A7251D00F461D4DCF38BA4E01",
+      "width": 65536,
+      "height": 4292542531,
+      "source": "LIVE WEB VIEWER"
+    },
+    {
+      "file": "validation/asset_pilot_screenshots/browser_final/02-presentation-hedges-live.png",
+      "bytes": 140356,
+      "sha256": "71DF793E2C5CDAD2F3A8C254B6A200218801924788C530F18969F06B15E72FF9",
+      "width": 65536,
+      "height": 4292542531,
+      "source": "LIVE WEB VIEWER"
+    },
+    {
+      "file": "validation/asset_pilot_screenshots/browser_final/03-presentation-living-sofa-live.png",
+      "bytes": 93489,
+      "sha256": "90B7805E9828F3D710FFE42D45811683E700A0B059B776E228C30BD92E42B9BA",
+      "width": 65536,
+      "height": 4292542531,
+      "source": "LIVE WEB VIEWER"
+    },
+    {
+      "file": "validation/asset_pilot_screenshots/browser_final/04-presentation-dining-table-chairs-live.png",
+      "bytes": 96074,
+      "sha256": "D47833D4A674EFDE42032DC740B5D67AD955BC75C6E0C2E90A05FC10AE0AB3D6",
+      "width": 65536,
+      "height": 4292542531,
+      "source": "LIVE WEB VIEWER"
+    },
+    {
+      "file": "validation/asset_pilot_screenshots/browser_final/05-presentation-bedroom-bed-live.png",
+      "bytes": 77588,
+      "sha256": "A3FE6D7C7FD915B69390480942AB1FECFB848ABF52604E447B42CEF391953830",
+      "width": 65536,
+      "height": 4292542531,
+      "source": "LIVE WEB VIEWER"
+    },
+    {
+      "file": "validation/asset_pilot_screenshots/browser_final/06-presentation-exterior-ground-live.png",
+      "bytes": 142085,
+      "sha256": "678BBE39106A428B1FB01F3E0BC625647705AA8096D6A8E49968FABFE1DD31D4",
+      "width": 65536,
+      "height": 4292542531,
+      "source": "LIVE WEB VIEWER"
+    },
+    {
+      "file": "validation/asset_pilot_screenshots/browser_final/07-presentation-garden-trees-live.png",
+      "bytes": 109016,
+      "sha256": "93E2C074A0B2DED9CD73169BE77A36004A15179B2C21E0B3765EFDE267E16D52",
+      "width": 65536,
+      "height": 4292542531,
+      "source": "LIVE WEB VIEWER"
+    },
+    {
+      "file": "validation/asset_pilot_screenshots/browser_final/08-visite-start-outside-live.png",
+      "bytes": 124207,
+      "sha256": "1C0466CF086A3CF88D2E175FEB423A0FFB336D10E7374A9C2C73CB77BE97EA7C",
+      "width": 65536,
+      "height": 4292542531,
+      "source": "LIVE WEB VIEWER"
+    },
+    {
+      "file": "validation/asset_pilot_screenshots/browser_final/09-visite-inside-kitchen-live.png",
+      "bytes": 82341,
+      "sha256": "438AF23ECFBB09B33C42600CD4878678429AF377D7F413C4578002C64F882353",
+      "width": 65536,
+      "height": 4292542531,
+      "source": "LIVE WEB VIEWER"
+    }
+  ]
+}

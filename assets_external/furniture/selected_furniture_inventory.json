@@ -1,0 +1,119 @@
+[
+  {
+    "role": "sofa",
+    "root": "assets_external/furniture/living/sofa",
+    "files": [
+      {
+        "path": "assets_external/furniture/living/sofa/optimized/sofa_web.glb",
+        "bytes": 2577832,
+        "sha256": "A1321C8B14FFC4170CECA330B581441ADE66B64CA87FF89D772E385367D21B3D"
+      },
+      {
+        "path": "assets_external/furniture/living/sofa/original/library_metadata.json",
+        "bytes": 23236,
+        "sha256": "0058C2AC4AB4718EE92FC7C68CA2A2D94B864EBA0F0A52C9032ED2E5A5733F28"
+      },
+      {
+        "path": "assets_external/furniture/living/sofa/original/sofa_4faac4b8-cc88-4ff2-b7fd-a7edf46d3518_library.glb",
+        "bytes": 731828,
+        "sha256": "ACFAB778384BB6D6D5EB4AFE809A6A010017BFBA184EA35CCFF965E91150B7A2"
+      }
+    ],
+    "optimized_web_glb": "assets_external/furniture/living/sofa/optimized/sofa_web.glb",
+    "optimized_web_glb_sha256": "A1321C8B14FFC4170CECA330B581441ADE66B64CA87FF89D772E385367D21B3D"
+  },
+  {
+    "role": "table",
+    "root": "assets_external/furniture/dining/table",
+    "files": [
+      {
+        "path": "assets_external/furniture/dining/table/optimized/table_web.glb",
+        "bytes": 3544464,
+        "sha256": "A8BCD84ADADC29F9DC26EEFA068FA393823E2599493BCADB62797986D89F67B0"
+      },
+      {
+        "path": "assets_external/furniture/dining/table/original/library_metadata.json",
+        "bytes": 21837,
+        "sha256": "2F866CC21EC16F34FCF75A1B098647369E81CE25379084EEDFFB3ED62E1C0E7F"
+      },
+      {
+        "path": "assets_external/furniture/dining/table/original/table_bdff957c-a9e9-4827-b6c9-602b264a4fbf_1k_download.blend.zst",
+        "bytes": 1599907,
+        "sha256": "4D1F439387C0D5B04CDBBA919B7C9C21F2E7ED1BA3C6B9074938D61D8417DEEC"
+      },
+      {
+        "path": "assets_external/furniture/dining/table/original/table_bdff957c-a9e9-4827-b6c9-602b264a4fbf_1k_source.blend",
+        "bytes": 2294096,
+        "sha256": "CB6B19157399A87DBDAA9E9C8F92A05B5DA8E9D3A652FD85D8D8BA39B06A2F8C"
+      }
+    ],
+    "optimized_web_glb": "assets_external/furniture/dining/table/optimized/table_web.glb",
+    "optimized_web_glb_sha256": "A8BCD84ADADC29F9DC26EEFA068FA393823E2599493BCADB62797986D89F67B0"
+  },
+  {
+    "role": "chair",
+    "root": "assets_external/furniture/dining/chair",
+    "files": [
+      {
+        "path": "assets_external/furniture/dining/chair/optimized/chair_web.glb",
+        "bytes": 920384,
+        "sha256": "6E5CC754877D49AF17EA2431693E29B07DEEA0A6B14163B1F23EF933E1FAAC71"
+      },
+      {
+        "path": "assets_external/furniture/dining/chair/original/dining_chair_02.bin",
+        "bytes": 544592,
+        "sha256": "C7F1EF858F73815176D2AB304472A69CCF6097E971E5258EB924A75F841D4AF5"
+      },
+      {
+        "path": "assets_external/furniture/dining/chair/original/dining_chair_02_1k.gltf",
+        "bytes": 2723,
+        "sha256": "88352A44A17319846F61FE03CE75C79FB1849AA508B6A262366C149C1BBD06B8"
+      },
+      {
+        "path": "assets_external/furniture/dining/chair/original/library_metadata.json",
+        "bytes": 4278,
+        "sha256": "75EEE6E24E1BF4707BD2E5A0EF6E685D5617C359CEB016E9C7EAB628796C1529"
+      },
+      {
+        "path": "assets_external/furniture/dining/chair/original/textures/dining_chair_02_arm_1k.jpg",
+        "bytes": 162630,
+        "sha256": "0A81C0C886BAA1E65D94FB6FB90AB4751BEE319888ECF1C428AE62042D8A5B15"
+      },
+      {
+        "path": "assets_external/furniture/dining/chair/original/textures/dining_chair_02_diff_1k.jpg",
+        "bytes": 91518,
+        "sha256": "343990F764790DA1149485A422DEE2BC6797945A6AF06A37D02D7A7DE041ACF5"
+      },
+      {
+        "path": "assets_external/furniture/dining/chair/original/textures/dining_chair_02_nor_gl_1k.jpg",
+        "bytes": 119612,
+        "sha256": "348703512CA1215F8389E9108419C2D1A46537663DB25F423C3EF900D20CFE61"
+      }
+    ],
+    "optimized_web_glb": "assets_external/furniture/dining/chair/optimized/chair_web.glb",
+    "optimized_web_glb_sha256": "6E5CC754877D49AF17EA2431693E29B07DEEA0A6B14163B1F23EF933E1FAAC71"
+  },
+  {
+    "role": "bed",
+    "root": "assets_external/furniture/bedroom/bed",
+    "files": [
+      {
+        "path": "assets_external/furniture/bedroom/bed/optimized/bed_web.glb",
+        "bytes": 350248,
+        "sha256": "AC6B3C975A1EE98F1288A5567D4C5F89C8A9973AF7D4CF3EAB88AC79AF205637"
+      },
+      {
+        "path": "assets_external/furniture/bedroom/bed/original/bed_d493c69a-5c64-40bf-a7a6-a4e745bfbea8_library.glb",
+        "bytes": 133244,
+        "sha256": "3BEFAF428A7AAE55C6C2C2277DAD340599E3C7D95A63462A2EE9E2770975395E"
+      },
+      {
+        "path": "assets_external/furniture/bedroom/bed/original/library_metadata.json",
+        "bytes": 13738,
+        "sha256": "D42B54E59CEFCE010BC87E737D6C21E73076369FBDBF981D3C345A85D84FEB2C"
+      }
+    ],
+    "optimized_web_glb": "assets_external/furniture/bedroom/bed/optimized/bed_web.glb",
+    "optimized_web_glb_sha256": "AC6B3C975A1EE98F1288A5567D4C5F89C8A9973AF7D4CF3EAB88AC79AF205637"
+  }
+]

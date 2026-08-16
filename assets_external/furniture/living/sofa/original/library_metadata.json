@@ -1,0 +1,544 @@
+{
+  "asset": {
+    "pk": 155022,
+    "url": "https://www.blenderkit.com/api/v1/assets/28a241ec-fde8-4d8e-b8f9-b74a5dc3d446/",
+    "id": "28a241ec-fde8-4d8e-b8f9-b74a5dc3d446",
+    "assetBaseId": "4faac4b8-cc88-4ff2-b7fd-a7edf46d3518",
+    "versionNumber": 1,
+    "author": {
+      "id": 1188666,
+      "firstName": "Muhammed",
+      "lastName": "Ismayil",
+      "gravatarHash": "0db1113b9e0494f4b2c4af64b641d23d",
+      "avatar128": "/avatar-redirect/c6bfd10a-2d9a-493a-b4fd-b0d4b7f9418c/128/",
+      "avatar256": "/avatar-redirect/c6bfd10a-2d9a-493a-b4fd-b0d4b7f9418c/256/",
+      "avatar512": "/avatar-redirect/c6bfd10a-2d9a-493a-b4fd-b0d4b7f9418c/512/",
+      "aboutMe": "3D Artist for 5 years, like to sculpt",
+      "aboutMeUrl": "https://www.artstation.com/agneht/albums/13627985",
+      "fullName": "Muhammed Ismayil",
+      "socialNetworks": [
+        {
+          "socialNetwork": {
+            "name": "Instagram",
+            "icon": "<i class=\"fab fa-instagram\" title=\"Instagram\"></i><span class=\"sr-only\">Instagram</span>",
+            "order": 3
+          },
+          "url": "https://www.instagram.com/ismayil_k__"
+        },
+        {
+          "socialNetwork": {
+            "name": "ArtStation",
+            "icon": "<i class=\"fab fa-artstation\" title=\"ArtStation\"></i><span class=\"sr-only\">ArtStation</span>",
+            "order": 5
+          },
+          "url": "https://www.artstation.com/agneht"
+        },
+        {
+          "socialNetwork": {
+            "name": "YouTube",
+            "icon": "<i class=\"fab fa-youtube\" title=\"YouTube\"></i><span class=\"sr-only\">YouTube</span>",
+            "order": 1
+          },
+          "url": "https://www.youtube.com/@ismayilkismu906"
+        }
+      ]
+    },
+    "name": "Leather Sofa",
+    "displayName": "Leather Sofa",
+    "description": "3 Seat Leather Sofa, Midpoly, PBR, works in both Eevee and Cycles",
+    "descriptionHtml": "<p>3 Seat Leather Sofa, Midpoly, PBR, works in both Eevee and Cycles</p>",
+    "assetType": "model",
+    "category": "sofa",
+    "isFree": true,
+    "isForSale": false,
+    "basePrice": null,
+    "tags": [
+      "interior",
+      "architecture",
+      "pbr",
+      "sofa",
+      "couch",
+      "leather",
+      "furniture",
+      "room",
+      "fabric",
+      "gameready"
+    ],
+    "license": "cc_zero",
+    "sourceAppName": "blender",
+    "sourceAppVersion": "4.4.1",
+    "addonVersion": "3.16.1",
+    "created": "2025-06-20T15:08:51.130799+02:00",
+    "lastUserInteraction": "2025-07-31T19:01:41.739994+02:00",
+    "verificationStatus": "validated",
+    "isPrivate": false,
+    "files": [
+      {
+        "fileType": "blend",
+        "id": 765588,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/765588/",
+        "uuid": null,
+        "created": "2025-07-31T19:01:41.138231+02:00",
+        "isThumbnail": false,
+        "modified": "2025-07-31T19:01:41.138245+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 50550662,
+        "isFeatured": false,
+        "filename": "assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/blend_8ba80150-6f96-4c91-9425-dc58be5117b5.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "gltf",
+        "id": 766602,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/766602/",
+        "uuid": null,
+        "created": "2025-08-01T17:11:01.890799+02:00",
+        "isThumbnail": false,
+        "modified": "2025-08-01T17:11:01.890814+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 731828,
+        "isFeatured": false,
+        "filename": "assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/gltf_86ce4a6a-e57b-4efe-ae8e-89b92b8df466.glb",
+        "flexFactor": null
+      },
+      {
+        "fileType": "gltf_godot",
+        "id": 766601,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/766601/",
+        "uuid": null,
+        "created": "2025-08-01T17:11:00.840237+02:00",
+        "isThumbnail": false,
+        "modified": "2025-08-01T17:11:00.840247+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 2450816,
+        "isFeatured": false,
+        "filename": "assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/gltf_godot_efea0146-5a68-43b8-9dac-1ff6736f4f77.glb",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_0_5K",
+        "id": 766565,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/766565/",
+        "uuid": null,
+        "created": "2025-08-01T17:04:21.637337+02:00",
+        "isThumbnail": false,
+        "modified": "2025-08-01T17:04:21.637357+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 1348671,
+        "isFeatured": false,
+        "filename": "assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/resolution_0_5K_82098325-b8fd-4921-9ccd-0da588f0ab6f.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_1K",
+        "id": 766564,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/766564/",
+        "uuid": null,
+        "created": "2025-08-01T17:04:21.005708+02:00",
+        "isThumbnail": false,
+        "modified": "2025-08-01T17:04:21.005717+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 1566949,
+        "isFeatured": false,
+        "filename": "assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/resolution_1K_79f6f665-a70f-4dcc-bc13-c81c355d134f.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_2K",
+        "id": 766563,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/766563/",
+        "uuid": null,
+        "created": "2025-08-01T17:04:18.341401+02:00",
+        "isThumbnail": false,
+        "modified": "2025-08-01T17:04:18.341424+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 2406187,
+        "isFeatured": false,
+        "filename": "assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/resolution_2K_21718b1b-d11a-4cdc-8323-72f6f1e31bb1.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_4K",
+        "id": 766562,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/766562/",
+        "uuid": null,
+        "created": "2025-08-01T17:04:17.039599+02:00",
+        "isThumbnail": false,
+        "modified": "2025-08-01T17:04:17.039612+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 6154648,
+        "isFeatured": false,
+        "filename": "assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/resolution_4K_09e8bf0c-4aa2-4d6b-9899-2b98beb4fe6f.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "thumbnail",
+        "id": 765587,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/765587/",
+        "uuid": null,
+        "fileThumbnail": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.96x96_q85_crop-%2C.jpg",
+        "fileThumbnailLarge": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.1024x1024_q85_crop-%2C.jpg",
+        "created": "2025-07-31T19:00:32.901983+02:00",
+        "isThumbnail": true,
+        "modified": "2025-12-23T04:12:48.439307+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 46834353,
+        "width": 4096,
+        "height": 4096,
+        "isFeatured": false,
+        "filename": "assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png",
+        "thumbnailSmallUrl": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.256x256_q85_crop-%2C.jpg",
+        "thumbnailMiddleUrl": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.512x512_q85_crop-%2C.jpg",
+        "thumbnailLargeUrl": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.1024x1024_q85_crop-%2C.jpg",
+        "thumbnailXlargeUrl": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.2048x2048_q85_crop-%2C.jpg",
+        "thumbnailSmallUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.256x256_q85.jpg",
+        "thumbnailMiddleUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.512x512_q85.jpg",
+        "thumbnailLargeUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.1024x1024_q85.jpg",
+        "thumbnailXlargeUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.2048x2048_q85.jpg",
+        "thumbnailSmallUrlWebp": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.256x256_q85_crop-%2C.jpg.webp?webp_generated=1766670236",
+        "thumbnailMiddleUrlWebp": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.512x512_q85_crop-%2C.jpg.webp?webp_generated=1766670236",
+        "thumbnailLargeUrlWebp": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.1024x1024_q85_crop-%2C.jpg.webp?webp_generated=1766670236",
+        "thumbnailXlargeUrlWebp": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.2048x2048_q85_crop-%2C.jpg.webp?webp_generated=1766670236",
+        "thumbnailSmallUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.256x256_q85.jpg.webp?webp_generated=1766670236",
+        "thumbnailMiddleUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.512x512_q85.jpg.webp?webp_generated=1766670236",
+        "thumbnailLargeUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.1024x1024_q85.jpg.webp?webp_generated=1766670236",
+        "thumbnailXlargeUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.2048x2048_q85.jpg.webp?webp_generated=1766670236",
+        "flexFactor": null
+      }
+    ],
+    "filesSize": 112044114,
+    "showMarketingLabels": true,
+    "webpGeneratedTimestamp": 1766670236,
+    "score": 300.0,
+    "ratingsMedian": {
+      "bookmarks": 1.0,
+      "workingHours": 5.0,
+      "quality": 6.0,
+      "virtualPrice": null
+    },
+    "ratingsAverage": {
+      "bookmarks": 1.0,
+      "workingHours": 5.0,
+      "quality": 6.0,
+      "virtualPrice": null
+    },
+    "ratingsCount": {
+      "bookmarks": 83,
+      "workingHours": 1,
+      "quality": 1,
+      "virtualPrice": 0
+    },
+    "ratingsSum": {
+      "bookmarks": 83.0,
+      "workingHours": 5.0,
+      "quality": 6.0,
+      "virtualPrice": null,
+      "score": 300.0
+    },
+    "pageBlocks": null,
+    "access": "free",
+    "accessLabel": "Free",
+    "videoLink": "",
+    "dictParameters": {
+      "sexualizedContent": false,
+      "joinBlenderkitDiscounts": true,
+      "addons": true,
+      "platforms": [
+        "windows-x64",
+        "macos-arm64",
+        "linux-x64",
+        "macos-x64",
+        "windows-arm64"
+      ],
+      "faceCount": 30328,
+      "textureResolutionMax": 4096,
+      "productionLevel": "finished",
+      "procedural": false,
+      "modelStyle": "realistic",
+      "condition": "used",
+      "validatedManufacturer": false,
+      "validatedManufacturerDate": "2026-02-25T04:37:24.177195+00:00",
+      "validatedManufacturerOutput": "No evidence of 'Ismayil' as a legitimate furniture manufacturer, designer, or collection for leather sofas. Search results reference fashion/clothing designers (e.g., Rufat Ismayil of AFFFAIR) unrelated to furniture.\nmanufacturer: Ismayil|designer: Ismayil|designCollection: Ismayil",
+      "validatedManufacturerActor": "ai",
+      "purePbr": true,
+      "shaders": [
+        "[principled]"
+      ],
+      "pbrType": "metallic",
+      "uv": true,
+      "textureResolutionMin": 4096,
+      "engines": [
+        "[cycles]"
+      ],
+      "modifiers": [
+        "[]"
+      ],
+      "materials": [
+        "[Sofa 05]"
+      ],
+      "rig": false,
+      "simulation": false,
+      "dimensionX": 2.8725,
+      "dimensionY": 1.0117,
+      "dimensionZ": 1.0053,
+      "boundBoxMinX": -1.4335,
+      "boundBoxMinY": -0.4196,
+      "boundBoxMinZ": 0.001,
+      "boundBoxMaxX": 1.439,
+      "boundBoxMaxY": 0.5921,
+      "boundBoxMaxZ": 1.0064,
+      "faceCountRender": 30328,
+      "meshPolyType": "quad_dominant",
+      "manifold": true,
+      "objectCount": 1,
+      "nodeCount": 54,
+      "textureCount": 4,
+      "megapixels": 64,
+      "gltfGeneratedDate": "2025-08-01",
+      "gltfGodotGeneratedDate": "2025-08-01"
+    },
+    "lastPrxcUpload": null,
+    "lastAnimatedThumbnailUpload": null,
+    "lastBlendUpload": "2025-07-31T17:01:41.138231+00:00",
+    "lastGltfUpload": "2025-08-01T15:11:01.890799+00:00",
+    "lastZipFileUpload": null,
+    "lastVideoUpload": null,
+    "lastResolutionUpload": "2025-08-01T15:04:21.637337+00:00",
+    "lastPhotoThumbnailUpload": null,
+    "lastWireThumbnailUpload": null,
+    "lastThumbnailUpload": "2025-07-31T17:00:32.901983+00:00",
+    "lastGltfGodotUpload": "2025-08-01T15:11:00.840237+00:00",
+    "canDownload": true,
+    "canDownloadError": true,
+    "parameters": [
+      {
+        "parameterType": "sexualizedContent",
+        "value": false
+      },
+      {
+        "parameterType": "joinBlenderkitDiscounts",
+        "value": true
+      },
+      {
+        "parameterType": "addons",
+        "value": true
+      },
+      {
+        "parameterType": "platforms",
+        "value": [
+          "windows-x64",
+          "macos-arm64",
+          "linux-x64",
+          "macos-x64",
+          "windows-arm64"
+        ]
+      },
+      {
+        "parameterType": "faceCount",
+        "value": 30328
+      },
+      {
+        "parameterType": "textureResolutionMax",
+        "value": 4096
+      },
+      {
+        "parameterType": "productionLevel",
+        "value": "finished"
+      },
+      {
+        "parameterType": "procedural",
+        "value": false
+      },
+      {
+        "parameterType": "modelStyle",
+        "value": "realistic"
+      },
+      {
+        "parameterType": "condition",
+        "value": "used"
+      },
+      {
+        "parameterType": "validatedManufacturer",
+        "value": false
+      },
+      {
+        "parameterType": "validatedManufacturerDate",
+        "value": "2026-02-25T04:37:24.177195+00:00"
+      },
+      {
+        "parameterType": "validatedManufacturerOutput",
+        "value": "No evidence of 'Ismayil' as a legitimate furniture manufacturer, designer, or collection for leather sofas. Search results reference fashion/clothing designers (e.g., Rufat Ismayil of AFFFAIR) unrelated to furniture.\nmanufacturer: Ismayil|designer: Ismayil|designCollection: Ismayil"
+      },
+      {
+        "parameterType": "validatedManufacturerActor",
+        "value": "ai"
+      },
+      {
+        "parameterType": "purePbr",
+        "value": true
+      },
+      {
+        "parameterType": "shaders",
+        "value": [
+          "[principled]"
+        ]
+      },
+      {
+        "parameterType": "pbrType",
+        "value": "metallic"
+      },
+      {
+        "parameterType": "uv",
+        "value": true
+      },
+      {
+        "parameterType": "textureResolutionMin",
+        "value": 4096
+      },
+      {
+        "parameterType": "engines",
+        "value": [
+          "[cycles]"
+        ]
+      },
+      {
+        "parameterType": "modifiers",
+        "value": [
+          "[]"
+        ]
+      },
+      {
+        "parameterType": "materials",
+        "value": [
+          "[Sofa 05]"
+        ]
+      },
+      {
+        "parameterType": "rig",
+        "value": false
+      },
+      {
+        "parameterType": "simulation",
+        "value": false
+      },
+      {
+        "parameterType": "dimensionX",
+        "value": 2.8725
+      },
+      {
+        "parameterType": "dimensionY",
+        "value": 1.0117
+      },
+      {
+        "parameterType": "dimensionZ",
+        "value": 1.0053
+      },
+      {
+        "parameterType": "boundBoxMinX",
+        "value": -1.4335
+      },
+      {
+        "parameterType": "boundBoxMinY",
+        "value": -0.4196
+      },
+      {
+        "parameterType": "boundBoxMinZ",
+        "value": 0.001
+      },
+      {
+        "parameterType": "boundBoxMaxX",
+        "value": 1.439
+      },
+      {
+        "parameterType": "boundBoxMaxY",
+        "value": 0.5921
+      },
+      {
+        "parameterType": "boundBoxMaxZ",
+        "value": 1.0064
+      },
+      {
+        "parameterType": "faceCountRender",
+        "value": 30328
+      },
+      {
+        "parameterType": "meshPolyType",
+        "value": "quad_dominant"
+      },
+      {
+        "parameterType": "manifold",
+        "value": true
+      },
+      {
+        "parameterType": "objectCount",
+        "value": 1
+      },
+      {
+        "parameterType": "nodeCount",
+        "value": 54
+      },
+      {
+        "parameterType": "textureCount",
+        "value": 4
+      },
+      {
+        "parameterType": "megapixels",
+        "value": 64
+      },
+      {
+        "parameterType": "gltfGeneratedDate",
+        "value": "2025-08-01"
+      },
+      {
+        "parameterType": "gltfGodotGeneratedDate",
+        "value": "2025-08-01"
+      }
+    ],
+    "thumbnailSmallUrl": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.256x256_q85_crop-%2C.jpg",
+    "thumbnailMiddleUrl": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.512x512_q85_crop-%2C.jpg",
+    "thumbnailLargeUrl": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.1024x1024_q85_crop-%2C.jpg",
+    "thumbnailXlargeUrl": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.2048x2048_q85_crop-%2C.jpg",
+    "thumbnailSmallUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.256x256_q85.jpg",
+    "thumbnailMiddleUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.512x512_q85.jpg",
+    "thumbnailLargeUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.1024x1024_q85.jpg",
+    "thumbnailXlargeUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.2048x2048_q85.jpg",
+    "thumbnailSmallUrlWebp": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.256x256_q85_crop-%2C.jpg.webp?webp_generated=1766670236",
+    "thumbnailMiddleUrlWebp": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.512x512_q85_crop-%2C.jpg.webp?webp_generated=1766670236",
+    "thumbnailLargeUrlWebp": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.1024x1024_q85_crop-%2C.jpg.webp?webp_generated=1766670236",
+    "thumbnailXlargeUrlWebp": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.2048x2048_q85_crop-%2C.jpg.webp?webp_generated=1766670236",
+    "thumbnailSmallUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.256x256_q85.jpg.webp?webp_generated=1766670236",
+    "thumbnailMiddleUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.512x512_q85.jpg.webp?webp_generated=1766670236",
+    "thumbnailLargeUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.1024x1024_q85.jpg.webp?webp_generated=1766670236",
+    "thumbnailXlargeUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/28a241ecfde84d8eb8f9b74a5dc3d446/files/thumbnail_1c634822-7a39-4b8e-944e-a45d5242e559.png.2048x2048_q85.jpg.webp?webp_generated=1766670236"
+  },
+  "acquisition": {
+    "role": "sofa",
+    "name": "Leather Sofa",
+    "asset_base_id": "4faac4b8-cc88-4ff2-b7fd-a7edf46d3518",
+    "asset_version_id": "28a241ec-fde8-4d8e-b8f9-b74a5dc3d446",
+    "author": "Muhammed Ismayil",
+    "source": "BlenderKit",
+    "license": "CC0-1.0",
+    "source_page_url": "https://www.blenderkit.com/asset-gallery-detail/4faac4b8-cc88-4ff2-b7fd-a7edf46d3518/",
+    "official_search_api": "https://www.blenderkit.com/api/v1/search/?query=asset_base_id%3A4faac4b8-cc88-4ff2-b7fd-a7edf46d3518",
+    "download_api": "https://www.blenderkit.com/api/v1/downloads/766602/?scene_uuid=ec92e372-7512-49b7-97d8-d2467f074d66",
+    "download_id": 766602,
+    "library_file_type": "gltf",
+    "original_files": [
+      {
+        "path": "assets_external/models/sofa/original/selected/sofa_4faac4b8-cc88-4ff2-b7fd-a7edf46d3518_library.glb",
+        "bytes": 731828,
+        "sha256": "ACFAB778384BB6D6D5EB4AFE809A6A010017BFBA184EA35CCFF965E91150B7A2",
+        "transport_compression": "library-glb"
+      }
+    ]
+  }
+}

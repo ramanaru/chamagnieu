@@ -18,11 +18,13 @@ Ce dépôt public présente la maison neuve de Chamagnieu dans un format directe
 
 `SOURCE = BLENDER` — rendu de référence, distinct de la vraie scène Web.
 
-## Ce qui est visible dans cette version
+## Ce qui est visible dans cette version pilote
 
 - Trois volumes de toiture fermés avec des tuiles terre cuite texturées.
 - Des sols extérieurs différenciés : pelouse, enrobé et gravier.
-- Quatre arbres optimisés et dix-huit segments de haie densifiés en 108 clumps partagés dans l'environnement live.
+- Un canapé trois places, une table de six personnes, six chaises assorties et trois lits issus de bibliothèques CC0, optimisés et placés à l’échelle métrique.
+- Quatre arbres Poly Haven et dix-huit segments de haie BlenderKit, optimisés et instanciés dans l’environnement live.
+- Deux familles de matériaux PBR CC0 : enduit de façade White Stucco et pelouse Grass005, chacune avec Base Color, Normal et ARM.
 - La table extérieure parasite a été supprimée.
 - La visite interactive commence à l'extérieur et permet d'entrer dans la maison.
 
@@ -34,15 +36,17 @@ Ce dépôt public présente la maison neuve de Chamagnieu dans un format directe
 - [Modèle 3D GLB réellement chargé](https://raw.githubusercontent.com/ramanaru/chamagnieu/main/shared/Chamagnieu_V18_WEB_REALISM_UPGRADED.glb)
 - [Configuration centrale du viewer](shared/project-config.json)
 - [Audit de synchronisation V18](audit/version-sync-report.md)
-- [Verdict réalisme du vrai viewer V18](validation/V18_WEB_REALISM_FIX_REPORT.md)
-- [Comparaisons avant/après — SOURCE = LIVE WEB VIEWER](validation/live_before_after/)
+- [Manifeste complet des assets](assets_external/ASSET_MANIFEST.json)
+- [Licences et provenance](assets_external/ASSET_LICENSES.md)
+- [Verdict du pilote dans le vrai viewer V18](validation/ASSET_REALISM_INTEGRATION_REPORT.md)
+- [Comparaisons avant/après — SOURCE = LIVE WEB VIEWER](validation/asset_pilot_screenshots/comparisons/)
 
-Version : `V18-WEB-REALISM-1`<br>
+Version : `V18-ASSET-PILOT-1`<br>
 Modèle GLB : `22 687 292 octets`<br>
 SHA-256 : `9A5FD736CF5BFC4B8AF90A3B1A701C1532B83D2E6BDF0FA2C459B085B9A12B1E`
 
 ## Sources visuelles
 
-- Les pages `/presentation/` et `/visite/` affichent le modèle Web et portent le badge **`SOURCE = LIVE WEB VIEWER`**.
+- Les pages `/presentation/` et `/visite/` affichent le modèle Web et les huit catégories pilotes, avec le badge **`SOURCE = LIVE WEB VIEWER`**.
 - Les images de cette page et de `/rapide/` sont des rendus de référence et portent le badge **`SOURCE = BLENDER`** dans le site.
-- Les deux sources restent volontairement séparées : les WebP de galerie ne sont pas des textures du GLB. Le modèle live utilise 78 images WebP embarquées et compactées, avec 41 matériaux, 95 bindings PBR, un éclairage Web R2 et une végétation CC0 optimisée.
+- Les deux sources restent volontairement séparées : les WebP de galerie ne sont pas des textures du GLB. Le modèle architectural live reste inchangé ; les meubles, la haie et les six cartes PBR pilotes sont des ressources Web locales explicitement testées avec repli par famille.

@@ -1,0 +1,435 @@
+{
+  "asset": {
+    "pk": 160573,
+    "url": "https://www.blenderkit.com/api/v1/assets/d4302197-f279-4df8-82a1-5849fea19483/",
+    "id": "d4302197-f279-4df8-82a1-5849fea19483",
+    "assetBaseId": "dfdffe2b-4c26-4c33-9f13-784fe54c5570",
+    "versionNumber": 1,
+    "author": {
+      "id": 800325,
+      "firstName": "polimesh",
+      "lastName": "",
+      "gravatarHash": "23f65392041e8da9141ceb78b2968483",
+      "avatar128": "/avatar-redirect/4d380818-ba86-4758-b530-d244a814a2ff/128/",
+      "avatar256": "/avatar-redirect/4d380818-ba86-4758-b530-d244a814a2ff/256/",
+      "avatar512": "/avatar-redirect/4d380818-ba86-4758-b530-d244a814a2ff/512/",
+      "aboutMe": "3D assets of 3d world\r\n3D modeling everything in the 3d world",
+      "aboutMeUrl": "https://blenderartists.org/u/polimesh",
+      "fullName": "polimesh ",
+      "socialNetworks": [
+        {
+          "socialNetwork": {
+            "name": "YouTube",
+            "icon": "<i class=\"fab fa-youtube\" title=\"YouTube\"></i><span class=\"sr-only\">YouTube</span>",
+            "order": 1
+          },
+          "url": "https://www.youtube.com/@polimesh"
+        },
+        {
+          "socialNetwork": {
+            "name": "Instagram",
+            "icon": "<i class=\"fab fa-instagram\" title=\"Instagram\"></i><span class=\"sr-only\">Instagram</span>",
+            "order": 3
+          },
+          "url": "https://www.instagram.com/polimesh"
+        },
+        {
+          "socialNetwork": {
+            "name": "ArtStation",
+            "icon": "<i class=\"fab fa-artstation\" title=\"ArtStation\"></i><span class=\"sr-only\">ArtStation</span>",
+            "order": 5
+          },
+          "url": "https://www.artstation.com/polimesh"
+        },
+        {
+          "socialNetwork": {
+            "name": "Facebook",
+            "icon": "<i class=\"fab fa-facebook\" title=\"Facebook\"></i><span class=\"sr-only\">Facebook</span>",
+            "order": 2
+          },
+          "url": "https://www.facebook.com/polimeshpolimesh"
+        }
+      ]
+    },
+    "name": "Carl-hansen-son CHAIR 29",
+    "displayName": "Carl-hansen-son CHAIR 29",
+    "description": "This 3D model represents a modern Scandinavian dining chair with a natural oak wood frame and a black leather seat. Its clean geometry, angled legs, and ergonomic backrest make it perfect for minimalist interiors, dining areas, or contemporary spaces.",
+    "descriptionHtml": "<p>This 3D model represents a modern Scandinavian dining chair with a natural oak wood frame and a black leather seat. Its clean geometry, angled legs, and ergonomic backrest make it perfect for minimalist interiors, dining areas, or contemporary spaces.</p>",
+    "assetType": "model",
+    "category": "chair",
+    "isFree": true,
+    "isForSale": false,
+    "basePrice": null,
+    "tags": [
+      "chair",
+      "wood",
+      "leather",
+      "modern",
+      "scandinavian",
+      "dining",
+      "minimal",
+      "oak",
+      "archviz",
+      "pbr"
+    ],
+    "license": "cc_zero",
+    "parameters": [
+      {
+        "parameterType": "faceCount",
+        "value": 3358
+      },
+      {
+        "parameterType": "textureResolutionMax",
+        "value": 2048
+      },
+      {
+        "parameterType": "productionLevel",
+        "value": "finished"
+      },
+      {
+        "parameterType": "procedural",
+        "value": false
+      },
+      {
+        "parameterType": "modelStyle",
+        "value": "realistic"
+      },
+      {
+        "parameterType": "condition",
+        "value": "new"
+      },
+      {
+        "parameterType": "designer",
+        "value": "Hans J. Wegner"
+      },
+      {
+        "parameterType": "manufacturer",
+        "value": "Carl Hansen & Søn"
+      },
+      {
+        "parameterType": "validatedManufacturer",
+        "value": true
+      },
+      {
+        "parameterType": "validatedManufacturerDate",
+        "value": "2026-02-24T04:36:18.699654+00:00"
+      },
+      {
+        "parameterType": "validatedManufacturerOutput",
+        "value": "Carl Hansen & Søn is the official manufacturer of Hans J. Wegner's CH Series chairs, confirmed by their website featuring models like CH24, CH26, and CH290."
+      },
+      {
+        "parameterType": "validatedManufacturerActor",
+        "value": "ai"
+      },
+      {
+        "parameterType": "designCollection",
+        "value": "CH Series"
+      },
+      {
+        "parameterType": "designVariant",
+        "value": "Oak & Walnut-Leather Seat"
+      },
+      {
+        "parameterType": "shaders",
+        "value": "[principled]"
+      },
+      {
+        "parameterType": "uv",
+        "value": true
+      },
+      {
+        "parameterType": "textureResolutionMin",
+        "value": 2048
+      },
+      {
+        "parameterType": "engines",
+        "value": "[cycles]"
+      },
+      {
+        "parameterType": "modifiers",
+        "value": "[subsurf bevel]"
+      },
+      {
+        "parameterType": "materials",
+        "value": "[Wood Black leather Chrome]"
+      },
+      {
+        "parameterType": "rig",
+        "value": false
+      },
+      {
+        "parameterType": "simulation",
+        "value": false
+      },
+      {
+        "parameterType": "dimensionX",
+        "value": 0.5197
+      },
+      {
+        "parameterType": "dimensionY",
+        "value": 0.4736
+      },
+      {
+        "parameterType": "dimensionZ",
+        "value": 0.8072
+      },
+      {
+        "parameterType": "boundBoxMinX",
+        "value": -0.2598
+      },
+      {
+        "parameterType": "boundBoxMinY",
+        "value": -0.2333
+      },
+      {
+        "parameterType": "boundBoxMinZ",
+        "value": 0.0
+      },
+      {
+        "parameterType": "boundBoxMaxX",
+        "value": 0.2598
+      },
+      {
+        "parameterType": "boundBoxMaxY",
+        "value": 0.2402
+      },
+      {
+        "parameterType": "boundBoxMaxZ",
+        "value": 0.8072
+      },
+      {
+        "parameterType": "faceCountRender",
+        "value": 13432
+      },
+      {
+        "parameterType": "meshPolyType",
+        "value": "quad_dominant"
+      },
+      {
+        "parameterType": "manifold",
+        "value": false
+      },
+      {
+        "parameterType": "objectCount",
+        "value": 7
+      },
+      {
+        "parameterType": "nodeCount",
+        "value": 27
+      },
+      {
+        "parameterType": "textureCount",
+        "value": 5
+      },
+      {
+        "parameterType": "megapixels",
+        "value": 20
+      },
+      {
+        "parameterType": "gltfGeneratedDate",
+        "value": "2025-07-15"
+      },
+      {
+        "parameterType": "gltfGodotGeneratedDate",
+        "value": "2025-07-15"
+      }
+    ],
+    "sourceAppName": "blender",
+    "sourceAppVersion": "4.3.2",
+    "addonVersion": "3.16.1",
+    "created": "2025-07-10T12:26:53.255904+02:00",
+    "lastUserInteraction": "2025-07-13T18:07:59.240249+02:00",
+    "verificationStatus": "validated",
+    "isPrivate": false,
+    "files": [
+      {
+        "fileType": "blend",
+        "id": 743350,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/743350/",
+        "uuid": null,
+        "created": "2025-07-13T18:07:58.683936+02:00",
+        "isThumbnail": false,
+        "modified": "2025-07-13T18:07:58.683951+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 22452211,
+        "isFeatured": false,
+        "filename": "assets/d4302197f2794df882a15849fea19483/files/blend_7062dc96-beab-4b9e-b311-bdd5741b8fff.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "gltf",
+        "id": 745827,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/745827/",
+        "uuid": null,
+        "created": "2025-07-15T14:29:15.056993+02:00",
+        "isThumbnail": false,
+        "modified": "2025-07-15T14:29:15.057010+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 1201948,
+        "isFeatured": false,
+        "filename": "assets/d4302197f2794df882a15849fea19483/files/gltf_59d3190f-e8ed-412f-af94-7fb8c8c573e0.glb",
+        "flexFactor": null
+      },
+      {
+        "fileType": "gltf_godot",
+        "id": 745826,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/745826/",
+        "uuid": null,
+        "created": "2025-07-15T14:29:08.465842+02:00",
+        "isThumbnail": false,
+        "modified": "2025-07-15T14:29:08.465856+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 1371240,
+        "isFeatured": false,
+        "filename": "assets/d4302197f2794df882a15849fea19483/files/gltf_godot_72b7013b-bf67-4c22-a333-b7e3fe4ca05a.glb",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_0_5K",
+        "id": 745804,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/745804/",
+        "uuid": null,
+        "created": "2025-07-15T14:28:10.822322+02:00",
+        "isThumbnail": false,
+        "modified": "2025-07-15T14:28:10.822337+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 591660,
+        "isFeatured": false,
+        "filename": "assets/d4302197f2794df882a15849fea19483/files/resolution_0_5K_777c63eb-1f34-4bfb-9bad-a3063adde543.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_1K",
+        "id": 745803,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/745803/",
+        "uuid": null,
+        "created": "2025-07-15T14:28:10.170431+02:00",
+        "isThumbnail": false,
+        "modified": "2025-07-15T14:28:10.170445+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 1610849,
+        "isFeatured": false,
+        "filename": "assets/d4302197f2794df882a15849fea19483/files/resolution_1K_0b05fb73-bf05-4d0d-b34e-310656f9ab3a.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "resolution_2K",
+        "id": 745802,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/745802/",
+        "uuid": null,
+        "created": "2025-07-15T14:28:09.493992+02:00",
+        "isThumbnail": false,
+        "modified": "2025-07-15T14:28:09.494010+02:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 5279064,
+        "isFeatured": false,
+        "filename": "assets/d4302197f2794df882a15849fea19483/files/resolution_2K_91937ac5-d69a-4a57-bcde-c513bdbed767.blend",
+        "flexFactor": null
+      },
+      {
+        "fileType": "thumbnail",
+        "id": 743347,
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/743347/",
+        "uuid": null,
+        "fileThumbnail": "https://public.blenderkit.com/thumbnails/assets/d4302197f2794df882a15849fea19483/files/thumbnail_753602d5-8f6d-4635-86e0-bfbd929acbc8.jpg.96x96_q85_crop-%2C.jpg",
+        "fileThumbnailLarge": "https://public.blenderkit.com/thumbnails/assets/d4302197f2794df882a15849fea19483/files/thumbnail_753602d5-8f6d-4635-86e0-bfbd929acbc8.jpg.1024x1024_q85_crop-%2C.jpg",
+        "created": "2025-07-13T18:02:41.063471+02:00",
+        "isThumbnail": true,
+        "modified": "2025-12-23T03:56:50.732210+01:00",
+        "mimeType": null,
+        "resolution": null,
+        "fileUploadSize": 871010,
+        "width": 2048,
+        "height": 2048,
+        "isFeatured": false,
+        "filename": "assets/d4302197f2794df882a15849fea19483/files/thumbnail_753602d5-8f6d-4635-86e0-bfbd929acbc8.jpg",
+        "thumbnailSmallUrl": "https://public.blenderkit.com/thumbnails/assets/d4302197f2794df882a15849fea19483/files/thumbnail_753602d5-8f6d-4635-86e0-bfbd929acbc8.jpg.256x256_q85_crop-%2C.jpg",
+        "thumbnailMiddleUrl": "https://public.blenderkit.com/thumbnails/assets/d4302197f2794df882a15849fea19483/files/thumbnail_753602d5-8f6d-4635-86e0-bfbd929acbc8.jpg.512x512_q85_crop-%2C.jpg",
+        "thumbnailLargeUrl": "https://public.blenderkit.com/thumbnails/assets/d4302197f2794df882a15849fea19483/files/thumbnail_753602d5-8f6d-4635-86e0-bfbd929acbc8.jpg.1024x1024_q85_crop-%2C.jpg",
+        "thumbnailXlargeUrl": "https://public.blenderkit.com/thumbnails/assets/d4302197f2794df882a15849fea19483/files/thumbnail_753602d5-8f6d-4635-86e0-bfbd929acbc8.jpg.2048x2048_q85_crop-%2C.jpg",
+        "thumbnailSmallUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/d4302197f2794df882a15849fea19483/files/thumbnail_753602d5-8f6d-4635-86e0-bfbd929acbc8.jpg.256x256_q85.jpg",
+        "thumbnailMiddleUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/d4302197f2794df882a15849fea19483/files/thumbnail_753602d5-8f6d-4635-86e0-bfbd929acbc8.jpg.512x512_q85.jpg",
+        "thumbnailLargeUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/d4302197f2794df882a15849fea19483/files/thumbnail_753602d5-8f6d-4635-86e0-bfbd929acbc8.jpg.1024x1024_q85.jpg",
+        "thumbnailXlargeUrlNonsquared": "https://public.blenderkit.com/thumbnails/assets/d4302197f2794df882a15849fea19483/files/thumbnail_753602d5-8f6d-4635-86e0-bfbd929acbc8.jpg.2048x2048_q85.jpg",
+        "thumbnailSmallUrlWebp": "https://public.blenderkit.com/thumbnails/assets/d4302197f2794df882a15849fea19483/files/thumbnail_753602d5-8f6d-4635-86e0-bfbd929acbc8.jpg.256x256_q85_crop-%2C.jpg.webp?webp_generated=1766663417",
+        "thumbnailMiddleUrlWebp": "https://public.blenderkit.com/thumbnails/assets/d4302197f2794df882a15849fea19483/files/thumbnail_753602d5-8f6d-4635-86e0-bfbd929acbc8.jpg.512x512_q85_crop-%2C.jpg.webp?webp_generated=1766663417",
+        "thumbnailLargeUrlWebp": "https://public.blenderkit.com/thumbnails/assets/d4302197f2794df882a15849fea19483/files/thumbnail_753602d5-8f6d-4635-86e0-bfbd929acbc8.jpg.1024x1024_q85_crop-%2C.jpg.webp?webp_generated=1766663417",
+        "thumbnailXlargeUrlWebp": "https://public.blenderkit.com/thumbnails/assets/d4302197f2794df882a15849fea19483/files/thumbnail_753602d5-8f6d-4635-86e0-bfbd929acbc8.jpg.2048x2048_q85_crop-%2C.jpg.webp?webp_generated=1766663417",
+        "thumbnailSmallUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/d4302197f2794df882a15849fea19483/files/thumbnail_753602d5-8f6d-4635-86e0-bfbd929acbc8.jpg.256x256_q85.jpg.webp?webp_generated=1766663417",
+        "thumbnailMiddleUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/d4302197f2794df882a15849fea19483/files/thumbnail_753602d5-8f6d-4635-86e0-bfbd929acbc8.jpg.512x512_q85.jpg.webp?webp_generated=1766663417",
+        "thumbnailLargeUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/d4302197f2794df882a15849fea19483/files/thumbnail_753602d5-8f6d-4635-86e0-bfbd929acbc8.jpg.1024x1024_q85.jpg.webp?webp_generated=1766663417",
+        "thumbnailXlargeUrlNonsquaredWebp": "https://public.blenderkit.com/thumbnails/assets/d4302197f2794df882a15849fea19483/files/thumbnail_753602d5-8f6d-4635-86e0-bfbd929acbc8.jpg.2048x2048_q85.jpg.webp?webp_generated=1766663417",
+        "flexFactor": null
+      }
+    ],
+    "filesSize": 33377982,
+    "showMarketingLabels": true,
+    "webpGeneratedTimestamp": 1766663417,
+    "score": 320.0,
+    "ratingsMedian": {
+      "bookmarks": 1.0,
+      "workingHours": 4.0,
+      "quality": 8.0,
+      "virtualPrice": null
+    },
+    "ratingsAverage": {
+      "bookmarks": 0.9705882352941176,
+      "workingHours": 4.0,
+      "quality": 8.0,
+      "virtualPrice": null
+    },
+    "ratingsCount": {
+      "bookmarks": 136,
+      "workingHours": 1,
+      "quality": 1,
+      "virtualPrice": 0
+    },
+    "ratingsSum": {
+      "bookmarks": 132.0,
+      "workingHours": 4.0,
+      "quality": 8.0,
+      "virtualPrice": null,
+      "score": 320.0
+    },
+    "pageBlocks": null,
+    "access": "free",
+    "accessLabel": "Free",
+    "videoLink": "",
+    "lastZipFileUpload": null,
+    "lastGltfGodotUpload": "2025-07-15T12:29:08.465842Z",
+    "lastAnimatedThumbnailUpload": null,
+    "lastResolutionUpload": "2025-07-15T12:28:10.822322Z",
+    "lastVideoUpload": null,
+    "lastPrxcUpload": null,
+    "lastThumbnailUpload": "2025-07-13T16:02:41.063471Z",
+    "lastPhotoThumbnailUpload": null,
+    "lastGltfUpload": "2025-07-15T12:29:15.056993Z",
+    "lastWireThumbnailUpload": null,
+    "lastBlendUpload": "2025-07-13T16:07:58.683936Z"
+  },
+  "acquisition": {
+    "role": "chair",
+    "asset_id": "d4302197-f279-4df8-82a1-5849fea19483",
+    "name": "Carl-hansen-son CHAIR 29",
+    "author": "polimesh ",
+    "license": "cc_zero",
+    "is_free": true,
+    "verification_status": "validated",
+    "source_url": "https://www.blenderkit.com/asset-gallery-detail/d4302197-f279-4df8-82a1-5849fea19483/",
+    "api_url": "https://www.blenderkit.com/api/v1/assets/d4302197-f279-4df8-82a1-5849fea19483/",
+    "download_api": "https://www.blenderkit.com/api/v1/downloads/745827/?scene_uuid=f2f12068-dd0d-4c90-8c68-95c3ef640dc4",
+    "library_file_type": "gltf",
+    "library_file_uuid": "a986690e-c66d-45f6-bb3b-06c8a5bafaca",
+    "local_file": "assets_external/models/chair/original/chair_d4302197-f279-4df8-82a1-5849fea19483_library.glb",
+    "bytes": 1201948,
+    "sha256": "78BA9F6A44008D725C6A262F39505A29A17F9154E30F01EDA02639C0ABC2F4C0",
+    "dict_parameters": {}
+  }
+}

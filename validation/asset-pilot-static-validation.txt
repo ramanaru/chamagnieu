@@ -1,0 +1,343 @@
+ASSET_PILOT_STATIC_VALIDATION=PASS
+GENERATED_AT_UTC=2026-08-16T16:16:30.885983+00:00
+ROOT=C:\Users\jonat\Documents\Codex\2026-08-16\chamagnieu-v18-assets-pilot
+BASE_URL=http://127.0.0.1:8902
+EXPECTED_RELEASE=V18-ASSET-PILOT-1
+EXPECTED_MODEL_SHA256=9A5FD736CF5BFC4B8AF90A3B1A701C1532B83D2E6BDF0FA2C459B085B9A12B1E
+CHECKS_TOTAL=321
+CHECKS_PASS=321
+CHECKS_FAIL=0
+
+CHECK CONFIG_JSON=PASS :: parsed=shared/project-config.json
+CHECK CONFIG_VERSION=PASS :: observed='V18'; expected='V18'
+CHECK CONFIG_RELEASE=PASS :: observed='V18-ASSET-PILOT-1'; expected='V18-ASSET-PILOT-1'
+CHECK CONFIG_CACHE_KEY=PASS :: observed='v18-asset-pilot-1'; expected='v18-asset-pilot-1'
+CHECK CONFIG_VIEWER_SOURCE=PASS :: observed='LIVE WEB VIEWER'
+CHECK MAIN_MODEL_PATH=PASS :: observed=C:\Users\jonat\Documents\Codex\2026-08-16\chamagnieu-v18-assets-pilot\shared\Chamagnieu_V18_WEB_REALISM_UPGRADED.glb; expected_name=Chamagnieu_V18_WEB_REALISM_UPGRADED.glb
+CHECK MAIN_MODEL_BYTES_UNCHANGED=PASS :: observed=22687292; config=22687292; baseline=22687292
+CHECK MAIN_MODEL_HASH_UNCHANGED=PASS :: observed=9A5FD736CF5BFC4B8AF90A3B1A701C1532B83D2E6BDF0FA2C459B085B9A12B1E; config=9A5FD736CF5BFC4B8AF90A3B1A701C1532B83D2E6BDF0FA2C459B085B9A12B1E; baseline=9A5FD736CF5BFC4B8AF90A3B1A701C1532B83D2E6BDF0FA2C459B085B9A12B1E
+CHECK ARCHITECTURE_UNCHANGED=PASS :: assetPilot.architectureChanged=False
+CHECK VISUALISATION_ONLY=PASS :: visualisationOnly=True; contractual=False
+CHECK MODULE_EXISTS_LIVE_FURNITURE_PILOT=PASS :: shared/live-furniture-pilot.js
+CHECK MODULE_EXISTS_LIVE_MATERIALS_PILOT=PASS :: shared/live-materials-pilot.js
+CHECK MODULE_EXISTS_LIVE_VEGETATION=PASS :: shared/live-vegetation.js
+CHECK PAGE_PRESENTATION_INSTALLLIVEFURNITUREPILOT=PASS :: presentation/presentation.js imports/calls installLiveFurniturePilot
+CHECK PAGE_PRESENTATION_INSTALLLIVEMATERIALPILOT=PASS :: presentation/presentation.js imports/calls installLiveMaterialPilot
+CHECK PAGE_PRESENTATION_INSTALLLIVEVEGETATION=PASS :: presentation/presentation.js imports/calls installLiveVegetation
+CHECK PAGE_PRESENTATION_PARALLEL_LOAD=PASS :: presentation/presentation.js uses Promise.all for the three pilot families
+CHECK PAGE_PRESENTATION_STATIC_SHADOW=PASS :: presentation/presentation.js records static post-load shadows
+CHECK PAGE_VISITE_INSTALLLIVEFURNITUREPILOT=PASS :: visite/visite.js imports/calls installLiveFurniturePilot
+CHECK PAGE_VISITE_INSTALLLIVEMATERIALPILOT=PASS :: visite/visite.js imports/calls installLiveMaterialPilot
+CHECK PAGE_VISITE_INSTALLLIVEVEGETATION=PASS :: visite/visite.js imports/calls installLiveVegetation
+CHECK PAGE_VISITE_PARALLEL_LOAD=PASS :: visite/visite.js uses Promise.all for the three pilot families
+CHECK PAGE_VISITE_STATIC_SHADOW=PASS :: visite/visite.js records static post-load shadows
+CHECK REQUIRED_DIRECTORY_HIERARCHY=PASS :: required=15; missing=[]
+CHECK MANDATORY_ASSET_MANIFEST=PASS :: assets_external/ASSET_MANIFEST.json; exists=True; bytes=64462
+CHECK MANDATORY_ASSET_LICENSES=PASS :: assets_external/ASSET_LICENSES.md; exists=True; bytes=8659
+CHECK MANDATORY_ASSET_SCALE_VALIDATION=PASS :: analysis/asset_scale_validation.md; exists=True; bytes=7807
+CHECK MANDATORY_ASSET_REALISM_INTEGRATION_REPORT=PASS :: validation/ASSET_REALISM_INTEGRATION_REPORT.md; exists=True; bytes=10639
+CHECK ASSET_SOFA_EXISTS=PASS :: assets_external/furniture/living/sofa/optimized/sofa_web.glb
+CHECK ASSET_SOFA_BYTES=PASS :: observed=2577832; configured=2577832
+CHECK ASSET_SOFA_SHA256=PASS :: observed=A1321C8B14FFC4170CECA330B581441ADE66B64CA87FF89D772E385367D21B3D; configured=A1321C8B14FFC4170CECA330B581441ADE66B64CA87FF89D772E385367D21B3D
+CHECK ASSET_SOFA_TRIANGLES=PASS :: GLB=60384; report=60384; meshes=1
+CHECK ASSET_SOFA_NO_EXTERNAL_URI=PASS :: external_uris=[]
+CHECK ASSET_SOFA_NO_DRACO=PASS :: draco=False; decoder-free Web GLB required
+INFO ASSET_SOFA_PROFILE :: bytes=2577832; sha256=A1321C8B14FFC4170CECA330B581441ADE66B64CA87FF89D772E385367D21B3D; triangles=60384; meshes=1; materials=1; images=2
+CHECK ASSET_TABLE_EXISTS=PASS :: assets_external/furniture/dining/table/optimized/table_web.glb
+CHECK ASSET_TABLE_BYTES=PASS :: observed=3544464; configured=3544464
+CHECK ASSET_TABLE_SHA256=PASS :: observed=A8BCD84ADADC29F9DC26EEFA068FA393823E2599493BCADB62797986D89F67B0; configured=A8BCD84ADADC29F9DC26EEFA068FA393823E2599493BCADB62797986D89F67B0
+CHECK ASSET_TABLE_TRIANGLES=PASS :: GLB=3500; report=3500; meshes=3
+CHECK ASSET_TABLE_NO_EXTERNAL_URI=PASS :: external_uris=[]
+CHECK ASSET_TABLE_NO_DRACO=PASS :: draco=False; decoder-free Web GLB required
+INFO ASSET_TABLE_PROFILE :: bytes=3544464; sha256=A8BCD84ADADC29F9DC26EEFA068FA393823E2599493BCADB62797986D89F67B0; triangles=3500; meshes=3; materials=5; images=12
+CHECK ASSET_CHAIR_EXISTS=PASS :: assets_external/furniture/dining/chair/optimized/chair_web.glb
+CHECK ASSET_CHAIR_BYTES=PASS :: observed=920384; configured=920384
+CHECK ASSET_CHAIR_SHA256=PASS :: observed=6E5CC754877D49AF17EA2431693E29B07DEEA0A6B14163B1F23EF933E1FAAC71; configured=6E5CC754877D49AF17EA2431693E29B07DEEA0A6B14163B1F23EF933E1FAAC71
+CHECK ASSET_CHAIR_TRIANGLES=PASS :: GLB=22013; report=22013; meshes=1
+CHECK ASSET_CHAIR_NO_EXTERNAL_URI=PASS :: external_uris=[]
+CHECK ASSET_CHAIR_NO_DRACO=PASS :: draco=False; decoder-free Web GLB required
+INFO ASSET_CHAIR_PROFILE :: bytes=920384; sha256=6E5CC754877D49AF17EA2431693E29B07DEEA0A6B14163B1F23EF933E1FAAC71; triangles=22013; meshes=1; materials=1; images=3
+CHECK ASSET_BED_EXISTS=PASS :: assets_external/furniture/bedroom/bed/optimized/bed_web.glb
+CHECK ASSET_BED_BYTES=PASS :: observed=350248; configured=350248
+CHECK ASSET_BED_SHA256=PASS :: observed=AC6B3C975A1EE98F1288A5567D4C5F89C8A9973AF7D4CF3EAB88AC79AF205637; configured=AC6B3C975A1EE98F1288A5567D4C5F89C8A9973AF7D4CF3EAB88AC79AF205637
+CHECK ASSET_BED_TRIANGLES=PASS :: GLB=8566; report=8566; meshes=1
+CHECK ASSET_BED_NO_EXTERNAL_URI=PASS :: external_uris=[]
+CHECK ASSET_BED_NO_DRACO=PASS :: draco=False; decoder-free Web GLB required
+INFO ASSET_BED_PROFILE :: bytes=350248; sha256=AC6B3C975A1EE98F1288A5567D4C5F89C8A9973AF7D4CF3EAB88AC79AF205637; triangles=8566; meshes=1; materials=3; images=2
+CHECK ASSET_TREE_EXISTS=PASS :: assets_external/vegetation/trees/island_tree_02/optimized/island_tree_02_web.glb
+CHECK ASSET_TREE_BYTES=PASS :: observed=4268472; configured=4268472
+CHECK ASSET_TREE_SHA256=PASS :: observed=845CD738030743A4592FDC10DB77A38E522E15C8901E6710C377C3D5C303CF76; configured=845CD738030743A4592FDC10DB77A38E522E15C8901E6710C377C3D5C303CF76
+CHECK ASSET_TREE_TRIANGLES=PASS :: GLB=47000; report=47000; meshes=3
+CHECK ASSET_TREE_NO_EXTERNAL_URI=PASS :: external_uris=[]
+CHECK ASSET_TREE_NO_DRACO=PASS :: draco=False; decoder-free Web GLB required
+INFO ASSET_TREE_PROFILE :: bytes=4268472; sha256=845CD738030743A4592FDC10DB77A38E522E15C8901E6710C377C3D5C303CF76; triangles=47000; meshes=3; materials=3; images=9
+CHECK ASSET_HEDGE_EXISTS=PASS :: assets_external/vegetation/hedges/blenderkit_shrub/optimized/hedge_web.glb
+CHECK ASSET_HEDGE_BYTES=PASS :: observed=1292892; configured=1292892
+CHECK ASSET_HEDGE_SHA256=PASS :: observed=552369C1C70CE040EC8971DA0F235D24ECB9CB915B9320B1ABCB4EA0C423B7C2; configured=552369C1C70CE040EC8971DA0F235D24ECB9CB915B9320B1ABCB4EA0C423B7C2
+CHECK ASSET_HEDGE_TRIANGLES=PASS :: GLB=20994; report=20994; meshes=2
+CHECK ASSET_HEDGE_NO_EXTERNAL_URI=PASS :: external_uris=[]
+CHECK ASSET_HEDGE_NO_DRACO=PASS :: draco=False; decoder-free Web GLB required
+INFO ASSET_HEDGE_PROFILE :: bytes=1292892; sha256=552369C1C70CE040EC8971DA0F235D24ECB9CB915B9320B1ABCB4EA0C423B7C2; triangles=20994; meshes=2; materials=2; images=3
+CHECK PBR_TEXTURE_RUNTIME_COUNT=PASS :: runtime_webp_maps=6; paths=['assets_external/materials/exterior/grass005/optimized/Grass005_arm_1k.webp', 'assets_external/materials/exterior/grass005/optimized/Grass005_color_1k.webp', 'assets_external/materials/exterior/grass005/optimized/Grass005_normal_gl_1k.webp', 'assets_external/materials/facade/white_stucco/optimized/white_stucco_arm_1k.webp', 'assets_external/materials/facade/white_stucco/optimized/white_stucco_color_1k.webp', 'assets_external/materials/facade/white_stucco/optimized/white_stucco_normal_gl_1k.webp']
+CHECK CATEGORY_FACADE_PBR=PASS :: White Stucco maps referenced by runtime
+CHECK CATEGORY_GRASS_PBR=PASS :: Grass005 maps referenced by runtime
+CHECK PBR_TEXTURE_BYTES=PASS :: observed=2048284; configured=2048284
+CHECK TEXTURE_FILE_GRASS005_ARM_1K=PASS :: assets_external/materials/exterior/grass005/optimized/Grass005_arm_1k.webp; bytes=651874
+CHECK TEXTURE_HTTP_GRASS005_ARM_1K=PASS :: url=http://127.0.0.1:8902/assets_external/materials/exterior/grass005/optimized/Grass005_arm_1k.webp; status=200; response_bytes=651874; local_bytes=651874; error=None
+CHECK TEXTURE_FILE_GRASS005_COLOR_1K=PASS :: assets_external/materials/exterior/grass005/optimized/Grass005_color_1k.webp; bytes=364742
+CHECK TEXTURE_HTTP_GRASS005_COLOR_1K=PASS :: url=http://127.0.0.1:8902/assets_external/materials/exterior/grass005/optimized/Grass005_color_1k.webp; status=200; response_bytes=364742; local_bytes=364742; error=None
+CHECK TEXTURE_FILE_GRASS005_NORMAL_GL_1K=PASS :: assets_external/materials/exterior/grass005/optimized/Grass005_normal_gl_1k.webp; bytes=541710
+CHECK TEXTURE_HTTP_GRASS005_NORMAL_GL_1K=PASS :: url=http://127.0.0.1:8902/assets_external/materials/exterior/grass005/optimized/Grass005_normal_gl_1k.webp; status=200; response_bytes=541710; local_bytes=541710; error=None
+CHECK TEXTURE_FILE_WHITE_STUCCO_ARM_1K=PASS :: assets_external/materials/facade/white_stucco/optimized/white_stucco_arm_1k.webp; bytes=34456
+CHECK TEXTURE_HTTP_WHITE_STUCCO_ARM_1K=PASS :: url=http://127.0.0.1:8902/assets_external/materials/facade/white_stucco/optimized/white_stucco_arm_1k.webp; status=200; response_bytes=34456; local_bytes=34456; error=None
+CHECK TEXTURE_FILE_WHITE_STUCCO_COLOR_1K=PASS :: assets_external/materials/facade/white_stucco/optimized/white_stucco_color_1k.webp; bytes=63686
+CHECK TEXTURE_HTTP_WHITE_STUCCO_COLOR_1K=PASS :: url=http://127.0.0.1:8902/assets_external/materials/facade/white_stucco/optimized/white_stucco_color_1k.webp; status=200; response_bytes=63686; local_bytes=63686; error=None
+CHECK TEXTURE_FILE_WHITE_STUCCO_NORMAL_GL_1K=PASS :: assets_external/materials/facade/white_stucco/optimized/white_stucco_normal_gl_1k.webp; bytes=391816
+CHECK TEXTURE_HTTP_WHITE_STUCCO_NORMAL_GL_1K=PASS :: url=http://127.0.0.1:8902/assets_external/materials/facade/white_stucco/optimized/white_stucco_normal_gl_1k.webp; status=200; response_bytes=391816; local_bytes=391816; error=None
+CHECK EIGHT_PILOT_CATEGORIES=PASS :: observed=['bed', 'chair', 'facade_pbr', 'grass_pbr', 'hedge', 'sofa', 'table', 'tree']; expected=['bed', 'chair', 'facade_pbr', 'grass_pbr', 'hedge', 'sofa', 'table', 'tree']
+CHECK MANIFEST_JSON_PARSE=PASS :: parsed=assets_external/ASSET_MANIFEST.json
+CHECK MANIFEST_ASSET_COUNT=PASS :: observed=8; expected=8
+CHECK MANIFEST_EIGHT_CATEGORIES_EXACT=PASS :: observed=['bed', 'chair', 'facade_pbr', 'grass_pbr', 'hedge', 'sofa', 'table', 'tree']; expected=['bed', 'chair', 'facade_pbr', 'grass_pbr', 'hedge', 'sofa', 'table', 'tree']
+CHECK MANIFEST_SOFA_FIELD_NAME=PASS :: entry=0; category=sofa; exact_top_level_field='name'
+CHECK MANIFEST_SOFA_FIELD_CATEGORY=PASS :: entry=0; category=sofa; exact_top_level_field='category'
+CHECK MANIFEST_SOFA_FIELD_SOURCE=PASS :: entry=0; category=sofa; exact_top_level_field='source'
+CHECK MANIFEST_SOFA_FIELD_URL=PASS :: entry=0; category=sofa; exact_top_level_field='url'
+CHECK MANIFEST_SOFA_FIELD_AUTHOR=PASS :: entry=0; category=sofa; exact_top_level_field='author'
+CHECK MANIFEST_SOFA_FIELD_LICENSE=PASS :: entry=0; category=sofa; exact_top_level_field='license'
+CHECK MANIFEST_SOFA_FIELD_DOWNLOAD_DATE=PASS :: entry=0; category=sofa; exact_top_level_field='download_date'
+CHECK MANIFEST_SOFA_FIELD_ORIGINAL_FILE=PASS :: entry=0; category=sofa; exact_top_level_field='original_file'
+CHECK MANIFEST_SOFA_FIELD_ORIGINAL_SIZE=PASS :: entry=0; category=sofa; exact_top_level_field='original_size'
+CHECK MANIFEST_SOFA_FIELD_OPTIMIZED_FILE=PASS :: entry=0; category=sofa; exact_top_level_field='optimized_file'
+CHECK MANIFEST_SOFA_FIELD_OPTIMIZED_SIZE=PASS :: entry=0; category=sofa; exact_top_level_field='optimized_size'
+CHECK MANIFEST_SOFA_FIELD_POLYGONS_BEFORE=PASS :: entry=0; category=sofa; exact_top_level_field='polygons_before'
+CHECK MANIFEST_SOFA_FIELD_POLYGONS_AFTER=PASS :: entry=0; category=sofa; exact_top_level_field='polygons_after'
+CHECK MANIFEST_SOFA_FIELD_TEXTURES=PASS :: entry=0; category=sofa; exact_top_level_field='textures'
+CHECK MANIFEST_SOFA_FIELD_WHERE_USED=PASS :: entry=0; category=sofa; exact_top_level_field='where_used'
+CHECK MANIFEST_SOFA_TEXT_VALUES=PASS :: all required text fields are non-empty strings
+CHECK MANIFEST_SOFA_HTTPS_SOURCE=PASS :: url='https://www.blendkit.com/asset-gallery-detail/4faac4b8-cc88-4ff2-b7fd-a7edf46d3518/'
+CHECK MANIFEST_SOFA_DOWNLOAD_DATE=PASS :: download_date='2026-08-16'; expected=YYYY-MM-DD
+CHECK MANIFEST_SOFA_CC0=PASS :: license='CC0-1.0'
+CHECK MANIFEST_SOFA_ORIGINAL_FILE=PASS :: path=assets_external/furniture/living/sofa/original/sofa_4faac4b8-cc88-4ff2-b7fd-a7edf46d3518_library.glb; exists=True
+CHECK MANIFEST_SOFA_OPTIMIZED_FILE=PASS :: path=assets_external/furniture/living/sofa/optimized/sofa_web.glb; exists=True
+CHECK MANIFEST_SOFA_ORIGINAL_SIZE=PASS :: manifest=731828; disk=731828
+CHECK MANIFEST_SOFA_OPTIMIZED_SIZE=PASS :: manifest=2577832; disk=2577832
+CHECK MANIFEST_SOFA_ORIGINAL_PRESERVED=PASS :: original=assets_external/furniture/living/sofa/original/sofa_4faac4b8-cc88-4ff2-b7fd-a7edf46d3518_library.glb; optimized=assets_external/furniture/living/sofa/optimized/sofa_web.glb
+CHECK MANIFEST_SOFA_TEXTURES=PASS :: type=dict; entries=5
+CHECK MANIFEST_SOFA_WHERE_USED=PASS :: where_used=['presentation/', 'visite/', 'RDC living room; replaces V11_LIVING_SOFA only after successful asset load']
+CHECK MANIFEST_SOFA_POLYGONS_BEFORE=PASS :: polygons_before=60384
+CHECK MANIFEST_SOFA_POLYGONS_AFTER=PASS :: manifest=60384; parsed_glb=60384
+CHECK MANIFEST_TABLE_FIELD_NAME=PASS :: entry=1; category=table; exact_top_level_field='name'
+CHECK MANIFEST_TABLE_FIELD_CATEGORY=PASS :: entry=1; category=table; exact_top_level_field='category'
+CHECK MANIFEST_TABLE_FIELD_SOURCE=PASS :: entry=1; category=table; exact_top_level_field='source'
+CHECK MANIFEST_TABLE_FIELD_URL=PASS :: entry=1; category=table; exact_top_level_field='url'
+CHECK MANIFEST_TABLE_FIELD_AUTHOR=PASS :: entry=1; category=table; exact_top_level_field='author'
+CHECK MANIFEST_TABLE_FIELD_LICENSE=PASS :: entry=1; category=table; exact_top_level_field='license'
+CHECK MANIFEST_TABLE_FIELD_DOWNLOAD_DATE=PASS :: entry=1; category=table; exact_top_level_field='download_date'
+CHECK MANIFEST_TABLE_FIELD_ORIGINAL_FILE=PASS :: entry=1; category=table; exact_top_level_field='original_file'
+CHECK MANIFEST_TABLE_FIELD_ORIGINAL_SIZE=PASS :: entry=1; category=table; exact_top_level_field='original_size'
+CHECK MANIFEST_TABLE_FIELD_OPTIMIZED_FILE=PASS :: entry=1; category=table; exact_top_level_field='optimized_file'
+CHECK MANIFEST_TABLE_FIELD_OPTIMIZED_SIZE=PASS :: entry=1; category=table; exact_top_level_field='optimized_size'
+CHECK MANIFEST_TABLE_FIELD_POLYGONS_BEFORE=PASS :: entry=1; category=table; exact_top_level_field='polygons_before'
+CHECK MANIFEST_TABLE_FIELD_POLYGONS_AFTER=PASS :: entry=1; category=table; exact_top_level_field='polygons_after'
+CHECK MANIFEST_TABLE_FIELD_TEXTURES=PASS :: entry=1; category=table; exact_top_level_field='textures'
+CHECK MANIFEST_TABLE_FIELD_WHERE_USED=PASS :: entry=1; category=table; exact_top_level_field='where_used'
+CHECK MANIFEST_TABLE_TEXT_VALUES=PASS :: all required text fields are non-empty strings
+CHECK MANIFEST_TABLE_HTTPS_SOURCE=PASS :: url='https://www.blendkit.com/asset-gallery-detail/bdff957c-a9e9-4827-b6c9-602b264a4fbf/'
+CHECK MANIFEST_TABLE_DOWNLOAD_DATE=PASS :: download_date='2026-08-16'; expected=YYYY-MM-DD
+CHECK MANIFEST_TABLE_CC0=PASS :: license='CC0-1.0'
+CHECK MANIFEST_TABLE_ORIGINAL_FILE=PASS :: path=assets_external/furniture/dining/table/original/table_bdff957c-a9e9-4827-b6c9-602b264a4fbf_1k_source.blend; exists=True
+CHECK MANIFEST_TABLE_OPTIMIZED_FILE=PASS :: path=assets_external/furniture/dining/table/optimized/table_web.glb; exists=True
+CHECK MANIFEST_TABLE_ORIGINAL_SIZE=PASS :: manifest=2294096; disk=2294096
+CHECK MANIFEST_TABLE_OPTIMIZED_SIZE=PASS :: manifest=3544464; disk=3544464
+CHECK MANIFEST_TABLE_ORIGINAL_PRESERVED=PASS :: original=assets_external/furniture/dining/table/original/table_bdff957c-a9e9-4827-b6c9-602b264a4fbf_1k_source.blend; optimized=assets_external/furniture/dining/table/optimized/table_web.glb
+CHECK MANIFEST_TABLE_TEXTURES=PASS :: type=dict; entries=5
+CHECK MANIFEST_TABLE_WHERE_USED=PASS :: where_used=['presentation/', 'visite/', 'RDC dining area; replaces five procedural table nodes after successful load']
+CHECK MANIFEST_TABLE_POLYGONS_BEFORE=PASS :: polygons_before=3500
+CHECK MANIFEST_TABLE_POLYGONS_AFTER=PASS :: manifest=3500; parsed_glb=3500
+CHECK MANIFEST_CHAIR_FIELD_NAME=PASS :: entry=2; category=chair; exact_top_level_field='name'
+CHECK MANIFEST_CHAIR_FIELD_CATEGORY=PASS :: entry=2; category=chair; exact_top_level_field='category'
+CHECK MANIFEST_CHAIR_FIELD_SOURCE=PASS :: entry=2; category=chair; exact_top_level_field='source'
+CHECK MANIFEST_CHAIR_FIELD_URL=PASS :: entry=2; category=chair; exact_top_level_field='url'
+CHECK MANIFEST_CHAIR_FIELD_AUTHOR=PASS :: entry=2; category=chair; exact_top_level_field='author'
+CHECK MANIFEST_CHAIR_FIELD_LICENSE=PASS :: entry=2; category=chair; exact_top_level_field='license'
+CHECK MANIFEST_CHAIR_FIELD_DOWNLOAD_DATE=PASS :: entry=2; category=chair; exact_top_level_field='download_date'
+CHECK MANIFEST_CHAIR_FIELD_ORIGINAL_FILE=PASS :: entry=2; category=chair; exact_top_level_field='original_file'
+CHECK MANIFEST_CHAIR_FIELD_ORIGINAL_SIZE=PASS :: entry=2; category=chair; exact_top_level_field='original_size'
+CHECK MANIFEST_CHAIR_FIELD_OPTIMIZED_FILE=PASS :: entry=2; category=chair; exact_top_level_field='optimized_file'
+CHECK MANIFEST_CHAIR_FIELD_OPTIMIZED_SIZE=PASS :: entry=2; category=chair; exact_top_level_field='optimized_size'
+CHECK MANIFEST_CHAIR_FIELD_POLYGONS_BEFORE=PASS :: entry=2; category=chair; exact_top_level_field='polygons_before'
+CHECK MANIFEST_CHAIR_FIELD_POLYGONS_AFTER=PASS :: entry=2; category=chair; exact_top_level_field='polygons_after'
+CHECK MANIFEST_CHAIR_FIELD_TEXTURES=PASS :: entry=2; category=chair; exact_top_level_field='textures'
+CHECK MANIFEST_CHAIR_FIELD_WHERE_USED=PASS :: entry=2; category=chair; exact_top_level_field='where_used'
+CHECK MANIFEST_CHAIR_TEXT_VALUES=PASS :: all required text fields are non-empty strings
+CHECK MANIFEST_CHAIR_HTTPS_SOURCE=PASS :: url='https://polyhaven.com/a/dining_chair_02'
+CHECK MANIFEST_CHAIR_DOWNLOAD_DATE=PASS :: download_date='2026-08-16'; expected=YYYY-MM-DD
+CHECK MANIFEST_CHAIR_CC0=PASS :: license='CC0-1.0'
+CHECK MANIFEST_CHAIR_ORIGINAL_FILE=PASS :: path=assets_external/furniture/dining/chair/original/dining_chair_02_1k.gltf; exists=True
+CHECK MANIFEST_CHAIR_OPTIMIZED_FILE=PASS :: path=assets_external/furniture/dining/chair/optimized/chair_web.glb; exists=True
+CHECK MANIFEST_CHAIR_ORIGINAL_SIZE=PASS :: manifest=2723; disk=2723
+CHECK MANIFEST_CHAIR_OPTIMIZED_SIZE=PASS :: manifest=920384; disk=920384
+CHECK MANIFEST_CHAIR_ORIGINAL_PRESERVED=PASS :: original=assets_external/furniture/dining/chair/original/dining_chair_02_1k.gltf; optimized=assets_external/furniture/dining/chair/optimized/chair_web.glb
+CHECK MANIFEST_CHAIR_TEXTURES=PASS :: type=dict; entries=6
+CHECK MANIFEST_CHAIR_WHERE_USED=PASS :: where_used=['presentation/', 'visite/', 'RDC dining area; replaces six V11_DINING_CHAIR_* nodes after successful load']
+CHECK MANIFEST_CHAIR_POLYGONS_BEFORE=PASS :: polygons_before=22013
+CHECK MANIFEST_CHAIR_POLYGONS_AFTER=PASS :: manifest=22013; parsed_glb=22013
+CHECK MANIFEST_BED_FIELD_NAME=PASS :: entry=3; category=bed; exact_top_level_field='name'
+CHECK MANIFEST_BED_FIELD_CATEGORY=PASS :: entry=3; category=bed; exact_top_level_field='category'
+CHECK MANIFEST_BED_FIELD_SOURCE=PASS :: entry=3; category=bed; exact_top_level_field='source'
+CHECK MANIFEST_BED_FIELD_URL=PASS :: entry=3; category=bed; exact_top_level_field='url'
+CHECK MANIFEST_BED_FIELD_AUTHOR=PASS :: entry=3; category=bed; exact_top_level_field='author'
+CHECK MANIFEST_BED_FIELD_LICENSE=PASS :: entry=3; category=bed; exact_top_level_field='license'
+CHECK MANIFEST_BED_FIELD_DOWNLOAD_DATE=PASS :: entry=3; category=bed; exact_top_level_field='download_date'
+CHECK MANIFEST_BED_FIELD_ORIGINAL_FILE=PASS :: entry=3; category=bed; exact_top_level_field='original_file'
+CHECK MANIFEST_BED_FIELD_ORIGINAL_SIZE=PASS :: entry=3; category=bed; exact_top_level_field='original_size'
+CHECK MANIFEST_BED_FIELD_OPTIMIZED_FILE=PASS :: entry=3; category=bed; exact_top_level_field='optimized_file'
+CHECK MANIFEST_BED_FIELD_OPTIMIZED_SIZE=PASS :: entry=3; category=bed; exact_top_level_field='optimized_size'
+CHECK MANIFEST_BED_FIELD_POLYGONS_BEFORE=PASS :: entry=3; category=bed; exact_top_level_field='polygons_before'
+CHECK MANIFEST_BED_FIELD_POLYGONS_AFTER=PASS :: entry=3; category=bed; exact_top_level_field='polygons_after'
+CHECK MANIFEST_BED_FIELD_TEXTURES=PASS :: entry=3; category=bed; exact_top_level_field='textures'
+CHECK MANIFEST_BED_FIELD_WHERE_USED=PASS :: entry=3; category=bed; exact_top_level_field='where_used'
+CHECK MANIFEST_BED_TEXT_VALUES=PASS :: all required text fields are non-empty strings
+CHECK MANIFEST_BED_HTTPS_SOURCE=PASS :: url='https://www.blendkit.com/asset-gallery-detail/3a845132-df64-4f02-8da6-44229fe774e4/'
+CHECK MANIFEST_BED_DOWNLOAD_DATE=PASS :: download_date='2026-08-16'; expected=YYYY-MM-DD
+CHECK MANIFEST_BED_CC0=PASS :: license='CC0-1.0'
+CHECK MANIFEST_BED_ORIGINAL_FILE=PASS :: path=assets_external/furniture/bedroom/bed/original/bed_d493c69a-5c64-40bf-a7a6-a4e745bfbea8_library.glb; exists=True
+CHECK MANIFEST_BED_OPTIMIZED_FILE=PASS :: path=assets_external/furniture/bedroom/bed/optimized/bed_web.glb; exists=True
+CHECK MANIFEST_BED_ORIGINAL_SIZE=PASS :: manifest=133244; disk=133244
+CHECK MANIFEST_BED_OPTIMIZED_SIZE=PASS :: manifest=350248; disk=350248
+CHECK MANIFEST_BED_ORIGINAL_PRESERVED=PASS :: original=assets_external/furniture/bedroom/bed/original/bed_d493c69a-5c64-40bf-a7a6-a4e745bfbea8_library.glb; optimized=assets_external/furniture/bedroom/bed/optimized/bed_web.glb
+CHECK MANIFEST_BED_TEXTURES=PASS :: type=dict; entries=5
+CHECK MANIFEST_BED_WHERE_USED=PASS :: where_used=['presentation/', 'visite/', 'Upper-floor bedrooms; replaces 30 procedural bed component nodes after successful load']
+CHECK MANIFEST_BED_POLYGONS_BEFORE=PASS :: polygons_before=8566
+CHECK MANIFEST_BED_POLYGONS_AFTER=PASS :: manifest=8566; parsed_glb=8566
+CHECK MANIFEST_TREE_FIELD_NAME=PASS :: entry=4; category=tree; exact_top_level_field='name'
+CHECK MANIFEST_TREE_FIELD_CATEGORY=PASS :: entry=4; category=tree; exact_top_level_field='category'
+CHECK MANIFEST_TREE_FIELD_SOURCE=PASS :: entry=4; category=tree; exact_top_level_field='source'
+CHECK MANIFEST_TREE_FIELD_URL=PASS :: entry=4; category=tree; exact_top_level_field='url'
+CHECK MANIFEST_TREE_FIELD_AUTHOR=PASS :: entry=4; category=tree; exact_top_level_field='author'
+CHECK MANIFEST_TREE_FIELD_LICENSE=PASS :: entry=4; category=tree; exact_top_level_field='license'
+CHECK MANIFEST_TREE_FIELD_DOWNLOAD_DATE=PASS :: entry=4; category=tree; exact_top_level_field='download_date'
+CHECK MANIFEST_TREE_FIELD_ORIGINAL_FILE=PASS :: entry=4; category=tree; exact_top_level_field='original_file'
+CHECK MANIFEST_TREE_FIELD_ORIGINAL_SIZE=PASS :: entry=4; category=tree; exact_top_level_field='original_size'
+CHECK MANIFEST_TREE_FIELD_OPTIMIZED_FILE=PASS :: entry=4; category=tree; exact_top_level_field='optimized_file'
+CHECK MANIFEST_TREE_FIELD_OPTIMIZED_SIZE=PASS :: entry=4; category=tree; exact_top_level_field='optimized_size'
+CHECK MANIFEST_TREE_FIELD_POLYGONS_BEFORE=PASS :: entry=4; category=tree; exact_top_level_field='polygons_before'
+CHECK MANIFEST_TREE_FIELD_POLYGONS_AFTER=PASS :: entry=4; category=tree; exact_top_level_field='polygons_after'
+CHECK MANIFEST_TREE_FIELD_TEXTURES=PASS :: entry=4; category=tree; exact_top_level_field='textures'
+CHECK MANIFEST_TREE_FIELD_WHERE_USED=PASS :: entry=4; category=tree; exact_top_level_field='where_used'
+CHECK MANIFEST_TREE_TEXT_VALUES=PASS :: all required text fields are non-empty strings
+CHECK MANIFEST_TREE_HTTPS_SOURCE=PASS :: url='https://polyhaven.com/a/island_tree_02'
+CHECK MANIFEST_TREE_DOWNLOAD_DATE=PASS :: download_date='2026-08-14'; expected=YYYY-MM-DD
+CHECK MANIFEST_TREE_CC0=PASS :: license='CC0-1.0'
+CHECK MANIFEST_TREE_ORIGINAL_FILE=PASS :: path=assets_external/vegetation/trees/island_tree_02/original/island_tree_02_1k.gltf; exists=True
+CHECK MANIFEST_TREE_OPTIMIZED_FILE=PASS :: path=assets_external/vegetation/trees/island_tree_02/optimized/island_tree_02_web.glb; exists=True
+CHECK MANIFEST_TREE_ORIGINAL_SIZE=PASS :: manifest=8545; disk=8545
+CHECK MANIFEST_TREE_OPTIMIZED_SIZE=PASS :: manifest=4268472; disk=4268472
+CHECK MANIFEST_TREE_ORIGINAL_PRESERVED=PASS :: original=assets_external/vegetation/trees/island_tree_02/original/island_tree_02_1k.gltf; optimized=assets_external/vegetation/trees/island_tree_02/optimized/island_tree_02_web.glb
+CHECK MANIFEST_TREE_TEXTURES=PASS :: type=dict; entries=6
+CHECK MANIFEST_TREE_WHERE_USED=PASS :: where_used=['presentation/', 'visite/', 'Exterior garden; four V17_TREE_LIGHT_* families replaced only after successful load']
+CHECK MANIFEST_TREE_POLYGONS_BEFORE=PASS :: polygons_before=1072213
+CHECK MANIFEST_TREE_POLYGONS_AFTER=PASS :: manifest=47000; parsed_glb=47000
+CHECK MANIFEST_HEDGE_FIELD_NAME=PASS :: entry=5; category=hedge; exact_top_level_field='name'
+CHECK MANIFEST_HEDGE_FIELD_CATEGORY=PASS :: entry=5; category=hedge; exact_top_level_field='category'
+CHECK MANIFEST_HEDGE_FIELD_SOURCE=PASS :: entry=5; category=hedge; exact_top_level_field='source'
+CHECK MANIFEST_HEDGE_FIELD_URL=PASS :: entry=5; category=hedge; exact_top_level_field='url'
+CHECK MANIFEST_HEDGE_FIELD_AUTHOR=PASS :: entry=5; category=hedge; exact_top_level_field='author'
+CHECK MANIFEST_HEDGE_FIELD_LICENSE=PASS :: entry=5; category=hedge; exact_top_level_field='license'
+CHECK MANIFEST_HEDGE_FIELD_DOWNLOAD_DATE=PASS :: entry=5; category=hedge; exact_top_level_field='download_date'
+CHECK MANIFEST_HEDGE_FIELD_ORIGINAL_FILE=PASS :: entry=5; category=hedge; exact_top_level_field='original_file'
+CHECK MANIFEST_HEDGE_FIELD_ORIGINAL_SIZE=PASS :: entry=5; category=hedge; exact_top_level_field='original_size'
+CHECK MANIFEST_HEDGE_FIELD_OPTIMIZED_FILE=PASS :: entry=5; category=hedge; exact_top_level_field='optimized_file'
+CHECK MANIFEST_HEDGE_FIELD_OPTIMIZED_SIZE=PASS :: entry=5; category=hedge; exact_top_level_field='optimized_size'
+CHECK MANIFEST_HEDGE_FIELD_POLYGONS_BEFORE=PASS :: entry=5; category=hedge; exact_top_level_field='polygons_before'
+CHECK MANIFEST_HEDGE_FIELD_POLYGONS_AFTER=PASS :: entry=5; category=hedge; exact_top_level_field='polygons_after'
+CHECK MANIFEST_HEDGE_FIELD_TEXTURES=PASS :: entry=5; category=hedge; exact_top_level_field='textures'
+CHECK MANIFEST_HEDGE_FIELD_WHERE_USED=PASS :: entry=5; category=hedge; exact_top_level_field='where_used'
+CHECK MANIFEST_HEDGE_TEXT_VALUES=PASS :: all required text fields are non-empty strings
+CHECK MANIFEST_HEDGE_HTTPS_SOURCE=PASS :: url='https://www.blenderkit.com/asset-gallery-detail/2810ce15-1076-44e6-9b95-90487f8d5dc5/'
+CHECK MANIFEST_HEDGE_DOWNLOAD_DATE=PASS :: download_date='2026-08-16'; expected=YYYY-MM-DD
+CHECK MANIFEST_HEDGE_CC0=PASS :: license='CC0-1.0'
+CHECK MANIFEST_HEDGE_ORIGINAL_FILE=PASS :: path=assets_external/vegetation/hedges/blenderkit_shrub/original/hedge_2810ce15-1076-44e6-9b95-90487f8d5dc5_1k_source.blend; exists=True
+CHECK MANIFEST_HEDGE_OPTIMIZED_FILE=PASS :: path=assets_external/vegetation/hedges/blenderkit_shrub/optimized/hedge_web.glb; exists=True
+CHECK MANIFEST_HEDGE_ORIGINAL_SIZE=PASS :: manifest=4564424; disk=4564424
+CHECK MANIFEST_HEDGE_OPTIMIZED_SIZE=PASS :: manifest=1292892; disk=1292892
+CHECK MANIFEST_HEDGE_ORIGINAL_PRESERVED=PASS :: original=assets_external/vegetation/hedges/blenderkit_shrub/original/hedge_2810ce15-1076-44e6-9b95-90487f8d5dc5_1k_source.blend; optimized=assets_external/vegetation/hedges/blenderkit_shrub/optimized/hedge_web.glb
+CHECK MANIFEST_HEDGE_TEXTURES=PASS :: type=dict; entries=5
+CHECK MANIFEST_HEDGE_WHERE_USED=PASS :: where_used=['presentation/', 'visite/', 'Exterior boundaries; 18 logical hedge segments through two GPU InstancedMesh batches']
+CHECK MANIFEST_HEDGE_POLYGONS_BEFORE=PASS :: polygons_before=32256
+CHECK MANIFEST_HEDGE_POLYGONS_AFTER=PASS :: manifest=20994; parsed_glb=20994
+CHECK MANIFEST_FACADE_PBR_FIELD_NAME=PASS :: entry=6; category=facade_pbr; exact_top_level_field='name'
+CHECK MANIFEST_FACADE_PBR_FIELD_CATEGORY=PASS :: entry=6; category=facade_pbr; exact_top_level_field='category'
+CHECK MANIFEST_FACADE_PBR_FIELD_SOURCE=PASS :: entry=6; category=facade_pbr; exact_top_level_field='source'
+CHECK MANIFEST_FACADE_PBR_FIELD_URL=PASS :: entry=6; category=facade_pbr; exact_top_level_field='url'
+CHECK MANIFEST_FACADE_PBR_FIELD_AUTHOR=PASS :: entry=6; category=facade_pbr; exact_top_level_field='author'
+CHECK MANIFEST_FACADE_PBR_FIELD_LICENSE=PASS :: entry=6; category=facade_pbr; exact_top_level_field='license'
+CHECK MANIFEST_FACADE_PBR_FIELD_DOWNLOAD_DATE=PASS :: entry=6; category=facade_pbr; exact_top_level_field='download_date'
+CHECK MANIFEST_FACADE_PBR_FIELD_ORIGINAL_FILE=PASS :: entry=6; category=facade_pbr; exact_top_level_field='original_file'
+CHECK MANIFEST_FACADE_PBR_FIELD_ORIGINAL_SIZE=PASS :: entry=6; category=facade_pbr; exact_top_level_field='original_size'
+CHECK MANIFEST_FACADE_PBR_FIELD_OPTIMIZED_FILE=PASS :: entry=6; category=facade_pbr; exact_top_level_field='optimized_file'
+CHECK MANIFEST_FACADE_PBR_FIELD_OPTIMIZED_SIZE=PASS :: entry=6; category=facade_pbr; exact_top_level_field='optimized_size'
+CHECK MANIFEST_FACADE_PBR_FIELD_POLYGONS_BEFORE=PASS :: entry=6; category=facade_pbr; exact_top_level_field='polygons_before'
+CHECK MANIFEST_FACADE_PBR_FIELD_POLYGONS_AFTER=PASS :: entry=6; category=facade_pbr; exact_top_level_field='polygons_after'
+CHECK MANIFEST_FACADE_PBR_FIELD_TEXTURES=PASS :: entry=6; category=facade_pbr; exact_top_level_field='textures'
+CHECK MANIFEST_FACADE_PBR_FIELD_WHERE_USED=PASS :: entry=6; category=facade_pbr; exact_top_level_field='where_used'
+CHECK MANIFEST_FACADE_PBR_TEXT_VALUES=PASS :: all required text fields are non-empty strings
+CHECK MANIFEST_FACADE_PBR_HTTPS_SOURCE=PASS :: url='https://polyhaven.com/a/white_stucco'
+CHECK MANIFEST_FACADE_PBR_DOWNLOAD_DATE=PASS :: download_date='2026-08-16'; expected=YYYY-MM-DD
+CHECK MANIFEST_FACADE_PBR_CC0=PASS :: license='CC0-1.0'
+CHECK MANIFEST_FACADE_PBR_ORIGINAL_FILE=PASS :: path=assets_external/materials/facade/white_stucco/original/white_stucco_diff_2k.jpg; exists=True
+CHECK MANIFEST_FACADE_PBR_OPTIMIZED_FILE=PASS :: path=assets_external/materials/facade/white_stucco/optimized/white_stucco_color_1k.webp; exists=True
+CHECK MANIFEST_FACADE_PBR_ORIGINAL_SIZE=PASS :: manifest=2326889; disk=2326889
+CHECK MANIFEST_FACADE_PBR_OPTIMIZED_SIZE=PASS :: manifest=63686; disk=63686
+CHECK MANIFEST_FACADE_PBR_ORIGINAL_PRESERVED=PASS :: original=assets_external/materials/facade/white_stucco/original/white_stucco_diff_2k.jpg; optimized=assets_external/materials/facade/white_stucco/optimized/white_stucco_color_1k.webp
+CHECK MANIFEST_FACADE_PBR_TEXTURES=PASS :: type=dict; entries=6
+CHECK MANIFEST_FACADE_PBR_WHERE_USED=PASS :: where_used=['presentation/', 'visite/', 'Two existing façade material bindings; geometry and openings unchanged']
+CHECK MANIFEST_FACADE_PBR_POLYGONS_NOT_APPLICABLE=PASS :: non-geometry PBR resource uses null polygon counts
+CHECK MANIFEST_GRASS_PBR_FIELD_NAME=PASS :: entry=7; category=grass_pbr; exact_top_level_field='name'
+CHECK MANIFEST_GRASS_PBR_FIELD_CATEGORY=PASS :: entry=7; category=grass_pbr; exact_top_level_field='category'
+CHECK MANIFEST_GRASS_PBR_FIELD_SOURCE=PASS :: entry=7; category=grass_pbr; exact_top_level_field='source'
+CHECK MANIFEST_GRASS_PBR_FIELD_URL=PASS :: entry=7; category=grass_pbr; exact_top_level_field='url'
+CHECK MANIFEST_GRASS_PBR_FIELD_AUTHOR=PASS :: entry=7; category=grass_pbr; exact_top_level_field='author'
+CHECK MANIFEST_GRASS_PBR_FIELD_LICENSE=PASS :: entry=7; category=grass_pbr; exact_top_level_field='license'
+CHECK MANIFEST_GRASS_PBR_FIELD_DOWNLOAD_DATE=PASS :: entry=7; category=grass_pbr; exact_top_level_field='download_date'
+CHECK MANIFEST_GRASS_PBR_FIELD_ORIGINAL_FILE=PASS :: entry=7; category=grass_pbr; exact_top_level_field='original_file'
+CHECK MANIFEST_GRASS_PBR_FIELD_ORIGINAL_SIZE=PASS :: entry=7; category=grass_pbr; exact_top_level_field='original_size'
+CHECK MANIFEST_GRASS_PBR_FIELD_OPTIMIZED_FILE=PASS :: entry=7; category=grass_pbr; exact_top_level_field='optimized_file'
+CHECK MANIFEST_GRASS_PBR_FIELD_OPTIMIZED_SIZE=PASS :: entry=7; category=grass_pbr; exact_top_level_field='optimized_size'
+CHECK MANIFEST_GRASS_PBR_FIELD_POLYGONS_BEFORE=PASS :: entry=7; category=grass_pbr; exact_top_level_field='polygons_before'
+CHECK MANIFEST_GRASS_PBR_FIELD_POLYGONS_AFTER=PASS :: entry=7; category=grass_pbr; exact_top_level_field='polygons_after'
+CHECK MANIFEST_GRASS_PBR_FIELD_TEXTURES=PASS :: entry=7; category=grass_pbr; exact_top_level_field='textures'
+CHECK MANIFEST_GRASS_PBR_FIELD_WHERE_USED=PASS :: entry=7; category=grass_pbr; exact_top_level_field='where_used'
+CHECK MANIFEST_GRASS_PBR_TEXT_VALUES=PASS :: all required text fields are non-empty strings
+CHECK MANIFEST_GRASS_PBR_HTTPS_SOURCE=PASS :: url='https://ambientcg.com/a/Grass005'
+CHECK MANIFEST_GRASS_PBR_DOWNLOAD_DATE=PASS :: download_date='2026-08-16'; expected=YYYY-MM-DD
+CHECK MANIFEST_GRASS_PBR_CC0=PASS :: license='CC0-1.0 Universal'
+CHECK MANIFEST_GRASS_PBR_ORIGINAL_FILE=PASS :: path=assets_external/materials/exterior/grass005/original/Grass005_2K-JPG.zip; exists=True
+CHECK MANIFEST_GRASS_PBR_OPTIMIZED_FILE=PASS :: path=assets_external/materials/exterior/grass005/optimized/Grass005_color_1k.webp; exists=True
+CHECK MANIFEST_GRASS_PBR_ORIGINAL_SIZE=PASS :: manifest=39523019; disk=39523019
+CHECK MANIFEST_GRASS_PBR_OPTIMIZED_SIZE=PASS :: manifest=364742; disk=364742
+CHECK MANIFEST_GRASS_PBR_ORIGINAL_PRESERVED=PASS :: original=assets_external/materials/exterior/grass005/original/Grass005_2K-JPG.zip; optimized=assets_external/materials/exterior/grass005/optimized/Grass005_color_1k.webp
+CHECK MANIFEST_GRASS_PBR_TEXTURES=PASS :: type=dict; entries=6
+CHECK MANIFEST_GRASS_PBR_WHERE_USED=PASS :: where_used=['presentation/', 'visite/', 'Existing exterior lawn material binding; exterior geometry unchanged']
+CHECK MANIFEST_GRASS_PBR_POLYGONS_NOT_APPLICABLE=PASS :: non-geometry PBR resource uses null polygon counts
+CHECK MANIFEST_INTEGRITY_FIELDS=PASS :: contains sha256, triangle and score evidence
+CHECK LICENSE_LEDGER_PROVIDERS=PASS :: CC0 + Poly Haven + BlenderKit + ambientCG are documented
+CHECK LICENSE_LEDGER_URLS=PASS :: direct source/license URLs documented
+CHECK SCALE_REPORT_CATEGORIES=PASS :: required_tokens=('sofa', 'table', 'chair', 'bed', 'tree', 'hedge', 'mètre')
+CHECK FINAL_REPORT_SOURCE_SEPARATION=PASS :: contains LIVE WEB VIEWER and BLENDER source labels
+CHECK FINAL_REPORT_FPS_GATE=PASS :: contains explicit 30 FPS target evidence
+CHECK FINAL_REPORT_ARCHITECTURE=PASS :: architecture unchanged is explicit
+CHECK HOUSE_PAIR_EXISTS=PASS :: house=True; gpt_house=True
+CHECK HOUSE_PAIR_IDENTICAL=PASS :: house_sha256=D989931E49AA5A4BB3EE92194DDE8992E0C94A03E4ED0C008CFCAFD834DD37B1; gpt_house_sha256=D989931E49AA5A4BB3EE92194DDE8992E0C94A03E4ED0C008CFCAFD834DD37B1
+CHECK HOUSE_RELEASE_CURRENT=PASS :: observed='V18-ASSET-PILOT-1'; expected='V18-ASSET-PILOT-1'
+CHECK NO_STALE_ACTIVE_RELEASE_TOKEN=PASS :: active_release_values=['v18-asset-pilot-1']; stale=[]; legacy GLB node prefixes intentionally excluded
+CHECK COMPONENT_PILOT_FURNITURE_INTEGRATION=PASS :: validation/pilot_furniture_integration.json: result='PASS'
+CHECK COMPONENT_PILOT_MATERIAL_INTEGRATION_VALIDATION=PASS :: validation/pilot_material_integration_validation.json: status='PASS'
+CHECK COMPONENT_PILOT_VEGETATION_INTEGRATION=PASS :: validation/pilot_vegetation_integration.json: result='PASS'
+CHECK COMPONENT_VEGETATION_RUNTIME_VALIDATION=PASS :: validation/vegetation-runtime-validation.json: result='PASS'
+
+FAILURES:
+NONE
+
+FINAL_RESULT=PASS
+EXIT_STATUS=0

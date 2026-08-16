@@ -5,13 +5,13 @@
   "language": "fr",
   "public_repository": "https://github.com/ramanaru/chamagnieu",
   "public_page": "https://ramanaru.github.io/chamagnieu/",
-  "description": "Maison V18 live améliorée : matériaux PBR compacts, éclairage Web R2, sols différenciés et végétation CC0 optimisée, avec visite commençant à l’extérieur.",
+  "description": "Maison V18 live avec pilote de huit catégories d’assets CC0 réalistes, optimisés et placés à l’échelle, sans modification de l’architecture issue des plans.",
   "visible_features": [
-    "trois volumes de toiture avec géométrie fermée et tuiles PBR",
-    "pelouse, enrobé, gravier et terrasse différenciés par matériaux PBR",
-    "quatre arbres réels optimisés et dix-huit haies détaillées issues de Poly Haven CC0",
-    "mobilier principal recoloré avec textiles dédiés et sol intérieur jointoyé",
-    "vitrage physique réglé par transmission et environnement PMREM",
+    "architecture, murs, cloisons, toitures, ouvertures et dimensions inchangés",
+    "canapé trois places, table six personnes, six chaises et trois lits CC0 optimisés à l’échelle métrique",
+    "quatre arbres Poly Haven et dix-huit segments de haie BlenderKit instanciés",
+    "enduit de façade White Stucco et pelouse Grass005 avec Base Color, Normal et ARM",
+    "repli automatique par famille si un asset externe échoue ou si l’appareil est contraint",
     "visite interactive commençant à l’extérieur"
   ],
   "media": {
@@ -76,9 +76,10 @@
       }
     },
     "vegetation": {
-      "source": "Poly Haven",
-      "license": "CC0 1.0",
       "tree": {
+        "source": "Poly Haven",
+        "asset": "Island Tree 02",
+        "license": "CC0 1.0",
         "repository_path": "shared/assets/vegetation/island_tree_02_web.glb",
         "instances": 4,
         "triangles_per_instance": 47000,
@@ -86,29 +87,69 @@
         "sha256": "845CD738030743A4592FDC10DB77A38E522E15C8901E6710C377C3D5C303CF76"
       },
       "hedge": {
-        "repository_path": "shared/assets/vegetation/shrub_03_web.glb",
+        "source": "BlenderKit",
+        "asset": "Shrub",
+        "author": "Blendkit Community",
+        "license": "CC0",
+        "repository_path": "assets_external/vegetation/hedges/blenderkit_shrub/optimized/hedge_web.glb",
         "segments": 18,
-        "rows_per_segment": 2,
-        "tiles_per_row": 3,
-        "clone_instances": 108,
-        "triangles_per_instance": 8287,
-        "bytes": 675924,
-        "sha256": "C285AD37DDAA6014347AD1AD8A31311BAC46C384EE0D5F8C5D445186AA7960EE"
+        "instances": 18,
+        "gpu_batches": 2,
+        "triangles_per_instance": 20994,
+        "bytes": 1292892,
+        "sha256": "552369C1C70CE040EC8971DA0F235D24ECB9CB915B9320B1ABCB4EA0C423B7C2"
       },
       "desktop_budget": {
-        "triangles": 1082996,
-        "draw_calls": 120
+        "triangles": 565892,
+        "draw_calls": 14
       }
-    }
+    },
+    "asset_pilot_live_captures": [
+      {
+        "title": "Façade et enduit PBR pilote",
+        "source": "LIVE WEB VIEWER",
+        "repository_path": "validation/asset_pilot_screenshots/after_live/01-facade-live.png"
+      },
+      {
+        "title": "Haies CC0 pilotes",
+        "source": "LIVE WEB VIEWER",
+        "repository_path": "validation/asset_pilot_screenshots/after_live/02-hedges-live.png"
+      },
+      {
+        "title": "Séjour et canapé CC0",
+        "source": "LIVE WEB VIEWER",
+        "repository_path": "validation/asset_pilot_screenshots/after_live/03-living-sofa-live.png"
+      },
+      {
+        "title": "Salle à manger, table et six chaises",
+        "source": "LIVE WEB VIEWER",
+        "repository_path": "validation/asset_pilot_screenshots/after_live/04-dining-live.png"
+      },
+      {
+        "title": "Chambre et lit CC0",
+        "source": "LIVE WEB VIEWER",
+        "repository_path": "validation/asset_pilot_screenshots/after_live/05-bed-live.png"
+      },
+      {
+        "title": "Pelouse PBR pilote",
+        "source": "LIVE WEB VIEWER",
+        "repository_path": "validation/asset_pilot_screenshots/after_live/06-ground-live.png"
+      },
+      {
+        "title": "Jardin et arbres CC0",
+        "source": "LIVE WEB VIEWER",
+        "repository_path": "validation/asset_pilot_screenshots/after_live/07-garden-live.png"
+      }
+    ]
   },
   "interactive": {
     "presentation": "https://ramanaru.github.io/chamagnieu/presentation/",
     "visit_from_outside": "https://ramanaru.github.io/chamagnieu/visite/",
     "instant_gallery": "https://ramanaru.github.io/chamagnieu/rapide/"
   },
-  "release": "V18-WEB-REALISM-1",
+  "release": "V18-ASSET-PILOT-1",
   "source_policy": {
-    "interactive": "LIVE WEB VIEWER",
+    "interactive": "LIVE WEB VIEWER — V18-ASSET-PILOT-1",
     "gallery": "BLENDER",
     "d5": "not used in this release"
   },
@@ -119,5 +160,49 @@
     "environment": "procedural sky + PMREM",
     "exposure": 0.865,
     "environment_intensity": 0.765
+  },
+  "asset_pilot": {
+    "phase": "LIVE_VALIDATED_LOCAL",
+    "architecture_changed": false,
+    "visualisation_only": true,
+    "contractual": false,
+    "manifest": "assets_external/ASSET_MANIFEST.json",
+    "licenses": "assets_external/ASSET_LICENSES.md",
+    "scale_validation": "analysis/asset_scale_validation.md",
+    "report": "validation/ASSET_REALISM_INTEGRATION_REPORT.md",
+    "categories": [
+      "sofa",
+      "table",
+      "chair",
+      "bed",
+      "tree",
+      "hedge",
+      "facade_pbr",
+      "grass_pbr"
+    ],
+    "furniture": {
+      "families": 4,
+      "instances": 11,
+      "triangles": 221660,
+      "draw_calls": 22
+    },
+    "materials": {
+      "categories": 2,
+      "matched_materials": 3,
+      "external_maps": 6,
+      "external_bytes": 2048284
+    },
+    "vegetation": {
+      "trees": 4,
+      "hedge_segments": 18,
+      "triangles": 565892,
+      "draw_calls": 14
+    },
+    "performance": {
+      "target_fps_minimum": 30,
+      "vegetation_submit_harness_fps": 456.27,
+      "iab_refresh_observed_fps": 29.79,
+      "iab_note": "le navigateur intégré est cadencé à environ 30 Hz; le harnais Chromium/WebGL2 de soumission dépasse le seuil"
+    }
   }
 }

@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+validation/furniture-pilot-server.pid
+validation/vegetation-http-server.log
+validation/vegetation-http-server.err.log
+validation/vegetation-pilot-debug.png

@@ -1,0 +1,335 @@
+{
+  "schema_version": "1.0",
+  "validation_date": "2026-08-16",
+  "result": "PASS",
+  "scope": "Chamagnieu V18 vegetation pilot only; pages/config/architecture unchanged",
+  "tree_selection": {
+    "accepted": {
+      "asset": "Poly Haven Island Tree 02",
+      "provider": "Poly Haven",
+      "license": "CC0 1.0",
+      "license_url": "https://polyhaven.com/license",
+      "asset_url": "https://polyhaven.com/a/island_tree_02",
+      "decision": "ACCEPT_RETAIN_CURRENT_POLY_HAVEN",
+      "reason": "summer foliage and photogrammetric bark remain visibly superior for the supplied green garden context",
+      "original_inventory": [
+        {
+          "path": "assets_external/vegetation/trees/island_tree_02/original/island_tree_02.bin",
+          "bytes": 40686576,
+          "sha256": "427D69CCC1EA12D1FB9C6AF89691563B4A097F39A6F34C15BE6E45EF5E5FD4CE"
+        },
+        {
+          "path": "assets_external/vegetation/trees/island_tree_02/original/island_tree_02_1k.gltf",
+          "bytes": 8545,
+          "sha256": "D8C5D9EAD41CDBEF91A648F40FF60470FAA19EB3A7010E59E44CB1A01250F75D"
+        },
+        {
+          "path": "assets_external/vegetation/trees/island_tree_02/original/textures/island_tree_02_arm_1k.jpg",
+          "bytes": 688305,
+          "sha256": "ADA61DD4FAD023E699B6314B8B76590017B301719BF74FFC9E20B95893ED62B6"
+        },
+        {
+          "path": "assets_external/vegetation/trees/island_tree_02/original/textures/island_tree_02_branches_arm_1k.jpg",
+          "bytes": 484806,
+          "sha256": "9E3F82263247CE4F619692CEA4C4F6FE9936FF465A86623481849062642C7D05"
+        },
+        {
+          "path": "assets_external/vegetation/trees/island_tree_02/original/textures/island_tree_02_branches_diff_1k.jpg",
+          "bytes": 528304,
+          "sha256": "BEE5EC22196E9E31AD0C95A5A9B4636571CC0124D5BB27A92F1E307D289CC60D"
+        },
+        {
+          "path": "assets_external/vegetation/trees/island_tree_02/original/textures/island_tree_02_branches_nor_gl_1k.jpg",
+          "bytes": 819101,
+          "sha256": "2D67393BA76A0F49CF965FA0C99D8C16268E71E87B1203D35539BFDB971A514E"
+        },
+        {
+          "path": "assets_external/vegetation/trees/island_tree_02/original/textures/island_tree_02_diff_1k.jpg",
+          "bytes": 738738,
+          "sha256": "8FC20397AB5D514C119D7A025868414D78E436138D3867A4B7BA12334A72EC3A"
+        },
+        {
+          "path": "assets_external/vegetation/trees/island_tree_02/original/textures/island_tree_02_leaves_arm_1k.jpg",
+          "bytes": 489476,
+          "sha256": "90DA3A072DBCB052715B1313B9DBC69A4AA8A09A31A4B3868411A2BB51D72037"
+        },
+        {
+          "path": "assets_external/vegetation/trees/island_tree_02/original/textures/island_tree_02_leaves_diff_1k.jpg",
+          "bytes": 191886,
+          "sha256": "F56D762A1507754752ABF164CC12ACBC1E87CE87FA609AC44B98A1B0037C89D8"
+        },
+        {
+          "path": "assets_external/vegetation/trees/island_tree_02/original/textures/island_tree_02_leaves_nor_gl_1k.jpg",
+          "bytes": 379443,
+          "sha256": "07BA461C0C95DA4E49A42981766BDB6191D4C3C4D815796C082266DCC3CECDB8"
+        },
+        {
+          "path": "assets_external/vegetation/trees/island_tree_02/original/textures/island_tree_02_nor_gl_1k.jpg",
+          "bytes": 1157226,
+          "sha256": "1580D5A42D02F4EDE51BFB03972AB0AEF3D8ACAFBD3692276879171007BB70EC"
+        }
+      ],
+      "optimized": {
+        "path": "assets_external/vegetation/trees/island_tree_02/optimized/island_tree_02_web.glb",
+        "bytes": 4268472,
+        "sha256": "845CD738030743A4592FDC10DB77A38E522E15C8901E6710C377C3D5C303CF76"
+      },
+      "live_copy": {
+        "path": "shared/assets/vegetation/island_tree_02_web.glb",
+        "bytes": 4268472,
+        "sha256": "845CD738030743A4592FDC10DB77A38E522E15C8901E6710C377C3D5C303CF76"
+      },
+      "runtime_dimensions_m": [
+        4.20032,
+        3.40825,
+        4.06767
+      ],
+      "runtime_triangles_per_instance": 47000,
+      "runtime_instances": 4,
+      "runtime_draw_calls": 12,
+      "score": {
+        "realism": 8,
+        "style_match": 6,
+        "geometry_quality": 7,
+        "texture_quality": 8,
+        "performance": 9,
+        "license_confidence": 10,
+        "total": 48
+      }
+    },
+    "rejected_candidate": {
+      "asset": "BlenderKit Decorative Urban Tree",
+      "provider": "BlenderKit",
+      "license": "CC0",
+      "license_url": "https://www.blenderkit.com/docs/licenses/",
+      "asset_url": "https://www.blenderkit.com/asset-gallery-detail/c8af7417-b4d3-4cff-8a7a-b0afdb5a577f/",
+      "decision": "REJECT_AFTER_BLENDER_VISUAL_GATE",
+      "reason": "leafless winter silhouette conflicts with the green summer reference; optimized payload also exceeds both <=45k triangle and <=5MB pilot gates",
+      "source": {
+        "path": "assets_external/vegetation/tree/original/tree_c8af7417-b4d3-4cff-8a7a-b0afdb5a577f_1k_source.blend",
+        "bytes": 14312212,
+        "sha256": "8E6B0BC6288E3A3154272ABC0231453C9B259EE3E7F2D8B9D8A604A121495471"
+      },
+      "optimized": {
+        "path": "assets_external/vegetation/tree/optimized/tree_web.glb",
+        "bytes": 7032388,
+        "sha256": "B98EA894B2FE4EC8863186B8204AC8A506750A61289A7494B8A8BA2FB76734D8"
+      },
+      "dimensions_m": [
+        4.4389,
+        5.6147,
+        5.5466
+      ],
+      "triangles": 123949,
+      "preview": {
+        "path": "validation/asset_pilot_previews/tree-optimized-preview.png",
+        "bytes": 421794,
+        "sha256": "0B2CECD587AC7AE348F432825F9D1A6B72FA4DDA31AF74331F7587B9E4D706DC"
+      },
+      "score_after_import": {
+        "realism": 4,
+        "style_match": 3,
+        "geometry_quality": 3,
+        "texture_quality": 7,
+        "performance": 2,
+        "license_confidence": 10,
+        "total": 29
+      }
+    }
+  },
+  "hedge_selection": {
+    "accepted": {
+      "asset": "BlenderKit Shrub",
+      "provider": "BlenderKit",
+      "license": "CC0",
+      "license_url": "https://www.blenderkit.com/docs/licenses/",
+      "asset_url": "https://www.blenderkit.com/asset-gallery-detail/2810ce15-1076-44e6-9b95-90487f8d5dc5/",
+      "decision": "ACCEPT_AFTER_BLENDER_AND_BROWSER_GATE",
+      "original_download": {
+        "path": "assets_external/vegetation/hedges/blenderkit_shrub/original/hedge_2810ce15-1076-44e6-9b95-90487f8d5dc5_1k_download.blend.gz",
+        "bytes": 1327924,
+        "sha256": "E6DAFED45E728DB2276F481FA7A501FB9B17C2665BF80683750270F758348535"
+      },
+      "original_source": {
+        "path": "assets_external/vegetation/hedges/blenderkit_shrub/original/hedge_2810ce15-1076-44e6-9b95-90487f8d5dc5_1k_source.blend",
+        "bytes": 4564424,
+        "sha256": "32C7F1FF80FB0369EF7DC99849CF891B1E0BDCDAA1AED4B26F61050C77B8B519"
+      },
+      "metadata": {
+        "path": "assets_external/vegetation/hedges/blenderkit_shrub/original/library_metadata.json",
+        "bytes": 15038,
+        "sha256": "8A309E6B570FFDBB26754FC6AD6DB86AA1B18FF6B1F22F055C31105E99845A34"
+      },
+      "optimized": {
+        "path": "assets_external/vegetation/hedges/blenderkit_shrub/optimized/hedge_web.glb",
+        "bytes": 1292892,
+        "sha256": "552369C1C70CE040EC8971DA0F235D24ECB9CB915B9320B1ABCB4EA0C423B7C2"
+      },
+      "dimensions_m": [
+        1.2546,
+        1.2522,
+        0.7617
+      ],
+      "triangles_per_instance": 20994,
+      "instances": 18,
+      "logical_segments": 18,
+      "gpu_batches": 2,
+      "gpu_instancing": true,
+      "leaf_shadow_policy": "receive-only; branches cast and receive",
+      "optimization": {
+        "branch_triangles_before": 8576,
+        "branch_triangles_after": 3944,
+        "leaf_triangles_before": 23680,
+        "leaf_triangles_after": 17050,
+        "leaf_card_retention_ratio": 0.720017,
+        "strategy": "material-aware branch decimation; deterministic 72% foliage-card LOD; retained UVs and alpha silhouettes"
+      },
+      "preview": {
+        "path": "validation/asset_pilot_previews/hedge-optimized-preview.png",
+        "bytes": 610021,
+        "sha256": "2438D78619D56798DF8504D865C309404049BFA2C2EEE6757447573C67287DE9"
+      },
+      "score_after_import": {
+        "realism": 8,
+        "style_match": 8,
+        "geometry_quality": 8,
+        "texture_quality": 8,
+        "performance": 9,
+        "license_confidence": 10,
+        "total": 51
+      }
+    },
+    "retained_fallback": {
+      "asset": "Poly Haven Shrub 03",
+      "license": "CC0 1.0",
+      "asset_url": "https://polyhaven.com/a/shrub_03",
+      "live_copy": {
+        "path": "shared/assets/vegetation/shrub_03_web.glb",
+        "bytes": 675924,
+        "sha256": "C285AD37DDAA6014347AD1AD8A31311BAC46C384EE0D5F8C5D445186AA7960EE"
+      },
+      "forced_failure_test": {
+        "status": "enhanced",
+        "fallback_used": true,
+        "source": "retained-fallback",
+        "fallback_loaded": true,
+        "responses": [
+          {
+            "status": 200,
+            "url": "http://127.0.0.1:8946/shared/assets/vegetation/island_tree_02_web.glb?release=harness"
+          },
+          {
+            "status": 404,
+            "url": "http://127.0.0.1:8946/validation/missing-primary-hedge.glb?release=harness"
+          },
+          {
+            "status": 200,
+            "url": "http://127.0.0.1:8946/shared/assets/vegetation/shrub_03_web.glb?release=harness"
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "module": {
+      "path": "shared/live-vegetation.js",
+      "bytes": 20388,
+      "sha256": "085D7D38D3384D0BC9588FD97762ECBB4E83475ECAFF3BE986676709195886FA"
+    },
+    "validation": {
+      "path": "validation/vegetation-runtime-validation.json",
+      "bytes": 10752,
+      "sha256": "9E8B979161948E8828E48BE3AB6322441D26B2A32E089DDD28A051B4D35F490E"
+    },
+    "screenshot": {
+      "path": "validation/vegetation-runtime-harness.png",
+      "bytes": 673862,
+      "sha256": "E58B91F8F15FBDE07183323B0FBF3D08B94541A35A4524F96474E7E3859909F2"
+    },
+    "status": "enhanced",
+    "webgl2": true,
+    "console_errors": [],
+    "request_failures": [],
+    "http_bad_responses": [],
+    "tree_instances": 4,
+    "hedge_segments": 18,
+    "hedge_instances": 18,
+    "originals_hidden": 38,
+    "displayed_triangles": 565892,
+    "draw_calls": 14,
+    "load_ms": 475,
+    "main_thread_submit_measurement": {
+      "kind": "main-thread-submit",
+      "frames": 12,
+      "elapsedMs": 26.30000001192093,
+      "fps": 456.2737640517412
+    },
+    "budget_delta": {
+      "baseline_displayed_triangles": 1082996,
+      "triangle_reduction": 517104,
+      "triangle_reduction_percent": 47.748,
+      "baseline_draw_calls": 120,
+      "draw_call_reduction": 106,
+      "draw_call_reduction_percent": 88.333,
+      "baseline_hedge_clones": 108,
+      "hedge_clone_reduction": 90,
+      "hedge_clone_reduction_percent": 83.333,
+      "target_fps_minimum": 30,
+      "harness_submit_gate_pass": true,
+      "measurement_note": "Main-thread render submission in real Chromium/WebGL2; full live viewer performs the separate GPU wall-clock FPS gate."
+    },
+    "mobile": {
+      "status": "enhanced",
+      "mode": "enhanced-mobile",
+      "instances": 18,
+      "triangles": 565892,
+      "draw_calls": 14,
+      "optional_glb_requests": 2
+    },
+    "constrained_mobile": {
+      "status": "mobile-fallback",
+      "instances": 0,
+      "triangles": 0,
+      "draw_calls": 0,
+      "optional_glb_requests": 0
+    },
+    "checks": {
+      "status": true,
+      "treeInstances": true,
+      "hedgeInstances": true,
+      "hedgeCloneInstances": true,
+      "hedgeGpuBatches": true,
+      "hedgeGpuInstancing": true,
+      "displayedTriangles": true,
+      "drawCalls": true,
+      "originalsHidden": true,
+      "assets_loaded": true,
+      "dataset_status": true,
+      "dataset_triangles": true,
+      "dataset_draw_calls": true,
+      "dataset_gpu_batches": true,
+      "dataset_gpu_instancing": true,
+      "main_thread_submit_fps_minimum_30": true,
+      "webgl2": true,
+      "console_errors_zero": true,
+      "request_failures_zero": true,
+      "http_bad_zero": true,
+      "mobile_status": true,
+      "mobile_instances": true,
+      "mobile_gpu_instancing": true,
+      "mobile_triangles": true,
+      "mobile_optional_glb_requests": true,
+      "mobile_console_errors_zero": true,
+      "constrained_status": true,
+      "constrained_instances_zero": true,
+      "constrained_triangles_zero": true,
+      "constrained_optional_glb_requests_zero": true,
+      "constrained_console_errors_zero": true,
+      "fallback_runtime_state": true,
+      "fallback_current_asset_loaded": true,
+      "fallback_legacy_budget": true,
+      "fallback_primary_404_observed": true,
+      "fallback_retained_glb_200": true
+    }
+  }
+}
