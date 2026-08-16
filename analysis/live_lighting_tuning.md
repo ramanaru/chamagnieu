@@ -1,7 +1,7 @@
 # Réglage final de l’éclairage et du rendu live V18
 
 > Ce document décrit l’état courant **V18-WEB-REALISM-1**.
-> Les preuves marquées **LOCAL CURRENT — SOURCE = LIVE WEB VIEWER** viennent du viewer Web local courant. La preuve publique de cette nouvelle release reste explicitement à produire après publication ; les anciennes preuves publiques `V18-LIVE-SYNC-4` ne valent pas pour cette release.
+> Les preuves finales marquées **PUBLIC CURRENT — SOURCE = LIVE WEB VIEWER** viennent du viewer Web GitHub Pages courant. Les anciennes preuves publiques `V18-LIVE-SYNC-4` sont conservées uniquement comme baseline avant amélioration.
 
 ## 1. Identité courante vérifiée
 
@@ -204,40 +204,42 @@ CONSOLE_WARNINGS=0
 
 ## 9. État des preuves
 
-### Preuve locale actuelle
+### Preuve publique actuelle
 
 ```text
-EVIDENCE_SCOPE=LOCAL_CURRENT
+EVIDENCE_SCOPE=PUBLIC_CURRENT
 SOURCE=LIVE_WEB_VIEWER
 RELEASE=V18-WEB-REALISM-1
 MODEL_SHA256=9A5FD736CF5BFC4B8AF90A3B1A701C1532B83D2E6BDF0FA2C459B085B9A12B1E
-STATIC_VALIDATION=PASS 17/17
-LOCAL_HTTP=PASS 13/13
+STATIC_VALIDATION=PASS 19/19
+PUBLIC_HTTP=PASS 13/13
 VEGETATION_RUNTIME_HARNESS=PASS
+PUBLIC_WEBGL2=true
+PUBLIC_BROWSER_CONSOLE_ERRORS=0
 ```
 
-Capture courante : [`../validation/local-control-facade.png`](../validation/local-control-facade.png). Elle montre le viewer local réel avec le badge `SOURCE = LIVE WEB VIEWER`, le GLB upgraded, l’éclairage R2, l’enrobé corrigé, la pelouse et l’arbre réaliste intégré.
+Captures courantes : [`../validation/live_before_after/after/facade.png`](../validation/live_before_after/after/facade.png), [`../validation/live_before_after/after/garden.png`](../validation/live_before_after/after/garden.png), [`../validation/live_before_after/after/living.png`](../validation/live_before_after/after/living.png) et [`../validation/live_before_after/after/interior-floor-materials.png`](../validation/live_before_after/after/interior-floor-materials.png). Elles proviennent de la page publique et affichent le badge `SOURCE = LIVE WEB VIEWER`.
 
-Les captures historiques présentes dans `analysis/` ont servi au réglage local R2. Elles ne remplacent pas la future preuve publique de `V18-WEB-REALISM-1`.
+Les captures historiques présentes dans `analysis/` ont servi au réglage local R2; les fichiers `validation/live_before_after/after/` sont la preuve publique finale de `V18-WEB-REALISM-1`.
 
-### Preuve publique à produire
+### Postflight public exécuté
 
 ```text
-EVIDENCE_SCOPE=PUBLIC_FUTURE
-PUBLIC_RELEASE_V18_WEB_REALISM_1=PENDING
-PUBLIC_GLTF_IDENTITY=PENDING
-PUBLIC_BROWSER_CONSOLE=PENDING
-PUBLIC_NETWORK_AUDIT=PENDING
-PUBLIC_VISUAL_CAPTURES=PENDING
+EVIDENCE_SCOPE=PUBLIC_CURRENT
+PUBLIC_RELEASE_V18_WEB_REALISM_1=PASS
+PUBLIC_GLTF_IDENTITY=PASS bytes=22687292 sha256=9A5FD736CF5BFC4B8AF90A3B1A701C1532B83D2E6BDF0FA2C459B085B9A12B1E
+PUBLIC_BROWSER_CONSOLE=PASS errors=0 warnings=0
+PUBLIC_NETWORK_AUDIT=PASS critical_assets=13/13 http_200
+PUBLIC_VISUAL_CAPTURES=PASS raw_views=11 composites=6
 ```
 
-Après publication, il faudra recharger les cinq pages publiques, vérifier le SHA et la taille du GLB servi, confirmer `41` matériaux et `119` textures runtime, contrôler la végétation, relever console/réseau, puis produire les vues façade, jardin, sol extérieur, séjour et sol intérieur. Aucune ancienne capture publique Sync-4 ne doit être présentée comme preuve de cette release.
+Le postflight a rechargé les cinq pages publiques, vérifié le SHA et la taille du GLB servi, confirmé `41` matériaux et `119` textures runtime, contrôlé les 4 arbres et 108 clones de haies, puis capturé façade, jardin, sol extérieur, séjour et sol intérieur dans le viewer public.
 
-## 10. Vérifications locales disponibles
+## 10. Vérifications locales et publiques
 
 ```text
 V18_WEB_REALISM_STATIC_VALIDATION=PASS
-CHECKS_PASS=17
+CHECKS_PASS=19
 CHECKS_FAIL=0
 HTTP_RESOURCES=13/13
 GLB_REPRODUCIBLE_REBUILD_MATCH=YES
@@ -272,6 +274,6 @@ LIVE_MATERIALS=41
 LIVE_TEXTURES_RUNTIME=119
 CONFIG_MODEL_CHANGED=YES
 LOCAL_CURRENT_EVIDENCE=PASS
-PUBLIC_CURRENT_EVIDENCE=PENDING
-DOCUMENT_STATUS=PASS_CURRENT_LOCAL_STATE
+PUBLIC_CURRENT_EVIDENCE=PASS
+DOCUMENT_STATUS=PASS_CURRENT_PUBLIC_STATE
 ```

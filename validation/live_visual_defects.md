@@ -1,6 +1,6 @@
 **Audit visuel ciblé V18-WEB-REALISM-1**
 
-Les constats et résultats ci-dessous proviennent du viewer Web local courant (`http://127.0.0.1:8899/`) et des captures 1440×900 marquées `SOURCE = LIVE WEB VIEWER`. La publication publique de cette release n'est pas revendiquée dans ce rapport local.
+Les constats et résultats ci-dessous proviennent du viewer Web public courant (`https://ramanaru.github.io/chamagnieu/presentation/`) et des captures 1440×900 marquées `SOURCE = LIVE WEB VIEWER`. Le modèle, les matériaux, l'éclairage et la végétation ont été rechargés puis vérifiés dans la vraie release publique.
 
 ## FACADE
 
@@ -12,7 +12,7 @@ Les constats et résultats ci-dessous proviennent du viewer Web local courant (`
 
 **RESULT:** La façade reste propre comme une maison neuve, mais son grain, ses arêtes, les tableaux et les différences d'éclairement sont maintenant lisibles dans `01_facade_before_after.png`.
 
-**STATUS:** PASS — LOCAL CURRENT — SOURCE = LIVE WEB VIEWER.
+**STATUS:** PASS — PUBLIC CURRENT — SOURCE = LIVE WEB VIEWER.
 
 ## ROOF
 
@@ -24,7 +24,7 @@ Les constats et résultats ci-dessous proviennent du viewer Web local courant (`
 
 **RESULT:** Les rangs, arêtiers, bords et changements de pente se détachent mieux sans rendre la toiture brillante ou artificielle.
 
-**STATUS:** PASS — LOCAL CURRENT — SOURCE = LIVE WEB VIEWER.
+**STATUS:** PASS — PUBLIC CURRENT — SOURCE = LIVE WEB VIEWER.
 
 ## GRASS
 
@@ -36,7 +36,7 @@ Les constats et résultats ci-dessous proviennent du viewer Web local courant (`
 
 **RESULT:** La pelouse devient verte, nuancée et texturée à moyenne distance; la différence est visible sur la façade, le jardin et les sols extérieurs.
 
-**STATUS:** PASS — LOCAL CURRENT — SOURCE = LIVE WEB VIEWER.
+**STATUS:** PASS — PUBLIC CURRENT — SOURCE = LIVE WEB VIEWER.
 
 ## HEDGES
 
@@ -48,7 +48,7 @@ Les constats et résultats ci-dessous proviennent du viewer Web local courant (`
 
 **RESULT:** Les haies ont davantage de volume, une silhouette moins répétitive et une matière feuillue plus riche; le harness WebGL2 confirme 18 segments et 108 clones sans erreur console ou réseau.
 
-**STATUS:** PASS — LOCAL CURRENT — SOURCE = LIVE WEB VIEWER.
+**STATUS:** PASS — PUBLIC CURRENT — SOURCE = LIVE WEB VIEWER.
 
 ## TREES
 
@@ -60,7 +60,7 @@ Les constats et résultats ci-dessous proviennent du viewer Web local courant (`
 
 **RESULT:** Les quatre arbres présentent des troncs ramifiés, des couronnes irrégulières et des feuilles moins plastiques, clairement visibles dans `02_garden_before_after.png`.
 
-**STATUS:** PASS — LOCAL CURRENT — SOURCE = LIVE WEB VIEWER.
+**STATUS:** PASS — PUBLIC CURRENT — SOURCE = LIVE WEB VIEWER.
 
 ## DRIVEWAY
 
@@ -72,7 +72,7 @@ Les constats et résultats ci-dessous proviennent du viewer Web local courant (`
 
 **RESULT:** L'accès, les bandes minérales, les dalles et la pelouse sont identifiables comme des zones distinctes dans `03_driveway_before_after.png` et la vue brute `after/exterior-ground.png`.
 
-**STATUS:** PASS — LOCAL CURRENT — SOURCE = LIVE WEB VIEWER.
+**STATUS:** PASS — PUBLIC CURRENT — SOURCE = LIVE WEB VIEWER.
 
 ## INTERIOR_FLOOR
 
@@ -84,7 +84,7 @@ Les constats et résultats ci-dessous proviennent du viewer Web local courant (`
 
 **RESULT:** Les carreaux, joints, nuances minérales et reflets doux sont lisibles dans `05_floor_before_after.png` et `after/interior-floor-materials.png`.
 
-**STATUS:** PASS — LOCAL CURRENT — SOURCE = LIVE WEB VIEWER.
+**STATUS:** PASS — PUBLIC CURRENT — SOURCE = LIVE WEB VIEWER.
 
 ## SOFA
 
@@ -96,7 +96,7 @@ Les constats et résultats ci-dessous proviennent du viewer Web local courant (`
 
 **RESULT:** Le canapé est distinct de la literie, sa trame et ses volumes sont lisibles et le séjour n'est plus dominé par une masse blanche dans `04_living_before_after.png`.
 
-**STATUS:** PASS — LOCAL CURRENT — SOURCE = LIVE WEB VIEWER.
+**STATUS:** PASS — PUBLIC CURRENT — SOURCE = LIVE WEB VIEWER.
 
 ## CHAIRS
 
@@ -108,7 +108,7 @@ Les constats et résultats ci-dessous proviennent du viewer Web local courant (`
 
 **RESULT:** Les assises et dossiers se détachent du bois et du sol, tandis que l'ensemble reste cohérent et chaleureux.
 
-**STATUS:** PASS — LOCAL CURRENT — SOURCE = LIVE WEB VIEWER.
+**STATUS:** PASS — PUBLIC CURRENT — SOURCE = LIVE WEB VIEWER.
 
 ## TABLE
 
@@ -120,7 +120,7 @@ Les constats et résultats ci-dessous proviennent du viewer Web local courant (`
 
 **RESULT:** Le veinage et l'épaisseur du plateau se lisent mieux, avec une séparation plus nette des chaises et du carrelage.
 
-**STATUS:** PASS — LOCAL CURRENT — SOURCE = LIVE WEB VIEWER.
+**STATUS:** PASS — PUBLIC CURRENT — SOURCE = LIVE WEB VIEWER.
 
 ## GLASS
 
@@ -132,7 +132,7 @@ Les constats et résultats ci-dessous proviennent du viewer Web local courant (`
 
 **RESULT:** Fenêtres et baies restent transparentes mais captent le ciel PMREM et conservent une présence visuelle propre, sans voile gris sale.
 
-**STATUS:** PASS — LOCAL CURRENT — SOURCE = LIVE WEB VIEWER.
+**STATUS:** PASS — PUBLIC CURRENT — SOURCE = LIVE WEB VIEWER.
 
 ## LIGHTING
 
@@ -144,7 +144,7 @@ Les constats et résultats ci-dessous proviennent du viewer Web local courant (`
 
 **RESULT:** L'image gagne en profondeur, les reliefs PBR deviennent lisibles et les intérieurs restent chaleureux sans noirs bouchés ni hautes lumières brûlées.
 
-**STATUS:** PASS — LOCAL CURRENT — SOURCE = LIVE WEB VIEWER.
+**STATUS:** PASS — PUBLIC CURRENT — SOURCE = LIVE WEB VIEWER.
 
 ## OVERALL_REALISM
 
@@ -154,6 +154,6 @@ Les constats et résultats ci-dessous proviennent du viewer Web local courant (`
 
 **CORRECTION_APPLIED:** Le viewer charge désormais `Chamagnieu_V18_WEB_REALISM_UPGRADED.glb` (41 matériaux, 90 textures, 78 WebP, 95 bindings PBR), LIGHTING-R2 et la végétation enhanced, sans modification des 2 454 payloads d'accessors géométriques.
 
-**RESULT:** Les six comparatifs 1440×900 et les neuf vues brutes locales montrent une amélioration nette de la façade, du jardin, des sols, du séjour, de la cuisine et de l'étage; toutes portent la provenance `SOURCE = LIVE WEB VIEWER`.
+**RESULT:** Les six comparatifs 1440×900 et les onze vues brutes publiques montrent une amélioration nette de la façade, du jardin, des sols, du séjour, de la cuisine, de l'étage et du parcours extérieur; toutes portent la provenance `SOURCE = LIVE WEB VIEWER`.
 
-**STATUS:** PASS — LOCAL CURRENT; preuve publique V18-WEB-REALISM-1 encore à produire après publication.
+**STATUS:** PASS — PUBLIC CURRENT — SOURCE = LIVE WEB VIEWER.

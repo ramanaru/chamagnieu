@@ -1,8 +1,8 @@
-**Rapport final local — V18 Web Realism**
+**Rapport final public — V18 Web Realism**
 
-Ce verdict porte sur l'état local courant réellement exécuté dans le viewer Web. Les captures citées sont marquées `SOURCE = LIVE WEB VIEWER`; la publication publique de cette release reste à vérifier séparément après déploiement.
+Ce verdict porte sur l'état public courant réellement exécuté dans le viewer Web à `https://ramanaru.github.io/chamagnieu/`. Les captures finales proviennent de la page publique et portent `SOURCE = LIVE WEB VIEWER`.
 
-**LIVE_VERSION:** `V18` — release `V18-WEB-REALISM-1` — cache key `v18-web-realism-1` — statut de preuve `LOCAL CURRENT`.
+**LIVE_VERSION:** `V18` — release `V18-WEB-REALISM-1` — cache key `v18-web-realism-1` — statut de preuve `PUBLIC CURRENT`.
 
 **LIVE_GLB_USED:** `shared/Chamagnieu_V18_WEB_REALISM_UPGRADED.glb` — `22 687 292` octets — SHA-256 `9A5FD736CF5BFC4B8AF90A3B1A701C1532B83D2E6BDF0FA2C459B085B9A12B1E` — GLB 2.0 valide.
 
@@ -28,11 +28,11 @@ Ce verdict porte sur l'état local courant réellement exécuté dans le viewer 
 
 **LIGHTING:** Pipeline `V18-WEB-REALISM-LIGHTING-R2`: sortie sRGB, ACES Filmic, exposition `0,865`, ciel procédural déterministe + PMREM `0,765`, hemisphere `0,518`, ambient `0,030`, soleil `2,760`, fill `0,158`, rim `0,280`, ombres PCFSoft 2048² desktop et brouillard 78–172 m.
 
-**PERFORMANCE:** Le GLB amélioré mesure `2 482 028` octets de moins que Sync-4. Le harness WebGL2 enhanced valide `1 082 996` triangles de végétation affichés, `120` draw calls, `686 ms` de chargement desktop, `245 ms` mobile non contraint, zéro erreur console, zéro requête échouée et un mode fallback sans téléchargement optionnel sur appareil 2 Go.
+**PERFORMANCE:** Le GLB amélioré mesure `2 482 028` octets de moins que Sync-4. Le viewer public WebGL2 affiche `1 082 996` triangles de végétation, `120` draw calls et charge la végétation en `173 ms` sur la présentation auditée (`162 ms` dans la visite). Le harness reproductible confirme le fallback sans téléchargement optionnel sur appareil 2 Go.
 
-**BEFORE_AFTER_SUMMARY:** Six comparatifs 1440×900 existent dans `validation/live_before_after/`: façade, jardin, sols extérieurs, séjour, sol intérieur et matériaux/cuisine. Neuf vues brutes after couvrent façade, générale, jardin, haies, sol extérieur, séjour, cuisine, sol intérieur et étage/portes. Chaque composite affiche explicitement `SOURCE = LIVE WEB VIEWER`; le côté avant vient de la V18-LIVE-SYNC-4 publique et le côté après de V18-WEB-REALISM-1 locale courante.
+**BEFORE_AFTER_SUMMARY:** Six comparatifs 1440×900 existent dans `validation/live_before_after/`: façade, jardin, sols extérieurs, séjour, sol intérieur et matériaux/cuisine. Onze vues brutes publiques after couvrent façade, générale, jardin, haies, sol extérieur, séjour, cuisine, sol intérieur, étage/portes, départ extérieur et déplacement vers la maison. Chaque composite affiche explicitement `SOURCE = LIVE WEB VIEWER`; les deux côtés viennent des releases publiques correspondantes.
 
-**FINAL_STATUS:** `PASS — LOCAL CURRENT`. Les validations structurelles, GLB, PBR, runtime vegetation et comparatifs live locaux passent; la disponibilité publique V18-WEB-REALISM-1 n'est pas affirmée avant son déploiement et son postflight.
+**FINAL_STATUS:** `PASS — PUBLIC CURRENT`. Le modèle public et ses cinq assets critiques sont byte-identiques aux blobs Git; les validations structurelles, GLB, PBR, WebGL2, végétation, visite extérieure et comparatifs live passent. La visite publique répond 108/108 en HTTP 200; la présentation n'a aucune exception JavaScript et les deux seules réponses auxiliaires non-200 observées sont des demandes automatiques du favicon racine GitHub Pages, sans effet sur le viewer.
 
 LIVE_WEB_REALISM_IMPROVED=YES
 TEXTURE_QUALITY_IMPROVED=YES

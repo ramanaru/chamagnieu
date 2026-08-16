@@ -1,0 +1,73 @@
+{
+  "source": "LIVE WEB VIEWER",
+  "evidenceScope": "PUBLIC CURRENT",
+  "baseUrl": "https://ramanaru.github.io/chamagnieu/",
+  "release": "V18-WEB-REALISM-1",
+  "runtimeCommitAudited": "56f4a6ce191917d19e47d7f99dd24b834190f3c4",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "presentation": {
+    "viewerReady": true,
+    "version": "V18",
+    "model": "Chamagnieu_V18_WEB_REALISM_UPGRADED.glb",
+    "modelBytes": 22687292,
+    "modelSha256": "9A5FD736CF5BFC4B8AF90A3B1A701C1532B83D2E6BDF0FA2C459B085B9A12B1E",
+    "webgl2": true,
+    "meshes": 795,
+    "materials": 41,
+    "runtimeTextures": 119,
+    "embeddedWebpImages": 78,
+    "pbrBindings": 95,
+    "furnitureMeshes": 169,
+    "vegetation": {
+      "status": "enhanced",
+      "mode": "enhanced-desktop",
+      "treeInstances": 4,
+      "hedgeSegments": 18,
+      "hedgeCloneInstances": 108,
+      "triangles": 1082996,
+      "drawCalls": 120,
+      "fallbackUsed": false
+    },
+    "brokenImages": 0,
+    "consoleErrors": 0,
+    "consoleWarnings": 0,
+    "runtimeExceptions": 0,
+    "network": {
+      "responses": 111,
+      "http200": 109,
+      "auxiliaryRootFavicon404": 2,
+      "loadingFailed": 0
+    }
+  },
+  "visit": {
+    "viewerReady": true,
+    "webgl2": true,
+    "cameraPosition": [1.941, 1.65, -15.173],
+    "cameraTarget": [-1.436, 1.4, -0.663],
+    "responsesHttp200": "108/108",
+    "loadingFailed": 0,
+    "runtimeExceptions": 0,
+    "consoleErrors": 0,
+    "controlModeAfterStart": "keyboard-drag-fallback",
+    "fallbackReason": "WrongDocumentError",
+    "pointerLocked": false,
+    "status": "Mode souris-glisser actif · utilisez ZQSD/WASD pour entrer · SOURCE = LIVE WEB VIEWER"
+  },
+  "captures": [
+    "after/facade.png",
+    "after/general.png",
+    "after/garden.png",
+    "after/hedges.png",
+    "after/exterior-ground.png",
+    "after/living.png",
+    "after/kitchen.png",
+    "after/interior-floor-materials.png",
+    "after/upstairs-doors.png",
+    "after/visit-outside.png",
+    "after/visit-after-move.png"
+  ],
+  "result": "PASS"
+}
