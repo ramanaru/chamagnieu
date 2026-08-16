@@ -1,0 +1,59 @@
+BROWSER=Codex In-app Browser
+PUBLIC_RELEASE=V18-LIVE-SYNC-3
+PAGE=/ RESOURCES=6 STATUS_200=6 FAILED=0
+  200 img 73898 https://ramanaru.github.io/chamagnieu/images/v18-facade-roof-ground.webp
+  200 img 60108 https://ramanaru.github.io/chamagnieu/images/v18-jardin-textures.webp
+  200 script 305 https://ramanaru.github.io/chamagnieu/shared/page-version.js?release=v18-live-sync-3
+  200 script 1301 https://ramanaru.github.io/chamagnieu/shared/project-config.js
+  200 fetch 989 https://ramanaru.github.io/chamagnieu/shared/project-config.json
+  200 other 246 https://ramanaru.github.io/chamagnieu/favicon.ico
+PAGE=/presentation/ RESOURCES=12 STATUS_200=12 FAILED=0
+  200 link 4547 https://ramanaru.github.io/chamagnieu/shared/viewer.css?release=v18-live-sync-3
+  200 script 6744 https://ramanaru.github.io/chamagnieu/presentation/presentation.js?release=v18-live-sync-3
+  200 css 13724 https://ramanaru.github.io/chamagnieu/shared/preview.webp
+  200 script 603380 https://ramanaru.github.io/chamagnieu/shared/vendor/three.module.js
+  200 script 114649 https://ramanaru.github.io/chamagnieu/shared/vendor/addons/loaders/GLTFLoader.js
+  200 script 38703 https://ramanaru.github.io/chamagnieu/shared/vendor/addons/controls/OrbitControls.js
+  200 script 1301 https://ramanaru.github.io/chamagnieu/shared/project-config.js
+  200 script 3866 https://ramanaru.github.io/chamagnieu/shared/live-realism.js
+  200 script 35538 https://ramanaru.github.io/chamagnieu/shared/vendor/addons/utils/BufferGeometryUtils.js
+  200 script 1401321 https://ramanaru.github.io/chamagnieu/shared/vendor/three.core.js
+  200 fetch 989 https://ramanaru.github.io/chamagnieu/shared/project-config.json
+  200 fetch 27987896 https://ramanaru.github.io/chamagnieu/shared/Chamagnieu_V18_REALISM_FINAL.glb?release=v18-live-sync-3
+PAGE=/visite/ RESOURCES=12 STATUS_200=12 FAILED=0
+  200 link 4547 https://ramanaru.github.io/chamagnieu/shared/viewer.css?release=v18-live-sync-3
+  200 script 9209 https://ramanaru.github.io/chamagnieu/visite/visite.js?release=v18-live-sync-3
+  200 css 13724 https://ramanaru.github.io/chamagnieu/shared/preview.webp
+  200 script 603380 https://ramanaru.github.io/chamagnieu/shared/vendor/three.module.js
+  200 script 6073 https://ramanaru.github.io/chamagnieu/shared/vendor/addons/controls/PointerLockControls.js
+  200 script 114649 https://ramanaru.github.io/chamagnieu/shared/vendor/addons/loaders/GLTFLoader.js
+  200 script 1301 https://ramanaru.github.io/chamagnieu/shared/project-config.js
+  200 script 3866 https://ramanaru.github.io/chamagnieu/shared/live-realism.js
+  200 script 1401321 https://ramanaru.github.io/chamagnieu/shared/vendor/three.core.js
+  200 script 35538 https://ramanaru.github.io/chamagnieu/shared/vendor/addons/utils/BufferGeometryUtils.js
+  200 fetch 989 https://ramanaru.github.io/chamagnieu/shared/project-config.json
+  200 fetch 27987896 https://ramanaru.github.io/chamagnieu/shared/Chamagnieu_V18_REALISM_FINAL.glb?release=v18-live-sync-3
+PAGE=/rapide/ RESOURCES=12 STATUS_200=12 FAILED=0
+  200 img 73898 https://ramanaru.github.io/chamagnieu/shared/gallery/v18-facade-roof-ground.webp?release=v18-live-sync-3
+  200 img 60108 https://ramanaru.github.io/chamagnieu/shared/gallery/v18-jardin-textures.webp?release=v18-live-sync-3
+  200 script 305 https://ramanaru.github.io/chamagnieu/shared/page-version.js?release=v18-live-sync-3
+  200 img 21136 https://ramanaru.github.io/chamagnieu/shared/gallery/salle-a-manger.webp?release=v18-live-sync-3
+  200 img 20192 https://ramanaru.github.io/chamagnieu/shared/gallery/cuisine.webp?release=v18-live-sync-3
+  200 img 14544 https://ramanaru.github.io/chamagnieu/shared/gallery/salon.webp?release=v18-live-sync-3
+  200 img 14842 https://ramanaru.github.io/chamagnieu/shared/gallery/chambre.webp?release=v18-live-sync-3
+  200 img 15590 https://ramanaru.github.io/chamagnieu/shared/gallery/chambre-2.webp?release=v18-live-sync-3
+  200 img 8012 https://ramanaru.github.io/chamagnieu/shared/gallery/sdb.webp?release=v18-live-sync-3
+  200 img 52772 https://ramanaru.github.io/chamagnieu/shared/gallery/facade.webp?release=v18-live-sync-3
+  200 script 1301 https://ramanaru.github.io/chamagnieu/shared/project-config.js
+  200 fetch 989 https://ramanaru.github.io/chamagnieu/shared/project-config.json
+PAGE=/gpt/ RESOURCES=3 STATUS_200=3 FAILED=0
+  200 script 305 https://ramanaru.github.io/chamagnieu/shared/page-version.js?release=v18-live-sync-3
+  200 script 1301 https://ramanaru.github.io/chamagnieu/shared/project-config.js
+  200 fetch 989 https://ramanaru.github.io/chamagnieu/shared/project-config.json
+BROKEN_IMAGES_TOTAL=0
+CORS_ERRORS=0
+GLB_FETCH_ERRORS=0
+TEXTURE_NETWORK_ERRORS=0
+SERVICE_WORKER_CONTROLLER=false
+SERVICE_WORKER_REGISTRATIONS=0
+CACHE_STORAGE_KEYS=0

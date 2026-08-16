@@ -1,8 +1,8 @@
 import * as THREE from '../shared/vendor/three.module.js';
 import { OrbitControls } from '../shared/vendor/addons/controls/OrbitControls.js';
 import { GLTFLoader } from '../shared/vendor/addons/loaders/GLTFLoader.js';
-import { loadProjectConfig, applyProjectVersion, resolveProjectAsset } from '../shared/project-config.js';
-import { setupLiveLighting, tuneLiveModel } from '../shared/live-realism.js';
+import { loadProjectConfig, applyProjectVersion, resolveProjectAsset } from '../shared/project-config.js?release=v18-live-sync-4';
+import { setupLiveLighting, tuneLiveModel } from '../shared/live-realism.js?release=v18-live-sync-4';
 
 const config = await loadProjectConfig();
 applyProjectVersion(config);
@@ -72,7 +72,7 @@ document.documentElement.dataset.viewerReady = 'loading';
 new GLTFLoader().load(modelUrl.href, gltf => {
   house = gltf.scene;
   classifyFurniture(house);
-  window.__liveMaterialAudit = tuneLiveModel(renderer, house, mobile);
+  window.__liveMaterialAudit = tuneLiveModel(renderer, house, mobile, config);
   scene.add(house);
   loading.classList.add('hide');
   setView('front');

@@ -1,0 +1,1123 @@
+{
+  "audit": "Chamagnieu V18-LIVE-SYNC-4 WebP local browser audit",
+  "auditedAt": "2026-08-16T07:52:08.928Z",
+  "browser": {
+    "name": "Codex In-app Browser",
+    "type": "iab"
+  },
+  "baseUrl": "http://127.0.0.1:8897/",
+  "model": {
+    "file": "Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+    "bytes": 25169320,
+    "sha256": "69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE",
+    "images": 37,
+    "mimeCounts": {
+      "image/webp": 37
+    },
+    "allWebp": true,
+    "embeddedBufferViews": 37,
+    "externalUris": 0,
+    "textures": 56,
+    "materials": 35,
+    "decodedDimensions": {
+      "2048x2050": 3,
+      "2048x2048": 27,
+      "1024x1024": 5,
+      "256x256": 2
+    }
+  },
+  "pages": {
+    "/": {
+      "dom": {
+        "bodyText": "VERSION V18 · V18-LIVE-SYNC-4\n\nMaison neuve de Chamagnieu\n\nLa visite interactive charge maintenant une configuration centrale et un seul modèle GLB V18 nommé et versionné. Les images Blender ci-dessous restent des références de présentation clairement séparées des captures du viewer Web.\n\nVérité live : ouvrez « Présentation 3D live » ou « Commencer dehors » ; le badge SOURCE = LIVE WEB VIEWER identifie le vrai rendu navigateur.\n\nCommencer dehors et entrer\nPrésentation 3D live\nGalerie Blender sourcée\nRapport de synchronisation\nDonnées JSON\nDépôt lisible par GPT\nSOURCE = BLENDER\nFaçade et toiture : rendu de référence, distinct du viewer Web.\nSOURCE = BLENDER\nJardin et façade arrière : rendu de référence, distinct du viewer Web.\nÉtat synchronisé de la V18\nConfiguration centrale : shared/project-config.json.\nModèle live : Chamagnieu_V18_REALISM_FINAL_WEBP.glb, copie byte-for-byte du meilleur GLB V18 audité.\nTextures du modèle intégrées dans le GLB ; aucune texture externe silencieusement absente.\nÉclairage Web corrigé par IBL procédural PMREM, ACES et ombres desktop.\nLa visite commence à l’extérieur et permet d’entrer dans la maison.\n\nAudit détaillé · Verdict final",
+        "brokenImages": [],
+        "imgs": [
+          {
+            "alt": "Rendu Blender de la façade, toiture et sols extérieurs",
+            "broken": false,
+            "complete": true,
+            "naturalHeight": 720,
+            "naturalWidth": 960,
+            "src": "http://127.0.0.1:8897/images/v18-facade-roof-ground.webp"
+          },
+          {
+            "alt": "Rendu Blender du jardin et de la façade arrière",
+            "broken": false,
+            "complete": true,
+            "naturalHeight": 720,
+            "naturalWidth": 960,
+            "src": "http://127.0.0.1:8897/images/v18-jardin-textures.webp"
+          }
+        ],
+        "scripts": [
+          "INLINE",
+          "http://127.0.0.1:8897/shared/page-version.js?release=v18-live-sync-4"
+        ],
+        "title": "Maison de Chamagnieu V18 — source Web vérifiée",
+        "url": "http://127.0.0.1:8897/?reaudit=sync4webp-final"
+      },
+      "cdp": {
+        "cacheKeys": [],
+        "projectConfig": {
+          "assets": {
+            "hedges": 18,
+            "outdoorDiningNodes": 0,
+            "trees": 4
+          },
+          "cacheKey": "v18-live-sync-4",
+          "gallerySource": "BLENDER",
+          "houseData": "../house.json",
+          "lighting": {
+            "ambientIntensity": 0.06,
+            "directionalIntensity": 2.4,
+            "environment": "procedural PMREM IBL",
+            "environmentIntensity": 0.85,
+            "exposure": 0.92,
+            "fillIntensity": 0.22,
+            "hemisphereIntensity": 0.72,
+            "shadows": "desktop",
+            "toneMapping": "ACESFilmic"
+          },
+          "materials": {
+            "codec": "WebP",
+            "correctedBinding": "/materials/31/pbrMetallicRoughness/metallicRoughnessTexture removed (invalid texture 50)",
+            "embedded": true,
+            "externalTextureCount": 0,
+            "maxTextureResolution": "2048px desktop source; 1024px and 256px retained where present",
+            "runtimeTuning": "shared/live-realism.js"
+          },
+          "model": "./Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+          "modelBytes": 25169320,
+          "modelSha256": "69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE",
+          "presentationImages": [
+            "./gallery/v18-facade-roof-ground.webp",
+            "./gallery/v18-jardin-textures.webp"
+          ],
+          "release": "V18-LIVE-SYNC-4",
+          "schemaVersion": 1,
+          "version": "V18",
+          "viewerSource": "LIVE WEB VIEWER"
+        },
+        "projectConfigUrl": "http://127.0.0.1:8897/shared/project-config.json",
+        "resources": [
+          {
+            "decodedBodySize": 73898,
+            "duration": 130,
+            "initiatorType": "img",
+            "name": "http://127.0.0.1:8897/images/v18-facade-roof-ground.webp",
+            "responseStatus": 200,
+            "transferSize": 74198
+          },
+          {
+            "decodedBodySize": 60108,
+            "duration": 137,
+            "initiatorType": "img",
+            "name": "http://127.0.0.1:8897/images/v18-jardin-textures.webp",
+            "responseStatus": 200,
+            "transferSize": 60408
+          },
+          {
+            "decodedBodySize": 338,
+            "duration": 142,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/shared/page-version.js?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 638
+          },
+          {
+            "decodedBodySize": 1329,
+            "duration": 29,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/shared/project-config.js?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 300
+          },
+          {
+            "decodedBodySize": 1225,
+            "duration": 57,
+            "initiatorType": "fetch",
+            "name": "http://127.0.0.1:8897/shared/project-config.json",
+            "responseStatus": 200,
+            "transferSize": 1525
+          }
+        ],
+        "sw": {
+          "controller": false,
+          "registrations": []
+        }
+      },
+      "logs": []
+    },
+    "/presentation/": {
+      "dom": {
+        "bodyText": "Chamagnieu V18 · modèle Web synchronisé\n\nToitures complètes en tuiles PBR, pelouse, enrobé, gravier, arbres et haies sont visibles; la table extérieure parasite a été retirée. Glissez pour tourner, pincez ou utilisez la molette pour zoomer.\n\nFaçade texturée\nVue générale\nJardin / arbres\nSol extérieur\nCuisine\nSéjour\nÉtage / portes\nMasquer les meubles\nCommencer dehors et entrer\nGalerie instantanée\nSOURCE = LIVE WEB VIEWER\nFaçade et toiture — vraie scène Web V18 · SOURCE = LIVE WEB VIEWER",
+        "brokenImages": [],
+        "buttons": [
+          {
+            "disabled": false,
+            "text": "Façade texturée"
+          },
+          {
+            "disabled": false,
+            "text": "Vue générale"
+          },
+          {
+            "disabled": false,
+            "text": "Jardin / arbres"
+          },
+          {
+            "disabled": false,
+            "text": "Sol extérieur"
+          },
+          {
+            "disabled": false,
+            "text": "Cuisine"
+          },
+          {
+            "disabled": false,
+            "text": "Séjour"
+          },
+          {
+            "disabled": false,
+            "text": "Étage / portes"
+          },
+          {
+            "disabled": false,
+            "text": "Masquer les meubles"
+          }
+        ],
+        "canvasCount": 1,
+        "imgs": [],
+        "title": "Chamagnieu V18 — Toiture, sols et textures corrigés",
+        "url": "http://127.0.0.1:8897/presentation/?reaudit=sync4webp-final"
+      },
+      "cdp": {
+        "cacheKeys": [],
+        "htmlDataset": {
+          "projectConfig": "../shared/project-config.json",
+          "projectRelease": "V18-LIVE-SYNC-4",
+          "projectVersion": "V18",
+          "viewerFurnitureMeshes": "169",
+          "viewerFurnitureVisible": "true",
+          "viewerMaterials": "35",
+          "viewerMeshes": "795",
+          "viewerModel": "Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+          "viewerReady": "true",
+          "viewerRelease": "V18-LIVE-SYNC-4",
+          "viewerSource": "LIVE WEB VIEWER",
+          "viewerTextures": "71",
+          "viewerVersion": "V18"
+        },
+        "liveMaterialAudit": {
+          "anisotropy": 8,
+          "environment": "procedural PMREM IBL",
+          "environmentIntensity": 0.85,
+          "meshes": 795,
+          "shadows": "PCFSoft-2048",
+          "texturedMaterialBindings": 501,
+          "uniqueMaterials": 35,
+          "uniqueTextures": 71
+        },
+        "projectConfig": {
+          "assets": {
+            "hedges": 18,
+            "outdoorDiningNodes": 0,
+            "trees": 4
+          },
+          "cacheKey": "v18-live-sync-4",
+          "gallerySource": "BLENDER",
+          "houseData": "../house.json",
+          "lighting": {
+            "ambientIntensity": 0.06,
+            "directionalIntensity": 2.4,
+            "environment": "procedural PMREM IBL",
+            "environmentIntensity": 0.85,
+            "exposure": 0.92,
+            "fillIntensity": 0.22,
+            "hemisphereIntensity": 0.72,
+            "shadows": "desktop",
+            "toneMapping": "ACESFilmic"
+          },
+          "materials": {
+            "codec": "WebP",
+            "correctedBinding": "/materials/31/pbrMetallicRoughness/metallicRoughnessTexture removed (invalid texture 50)",
+            "embedded": true,
+            "externalTextureCount": 0,
+            "maxTextureResolution": "2048px desktop source; 1024px and 256px retained where present",
+            "runtimeTuning": "shared/live-realism.js"
+          },
+          "model": "./Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+          "modelBytes": 25169320,
+          "modelSha256": "69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE",
+          "presentationImages": [
+            "./gallery/v18-facade-roof-ground.webp",
+            "./gallery/v18-jardin-textures.webp"
+          ],
+          "release": "V18-LIVE-SYNC-4",
+          "schemaVersion": 1,
+          "version": "V18",
+          "viewerSource": "LIVE WEB VIEWER"
+        },
+        "resources": [
+          {
+            "decodedBodySize": 4555,
+            "duration": 65,
+            "initiatorType": "link",
+            "name": "http://127.0.0.1:8897/shared/viewer.css?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 300
+          },
+          {
+            "decodedBodySize": 6915,
+            "duration": 67,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/presentation/presentation.js?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 7215
+          },
+          {
+            "decodedBodySize": 621665,
+            "duration": 22,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/shared/vendor/three.module.js",
+            "responseStatus": 200,
+            "transferSize": 300
+          },
+          {
+            "decodedBodySize": 40563,
+            "duration": 28,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/shared/vendor/addons/controls/OrbitControls.js",
+            "responseStatus": 200,
+            "transferSize": 40863
+          },
+          {
+            "decodedBodySize": 119535,
+            "duration": 26,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/shared/vendor/addons/loaders/GLTFLoader.js",
+            "responseStatus": 200,
+            "transferSize": 300
+          },
+          {
+            "decodedBodySize": 1329,
+            "duration": 0,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/shared/project-config.js?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 300
+          },
+          {
+            "decodedBodySize": 4191,
+            "duration": 32,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/shared/live-realism.js?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 4491
+          },
+          {
+            "decodedBodySize": 13724,
+            "duration": 47,
+            "initiatorType": "css",
+            "name": "http://127.0.0.1:8897/shared/preview.webp",
+            "responseStatus": 200,
+            "transferSize": 300
+          },
+          {
+            "decodedBodySize": 36973,
+            "duration": 22,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/shared/vendor/addons/utils/BufferGeometryUtils.js",
+            "responseStatus": 200,
+            "transferSize": 300
+          },
+          {
+            "decodedBodySize": 1460002,
+            "duration": 30,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/shared/vendor/three.core.js",
+            "responseStatus": 200,
+            "transferSize": 300
+          },
+          {
+            "decodedBodySize": 1225,
+            "duration": 16,
+            "initiatorType": "fetch",
+            "name": "http://127.0.0.1:8897/shared/project-config.json",
+            "responseStatus": 200,
+            "transferSize": 1525
+          },
+          {
+            "decodedBodySize": 25169320,
+            "duration": 308,
+            "initiatorType": "fetch",
+            "name": "http://127.0.0.1:8897/shared/Chamagnieu_V18_REALISM_FINAL_WEBP.glb?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 25169620
+          }
+        ],
+        "sw": {
+          "controller": false,
+          "registrations": []
+        },
+        "viewerError": null,
+        "viewerFailed": false,
+        "viewerModelUrl": "http://127.0.0.1:8897/shared/Chamagnieu_V18_REALISM_FINAL_WEBP.glb?release=v18-live-sync-4",
+        "viewerReady": true,
+        "viewerRelease": "V18-LIVE-SYNC-4",
+        "viewerVersion": "V18",
+        "webgl2": true
+      },
+      "logs": [],
+      "furniture": {
+        "before": {
+          "meshes": "169",
+          "text": "Masquer les meubles",
+          "visible": "true"
+        },
+        "hidden": {
+          "meshes": "169",
+          "text": "Afficher les meubles",
+          "visible": "false"
+        },
+        "shownAgain": {
+          "meshes": "169",
+          "text": "Masquer les meubles",
+          "visible": "true"
+        }
+      }
+    },
+    "/visite/": {
+      "dom": {
+        "bodyText": "Visite libre · Chamagnieu V18\n\nLa visite commence dehors avec les textures et la végétation restaurées. Cliquez « Commencer dehors », puis avancez vers la porte avec ZQSD/WASD ou le pavé tactile.\n\nCommencer dehors\nRevenir dehors\nJardin / arbres\nCuisine\nSéjour\nEscalier\nPalier\nChambre 1\nChambre 2\nChambre 3\nSDB nord\nSDB sud\nMasquer les meubles\nVue présentation\nGalerie instantanée\nZQSD / WASD : marcher · Maj : accélérer · E / C : monter / descendre · Échap : libérer la souris\nSOURCE = LIVE WEB VIEWER\nDépart réellement extérieur — avancez vers la porte pour entrer · SOURCE = LIVE WEB VIEWER",
+        "brokenImages": [],
+        "buttons": [
+          {
+            "disabled": false,
+            "text": "Commencer dehors"
+          },
+          {
+            "disabled": false,
+            "text": "Revenir dehors"
+          },
+          {
+            "disabled": false,
+            "text": "Jardin / arbres"
+          },
+          {
+            "disabled": false,
+            "text": "Cuisine"
+          },
+          {
+            "disabled": false,
+            "text": "Séjour"
+          },
+          {
+            "disabled": false,
+            "text": "Escalier"
+          },
+          {
+            "disabled": false,
+            "text": "Palier"
+          },
+          {
+            "disabled": false,
+            "text": "Chambre 1"
+          },
+          {
+            "disabled": false,
+            "text": "Chambre 2"
+          },
+          {
+            "disabled": false,
+            "text": "Chambre 3"
+          },
+          {
+            "disabled": false,
+            "text": "SDB nord"
+          },
+          {
+            "disabled": false,
+            "text": "SDB sud"
+          },
+          {
+            "disabled": false,
+            "text": "Masquer les meubles"
+          }
+        ],
+        "canvasCount": 1,
+        "imgs": [],
+        "title": "Chamagnieu V18 — Visite extérieure et intérieure",
+        "url": "http://127.0.0.1:8897/visite/?reaudit=sync4webp-final"
+      },
+      "initial": {
+        "cacheKeys": [],
+        "htmlDataset": {
+          "projectConfig": "../shared/project-config.json",
+          "projectRelease": "V18-LIVE-SYNC-4",
+          "projectVersion": "V18",
+          "viewerFurnitureMeshes": "169",
+          "viewerFurnitureVisible": "true",
+          "viewerMaterials": "35",
+          "viewerMeshes": "795",
+          "viewerModel": "Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+          "viewerReady": "true",
+          "viewerRelease": "V18-LIVE-SYNC-4",
+          "viewerSource": "LIVE WEB VIEWER",
+          "viewerTextures": "71",
+          "viewerVersion": "V18"
+        },
+        "lastPreset": "outside",
+        "liveMaterialAudit": {
+          "anisotropy": 8,
+          "environment": "procedural PMREM IBL",
+          "environmentIntensity": 0.85,
+          "meshes": 795,
+          "shadows": "PCFSoft-2048",
+          "texturedMaterialBindings": 501,
+          "uniqueMaterials": 35,
+          "uniqueTextures": 71
+        },
+        "projectConfig": {
+          "assets": {
+            "hedges": 18,
+            "outdoorDiningNodes": 0,
+            "trees": 4
+          },
+          "cacheKey": "v18-live-sync-4",
+          "gallerySource": "BLENDER",
+          "houseData": "../house.json",
+          "lighting": {
+            "ambientIntensity": 0.06,
+            "directionalIntensity": 2.4,
+            "environment": "procedural PMREM IBL",
+            "environmentIntensity": 0.85,
+            "exposure": 0.92,
+            "fillIntensity": 0.22,
+            "hemisphereIntensity": 0.72,
+            "shadows": "desktop",
+            "toneMapping": "ACESFilmic"
+          },
+          "materials": {
+            "codec": "WebP",
+            "correctedBinding": "/materials/31/pbrMetallicRoughness/metallicRoughnessTexture removed (invalid texture 50)",
+            "embedded": true,
+            "externalTextureCount": 0,
+            "maxTextureResolution": "2048px desktop source; 1024px and 256px retained where present",
+            "runtimeTuning": "shared/live-realism.js"
+          },
+          "model": "./Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+          "modelBytes": 25169320,
+          "modelProfile": {
+            "geometryChanged": false,
+            "invalidTextureBindingRemoved": 50,
+            "legacyDownsampledJpegSha256": "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28",
+            "sourceMasterSha256": "97F842001CC77E65637271172D09A81043FFFDF3235591DCB1AFF0BA96D67DA0",
+            "texturePixelRetentionVsMaster": "100%",
+            "variant": "corrected-high-resolution-WebP"
+          },
+          "modelSha256": "69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE",
+          "presentationImages": [
+            "./gallery/v18-facade-roof-ground.webp",
+            "./gallery/v18-jardin-textures.webp"
+          ],
+          "release": "V18-LIVE-SYNC-4",
+          "schemaVersion": 1,
+          "version": "V18",
+          "viewerSource": "LIVE WEB VIEWER"
+        },
+        "resources": [
+          {
+            "decodedBodySize": 4555,
+            "duration": 0,
+            "initiatorType": "link",
+            "name": "http://127.0.0.1:8897/shared/viewer.css?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 300
+          },
+          {
+            "decodedBodySize": 11623,
+            "duration": 28,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/visite/visite.js?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 11923
+          },
+          {
+            "decodedBodySize": 621665,
+            "duration": 0,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/shared/vendor/three.module.js",
+            "responseStatus": 200,
+            "transferSize": 300
+          },
+          {
+            "decodedBodySize": 6345,
+            "duration": 14,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/shared/vendor/addons/controls/PointerLockControls.js",
+            "responseStatus": 200,
+            "transferSize": 300
+          },
+          {
+            "decodedBodySize": 119535,
+            "duration": 0,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/shared/vendor/addons/loaders/GLTFLoader.js",
+            "responseStatus": 200,
+            "transferSize": 300
+          },
+          {
+            "decodedBodySize": 1329,
+            "duration": 0,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/shared/project-config.js?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 300
+          },
+          {
+            "decodedBodySize": 0,
+            "duration": 18,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/shared/live-realism.js?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 300
+          },
+          {
+            "decodedBodySize": 1460002,
+            "duration": 0,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/shared/vendor/three.core.js",
+            "responseStatus": 200,
+            "transferSize": 300
+          },
+          {
+            "decodedBodySize": 36973,
+            "duration": 0,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/shared/vendor/addons/utils/BufferGeometryUtils.js",
+            "responseStatus": 200,
+            "transferSize": 300
+          },
+          {
+            "decodedBodySize": 1610,
+            "duration": 33,
+            "initiatorType": "fetch",
+            "name": "http://127.0.0.1:8897/shared/project-config.json",
+            "responseStatus": 200,
+            "transferSize": 1910
+          },
+          {
+            "decodedBodySize": 13724,
+            "duration": 0,
+            "initiatorType": "css",
+            "name": "http://127.0.0.1:8897/shared/preview.webp",
+            "responseStatus": 200,
+            "transferSize": 300
+          },
+          {
+            "decodedBodySize": 25169320,
+            "duration": 146,
+            "initiatorType": "fetch",
+            "name": "http://127.0.0.1:8897/shared/Chamagnieu_V18_REALISM_FINAL_WEBP.glb?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 300
+          }
+        ],
+        "sw": {
+          "controller": false,
+          "registrations": []
+        },
+        "viewerCameraPosition": [
+          1.941,
+          1.65,
+          -15.173
+        ],
+        "viewerCameraTarget": [
+          -1.436,
+          1.4,
+          -0.663
+        ],
+        "viewerError": null,
+        "viewerFailed": false,
+        "viewerModelUrl": "http://127.0.0.1:8897/shared/Chamagnieu_V18_REALISM_FINAL_WEBP.glb?release=v18-live-sync-4",
+        "viewerReady": true,
+        "viewerRelease": "V18-LIVE-SYNC-4",
+        "viewerVersion": "V18",
+        "visitControlMode": null,
+        "webgl2": true
+      },
+      "logsBeforeStart": [],
+      "afterStart": {
+        "lastPreset": "outside",
+        "pointerLockFallbackReason": "UnknownError",
+        "pointerLocked": false,
+        "status": "Mode souris-glisser actif · utilisez ZQSD/WASD pour entrer · SOURCE = LIVE WEB VIEWER",
+        "viewerCameraPosition": [
+          1.941,
+          1.65,
+          -15.173
+        ],
+        "viewerCameraTarget": [
+          -1.436,
+          1.4,
+          -0.663
+        ],
+        "visitControlMode": "keyboard-drag-fallback"
+      },
+      "logsAfterStart": [],
+      "keyboardMovement": {
+        "key": "W",
+        "presses": 80,
+        "intervalMs": 25,
+        "beforeSha256": "796545e66e31bb051a6eb92e3cde02a362a56cf979773e1f216697ac67ba8883",
+        "afterSha256": "cb37eed8576fd289488503c4dbc36209b2b65b6d4fe6c542235c29c788d95243",
+        "visualChanged": true,
+        "beforeBytes": 104873,
+        "afterBytes": 112070,
+        "beforePath": "C:/Users/jonat/Documents/Codex/2026-08-16/chamagnieu-v18-reaudit/validation/reaudit-2026-08-16/sync4-webp-local/sync4-webp-visit-before-keyboard.png",
+        "afterPath": "C:/Users/jonat/Documents/Codex/2026-08-16/chamagnieu-v18-reaudit/validation/reaudit-2026-08-16/sync4-webp-local/sync4-webp-visit-after-keyboard.png"
+      },
+      "garden": {
+        "lastPreset": "garden",
+        "position": [
+          -12.5,
+          1.65,
+          -17.2
+        ],
+        "status": "Jardin — 4 arbres, 18 haies et sols du GLB Web · SOURCE = LIVE WEB VIEWER",
+        "target": [
+          -4.2,
+          1.45,
+          -11.86
+        ],
+        "visitControlMode": "keyboard-drag-fallback"
+      },
+      "outsideAgain": {
+        "lastPreset": "outside",
+        "position": [
+          1.941,
+          1.65,
+          -15.173
+        ],
+        "status": "Départ réellement extérieur — avancez vers la porte pour entrer · SOURCE = LIVE WEB VIEWER",
+        "target": [
+          -1.436,
+          1.4,
+          -0.663
+        ],
+        "visitControlMode": "keyboard-drag-fallback"
+      },
+      "furniture": {
+        "before": {
+          "meshes": "169",
+          "text": "Masquer les meubles",
+          "visible": "true"
+        },
+        "hidden": {
+          "meshes": "169",
+          "text": "Afficher les meubles",
+          "visible": "false"
+        },
+        "shownAgain": {
+          "meshes": "169",
+          "text": "Masquer les meubles",
+          "visible": "true"
+        }
+      },
+      "finalLogs": []
+    },
+    "/rapide/": {
+      "dom": {
+        "blenderBadges": 9,
+        "bodyText": "Chamagnieu V18 · galerie de référence\n\nCes images servent à comparer le rendu de présentation avec le vrai viewer. Leur moteur est indiqué sans ambiguïté.\n\nToutes les images de cette page : SOURCE = BLENDER. Pour voir le rendu réellement interactif, ouvrez la 3D live.\n\nOuvrir la 3D live\nCommencer dehors\nLire le verdict\nAccueil\nToiture et haies restaurées\n\nSOURCE = BLENDER\nRéférence Eevee issue de la scène master V18.\n\nJardin, arbres et pelouse\n\nSOURCE = BLENDER\nRéférence Eevee ; la végétation reste volontairement low-poly dans le modèle.\n\nCuisine\n\nSOURCE = BLENDER\nImage de présentation, pas une capture du viewer Web.\n\nSalle à manger\n\nSOURCE = BLENDER\nImage de présentation, pas une capture du viewer Web.\n\nSalon\n\nSOURCE = BLENDER\nImage de présentation, pas une capture du viewer Web.\n\nChambre principale\n\nSOURCE = BLENDER\nImage de présentation, pas une capture du viewer Web.\n\nDeuxième chambre\n\nSOURCE = BLENDER\nImage de présentation, pas une capture du viewer Web.\n\nSalle de bains\n\nSOURCE = BLENDER\nImage de présentation, pas une capture du viewer Web.\n\nVolumes de façade\n\nSOURCE = BLENDER\nImage de présentation, pas une capture du viewer Web.",
+        "brokenImages": [],
+        "imgs": [
+          {
+            "alt": "Rendu Blender façade V18",
+            "broken": false,
+            "complete": true,
+            "naturalHeight": 720,
+            "naturalWidth": 960,
+            "src": "http://127.0.0.1:8897/shared/gallery/v18-facade-roof-ground.webp?release=v18-live-sync-4"
+          },
+          {
+            "alt": "Rendu Blender jardin V18",
+            "broken": false,
+            "complete": true,
+            "naturalHeight": 720,
+            "naturalWidth": 960,
+            "src": "http://127.0.0.1:8897/shared/gallery/v18-jardin-textures.webp?release=v18-live-sync-4"
+          },
+          {
+            "alt": "Rendu Blender cuisine",
+            "broken": false,
+            "complete": true,
+            "naturalHeight": 720,
+            "naturalWidth": 960,
+            "src": "http://127.0.0.1:8897/shared/gallery/cuisine.webp?release=v18-live-sync-4"
+          },
+          {
+            "alt": "Rendu Blender salle à manger",
+            "broken": false,
+            "complete": true,
+            "naturalHeight": 720,
+            "naturalWidth": 960,
+            "src": "http://127.0.0.1:8897/shared/gallery/salle-a-manger.webp?release=v18-live-sync-4"
+          },
+          {
+            "alt": "Rendu Blender salon",
+            "broken": false,
+            "complete": true,
+            "naturalHeight": 720,
+            "naturalWidth": 960,
+            "src": "http://127.0.0.1:8897/shared/gallery/salon.webp?release=v18-live-sync-4"
+          },
+          {
+            "alt": "Rendu Blender chambre",
+            "broken": false,
+            "complete": true,
+            "naturalHeight": 720,
+            "naturalWidth": 960,
+            "src": "http://127.0.0.1:8897/shared/gallery/chambre.webp?release=v18-live-sync-4"
+          },
+          {
+            "alt": "Rendu Blender deuxième chambre",
+            "broken": false,
+            "complete": true,
+            "naturalHeight": 720,
+            "naturalWidth": 960,
+            "src": "http://127.0.0.1:8897/shared/gallery/chambre-2.webp?release=v18-live-sync-4"
+          },
+          {
+            "alt": "Rendu Blender salle de bains",
+            "broken": false,
+            "complete": true,
+            "naturalHeight": 720,
+            "naturalWidth": 960,
+            "src": "http://127.0.0.1:8897/shared/gallery/sdb.webp?release=v18-live-sync-4"
+          },
+          {
+            "alt": "Rendu Blender volumes de façade",
+            "broken": false,
+            "complete": true,
+            "naturalHeight": 720,
+            "naturalWidth": 960,
+            "src": "http://127.0.0.1:8897/shared/gallery/facade.webp?release=v18-live-sync-4"
+          }
+        ],
+        "title": "Chamagnieu V18 — Galerie Blender sourcée",
+        "url": "http://127.0.0.1:8897/rapide/?reaudit=sync4webp-final"
+      },
+      "cdp": {
+        "cacheKeys": [],
+        "projectConfig": {
+          "assets": {
+            "hedges": 18,
+            "outdoorDiningNodes": 0,
+            "trees": 4
+          },
+          "cacheKey": "v18-live-sync-4",
+          "gallerySource": "BLENDER",
+          "houseData": "../house.json",
+          "lighting": {
+            "ambientIntensity": 0.06,
+            "directionalIntensity": 2.4,
+            "environment": "procedural PMREM IBL",
+            "environmentIntensity": 0.85,
+            "exposure": 0.92,
+            "fillIntensity": 0.22,
+            "hemisphereIntensity": 0.72,
+            "shadows": "desktop",
+            "toneMapping": "ACESFilmic"
+          },
+          "materials": {
+            "codec": "WebP",
+            "correctedBinding": "/materials/31/pbrMetallicRoughness/metallicRoughnessTexture removed (invalid texture 50)",
+            "embedded": true,
+            "externalTextureCount": 0,
+            "maxTextureResolution": "2048px desktop source; 1024px and 256px retained where present",
+            "runtimeTuning": "shared/live-realism.js"
+          },
+          "model": "./Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+          "modelBytes": 25169320,
+          "modelProfile": {
+            "geometryChanged": false,
+            "invalidTextureBindingRemoved": 50,
+            "legacyDownsampledJpegSha256": "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28",
+            "sourceMasterSha256": "97F842001CC77E65637271172D09A81043FFFDF3235591DCB1AFF0BA96D67DA0",
+            "texturePixelRetentionVsMaster": "100%",
+            "variant": "corrected-high-resolution-WebP"
+          },
+          "modelSha256": "69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE",
+          "presentationImages": [
+            "./gallery/v18-facade-roof-ground.webp",
+            "./gallery/v18-jardin-textures.webp"
+          ],
+          "release": "V18-LIVE-SYNC-4",
+          "schemaVersion": 1,
+          "version": "V18",
+          "viewerSource": "LIVE WEB VIEWER"
+        },
+        "projectConfigUrl": "http://127.0.0.1:8897/shared/project-config.json",
+        "resources": [
+          {
+            "decodedBodySize": 73898,
+            "duration": 31,
+            "initiatorType": "img",
+            "name": "http://127.0.0.1:8897/shared/gallery/v18-facade-roof-ground.webp?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 74198
+          },
+          {
+            "decodedBodySize": 60108,
+            "duration": 27,
+            "initiatorType": "img",
+            "name": "http://127.0.0.1:8897/shared/gallery/v18-jardin-textures.webp?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 60408
+          },
+          {
+            "decodedBodySize": 0,
+            "duration": 29,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/shared/page-version.js?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 300
+          },
+          {
+            "decodedBodySize": 0,
+            "duration": 14,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/shared/project-config.js?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 300
+          },
+          {
+            "decodedBodySize": 1610,
+            "duration": 13,
+            "initiatorType": "fetch",
+            "name": "http://127.0.0.1:8897/shared/project-config.json",
+            "responseStatus": 200,
+            "transferSize": 1910
+          },
+          {
+            "decodedBodySize": 20192,
+            "duration": 32,
+            "initiatorType": "img",
+            "name": "http://127.0.0.1:8897/shared/gallery/cuisine.webp?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 20492
+          },
+          {
+            "decodedBodySize": 21136,
+            "duration": 33,
+            "initiatorType": "img",
+            "name": "http://127.0.0.1:8897/shared/gallery/salle-a-manger.webp?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 21436
+          },
+          {
+            "decodedBodySize": 14544,
+            "duration": 44,
+            "initiatorType": "img",
+            "name": "http://127.0.0.1:8897/shared/gallery/salon.webp?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 14844
+          },
+          {
+            "decodedBodySize": 15590,
+            "duration": 45,
+            "initiatorType": "img",
+            "name": "http://127.0.0.1:8897/shared/gallery/chambre-2.webp?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 15890
+          },
+          {
+            "decodedBodySize": 14842,
+            "duration": 45,
+            "initiatorType": "img",
+            "name": "http://127.0.0.1:8897/shared/gallery/chambre.webp?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 15142
+          },
+          {
+            "decodedBodySize": 8012,
+            "duration": 47,
+            "initiatorType": "img",
+            "name": "http://127.0.0.1:8897/shared/gallery/sdb.webp?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 8312
+          },
+          {
+            "decodedBodySize": 52772,
+            "duration": 52,
+            "initiatorType": "img",
+            "name": "http://127.0.0.1:8897/shared/gallery/facade.webp?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 53072
+          }
+        ],
+        "sw": {
+          "controller": false,
+          "registrations": []
+        }
+      },
+      "logs": []
+    },
+    "/gpt/": {
+      "dom": {
+        "bodyText": "Maison de Chamagnieu V18\n\nCette page lit shared/project-config.json, la même source que les viewers interactifs.\n\nRendu navigateur : SOURCE = LIVE WEB VIEWER\nGalerie de référence : SOURCE = BLENDER\nModèle live : Chamagnieu_V18_REALISM_FINAL_WEBP.glb\n\nOuvrir la page publique · Lire house.json · Lire le rapport live · Lire le dépôt GitHub",
+        "brokenImages": [],
+        "imgs": [],
+        "title": "Maison de Chamagnieu V18 — accès GPT",
+        "url": "http://127.0.0.1:8897/gpt/?reaudit=sync4webp-final"
+      },
+      "cdp": {
+        "cacheKeys": [],
+        "projectConfig": {
+          "assets": {
+            "hedges": 18,
+            "outdoorDiningNodes": 0,
+            "trees": 4
+          },
+          "cacheKey": "v18-live-sync-4",
+          "gallerySource": "BLENDER",
+          "houseData": "../house.json",
+          "lighting": {
+            "ambientIntensity": 0.06,
+            "directionalIntensity": 2.4,
+            "environment": "procedural PMREM IBL",
+            "environmentIntensity": 0.85,
+            "exposure": 0.92,
+            "fillIntensity": 0.22,
+            "hemisphereIntensity": 0.72,
+            "shadows": "desktop",
+            "toneMapping": "ACESFilmic"
+          },
+          "materials": {
+            "codec": "WebP",
+            "correctedBinding": "/materials/31/pbrMetallicRoughness/metallicRoughnessTexture removed (invalid texture 50)",
+            "embedded": true,
+            "externalTextureCount": 0,
+            "maxTextureResolution": "2048px desktop source; 1024px and 256px retained where present",
+            "runtimeTuning": "shared/live-realism.js"
+          },
+          "model": "./Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+          "modelBytes": 25169320,
+          "modelProfile": {
+            "geometryChanged": false,
+            "invalidTextureBindingRemoved": 50,
+            "legacyDownsampledJpegSha256": "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28",
+            "sourceMasterSha256": "97F842001CC77E65637271172D09A81043FFFDF3235591DCB1AFF0BA96D67DA0",
+            "texturePixelRetentionVsMaster": "100%",
+            "variant": "corrected-high-resolution-WebP"
+          },
+          "modelSha256": "69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE",
+          "presentationImages": [
+            "./gallery/v18-facade-roof-ground.webp",
+            "./gallery/v18-jardin-textures.webp"
+          ],
+          "release": "V18-LIVE-SYNC-4",
+          "schemaVersion": 1,
+          "version": "V18",
+          "viewerSource": "LIVE WEB VIEWER"
+        },
+        "projectConfigUrl": "http://127.0.0.1:8897/shared/project-config.json",
+        "resources": [
+          {
+            "decodedBodySize": 0,
+            "duration": 0,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/shared/page-version.js?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 0
+          },
+          {
+            "decodedBodySize": 0,
+            "duration": 0,
+            "initiatorType": "script",
+            "name": "http://127.0.0.1:8897/shared/project-config.js?release=v18-live-sync-4",
+            "responseStatus": 200,
+            "transferSize": 300
+          },
+          {
+            "decodedBodySize": 1610,
+            "duration": 18,
+            "initiatorType": "fetch",
+            "name": "http://127.0.0.1:8897/shared/project-config.json",
+            "responseStatus": 200,
+            "transferSize": 1910
+          }
+        ],
+        "sw": {
+          "controller": false,
+          "registrations": []
+        }
+      },
+      "logs": []
+    }
+  },
+  "aggregate": {
+    "network": {
+      "/": {
+        "resources": 5,
+        "status200": 5,
+        "failed": 0
+      },
+      "/presentation/": {
+        "resources": 12,
+        "status200": 12,
+        "failed": 0
+      },
+      "/visite/": {
+        "resources": 12,
+        "status200": 12,
+        "failed": 0
+      },
+      "/rapide/": {
+        "resources": 12,
+        "status200": 12,
+        "failed": 0
+      },
+      "/gpt/": {
+        "resources": 3,
+        "status200": 3,
+        "failed": 0
+      }
+    },
+    "logs": []
+  },
+  "captures": {
+    "facade": "C:/Users/jonat/Documents/Codex/2026-08-16/chamagnieu-v18-reaudit/validation/reaudit-2026-08-16/sync4-webp-local/sync4-webp-live-facade.png",
+    "garden": "C:/Users/jonat/Documents/Codex/2026-08-16/chamagnieu-v18-reaudit/validation/reaudit-2026-08-16/sync4-webp-local/sync4-webp-live-garden.png",
+    "interior": "C:/Users/jonat/Documents/Codex/2026-08-16/chamagnieu-v18-reaudit/validation/reaudit-2026-08-16/sync4-webp-local/sync4-webp-live-interior.png",
+    "beforeKeyboard": "C:/Users/jonat/Documents/Codex/2026-08-16/chamagnieu-v18-reaudit/validation/reaudit-2026-08-16/sync4-webp-local/sync4-webp-visit-before-keyboard.png",
+    "afterKeyboard": "C:/Users/jonat/Documents/Codex/2026-08-16/chamagnieu-v18-reaudit/validation/reaudit-2026-08-16/sync4-webp-local/sync4-webp-visit-after-keyboard.png"
+  },
+  "assertions": {
+    "fivePagesAudited": true,
+    "versionV18": true,
+    "releaseSync4": true,
+    "modelFileCorrect": true,
+    "modelBytesCorrect": true,
+    "modelShaCorrect": true,
+    "webpImages37": true,
+    "viewerReady": true,
+    "environmentIntensity085": true,
+    "outsidePositionExact": true,
+    "outsideTargetExact": true,
+    "gardenCameraChanges": true,
+    "startControlModeAccepted": true,
+    "pointerFallbackNoConsoleErrors": true,
+    "keyboardMovementTowardHouse": true,
+    "furnitureTogglePresentation": true,
+    "furnitureToggleVisit": true,
+    "brokenImagesZero": true,
+    "failedNetworkZero": true,
+    "consoleErrorsZero": true,
+    "serviceWorkerZero": true,
+    "cacheStorageZero": true,
+    "result": "PASS"
+  }
+}

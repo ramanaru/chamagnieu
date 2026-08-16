@@ -1,18 +1,21 @@
 {
   "schemaVersion": 1,
   "version": "V18",
-  "release": "V18-LIVE-SYNC-3",
-  "cacheKey": "v18-live-sync-3",
-  "model": "./Chamagnieu_V18_REALISM_FINAL.glb",
-  "modelSha256": "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28",
-  "modelBytes": 27987896,
+  "release": "V18-LIVE-SYNC-4",
+  "cacheKey": "v18-live-sync-4",
+  "model": "./Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+  "modelSha256": "69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE",
+  "modelBytes": 25169320,
   "houseData": "../house.json",
   "viewerSource": "LIVE WEB VIEWER",
   "gallerySource": "BLENDER",
   "materials": {
     "embedded": true,
     "externalTextureCount": 0,
-    "runtimeTuning": "shared/live-realism.js"
+    "runtimeTuning": "shared/live-realism.js",
+    "codec": "WebP",
+    "maxTextureResolution": "2048px desktop source; 1024px and 256px retained where present",
+    "correctedBinding": "/materials/31/pbrMetallicRoughness/metallicRoughnessTexture removed (invalid texture 50)"
   },
   "assets": {
     "trees": 4,
@@ -28,10 +31,18 @@
     "directionalIntensity": 2.4,
     "shadows": "desktop",
     "fillIntensity": 0.22,
-    "environmentIntensity": 0.55
+    "environmentIntensity": 0.85
   },
   "presentationImages": [
     "./gallery/v18-facade-roof-ground.webp",
     "./gallery/v18-jardin-textures.webp"
-  ]
+  ],
+  "modelProfile": {
+    "variant": "corrected-high-resolution-WebP",
+    "sourceMasterSha256": "97F842001CC77E65637271172D09A81043FFFDF3235591DCB1AFF0BA96D67DA0",
+    "legacyDownsampledJpegSha256": "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28",
+    "geometryChanged": false,
+    "texturePixelRetentionVsMaster": "100%",
+    "invalidTextureBindingRemoved": 50
+  }
 }

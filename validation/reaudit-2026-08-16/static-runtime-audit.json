@@ -1,0 +1,1109 @@
+{
+  "config": {
+    "schemaVersion": 1,
+    "version": "V18",
+    "release": "V18-LIVE-SYNC-3",
+    "cacheKey": "v18-live-sync-3",
+    "model": "./Chamagnieu_V18_REALISM_FINAL.glb",
+    "modelSha256": "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28",
+    "modelBytes": 27987896,
+    "houseData": "../house.json",
+    "viewerSource": "LIVE WEB VIEWER",
+    "gallerySource": "BLENDER",
+    "materials": {
+      "embedded": true,
+      "externalTextureCount": 0,
+      "runtimeTuning": "shared/live-realism.js"
+    },
+    "assets": {
+      "trees": 4,
+      "hedges": 18,
+      "outdoorDiningNodes": 0
+    },
+    "lighting": {
+      "environment": "procedural PMREM IBL",
+      "toneMapping": "ACESFilmic",
+      "exposure": 0.92,
+      "hemisphereIntensity": 0.72,
+      "ambientIntensity": 0.06,
+      "directionalIntensity": 2.4,
+      "shadows": "desktop",
+      "fillIntensity": 0.22,
+      "environmentIntensity": 0.55
+    },
+    "presentationImages": [
+      "./gallery/v18-facade-roof-ground.webp",
+      "./gallery/v18-jardin-textures.webp"
+    ]
+  },
+  "model": {
+    "path": "C:\\Users\\jonat\\Documents\\Codex\\2026-08-16\\chamagnieu-v18-reaudit\\shared\\Chamagnieu_V18_REALISM_FINAL.glb",
+    "bytes": 27987896,
+    "sha256": "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28",
+    "asset": {
+      "generator": "Khronos glTF Blender I/O v5.2.39",
+      "version": "2.0"
+    },
+    "nodes": 794,
+    "meshes": 793,
+    "primitives": 795,
+    "materials": 35,
+    "textures": 56,
+    "usedTextures": 55,
+    "images": 37,
+    "embeddedImages": 37,
+    "externalImages": 0,
+    "externalImageUris": [],
+    "materialRows": [
+      {
+        "index": 0,
+        "name": "AUDIT_OPENING_GREEN",
+        "baseColorTexture": null,
+        "metallicRoughnessTexture": null,
+        "normalTexture": null,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 1,
+        "name": "MAT_B_ALU",
+        "baseColorTexture": null,
+        "metallicRoughnessTexture": null,
+        "normalTexture": null,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 2,
+        "name": "V12_PBR_OFFWHITE_STUCCO",
+        "baseColorTexture": 1,
+        "metallicRoughnessTexture": 2,
+        "normalTexture": 0,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 3,
+        "name": "PBR_B_FLOOR",
+        "baseColorTexture": 4,
+        "metallicRoughnessTexture": 5,
+        "normalTexture": 3,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 4,
+        "name": "MAT_B_GLASS",
+        "baseColorTexture": null,
+        "metallicRoughnessTexture": null,
+        "normalTexture": null,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 5,
+        "name": "PBR_B_CONCRETE",
+        "baseColorTexture": 7,
+        "metallicRoughnessTexture": 8,
+        "normalTexture": 6,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 6,
+        "name": "PBR_B_ROOF",
+        "baseColorTexture": 10,
+        "metallicRoughnessTexture": 11,
+        "normalTexture": 9,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 7,
+        "name": "PBR_B_ASPHALT",
+        "baseColorTexture": 13,
+        "metallicRoughnessTexture": 14,
+        "normalTexture": 12,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 8,
+        "name": "PBR_B_GRASS",
+        "baseColorTexture": 16,
+        "metallicRoughnessTexture": 17,
+        "normalTexture": 15,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 9,
+        "name": "PBR_B_WOOD",
+        "baseColorTexture": 19,
+        "metallicRoughnessTexture": 20,
+        "normalTexture": 18,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 10,
+        "name": "V10_BRUSHED_CONCRETE",
+        "baseColorTexture": 22,
+        "metallicRoughnessTexture": 23,
+        "normalTexture": 21,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 11,
+        "name": "V10_ANTHRACITE",
+        "baseColorTexture": null,
+        "metallicRoughnessTexture": null,
+        "normalTexture": null,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 12,
+        "name": "V10_RUBBER_GASKET",
+        "baseColorTexture": null,
+        "metallicRoughnessTexture": null,
+        "normalTexture": null,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 13,
+        "name": "V10_BRUSHED_CHROME",
+        "baseColorTexture": null,
+        "metallicRoughnessTexture": null,
+        "normalTexture": null,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 14,
+        "name": "V10_ENTRY_WOOD",
+        "baseColorTexture": 25,
+        "metallicRoughnessTexture": 26,
+        "normalTexture": 24,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 15,
+        "name": "V10_STUCCO_NEW_BUILD",
+        "baseColorTexture": 28,
+        "metallicRoughnessTexture": 29,
+        "normalTexture": 27,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 16,
+        "name": "V10_SILL_STONE",
+        "baseColorTexture": null,
+        "metallicRoughnessTexture": null,
+        "normalTexture": null,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 17,
+        "name": "V10_GRAVEL",
+        "baseColorTexture": 31,
+        "metallicRoughnessTexture": 32,
+        "normalTexture": 30,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 18,
+        "name": "V10_SOFFIT",
+        "baseColorTexture": null,
+        "metallicRoughnessTexture": null,
+        "normalTexture": null,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 19,
+        "name": "V10_ASPHALT",
+        "baseColorTexture": 34,
+        "metallicRoughnessTexture": 35,
+        "normalTexture": 33,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 20,
+        "name": "V10_PHYSICAL_GLASS",
+        "baseColorTexture": null,
+        "metallicRoughnessTexture": null,
+        "normalTexture": null,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 21,
+        "name": "V12_PBR_BEIGE_COTTON",
+        "baseColorTexture": 37,
+        "metallicRoughnessTexture": 38,
+        "normalTexture": 36,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 22,
+        "name": "V12_PBR_WHITE_OAK",
+        "baseColorTexture": 40,
+        "metallicRoughnessTexture": 41,
+        "normalTexture": 39,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 23,
+        "name": "MAT_B_WHITE",
+        "baseColorTexture": null,
+        "metallicRoughnessTexture": null,
+        "normalTexture": null,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 24,
+        "name": "V11_COUNTER_STONE",
+        "baseColorTexture": null,
+        "metallicRoughnessTexture": null,
+        "normalTexture": null,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 25,
+        "name": "V12_PBR_LIGHT_PORCELAIN",
+        "baseColorTexture": 43,
+        "metallicRoughnessTexture": 44,
+        "normalTexture": 42,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 26,
+        "name": "V12_WARM_WHITE_LACQUER",
+        "baseColorTexture": null,
+        "metallicRoughnessTexture": null,
+        "normalTexture": null,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 27,
+        "name": "V11_MIRROR",
+        "baseColorTexture": null,
+        "metallicRoughnessTexture": null,
+        "normalTexture": null,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 28,
+        "name": "V12_PBR_BRUSHED_CONCRETE",
+        "baseColorTexture": 46,
+        "metallicRoughnessTexture": 47,
+        "normalTexture": 45,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 29,
+        "name": "V11_APPLIANCE_BLACK",
+        "baseColorTexture": null,
+        "metallicRoughnessTexture": null,
+        "normalTexture": null,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 30,
+        "name": "V12_KITCHEN_GREIGE",
+        "baseColorTexture": null,
+        "metallicRoughnessTexture": null,
+        "normalTexture": null,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 31,
+        "name": "modern_coffee_table_01.001",
+        "baseColorTexture": 49,
+        "metallicRoughnessTexture": null,
+        "normalTexture": 48,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 32,
+        "name": "potted_plant_04",
+        "baseColorTexture": 52,
+        "metallicRoughnessTexture": 53,
+        "normalTexture": 51,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 33,
+        "name": "V17_PBR_FOLIAGE_DEEP",
+        "baseColorTexture": 54,
+        "metallicRoughnessTexture": null,
+        "normalTexture": null,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      },
+      {
+        "index": 34,
+        "name": "V17_PBR_FOLIAGE_FRESH",
+        "baseColorTexture": 55,
+        "metallicRoughnessTexture": null,
+        "normalTexture": null,
+        "occlusionTexture": null,
+        "emissiveTexture": null
+      }
+    ],
+    "imageRows": [
+      {
+        "index": 0,
+        "name": "white_stucco_nor_gl_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2491,
+        "uri": null,
+        "bytes": 12903,
+        "sha256": "A207F9960CE1B1AF902781F6900F86248F782EEC245C43AAD46AFD90F8991E0A"
+      },
+      {
+        "index": 1,
+        "name": "white_stucco_diff_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2492,
+        "uri": null,
+        "bytes": 6046,
+        "sha256": "5232B5E695EFDCD9B8DA9ADF95A27B6434489801F599AB8A2DF550C3D5A02607"
+      },
+      {
+        "index": 2,
+        "name": "white_stucco_rough_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2493,
+        "uri": null,
+        "bytes": 2548,
+        "sha256": "4AD7339B9C64377471A57DFEC91DEF6C143CA161D272FA6415E377A1B285FEC6"
+      },
+      {
+        "index": 3,
+        "name": "floor_tiles_02_nor_gl_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2494,
+        "uri": null,
+        "bytes": 7174,
+        "sha256": "1577873BF45D8CED1479E507434F2C267A72BAA2E804E16B3DD399747211AC46"
+      },
+      {
+        "index": 4,
+        "name": "floor_tiles_02_diff_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2495,
+        "uri": null,
+        "bytes": 20708,
+        "sha256": "85DE3CB89B647F803ABD337DE699A4A060527462E107AFC9A928194EB4012D46"
+      },
+      {
+        "index": 5,
+        "name": "floor_tiles_02_rough_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2496,
+        "uri": null,
+        "bytes": 21295,
+        "sha256": "A096F4C0BC2184A825881D767AAE041033881E0421AAA0A043B84D5A77EC24EC"
+      },
+      {
+        "index": 6,
+        "name": "brushed_concrete_04_nor_gl_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2497,
+        "uri": null,
+        "bytes": 42600,
+        "sha256": "01445822329714585C365408F6AE3F76579B603CCA511A5E90CF1AFC9E34758B"
+      },
+      {
+        "index": 7,
+        "name": "brushed_concrete_04_diff_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2498,
+        "uri": null,
+        "bytes": 30028,
+        "sha256": "8E261C633B628A6ACED2DAF7E85D17B093DF6FCD76C98CAB4EA1AB39AFCCA562"
+      },
+      {
+        "index": 8,
+        "name": "brushed_concrete_04_rough_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2499,
+        "uri": null,
+        "bytes": 6023,
+        "sha256": "199145E67C23C056F926628E7E06BE1DA08F4E91257E027E9CF78CE20AA1D112"
+      },
+      {
+        "index": 9,
+        "name": "clay_roof_tiles_02_nor_gl_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2500,
+        "uri": null,
+        "bytes": 228353,
+        "sha256": "FD3D1AB00D802CF316E03BE5F457991368A25A534070C71BA3CC2F14BC632C39"
+      },
+      {
+        "index": 10,
+        "name": "clay_roof_tiles_02_diff_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2501,
+        "uri": null,
+        "bytes": 207755,
+        "sha256": "9502307FCD37FC108B1DFC2BD65579A8B7EFB3498F3820DE3E1C64B2A1010B4D"
+      },
+      {
+        "index": 11,
+        "name": "clay_roof_tiles_02_rough_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2502,
+        "uri": null,
+        "bytes": 38061,
+        "sha256": "410ECF3E8D6AEE2D4FD62900BFEDC558F934F2A95E1611CA488EFCCC44CDB870"
+      },
+      {
+        "index": 12,
+        "name": "asphalt_01_nor_gl_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2503,
+        "uri": null,
+        "bytes": 310248,
+        "sha256": "70DF03088AC8ED717F007268EE734C3629B8169F10750E343F8E86DEDB8C35D1"
+      },
+      {
+        "index": 13,
+        "name": "asphalt_01_diff_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2504,
+        "uri": null,
+        "bytes": 153146,
+        "sha256": "9FCAA1AC8AF9640D6E8A13B64C477B39D156053AF2F2A0188CAB1DDE0439D018"
+      },
+      {
+        "index": 14,
+        "name": "asphalt_01_rough_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2505,
+        "uri": null,
+        "bytes": 9703,
+        "sha256": "6FCC9484B8585943B473AAB699F018B7F36D782785CED494A70D78AC542E4598"
+      },
+      {
+        "index": 15,
+        "name": "leafy_grass_nor_gl_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2506,
+        "uri": null,
+        "bytes": 420868,
+        "sha256": "0EC8F3E81A54821D5D7EB4212DF07C35E42F5181DCA68C8537E7A70DB57009EB"
+      },
+      {
+        "index": 16,
+        "name": "leafy_grass_diff_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2507,
+        "uri": null,
+        "bytes": 317207,
+        "sha256": "7A578AA344EA7765CDAE2745B142906A9778532B2A27F8D8FB8A59F078631D50"
+      },
+      {
+        "index": 17,
+        "name": "leafy_grass_rough_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2508,
+        "uri": null,
+        "bytes": 36745,
+        "sha256": "69E238AE6D6CDE70F8A42FF112473F3F0E9EB0BC1ADBD4F5F562EECFA5CF5204"
+      },
+      {
+        "index": 18,
+        "name": "american_walnut_veneer_nor_gl_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2509,
+        "uri": null,
+        "bytes": 4589,
+        "sha256": "C5CAC9489E32048F6487CAF8049915007F801C610F57D61EECB5283D8FC378DA"
+      },
+      {
+        "index": 19,
+        "name": "american_walnut_veneer_diff_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2510,
+        "uri": null,
+        "bytes": 17354,
+        "sha256": "64120AC69EE8D223F1E38E8AEBF7E766EA3AED071E83C325EC55B236485C19CD"
+      },
+      {
+        "index": 20,
+        "name": "american_walnut_veneer_rough_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2511,
+        "uri": null,
+        "bytes": 21580,
+        "sha256": "E97FDA2C69D0B19F85ED073495E127BBC206131CC003123A8B491568EC3BAEEA"
+      },
+      {
+        "index": 21,
+        "name": "gravel_nor_gl_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2512,
+        "uri": null,
+        "bytes": 459912,
+        "sha256": "F7FAAE5E88930158CCF43D96717F0F33E92662E5708FE8735567A8082CF013F4"
+      },
+      {
+        "index": 22,
+        "name": "gravel_diff_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2513,
+        "uri": null,
+        "bytes": 219000,
+        "sha256": "C05CEC2E982F60AD4FF2344C3C48450D9BDB2AE762A4AB69A04480F55C1EAB72"
+      },
+      {
+        "index": 23,
+        "name": "gravel_rough_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2514,
+        "uri": null,
+        "bytes": 27346,
+        "sha256": "094C2BB00448794586DE6B0602FC4983ABAEB8B9F9C0BC66BE9EC46EA6F7FEC1"
+      },
+      {
+        "index": 24,
+        "name": "cotton_jersey_nor_gl_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2515,
+        "uri": null,
+        "bytes": 2939,
+        "sha256": "EA1C4D0A0FC404F42452EA28B4FCFED4155256A8A6AA5EBC017D49FEE1327ED5"
+      },
+      {
+        "index": 25,
+        "name": "cotton_jersey_diff_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2516,
+        "uri": null,
+        "bytes": 5118,
+        "sha256": "12963D734036F587B48AA1ED5FAD93D04BA9EBA412E657561937BEA426B67D95"
+      },
+      {
+        "index": 26,
+        "name": "cotton_jersey_rough_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2517,
+        "uri": null,
+        "bytes": 14427,
+        "sha256": "2971701B47EE6FC6BB0C99CB3554A25F0D7314B6893710211A7597A93EC0C4F3"
+      },
+      {
+        "index": 27,
+        "name": "white_oak_veneer_nor_gl_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2518,
+        "uri": null,
+        "bytes": 9632,
+        "sha256": "C7F9CA6082052CE796A18C5EE1C0BA7529381DA24B5CE4B887B97383F7FC91D5"
+      },
+      {
+        "index": 28,
+        "name": "white_oak_veneer_diff_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2519,
+        "uri": null,
+        "bytes": 19124,
+        "sha256": "11460AE4B7A2AAF1828332E22198BCEB5C5EB10D6492E9A86777BEAFFC3AC32A"
+      },
+      {
+        "index": 29,
+        "name": "white_oak_veneer_rough_2k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2520,
+        "uri": null,
+        "bytes": 8926,
+        "sha256": "16628AB8F1EF1873EE1D7C33C006BC5378F08C8370AA148166D2E1191A0345F4"
+      },
+      {
+        "index": 30,
+        "name": "modern_coffee_table_01_nor_gl_1k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2521,
+        "uri": null,
+        "bytes": 5644,
+        "sha256": "3A8A7642E80609A113018645DD795CD164F901CB503704C8211B733C96321AD4"
+      },
+      {
+        "index": 31,
+        "name": "modern_coffee_table_01_diff_1k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2522,
+        "uri": null,
+        "bytes": 15246,
+        "sha256": "C95DDBA2C8C6C0A00319C2D3C3F8DEC09074540090B6ABFBD9383C3EC2579AC3"
+      },
+      {
+        "index": 32,
+        "name": "potted_plant_04_nor_gl_1k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2523,
+        "uri": null,
+        "bytes": 45157,
+        "sha256": "76FEF641F14AF96DE8DD62A464B4970870541A85D7C112A7EB23B68C54F8473B"
+      },
+      {
+        "index": 33,
+        "name": "potted_plant_04_diff_1k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2524,
+        "uri": null,
+        "bytes": 36667,
+        "sha256": "C9731673DAE7154E6DB2976F248B14C0C3B43A37F2C433719ED5EE0CA953DF50"
+      },
+      {
+        "index": 34,
+        "name": "potted_plant_04_arm_1k",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2525,
+        "uri": null,
+        "bytes": 23605,
+        "sha256": "35AD7645DF41409E869034AED138093552E74FBDBB586AAE347C225838E6BB4B"
+      },
+      {
+        "index": 35,
+        "name": "v17_foliage_deep",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2526,
+        "uri": null,
+        "bytes": 5169,
+        "sha256": "C3C854235854D645F3C82BDC6556CBB88FF1C454E3BCA1BAACA71FD3D12AFC4E"
+      },
+      {
+        "index": 36,
+        "name": "v17_foliage_fresh",
+        "mimeType": "image/jpeg",
+        "embedded": true,
+        "bufferView": 2527,
+        "uri": null,
+        "bytes": 5696,
+        "sha256": "93B8E0DF8D07E1D3C020260558D89C36F602701E4F52B7E6778483508FE4259B"
+      }
+    ],
+    "textureToMaterials": {
+      "0": [
+        "V12_PBR_OFFWHITE_STUCCO:normalTexture"
+      ],
+      "1": [
+        "V12_PBR_OFFWHITE_STUCCO:baseColorTexture"
+      ],
+      "2": [
+        "V12_PBR_OFFWHITE_STUCCO:metallicRoughnessTexture"
+      ],
+      "3": [
+        "PBR_B_FLOOR:normalTexture"
+      ],
+      "4": [
+        "PBR_B_FLOOR:baseColorTexture"
+      ],
+      "5": [
+        "PBR_B_FLOOR:metallicRoughnessTexture"
+      ],
+      "6": [
+        "PBR_B_CONCRETE:normalTexture"
+      ],
+      "7": [
+        "PBR_B_CONCRETE:baseColorTexture"
+      ],
+      "8": [
+        "PBR_B_CONCRETE:metallicRoughnessTexture"
+      ],
+      "9": [
+        "PBR_B_ROOF:normalTexture"
+      ],
+      "10": [
+        "PBR_B_ROOF:baseColorTexture"
+      ],
+      "11": [
+        "PBR_B_ROOF:metallicRoughnessTexture"
+      ],
+      "12": [
+        "PBR_B_ASPHALT:normalTexture"
+      ],
+      "13": [
+        "PBR_B_ASPHALT:baseColorTexture"
+      ],
+      "14": [
+        "PBR_B_ASPHALT:metallicRoughnessTexture"
+      ],
+      "15": [
+        "PBR_B_GRASS:normalTexture"
+      ],
+      "16": [
+        "PBR_B_GRASS:baseColorTexture"
+      ],
+      "17": [
+        "PBR_B_GRASS:metallicRoughnessTexture"
+      ],
+      "18": [
+        "PBR_B_WOOD:normalTexture"
+      ],
+      "19": [
+        "PBR_B_WOOD:baseColorTexture"
+      ],
+      "20": [
+        "PBR_B_WOOD:metallicRoughnessTexture"
+      ],
+      "21": [
+        "V10_BRUSHED_CONCRETE:normalTexture"
+      ],
+      "22": [
+        "V10_BRUSHED_CONCRETE:baseColorTexture"
+      ],
+      "23": [
+        "V10_BRUSHED_CONCRETE:metallicRoughnessTexture"
+      ],
+      "24": [
+        "V10_ENTRY_WOOD:normalTexture"
+      ],
+      "25": [
+        "V10_ENTRY_WOOD:baseColorTexture"
+      ],
+      "26": [
+        "V10_ENTRY_WOOD:metallicRoughnessTexture"
+      ],
+      "27": [
+        "V10_STUCCO_NEW_BUILD:normalTexture"
+      ],
+      "28": [
+        "V10_STUCCO_NEW_BUILD:baseColorTexture"
+      ],
+      "29": [
+        "V10_STUCCO_NEW_BUILD:metallicRoughnessTexture"
+      ],
+      "30": [
+        "V10_GRAVEL:normalTexture"
+      ],
+      "31": [
+        "V10_GRAVEL:baseColorTexture"
+      ],
+      "32": [
+        "V10_GRAVEL:metallicRoughnessTexture"
+      ],
+      "33": [
+        "V10_ASPHALT:normalTexture"
+      ],
+      "34": [
+        "V10_ASPHALT:baseColorTexture"
+      ],
+      "35": [
+        "V10_ASPHALT:metallicRoughnessTexture"
+      ],
+      "36": [
+        "V12_PBR_BEIGE_COTTON:normalTexture"
+      ],
+      "37": [
+        "V12_PBR_BEIGE_COTTON:baseColorTexture"
+      ],
+      "38": [
+        "V12_PBR_BEIGE_COTTON:metallicRoughnessTexture"
+      ],
+      "39": [
+        "V12_PBR_WHITE_OAK:normalTexture"
+      ],
+      "40": [
+        "V12_PBR_WHITE_OAK:baseColorTexture"
+      ],
+      "41": [
+        "V12_PBR_WHITE_OAK:metallicRoughnessTexture"
+      ],
+      "42": [
+        "V12_PBR_LIGHT_PORCELAIN:normalTexture"
+      ],
+      "43": [
+        "V12_PBR_LIGHT_PORCELAIN:baseColorTexture"
+      ],
+      "44": [
+        "V12_PBR_LIGHT_PORCELAIN:metallicRoughnessTexture"
+      ],
+      "45": [
+        "V12_PBR_BRUSHED_CONCRETE:normalTexture"
+      ],
+      "46": [
+        "V12_PBR_BRUSHED_CONCRETE:baseColorTexture"
+      ],
+      "47": [
+        "V12_PBR_BRUSHED_CONCRETE:metallicRoughnessTexture"
+      ],
+      "48": [
+        "modern_coffee_table_01.001:normalTexture"
+      ],
+      "49": [
+        "modern_coffee_table_01.001:baseColorTexture"
+      ],
+      "51": [
+        "potted_plant_04:normalTexture"
+      ],
+      "52": [
+        "potted_plant_04:baseColorTexture"
+      ],
+      "53": [
+        "potted_plant_04:metallicRoughnessTexture"
+      ],
+      "54": [
+        "V17_PBR_FOLIAGE_DEEP:baseColorTexture"
+      ],
+      "55": [
+        "V17_PBR_FOLIAGE_FRESH:baseColorTexture"
+      ]
+    },
+    "nodeVersionPrefixes": {
+      "OTHER": 136,
+      "V10": 165,
+      "V11": 416,
+      "V12": 30,
+      "V17": 46,
+      "V18": 1
+    },
+    "furnitureNodes": 167,
+    "furnitureRuntimeMeshes": 169,
+    "extensionsUsed": [
+      "KHR_materials_transmission",
+      "KHR_materials_ior",
+      "KHR_texture_transform"
+    ],
+    "extensionsRequired": [
+      "KHR_texture_transform"
+    ]
+  },
+  "trackedModels": [
+    "shared/Chamagnieu_V18_REALISM_FINAL.glb",
+    "shared/Chamagnieu_V18_ROOF_GROUND_REALISM.glb"
+  ],
+  "runtimeHardcodedLegacyModelRefs": 0,
+  "runtimeDisplayedV11": false,
+  "serviceWorkerRegistrations": 0,
+  "publicConfig": {
+    "schemaVersion": 1,
+    "version": "V18",
+    "release": "V18-LIVE-SYNC-3",
+    "cacheKey": "v18-live-sync-3",
+    "model": "./Chamagnieu_V18_REALISM_FINAL.glb",
+    "modelSha256": "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28",
+    "modelBytes": 27987896,
+    "houseData": "../house.json",
+    "viewerSource": "LIVE WEB VIEWER",
+    "gallerySource": "BLENDER",
+    "materials": {
+      "embedded": true,
+      "externalTextureCount": 0,
+      "runtimeTuning": "shared/live-realism.js"
+    },
+    "assets": {
+      "trees": 4,
+      "hedges": 18,
+      "outdoorDiningNodes": 0
+    },
+    "lighting": {
+      "environment": "procedural PMREM IBL",
+      "toneMapping": "ACESFilmic",
+      "exposure": 0.92,
+      "hemisphereIntensity": 0.72,
+      "ambientIntensity": 0.06,
+      "directionalIntensity": 2.4,
+      "shadows": "desktop",
+      "fillIntensity": 0.22,
+      "environmentIntensity": 0.55
+    },
+    "presentationImages": [
+      "./gallery/v18-facade-roof-ground.webp",
+      "./gallery/v18-jardin-textures.webp"
+    ]
+  },
+  "publicConfigMatchesLocal": true,
+  "publicModelMatchesLocal": true,
+  "houseJsonIdentical": true,
+  "http": [
+    {
+      "url": "https://ramanaru.github.io/chamagnieu/",
+      "status": 200,
+      "bytes": 5993,
+      "sha256": "C48CBB207DBF768D8CD2DA062E87D325DBCE9FC72B314002C425F7546ED307AA",
+      "contentType": "text/html; charset=utf-8",
+      "cacheControl": "max-age=600",
+      "etag": "\"6a80c06b-1769\""
+    },
+    {
+      "url": "https://ramanaru.github.io/chamagnieu/presentation/",
+      "status": 200,
+      "bytes": 1748,
+      "sha256": "C0032128A665B410193837B7DFD804BC9CEF52B08B37672B78F5D016F7F1AB88",
+      "contentType": "text/html; charset=utf-8",
+      "cacheControl": "max-age=600",
+      "etag": "\"6a80c06b-6d4\""
+    },
+    {
+      "url": "https://ramanaru.github.io/chamagnieu/visite/",
+      "status": 200,
+      "bytes": 2064,
+      "sha256": "C2C92EBD9213807CD949E2127CAC343C9A5BE81536A52241DD0ADF6F4A47A19E",
+      "contentType": "text/html; charset=utf-8",
+      "cacheControl": "max-age=600",
+      "etag": "\"6a80c06b-810\""
+    },
+    {
+      "url": "https://ramanaru.github.io/chamagnieu/rapide/",
+      "status": 200,
+      "bytes": 5074,
+      "sha256": "8BC7A87172B4F2CA06CB0C1E58E49746C17C238D4D80D7E995915BDF57D974E5",
+      "contentType": "text/html; charset=utf-8",
+      "cacheControl": "max-age=600",
+      "etag": "\"6a80c06b-13d2\""
+    },
+    {
+      "url": "https://ramanaru.github.io/chamagnieu/gpt/",
+      "status": 200,
+      "bytes": 1410,
+      "sha256": "F810EB54D715DAAF5F51391CE1A5F4ACAF50810FCFD1EED3A956DB631421B407",
+      "contentType": "text/html; charset=utf-8",
+      "cacheControl": "max-age=600",
+      "etag": "\"6a80c06b-582\""
+    },
+    {
+      "url": "https://ramanaru.github.io/chamagnieu/shared/project-config.json",
+      "status": 200,
+      "bytes": 989,
+      "sha256": "E5B43AA288B7433F4F1258CEA0F49D0B65A91A0D5962EC82C69658A2C4ACE343",
+      "contentType": "application/json; charset=utf-8",
+      "cacheControl": "max-age=600",
+      "etag": "\"6a80c06b-3dd\""
+    },
+    {
+      "url": "https://ramanaru.github.io/chamagnieu/shared/project-config.js",
+      "status": 200,
+      "bytes": 1301,
+      "sha256": "19A45FA57B4F3A7AC21761DE846961D8E4D4EB91734BBFFEFB0CA72F532422CE",
+      "contentType": "application/javascript; charset=utf-8",
+      "cacheControl": "max-age=600",
+      "etag": "\"6a80c06b-515\""
+    },
+    {
+      "url": "https://ramanaru.github.io/chamagnieu/shared/page-version.js",
+      "status": 200,
+      "bytes": 305,
+      "sha256": "39BDE8DC324D8B20FC5DB781B69F36368F7EB1A365E1D514479FDC3BF43FDA5D",
+      "contentType": "application/javascript; charset=utf-8",
+      "cacheControl": "max-age=600",
+      "etag": "\"6a80c06b-131\""
+    },
+    {
+      "url": "https://ramanaru.github.io/chamagnieu/shared/live-realism.js",
+      "status": 200,
+      "bytes": 3866,
+      "sha256": "9D55EEB2882B4E6BCC6BE1A9340C2BEB696B3258EE6651691629EADD4A93F5C4",
+      "contentType": "application/javascript; charset=utf-8",
+      "cacheControl": "max-age=600",
+      "etag": "\"6a80c06b-f1a\""
+    },
+    {
+      "url": "https://ramanaru.github.io/chamagnieu/presentation/presentation.js",
+      "status": 200,
+      "bytes": 6744,
+      "sha256": "3A32F1263F8C39CF6773A984E8C0E085A8C3F990FC22DF5F04183235BD8F8D6B",
+      "contentType": "application/javascript; charset=utf-8",
+      "cacheControl": "max-age=600",
+      "etag": "\"6a80c06b-1a58\""
+    },
+    {
+      "url": "https://ramanaru.github.io/chamagnieu/visite/visite.js",
+      "status": 200,
+      "bytes": 9209,
+      "sha256": "E4873C79FADCB0670D2C3B5D2D94AB7CEE91C60142322149C6B3E383611A604F",
+      "contentType": "application/javascript; charset=utf-8",
+      "cacheControl": "max-age=600",
+      "etag": "\"6a80c06b-23f9\""
+    },
+    {
+      "url": "https://ramanaru.github.io/chamagnieu/house.json",
+      "status": 200,
+      "bytes": 2241,
+      "sha256": "7ACEC473C0AFDC72CEC9D7B6503CC2CE6BA5DA45290E66CBE6D5D8839D8785B4",
+      "contentType": "application/json; charset=utf-8",
+      "cacheControl": "max-age=600",
+      "etag": "\"6a80c06b-8c1\""
+    },
+    {
+      "url": "https://ramanaru.github.io/chamagnieu/gpt/house.json",
+      "status": 200,
+      "bytes": 2241,
+      "sha256": "7ACEC473C0AFDC72CEC9D7B6503CC2CE6BA5DA45290E66CBE6D5D8839D8785B4",
+      "contentType": "application/json; charset=utf-8",
+      "cacheControl": "max-age=600",
+      "etag": "\"6a80c06b-8c1\""
+    },
+    {
+      "url": "https://ramanaru.github.io/chamagnieu/shared/Chamagnieu_V18_REALISM_FINAL.glb?release=v18-live-sync-3",
+      "status": 200,
+      "bytes": 27987896,
+      "sha256": "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28",
+      "contentType": "model/gltf-binary",
+      "cacheControl": "max-age=600",
+      "etag": "\"6a80c06b-1ab0fb8\""
+    }
+  ],
+  "failures": [],
+  "status": "PASS"
+}

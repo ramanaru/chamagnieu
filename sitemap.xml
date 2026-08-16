@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://ramanaru.github.io/chamagnieu/</loc><lastmod>2026-08-15</lastmod></url><url><loc>https://ramanaru.github.io/chamagnieu/presentation/</loc></url><url><loc>https://ramanaru.github.io/chamagnieu/visite/</loc></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://ramanaru.github.io/chamagnieu/</loc><lastmod>2026-08-16</lastmod></url>
+  <url><loc>https://ramanaru.github.io/chamagnieu/presentation/</loc><lastmod>2026-08-16</lastmod></url>
+  <url><loc>https://ramanaru.github.io/chamagnieu/visite/</loc><lastmod>2026-08-16</lastmod></url>
+  <url><loc>https://ramanaru.github.io/chamagnieu/rapide/</loc><lastmod>2026-08-16</lastmod></url>
+  <url><loc>https://ramanaru.github.io/chamagnieu/gpt/</loc><lastmod>2026-08-16</lastmod></url>
+</urlset>

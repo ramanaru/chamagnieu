@@ -27,17 +27,17 @@ Ce dépôt public présente la maison neuve de Chamagnieu dans un format directe
 - [Description structurée `house.json`](house.json)
 - [Image façade/toiture brute](https://raw.githubusercontent.com/ramanaru/chamagnieu/main/images/v18-facade-roof-ground.webp)
 - [Image jardin/textures brute](https://raw.githubusercontent.com/ramanaru/chamagnieu/main/images/v18-jardin-textures.webp)
-- [Modèle 3D GLB réellement chargé](https://raw.githubusercontent.com/ramanaru/chamagnieu/main/shared/Chamagnieu_V18_REALISM_FINAL.glb)
+- [Modèle 3D GLB réellement chargé](https://raw.githubusercontent.com/ramanaru/chamagnieu/main/shared/Chamagnieu_V18_REALISM_FINAL_WEBP.glb)
 - [Configuration centrale du viewer](shared/project-config.json)
 - [Audit de synchronisation V18](audit/version-sync-report.md)
 - [Verdict live V18](validation/V18_LIVE_SYNC_REPORT.md)
 
-Version : `V18-LIVE-SYNC-3`<br>
-Modèle GLB : `27 987 896 octets`<br>
-SHA-256 : `79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28`
+Version : `V18-LIVE-SYNC-4`<br>
+Modèle GLB : `25 169 320 octets`<br>
+SHA-256 : `69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE`
 
 ## Sources visuelles
 
 - Les pages `/presentation/` et `/visite/` affichent le modèle Web et portent le badge **`SOURCE = LIVE WEB VIEWER`**.
 - Les images de cette page et de `/rapide/` sont des rendus de référence et portent le badge **`SOURCE = BLENDER`** dans le site.
-- Les deux sources restent volontairement séparées : les WebP de galerie ne sont pas des textures du GLB.
+- Les deux sources restent volontairement séparées : les WebP de galerie ne sont pas des textures du GLB. Le modèle live utilise 37 images WebP intégrées, jusqu’à 2048 px, issues du master V18 et corrigées sans modifier la géométrie.

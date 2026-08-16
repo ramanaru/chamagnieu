@@ -1,0 +1,9 @@
+BROWSER=Codex In-app Browser
+PUBLIC_RELEASE=V18-LIVE-SYNC-3
+ROOT_ERRORS=0
+PRESENTATION_ERRORS=0
+RAPIDE_PAGE_ERRORS=0
+GPT_PAGE_ERRORS=0
+VISITE_ERRORS_AFTER_START=2
+VISITE_ERROR level=error url=https://ramanaru.github.io/chamagnieu/shared/vendor/addons/controls/PointerLockControls.js message=THREE.PointerLockControls: Unable to use Pointer Lock API
+VISITE_ERROR level=error url=https://ramanaru.github.io/chamagnieu/visite/?reaudit=20260816 message=UnknownError: If you see this error we have a bug. Please report this bug to chromium.

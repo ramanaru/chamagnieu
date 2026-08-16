@@ -1,0 +1,140 @@
+WEBP MODEL VALIDATION — CHAMAGNIEU V18
+DATE=2026-08-16 Europe/Paris
+MODE=independent read-only validation of GLB inputs; this text file is the sole output
+
+TARGET=C:\Users\jonat\Documents\Codex\2026-08-16\chamagnieu-v18-reaudit\shared\Chamagnieu_V18_REALISM_FINAL_WEBP.glb
+MASTER=C:\Users\jonat\Documents\Codex\2026-08-14\files-mentioned-by-the-user-c\outputs\Chamagnieu_3D_V18_ROOF_GROUND_REALISM\glb\Chamagnieu_V18_ROOF_GROUND_REALISM_WEBP.glb
+OLD_JPEG=C:\Users\jonat\Documents\Codex\2026-08-16\chamagnieu-v18-reaudit\shared\Chamagnieu_V18_REALISM_FINAL.glb
+LOADER=C:\Users\jonat\Documents\Codex\2026-08-16\chamagnieu-v18-reaudit\shared\vendor\addons\loaders\GLTFLoader.js
+THREE_CORE=C:\Users\jonat\Documents\Codex\2026-08-16\chamagnieu-v18-reaudit\shared\vendor\three.core.js
+
+===============================================================================
+COMMAND 1 — FILE IDENTITY
+===============================================================================
+
+COMMAND=Get-Item -LiteralPath $TARGET,$MASTER,$OLD_JPEG; Get-FileHash -Algorithm SHA256 -LiteralPath $TARGET,$MASTER,$OLD_JPEG
+INPUT=the three absolute GLB paths listed above
+LITERAL_OUTPUT:
+TARGET_BYTES=25169320
+TARGET_SHA256=69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE
+MASTER_BYTES=25169404
+MASTER_SHA256=97F842001CC77E65637271172D09A81043FFFDF3235591DCB1AFF0BA96D67DA0
+OLD_JPEG_BYTES=27987896
+OLD_JPEG_SHA256=79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28
+EXIT_STATUS=0
+
+===============================================================================
+COMMAND 2 — INDEPENDENT GLB/GLTF/WEBP VALIDATOR
+===============================================================================
+
+COMMAND=@'<Python parser: GLB header/chunks; SHA-256; canonical accessor payloads; semantic JSON comparison; Pillow WebP decode; recursive material texture binding validation; image/bufferView reachability; GLTFLoader source inspection>'@ | python - "$TARGET" "$MASTER" "$OLD_JPEG" "$LOADER" "$THREE_CORE"
+INPUT=TARGET, MASTER, OLD_JPEG, GLTFLoader.js and three.core.js listed above
+LITERAL_OUTPUT:
+TARGET_BYTES=25169320
+TARGET_SHA256=69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE
+TARGET_JSON_BYTES=754712
+TARGET_BIN_BYTES=24414580
+TARGET_BIN_SHA256=F7E89CA346FAB71A658D3224FAE0D2D33B7966B39B93C5E4D5AF04717C22ED17
+TARGET_ACCESSOR_CANON_SHA256=958b7bb2d4531f49bb2001d8abd02850cdb88bc6a4ce9d60567eada74365e5b9
+MASTER_BYTES=25169404
+MASTER_SHA256=97F842001CC77E65637271172D09A81043FFFDF3235591DCB1AFF0BA96D67DA0
+MASTER_JSON_BYTES=754796
+MASTER_BIN_BYTES=24414580
+MASTER_BIN_SHA256=F7E89CA346FAB71A658D3224FAE0D2D33B7966B39B93C5E4D5AF04717C22ED17
+MASTER_ACCESSOR_CANON_SHA256=958b7bb2d4531f49bb2001d8abd02850cdb88bc6a4ce9d60567eada74365e5b9
+OLD_JPEG_BYTES=27987896
+OLD_JPEG_SHA256=79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28
+OLD_JPEG_JSON_BYTES=754700
+OLD_JPEG_BIN_BYTES=27233168
+OLD_JPEG_BIN_SHA256=80F8218A02CDE19BE979FF759798F0E12730F46379FB406D8FA72B487376CAE8
+OLD_JPEG_ACCESSOR_CANON_SHA256=958b7bb2d4531f49bb2001d8abd02850cdb88bc6a4ce9d60567eada74365e5b9
+TARGET_BIN_EQUALS_MASTER=true
+TARGET_BIN_EQUALS_OLD_JPEG=false
+TARGET_GEOMETRY_EQUALS_MASTER=true
+TARGET_GEOMETRY_EQUALS_OLD_JPEG=true
+TARGET_JSON_EQUALS_MASTER_MINUS_T50_BINDING=true
+TARGET_COUNTS=scenes=1,nodes=794,meshes=793,materials=35,textures=56,images=37,samplers=1,accessors=2454,bufferViews=2491,animations=1
+TARGET_EXTENSIONS_USED=KHR_materials_transmission,KHR_materials_ior,KHR_texture_transform,EXT_texture_webp
+TARGET_EXTENSIONS_REQUIRED=KHR_texture_transform,EXT_texture_webp
+TARGET_IMAGE_MIME_COUNTS={'image/webp': 37}
+TARGET_IMAGE_FORMAT_COUNTS={'WEBP': 37}
+TARGET_IMAGE_DIMENSIONS={(2048, 2048): 27, (2048, 2050): 3, (1024, 1024): 5, (256, 256): 2}
+TARGET_IMAGE_PIXELS=131215360
+TARGET_IMAGE_PAYLOAD_BYTES=11803422
+TARGET_IMAGES_EMBEDDED=37
+TARGET_IMAGES_EXTERNAL_URI=0
+TARGET_BUFFERS_EXTERNAL_URI=0
+TARGET_BAD_WEBP_MAGIC=0
+TARGET_MATERIAL_TEXTURE_BINDINGS=55
+TARGET_UNIQUE_BOUND_TEXTURES=55
+TARGET_UNUSED_TEXTURES=[50]
+TARGET_TEXTURE50={"extensions":{},"sampler":0}
+TARGET_TEXTURE50_BOUND=false
+TARGET_INVALID_BOUND_TEXTURES=0
+TARGET_REACHABLE_IMAGES=37
+TARGET_UNREACHABLE_IMAGES=[]
+TARGET_REFERENCED_BUFFERVIEWS=2491
+TARGET_UNREFERENCED_BUFFERVIEWS=0
+TARGET_UNREFERENCED_BUFFERVIEW_BYTES=0
+THREE_REVISION=179
+GLTFLOADER_WEBP_CHECKS={'documented': True, 'constant': True, 'class': True, 'registered': True}
+GLTFLOADER_SUPPORTS_EXT_TEXTURE_WEBP=true
+WEBP_MODEL_VALIDATION=PASS
+VALIDATOR_EXIT_STATUS=0
+
+===============================================================================
+INTERPRETATION
+===============================================================================
+
+1. The target BIN chunk is byte-identical to the original WebP master:
+   BIN SHA-256 F7E89CA346FAB71A658D3224FAE0D2D33B7966B39B93C5E4D5AF04717C22ED17.
+
+2. The target geometry is byte-identical at accessor level to both the WebP
+   master and the previous JPEG public model. All three have canonical accessor
+   SHA-256 958b7bb2d4531f49bb2001d8abd02850cdb88bc6a4ce9d60567eada74365e5b9.
+
+3. The sole semantic JSON change from the WebP master is removal of
+   materials[31].pbrMetallicRoughness.metallicRoughnessTexture, which referenced
+   source-less texture[50] and could make GLTFLoader dereference an undefined
+   image. No geometry, transform, active texture image, material factor, scene,
+   node, mesh, accessor or animation changed.
+
+4. All 37 active images are embedded WebP payloads. All decode successfully,
+   have RIFF/WEBP magic, and contain 131,215,360 pixels in total:
+   27 x 2048x2048, 3 x 2048x2050, 5 x 1024x1024, 2 x 256x256.
+
+5. All 55 material texture bindings resolve to a valid embedded image.
+   texture[50] is the sole unused texture object; it is not bound by any
+   material. Every one of the 37 images is reachable through an active binding.
+
+6. No image or buffer has an external URI. No texture HTTP sidecar is required.
+
+7. All 2,491 bufferViews are referenced by an accessor or active image.
+   Unreferenced bufferViews=0 and unreferenced bufferView bytes=0. The 11.8 MB
+   orphan-image defect of the previous JPEG conversion is absent.
+
+8. The vendored Three.js is r179. Its GLTFLoader declares, registers and
+   implements GLTFTextureWebPExtension / EXT_texture_webp.
+
+===============================================================================
+VERDICT
+===============================================================================
+
+EXPECTED_TARGET_BYTES=25169320
+ACTUAL_TARGET_BYTES=25169320
+EXPECTED_TARGET_SHA256=69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE
+ACTUAL_TARGET_SHA256=69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE
+BIN_IDENTICAL_TO_MASTER=YES
+GEOMETRY_IDENTICAL_TO_MASTER=YES
+GEOMETRY_IDENTICAL_TO_OLD_PUBLIC_JPEG=YES
+WEBP_IMAGES_EMBEDDED=37/37
+WEBP_IMAGE_DECODING=PASS
+EXTERNAL_URI_COUNT=0
+VALID_MATERIAL_TEXTURE_BINDINGS=55/55
+TEXTURE50_UNUSED=YES
+REACHABLE_IMAGES=37/37
+ORPHAN_IMAGE_DATA=NO
+UNREFERENCED_BUFFERVIEWS=0
+GLTFLOADER_EXT_TEXTURE_WEBP_SUPPORT=YES
+WEBP_MODEL_VALIDATION=PASS
+EXIT_STATUS=0

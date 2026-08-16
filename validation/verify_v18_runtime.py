@@ -12,8 +12,8 @@ import urllib.request
 from pathlib import Path
 
 
-EXPECTED_SHA = "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28"
-EXPECTED_MODEL = "Chamagnieu_V18_REALISM_FINAL.glb"
+EXPECTED_SHA = "69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE"
+EXPECTED_MODEL = "Chamagnieu_V18_REALISM_FINAL_WEBP.glb"
 PAGES = ["", "presentation/", "visite/", "rapide/", "gpt/"]
 TEXT_RESOURCES = [
     "shared/project-config.json",
@@ -67,7 +67,7 @@ def main() -> None:
     config_path = root / "shared" / "project-config.json"
     config = json.loads(config_path.read_text(encoding="utf-8"))
 
-    if config.get("version") != "V18" or config.get("release") != "V18-LIVE-SYNC-3":
+    if config.get("version") != "V18" or config.get("release") != "V18-LIVE-SYNC-4":
         fail("config_version")
     if Path(config.get("model", "")).name != EXPECTED_MODEL:
         fail("config_model")

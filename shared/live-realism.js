@@ -32,6 +32,7 @@ export function setupLiveLighting(THREE, scene, renderer, config, mobile) {
   pmrem.compileEquirectangularShader();
   const environmentTarget = pmrem.fromEquirectangular(skyTexture);
   scene.environment = environmentTarget.texture;
+  scene.environmentIntensity = config.lighting.environmentIntensity;
   skyTexture.dispose();
   pmrem.dispose();
 
@@ -51,7 +52,7 @@ export function setupLiveLighting(THREE, scene, renderer, config, mobile) {
   return { environmentTarget, hemi, ambient, sun, fill };
 }
 
-export function tuneLiveModel(renderer, root, mobile) {
+export function tuneLiveModel(renderer, root, mobile, config) {
   const maxAnisotropy = Math.min(8, renderer.capabilities.getMaxAnisotropy());
   const textureSlots = ['map','normalMap','roughnessMap','metalnessMap','aoMap','emissiveMap','alphaMap'];
   const materials = new Set();
@@ -74,7 +75,10 @@ export function tuneLiveModel(renderer, root, mobile) {
         texture.needsUpdate = true;
       });
       if (textured) texturedMaterials += 1;
-      if ('envMapIntensity' in material) material.envMapIntensity = /GLASS|WINDOW|METAL/i.test(material.name) ? .9 : .55;
+      if ('envMapIntensity' in material) {
+        const reflective = /GLASS|WINDOW|METAL|ALU|CHROME|ANTHRACITE|MIRROR|APPLIANCE_BLACK/i.test(material.name);
+        material.envMapIntensity = reflective ? 1.15 : .8;
+      }
       material.needsUpdate = true;
     });
   });
@@ -85,6 +89,7 @@ export function tuneLiveModel(renderer, root, mobile) {
     texturedMaterialBindings: texturedMaterials,
     anisotropy: maxAnisotropy,
     environment: 'procedural PMREM IBL',
+    environmentIntensity: config.lighting.environmentIntensity,
     shadows: mobile ? 'disabled-mobile' : 'PCFSoft-2048'
   };
 }

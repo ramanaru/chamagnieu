@@ -1,0 +1,447 @@
+{
+  "auditedAt": "2026-08-16T07:41:33.198Z",
+  "browser": "Codex In-app Browser",
+  "url": "http://127.0.0.1:8897/visite/?reaudit=sync4local",
+  "release": "V18-LIVE-SYNC-4",
+  "dom": {
+    "bodyText": "Visite libre · Chamagnieu V18\n\nLa visite commence dehors avec les textures et la végétation restaurées. Cliquez « Commencer dehors », puis avancez vers la porte avec ZQSD/WASD ou le pavé tactile.\n\nCommencer dehors\nRevenir dehors\nJardin / arbres\nCuisine\nSéjour\nEscalier\nPalier\nChambre 1\nChambre 2\nChambre 3\nSDB nord\nSDB sud\nMasquer les meubles\nVue présentation\nGalerie instantanée\nZQSD / WASD : marcher · Maj : accélérer · E / C : monter / descendre · Échap : libérer la souris\nSOURCE = LIVE WEB VIEWER\nDépart réellement extérieur — avancez vers la porte pour entrer · SOURCE = LIVE WEB VIEWER",
+    "brokenImages": [],
+    "buttons": [
+      {
+        "disabled": false,
+        "text": "Commencer dehors"
+      },
+      {
+        "disabled": false,
+        "text": "Revenir dehors"
+      },
+      {
+        "disabled": false,
+        "text": "Jardin / arbres"
+      },
+      {
+        "disabled": false,
+        "text": "Cuisine"
+      },
+      {
+        "disabled": false,
+        "text": "Séjour"
+      },
+      {
+        "disabled": false,
+        "text": "Escalier"
+      },
+      {
+        "disabled": false,
+        "text": "Palier"
+      },
+      {
+        "disabled": false,
+        "text": "Chambre 1"
+      },
+      {
+        "disabled": false,
+        "text": "Chambre 2"
+      },
+      {
+        "disabled": false,
+        "text": "Chambre 3"
+      },
+      {
+        "disabled": false,
+        "text": "SDB nord"
+      },
+      {
+        "disabled": false,
+        "text": "SDB sud"
+      },
+      {
+        "disabled": false,
+        "text": "Masquer les meubles"
+      }
+    ],
+    "canvasCount": 1,
+    "imgs": [],
+    "readyState": "complete",
+    "sourceLiveCount": 1,
+    "title": "Chamagnieu V18 — Visite extérieure et intérieure",
+    "url": "http://127.0.0.1:8897/visite/?reaudit=sync4local"
+  },
+  "initial": {
+    "cacheKeys": [],
+    "htmlDataset": {
+      "projectConfig": "../shared/project-config.json",
+      "projectRelease": "V18-LIVE-SYNC-4",
+      "projectVersion": "V18",
+      "viewerFurnitureMeshes": "169",
+      "viewerFurnitureVisible": "true",
+      "viewerMaterials": "35",
+      "viewerMeshes": "795",
+      "viewerModel": "Chamagnieu_V18_REALISM_FINAL.glb",
+      "viewerReady": "true",
+      "viewerRelease": "V18-LIVE-SYNC-4",
+      "viewerSource": "LIVE WEB VIEWER",
+      "viewerTextures": "71",
+      "viewerVersion": "V18"
+    },
+    "lastPreset": "outside",
+    "liveMaterialAudit": {
+      "anisotropy": 8,
+      "environment": "procedural PMREM IBL",
+      "environmentIntensity": 0.85,
+      "meshes": 795,
+      "shadows": "PCFSoft-2048",
+      "texturedMaterialBindings": 501,
+      "uniqueMaterials": 35,
+      "uniqueTextures": 71
+    },
+    "projectConfig": {
+      "assets": {
+        "hedges": 18,
+        "outdoorDiningNodes": 0,
+        "trees": 4
+      },
+      "cacheKey": "v18-live-sync-4",
+      "gallerySource": "BLENDER",
+      "houseData": "../house.json",
+      "lighting": {
+        "ambientIntensity": 0.06,
+        "directionalIntensity": 2.4,
+        "environment": "procedural PMREM IBL",
+        "environmentIntensity": 0.85,
+        "exposure": 0.92,
+        "fillIntensity": 0.22,
+        "hemisphereIntensity": 0.72,
+        "shadows": "desktop",
+        "toneMapping": "ACESFilmic"
+      },
+      "materials": {
+        "embedded": true,
+        "externalTextureCount": 0,
+        "runtimeTuning": "shared/live-realism.js"
+      },
+      "model": "./Chamagnieu_V18_REALISM_FINAL.glb",
+      "modelBytes": 27987896,
+      "modelSha256": "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28",
+      "presentationImages": [
+        "./gallery/v18-facade-roof-ground.webp",
+        "./gallery/v18-jardin-textures.webp"
+      ],
+      "release": "V18-LIVE-SYNC-4",
+      "schemaVersion": 1,
+      "version": "V18",
+      "viewerSource": "LIVE WEB VIEWER"
+    },
+    "resources": [
+      {
+        "decodedBodySize": 4555,
+        "duration": 23,
+        "initiatorType": "link",
+        "name": "http://127.0.0.1:8897/shared/viewer.css?release=v18-live-sync-4",
+        "responseStatus": 200,
+        "transferSize": 4855
+      },
+      {
+        "decodedBodySize": 9807,
+        "duration": 28,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:8897/visite/visite.js?release=v18-live-sync-4",
+        "responseStatus": 200,
+        "transferSize": 10107
+      },
+      {
+        "decodedBodySize": 13724,
+        "duration": 13,
+        "initiatorType": "css",
+        "name": "http://127.0.0.1:8897/shared/preview.webp",
+        "responseStatus": 200,
+        "transferSize": 14024
+      },
+      {
+        "decodedBodySize": 621665,
+        "duration": 64,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:8897/shared/vendor/three.module.js",
+        "responseStatus": 200,
+        "transferSize": 621965
+      },
+      {
+        "decodedBodySize": 6345,
+        "duration": 27,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:8897/shared/vendor/addons/controls/PointerLockControls.js",
+        "responseStatus": 200,
+        "transferSize": 6645
+      },
+      {
+        "decodedBodySize": 1329,
+        "duration": 31,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:8897/shared/project-config.js?release=v18-live-sync-4",
+        "responseStatus": 200,
+        "transferSize": 1629
+      },
+      {
+        "decodedBodySize": 119535,
+        "duration": 40,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:8897/shared/vendor/addons/loaders/GLTFLoader.js",
+        "responseStatus": 200,
+        "transferSize": 119835
+      },
+      {
+        "decodedBodySize": 4089,
+        "duration": 35,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:8897/shared/live-realism.js?release=v18-live-sync-4",
+        "responseStatus": 200,
+        "transferSize": 4389
+      },
+      {
+        "decodedBodySize": 36973,
+        "duration": 17,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:8897/shared/vendor/addons/utils/BufferGeometryUtils.js",
+        "responseStatus": 200,
+        "transferSize": 37273
+      },
+      {
+        "decodedBodySize": 1460002,
+        "duration": 115,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:8897/shared/vendor/three.core.js",
+        "responseStatus": 200,
+        "transferSize": 1460302
+      },
+      {
+        "decodedBodySize": 1023,
+        "duration": 16,
+        "initiatorType": "fetch",
+        "name": "http://127.0.0.1:8897/shared/project-config.json",
+        "responseStatus": 200,
+        "transferSize": 1323
+      },
+      {
+        "decodedBodySize": 27987896,
+        "duration": 168,
+        "initiatorType": "fetch",
+        "name": "http://127.0.0.1:8897/shared/Chamagnieu_V18_REALISM_FINAL.glb?release=v18-live-sync-4",
+        "responseStatus": 200,
+        "transferSize": 27988196
+      },
+      {
+        "decodedBodySize": 246,
+        "duration": 13,
+        "initiatorType": "other",
+        "name": "http://127.0.0.1:8897/favicon.ico",
+        "responseStatus": 200,
+        "transferSize": 546
+      }
+    ],
+    "sw": {
+      "controller": false,
+      "registrations": []
+    },
+    "viewerCameraPosition": [
+      1.941,
+      1.65,
+      -15.173
+    ],
+    "viewerCameraTarget": [
+      -1.436,
+      1.4,
+      -0.663
+    ],
+    "viewerError": null,
+    "viewerFailed": false,
+    "viewerModelUrl": "http://127.0.0.1:8897/shared/Chamagnieu_V18_REALISM_FINAL.glb?release=v18-live-sync-4",
+    "viewerReady": true,
+    "viewerRelease": "V18-LIVE-SYNC-4",
+    "viewerVersion": "V18",
+    "webgl2": true
+  },
+  "garden": {
+    "lastPreset": "garden",
+    "status": "Jardin — 4 arbres, 18 haies et sols du GLB Web · SOURCE = LIVE WEB VIEWER",
+    "viewerCameraPosition": [
+      -12.5,
+      1.65,
+      -17.2
+    ],
+    "viewerCameraTarget": [
+      -4.2,
+      1.45,
+      -11.86
+    ]
+  },
+  "afterStart": {
+    "freeMove": null,
+    "lastPreset": "outside",
+    "pointerLocked": false,
+    "status": "Départ réellement extérieur — avancez vers la porte pour entrer · SOURCE = LIVE WEB VIEWER",
+    "viewerCameraPosition": [
+      1.941,
+      1.65,
+      -15.173
+    ],
+    "viewerCameraTarget": [
+      -1.436,
+      1.4,
+      -0.663
+    ]
+  },
+  "cameraChanged": true,
+  "furniture": {
+    "before": {
+      "meshes": "169",
+      "text": "Masquer les meubles",
+      "visible": "true"
+    },
+    "hidden": {
+      "meshes": "169",
+      "text": "Afficher les meubles",
+      "visible": "false"
+    },
+    "shownAgain": {
+      "meshes": "169",
+      "text": "Masquer les meubles",
+      "visible": "true"
+    }
+  },
+  "logs": [
+    {
+      "level": "error",
+      "message": "THREE.PointerLockControls: Unable to use Pointer Lock API",
+      "timestamp": "2026-08-16T07:40:50.409Z",
+      "url": "http://127.0.0.1:8897/shared/vendor/addons/controls/PointerLockControls.js"
+    },
+    {
+      "level": "error",
+      "message": "UnknownError: If you see this error we have a bug. Please report this bug to chromium.",
+      "timestamp": "2026-08-16T07:40:50.410Z",
+      "url": "http://127.0.0.1:8897/visite/?reaudit=sync4local"
+    }
+  ],
+  "network": [
+    {
+      "decodedBodySize": 4555,
+      "duration": 23,
+      "initiatorType": "link",
+      "name": "http://127.0.0.1:8897/shared/viewer.css?release=v18-live-sync-4",
+      "responseStatus": 200,
+      "transferSize": 4855
+    },
+    {
+      "decodedBodySize": 9807,
+      "duration": 28,
+      "initiatorType": "script",
+      "name": "http://127.0.0.1:8897/visite/visite.js?release=v18-live-sync-4",
+      "responseStatus": 200,
+      "transferSize": 10107
+    },
+    {
+      "decodedBodySize": 13724,
+      "duration": 13,
+      "initiatorType": "css",
+      "name": "http://127.0.0.1:8897/shared/preview.webp",
+      "responseStatus": 200,
+      "transferSize": 14024
+    },
+    {
+      "decodedBodySize": 621665,
+      "duration": 64,
+      "initiatorType": "script",
+      "name": "http://127.0.0.1:8897/shared/vendor/three.module.js",
+      "responseStatus": 200,
+      "transferSize": 621965
+    },
+    {
+      "decodedBodySize": 6345,
+      "duration": 27,
+      "initiatorType": "script",
+      "name": "http://127.0.0.1:8897/shared/vendor/addons/controls/PointerLockControls.js",
+      "responseStatus": 200,
+      "transferSize": 6645
+    },
+    {
+      "decodedBodySize": 1329,
+      "duration": 31,
+      "initiatorType": "script",
+      "name": "http://127.0.0.1:8897/shared/project-config.js?release=v18-live-sync-4",
+      "responseStatus": 200,
+      "transferSize": 1629
+    },
+    {
+      "decodedBodySize": 119535,
+      "duration": 40,
+      "initiatorType": "script",
+      "name": "http://127.0.0.1:8897/shared/vendor/addons/loaders/GLTFLoader.js",
+      "responseStatus": 200,
+      "transferSize": 119835
+    },
+    {
+      "decodedBodySize": 4089,
+      "duration": 35,
+      "initiatorType": "script",
+      "name": "http://127.0.0.1:8897/shared/live-realism.js?release=v18-live-sync-4",
+      "responseStatus": 200,
+      "transferSize": 4389
+    },
+    {
+      "decodedBodySize": 36973,
+      "duration": 17,
+      "initiatorType": "script",
+      "name": "http://127.0.0.1:8897/shared/vendor/addons/utils/BufferGeometryUtils.js",
+      "responseStatus": 200,
+      "transferSize": 37273
+    },
+    {
+      "decodedBodySize": 1460002,
+      "duration": 115,
+      "initiatorType": "script",
+      "name": "http://127.0.0.1:8897/shared/vendor/three.core.js",
+      "responseStatus": 200,
+      "transferSize": 1460302
+    },
+    {
+      "decodedBodySize": 1023,
+      "duration": 16,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:8897/shared/project-config.json",
+      "responseStatus": 200,
+      "transferSize": 1323
+    },
+    {
+      "decodedBodySize": 27987896,
+      "duration": 168,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:8897/shared/Chamagnieu_V18_REALISM_FINAL.glb?release=v18-live-sync-4",
+      "responseStatus": 200,
+      "transferSize": 27988196
+    },
+    {
+      "decodedBodySize": 246,
+      "duration": 13,
+      "initiatorType": "other",
+      "name": "http://127.0.0.1:8897/favicon.ico",
+      "responseStatus": 200,
+      "transferSize": 546
+    }
+  ],
+  "assertions": {
+    "outsidePositionExact": true,
+    "outsideTargetExact": true,
+    "outsideVisuallyExterior": true,
+    "gardenCameraChanged": true,
+    "environmentIntensity085": true,
+    "viewerReady": true,
+    "brokenImages": 0,
+    "failedNetwork": 0,
+    "consoleErrorsAfterStart": 2,
+    "result": "PARTIAL"
+  },
+  "captures": {
+    "outside": "C:/Users/jonat/Documents/Codex/2026-08-16/chamagnieu-v18-reaudit/validation/reaudit-2026-08-16/sync4-local/sync4-local-visit-outside.png",
+    "garden": "C:/Users/jonat/Documents/Codex/2026-08-16/chamagnieu-v18-reaudit/validation/reaudit-2026-08-16/sync4-local/sync4-local-visit-garden.png"
+  }
+}

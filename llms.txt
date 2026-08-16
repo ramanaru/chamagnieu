@@ -8,10 +8,10 @@ Image jardin: https://raw.githubusercontent.com/ramanaru/chamagnieu/main/images/
 
 Cette version montre une maison à trois volumes de toiture en tuiles, des sols extérieurs différenciés, quatre arbres, dix-huit haies et une visite commençant dehors.
 
-Version live unique: V18-LIVE-SYNC-3
+Version live unique: V18-LIVE-SYNC-4
 Configuration centrale: https://raw.githubusercontent.com/ramanaru/chamagnieu/main/shared/project-config.json
-Modèle live: https://raw.githubusercontent.com/ramanaru/chamagnieu/main/shared/Chamagnieu_V18_REALISM_FINAL.glb
-SHA-256 modèle: 79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28
+Modèle live: https://raw.githubusercontent.com/ramanaru/chamagnieu/main/shared/Chamagnieu_V18_REALISM_FINAL_WEBP.glb
+SHA-256 modèle: 69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE
 Rapport d'audit: https://github.com/ramanaru/chamagnieu/blob/main/audit/version-sync-report.md
 Verdict live: https://github.com/ramanaru/chamagnieu/blob/main/validation/V18_LIVE_SYNC_REPORT.md
 

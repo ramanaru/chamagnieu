@@ -1,8 +1,8 @@
 import * as THREE from '../shared/vendor/three.module.js';
 import { PointerLockControls } from '../shared/vendor/addons/controls/PointerLockControls.js';
 import { GLTFLoader } from '../shared/vendor/addons/loaders/GLTFLoader.js';
-import { loadProjectConfig, applyProjectVersion, resolveProjectAsset } from '../shared/project-config.js';
-import { setupLiveLighting, tuneLiveModel } from '../shared/live-realism.js';
+import { loadProjectConfig, applyProjectVersion, resolveProjectAsset } from '../shared/project-config.js?release=v18-live-sync-4';
+import { setupLiveLighting, tuneLiveModel } from '../shared/live-realism.js?release=v18-live-sync-4';
 
 const config = await loadProjectConfig();
 applyProjectVersion(config);
@@ -16,10 +16,49 @@ renderer.setPixelRatio(Math.min(devicePixelRatio, mobile ? 1.1 : 1.6));
 renderer.setSize(innerWidth, innerHeight);
 document.body.prepend(renderer.domElement);
 setupLiveLighting(THREE, scene, renderer, config, mobile);
+let visitActive = false;
+let dragLookInstalled = false;
+let pointerLockFailure = null;
+function enableDragLook(reason = 'manual') {
+  visitActive = true;
+  window.__visitControlMode = mobile ? 'touch-drag' : 'keyboard-drag-fallback';
+  window.__pointerLockFallbackReason = reason;
+  if (dragLookInstalled) return;
+  dragLookInstalled = true;
+  let last = null;
+  renderer.domElement.addEventListener('pointerdown', event => {
+    last = [event.clientX, event.clientY];
+    renderer.domElement.setPointerCapture?.(event.pointerId);
+  });
+  renderer.domElement.addEventListener('pointermove', event => {
+    if (!last || controls.isLocked) return;
+    const dx = event.clientX - last[0], dy = event.clientY - last[1];
+    last = [event.clientX, event.clientY];
+    const euler = new THREE.Euler().setFromQuaternion(camera.quaternion, 'YXZ');
+    euler.y -= dx * .004;
+    euler.x = Math.max(-1.45, Math.min(1.45, euler.x - dy * .004));
+    camera.quaternion.setFromEuler(euler);
+  });
+  const release = () => { last = null; };
+  renderer.domElement.addEventListener('pointerup', release);
+  renderer.domElement.addEventListener('pointercancel', release);
+}
+// Pointer lock is unavailable in some embedded browsers. Catch the failure
+// before PointerLockControls logs it, then keep the full visit usable by drag.
+document.addEventListener('pointerlockerror', event => {
+  event.stopImmediatePropagation();
+  pointerLockFailure ||= 'pointerlockerror';
+  enableDragLook(pointerLockFailure);
+  status.textContent = `Mode souris-glisser actif · utilisez ZQSD/WASD pour entrer · SOURCE = ${config.viewerSource}`;
+}, true);
 const controls = new PointerLockControls(camera, document.body);
+controls.addEventListener('lock', () => {
+  visitActive = true;
+  window.__visitControlMode = 'pointer-lock';
+});
 
 const presets = {
-  outside: { p: [-5.359, 1.65, -.537], t: [-4.684, 1.40, 1.378], label: 'Départ extérieur — avancez vers la porte pour entrer' },
+  outside: { p: [1.941, 1.65, -15.173], t: [-1.436, 1.40, -.663], label: 'Départ réellement extérieur — avancez vers la porte pour entrer' },
   garden: { p: [-12.5, 1.65, -17.2], t: [-4.2, 1.45, -11.86], label: 'Jardin — 4 arbres, 18 haies et sols du GLB Web' },
   kitchen: { p: [-5.829, 1.65, 3.525], t: [-3.487, 1.20, 2.836], label: 'Cuisine au sud du séjour' },
   living: { p: [-7.037, 1.65, 5.862], t: [-5.749, 1.20, 8.616], label: 'Séjour du RDC' },
@@ -51,6 +90,14 @@ function preset(key) {
   camera.lookAt(new THREE.Vector3().fromArray(view.t));
   status.textContent = `${view.label} · SOURCE = ${config.viewerSource}`;
   window.__lastPreset = key;
+  window.__viewerCameraPosition = camera.position.toArray();
+  window.__viewerCameraTarget = view.t.slice();
+  document.querySelectorAll('[data-preset], #start').forEach(button => {
+    const active = key === 'outside'
+      ? button.id === 'start' || button.dataset.preset === 'outside'
+      : button.dataset.preset === key;
+    button.classList.toggle('active', active);
+  });
 }
 window.__setPreset = preset;
 preset('outside');
@@ -69,7 +116,7 @@ document.documentElement.dataset.viewerReady = 'loading';
 new GLTFLoader().load(modelUrl.href, gltf => {
   house = gltf.scene;
   classifyFurniture(house);
-  window.__liveMaterialAudit = tuneLiveModel(renderer, house, mobile);
+  window.__liveMaterialAudit = tuneLiveModel(renderer, house, mobile, config);
   scene.add(house);
   loading.classList.add('hide');
   preset('outside');
@@ -100,10 +147,28 @@ setTimeout(() => {
   if (!window.__viewerReady && !window.__viewerFailed) loading.innerHTML = 'Toujours en cours… <a href="../rapide/">Voir la galerie sourcée</a>';
 }, 20000);
 
-document.querySelector('#start').onclick = () => {
+document.querySelector('#start').onclick = async () => {
   preset('outside');
-  if (!mobile) controls.lock();
-  else status.textContent = `Départ extérieur · utilisez ▲ pour entrer · SOURCE = ${config.viewerSource}`;
+  visitActive = true;
+  if (mobile) {
+    enableDragLook('coarse-pointer');
+    status.textContent = `Départ extérieur · utilisez ▲ pour entrer · SOURCE = ${config.viewerSource}`;
+    return;
+  }
+  if (typeof document.body.requestPointerLock !== 'function') {
+    enableDragLook('api-unavailable');
+    status.textContent = `Mode souris-glisser actif · utilisez ZQSD/WASD pour entrer · SOURCE = ${config.viewerSource}`;
+    return;
+  }
+  try {
+    const request = document.body.requestPointerLock();
+    if (request?.then) await request;
+    if (!document.pointerLockElement) enableDragLook('lock-not-acquired');
+  } catch (error) {
+    pointerLockFailure = error?.name || 'pointer-lock-rejected';
+    enableDragLook(pointerLockFailure);
+    status.textContent = `Mode souris-glisser actif · utilisez ZQSD/WASD pour entrer · SOURCE = ${config.viewerSource}`;
+  }
 };
 document.querySelectorAll('[data-preset]').forEach(button => button.onclick = () => preset(button.dataset.preset));
 document.querySelector('#furniture').onclick = event => {
@@ -131,7 +196,7 @@ addEventListener('resize', () => {
   camera.updateProjectionMatrix();
   renderer.setSize(innerWidth, innerHeight);
 });
-renderer.setAnimationLoop(() => { if (controls.isLocked) move(); else clock.getDelta(); renderer.render(scene, camera); });
+renderer.setAnimationLoop(() => { if (controls.isLocked || visitActive) move(); else clock.getDelta(); renderer.render(scene, camera); });
 
 if (mobile) {
   document.querySelector('#start').textContent = 'Commencer dehors';
@@ -145,16 +210,5 @@ if (mobile) {
     button.addEventListener('pointerdown', event => { event.preventDefault(); keys[key] = true; });
     ['pointerup','pointercancel','pointerleave'].forEach(name => button.addEventListener(name, () => keys[key] = false));
   });
-  let last = null;
-  renderer.domElement.addEventListener('pointerdown', event => { last = [event.clientX, event.clientY]; renderer.domElement.setPointerCapture(event.pointerId); });
-  renderer.domElement.addEventListener('pointermove', event => {
-    if (!last) return;
-    const dx = event.clientX - last[0], dy = event.clientY - last[1];
-    last = [event.clientX, event.clientY];
-    const euler = new THREE.Euler().setFromQuaternion(camera.quaternion, 'YXZ');
-    euler.y -= dx * .004;
-    euler.x = Math.max(-1.45, Math.min(1.45, euler.x - dy * .004));
-    camera.quaternion.setFromEuler(euler);
-  });
-  renderer.domElement.addEventListener('pointerup', () => last = null);
+  enableDragLook('coarse-pointer');
 }

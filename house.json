@@ -1,7 +1,7 @@
 {
   "version": "V18",
   "name": "Maison neuve de Chamagnieu — logement 6",
-  "updated": "2026-08-15",
+  "updated": "2026-08-16",
   "language": "fr",
   "public_repository": "https://github.com/ramanaru/chamagnieu",
   "public_page": "https://ramanaru.github.io/chamagnieu/",
@@ -30,11 +30,18 @@
       }
     ],
     "model": {
-      "title": "Modèle Web V18 REALISM FINAL",
-      "url": "https://raw.githubusercontent.com/ramanaru/chamagnieu/main/shared/Chamagnieu_V18_REALISM_FINAL.glb",
-      "repository_path": "shared/Chamagnieu_V18_REALISM_FINAL.glb",
-      "bytes": 27987896,
-      "sha256": "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28"
+      "title": "Modèle Web V18 REALISM FINAL — WebP haute définition corrigé",
+      "url": "https://raw.githubusercontent.com/ramanaru/chamagnieu/main/shared/Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+      "repository_path": "shared/Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+      "bytes": 25169320,
+      "sha256": "69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE",
+      "texture_profile": {
+        "codec": "WebP",
+        "embedded_images": 37,
+        "max_resolution": "2048px",
+        "external_images": 0,
+        "invalid_binding_removed": "material[31].metallicRoughnessTexture -> texture[50]"
+      }
     }
   },
   "interactive": {
@@ -42,7 +49,7 @@
     "visit_from_outside": "https://ramanaru.github.io/chamagnieu/visite/",
     "instant_gallery": "https://ramanaru.github.io/chamagnieu/rapide/"
   },
-  "release": "V18-LIVE-SYNC-3",
+  "release": "V18-LIVE-SYNC-4",
   "source_policy": {
     "interactive": "LIVE WEB VIEWER",
     "gallery": "BLENDER",
