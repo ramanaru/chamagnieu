@@ -1,74 +1,73 @@
-# Inventaire GLB réellement présent — Chamagnieu V18
+# Inventaire GLB courant — V18 WebP
 
-## Verdict factuel
+> `SOURCE = STATIC FILE AUDIT`. Aucun rendu Blender n’est utilisé comme preuve de structure.
 
-- Recherche récursive dans `C:\Users\jonat\Documents\Codex\2026-08-14\files-mentioned-by-the-user-c\outputs\Chamagnieu_3D_V18_LIVE_SYNC` : **2 fichiers `.glb`**.
-- `shared/project-config.json` est désormais la source de vérité live et sélectionne `./Chamagnieu_V18_REALISM_FINAL.glb`; `presentation/presentation.js` et `visite/visite.js` chargent tous deux cette configuration puis résolvent `config.model`.
-- `Chamagnieu_V18_REALISM_FINAL.glb` et l'ancien nom `Chamagnieu_V18_ROOF_GROUND_REALISM.glb` sont **deux fichiers physiques mais un contenu binaire strictement identique** : même taille, même SHA-256, même mtime. Le second est un alias de compatibilité, pas une ancienne géométrie concurrente.
-- URL runtime calculée : `../shared/Chamagnieu_V18_REALISM_FINAL.glb?release=v18-live-sync-3` depuis les pages `presentation/` et `visite/`.
+## Identité des fichiers
 
-## Fichier et intégrité conteneur
+| Fichier / rôle | Octets | SHA-256 | JSON | BIN | Codec images | Actif |
+|---|---:|---|---:|---:|---|---|
+| Master source `Chamagnieu_V18_ROOF_GROUND_REALISM_WEBP.glb` | 25,169,404 | `97F842001CC77E65637271172D09A81043FFFDF3235591DCB1AFF0BA96D67DA0` | 754,796 | 24,414,580 | 37 WebP | non publié; source immuable |
+| `shared/Chamagnieu_V18_REALISM_FINAL.glb` ancien dérivé | 27,987,896 | `79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28` | 754,700 | 27,233,168 | 37 JPEG actives + WebP orphelines | non |
+| `shared/Chamagnieu_V18_ROOF_GROUND_REALISM.glb` alias ancien | 27,987,896 | `79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28` | 754,700 | 27,233,168 | identique au dérivé JPEG | non |
+| `shared/Chamagnieu_V18_REALISM_FINAL_WEBP.glb` **live** | 25,169,320 | `69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE` | 754,712 | 24,414,580 | 37 WebP | **oui** |
 
-| Chemin relatif | Octets | Mio | SHA-256 | mtime local |
-|---|---:|---:|---|---|
-| `shared/Chamagnieu_V18_REALISM_FINAL.glb` **(live)** | 27 987 896 | 26.691 | `79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28` | 2026-08-15T20:41:33.030760+02:00 |
-| `shared/Chamagnieu_V18_ROOF_GROUND_REALISM.glb` **(alias identique)** | 27 987 896 | 26.691 | `79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28` | 2026-08-15T20:41:33.030760+02:00 |
+Les deux anciens fichiers partagent exactement les mêmes octets. Il n’existe aucun `.gltf`, GLB lite, GLB presentation, GLB viewer ou fallback distinct.
 
-- En-tête : magic `glTF`  glTF **2**  longueur déclarée **27 987 896** = longueur physique **27 987 896**.
-- Chunks : JSON **754 700 octets**  BIN **27 233 168 octets**; les deux tailles sont alignées sur 4 octets.
-- `buffers[0].byteLength` = **27 233 168**  fin maximale des `bufferViews` = **27 233 168** : aucune sortie du BIN détectée par ce contrôle structurel.
-- Les références d’accessor, matériau et image contrôlées sont dans les bornes. Ceci est un contrôle structurel ciblé, pas un passage complet du Khronos glTF Validator.
+## Structure comparée
 
-> La structure ci-dessous est calculée sur le GLB live; elle vaut byte pour byte pour l’alias de compatibilité.
+| Mesure | Master WebP | Ancien dérivé JPEG | Nouveau live WebP |
+|---|---:|---:|---:|
+| scènes | 1 | 1 | 1 |
+| nœuds | 794 | 794 | 794 |
+| meshes glTF | 793 | 793 | 793 |
+| primitives | 795 | 795 | 795 |
+| accessors | 2454 | 2454 | 2454 |
+| bufferViews | 2491 | 2528 | 2491 |
+| matériaux | 35 | 35 | 35 |
+| textures | 56 | 56 | 56 |
+| images | 37 | 37 | 37 |
+| images externes | 0 | 0 | 0 |
+| bindings matière | 56 | 55 | 55 |
+| bindings actifs invalides | 1 | 0 | 0 |
+| bufferViews orphelines | 0 | **37** | 0 |
+| octets bufferView orphelins | 0 | **11,803,422** | 0 |
 
-## Structure glTF chiffrée
+## Preuve de géométrie inchangée
 
-| Élément | Nombre / valeur |
-|---|---:|
-| Scènes | 1 |
-| Scène active | 0 |
-| Nœuds | 794 |
-| Meshes | 793 |
-| Primitives | 795 |
-| Matériaux | 35 |
-| Textures glTF | 56 |
-| Images | 37 |
-| Samplers | 1 |
-| Accessors | 2 454 |
-| BufferViews | 2 528 |
-| Buffers | 1 |
-| Animations | 1 |
-| Vertices déclarés par primitives | 377 701 |
-| Indices | 950 343 |
-| Triangles calculés | 316 781 |
+| Sous-ensemble canonique | SHA-256 commun |
+|---|---|
+| accessors / payloads géométriques | `958B7BB2D4531F49BB2001D8ABD02850CDB88BC6A4CE9D60567EADA74365E5B9` |
+| nœuds JSON | `ADC58148C34EDE75C601C65498625EE8AF18EEE8BC9561D98214A4941B0C0A47` |
+| meshes JSON | `8068BC0209DBD7D65060946C213C8FAD87332A8D4DAFC5A6008B70BAADA6688A` |
+| accessors JSON | `4A069FE680770C0FA565A738F82605FDE480F0B5AA662D7A2065E37C9BFF1FA8` |
 
-- **795/795** primitives sont des triangles (`mode=4`), ont `POSITION`, `NORMAL`, `TEXCOORD_0` et un matériau assigné; UV présentes sur **795/795** et normales sur **795/795**.
-- **793 meshes / 794 nœuds** : le nœud sans mesh est `HOUSE_REFERENCE_ORIGIN`; les deux fauteuils importés sont les seuls meshes à deux primitives, d’où 795 primitives pour 793 meshes.
-- Extensions utilisées : `KHR_materials_transmission, KHR_materials_ior, KHR_texture_transform`. Extension requise : `KHR_texture_transform`.
-- Pas de `KHR_draco_mesh_compression`, KTX2/Basis, skin, caméra embarquée ou HDR/EXR; le fichier est un GLB non-Draco avec textures JPEG intégrées.
-- Animation : `modern_wooden_cabinet_body` avec 3 canaux STEP (translation, rotation, scale) ciblant `V11_LIVING_TV_CONSOLE`; elle provient vraisemblablement de l’asset cabinet, sans action lancée par le viewer.
+Le chunk BIN du nouveau live est byte-identique au master: 24,414,580 octets, SHA-256 `F7E89CA346FAB71A658D3224FAE0D2D33B7966B39B93C5E4D5AF04717C22ED17`. Le JSON courant est le master moins une seule propriété: le binding t50 invalide.
 
-## Graphe de scène et métadonnées V18
+## Défaut de l’ancien dérivé JPEG
 
-- Racines de scène : **49**; `HOUSE_REFERENCE_ORIGIN` contient **745** enfants, tandis que végétation V17 et sol visible V18 sont aussi des racines de scène.
-- `v18_changed_branch_field` = `V18_ROOF_GROUND_REALISM / outdoor_dining::removed_29_nodes; roof_geometry::front_hip_rebuilt+garage_winding_fixed+duplicate_faces_removed; roof_uv::consistent_cube_projection; exterior_ground::top_facing_solid_textured; texture_delivery::1024px_key_pbr; landscape::4_trees+18_hedges_retained; visit::start_outside`
-- `v18_outdoor_dining_removed_nodes` = `29`
-- `v18_roof_objects_rebuilt` = `3`
-- `v18_ground_objects_rebuilt` = `3`
-- `v18_tree_roots_retained` = `4`
-- `v18_hedges_retained` = `18`
-- `v18_key_texture_resolution` = `1024`
-- `v18_visit_starts_outside` = `True`
-- `v18_source_v17_glb_sha256` = `7DDD96CCA202D30F28E1000E715755B679FF53C6776DCA0ACDAD741EB8074F68`
+Les 37 images WebP du master occupaient 11,803,422 octets dans 37 bufferViews conservées, mais aucune image active ne les référençait. Trente-sept JPEG réduits (2,818,542 octets) avaient été ajoutés et devenaient les sources actives. Le fichier était donc plus lourd tout en affichant moins de détails.
 
-## Répartition géométrique utile au diagnostic
+BufferViews orphelines exactes:
 
-- Préfixes : V11 **416 nœuds / 257 659 triangles**, V10 **165 / 32 460**, V12 **30 / 12 752**, V17 **46 / 7 048**, architecture GF+UF+FRAME **128 / 6 544**, ROOF **3 / 18**, SITE+GROUND+V18 **4 / 208**.
-- Signature répétée : **495 nœuds à exactement 188 triangles**, typique des volumes paramétriques/bevelled boxes de ce modèle; **75 nœuds à 12 triangles** et **3 toitures principales à 6 triangles**.
-- Les **12 nœuds** portant une provenance `asset_source` totalisent **191 047 triangles (60.3% du modèle)**; leur détail est dans `live-materials.md`.
+```text
+106,107,108,204,205,206,238,239,240,245,246,247,260,261,262,267,268,269,273,274,275,752,753,754,949,950,951,958,959,960,1870,1871,1876,1877,1878,2332,2339
+```
 
-## Limites de l’inférence
+## Binding t50
 
-- Les noms, métadonnées et nombres de triangles permettent de distinguer assets sourcés et volumes procéduraux, mais ne prouvent pas à eux seuls la qualité perçue, l’échelle correcte ou l’absence de pénétration entre objets.
-- Le hash identique prouve que les deux fichiers locaux sont le même modèle. Il ne prouve pas à lui seul que GitHub/CDN sert ce hash sans contrôle HTTP séparé.
-- Les collections Blender (`FURNITURE_EDITABLE`, etc.) ne sont pas conservées comme collections glTF; la mention de non-contractualité existe au niveau scène, mais ne permet pas de classer chaque nœud de mobilier contractuellement.
+| État | `/materials/31/pbrMetallicRoughness/metallicRoughnessTexture` | `texture[50]` | Résultat |
+|---|---|---|---|
+| Master source | présent, index 50 | `{"extensions":{},"sampler":0}`, aucune source | invalide |
+| Ancien JPEG | absent | objet mort | valide mais basse définition |
+| Nouveau live | absent | objet inutilisé, non lié | 55/55 bindings valides |
+
+## Extensions du modèle live
+
+```text
+extensionsUsed=KHR_materials_transmission,KHR_materials_ior,KHR_texture_transform,EXT_texture_webp
+extensionsRequired=KHR_texture_transform,EXT_texture_webp
+Three.js=179
+GLTFLoader_EXT_texture_webp=SUPPORTED
+```
+
+Preuve indépendante: `validation/webp-model-validation.txt` se termine par `WEBP_MODEL_VALIDATION=PASS`.

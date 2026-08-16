@@ -1,98 +1,86 @@
-# Rapport des chemins et contenus de textures — GLB V18
+# Rapport courant des textures — modèle live WebP
 
-## Conclusion principale
+> **SOURCE = STATIC FILE AUDIT**. Les images listées ici sont les payloads réellement liés dans le GLB.
+> Les images de `/rapide/` portent **SOURCE = BLENDER** et ne sont pas des textures du viewer.
 
-- Le GLB live `Chamagnieu_V18_REALISM_FINAL.glb` et l’alias `Chamagnieu_V18_ROOF_GROUND_REALISM.glb` sont byte-identiques; les résultats ci-dessous s’appliquent aux deux. `project-config.json` confirme `externalTextureCount: 0`. Configuration runtime vérifiée : `release=V18-LIVE-SYNC-3`, `cacheKey=v18-live-sync-3`.
+## Livraison
 
-- **37/37 images de matériau sont embarquées dans le BIN du GLB via `bufferView`**; aucune image glTF n’a de champ `uri` et il n’existe donc **aucun chemin externe de texture à casser ou à servir en 404**.
-- Les 37 images embarquées totalisent **2 818 542 octets (10.07% du GLB)**. Elles sont toutes des JPEG RGB.
-- Résolutions : **12 × 1024²**, **23 × 512²**, **2 × 256²**.
-- **55/56 objets texture** sont réellement référencés par des matériaux; `textures[50]` n’a ni `source` ni référence de matériau. C’est un objet mort, pas une référence runtime invalide.
-- **37/37 images** sont utilisées. Toutes les **795 primitives** ont `TEXCOORD_0`; l’hypothèse « textures absentes à cause d’UV manquantes » n’est pas soutenue par ce GLB.
-- `KHR_texture_transform` est requis : un loader qui ne le supporte pas conserverait les images mais avec une échelle/orientation UV erronée. Le `GLTFLoader` Three.js livré dans le worktree supporte cette extension.
+| Contrôle | Résultat |
+|---|---|
+| Modèle | `shared/Chamagnieu_V18_REALISM_FINAL_WEBP.glb` |
+| SHA-256 | `69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE` |
+| Images embarquées | 37/37 |
+| Codec | WebP |
+| URI images externes | 0 |
+| URI buffers externes | 0 |
+| Bindings matière | 55/55 valides |
+| Images atteignables depuis un binding | 37/37 |
+| Texture inutilisée | `texture[50]` uniquement |
+| BufferViews non référencées | 0 |
+| Octets image orphelins | 0 |
+| Décodage WebP | PASS, Three.js r179 + `GLTFTextureWebPExtension` |
 
-## Images embarquées
+Les textures ne font l’objet d’aucune requête HTTP individuelle. Le réseau télécharge uniquement `Chamagnieu_V18_REALISM_FINAL_WEBP.glb?release=v18-live-sync-4`; les 37 payloads sont lus depuis son chunk BIN.
 
-| i | Nom interne | Résolution | Octets | SHA-256 court | Objet(s) texture |
-|---:|---|---:|---:|---|---|
-| 0 | `white_stucco_nor_gl_2k` | 512x512 | 12 903 | `a207f9960ce1b1af` | `0 27` |
-| 1 | `white_stucco_diff_2k` | 512x512 | 6 046 | `5232b5e695efdcd9` | `1 28` |
-| 2 | `white_stucco_rough_2k` | 512x512 | 2 548 | `4ad7339b9c643774` | `2 29` |
-| 3 | `floor_tiles_02_nor_gl_2k` | 512x512 | 7 174 | `1577873bf45d8ced` | `3 42` |
-| 4 | `floor_tiles_02_diff_2k` | 512x512 | 20 708 | `85de3cb89b647f80` | `4 43` |
-| 5 | `floor_tiles_02_rough_2k` | 512x512 | 21 295 | `a096f4c0bc2184a8` | `5 44` |
-| 6 | `brushed_concrete_04_nor_gl_2k` | 512x512 | 42 600 | `0144582232971458` | `6 21 45` |
-| 7 | `brushed_concrete_04_diff_2k` | 512x512 | 30 028 | `8e261c633b628a6a` | `7 22 46` |
-| 8 | `brushed_concrete_04_rough_2k` | 512x512 | 6 023 | `199145e67c23c056` | `8 23 47` |
-| 9 | `clay_roof_tiles_02_nor_gl_2k` | 1024x1024 | 228 353 | `fd3d1ab00d802cf3` | `9` |
-| 10 | `clay_roof_tiles_02_diff_2k` | 1024x1024 | 207 755 | `9502307fcd37fc10` | `10` |
-| 11 | `clay_roof_tiles_02_rough_2k` | 1024x1024 | 38 061 | `410ecf3e8d6aee2d` | `11` |
-| 12 | `asphalt_01_nor_gl_2k` | 1024x1024 | 310 248 | `70df03088ac8ed71` | `12 33` |
-| 13 | `asphalt_01_diff_2k` | 1024x1024 | 153 146 | `9fcaa1ac8af9640d` | `13 34` |
-| 14 | `asphalt_01_rough_2k` | 1024x1024 | 9 703 | `6fcc9484b8585943` | `14 35` |
-| 15 | `leafy_grass_nor_gl_2k` | 1024x1024 | 420 868 | `0ec8f3e81a54821d` | `15` |
-| 16 | `leafy_grass_diff_2k` | 1024x1024 | 317 207 | `7a578aa344ea7765` | `16` |
-| 17 | `leafy_grass_rough_2k` | 1024x1024 | 36 745 | `69e238ae6d6cde70` | `17` |
-| 18 | `american_walnut_veneer_nor_gl_2k` | 512x512 | 4 589 | `c5cac9489e32048f` | `18 24` |
-| 19 | `american_walnut_veneer_diff_2k` | 512x512 | 17 354 | `64120ac69ee8d223` | `19 25` |
-| 20 | `american_walnut_veneer_rough_2k` | 512x512 | 21 580 | `e97fda2c69d0b19f` | `20 26` |
-| 21 | `gravel_nor_gl_2k` | 1024x1024 | 459 912 | `f7faae5e88930158` | `30` |
-| 22 | `gravel_diff_2k` | 1024x1024 | 219 000 | `c05cec2e982f60ad` | `31` |
-| 23 | `gravel_rough_2k` | 1024x1024 | 27 346 | `094c2bb004487945` | `32` |
-| 24 | `cotton_jersey_nor_gl_2k` | 512x512 | 2 939 | `ea1c4d0a0fc404f4` | `36` |
-| 25 | `cotton_jersey_diff_2k` | 512x512 | 5 118 | `12963d734036f587` | `37` |
-| 26 | `cotton_jersey_rough_2k` | 512x512 | 14 427 | `2971701b47ee6fc6` | `38` |
-| 27 | `white_oak_veneer_nor_gl_2k` | 512x512 | 9 632 | `c7f9ca6082052ce7` | `39` |
-| 28 | `white_oak_veneer_diff_2k` | 512x512 | 19 124 | `11460ae4b7a2aaf1` | `40` |
-| 29 | `white_oak_veneer_rough_2k` | 512x512 | 8 926 | `16628ab8f1ef1873` | `41` |
-| 30 | `modern_coffee_table_01_nor_gl_1k` | 512x512 | 5 644 | `3a8a7642e80609a1` | `48` |
-| 31 | `modern_coffee_table_01_diff_1k` | 512x512 | 15 246 | `c95ddba2c8c6c0a0` | `49` |
-| 32 | `potted_plant_04_nor_gl_1k` | 512x512 | 45 157 | `76fef641f14af96d` | `51` |
-| 33 | `potted_plant_04_diff_1k` | 512x512 | 36 667 | `c9731673dae7154e` | `52` |
-| 34 | `potted_plant_04_arm_1k` | 512x512 | 23 605 | `35ad7645df41409e` | `53` |
-| 35 | `v17_foliage_deep` | 256x256 | 5 169 | `c3c854235854d645` | `54` |
-| 36 | `v17_foliage_fresh` | 256x256 | 5 696 | `93b8e0df8d07e1d3` | `55` |
+## Comparaison source / ancien dérivé / live
 
-> Les suffixes historiques `_2k` et `_1k` dans les noms ne décrivent plus toujours la résolution livrée : la plupart des `_2k` intérieurs sont réellement en 512²; seuls toit, asphalte, gazon et gravier sont en 1024². Les deux feuillages V17 ne font que 256².
+- Source et live: 11,803,422 octets d’images WebP actives; 27×2048², 3×2048×2050, 5×1024², 2×256².
+- Ancien dérivé: 2,818,542 octets JPEG actifs; 23×512², 12×1024², 2×256².
+- L’ancien fichier conservait en plus les 11,803,422 octets WebP source dans 37 bufferViews orphelines.
+- Le live réutilise byte-for-byte les payloads du master; il ne rééchantillonne aucune image.
 
-## Résolution des slots matériaux vers les images
+## Images embarquées et usages exacts
 
-| Matériau | Base color | Metallic/Roughness | Normal | Autres |
-|---|---|---|---|---|
-| 2 `V12_PBR_OFFWHITE_STUCCO` | t1→i1 `white_stucco_diff_2k`; UV scale=[3, 3], offset=[0, -2] | t2→i2 `white_stucco_rough_2k`; UV scale=[3, 3], offset=[0, -2] | t0→i0 `white_stucco_nor_gl_2k`; UV scale=[3, 3], offset=[0, -2]; strength=0.1599999964237213 | — |
-| 3 `PBR_B_FLOOR` | t4→i4 `floor_tiles_02_diff_2k`; UV scale=[4.199999809265137, 4.199999809265137], offset=[0, -3.1999998092651367] | t5→i5 `floor_tiles_02_rough_2k`; UV scale=[4.199999809265137, 4.199999809265137], offset=[0, -3.1999998092651367] | t3→i3 `floor_tiles_02_nor_gl_2k`; UV scale=[4.199999809265137, 4.199999809265137], offset=[0, -3.1999998092651367]; strength=0.550000011920929 | — |
-| 5 `PBR_B_CONCRETE` | t7→i7 `brushed_concrete_04_diff_2k`; UV scale=[5, 5], offset=[0, -4] | t8→i8 `brushed_concrete_04_rough_2k`; UV scale=[5, 5], offset=[0, -4] | t6→i6 `brushed_concrete_04_nor_gl_2k`; UV scale=[5, 5], offset=[0, -4]; strength=0.6000000238418579 | — |
-| 6 `PBR_B_ROOF` | t10→i10 `clay_roof_tiles_02_diff_2k`; UV scale=[3.5999999046325684, 3.5999999046325684], offset=[0, -2.5999999046325684] | t11→i11 `clay_roof_tiles_02_rough_2k`; UV scale=[3.5999999046325684, 3.5999999046325684], offset=[0, -2.5999999046325684] | t9→i9 `clay_roof_tiles_02_nor_gl_2k`; UV scale=[3.5999999046325684, 3.5999999046325684], offset=[0, -2.5999999046325684]; strength=1.149999976158142 | — |
-| 7 `PBR_B_ASPHALT` | t13→i13 `asphalt_01_diff_2k`; UV scale=[9, 9], offset=[0, -8] | t14→i14 `asphalt_01_rough_2k`; UV scale=[9, 9], offset=[0, -8] | t12→i12 `asphalt_01_nor_gl_2k`; UV scale=[9, 9], offset=[0, -8]; strength=0.8500000238418579 | — |
-| 8 `PBR_B_GRASS` | t16→i16 `leafy_grass_diff_2k`; UV scale=[8, 8], offset=[0, -7] | t17→i17 `leafy_grass_rough_2k`; UV scale=[8, 8], offset=[0, -7] | t15→i15 `leafy_grass_nor_gl_2k`; UV scale=[8, 8], offset=[0, -7]; strength=0.800000011920929 | — |
-| 9 `PBR_B_WOOD` | t19→i19 `american_walnut_veneer_diff_2k`; UV scale=[2, 5], offset=[0, -4] | t20→i20 `american_walnut_veneer_rough_2k`; UV scale=[2, 5], offset=[0, -4] | t18→i18 `american_walnut_veneer_nor_gl_2k`; UV scale=[2, 5], offset=[0, -4]; strength=0.5799999833106995 | — |
-| 10 `V10_BRUSHED_CONCRETE` | t22→i7 `brushed_concrete_04_diff_2k`; UV scale=[5, 5], offset=[0, -4] | t23→i8 `brushed_concrete_04_rough_2k`; UV scale=[5, 5], offset=[0, -4] | t21→i6 `brushed_concrete_04_nor_gl_2k`; UV scale=[5, 5], offset=[0, -4]; strength=0.36000001430511475 | — |
-| 14 `V10_ENTRY_WOOD` | t25→i19 `american_walnut_veneer_diff_2k`; UV scale=[7, 7], offset=[0, -6] | t26→i20 `american_walnut_veneer_rough_2k`; UV scale=[7, 7], offset=[0, -6] | t24→i18 `american_walnut_veneer_nor_gl_2k`; UV scale=[7, 7], offset=[0, -6]; strength=0.2800000011920929 | — |
-| 15 `V10_STUCCO_NEW_BUILD` | t28→i1 `white_stucco_diff_2k`; UV scale=[6, 6], offset=[0, -5] | t29→i2 `white_stucco_rough_2k`; UV scale=[6, 6], offset=[0, -5] | t27→i0 `white_stucco_nor_gl_2k`; UV scale=[6, 6], offset=[0, -5]; strength=0.23999999463558197 | — |
-| 17 `V10_GRAVEL` | t31→i22 `gravel_diff_2k`; UV scale=[6, 6], offset=[0, -5] | t32→i23 `gravel_rough_2k`; UV scale=[6, 6], offset=[0, -5] | t30→i21 `gravel_nor_gl_2k`; UV scale=[6, 6], offset=[0, -5]; strength=0.5 | — |
-| 19 `V10_ASPHALT` | t34→i13 `asphalt_01_diff_2k`; UV scale=[5, 5], offset=[0, -4] | t35→i14 `asphalt_01_rough_2k`; UV scale=[5, 5], offset=[0, -4] | t33→i12 `asphalt_01_nor_gl_2k`; UV scale=[5, 5], offset=[0, -4]; strength=0.4000000059604645 | — |
-| 21 `V12_PBR_BEIGE_COTTON` | t37→i25 `cotton_jersey_diff_2k`; UV scale=[7, 7], offset=[0, -6] | t38→i26 `cotton_jersey_rough_2k`; UV scale=[7, 7], offset=[0, -6] | t36→i24 `cotton_jersey_nor_gl_2k`; UV scale=[7, 7], offset=[0, -6]; strength=0.3499999940395355 | — |
-| 22 `V12_PBR_WHITE_OAK` | t40→i28 `white_oak_veneer_diff_2k`; UV scale=[3, 3], offset=[0, -2] | t41→i29 `white_oak_veneer_rough_2k`; UV scale=[3, 3], offset=[0, -2] | t39→i27 `white_oak_veneer_nor_gl_2k`; UV scale=[3, 3], offset=[0, -2]; strength=0.25999999046325684 | — |
-| 25 `V12_PBR_LIGHT_PORCELAIN` | t43→i4 `floor_tiles_02_diff_2k`; UV scale=[9, 9], offset=[0, -8] | t44→i5 `floor_tiles_02_rough_2k`; UV scale=[9, 9], offset=[0, -8] | t42→i3 `floor_tiles_02_nor_gl_2k`; UV scale=[9, 9], offset=[0, -8]; strength=0.2199999988079071 | — |
-| 28 `V12_PBR_BRUSHED_CONCRETE` | t46→i7 `brushed_concrete_04_diff_2k`; UV scale=[4, 4], offset=[0, -3] | t47→i8 `brushed_concrete_04_rough_2k`; UV scale=[4, 4], offset=[0, -3] | t45→i6 `brushed_concrete_04_nor_gl_2k`; UV scale=[4, 4], offset=[0, -3]; strength=0.18000000715255737 | — |
-| 31 `modern_coffee_table_01.001` | t49→i31 `modern_coffee_table_01_diff_1k` | — | t48→i30 `modern_coffee_table_01_nor_gl_1k` | — |
-| 32 `potted_plant_04` | t52→i33 `potted_plant_04_diff_1k` | t53→i34 `potted_plant_04_arm_1k` | t51→i32 `potted_plant_04_nor_gl_1k` | — |
-| 33 `V17_PBR_FOLIAGE_DEEP` | t54→i35 `v17_foliage_deep` | — | — | — |
-| 34 `V17_PBR_FOLIAGE_FRESH` | t55→i36 `v17_foliage_fresh` | — | — | — |
+| i | Image | Résolution live | Octets live | SHA-256 payload WebP | Ancien JPEG actif | Textures / matériaux actifs |
+|---:|---|---:|---:|---|---|---|
+| 0 | `white_stucco_nor_gl_2k` | 2048×2048 | 537,704 | `00D47A9B0FDD1E09E0CFE4C4D1C5756BAAA8B274841F929D3F6BAADE2B92D82D` | 512×512 JPEG / 12,903 | t0 · m2 V12_PBR_OFFWHITE_STUCCO:normal<br>t27 · m15 V10_STUCCO_NEW_BUILD:normal |
+| 1 | `white_stucco_diff_2k` | 2048×2048 | 150,348 | `65C6FE3D9A78FFFE5D54F7068C2F87B520D69312FB8DB6841ED671FF91108615` | 512×512 JPEG / 6,046 | t1 · m2 V12_PBR_OFFWHITE_STUCCO:base<br>t28 · m15 V10_STUCCO_NEW_BUILD:base |
+| 2 | `white_stucco_rough_2k` | 2048×2048 | 19,038 | `D329EE064A72D3479A9083F7A48F69EAA4A8B0ACDA1424FE7026B02BB7795F66` | 512×512 JPEG / 2,548 | t2 · m2 V12_PBR_OFFWHITE_STUCCO:rough/metal<br>t29 · m15 V10_STUCCO_NEW_BUILD:rough/metal |
+| 3 | `floor_tiles_02_nor_gl_2k` | 2048×2048 | 33,962 | `044A9436906D22D8FD320ECBBF1577E98059CF77A777BE08CD88DC3365A050EC` | 512×512 JPEG / 7,174 | t3 · m3 PBR_B_FLOOR:normal<br>t42 · m25 V12_PBR_LIGHT_PORCELAIN:normal |
+| 4 | `floor_tiles_02_diff_2k` | 2048×2048 | 154,188 | `FA5803336B6445066117BC3EB022AF27D5C66B178944DA0639CBCB3AE156034F` | 512×512 JPEG / 20,708 | t4 · m3 PBR_B_FLOOR:base<br>t43 · m25 V12_PBR_LIGHT_PORCELAIN:base |
+| 5 | `floor_tiles_02_rough_2k` | 2048×2048 | 138,314 | `1D358B3CD7D6D75F38CE37F196F810F451C3B28CF57CA985DCDF45BFBE8BBF6B` | 512×512 JPEG / 21,295 | t5 · m3 PBR_B_FLOOR:rough/metal<br>t44 · m25 V12_PBR_LIGHT_PORCELAIN:rough/metal |
+| 6 | `brushed_concrete_04_nor_gl_2k` | 2048×2048 | 684,500 | `A468FED2E241950DC40E9B485ABD710AF2A764A060ABD111219D3677EF08B091` | 512×512 JPEG / 42,600 | t6 · m5 PBR_B_CONCRETE:normal<br>t21 · m10 V10_BRUSHED_CONCRETE:normal<br>t45 · m28 V12_PBR_BRUSHED_CONCRETE:normal |
+| 7 | `brushed_concrete_04_diff_2k` | 2048×2048 | 576,298 | `4541A8FD181FC790539970412B0208B5ECBBB62F2EA0958BBBA12897A8318E32` | 512×512 JPEG / 30,028 | t7 · m5 PBR_B_CONCRETE:base<br>t22 · m10 V10_BRUSHED_CONCRETE:base<br>t46 · m28 V12_PBR_BRUSHED_CONCRETE:base |
+| 8 | `brushed_concrete_04_rough_2k` | 2048×2048 | 78,606 | `CC60F8E1C77D23631CB2778F78550BC4E0F620DC64B4647CE038E013E7FC8F65` | 512×512 JPEG / 6,023 | t8 · m5 PBR_B_CONCRETE:rough/metal<br>t23 · m10 V10_BRUSHED_CONCRETE:rough/metal<br>t47 · m28 V12_PBR_BRUSHED_CONCRETE:rough/metal |
+| 9 | `clay_roof_tiles_02_nor_gl_2k` | 2048×2048 | 400,736 | `2E3E9862AAB84AE93D0C30B9185B1328F2C0AAFCF9A52F1543B2617B7916F43A` | 1024×1024 JPEG / 228,353 | t9 · m6 PBR_B_ROOF:normal |
+| 10 | `clay_roof_tiles_02_diff_2k` | 2048×2048 | 388,540 | `BBBEAD143047E55CD8D7B7DB3AB2A9DE6EBDDCC556FBB33BE23CF1C745E522D1` | 1024×1024 JPEG / 207,755 | t10 · m6 PBR_B_ROOF:base |
+| 11 | `clay_roof_tiles_02_rough_2k` | 2048×2048 | 31,210 | `35281DB73F58E0241A08EA671B87FB4EFD8D7A078A3E79D444ECC445984096E3` | 1024×1024 JPEG / 38,061 | t11 · m6 PBR_B_ROOF:rough/metal |
+| 12 | `asphalt_01_nor_gl_2k` | 2048×2048 | 909,206 | `58FEE453FDB7B82E7FBDFE7CE6D3E0DE95D475259E2D7261CDAEB76CD3678E4D` | 1024×1024 JPEG / 310,248 | t12 · m7 PBR_B_ASPHALT:normal<br>t33 · m19 V10_ASPHALT:normal |
+| 13 | `asphalt_01_diff_2k` | 2048×2048 | 388,102 | `0318AA197F715818C3DFD236AC1E2E38881758FE7C26BDDFAEBF8204D57ECF91` | 1024×1024 JPEG / 153,146 | t13 · m7 PBR_B_ASPHALT:base<br>t34 · m19 V10_ASPHALT:base |
+| 14 | `asphalt_01_rough_2k` | 2048×2048 | 11,974 | `010143F740338D178BEE9DDDE9DDD7253177D3360B200BCB649617C4281445F2` | 1024×1024 JPEG / 9,703 | t14 · m7 PBR_B_ASPHALT:rough/metal<br>t35 · m19 V10_ASPHALT:rough/metal |
+| 15 | `leafy_grass_nor_gl_2k` | 2048×2048 | 1,504,130 | `27E8CE520A4132DD561CC7A567053E83202ADCE7C35ABF49F56956E64051AADD` | 1024×1024 JPEG / 420,868 | t15 · m8 PBR_B_GRASS:normal |
+| 16 | `leafy_grass_diff_2k` | 2048×2048 | 1,011,820 | `64206D056511DE99E781DC82AFBC5ABEF9651205A27AC0ED889C83C6278848E3` | 1024×1024 JPEG / 317,207 | t16 · m8 PBR_B_GRASS:base |
+| 17 | `leafy_grass_rough_2k` | 2048×2048 | 61,420 | `A01243FDED9287BA07123D2405C4428CEA2C3ECE5388A61DB7A2CF4FD8E27578` | 1024×1024 JPEG / 36,745 | t17 · m8 PBR_B_GRASS:rough/metal |
+| 18 | `american_walnut_veneer_nor_gl_2k` | 2048×2048 | 35,670 | `E83D0367F3DE80797C62E6AD2AEA6097B7C49F97A3E5E0557C038A2D3B2CCD4F` | 512×512 JPEG / 4,589 | t18 · m9 PBR_B_WOOD:normal<br>t24 · m14 V10_ENTRY_WOOD:normal |
+| 19 | `american_walnut_veneer_diff_2k` | 2048×2048 | 192,060 | `470E15C6A41ECEE17B7F9C25024CD980662935138D8F939A189BFBF8B00EA003` | 512×512 JPEG / 17,354 | t19 · m9 PBR_B_WOOD:base<br>t25 · m14 V10_ENTRY_WOOD:base |
+| 20 | `american_walnut_veneer_rough_2k` | 2048×2048 | 351,456 | `830E3E07FE2155EA00B8DC45796A7D4139DF377B9C49623378B2E358FEAFB3DE` | 512×512 JPEG / 21,580 | t20 · m9 PBR_B_WOOD:rough/metal<br>t26 · m14 V10_ENTRY_WOOD:rough/metal |
+| 21 | `gravel_nor_gl_2k` | 2048×2048 | 1,319,230 | `8E0409C556B5643219B209968E8EBA935833B10DDCD61580923CBFAD9F733C87` | 1024×1024 JPEG / 459,912 | t30 · m17 V10_GRAVEL:normal |
+| 22 | `gravel_diff_2k` | 2048×2048 | 430,502 | `956AC9EE371120EFE510A4360C54A4D6C6B5DB89974049454A75692316C4D994` | 1024×1024 JPEG / 219,000 | t31 · m17 V10_GRAVEL:base |
+| 23 | `gravel_rough_2k` | 2048×2048 | 34,192 | `ACB8EE0E7480986503A2D61E86A9E6F7B0D88C62F02FB031FF3F87291CDD5EE5` | 1024×1024 JPEG / 27,346 | t32 · m17 V10_GRAVEL:rough/metal |
+| 24 | `cotton_jersey_nor_gl_2k` | 2048×2050 | 240,428 | `24966716F403B7A66680151C701946E1D3530045CDB1E5B7A5636755F1DFD4C1` | 512×512 JPEG / 2,939 | t36 · m21 V12_PBR_BEIGE_COTTON:normal |
+| 25 | `cotton_jersey_diff_2k` | 2048×2050 | 411,170 | `6832EDF8DF81DB15E73EE923DE12DD804A260AF1E27837785DECF480702FE4F7` | 512×512 JPEG / 5,118 | t37 · m21 V12_PBR_BEIGE_COTTON:base |
+| 26 | `cotton_jersey_rough_2k` | 2048×2050 | 950,082 | `3D86B2EA176A6730234435BC8862C49A0A3C076A71EBA74DB3E140434964A5D8` | 512×512 JPEG / 14,427 | t38 · m21 V12_PBR_BEIGE_COTTON:rough/metal |
+| 27 | `white_oak_veneer_nor_gl_2k` | 2048×2048 | 150,660 | `4D040277FECE19B7343842E12E3F1920E834D0E98BBECACF4D4E9BBCA240A04C` | 512×512 JPEG / 9,632 | t39 · m22 V12_PBR_WHITE_OAK:normal |
+| 28 | `white_oak_veneer_diff_2k` | 2048×2048 | 214,838 | `354C22E28A3B5BB172A14F9A02F90F2F5C39516480990BEC5E056FD662E8B1DB` | 512×512 JPEG / 19,124 | t40 · m22 V12_PBR_WHITE_OAK:base |
+| 29 | `white_oak_veneer_rough_2k` | 2048×2048 | 102,822 | `509C00EF7FB0C54C1B991A04B6184138D7F76EEB053C423E458CF0F0A7DEA530` | 512×512 JPEG / 8,926 | t41 · m22 V12_PBR_WHITE_OAK:rough/metal |
+| 30 | `modern_coffee_table_01_nor_gl_1k` | 1024×1024 | 9,598 | `734B2FCB591EF8CE76413FB9C378431DAC2A851C9F2EF5B300FD07A77356FC8A` | 512×512 JPEG / 5,644 | t48 · m31 modern_coffee_table_01.001:normal |
+| 31 | `modern_coffee_table_01_diff_1k` | 1024×1024 | 28,144 | `FA3E4BD88A241F14F0DF35E79E9DA278C460996B3E2BC98CA721FE2E7C8CDE15` | 512×512 JPEG / 15,246 | t49 · m31 modern_coffee_table_01.001:base |
+| 32 | `potted_plant_04_nor_gl_1k` | 1024×1024 | 132,176 | `81F2082AFB0A6C77BD9F5AC795BE12C5FAC1119D38FF3C64597AD9AD7CF8786A` | 512×512 JPEG / 45,157 | t51 · m32 potted_plant_04:normal |
+| 33 | `potted_plant_04_diff_1k` | 1024×1024 | 72,792 | `E95B133032CC2099029F652B26D4253A53A30DC3B7D681A34890829C5B81C6D7` | 512×512 JPEG / 36,667 | t52 · m32 potted_plant_04:base |
+| 34 | `potted_plant_04_arm_1k` | 1024×1024 | 41,082 | `11C93EF226630F29817A38D16D0EE18FBDA771A4F0558B580725E3FE12B583D1` | 512×512 JPEG / 23,605 | t53 · m32 potted_plant_04:rough/metal |
+| 35 | `v17_foliage_deep` | 256×256 | 3,018 | `B9E8B4D56661FBFFD5DE2A3222573F0251BD120EE074BD00BA9ACFF74883EC68` | 256×256 JPEG / 5,169 | t54 · m33 V17_PBR_FOLIAGE_DEEP:base |
+| 36 | `v17_foliage_fresh` | 256×256 | 3,406 | `35E265FDD61230E6EF86790E964FE1861DBF02AB777548E018E5E6FF7C5D5E79` | 256×256 JPEG / 5,696 | t55 · m34 V17_PBR_FOLIAGE_FRESH:base |
 
-## Sampler et canaux absents
+## Correction t50
 
-- Sampler unique : `magFilter=9729` (LINEAR), `minFilter=9987` (LINEAR_MIPMAP_LINEAR); `wrapS`/`wrapT` omis, donc valeur glTF par défaut REPEAT.
-- Aucun matériau n’utilise `occlusionTexture` ni `emissiveTexture`. Les sets appelés PBR sont essentiellement base color + roughness/metallic + normal; le coffee table n’a que base color + normal; les feuillages n’ont que base color.
-- Les JPEG sont avec pertes et sans alpha. Les matériaux de feuillage V17 sont `OPAQUE`; les arbres/haies ne peuvent donc pas obtenir des silhouettes de feuilles par cutout alpha à partir de ces deux images.
+Le master liait `materials[31].pbrMetallicRoughness.metallicRoughnessTexture.index=50`, mais `textures[50]` ne possède ni `source` core ni `EXT_texture_webp.source`. Le nouveau modèle supprime ce seul binding. `texture[50]` reste un objet mort non lié; tous les 55 bindings restants résolvent une image WebP valide.
 
-## Images WebP du site ≠ textures 3D
+## Statut HTTP
 
-- Le worktree contient **14 WebP autonomes** (`images/`, `shared/gallery/`, `shared/preview.webp`). Ils ne sont pas référencés par le JSON du GLB.
-- `shared/preview.webp` sert uniquement au fond de chargement CSS. Les fichiers `shared/gallery/*.webp` et `images/*.webp` sont des rendus raster présentés par la galerie/README.
-- Par conséquent, les « belles images » de galerie ne constituent pas des maps appliquées à la maison interactive. Leur éclairage, post-traitement et ombres déjà calculés ne sont pas transférés au viewer en chargeant le GLB. Le nouveau viewer ajoute une IBL PMREM procédurale, mais elle ne recrée pas exactement le moteur ni le décor lumineux des rendus de galerie.
+| Ressource | URL runtime | Requête requise | Statut structurel |
+|---|---|---:|---|
+| Modèle + 37 images | `shared/Chamagnieu_V18_REALISM_FINAL_WEBP.glb?release=v18-live-sync-4` | 1 | publié; HTTP 200; 25,169,320 octets; SHA public vérifié |
+| Sidecars textures | aucun | 0 | non applicable |
+| Galerie Blender | `shared/gallery/*.webp?release=v18-live-sync-4` | 9 images statiques | distincte du GLB |
 
-## Limites
-
-- Cette analyse prouve l’intégration binaire, les dimensions et les liaisons glTF. Elle ne mesure pas la fidélité colorimétrique de chaque JPEG ni la qualité visuelle finale sous tous les GPU.
-- La présence d’UV sur chaque primitive ne garantit pas une bonne densité texel, l’absence d’étirement ou une orientation artistique correcte; une inspection rendue est requise pour cela.
+Vérification publique du 16 août 2026: le modèle GitHub Pages répond HTTP 200, `Content-Type: model/gltf-binary`, taille 25,169,320 et SHA-256 `69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE`. Cette preuve HTTP confirme le binaire publié; elle ne présente pas la galerie Blender comme preuve de texture live.

@@ -1,74 +1,50 @@
-# Comparaison présentation, références Blender et rendu live
+# Comparaison V18 — présentation, avant/après et viewer public
 
-## Statut
+## Règle de provenance
 
-**`PARTIAL`** : la synchronisation technique du viewer est validée localement, la provenance est maintenant explicite et l’éclairage Web est amélioré. Le résultat live reste visiblement moins réaliste que les références Blender/D5.
+- **`SOURCE = LIVE WEB VIEWER`** : capture réelle du canvas Three.js.
+- **`SOURCE = BLENDER`** : rendu de référence précalculé.
+- Aucun rendu D5 n’est présenté comme résultat live.
 
-## Deux comparaisons différentes
+## Comparaisons finales
 
-### 1. Avant / après — même `LIVE WEB VIEWER`
+| Vue | Blender vs viewer public | Avant JPEG vs après WebP |
+|---|---|---|
+| Façade | [`comparison-facade-blender-vs-live.png`](./comparison-facade-blender-vs-live.png) | [`before-after-facade-live.png`](./before-after-facade-live.png) |
+| Jardin | [`comparison-garden-blender-vs-live.png`](./comparison-garden-blender-vs-live.png) | [`before-after-garden-live.png`](./before-after-garden-live.png) |
+| Intérieur | [`comparison-interior-blender-vs-live.png`](./comparison-interior-blender-vs-live.png) | [`before-after-interior-live.png`](./before-after-interior-live.png) |
 
-Les montages `compare-before-after-*` comparent la même scène Three.js et les mêmes cadrages avant/après la centralisation du pipeline. Ils isolent surtout l’effet de l’IBL PMREM, d’ACES, de l’exposition abaissée, des ombres desktop et de l’anisotropie.
+Chaque montage porte ses sources directement dans l’image. Les moitiés droites
+proviennent du viewer GitHub Pages public `V18-LIVE-SYNC-4` et du GLB
+`Chamagnieu_V18_REALISM_FINAL_WEBP.glb`.
 
-![Façade avant et après](./compare-before-after-facade.png)
+## Causes exactes des écarts
 
-![Jardin avant et après](./compare-before-after-jardin.png)
-
-![Intérieur avant et après](./compare-before-after-interieur.png)
-
-### 2. Référence / résultat — sources volontairement différentes
-
-Les montages `reference-vs-live-*` ne prétendent pas être des captures du même moteur. La moitié gauche est étiquetée **`RÉFÉRENCE — BLENDER`** ; la moitié droite est étiquetée **`RÉSULTAT — LIVE WEB VIEWER`**.
-
-![Référence Blender et résultat live de la façade](./reference-vs-live-facade.png)
-
-![Référence Blender et résultat live du jardin](./reference-vs-live-jardin.png)
-
-![Référence Blender et résultat live de l’intérieur](./reference-vs-live-interieur.png)
-
-## Résultats par vue
-
-| Vue | Correction réellement obtenue | Différence encore visible | Cause exacte dominante |
+| Vue | Ce que la Sync-4 corrige | Écart restant | Cause mesurée |
 |---|---|---|---|
-| Façade | toit/sol plus contrastés, ombres et filtrage oblique améliorés, modèle/release sourcés | tuiles moins profondes, fond et enduits plus plats, géométrie générale plus simple | PMREM procédurale au lieu d’une HDRI/D5 ; pans de toit à 6 triangles ; pas d’AO |
-| Jardin | ombres au sol, verts un peu moins délavés, quatre arbres et dix-huit haies confirmés | canopées rondes, haies en blocs, faible micro-détail botanique | végétation low-poly ; deux JPEG 256² base-color-only sans alpha/normal/roughness |
-| Intérieur | exposition réduite, sol et bois plus lisibles, pipeline identique à la visite | canapé/chaises très pâles, contacts faibles, mobilier parfois procédural | 15/35 matériaux sans texture ; aucune AO/emissive ; lumières intérieures Blender non reproduites ; topologie simplifiée |
+| Façade | 37 WebP du master, jusqu’à 2048 px ; anisotropie 8 ; IBL PMREM | relief et fond moins riches que Blender | Three.js n’embarque ni HDRI Blender, ni AO, ni post-traitement Eevee ; grands pans de toit très simples |
+| Jardin | même texture herbe que le master, 4 arbres et 18 haies confirmés | arbres ronds et haies en blocs | géométrie réellement low-poly du master ; feuillage 256 px baseColor-only, opaque, sans normal/roughness |
+| Intérieur | bois, sol, enduit et textiles ne sont plus réduits à 512 px JPEG | contacts et certains meubles restent plats | 15/35 matériaux sans map ; aucun AO/emissive ; 155 nœuds de mobilier procéduraux/non sourcés |
 
-## Provenance des fichiers
+## Avant et après
 
-| Fichier ou page | Provenance à lire |
-|---|---|
-| `before-facade.png`, `before-jardin.png`, `before-interieur.png` | ancienne capture `LIVE WEB VIEWER` |
-| `after-facade.png`, `after-jardin.png`, `after-interieur.png` | capture locale réelle `LIVE WEB VIEWER`, release `V18-LIVE-SYNC-2`; la release 3 ne change aucun réglage visuel |
-| `compare-before-after-*.png` | live Web avant à gauche, live Web après à droite |
-| `reference-vs-live-*.png` | référence Blender à gauche, vrai viewer Web à droite |
-| `/` et `/rapide/` | images statiques, badges `SOURCE = BLENDER` |
-| `/presentation/` et `/visite/` | canvas interactif, badge `SOURCE = LIVE WEB VIEWER` |
-
-Les images WebP de la galerie sont des rendus pré-calculés. Elles ne sont pas référencées par le JSON glTF et ne constituent pas les textures appliquées à la maison. Le GLB contient ses propres 37 JPEG embarqués.
-
-## Preuves runtime associées
-
-- `../../validation/live-browser-validation.json` : cinq routes testées, titres/sources/version/modèle observés.
-- `../browser-console.txt` : URLs chargées, runtime avant et section `MODIFIED FINAL`.
-- `../network-errors.txt` : contrôles réseau avant et final.
-- `../live-lighting.md` : réglages d’éclairage, couverture matérielle et limites.
-- `../texture-path-report.md` : inventaire des 37 images intégrées et absence de chemins texture externes.
-- `../live-materials.md` : 35 matériaux, 501 liaisons texturées et géométrie des assets.
-
-## Verdict honnête
+L’ancien GLB public avait la même géométrie mais convertissait 23 images en
+JPEG 512 px et 12 images en JPEG 1024 px. Il conservait en plus
+`11 803 422` octets de WebP devenus orphelins. La Sync-4 restaure exactement
+les `37` WebP du master et retire seulement le binding invalide
+`material[31] → texture[50]`.
 
 ```text
-VERSION_AND_MODEL_SYNC=PASS_PUBLIC_HTTP
-PRESENTATION_AND_VISITE_PIPELINE_SYNC=PASS_PUBLIC_HTTP
-SOURCE_PROVENANCE_LABELS=PASS
-TEXTURE_DELIVERY=PASS_PUBLIC_HTTP
-LIVE_VISUAL_IMPROVEMENT=YES
+SOURCE_AVANT=LIVE WEB VIEWER release V18-LIVE-SYNC-3
+SOURCE_APRES=LIVE WEB VIEWER PUBLIC release V18-LIVE-SYNC-4
+SOURCE_REFERENCE=BLENDER
+GEOMETRY_CHANGED=NO
+TEXTURE_PIXEL_RETENTION_BEFORE=14.28%
+TEXTURE_PIXEL_RETENTION_AFTER=100%
 LIVE_MATCHES_BLENDER_D5=NO
-PUBLIC_RUNTIME_VERIFIED=YES_HTTP
-LIVE_SCREENSHOT_RELEASE=V18-LIVE-SYNC-2
-FINAL_PUBLIC_RELEASE=V18-LIVE-SYNC-3
 FINAL_STATUS=PARTIAL
 ```
 
-Le viewer affiche désormais ce qu’il charge réellement et les comparaisons ne présentent plus un rendu Blender comme résultat live. La prochaine amélioration photoréaliste exige des changements d’assets et de rendu — HDRI réelle, AO, matériaux supplémentaires, végétation et géométrie plus détaillées — et non un simple changement de lien ou de cache.
+Le statut reste **PARTIAL** : la livraison, la version et les textures sont
+maintenant correctes, tandis que la végétation, une partie du mobilier et le
+pipeline lumineux restent intrinsèquement moins réalistes que Blender/D5.

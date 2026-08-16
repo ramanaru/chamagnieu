@@ -1,0 +1,857 @@
+{
+  "auditedAt": "2026-08-16T08:03:13.591Z",
+  "base": "https://ramanaru.github.io/chamagnieu/",
+  "pages": {
+    "/": {
+      "url": "https://ramanaru.github.io/chamagnieu/?release=v18-live-sync-4&proof=public-final",
+      "title": "Maison de Chamagnieu V18 — source Web vérifiée",
+      "body": "VERSION V18 · V18-LIVE-SYNC-4\n\nMaison neuve de Chamagnieu\n\nLa visite interactive charge maintenant une configuration centrale et un seul modèle GLB V18 nommé et versionné. Les images Blender ci-dessous restent des références de présentation clairement séparées des captures du viewer Web.\n\nVérité live : ouvrez « Présentation 3D live » ou « Commencer dehors » ; le badge SOURCE = LIVE WEB VIEWER identifie le vrai rendu navigateur.\n\nCommencer dehors et entrer\nPrésentation 3D live\nGalerie Blender sourcée\nRapport de synchronisation\nDonnées JSON\nDépôt lisible par GPT\nSOURCE = BLENDER\nFaçade et toiture : rendu de référence, distinct du viewer Web.\nSOURCE = BLENDER\nJardin et façade arrière : rendu de référence, distinct du viewer Web.\nÉtat synchronisé de la V18\nConfiguration centrale : shared/project-config.json.\nModèle live : Chamagnieu_V18_REALISM_FINAL_WEBP.glb, version WebP haute définition du master V18 ; seul le binding de texture invalide t50 a été retiré, sans changement de géométrie.\n37 textures WebP intégrées jusqu’à 2048 px ; aucune texture externe silencieusement absente.\nÉclairage Web corrigé par IBL procédural PMREM, ACES et ombres desktop.\nLa visite commence à l’extérieur et permet d’entrer dans la maison.\n\nAudit détaillé · Verdict final",
+      "dataset": {
+        "projectConfig": "./shared/project-config.json",
+        "projectVersion": "V18",
+        "projectRelease": "V18-LIVE-SYNC-4"
+      },
+      "version": "V18",
+      "release": "V18-LIVE-SYNC-4",
+      "model": "./Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+      "source": "LIVE WEB VIEWER",
+      "ready": true,
+      "viewerError": null,
+      "config": {
+        "schemaVersion": 1,
+        "version": "V18",
+        "release": "V18-LIVE-SYNC-4",
+        "cacheKey": "v18-live-sync-4",
+        "model": "./Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+        "modelSha256": "69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE",
+        "modelBytes": 25169320,
+        "houseData": "../house.json",
+        "viewerSource": "LIVE WEB VIEWER",
+        "gallerySource": "BLENDER",
+        "materials": {
+          "embedded": true,
+          "externalTextureCount": 0,
+          "runtimeTuning": "shared/live-realism.js",
+          "codec": "WebP",
+          "maxTextureResolution": "2048px desktop source; 1024px and 256px retained where present",
+          "correctedBinding": "/materials/31/pbrMetallicRoughness/metallicRoughnessTexture removed (invalid texture 50)"
+        },
+        "assets": {
+          "trees": 4,
+          "hedges": 18,
+          "outdoorDiningNodes": 0
+        },
+        "lighting": {
+          "environment": "procedural PMREM IBL",
+          "toneMapping": "ACESFilmic",
+          "exposure": 0.92,
+          "hemisphereIntensity": 0.72,
+          "ambientIntensity": 0.06,
+          "directionalIntensity": 2.4,
+          "shadows": "desktop",
+          "fillIntensity": 0.22,
+          "environmentIntensity": 0.85
+        },
+        "presentationImages": [
+          "./gallery/v18-facade-roof-ground.webp",
+          "./gallery/v18-jardin-textures.webp"
+        ],
+        "modelProfile": {
+          "variant": "corrected-high-resolution-WebP",
+          "sourceMasterSha256": "97F842001CC77E65637271172D09A81043FFFDF3235591DCB1AFF0BA96D67DA0",
+          "legacyDownsampledJpegSha256": "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28",
+          "geometryChanged": false,
+          "texturePixelRetentionVsMaster": "100%",
+          "invalidTextureBindingRemoved": 50
+        }
+      },
+      "audit": null,
+      "brokenImages": [],
+      "images": [
+        {
+          "src": "https://ramanaru.github.io/chamagnieu/images/v18-facade-roof-ground.webp",
+          "w": 960,
+          "h": 720,
+          "complete": true
+        },
+        {
+          "src": "https://ramanaru.github.io/chamagnieu/images/v18-jardin-textures.webp",
+          "w": 960,
+          "h": 720,
+          "complete": true
+        }
+      ],
+      "resources": [
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/images/v18-facade-roof-ground.webp",
+          "status": 200,
+          "size": 73898,
+          "kind": "img"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/page-version.js?release=v18-live-sync-4",
+          "status": 200,
+          "size": 329,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/images/v18-jardin-textures.webp",
+          "status": 200,
+          "size": 60108,
+          "kind": "img"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/project-config.js?release=v18-live-sync-4",
+          "status": 200,
+          "size": 1301,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/project-config.json",
+          "status": 200,
+          "size": 1610,
+          "kind": "fetch"
+        }
+      ],
+      "sw": [],
+      "caches": [],
+      "logs": []
+    },
+    "/presentation/": {
+      "url": "https://ramanaru.github.io/chamagnieu/presentation/?release=v18-live-sync-4&proof=public-final",
+      "title": "Chamagnieu V18 — Toiture, sols et textures corrigés",
+      "body": "Chamagnieu V18 · modèle Web synchronisé\n\nToitures complètes en tuiles PBR, pelouse, enrobé, gravier, arbres et haies sont visibles; la table extérieure parasite a été retirée. Glissez pour tourner, pincez ou utilisez la molette pour zoomer.\n\nFaçade texturée\nVue générale\nJardin / arbres\nSol extérieur\nCuisine\nSéjour\nÉtage / portes\nMasquer les meubles\nCommencer dehors et entrer\nGalerie instantanée\nSOURCE = LIVE WEB VIEWER\nFaçade et toiture — vraie scène Web V18 · SOURCE = LIVE WEB VIEWER",
+      "dataset": {
+        "projectConfig": "../shared/project-config.json",
+        "projectVersion": "V18",
+        "projectRelease": "V18-LIVE-SYNC-4",
+        "viewerVersion": "V18",
+        "viewerRelease": "V18-LIVE-SYNC-4",
+        "viewerModel": "Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+        "viewerSource": "LIVE WEB VIEWER",
+        "viewerReady": "true",
+        "viewerMeshes": "795",
+        "viewerMaterials": "35",
+        "viewerTextures": "71",
+        "viewerFurnitureMeshes": "169",
+        "viewerFurnitureVisible": "true"
+      },
+      "version": "V18",
+      "release": "V18-LIVE-SYNC-4",
+      "model": "https://ramanaru.github.io/chamagnieu/shared/Chamagnieu_V18_REALISM_FINAL_WEBP.glb?release=v18-live-sync-4",
+      "source": "LIVE WEB VIEWER",
+      "ready": true,
+      "webgl2": true,
+      "viewerError": null,
+      "config": {
+        "schemaVersion": 1,
+        "version": "V18",
+        "release": "V18-LIVE-SYNC-4",
+        "cacheKey": "v18-live-sync-4",
+        "model": "./Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+        "modelSha256": "69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE",
+        "modelBytes": 25169320,
+        "houseData": "../house.json",
+        "viewerSource": "LIVE WEB VIEWER",
+        "gallerySource": "BLENDER",
+        "materials": {
+          "embedded": true,
+          "externalTextureCount": 0,
+          "runtimeTuning": "shared/live-realism.js",
+          "codec": "WebP",
+          "maxTextureResolution": "2048px desktop source; 1024px and 256px retained where present",
+          "correctedBinding": "/materials/31/pbrMetallicRoughness/metallicRoughnessTexture removed (invalid texture 50)"
+        },
+        "assets": {
+          "trees": 4,
+          "hedges": 18,
+          "outdoorDiningNodes": 0
+        },
+        "lighting": {
+          "environment": "procedural PMREM IBL",
+          "toneMapping": "ACESFilmic",
+          "exposure": 0.92,
+          "hemisphereIntensity": 0.72,
+          "ambientIntensity": 0.06,
+          "directionalIntensity": 2.4,
+          "shadows": "desktop",
+          "fillIntensity": 0.22,
+          "environmentIntensity": 0.85
+        },
+        "presentationImages": [
+          "./gallery/v18-facade-roof-ground.webp",
+          "./gallery/v18-jardin-textures.webp"
+        ],
+        "modelProfile": {
+          "variant": "corrected-high-resolution-WebP",
+          "sourceMasterSha256": "97F842001CC77E65637271172D09A81043FFFDF3235591DCB1AFF0BA96D67DA0",
+          "legacyDownsampledJpegSha256": "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28",
+          "geometryChanged": false,
+          "texturePixelRetentionVsMaster": "100%",
+          "invalidTextureBindingRemoved": 50
+        }
+      },
+      "audit": {
+        "meshes": 795,
+        "uniqueMaterials": 35,
+        "uniqueTextures": 71,
+        "texturedMaterialBindings": 501,
+        "anisotropy": 8,
+        "environment": "procedural PMREM IBL",
+        "environmentIntensity": 0.85,
+        "shadows": "PCFSoft-2048"
+      },
+      "brokenImages": [],
+      "images": [],
+      "resources": [
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/viewer.css?release=v18-live-sync-4",
+          "status": 200,
+          "size": 4547,
+          "kind": "link"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/presentation/presentation.js?release=v18-live-sync-4",
+          "status": 200,
+          "size": 6800,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/vendor/three.module.js",
+          "status": 200,
+          "size": 603380,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/vendor/addons/controls/OrbitControls.js",
+          "status": 200,
+          "size": 38703,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/vendor/addons/loaders/GLTFLoader.js",
+          "status": 200,
+          "size": 114649,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/project-config.js?release=v18-live-sync-4",
+          "status": 200,
+          "size": 1301,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/live-realism.js?release=v18-live-sync-4",
+          "status": 200,
+          "size": 4110,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/vendor/three.core.js",
+          "status": 200,
+          "size": 1401321,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/vendor/addons/utils/BufferGeometryUtils.js",
+          "status": 200,
+          "size": 35538,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/project-config.json",
+          "status": 200,
+          "size": 1610,
+          "kind": "fetch"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/preview.webp",
+          "status": 200,
+          "size": 13724,
+          "kind": "css"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/Chamagnieu_V18_REALISM_FINAL_WEBP.glb?release=v18-live-sync-4",
+          "status": 200,
+          "size": 25169320,
+          "kind": "fetch"
+        }
+      ],
+      "sw": [],
+      "caches": [],
+      "logs": []
+    },
+    "/visite/": {
+      "url": "https://ramanaru.github.io/chamagnieu/visite/?release=v18-live-sync-4&proof=public-final",
+      "title": "Chamagnieu V18 — Visite extérieure et intérieure",
+      "body": "Visite libre · Chamagnieu V18\n\nLa visite commence dehors avec les textures et la végétation restaurées. Cliquez « Commencer dehors », puis avancez vers la porte avec ZQSD/WASD ou le pavé tactile.\n\nCommencer dehors\nRevenir dehors\nJardin / arbres\nCuisine\nSéjour\nEscalier\nPalier\nChambre 1\nChambre 2\nChambre 3\nSDB nord\nSDB sud\nMasquer les meubles\nVue présentation\nGalerie instantanée\nZQSD / WASD : marcher · Maj : accélérer · E / C : monter / descendre · Échap : libérer la souris\nSOURCE = LIVE WEB VIEWER\nDépart réellement extérieur — avancez vers la porte pour entrer · SOURCE = LIVE WEB VIEWER",
+      "dataset": {
+        "projectConfig": "../shared/project-config.json",
+        "projectVersion": "V18",
+        "projectRelease": "V18-LIVE-SYNC-4",
+        "viewerVersion": "V18",
+        "viewerRelease": "V18-LIVE-SYNC-4",
+        "viewerModel": "Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+        "viewerSource": "LIVE WEB VIEWER",
+        "viewerReady": "true",
+        "viewerMeshes": "795",
+        "viewerMaterials": "35",
+        "viewerTextures": "71",
+        "viewerFurnitureMeshes": "169",
+        "viewerFurnitureVisible": "true"
+      },
+      "version": "V18",
+      "release": "V18-LIVE-SYNC-4",
+      "model": "https://ramanaru.github.io/chamagnieu/shared/Chamagnieu_V18_REALISM_FINAL_WEBP.glb?release=v18-live-sync-4",
+      "source": "LIVE WEB VIEWER",
+      "ready": true,
+      "viewerError": null,
+      "config": {
+        "schemaVersion": 1,
+        "version": "V18",
+        "release": "V18-LIVE-SYNC-4",
+        "cacheKey": "v18-live-sync-4",
+        "model": "./Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+        "modelSha256": "69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE",
+        "modelBytes": 25169320,
+        "houseData": "../house.json",
+        "viewerSource": "LIVE WEB VIEWER",
+        "gallerySource": "BLENDER",
+        "materials": {
+          "embedded": true,
+          "externalTextureCount": 0,
+          "runtimeTuning": "shared/live-realism.js",
+          "codec": "WebP",
+          "maxTextureResolution": "2048px desktop source; 1024px and 256px retained where present",
+          "correctedBinding": "/materials/31/pbrMetallicRoughness/metallicRoughnessTexture removed (invalid texture 50)"
+        },
+        "assets": {
+          "trees": 4,
+          "hedges": 18,
+          "outdoorDiningNodes": 0
+        },
+        "lighting": {
+          "environment": "procedural PMREM IBL",
+          "toneMapping": "ACESFilmic",
+          "exposure": 0.92,
+          "hemisphereIntensity": 0.72,
+          "ambientIntensity": 0.06,
+          "directionalIntensity": 2.4,
+          "shadows": "desktop",
+          "fillIntensity": 0.22,
+          "environmentIntensity": 0.85
+        },
+        "presentationImages": [
+          "./gallery/v18-facade-roof-ground.webp",
+          "./gallery/v18-jardin-textures.webp"
+        ],
+        "modelProfile": {
+          "variant": "corrected-high-resolution-WebP",
+          "sourceMasterSha256": "97F842001CC77E65637271172D09A81043FFFDF3235591DCB1AFF0BA96D67DA0",
+          "legacyDownsampledJpegSha256": "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28",
+          "geometryChanged": false,
+          "texturePixelRetentionVsMaster": "100%",
+          "invalidTextureBindingRemoved": 50
+        }
+      },
+      "audit": {
+        "meshes": 795,
+        "uniqueMaterials": 35,
+        "uniqueTextures": 71,
+        "texturedMaterialBindings": 501,
+        "anisotropy": 8,
+        "environment": "procedural PMREM IBL",
+        "environmentIntensity": 0.85,
+        "shadows": "PCFSoft-2048"
+      },
+      "brokenImages": [],
+      "images": [],
+      "resources": [
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/viewer.css?release=v18-live-sync-4",
+          "status": 200,
+          "size": 4547,
+          "kind": "link"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/visite/visite.js?release=v18-live-sync-4",
+          "status": 200,
+          "size": 11495,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/preview.webp",
+          "status": 200,
+          "size": 13724,
+          "kind": "css"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/vendor/three.module.js",
+          "status": 200,
+          "size": 603380,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/vendor/addons/controls/PointerLockControls.js",
+          "status": 200,
+          "size": 6073,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/vendor/addons/loaders/GLTFLoader.js",
+          "status": 200,
+          "size": 114649,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/project-config.js?release=v18-live-sync-4",
+          "status": 200,
+          "size": 1301,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/live-realism.js?release=v18-live-sync-4",
+          "status": 200,
+          "size": 4110,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/vendor/three.core.js",
+          "status": 200,
+          "size": 1401321,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/vendor/addons/utils/BufferGeometryUtils.js",
+          "status": 200,
+          "size": 35538,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/project-config.json",
+          "status": 200,
+          "size": 1610,
+          "kind": "fetch"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/Chamagnieu_V18_REALISM_FINAL_WEBP.glb?release=v18-live-sync-4",
+          "status": 200,
+          "size": 25169320,
+          "kind": "fetch"
+        }
+      ],
+      "sw": [],
+      "caches": [],
+      "logsBeforeStart": [],
+      "afterStart": {
+        "p": [
+          1.941,
+          1.65,
+          -15.173
+        ],
+        "t": [
+          -1.436,
+          1.4,
+          -0.663
+        ],
+        "preset": "outside",
+        "mode": "keyboard-drag-fallback",
+        "reason": "WrongDocumentError",
+        "locked": false,
+        "status": "Mode souris-glisser actif · utilisez ZQSD/WASD pour entrer · SOURCE = LIVE WEB VIEWER"
+      },
+      "movement": {
+        "presses": 80,
+        "beforeSha256": "31aeeec1171c692383b09d3549437de07b44744764bcf3f854c63dec864fe669",
+        "afterSha256": "20d79f3a16a820fd79467028747256aef9e9481c1abb56919dcf5e1c048e9275",
+        "visualChanged": true
+      },
+      "logsAfterStart": [],
+      "garden": {
+        "p": [
+          -12.5,
+          1.65,
+          -17.2
+        ],
+        "t": [
+          -4.2,
+          1.45,
+          -11.86
+        ],
+        "preset": "garden",
+        "status": "Jardin — 4 arbres, 18 haies et sols du GLB Web · SOURCE = LIVE WEB VIEWER"
+      },
+      "furniture": {
+        "hidden": {
+          "visible": "false",
+          "text": "Afficher les meubles",
+          "meshes": "169"
+        },
+        "shown": {
+          "visible": "true",
+          "text": "Masquer les meubles",
+          "meshes": "169"
+        }
+      }
+    },
+    "/rapide/": {
+      "url": "https://ramanaru.github.io/chamagnieu/rapide/?release=v18-live-sync-4&proof=public-final",
+      "title": "Chamagnieu V18 — Galerie Blender sourcée",
+      "body": "Chamagnieu V18 · galerie de référence\n\nCes images servent à comparer le rendu de présentation avec le vrai viewer. Leur moteur est indiqué sans ambiguïté.\n\nToutes les images de cette page : SOURCE = BLENDER. Pour voir le rendu réellement interactif, ouvrez la 3D live.\n\nOuvrir la 3D live\nCommencer dehors\nLire le verdict\nAccueil\nToiture et haies restaurées\n\nSOURCE = BLENDER\nRéférence Eevee issue de la scène master V18.\n\nJardin, arbres et pelouse\n\nSOURCE = BLENDER\nRéférence Eevee ; la végétation reste volontairement low-poly dans le modèle.\n\nCuisine\n\nSOURCE = BLENDER\nImage de présentation, pas une capture du viewer Web.\n\nSalle à manger\n\nSOURCE = BLENDER\nImage de présentation, pas une capture du viewer Web.\n\nSalon\n\nSOURCE = BLENDER\nImage de présentation, pas une capture du viewer Web.\n\nChambre principale\n\nSOURCE = BLENDER\nImage de présentation, pas une capture du viewer Web.\n\nDeuxième chambre\n\nSOURCE = BLENDER\nImage de présentation, pas une capture du viewer Web.\n\nSalle de bains\n\nSOURCE = BLENDER\nImage de présentation, pas une capture du viewer Web.\n\nVolumes de façade\n\nSOURCE = BLENDER\nImage de présentation, pas une capture du viewer Web.",
+      "dataset": {
+        "projectConfig": "../shared/project-config.json",
+        "projectVersion": "V18",
+        "projectRelease": "V18-LIVE-SYNC-4"
+      },
+      "version": "V18",
+      "release": "V18-LIVE-SYNC-4",
+      "model": "./Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+      "source": "LIVE WEB VIEWER",
+      "ready": true,
+      "viewerError": null,
+      "config": {
+        "schemaVersion": 1,
+        "version": "V18",
+        "release": "V18-LIVE-SYNC-4",
+        "cacheKey": "v18-live-sync-4",
+        "model": "./Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+        "modelSha256": "69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE",
+        "modelBytes": 25169320,
+        "houseData": "../house.json",
+        "viewerSource": "LIVE WEB VIEWER",
+        "gallerySource": "BLENDER",
+        "materials": {
+          "embedded": true,
+          "externalTextureCount": 0,
+          "runtimeTuning": "shared/live-realism.js",
+          "codec": "WebP",
+          "maxTextureResolution": "2048px desktop source; 1024px and 256px retained where present",
+          "correctedBinding": "/materials/31/pbrMetallicRoughness/metallicRoughnessTexture removed (invalid texture 50)"
+        },
+        "assets": {
+          "trees": 4,
+          "hedges": 18,
+          "outdoorDiningNodes": 0
+        },
+        "lighting": {
+          "environment": "procedural PMREM IBL",
+          "toneMapping": "ACESFilmic",
+          "exposure": 0.92,
+          "hemisphereIntensity": 0.72,
+          "ambientIntensity": 0.06,
+          "directionalIntensity": 2.4,
+          "shadows": "desktop",
+          "fillIntensity": 0.22,
+          "environmentIntensity": 0.85
+        },
+        "presentationImages": [
+          "./gallery/v18-facade-roof-ground.webp",
+          "./gallery/v18-jardin-textures.webp"
+        ],
+        "modelProfile": {
+          "variant": "corrected-high-resolution-WebP",
+          "sourceMasterSha256": "97F842001CC77E65637271172D09A81043FFFDF3235591DCB1AFF0BA96D67DA0",
+          "legacyDownsampledJpegSha256": "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28",
+          "geometryChanged": false,
+          "texturePixelRetentionVsMaster": "100%",
+          "invalidTextureBindingRemoved": 50
+        }
+      },
+      "audit": null,
+      "brokenImages": [],
+      "images": [
+        {
+          "src": "https://ramanaru.github.io/chamagnieu/shared/gallery/v18-facade-roof-ground.webp?release=v18-live-sync-4",
+          "w": 960,
+          "h": 720,
+          "complete": true
+        },
+        {
+          "src": "https://ramanaru.github.io/chamagnieu/shared/gallery/v18-jardin-textures.webp?release=v18-live-sync-4",
+          "w": 960,
+          "h": 720,
+          "complete": true
+        },
+        {
+          "src": "https://ramanaru.github.io/chamagnieu/shared/gallery/cuisine.webp?release=v18-live-sync-4",
+          "w": 960,
+          "h": 720,
+          "complete": true
+        },
+        {
+          "src": "https://ramanaru.github.io/chamagnieu/shared/gallery/salle-a-manger.webp?release=v18-live-sync-4",
+          "w": 960,
+          "h": 720,
+          "complete": true
+        },
+        {
+          "src": "https://ramanaru.github.io/chamagnieu/shared/gallery/salon.webp?release=v18-live-sync-4",
+          "w": 960,
+          "h": 720,
+          "complete": true
+        },
+        {
+          "src": "https://ramanaru.github.io/chamagnieu/shared/gallery/chambre.webp?release=v18-live-sync-4",
+          "w": 960,
+          "h": 720,
+          "complete": true
+        },
+        {
+          "src": "https://ramanaru.github.io/chamagnieu/shared/gallery/chambre-2.webp?release=v18-live-sync-4",
+          "w": 960,
+          "h": 720,
+          "complete": true
+        },
+        {
+          "src": "https://ramanaru.github.io/chamagnieu/shared/gallery/sdb.webp?release=v18-live-sync-4",
+          "w": 960,
+          "h": 720,
+          "complete": true
+        },
+        {
+          "src": "https://ramanaru.github.io/chamagnieu/shared/gallery/facade.webp?release=v18-live-sync-4",
+          "w": 960,
+          "h": 720,
+          "complete": true
+        }
+      ],
+      "resources": [
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/gallery/v18-facade-roof-ground.webp?release=v18-live-sync-4",
+          "status": 200,
+          "size": 73898,
+          "kind": "img"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/gallery/v18-jardin-textures.webp?release=v18-live-sync-4",
+          "status": 200,
+          "size": 60108,
+          "kind": "img"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/page-version.js?release=v18-live-sync-4",
+          "status": 200,
+          "size": 329,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/project-config.js?release=v18-live-sync-4",
+          "status": 200,
+          "size": 1301,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/project-config.json",
+          "status": 200,
+          "size": 1610,
+          "kind": "fetch"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/gallery/cuisine.webp?release=v18-live-sync-4",
+          "status": 200,
+          "size": 20192,
+          "kind": "img"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/gallery/salle-a-manger.webp?release=v18-live-sync-4",
+          "status": 200,
+          "size": 21136,
+          "kind": "img"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/gallery/salon.webp?release=v18-live-sync-4",
+          "status": 200,
+          "size": 14544,
+          "kind": "img"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/gallery/chambre.webp?release=v18-live-sync-4",
+          "status": 200,
+          "size": 14842,
+          "kind": "img"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/gallery/chambre-2.webp?release=v18-live-sync-4",
+          "status": 200,
+          "size": 15590,
+          "kind": "img"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/gallery/sdb.webp?release=v18-live-sync-4",
+          "status": 200,
+          "size": 8012,
+          "kind": "img"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/gallery/facade.webp?release=v18-live-sync-4",
+          "status": 200,
+          "size": 52772,
+          "kind": "img"
+        }
+      ],
+      "sw": [],
+      "caches": [],
+      "logs": []
+    },
+    "/gpt/": {
+      "url": "https://ramanaru.github.io/chamagnieu/gpt/?release=v18-live-sync-4&proof=public-final",
+      "title": "Maison de Chamagnieu V18 — accès GPT",
+      "body": "Maison de Chamagnieu V18\n\nCette page lit shared/project-config.json, la même source que les viewers interactifs.\n\nRendu navigateur : SOURCE = LIVE WEB VIEWER\nGalerie de référence : SOURCE = BLENDER\nModèle live : Chamagnieu_V18_REALISM_FINAL_WEBP.glb\n\nOuvrir la page publique · Lire house.json · Lire le rapport live · Lire le dépôt GitHub",
+      "dataset": {
+        "projectConfig": "../shared/project-config.json",
+        "projectVersion": "V18",
+        "projectRelease": "V18-LIVE-SYNC-4"
+      },
+      "version": "V18",
+      "release": "V18-LIVE-SYNC-4",
+      "model": "./Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+      "source": "LIVE WEB VIEWER",
+      "ready": true,
+      "viewerError": null,
+      "config": {
+        "schemaVersion": 1,
+        "version": "V18",
+        "release": "V18-LIVE-SYNC-4",
+        "cacheKey": "v18-live-sync-4",
+        "model": "./Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+        "modelSha256": "69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE",
+        "modelBytes": 25169320,
+        "houseData": "../house.json",
+        "viewerSource": "LIVE WEB VIEWER",
+        "gallerySource": "BLENDER",
+        "materials": {
+          "embedded": true,
+          "externalTextureCount": 0,
+          "runtimeTuning": "shared/live-realism.js",
+          "codec": "WebP",
+          "maxTextureResolution": "2048px desktop source; 1024px and 256px retained where present",
+          "correctedBinding": "/materials/31/pbrMetallicRoughness/metallicRoughnessTexture removed (invalid texture 50)"
+        },
+        "assets": {
+          "trees": 4,
+          "hedges": 18,
+          "outdoorDiningNodes": 0
+        },
+        "lighting": {
+          "environment": "procedural PMREM IBL",
+          "toneMapping": "ACESFilmic",
+          "exposure": 0.92,
+          "hemisphereIntensity": 0.72,
+          "ambientIntensity": 0.06,
+          "directionalIntensity": 2.4,
+          "shadows": "desktop",
+          "fillIntensity": 0.22,
+          "environmentIntensity": 0.85
+        },
+        "presentationImages": [
+          "./gallery/v18-facade-roof-ground.webp",
+          "./gallery/v18-jardin-textures.webp"
+        ],
+        "modelProfile": {
+          "variant": "corrected-high-resolution-WebP",
+          "sourceMasterSha256": "97F842001CC77E65637271172D09A81043FFFDF3235591DCB1AFF0BA96D67DA0",
+          "legacyDownsampledJpegSha256": "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28",
+          "geometryChanged": false,
+          "texturePixelRetentionVsMaster": "100%",
+          "invalidTextureBindingRemoved": 50
+        }
+      },
+      "audit": null,
+      "brokenImages": [],
+      "images": [],
+      "resources": [
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/page-version.js?release=v18-live-sync-4",
+          "status": 200,
+          "size": 329,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/project-config.js?release=v18-live-sync-4",
+          "status": 200,
+          "size": 1301,
+          "kind": "script"
+        },
+        {
+          "name": "https://ramanaru.github.io/chamagnieu/shared/project-config.json",
+          "status": 200,
+          "size": 1610,
+          "kind": "fetch"
+        }
+      ],
+      "sw": [],
+      "caches": [],
+      "logs": []
+    }
+  },
+  "aggregate": {
+    "network": {
+      "/": {
+        "resources": 5,
+        "http200": 5,
+        "failed": 0,
+        "brokenImages": 0,
+        "logs": 0
+      },
+      "/presentation/": {
+        "resources": 12,
+        "http200": 12,
+        "failed": 0,
+        "brokenImages": 0,
+        "logs": 0
+      },
+      "/visite/": {
+        "resources": 12,
+        "http200": 12,
+        "failed": 0,
+        "brokenImages": 0,
+        "logs": 0
+      },
+      "/rapide/": {
+        "resources": 12,
+        "http200": 12,
+        "failed": 0,
+        "brokenImages": 0,
+        "logs": 0
+      },
+      "/gpt/": {
+        "resources": 3,
+        "http200": 3,
+        "failed": 0,
+        "brokenImages": 0,
+        "logs": 0
+      }
+    },
+    "totalResources": 44,
+    "http200": 44,
+    "failed": 0,
+    "brokenImages": 0,
+    "consoleErrorsWarnings": 0,
+    "serviceWorkers": 0,
+    "cacheStorageEntries": 0
+  },
+  "captures": {
+    "facade": "validation/live-v18-facade.png",
+    "garden": "validation/live-v18-garden.png",
+    "interior": "validation/live-v18-interior.png",
+    "source": "LIVE WEB VIEWER",
+    "origin": "PUBLIC GitHub Pages"
+  },
+  "assertions": {
+    "fivePages": true,
+    "versionV18": true,
+    "releaseSync4": true,
+    "modelCorrect": true,
+    "modelBytes": true,
+    "viewerReady": true,
+    "publicWebGL2": true,
+    "outsideExact": true,
+    "fallbackNoConsole": true,
+    "movement": true,
+    "furniture": true,
+    "networkZero": true,
+    "consoleZero": true,
+    "brokenImagesZero": true,
+    "result": "PASS"
+  }
+}

@@ -1,53 +1,14 @@
-CHAMAGNIEU V18 LIVE SYNC — NETWORK ERROR AUDIT
-AUDIT_TIMESTAMP=2026-08-15T18:52:28.464Z
-AUDIT_URL_BASE=http://127.0.0.1:8901/
-PAGES_AUDITED=/, /presentation/, /visite/, /rapide/, /gpt/
-NETWORK_ERRORS=0
-BROWSER_CONSOLE_ERRORS=0
-VIEWER_FAILURES=0
-NON_200_RESOURCE_RESPONSES=0
+PUBLIC_BROWSER_NETWORK_AUDIT
+DATE=2026-08-16T08:03:13.591Z
+SOURCE=PUBLIC GitHub Pages + LIVE WEB VIEWER
+URL=https://ramanaru.github.io/chamagnieu/
+ROOT=resources=5 http_200=5 failed=0
+PRESENTATION=resources=12 http_200=12 failed=0
+VISITE=resources=12 http_200=12 failed=0
+RAPIDE=resources=12 http_200=12 failed=0
+GPT=resources=3 http_200=3 failed=0
+MODEL=https://ramanaru.github.io/chamagnieu/shared/Chamagnieu_V18_REALISM_FINAL_WEBP.glb?release=v18-live-sync-4 status=200 size=25169320
 BROKEN_IMAGES=0
-SERVICE_WORKER_REGISTRATIONS=0
-CACHE_STORAGE_KEYS=0
-RESULT=PASS_NO_NETWORK_ERRORS
-DETAIL=All observed navigation and resource timing entries returned HTTP 200; both viewers reached window.__viewerReady=true; all nine gallery images and both landing images decoded with naturalWidth=960; no console error was recorded.
-=== MODIFIED FINAL — V18-LIVE-SYNC-2 ===
-MODIFIED_FINAL_TIMESTAMP=2026-08-15T19:13:53Z
-NETWORK_TEST_SURFACE=Chrome Chromium Resource Timing + Browser Playwright + CDP Runtime.evaluate
-NETWORK_TEST_BASE_URL=http://127.0.0.1:8896/
-ROUTES=/,/presentation/,/visite/,/rapide/,/gpt/
-NAVIGATION_HTTP_STATUS=/=200;/presentation/=200;/visite/=200;/rapide/=200;/gpt/=200
-NON_200_NAVIGATION_OR_RESOURCE_RESPONSES=0
-BROKEN_IMAGES=0
-PAGE_ORIGIN_CONSOLE_ERRORS=0
-VIEWER_FAILURES=0
-SERVICE_WORKER_REGISTRATIONS=0
-CACHE_STORAGE_KEYS=0
-PRESENTATION_GLTF_STATUS=200
-PRESENTATION_GLTF_BYTES=27987896
-PRESENTATION_GLTF_URL=http://127.0.0.1:8896/shared/Chamagnieu_V18_REALISM_FINAL.glb?release=v18-live-sync-2
-VISITE_GLTF_STATUS=200
-VISITE_GLTF_BYTES=27987896
-VISITE_GLTF_URL=http://127.0.0.1:8896/shared/Chamagnieu_V18_REALISM_FINAL.glb?release=v18-live-sync-2
-PROJECT_CONFIG_STATUS=200
-LIVE_REALISM_STATUS=200
-LITERAL_NETWORK_RESULT=MODIFIED_FINAL_NETWORK_RESULT=PASS_LOCAL routes=5 navigation_200=5 non_200=0 broken_images=0 page_console_errors=0 viewer_failures=0 glb_200=2/2 sw=0 cache_keys=0
-NETWORK_RESULT=PASS_LOCAL_NO_ERRORS
-PUBLIC_NETWORK_VERIFIED=NO
-OVERALL_REALISM_STATUS=PARTIAL
-DETAIL=The final local network path is healthy and both interactive routes load the same release-qualified GLB. This proves delivery and synchronization, not pixel-equivalence with the Blender references or the current public deployment.
-=== FINAL PUBLIC NETWORK — V18-LIVE-SYNC-3 ===
-FINAL_PUBLIC_COMMIT=fbe3696b6db32710c0036890cbef70d34b6ef1bd
-FINAL_PUBLIC_BASE=https://ramanaru.github.io/chamagnieu/
-PAGES_HTTP_200=5/5
-RUNTIME_RESOURCES_HTTP_200=8/8
-GLB_HTTP_200=1/1
-TOTAL_HTTP_200=14
-GLB_BYTES=27987896
-GLB_SHA256=79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28
-GLB_IMAGES_EMBEDDED=37
-GLB_IMAGES_EXTERNAL=0
-FURNITURE_NODES=167
-FURNITURE_RUNTIME_MESHES=169
-LITERAL_PUBLIC_NETWORK_RESULT=V18_RUNTIME_VALIDATION=PASS pages=5 http_200=14 version=V18 release=V18-LIVE-SYNC-3 model=Chamagnieu_V18_REALISM_FINAL.glb model_bytes=27987896 glb_sha256=79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28 materials=35 textures=56 images=37 embedded_images=37 external_images=0 furniture_nodes=167 furniture_runtime_meshes=169
-PUBLIC_NETWORK_RESULT=PASS_NO_ERRORS
+SERVICE_WORKERS=0
+CACHE_STORAGE_ENTRIES=0
+PUBLIC_BROWSER_NETWORK_RESULT=PASS resources=44 http_200=44 failed=0 broken_images=0
