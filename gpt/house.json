@@ -5,42 +5,99 @@
   "language": "fr",
   "public_repository": "https://github.com/ramanaru/chamagnieu",
   "public_page": "https://ramanaru.github.io/chamagnieu/",
-  "description": "Maison V18 avec toiture complète, sols extérieurs restaurés, textures, arbres, haies et visite commençant à l’extérieur.",
+  "description": "Maison V18 live améliorée : matériaux PBR compacts, éclairage Web R2, sols différenciés et végétation CC0 optimisée, avec visite commençant à l’extérieur.",
   "visible_features": [
-    "trois volumes de toiture avec géométrie fermée",
-    "tuiles terre cuite texturées",
-    "pelouse, enrobé et gravier différenciés",
-    "quatre arbres et dix-huit éléments de haie",
-    "table extérieure parasite supprimée",
+    "trois volumes de toiture avec géométrie fermée et tuiles PBR",
+    "pelouse, enrobé, gravier et terrasse différenciés par matériaux PBR",
+    "quatre arbres réels optimisés et dix-huit haies détaillées issues de Poly Haven CC0",
+    "mobilier principal recoloré avec textiles dédiés et sol intérieur jointoyé",
+    "vitrage physique réglé par transmission et environnement PMREM",
     "visite interactive commençant à l’extérieur"
   ],
   "media": {
     "images": [
       {
         "title": "Façade, toiture et sol extérieur",
+        "source": "BLENDER",
         "url": "https://raw.githubusercontent.com/ramanaru/chamagnieu/main/images/v18-facade-roof-ground.webp",
         "repository_path": "images/v18-facade-roof-ground.webp",
         "sha256": "D3B0DD8DD14DFE12D567457B0402D2541CBA91A1A3E6BA6C6B0A879C88BAD5BE"
       },
       {
         "title": "Jardin, textures et façade arrière",
+        "source": "BLENDER",
         "url": "https://raw.githubusercontent.com/ramanaru/chamagnieu/main/images/v18-jardin-textures.webp",
         "repository_path": "images/v18-jardin-textures.webp",
         "sha256": "B8A3B2DA90D102904E7EC375A9FA8E14E5BC18CC2F7F5A6057D94E374DE7FCAD"
       }
     ],
+    "live_viewer_captures": [
+      {
+        "title": "Façade live après correction",
+        "source": "LIVE WEB VIEWER",
+        "repository_path": "validation/live_before_after/after/facade.png"
+      },
+      {
+        "title": "Jardin et arbres live après correction",
+        "source": "LIVE WEB VIEWER",
+        "repository_path": "validation/live_before_after/after/garden.png"
+      },
+      {
+        "title": "Séjour live après correction",
+        "source": "LIVE WEB VIEWER",
+        "repository_path": "validation/live_before_after/after/living.png"
+      },
+      {
+        "title": "Sol intérieur live après correction",
+        "source": "LIVE WEB VIEWER",
+        "repository_path": "validation/live_before_after/after/interior-floor-materials.png"
+      },
+      {
+        "title": "Sol extérieur live après correction",
+        "source": "LIVE WEB VIEWER",
+        "repository_path": "validation/live_before_after/after/exterior-ground.png"
+      }
+    ],
     "model": {
-      "title": "Modèle Web V18 REALISM FINAL — WebP haute définition corrigé",
-      "url": "https://raw.githubusercontent.com/ramanaru/chamagnieu/main/shared/Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
-      "repository_path": "shared/Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
-      "bytes": 25169320,
-      "sha256": "69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE",
+      "title": "Modèle Web V18 WEB REALISM UPGRADED — PBR compact",
+      "url": "https://raw.githubusercontent.com/ramanaru/chamagnieu/main/shared/Chamagnieu_V18_WEB_REALISM_UPGRADED.glb",
+      "repository_path": "shared/Chamagnieu_V18_WEB_REALISM_UPGRADED.glb",
+      "bytes": 22687292,
+      "sha256": "9A5FD736CF5BFC4B8AF90A3B1A701C1532B83D2E6BDF0FA2C459B085B9A12B1E",
       "texture_profile": {
         "codec": "WebP",
-        "embedded_images": 37,
-        "max_resolution": "2048px",
+        "embedded_images": 78,
+        "materials": 41,
+        "textures": 90,
+        "pbr_texture_bindings": 95,
         "external_images": 0,
-        "invalid_binding_removed": "material[31].metallicRoughnessTexture -> texture[50]"
+        "orphan_image_bytes": 0,
+        "geometry_accessor_payloads_identical_to_sync4": true
+      }
+    },
+    "vegetation": {
+      "source": "Poly Haven",
+      "license": "CC0 1.0",
+      "tree": {
+        "repository_path": "shared/assets/vegetation/island_tree_02_web.glb",
+        "instances": 4,
+        "triangles_per_instance": 47000,
+        "bytes": 4268472,
+        "sha256": "845CD738030743A4592FDC10DB77A38E522E15C8901E6710C377C3D5C303CF76"
+      },
+      "hedge": {
+        "repository_path": "shared/assets/vegetation/shrub_03_web.glb",
+        "segments": 18,
+        "rows_per_segment": 2,
+        "tiles_per_row": 3,
+        "clone_instances": 108,
+        "triangles_per_instance": 8287,
+        "bytes": 675924,
+        "sha256": "C285AD37DDAA6014347AD1AD8A31311BAC46C384EE0D5F8C5D445186AA7960EE"
+      },
+      "desktop_budget": {
+        "triangles": 1082996,
+        "draw_calls": 120
       }
     }
   },
@@ -49,11 +106,18 @@
     "visit_from_outside": "https://ramanaru.github.io/chamagnieu/visite/",
     "instant_gallery": "https://ramanaru.github.io/chamagnieu/rapide/"
   },
-  "release": "V18-LIVE-SYNC-4",
+  "release": "V18-WEB-REALISM-1",
   "source_policy": {
     "interactive": "LIVE WEB VIEWER",
     "gallery": "BLENDER",
     "d5": "not used in this release"
   },
-  "central_config": "shared/project-config.json"
+  "central_config": "shared/project-config.json",
+  "lighting": {
+    "pipeline": "V18-WEB-REALISM-LIGHTING-R2",
+    "tone_mapping": "ACESFilmic",
+    "environment": "procedural sky + PMREM",
+    "exposure": 0.865,
+    "environment_intensity": 0.765
+  }
 }

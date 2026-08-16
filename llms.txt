@@ -6,14 +6,15 @@ Données structurées: https://raw.githubusercontent.com/ramanaru/chamagnieu/mai
 Image façade: https://raw.githubusercontent.com/ramanaru/chamagnieu/main/images/v18-facade-roof-ground.webp
 Image jardin: https://raw.githubusercontent.com/ramanaru/chamagnieu/main/images/v18-jardin-textures.webp
 
-Cette version montre une maison à trois volumes de toiture en tuiles, des sols extérieurs différenciés, quatre arbres, dix-huit haies et une visite commençant dehors.
+Cette version montre une maison à trois volumes de toiture en tuiles, des sols extérieurs différenciés, quatre arbres optimisés, dix-huit segments de haie densifiés en 108 clumps et une visite commençant dehors.
 
-Version live unique: V18-LIVE-SYNC-4
+Version live unique: V18-WEB-REALISM-1
 Configuration centrale: https://raw.githubusercontent.com/ramanaru/chamagnieu/main/shared/project-config.json
-Modèle live: https://raw.githubusercontent.com/ramanaru/chamagnieu/main/shared/Chamagnieu_V18_REALISM_FINAL_WEBP.glb
-SHA-256 modèle: 69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE
+Modèle live: https://raw.githubusercontent.com/ramanaru/chamagnieu/main/shared/Chamagnieu_V18_WEB_REALISM_UPGRADED.glb
+SHA-256 modèle: 9A5FD736CF5BFC4B8AF90A3B1A701C1532B83D2E6BDF0FA2C459B085B9A12B1E
 Rapport d'audit: https://github.com/ramanaru/chamagnieu/blob/main/audit/version-sync-report.md
-Verdict live: https://github.com/ramanaru/chamagnieu/blob/main/validation/V18_LIVE_SYNC_REPORT.md
+Verdict réalisme live: https://github.com/ramanaru/chamagnieu/blob/main/validation/V18_WEB_REALISM_FIX_REPORT.md
+Avant/après live: https://github.com/ramanaru/chamagnieu/tree/main/validation/live_before_after
 
 SOURCE = LIVE WEB VIEWER pour /presentation/ et /visite/.
 SOURCE = BLENDER pour les images de galerie. Les WebP de galerie ne sont pas des textures du GLB.

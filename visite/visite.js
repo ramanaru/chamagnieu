@@ -1,8 +1,9 @@
 import * as THREE from '../shared/vendor/three.module.js';
 import { PointerLockControls } from '../shared/vendor/addons/controls/PointerLockControls.js';
 import { GLTFLoader } from '../shared/vendor/addons/loaders/GLTFLoader.js';
-import { loadProjectConfig, applyProjectVersion, resolveProjectAsset } from '../shared/project-config.js?release=v18-live-sync-4';
-import { setupLiveLighting, tuneLiveModel } from '../shared/live-realism.js?release=v18-live-sync-4';
+import { loadProjectConfig, applyProjectVersion, resolveProjectAsset } from '../shared/project-config.js?release=v18-web-realism-1';
+import { setupLiveLighting, tuneLiveModel } from '../shared/live-realism.js?release=v18-web-realism-1&pipeline=lighting-r2';
+import { installLiveVegetation } from '../shared/live-vegetation.js?release=v18-web-realism-1';
 
 const config = await loadProjectConfig();
 applyProjectVersion(config);
@@ -23,6 +24,8 @@ function enableDragLook(reason = 'manual') {
   visitActive = true;
   window.__visitControlMode = mobile ? 'touch-drag' : 'keyboard-drag-fallback';
   window.__pointerLockFallbackReason = reason;
+  document.documentElement.dataset.viewerControlMode = window.__visitControlMode;
+  document.documentElement.dataset.viewerControlFallbackReason = reason;
   if (dragLookInstalled) return;
   dragLookInstalled = true;
   let last = null;
@@ -55,6 +58,8 @@ const controls = new PointerLockControls(camera, document.body);
 controls.addEventListener('lock', () => {
   visitActive = true;
   window.__visitControlMode = 'pointer-lock';
+  document.documentElement.dataset.viewerControlMode = 'pointer-lock';
+  delete document.documentElement.dataset.viewerControlFallbackReason;
 });
 
 const presets = {
@@ -113,11 +118,13 @@ document.documentElement.dataset.viewerModel = modelUrl.pathname.split('/').pop(
 document.documentElement.dataset.viewerSource = config.viewerSource;
 document.documentElement.dataset.viewerReady = 'loading';
 
-new GLTFLoader().load(modelUrl.href, gltf => {
+new GLTFLoader().load(modelUrl.href, async gltf => {
   house = gltf.scene;
   classifyFurniture(house);
   window.__liveMaterialAudit = tuneLiveModel(renderer, house, mobile, config);
   scene.add(house);
+  loading.textContent = `Installation de la végétation Web réaliste · ${config.version}…`;
+  window.__liveVegetationAudit = await installLiveVegetation({ scene, house, renderer, mobile, cacheKey: config.cacheKey });
   loading.classList.add('hide');
   preset('outside');
   window.__viewerReady = true;
@@ -127,6 +134,7 @@ document.documentElement.dataset.viewerMaterials = String(window.__liveMaterialA
 document.documentElement.dataset.viewerTextures = String(window.__liveMaterialAudit.uniqueTextures);
 document.documentElement.dataset.viewerFurnitureMeshes = String(furnitureMeshCount);
 document.documentElement.dataset.viewerFurnitureVisible = 'true';
+document.documentElement.dataset.viewerVegetation = window.__liveVegetationAudit.status;
 }, progress => {
   if (progress.total) {
     const percent = Math.round(100 * progress.loaded / progress.total);
@@ -147,7 +155,7 @@ setTimeout(() => {
   if (!window.__viewerReady && !window.__viewerFailed) loading.innerHTML = 'Toujours en cours… <a href="../rapide/">Voir la galerie sourcée</a>';
 }, 20000);
 
-document.querySelector('#start').onclick = async () => {
+document.querySelector('#start').onclick = () => {
   preset('outside');
   visitActive = true;
   if (mobile) {
@@ -162,8 +170,18 @@ document.querySelector('#start').onclick = async () => {
   }
   try {
     const request = document.body.requestPointerLock();
-    if (request?.then) await request;
-    if (!document.pointerLockElement) enableDragLook('lock-not-acquired');
+    request?.catch?.(error => {
+      pointerLockFailure = error?.name || 'pointer-lock-rejected';
+      enableDragLook(pointerLockFailure);
+      status.textContent = `Mode souris-glisser actif · utilisez ZQSD/WASD pour entrer · SOURCE = ${config.viewerSource}`;
+    });
+    // Embedded browsers can leave the Pointer Lock promise pending forever.
+    // A bounded fallback keeps keyboard movement and drag-look deterministic.
+    window.setTimeout(() => {
+      if (document.pointerLockElement || controls.isLocked) return;
+      enableDragLook(pointerLockFailure || 'lock-timeout');
+      status.textContent = `Mode souris-glisser actif · utilisez ZQSD/WASD pour entrer · SOURCE = ${config.viewerSource}`;
+    }, 350);
   } catch (error) {
     pointerLockFailure = error?.name || 'pointer-lock-rejected';
     enableDragLook(pointerLockFailure);

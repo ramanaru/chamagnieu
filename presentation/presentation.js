@@ -1,8 +1,9 @@
 import * as THREE from '../shared/vendor/three.module.js';
 import { OrbitControls } from '../shared/vendor/addons/controls/OrbitControls.js';
 import { GLTFLoader } from '../shared/vendor/addons/loaders/GLTFLoader.js';
-import { loadProjectConfig, applyProjectVersion, resolveProjectAsset } from '../shared/project-config.js?release=v18-live-sync-4';
-import { setupLiveLighting, tuneLiveModel } from '../shared/live-realism.js?release=v18-live-sync-4';
+import { loadProjectConfig, applyProjectVersion, resolveProjectAsset } from '../shared/project-config.js?release=v18-web-realism-1';
+import { setupLiveLighting, tuneLiveModel } from '../shared/live-realism.js?release=v18-web-realism-1&pipeline=lighting-r2';
+import { installLiveVegetation } from '../shared/live-vegetation.js?release=v18-web-realism-1';
 
 const config = await loadProjectConfig();
 applyProjectVersion(config);
@@ -27,11 +28,13 @@ controls.maxPolarAngle = Math.PI * .98;
 const views = {
   front: { p: [1.941, 4.4, -15.173], t: [-1.436, 2.655, -.663], label: 'Façade et toiture — vraie scène Web V18' },
   axon: { p: [22.008, 21.5, -10.53], t: [-.75, 2.1, -4.5], label: 'Vue générale — modèle Web V18 complet' },
-  garden: { p: [-12.5, 5.3, -17.2], t: [-4.2, 3.7, -11.86], label: 'Jardin — 4 arbres, 18 haies, pelouse et terrasse' },
+  garden: { p: [15.0, 9.6, -24.0], t: [-3.0, 2.45, -7.0], label: 'Jardin — 4 arbres réalistes, pelouse et maison' },
+  hedges: { p: [9.0, 4.2, -18.5], t: [-1.0, 1.0, -11.2], label: 'Haies — 18 segments feuillus en deux rangées optimisées' },
   kitchen: { p: [-5.875, 1.82, 4.353], t: [-3.439, .92, 2.852], label: 'Cuisine — mobilier réellement contenu dans le GLB Web' },
   living: { p: [-7.465, 1.58, 5.190], t: [-5.459, .92, 8.133], label: 'Séjour — matériaux intégrés au GLB Web' },
+  floor: { p: [-7.465, 1.65, 5.190], t: [-5.459, .12, 8.133], label: 'Sol intérieur — carrelage, joints, relief et mobilier du séjour' },
   ground: { p: [9.5, 8.2, -10.5], t: [-2.4, .15, -5.4], label: 'Sols extérieurs — pelouse, enrobé et gravier intégrés' },
-  upper: { p: [-7.650, 4.12, 5.740], t: [-5.819, 3.62, 4.689], label: 'Étage — cloisons, portes et mobilier du GLB Web' }
+  upper: { p: [-7.834, 4.30, 7.915], t: [-7.724, 3.60, 9.534], label: 'Étage — chambre, cloisons, portes et mobilier du GLB Web' }
 };
 let house;
 let furnitureVisible = true;
@@ -57,6 +60,8 @@ function setView(key) {
   window.__lastView = key;
 }
 window.__setView = setView;
+window.__viewerCamera = camera;
+window.__viewerControls = controls;
 const modelUrl = new URL(resolveProjectAsset(config.model));
 modelUrl.searchParams.set('release', config.cacheKey);
 window.__viewerVersion = config.version;
@@ -69,11 +74,13 @@ document.documentElement.dataset.viewerModel = modelUrl.pathname.split('/').pop(
 document.documentElement.dataset.viewerSource = config.viewerSource;
 document.documentElement.dataset.viewerReady = 'loading';
 
-new GLTFLoader().load(modelUrl.href, gltf => {
+new GLTFLoader().load(modelUrl.href, async gltf => {
   house = gltf.scene;
   classifyFurniture(house);
   window.__liveMaterialAudit = tuneLiveModel(renderer, house, mobile, config);
   scene.add(house);
+  loading.textContent = `Installation de la végétation Web réaliste · ${config.version}…`;
+  window.__liveVegetationAudit = await installLiveVegetation({ scene, house, renderer, mobile, cacheKey: config.cacheKey });
   loading.classList.add('hide');
   setView('front');
   window.__viewerReady = true;
@@ -83,6 +90,7 @@ document.documentElement.dataset.viewerMaterials = String(window.__liveMaterialA
 document.documentElement.dataset.viewerTextures = String(window.__liveMaterialAudit.uniqueTextures);
 document.documentElement.dataset.viewerFurnitureMeshes = String(furnitureMeshCount);
 document.documentElement.dataset.viewerFurnitureVisible = 'true';
+document.documentElement.dataset.viewerVegetation = window.__liveVegetationAudit.status;
 }, progress => {
   if (progress.total) {
     const percent = Math.round(100 * progress.loaded / progress.total);

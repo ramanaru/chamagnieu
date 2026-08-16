@@ -1,4 +1,4 @@
-import { loadProjectConfig, applyProjectVersion } from './project-config.js?release=v18-live-sync-4';
+import { loadProjectConfig, applyProjectVersion } from './project-config.js?release=v18-web-realism-1';
 
 try {
   const config = await loadProjectConfig();

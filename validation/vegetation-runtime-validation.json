@@ -1,0 +1,160 @@
+{
+  "result": "PASS",
+  "url": "http://127.0.0.1:8946/validation/vegetation-runtime-harness.html",
+  "viewport": "1440x900",
+  "audit": {
+    "status": "enhanced",
+    "mode": "enhanced-desktop",
+    "mobile": false,
+    "deviceMemoryGb": 32,
+    "saveData": false,
+    "originalTreeFamilies": 4,
+    "originalHedges": 18,
+    "treeInstances": 4,
+    "hedgeInstances": 18,
+    "hedgeCloneInstances": 108,
+    "originalsHidden": 38,
+    "displayedTriangles": 1082996,
+    "drawCalls": 120,
+    "loadMs": 686,
+    "assets": {
+      "tree": {
+        "requested": true,
+        "loaded": true,
+        "url": "http://127.0.0.1:8946/shared/assets/vegetation/island_tree_02_web.glb?release=harness",
+        "error": null,
+        "triangles": 47000,
+        "drawCalls": 3,
+        "meshes": 3,
+        "uniqueGeometries": 3,
+        "uniqueMaterials": 3
+      },
+      "hedge": {
+        "requested": true,
+        "loaded": true,
+        "url": "http://127.0.0.1:8946/shared/assets/vegetation/shrub_03_web.glb?release=harness",
+        "error": null,
+        "triangles": 8287,
+        "drawCalls": 1,
+        "meshes": 1,
+        "uniqueGeometries": 1,
+        "uniqueMaterials": 1
+      }
+    },
+    "fallbackUsed": false
+  },
+  "state": {
+    "datasetStatus": "enhanced",
+    "datasetTriangles": "1082996",
+    "datasetDrawCalls": "120",
+    "enhancedGroup": true,
+    "webgl2": true
+  },
+  "mobileAudit": {
+    "status": "enhanced",
+    "mode": "enhanced-mobile",
+    "mobile": true,
+    "deviceMemoryGb": 32,
+    "saveData": false,
+    "originalTreeFamilies": 4,
+    "originalHedges": 18,
+    "treeInstances": 4,
+    "hedgeInstances": 18,
+    "hedgeCloneInstances": 108,
+    "originalsHidden": 38,
+    "displayedTriangles": 1082996,
+    "drawCalls": 120,
+    "loadMs": 245,
+    "assets": {
+      "tree": {
+        "requested": true,
+        "loaded": true,
+        "url": "http://127.0.0.1:8946/shared/assets/vegetation/island_tree_02_web.glb?release=harness",
+        "error": null,
+        "triangles": 47000,
+        "drawCalls": 3,
+        "meshes": 3,
+        "uniqueGeometries": 3,
+        "uniqueMaterials": 3
+      },
+      "hedge": {
+        "requested": true,
+        "loaded": true,
+        "url": "http://127.0.0.1:8946/shared/assets/vegetation/shrub_03_web.glb?release=harness",
+        "error": null,
+        "triangles": 8287,
+        "drawCalls": 1,
+        "meshes": 1,
+        "uniqueGeometries": 1,
+        "uniqueMaterials": 1
+      }
+    },
+    "fallbackUsed": false
+  },
+  "mobileGlbRequests": [
+    "http://127.0.0.1:8946/shared/assets/vegetation/island_tree_02_web.glb?release=harness",
+    "http://127.0.0.1:8946/shared/assets/vegetation/shrub_03_web.glb?release=harness"
+  ],
+  "mobileConsoleErrors": [],
+  "constrainedAudit": {
+    "status": "mobile-fallback",
+    "mode": "original-low-poly-constrained",
+    "mobile": true,
+    "deviceMemoryGb": 2,
+    "saveData": false,
+    "originalTreeFamilies": 4,
+    "originalHedges": 18,
+    "treeInstances": 0,
+    "hedgeInstances": 0,
+    "hedgeCloneInstances": 0,
+    "originalsHidden": 0,
+    "displayedTriangles": 0,
+    "drawCalls": 0,
+    "loadMs": 1,
+    "assets": {
+      "tree": {
+        "requested": false,
+        "loaded": false,
+        "error": null
+      },
+      "hedge": {
+        "requested": false,
+        "loaded": false,
+        "error": null
+      }
+    },
+    "fallbackUsed": true
+  },
+  "constrainedGlbRequests": [],
+  "constrainedConsoleErrors": [],
+  "consoleErrors": [],
+  "requestFailures": [],
+  "badResponses": [],
+  "checks": {
+    "status": true,
+    "treeInstances": true,
+    "hedgeInstances": true,
+    "hedgeCloneInstances": true,
+    "displayedTriangles": true,
+    "drawCalls": true,
+    "originalsHidden": true,
+    "assets_loaded": true,
+    "dataset_status": true,
+    "dataset_triangles": true,
+    "dataset_draw_calls": true,
+    "webgl2": true,
+    "console_errors_zero": true,
+    "request_failures_zero": true,
+    "http_bad_zero": true,
+    "mobile_status": true,
+    "mobile_instances": true,
+    "mobile_triangles": true,
+    "mobile_optional_glb_requests": true,
+    "mobile_console_errors_zero": true,
+    "constrained_status": true,
+    "constrained_instances_zero": true,
+    "constrained_triangles_zero": true,
+    "constrained_optional_glb_requests_zero": true,
+    "constrained_console_errors_zero": true
+  }
+}

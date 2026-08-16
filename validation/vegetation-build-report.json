@@ -1,0 +1,389 @@
+{
+  "builder": "Blender 5.2.0 LTS",
+  "texture_max_px": 512,
+  "assets": [
+    {
+      "asset_id": "shrub_03",
+      "source_gltf": "C:\\Users\\jonat\\Documents\\Codex\\2026-08-14\\files-mentioned-by-the-user-c\\outputs\\Chamagnieu_3D_V10_REALISM_INTERACTIVE\\assets\\models\\shrub_03\\shrub_03_1k.gltf",
+      "source_preserved": true,
+      "source_inventory": {
+        "shrub_03.bin": {
+          "bytes": 238684,
+          "sha256": "BF4DF21E6D2A2BC5F00B4C9142F776171FE7DA00CF960001825748067AF542B6"
+        },
+        "shrub_03_1k.gltf": {
+          "bytes": 7296,
+          "sha256": "B76D7C14BC027E834E82D3F984C32B5D060E62908AA90FF9420A637CA253A8EA"
+        },
+        "textures/shrub_03_arm_1k.jpg": {
+          "bytes": 396238,
+          "sha256": "3E2B16812A623037138EEDACE958210C5F3443A827BBE69663045BBA5612F815"
+        },
+        "textures/shrub_03_diff_1k.jpg": {
+          "bytes": 481841,
+          "sha256": "3CADC7ABA46D3AABBD7D6D2B1D04AA32E2A7DA0BC87C2D38EF3CB1EE42CB03EC"
+        },
+        "textures/shrub_03_nor_gl_1k.jpg": {
+          "bytes": 504734,
+          "sha256": "FF856BACFCE859B8A7555DD9A3B92FBD36B2E775D486BE71DF485AFB4235D6C9"
+        }
+      },
+      "source_metrics": {
+        "triangles": 8287,
+        "mesh_objects": [
+          {
+            "name": "shrub_03_a",
+            "triangles": 2385,
+            "vertices": 1697,
+            "materials": [
+              "shrub_03"
+            ],
+            "dimensions_m": [
+              0.20062,
+              0.1512,
+              0.40278
+            ]
+          },
+          {
+            "name": "shrub_03_b",
+            "triangles": 2134,
+            "vertices": 1530,
+            "materials": [
+              "shrub_03"
+            ],
+            "dimensions_m": [
+              0.1843,
+              0.12256,
+              0.3525
+            ]
+          },
+          {
+            "name": "shrub_03_c",
+            "triangles": 1790,
+            "vertices": 1281,
+            "materials": [
+              "shrub_03"
+            ],
+            "dimensions_m": [
+              0.09581,
+              0.11316,
+              0.30439
+            ]
+          },
+          {
+            "name": "shrub_03_d",
+            "triangles": 1978,
+            "vertices": 1397,
+            "materials": [
+              "shrub_03"
+            ],
+            "dimensions_m": [
+              0.11277,
+              0.08928,
+              0.25555
+            ]
+          }
+        ]
+      },
+      "decimation": [],
+      "images": [
+        {
+          "name": "shrub_03_diff",
+          "before_px": [
+            1024,
+            1024
+          ],
+          "after_px": [
+            512,
+            512
+          ]
+        },
+        {
+          "name": "shrub_03_nor_gl",
+          "before_px": [
+            1024,
+            1024
+          ],
+          "after_px": [
+            512,
+            512
+          ]
+        },
+        {
+          "name": "shrub_03_rough",
+          "before_px": [
+            1024,
+            1024
+          ],
+          "after_px": [
+            512,
+            512
+          ]
+        }
+      ],
+      "output": "shared\\assets\\vegetation\\shrub_03_web.glb",
+      "output_bytes": 675924,
+      "output_sha256": "C285AD37DDAA6014347AD1AD8A31311BAC46C384EE0D5F8C5D445186AA7960EE",
+      "output_metrics": {
+        "triangles": 8287,
+        "mesh_objects": [
+          {
+            "name": "WEB_shrub_03",
+            "triangles": 8287,
+            "vertices": 5905,
+            "materials": [
+              "shrub_03"
+            ],
+            "dimensions_m": [
+              1.36692,
+              0.1512,
+              0.40278
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "asset_id": "island_tree_02",
+      "source_gltf": "C:\\Users\\jonat\\Documents\\Codex\\2026-08-14\\files-mentioned-by-the-user-c\\outputs\\Chamagnieu_3D_V10_REALISM_INTERACTIVE\\assets\\models\\island_tree_02\\island_tree_02_1k.gltf",
+      "source_preserved": true,
+      "source_inventory": {
+        "island_tree_02.bin": {
+          "bytes": 40686576,
+          "sha256": "427D69CCC1EA12D1FB9C6AF89691563B4A097F39A6F34C15BE6E45EF5E5FD4CE"
+        },
+        "island_tree_02_1k.gltf": {
+          "bytes": 8545,
+          "sha256": "D8C5D9EAD41CDBEF91A648F40FF60470FAA19EB3A7010E59E44CB1A01250F75D"
+        },
+        "textures/island_tree_02_arm_1k.jpg": {
+          "bytes": 688305,
+          "sha256": "ADA61DD4FAD023E699B6314B8B76590017B301719BF74FFC9E20B95893ED62B6"
+        },
+        "textures/island_tree_02_branches_arm_1k.jpg": {
+          "bytes": 484806,
+          "sha256": "9E3F82263247CE4F619692CEA4C4F6FE9936FF465A86623481849062642C7D05"
+        },
+        "textures/island_tree_02_branches_diff_1k.jpg": {
+          "bytes": 528304,
+          "sha256": "BEE5EC22196E9E31AD0C95A5A9B4636571CC0124D5BB27A92F1E307D289CC60D"
+        },
+        "textures/island_tree_02_branches_nor_gl_1k.jpg": {
+          "bytes": 819101,
+          "sha256": "2D67393BA76A0F49CF965FA0C99D8C16268E71E87B1203D35539BFDB971A514E"
+        },
+        "textures/island_tree_02_diff_1k.jpg": {
+          "bytes": 738738,
+          "sha256": "8FC20397AB5D514C119D7A025868414D78E436138D3867A4B7BA12334A72EC3A"
+        },
+        "textures/island_tree_02_leaves_arm_1k.jpg": {
+          "bytes": 489476,
+          "sha256": "90DA3A072DBCB052715B1313B9DBC69A4AA8A09A31A4B3868411A2BB51D72037"
+        },
+        "textures/island_tree_02_leaves_diff_1k.jpg": {
+          "bytes": 191886,
+          "sha256": "F56D762A1507754752ABF164CC12ACBC1E87CE87FA609AC44B98A1B0037C89D8"
+        },
+        "textures/island_tree_02_leaves_nor_gl_1k.jpg": {
+          "bytes": 379443,
+          "sha256": "07BA461C0C95DA4E49A42981766BDB6191D4C3C4D815796C082266DCC3CECDB8"
+        },
+        "textures/island_tree_02_nor_gl_1k.jpg": {
+          "bytes": 1157226,
+          "sha256": "1580D5A42D02F4EDE51BFB03972AB0AEF3D8ACAFBD3692276879171007BB70EC"
+        }
+      },
+      "source_metrics": {
+        "triangles": 1072212,
+        "mesh_objects": [
+          {
+            "name": "island_tree_02_LOD0",
+            "triangles": 1072212,
+            "vertices": 874494,
+            "materials": [
+              "island_tree_02",
+              "island_tree_02_branches",
+              "island_tree_02_leaves"
+            ],
+            "dimensions_m": [
+              4.20775,
+              4.0707,
+              3.40661
+            ]
+          }
+        ]
+      },
+      "decimation": [
+        {
+          "material": "island_tree_02",
+          "triangles_before": 27297,
+          "triangles_after": 5000,
+          "target": 5000,
+          "ratio": 0.18317031
+        },
+        {
+          "material": "island_tree_02_branches",
+          "triangles_before": 330171,
+          "triangles_after": 12000,
+          "target": 12000,
+          "ratio": 0.0363448
+        },
+        {
+          "material": "island_tree_02_leaves",
+          "triangles_before": 714744,
+          "triangles_after": 30000,
+          "target": 30000,
+          "ratio": 0.04197307
+        }
+      ],
+      "images": [
+        {
+          "name": "island_tree_02_branches_diff",
+          "before_px": [
+            1024,
+            1024
+          ],
+          "after_px": [
+            512,
+            512
+          ]
+        },
+        {
+          "name": "island_tree_02_branches_nor_gl",
+          "before_px": [
+            1024,
+            1024
+          ],
+          "after_px": [
+            512,
+            512
+          ]
+        },
+        {
+          "name": "island_tree_02_branches_rough",
+          "before_px": [
+            1024,
+            1024
+          ],
+          "after_px": [
+            512,
+            512
+          ]
+        },
+        {
+          "name": "island_tree_02_diff",
+          "before_px": [
+            1024,
+            1024
+          ],
+          "after_px": [
+            512,
+            512
+          ]
+        },
+        {
+          "name": "island_tree_02_leaves_diff-island_tree_02_leaves_alpha",
+          "before_px": [
+            1024,
+            1024
+          ],
+          "after_px": [
+            512,
+            512
+          ]
+        },
+        {
+          "name": "island_tree_02_leaves_nor_gl",
+          "before_px": [
+            1024,
+            1024
+          ],
+          "after_px": [
+            512,
+            512
+          ]
+        },
+        {
+          "name": "island_tree_02_leaves_rough",
+          "before_px": [
+            1024,
+            1024
+          ],
+          "after_px": [
+            512,
+            512
+          ]
+        },
+        {
+          "name": "island_tree_02_nor_gl",
+          "before_px": [
+            1024,
+            1024
+          ],
+          "after_px": [
+            512,
+            512
+          ]
+        },
+        {
+          "name": "island_tree_02_rough",
+          "before_px": [
+            1024,
+            1024
+          ],
+          "after_px": [
+            512,
+            512
+          ]
+        }
+      ],
+      "output": "shared\\assets\\vegetation\\island_tree_02_web.glb",
+      "output_bytes": 4268472,
+      "output_sha256": "845CD738030743A4592FDC10DB77A38E522E15C8901E6710C377C3D5C303CF76",
+      "output_metrics": {
+        "triangles": 47000,
+        "mesh_objects": [
+          {
+            "name": "WEB_island_tree_02",
+            "triangles": 5000,
+            "vertices": 3359,
+            "materials": [
+              "island_tree_02"
+            ],
+            "dimensions_m": [
+              2.35997,
+              2.71845,
+              2.61583
+            ]
+          },
+          {
+            "name": "WEB_island_tree_02_branches",
+            "triangles": 12000,
+            "vertices": 37374,
+            "materials": [
+              "island_tree_02_branches"
+            ],
+            "dimensions_m": [
+              4.20032,
+              3.96427,
+              2.10236
+            ]
+          },
+          {
+            "name": "WEB_island_tree_02_leaves",
+            "triangles": 30000,
+            "vertices": 89562,
+            "materials": [
+              "island_tree_02_leaves"
+            ],
+            "dimensions_m": [
+              3.86441,
+              4.06767,
+              2.14977
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

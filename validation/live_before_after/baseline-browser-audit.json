@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 1,
+  "auditKind": "PUBLIC LIVE WEB VIEWER BASELINE BEFORE",
+  "result": "PASS",
+  "capturedAt": "2026-08-16T09:54:23.813Z",
+  "browser": {
+    "surface": "Codex In-app Browser",
+    "viewportCssPx": {
+      "width": 1440,
+      "height": 900
+    },
+    "standalonePlaywright": false
+  },
+  "source": "LIVE WEB VIEWER",
+  "url": "https://ramanaru.github.io/chamagnieu/presentation/?release=v18-live-sync-4&baseline=20260816",
+  "project": {
+    "version": "V18",
+    "release": "V18-LIVE-SYNC-4",
+    "cacheKey": "v18-live-sync-4",
+    "model": "Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
+    "modelBytes": 25169320,
+    "modelSha256": "69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE",
+    "viewerSource": "LIVE WEB VIEWER"
+  },
+  "runtime": {
+    "viewerReady": true,
+    "webgl2": true,
+    "meshes": 795,
+    "materials": 35,
+    "textures": 71,
+    "furnitureMeshes": 169,
+    "serviceWorkers": 0,
+    "cacheStorageKeys": 0
+  },
+  "console": {
+    "errors": 0,
+    "warnings": 0,
+    "entries": []
+  },
+  "network": {
+    "totalResponses": 51,
+    "httpResponses": 14,
+    "blobResponses": 37,
+    "status200": 51,
+    "non2xx": [],
+    "failed": 0,
+    "diskCache": 11,
+    "serviceWorker": 0,
+    "httpResources": [
+      {
+        "url": "https://ramanaru.github.io/chamagnieu/presentation/?release=v18-live-sync-4&baseline=20260816",
+        "status": 200,
+        "mimeType": "text/html",
+        "fromDiskCache": false,
+        "fromServiceWorker": false
+      },
+      {
+        "url": "https://ramanaru.github.io/chamagnieu/shared/viewer.css?release=v18-live-sync-4",
+        "status": 200,
+        "mimeType": "text/css",
+        "fromDiskCache": true,
+        "fromServiceWorker": false
+      },
+      {
+        "url": "https://ramanaru.github.io/chamagnieu/presentation/presentation.js?release=v18-live-sync-4",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "fromDiskCache": true,
+        "fromServiceWorker": false
+      },
+      {
+        "url": "https://ramanaru.github.io/chamagnieu/shared/vendor/addons/controls/OrbitControls.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "fromDiskCache": true,
+        "fromServiceWorker": false
+      },
+      {
+        "url": "https://ramanaru.github.io/chamagnieu/shared/project-config.js?release=v18-live-sync-4",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "fromDiskCache": true,
+        "fromServiceWorker": false
+      },
+      {
+        "url": "https://ramanaru.github.io/chamagnieu/shared/live-realism.js?release=v18-live-sync-4",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "fromDiskCache": true,
+        "fromServiceWorker": false
+      },
+      {
+        "url": "https://ramanaru.github.io/chamagnieu/shared/vendor/addons/loaders/GLTFLoader.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "fromDiskCache": true,
+        "fromServiceWorker": false
+      },
+      {
+        "url": "https://ramanaru.github.io/chamagnieu/shared/vendor/three.module.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "fromDiskCache": true,
+        "fromServiceWorker": false
+      },
+      {
+        "url": "https://ramanaru.github.io/chamagnieu/shared/vendor/addons/utils/BufferGeometryUtils.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "fromDiskCache": true,
+        "fromServiceWorker": false
+      },
+      {
+        "url": "https://ramanaru.github.io/chamagnieu/shared/vendor/three.core.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "fromDiskCache": true,
+        "fromServiceWorker": false
+      },
+      {
+        "url": "https://ramanaru.github.io/chamagnieu/shared/preview.webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "fromDiskCache": true,
+        "fromServiceWorker": false
+      },
+      {
+        "url": "https://ramanaru.github.io/chamagnieu/shared/project-config.json",
+        "status": 200,
+        "mimeType": "application/json",
+        "fromDiskCache": false,
+        "fromServiceWorker": false
+      },
+      {
+        "url": "https://ramanaru.github.io/chamagnieu/shared/Chamagnieu_V18_REALISM_FINAL_WEBP.glb?release=v18-live-sync-4",
+        "status": 200,
+        "mimeType": "model/gltf-binary",
+        "fromDiskCache": true,
+        "fromServiceWorker": false
+      },
+      {
+        "url": "https://ramanaru.github.io/chamagnieu/favicon.ico",
+        "status": 200,
+        "mimeType": "image/vnd.microsoft.icon",
+        "fromDiskCache": false,
+        "fromServiceWorker": false
+      }
+    ],
+    "failedEntries": []
+  },
+  "brokenImages": {
+    "count": 0,
+    "entries": []
+  },
+  "screenshots": [
+    {
+      "file": "facade.jpg",
+      "view": "facade",
+      "preset": "Façade texturée",
+      "viewKey": "front",
+      "p": [
+        1.941,
+        4.4,
+        -15.173
+      ],
+      "t": [
+        -1.436,
+        2.655,
+        -0.663
+      ],
+      "path": "C:\\Users\\jonat\\Documents\\Codex\\2026-08-16\\chamagnieu-v18-web-realism\\validation\\live_before_after\\before\\facade.jpg",
+      "source": "LIVE WEB VIEWER",
+      "mimeType": "image/jpeg",
+      "bytes": 143088,
+      "width": 1440,
+      "height": 900,
+      "sha256": "6E514D1BC23DBCB7D733E1178D2F34BFB7AC17DA62C27B5E7D4ED3AE4CAC3B05"
+    },
+    {
+      "file": "general.jpg",
+      "view": "general",
+      "preset": "Vue générale",
+      "viewKey": "axon",
+      "p": [
+        22.008,
+        21.5,
+        -10.53
+      ],
+      "t": [
+        -0.75,
+        2.1,
+        -4.5
+      ],
+      "path": "C:\\Users\\jonat\\Documents\\Codex\\2026-08-16\\chamagnieu-v18-web-realism\\validation\\live_before_after\\before\\general.jpg",
+      "source": "LIVE WEB VIEWER",
+      "mimeType": "image/jpeg",
+      "bytes": 160704,
+      "width": 1440,
+      "height": 900,
+      "sha256": "F1C6A078500B878523759B89DF0710154F4A0DCC6E1FA82EE25C63B3E0E467CB"
+    },
+    {
+      "file": "garden.jpg",
+      "view": "garden",
+      "preset": "Jardin / arbres",
+      "viewKey": "garden",
+      "p": [
+        -12.5,
+        5.3,
+        -17.2
+      ],
+      "t": [
+        -4.2,
+        3.7,
+        -11.86
+      ],
+      "path": "C:\\Users\\jonat\\Documents\\Codex\\2026-08-16\\chamagnieu-v18-web-realism\\validation\\live_before_after\\before\\garden.jpg",
+      "source": "LIVE WEB VIEWER",
+      "mimeType": "image/jpeg",
+      "bytes": 123061,
+      "width": 1440,
+      "height": 900,
+      "sha256": "D81BFA259EEE1A94AFB73555A37AEF0CD13AE2ACC98DE7D0E85AF4CC2FFEE31D"
+    },
+    {
+      "file": "exterior-ground.jpg",
+      "view": "exterior-ground",
+      "preset": "Sol extérieur",
+      "viewKey": "ground",
+      "p": [
+        9.5,
+        8.2,
+        -10.5
+      ],
+      "t": [
+        -2.4,
+        0.15,
+        -5.4
+      ],
+      "path": "C:\\Users\\jonat\\Documents\\Codex\\2026-08-16\\chamagnieu-v18-web-realism\\validation\\live_before_after\\before\\exterior-ground.jpg",
+      "source": "LIVE WEB VIEWER",
+      "mimeType": "image/jpeg",
+      "bytes": 188473,
+      "width": 1440,
+      "height": 900,
+      "sha256": "B0B286E43AF6AE786E731230421F802E1D6F3D1CD4CD5329DF4FAB9677AAEEDB"
+    },
+    {
+      "file": "living.jpg",
+      "view": "living",
+      "preset": "Séjour",
+      "viewKey": "living",
+      "p": [
+        -7.465,
+        1.58,
+        5.19
+      ],
+      "t": [
+        -5.459,
+        0.92,
+        8.133
+      ],
+      "path": "C:\\Users\\jonat\\Documents\\Codex\\2026-08-16\\chamagnieu-v18-web-realism\\validation\\live_before_after\\before\\living.jpg",
+      "source": "LIVE WEB VIEWER",
+      "mimeType": "image/jpeg",
+      "bytes": 102036,
+      "width": 1440,
+      "height": 900,
+      "sha256": "E807A384A3EBFD86448DAFCD7DB425F7DF9BB74A12A784B764BB5C594EEB49BA"
+    },
+    {
+      "file": "kitchen.jpg",
+      "view": "kitchen",
+      "preset": "Cuisine",
+      "viewKey": "kitchen",
+      "p": [
+        -5.875,
+        1.82,
+        4.353
+      ],
+      "t": [
+        -3.439,
+        0.92,
+        2.852
+      ],
+      "path": "C:\\Users\\jonat\\Documents\\Codex\\2026-08-16\\chamagnieu-v18-web-realism\\validation\\live_before_after\\before\\kitchen.jpg",
+      "source": "LIVE WEB VIEWER",
+      "mimeType": "image/jpeg",
+      "bytes": 114226,
+      "width": 1440,
+      "height": 900,
+      "sha256": "A4DBCE5BDEB2601023C899148D33418370EF3233025964ABCD39A6B8929A32F5"
+    },
+    {
+      "file": "upstairs-doors.jpg",
+      "view": "upstairs-doors",
+      "preset": "Étage / portes",
+      "viewKey": "upper",
+      "p": [
+        -7.65,
+        4.12,
+        5.74
+      ],
+      "t": [
+        -5.819,
+        3.62,
+        4.689
+      ],
+      "path": "C:\\Users\\jonat\\Documents\\Codex\\2026-08-16\\chamagnieu-v18-web-realism\\validation\\live_before_after\\before\\upstairs-doors.jpg",
+      "source": "LIVE WEB VIEWER",
+      "mimeType": "image/jpeg",
+      "bytes": 77602,
+      "width": 1440,
+      "height": 900,
+      "sha256": "3ACA2D6108E6EC0D887BBAE9B304C0431BF742CFE9C0E8E78F71C52FD5007816"
+    },
+    {
+      "file": "interior-floor-materials.jpg",
+      "view": "interior-floor/materials",
+      "preset": "Séjour + orbit drag",
+      "viewKey": "living+drag",
+      "p": [
+        -7.465,
+        1.58,
+        5.19
+      ],
+      "t": [
+        -5.459,
+        0.92,
+        8.133
+      ],
+      "interaction": {
+        "type": "orbit-drag",
+        "path": [
+          {
+            "x": 1050,
+            "y": 460
+          },
+          {
+            "x": 1050,
+            "y": 490
+          },
+          {
+            "x": 1050,
+            "y": 520
+          },
+          {
+            "x": 1050,
+            "y": 550
+          }
+        ]
+      },
+      "path": "C:\\Users\\jonat\\Documents\\Codex\\2026-08-16\\chamagnieu-v18-web-realism\\validation\\live_before_after\\before\\interior-floor-materials.jpg",
+      "source": "LIVE WEB VIEWER",
+      "mimeType": "image/jpeg",
+      "bytes": 101995,
+      "width": 1440,
+      "height": 900,
+      "sha256": "84E602B41B52BB3797AEA24BF92F434479FDC6A859D1E063DEC73D5EF4D48BE3"
+    }
+  ],
+  "reproduction": {
+    "order": [
+      "facade",
+      "general",
+      "garden",
+      "exterior-ground",
+      "living",
+      "kitchen",
+      "upstairs-doors",
+      "interior-floor/materials"
+    ],
+    "rule": "Apply the documented preset at 1440x900; for interior-floor/materials, apply the documented orbit-drag path after the living preset."
+  },
+  "captureEncoding": "JPEG returned by the in-app browser screenshot API; file extensions match the observed JFIF bytes"
+}

@@ -1,48 +1,73 @@
 {
   "schemaVersion": 1,
   "version": "V18",
-  "release": "V18-LIVE-SYNC-4",
-  "cacheKey": "v18-live-sync-4",
-  "model": "./Chamagnieu_V18_REALISM_FINAL_WEBP.glb",
-  "modelSha256": "69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE",
-  "modelBytes": 25169320,
+  "release": "V18-WEB-REALISM-1",
+  "cacheKey": "v18-web-realism-1",
+  "model": "./Chamagnieu_V18_WEB_REALISM_UPGRADED.glb",
+  "modelSha256": "9A5FD736CF5BFC4B8AF90A3B1A701C1532B83D2E6BDF0FA2C459B085B9A12B1E",
+  "modelBytes": 22687292,
   "houseData": "../house.json",
   "viewerSource": "LIVE WEB VIEWER",
   "gallerySource": "BLENDER",
   "materials": {
     "embedded": true,
-    "externalTextureCount": 0,
-    "runtimeTuning": "shared/live-realism.js",
+    "runtimeTuning": "shared/live-realism.js + shared/live-vegetation.js",
     "codec": "WebP",
-    "maxTextureResolution": "2048px desktop source; 1024px and 256px retained where present",
-    "correctedBinding": "/materials/31/pbrMetallicRoughness/metallicRoughnessTexture removed (invalid texture 50)"
+    "embeddedImageCount": 78,
+    "pbrTextureBindings": 95,
+    "maxTextureResolution": "2048px master maps; compact WebP packs 512/768px for upgraded materials",
+    "externalTextureCount": 0,
+    "orphanImageBytes": 0
   },
   "assets": {
     "trees": 4,
     "hedges": 18,
-    "outdoorDiningNodes": 0
+    "outdoorDiningNodes": 0,
+    "treeModel": "./assets/vegetation/island_tree_02_web.glb",
+    "treeModelBytes": 4268472,
+    "treeModelSha256": "845CD738030743A4592FDC10DB77A38E522E15C8901E6710C377C3D5C303CF76",
+    "treeTrianglesPerInstance": 47000,
+    "hedgeModel": "./assets/vegetation/shrub_03_web.glb",
+    "hedgeModelBytes": 675924,
+    "hedgeModelSha256": "C285AD37DDAA6014347AD1AD8A31311BAC46C384EE0D5F8C5D445186AA7960EE",
+    "hedgeTrianglesPerInstance": 8287,
+    "hedgeRows": 2,
+    "hedgeTilesPerRow": 3,
+    "hedgeCloneInstances": 108,
+    "enhancedVegetationTriangles": 1082996,
+    "enhancedVegetationDrawCalls": 120,
+    "provenance": "Poly Haven CC0 1.0; dérivés Web décimés/compactés localement"
   },
   "lighting": {
-    "environment": "procedural PMREM IBL",
+    "pipeline": "V18-WEB-REALISM-LIGHTING-R2",
+    "environment": "deterministic procedural sky + PMREM IBL",
     "toneMapping": "ACESFilmic",
-    "exposure": 0.92,
-    "hemisphereIntensity": 0.72,
-    "ambientIntensity": 0.06,
-    "directionalIntensity": 2.4,
+    "exposure": 0.865,
+    "hemisphereIntensity": 0.518,
+    "ambientIntensity": 0.03,
+    "directionalIntensity": 2.76,
     "shadows": "desktop",
-    "fillIntensity": 0.22,
-    "environmentIntensity": 0.85
+    "fillIntensity": 0.158,
+    "rimIntensity": 0.28,
+    "environmentIntensity": 0.765,
+    "fogNear": 78,
+    "fogFar": 172
   },
   "presentationImages": [
     "./gallery/v18-facade-roof-ground.webp",
     "./gallery/v18-jardin-textures.webp"
   ],
   "modelProfile": {
-    "variant": "corrected-high-resolution-WebP",
+    "variant": "web-realism-upgraded-PBR-compact",
     "sourceMasterSha256": "97F842001CC77E65637271172D09A81043FFFDF3235591DCB1AFF0BA96D67DA0",
     "legacyDownsampledJpegSha256": "79A0F908DCCA94ADE328A46247D51118BDEB51CE1217DE567E2040DB05D58C28",
+    "sourceCorrectedWebpSha256": "69F10EC076B68968CA91F0412481956F5CE0E1DE972ECB5E25CBF69990306DDE",
     "geometryChanged": false,
-    "texturePixelRetentionVsMaster": "100%",
-    "invalidTextureBindingRemoved": 50
+    "geometryAccessorPayloadsIdentical": true,
+    "materials": 41,
+    "textures": 90,
+    "embeddedImages": 78,
+    "orphanBufferViews": 0,
+    "sizeDeltaVsSync4Bytes": -2482028
   }
 }
